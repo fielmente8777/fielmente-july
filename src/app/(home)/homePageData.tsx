@@ -1,4 +1,16 @@
-import { BestServicesIcon, CompeteEffectivelyIcon, ConsultIcon, DriveDirectBookingIcon, ExecuteIcon, ProfessionalIcon, RealTimeOptimizationIcon, StrategiseIcon, SupportIcon } from "@/utils/icons";
+import { ClientImages } from "@/utils/client";
+import {
+  BestServicesIcon,
+  CompeteEffectivelyIcon,
+  ConsultIcon,
+  DriveDirectBookingIcon,
+  ExecuteIcon,
+  ProfessionalIcon,
+  RealTimeOptimizationIcon,
+  StrategiseIcon,
+  SupportIcon,
+} from "@/utils/icons";
+import { data } from "@/utils/testimonialsData";
 
 export const homePageData = {
   bannerData: {
@@ -11,14 +23,30 @@ export const homePageData = {
   marketingPartnersData: {
     cards: [
       {
-        imgSrc: "/im1.png",
-        title: "Social Media Marketing",
+        imgSrc: "/google.png",
+        title: "google",
+      },
+      {
+        imgSrc: "/trello.png",
+        title: "trello",
+      },
+      {
+        imgSrc: "/razorpay.png",
+        title: "razorpay",
+      },
+      {
+        imgSrc: "/slack.png",
+        title: "slack",
+      },
+      {
+        imgSrc: "/aws.png",
+        title: "aws",
       },
     ],
   },
   aboutCompanyData: {
     title: "About Company",
-    subTitle: "AI-Powered Hotel Marketing for Smart Hospitality Growth!",
+    subTitle: `AI-Powered Hotel Marketing for <b>Smart Hospitality Growth!</b>`,
     description: [
       "Transforming hospitality industry businesses into thriving destinations with expert, end-to-end marketing. From social media marketing to search engine optimization and paid campaigns, Fielmente crafts compelling brand stories that attract guests and drive growth.",
       "Collaborate with Fielmente! Let's change the landscape of Hospitality together!",
@@ -37,20 +65,47 @@ export const homePageData = {
     ],
   },
   servingHospitalityData: {
-    title: "Diverse Solutions for a Wide Range of Hospitality Industry",
+    title: "Diverse Solutions for a Wide Range of <b>Hospitality Industry</b>",
     description: [
       "Choose Fielmente as your digital marketing partner to transform your hospitality business with assured success and innovation.",
     ],
-    listData: [],
     cards: [
       {
-        imgSrc: "",
-        title: "",
+        imgSrc: "/home/im8.webp",
+        title: "Hotel",
+      },
+      {
+        imgSrc: "/home/im7.webp",
+        title: "Resort",
+      },
+      {
+        imgSrc: "/home/im6.webp",
+        title: "Home Stay",
+      },
+      {
+        imgSrc: "/home/im5.webp",
+        title: "Airbnb",
+      },
+      {
+        imgSrc: "/home/im4.webp",
+        title: "Villas",
+      },
+      {
+        imgSrc: "/home/im3.webp",
+        title: "Glamping",
+      },
+      {
+        imgSrc: "/home/im2.webp",
+        title: "Cafe",
+      },
+      {
+        imgSrc: "/home/im1.webp",
+        title: "Restaurant",
       },
     ],
   },
   servicesData: {
-    title: "AI-Powered Services for your Modern Hospitality Brand",
+    title: "AI-Powered Services for your <b>Modern Hospitality Brand</b>",
     links: [
       {
         label: "Explore all Services",
@@ -59,19 +114,19 @@ export const homePageData = {
     ],
     cards: [
       {
-        imgSrc: "",
+        imgSrc: "/home/sv1.webp",
         title: "Website Development",
         description:
           "We design fast, SEO-friendly websites tailed to your hospitality brand. We ensure a smooth and engaging experience from design to launch.",
       },
       {
-        imgSrc: "",
+        imgSrc: "/home/sv2.webp",
         title: "Search Engine Optimization",
         description:
           "Boost online visibility and drive quality traffic with expert SEO using targeted keywords, and smart technical optimization for higher search rankings.",
       },
       {
-        imgSrc: "",
+        imgSrc: "/home/sv3.webp",
         title: "Performance Marketing",
         description:
           "Maximize ROI with performance marketing that delivers results. From ads to conversion tracking, we optimize every campaign to drive growth.",
@@ -121,13 +176,13 @@ export const homePageData = {
   ],
   chooseUsData: {
     title: "Why Choose Us",
-    subTitle: `AI-Driven Innovations for the Hospitality Industry`,
+    subTitle: `AI-Driven Innovations for the <b>Hospitality Industry</b>`,
     cards: [
       {
         icon: <BestServicesIcon />,
         title: "SAVE YOUR TIME",
         subTitle: "Best Services",
-        color: "[#F26633]",
+        color: "#F26633",
         description:
           "We are committed to provide quality services. We make sure that each and every detail is paid attention to and only the best is presented to you. We plan and work as a team so that no area is left untouched. We bring ideas to life and serve you the incomparable!",
       },
@@ -135,7 +190,7 @@ export const homePageData = {
         icon: <ProfessionalIcon />,
         title: "ALL YOU NEED",
         subTitle: "Professional",
-        color:"[##F2B203]",
+        color: "#F2B203",
         description:
           "We're a team of qualified & experienced individuals who work together through thick & thin. We have worked with various clients and our greatest ethical responsibility has always been to constantly strive for excellence in everything we do. ",
       },
@@ -143,7 +198,7 @@ export const homePageData = {
         icon: <SupportIcon />,
         title: "DEDICATED SUPPORTS",
         subTitle: "Support",
-        color:"[#110D3C]",
+        color: "#110D3C",
         description:
           "We are here to help you get through all your concerns. We are always available in sorting out your issues throughout your journey. We would love to hear from you no matter what, in order to deliver the best. We value your business and are here to support you.",
       },
@@ -151,10 +206,10 @@ export const homePageData = {
   },
   ourWork: {
     title: "Our Work",
-    subTitle: "Glimpse into Our Client Works that Made an Impact!",
+    subTitle: "Glimpse into Our Client Works that <b>Made an</b> <i>Impact!</i>",
     description:
       "Highlighting exceptional client projects and celebrating collaborations that drive innovation and results.",
-    imagesSrc: [""],
+    imagesSrc: ["/ourWork/im1.png"],
     linksData: [
       {
         label: "Contact Us",
@@ -162,20 +217,25 @@ export const homePageData = {
       },
     ],
   },
-  servicesTitles: [""],
+  servicesTitles: [
+    "WEBSITE DESIGN & DEVELOPMENT",
+    "SEARCH ENGINE OPTIMIZATION",
+    "SOCIAL MEDIA MANAGEMENT",
+    "PERFORMANCE MARKETING",
+  ],
   countriesWeWorkedIn: {
     title: "COUNTRIES WE WORKED",
     subTitle:
-      "Delivering AI-Driven Hospitality Marketing Solutions Globally Since 2020",
-    imagesSrc: [""],
+      "Delivering AI-Driven Hospitality Marketing <b>Solutions Globally Since 2020</b>",
+    imagesSrc: ["/home/country.png"],
   },
   maximizeGrowthData: {
     title: "MAXIMIZE YOUR HOTEL GROWTH",
     subTitle:
-      "Let us handle your Hotel Marketing Services & grow your occupancy rate by 5X",
+      "Let us handle your Hotel Marketing Services & <b>grow your occupancy rate by 5X</b>",
     cards: [
       {
-        icon: <DriveDirectBookingIcon/>,
+        icon: <DriveDirectBookingIcon />,
         title: "Drive Direct Bookings",
         description:
           "Direct potential guests to your website or booking page, increasing direct bookings and reducing reliance on third-party platforms.",
@@ -202,24 +262,12 @@ export const homePageData = {
   },
   ourValuedClientsData: {
     title: "Our Valued Clients",
-    cards: [
-      {
-        src: "",
-        title: "",
-        class: "",
-      },
-    ],
+    cards: ClientImages,
   },
   testimonialsData: {
     title: "TESTIMONIALS",
-    subTitle: "See What our Hospitality Clients have to Say!",
-    cards: [
-      {
-        src: "",
-        title: "",
-        class: "",
-      },
-    ],
+    subTitle: "See What our <strong>Hospitality</strong> Clients have to Say!",
+    cards: data,
     links: [
       {
         label: "Contact Us",
@@ -228,9 +276,9 @@ export const homePageData = {
     ],
   },
   addscardsData: {
-    title: "Elevate your Hospitality Brand Today!",
+    title: "Elevate your <b>Hospitality Brand Today!</b>",
     description:
-      "Ready to transform your digital presence? Let's create magic together. Book our Hospitality Marketing Services now!",
+      "Ready to transform your digital presence? Let's create magic together. Book our <b>Hospitality Marketing Services</b> now!",
     links: [
       {
         label: "Schedule Call",
@@ -242,20 +290,20 @@ export const homePageData = {
     title: "Frequently Asked Questions!",
     cards: [
       {
-        title:
+        question:
           "What industries do you specialize in for digital marketing and website development?",
-        description:
+        answer:
           "We specialize in the hospitality industry—hotels, resorts, restaurants, air bnb, home stay, glamping and cafes—offering tailored digital marketing and web development solutions that drive direct bookings and enhance online presence.",
       },
       {
-        title: "How long does it take to build a website with Fielmente?",
-        description:
+        question: "How long does it take to build a website with Fielmente?",
+        answer:
           "Typically, our website development process takes 3–6 weeks, depending on the complexity, features required, and client feedback. We ensure timely delivery without compromising on quality.",
       },
       {
-        title:
+        question:
           "What makes Fielmente different from other hospitality marketing agencies?",
-        description:
+        answer:
           "Fielmente combines industry-specific expertise with creative storytelling and data-driven strategies. Our end-to-end solutions—from branding to SEO—are built to boost occupancy, engagement, and ROI.",
       },
     ],

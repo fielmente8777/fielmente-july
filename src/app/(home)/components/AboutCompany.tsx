@@ -1,7 +1,10 @@
+"use client";
 import { AboutCompanyPropsType } from "@/@types/@types";
 import { SectionHeadingDesc, SectionWithContainer } from "@/components";
+import { AppContext } from "@/contextApi/AppContext";
 import { RightTickIcon } from "@/utils/icons";
 import Image from "next/image";
+import { useContext } from "react";
 
 const AboutCompany: React.FC<AboutCompanyPropsType> = ({
   title,
@@ -11,6 +14,8 @@ const AboutCompany: React.FC<AboutCompanyPropsType> = ({
   linksData,
   imgSrc,
 }) => {
+    const { setIsOpenPopupForm } = useContext(AppContext);
+  
   return (
     <SectionWithContainer>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
@@ -34,7 +39,7 @@ const AboutCompany: React.FC<AboutCompanyPropsType> = ({
           </p>
           <div className="flex gap-4">
             {linksData.map((item, index) => (
-              <button key={index} className="text-secondary bg-white py-3 px-8 border border-secondary rounded-lg btn-shadow2">
+              <button onClick={() => setIsOpenPopupForm(true)} key={index} className="text-secondary bg-white py-3 px-8 border border-secondary rounded-lg btn-shadow2">
                 {item.label}
               </button>
             ))}

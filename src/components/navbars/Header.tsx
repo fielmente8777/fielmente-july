@@ -52,7 +52,7 @@ const Header = () => {
                   <li key={index} className="relative nav">
                     <Link
                       href={link.href ? link.href : "#"}
-                      className="relative text-nowrap py-2 capitalize flex items-center gap-1 text-light"
+                      className="relative text-nowrap py-2 capitalize flex items-center gap-1 text-dark"
                     >
                       {link.label}
                       <span className="span-border"></span>
@@ -73,7 +73,7 @@ const Header = () => {
                               >
                                 <Link
                                   href={subLink.href ? subLink.href : "#"}
-                                  className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-light ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
+                                  className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
                                 >
                                   {subLink.label}
                                   {subLink.subLinks && (

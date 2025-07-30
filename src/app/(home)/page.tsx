@@ -16,6 +16,7 @@ import {
   ServingHospitality,
   Testimonials,
 } from "./components";
+import { AddsCard } from "@/components/cards";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <MaximizeGrowth {...homePageData.maximizeGrowthData} />
       <OurValuedClients {...homePageData.ourValuedClientsData} />
       <Testimonials {...homePageData.testimonialsData} />
+      <AddsCard {...homePageData.addscardsData} />
       <ServicesTitles title={homePageData.servicesTitles} />
       <Faqs {...homePageData.faqsData} />
     </main>

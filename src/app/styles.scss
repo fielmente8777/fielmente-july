@@ -1,6 +1,19 @@
 // font sizes
 
 @layer utilities {
+    .demo {
+        .swiper {
+            pointer-events: none;
+        }
+        .swiper-wrapper {
+            transition-timing-function: linear !important;
+        }
+    }
+
+    .box-shadow {
+        box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    }
+
     .xx_lg_font_s {
         font-size: 4.5rem;
         @media (max-width: 768px) {
@@ -102,6 +115,14 @@
         color: var(--secondary);
     }
 }
+.text-color {
+    span,
+    b,
+    i,
+    Strong {
+        color: var(--secondary);
+    }
+}
 
 // navbar
 .nav {
@@ -193,5 +214,21 @@
     }
     &:hover .nav-1 {
         overflow: visible;
+    }
+}
+.pagination_serving,
+.pagination_testimonials {
+    .swiper-pagination-bullet {
+        background-color: #110d3c;
+        inline-size: 0.5rem;
+        block-size: 0.5rem;
+        opacity: 1;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 2rem;
+        border-radius: 0.5rem;
     }
 }

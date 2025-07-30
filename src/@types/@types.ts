@@ -1,5 +1,5 @@
+import { ClientData } from "@/utils/client";
 import { JSX } from "react";
-import MarketingPartners from "../app/(home)/components/MarketingPartners";
 export interface NavLinksProps {
   href: string;
   label: string;
@@ -35,7 +35,6 @@ export type MarketingPartnersPropsType = {
 export interface ServingHospitalityPropsType {
   title: string;
   description: string[];
-  listData: never[];
   cards: {
     imgSrc: string;
     title: string;
@@ -74,6 +73,7 @@ export interface ChooseUsPropsType {
     title: string;
     subTitle: string;
     description: string;
+    color: string;
   }[];
 }
 
@@ -110,20 +110,15 @@ export interface MaximizeGrowthPropsType {
 
 export interface OurValuedClientsPropsType {
   title: string;
-  cards: {
-    src: string;
-    title: string;
-    class: string;
-  }[];
+  cards: ClientData[];
 }
 
 export interface TestimonialsPropsType {
   title: string;
   subTitle: string;
   cards: {
-    src: string;
     title: string;
-    class: string;
+    description: string;
   }[];
   links: {
     label: string;
@@ -134,7 +129,17 @@ export interface TestimonialsPropsType {
 export interface FaqsPropsType {
   title: string;
   cards: {
+    question: string;
+    answer: string;
+  }[];
+}
+
+
+export interface AddsCardsPropsType {
     title: string;
     description: string;
-  }[];
+    links: {
+        label: string;
+        href: string;
+    }[];
 }

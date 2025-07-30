@@ -10,6 +10,10 @@ interface SectionHeadingDescProps {
   titleColor?: string;
   subTitleColor?: string;
   smTextCenter?: boolean;
+  wrapperClassName?: string;
+  titleClassName?: string;
+  subTitleClassName?: string;
+  descriptionClassName?: string;
 }
 
 const SectionHeadingDesc: React.FC<SectionHeadingDescProps> = ({
@@ -21,26 +25,30 @@ const SectionHeadingDesc: React.FC<SectionHeadingDescProps> = ({
   titleColor,
   subTitleColor,
   smTextCenter = false,
+  wrapperClassName="",
+  titleClassName="",
+  subTitleClassName="",
+  descriptionClassName="",
 }) => {
   return (
-    <div className="flex flex-col w-full gap-4">
+    <div className={`flex flex-col w-full gap-4 ${wrapperClassName}`}>
       {title && (
         <Headings
           level={2}
-          className={` ${textcenter ? "text-center mx-auto" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${titleColor ? `text-${titleColor}` : "text-secondary"} shadow-inner uppercase font-medium bg-[#FFE7DE] py-2 px-4 w-fit rounded-full`}
+          className={`${titleClassName} ${textcenter ? "text-center mx-auto" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${titleColor ? `text-${titleColor}` : "text-secondary"} $ shadow-inner uppercase font-medium bg-[#FFE7DE] py-2 px-4 w-fit rounded-full`}
           heading={title}
         />
       )}
       {subTitle && (
         <Headings
           level={3}
-          className={` ${textcenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} lg_font_s font-medium`}
+          className={`${subTitleClassName} ${textcenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} lg_font_s font-medium`}
           heading={subTitle}
         />
       )}
       {description && (
         <p
-          className={`${textcenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${descriptionColor ? `text-${descriptionColor}` : "text-light"} md:text-lg text-base`}
+          className={`${descriptionClassName} ${textcenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${descriptionColor ? `text-${descriptionColor}` : "text-light"} md:text-lg text-base`}
         >
           {description}
         </p>

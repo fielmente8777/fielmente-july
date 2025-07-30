@@ -13,12 +13,13 @@ const MaximizeGrowth: React.FC<MaximizeGrowthPropsType> = ({
 }) => {
   return (
     <Section className="bg-primary px-4">
-      <div className="">
+      <div className="flex flex-col gap-8 md:gap-14 w-full">
         <SectionHeadingDesc
           title={title}
           subTitle={subTitle}
           textcenter
           subTitleColor="white"
+          wrapperClassName="max-w-5xl mx-auto text-color"
         />
         <div className="">
           <SwiperCarousel
