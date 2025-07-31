@@ -5,7 +5,7 @@ import { Form1 } from "@/components/forms";
 
 const Faqs: React.FC<FaqsPropsType> = ({ title, cards }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName="relative after:absolute after:bg-[url('/home/bgred.png')] after:bg-cover after:bg-repeat after:opacity-20 after:w-full after:h-full after:-top-[18%] after:right-0 after:z-[-2]">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="md:col-span-2 md:space-y-14 space-y-8">
           <h2 className="text-primary lg_font_s font-medium">{title}</h2>

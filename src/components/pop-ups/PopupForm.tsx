@@ -63,7 +63,7 @@ const PopupForm = () => {
           <div className="flex max-w-3xl w-full shadow-2xl relative rounded-lg overflow-hidden bg-white">
             <button
               onClick={closeModal}
-              className="absolute top-1 right-1 w-8 h-8 flex justify-center items-center text-lg rounded-full text-orange-primary bg-white z-10 transition-all duration-300"
+              className="absolute top-1 right-1 w-8 h-8 flex justify-center items-center text-lg rounded-full text-secondary bg-white z-10 transition-all duration-300"
               aria-label="Close popup"
             >
               <OutlineClose />

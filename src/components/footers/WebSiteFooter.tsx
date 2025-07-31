@@ -6,8 +6,8 @@ import Image from "next/image";
 const WebSiteFooter = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="max_screen_width bg-primary">
-      <Container className="md:py-[7.5rem]">
+    <footer className="max_screen_width relative after:bg-primary after:bg-cover after:bg-no-repeat after:bg-center after:w-full after:h-full after:absolute after:inset-0 after:z-[-2]">
+      <Container className="md:py-[7.5rem] relative after:absolute after:inset-0 after:bg-[url('/map.png')] after:bg-contain after:bg-no-repeat after:opacity-8 after:bg-center after:w-full after:h-full after:z-[-1]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-14">
           <div className="flex flex-col gap-6">
             <Link

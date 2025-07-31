@@ -9,7 +9,7 @@ const HowItWorks: React.FC<howItWorksPropsType> = ({
   cards,
 }) => {
   return (
-    <SectionWithContainer sectionClassName="relative after:content-[''] after:inset-0 after:absolute after:bg-[#f5f5f5] after:z-[-1]">
+    <SectionWithContainer sectionClassName="relative after:content-[''] after:inset-0 after:absolute after:bg-[#f5f5f5] after:z-[-2]">
       <div className="md:space-y-14 space-y-8">
         <div className="max-w-3xl mx-auto w-full">
           <SectionHeadingDesc
@@ -20,7 +20,7 @@ const HowItWorks: React.FC<howItWorksPropsType> = ({
             textcenter
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 work_bg_class">
           {cards.map((card, index) => (
             <HowItWorksCard key={index} {...card} />
           ))}

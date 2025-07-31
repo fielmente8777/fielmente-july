@@ -278,7 +278,7 @@ const PopUpForm = () => {
                 </div>
             ))}
 
-            <button className="w-full text-center bg-orange-primary text-white justify-center border-orange-primary text-md px-8 py-3 md:text-lg font-semibold rounded-md hover:bg-white hover:text-orange-primary duration-300 active:scale-75 hover:scale-105 border border-blue-primary">
+            <button className="w-full text-center bg-secondary text-white justify-center border-secondary text-md px-8 py-3 md:text-lg font-semibold rounded-md hover:bg-white hover:text-secondary duration-300 active:scale-75 hover:scale-105 border border-blue-primary">
                 {formRes ? "Loading...." : "Get a Free Consultation"}
             </button>
 

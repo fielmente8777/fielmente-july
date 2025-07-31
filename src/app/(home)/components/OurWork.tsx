@@ -16,8 +16,8 @@ const OurWork: React.FC<OurWorkPropsType> = ({
 }) => {
   const { setIsOpenPopupForm } = useContext(AppContext);
   return (
-    <SectionWithContainer  sectionClassName="bg-[#F9FAFB]">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center md:gap-8 bg-[#F9FAFB]">
+    <SectionWithContainer  sectionClassName="relative before:content-[''] before:inset-0 before:absolute before:bg-[url('/home/bg.png')] before:bg-cover before:bg-no-repeat before:w-[621px] before:h-[560px] before:bg-center before:opacity-10 before:z-[-1] after:content-[''] after:inset-0 after:absolute after:bg-[#f5f5f5] after:z-[-2]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center md:gap-8">
         <div className="md:col-span-2">
           <SwiperCarousel
             data={imagesSrc}

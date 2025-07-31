@@ -12,7 +12,7 @@ const MaximizeGrowth: React.FC<MaximizeGrowthPropsType> = ({
   links,
 }) => {
   return (
-    <Section className="bg-primary px-4">
+    <Section className="px-4 relative after:absolute after:bg-[url('/home/bglight.png')] after:bg-cover after:bg-repeat after:opacity-25 after:w-full after:h-[600px] after:-top-[34%] after:right-0 after:z-[-1] before:absolute before:bg-primary before:z-[-1] before:inset-0">
       <div className="flex flex-col gap-8 md:gap-14 w-full">
         <SectionHeadingDesc
           title={title}

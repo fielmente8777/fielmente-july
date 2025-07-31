@@ -1,4 +1,4 @@
-import { Banner } from "@/components";
+import { Banner, Section } from "@/components";
 import { homePageData } from "./homePageData";
 import {
   AboutCompany,
@@ -33,8 +33,10 @@ export default function Home() {
       <ServicesTitles title={homePageData.servicesTitles} />
       <CountriesWeWorkedIn {...homePageData.countriesWeWorkedIn} />
       <MaximizeGrowth {...homePageData.maximizeGrowthData} />
-      <OurValuedClients {...homePageData.ourValuedClientsData} />
-      <Testimonials {...homePageData.testimonialsData} />
+      <Section defaultPadding={false} className="relative after:absolute after:bg-[url('/home/bgred.png')] after:bg-cover after:bg-repeat after:opacity-20 after:w-full after:h-full after:-top-[18%] after:right-0 after:z-[-2]">
+        <OurValuedClients {...homePageData.ourValuedClientsData} />
+        <Testimonials {...homePageData.testimonialsData} />
+      </Section>
       <AddsCard {...homePageData.addscardsData} />
       <ServicesTitles title={homePageData.servicesTitles} />
       <Faqs {...homePageData.faqsData} />

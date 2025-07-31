@@ -17,7 +17,7 @@ const AboutCompany: React.FC<AboutCompanyPropsType> = ({
     const { setIsOpenPopupForm } = useContext(AppContext);
   
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName="about-class">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
         <div className="md:col-span-3 flex flex-col gap-8 max-w-2xl">
           <SectionHeadingDesc

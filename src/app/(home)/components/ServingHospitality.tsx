@@ -11,7 +11,7 @@ const ServingHospitality: React.FC<ServingHospitalityPropsType> = ({
   description,
 }) => {
   return (
-    <Section className="box-shadow rounded-3xl overflow-hidden bg-[#F5F5F5]">
+    <Section className="box-shadow rounded-3xl relative overflow-hidden after:content-[''] after:inset-0 after:absolute after:bg-[#f5f5f5] after:z-[-2] before:content-[''] before:right-0 before:top-0 before:bg-[url('/home/waves.png')] before:bg-contain before:bg-no-repeat before:w-[153px] before:h-[30px] before:z-[-1] before:absolute">
       <div className="md:space-y-14 space-y-8">
         <SectionHeadingDesc
           subTitle={title}

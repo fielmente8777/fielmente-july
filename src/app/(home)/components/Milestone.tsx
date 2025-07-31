@@ -8,7 +8,7 @@ type MilestonePropsType = {
 const Milestone = ({ milestone }: { milestone: MilestonePropsType }) => {
   return (
     <SectionWithContainer>
-      <div className="relative grid grid-cols-3 overflow-hidden rounded-[56px] py-14 px-[76px]  after:content-[''] after:inset-0 after:absolute after:bg-primary after:z-[-1] before:absolute before:content-[''] before:inset-0 before:bg-[url('/images/shape.png')] before:z-[-1]">
+      <div className="relative grid grid-cols-3 overflow-hidden rounded-[56px] py-14 px-[76px]  after:content-[''] after:inset-0 after:absolute after:bg-primary after:z-[-2] before:absolute before:content-[''] before:inset-0 before:bg-[url('/home/vector1.png')] before:bg-contain before:bg-no-repeat before:bg-center before:w-full before:h-full before:z-[-1]">
         {milestone.map((item, index) => (
           <div className="flex items-center justify-evenly gap-6" key={index}>
             <div className={`flex flex-col items-center justify-center gap-6`}>

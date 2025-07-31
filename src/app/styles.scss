@@ -232,3 +232,58 @@
         border-radius: 0.5rem;
     }
 }
+
+// bg images class
+.about-class {
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+    }
+    &::before {
+        top: 30;
+        right: 0;
+        width: 286px;
+        height: 56px;
+        background-image: url("/frame.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+    &::after {
+        bottom: -19%;
+        left: -12%;
+        width: 490px;
+        height: 490px;
+        background-image: url("/home/vector.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+    }
+}
+
+.work_bg_class {
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: -1;
+        width: 248px;
+        height: 27.67px;
+    }
+    &::before {
+        top: 45%;
+        left: 26%;
+        background-image: url("/home/arrowdown.png");
+    }
+    &::after {
+        top: 55%;
+        left: 57%;
+        background-image: url("/home/arrowup.png");
+    }
+}
