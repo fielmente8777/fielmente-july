@@ -117,7 +117,7 @@ const Form = () => {
             aria-label="Country Code"
           >
             {countries.map((country, index) => (
-              <option key={index} value={country.code} className="text-white">
+              <option key={index} value={country.code} className="text-black">
                 {`${country.code}`}
               </option>
             ))}
