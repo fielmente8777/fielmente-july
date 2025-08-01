@@ -13,7 +13,7 @@ const AIPoweredServices: React.FC<ServicesPropsType> = ({
 }) => {
   return (
     <Section className="px-4 relative before:content-[''] before:left-0 before:bottom-4 before:bg-[url('/home/waves.png')] before:bg-contain before:bg-no-repeat before:w-[153px] before:h-[30px] before:z-[-1] before:absolute">
-      <div className="w-full bg-primary rounded-3xl py-20 flex flex-col md:gap-14 gap-8">
+      <div className="w-full bg-primary rounded-3xl py-20 flex flex-col  gap-8">
         <SectionHeadingDesc
           wrapperClassName="max-w-3xl mx-auto"
           subTitle={title}

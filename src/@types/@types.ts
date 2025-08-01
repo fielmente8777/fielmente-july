@@ -48,6 +48,8 @@ export interface ServicesPropsType {
     href: string;
   }[];
   cards: {
+    imgWrapperClassName?: string;
+    imgClassName?: string;
     imgSrc: string;
     title: string;
     description: string;
@@ -134,12 +136,11 @@ export interface FaqsPropsType {
   }[];
 }
 
-
 export interface AddsCardsPropsType {
-    title: string;
-    description: string;
-    links: {
-        label: string;
-        href: string;
-    }[];
+  title: string;
+  description: string;
+  links: {
+    label: string;
+    href: string;
+  }[];
 }

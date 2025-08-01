@@ -114,18 +114,24 @@ export const homePageData = {
     ],
     cards: [
       {
+        imgClassName:"w-[20rem] aspect-square",
+        imgWrapperClassName: "-top-[9rem] -right-10 z-20",
         imgSrc: "/home/sv1.webp",
         title: "Website Development",
         description:
           "We design fast, SEO-friendly websites tailed to your hospitality brand. We ensure a smooth and engaging experience from design to launch.",
       },
       {
+        imgClassName:"w-[13.5rem] aspect-square",
+        imgWrapperClassName: "-top-[5rem] right-1 z-20",
         imgSrc: "/home/sv2.webp",
         title: "Search Engine Optimization",
         description:
           "Boost online visibility and drive quality traffic with expert SEO using targeted keywords, and smart technical optimization for higher search rankings.",
       },
       {
+        imgClassName:"w-[14rem] aspect-square",
+        imgWrapperClassName: "-top-[5rem] right-1 z-20",
         imgSrc: "/home/sv3.webp",
         title: "Performance Marketing",
         description:
