@@ -32,7 +32,7 @@ const AIPoweredServicesCard: React.FC<ServicesPropsType["cards"][0]> = ({
         </div>
         <div className="h-[1px] bg-secondary w-[148px]"></div>
 
-        <p className="text-light text-lg pr-8">{description}</p>
+        <p className="text-light text-xl pr-8">{description}</p>
       </div>
     </div>
   );

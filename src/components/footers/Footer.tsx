@@ -1,12 +1,17 @@
-import WebSiteFooter from './WebSiteFooter';
+"use client";
+import { usePathname } from "next/navigation";
+import WebSiteFooter from "./WebSiteFooter";
 const Footer = () => {
-    const RenderFooter = WebSiteFooter;
-
-    return (
-        <>
-            <RenderFooter />
-        </>
-    );
-}
+  const pathName = usePathname();
+  const RenderFooter = WebSiteFooter;
+  if (pathName === "/thank-you/") {
+    return null;
+  }
+  return (
+    <>
+      <RenderFooter />
+    </>
+  );
+};
 
 export default Footer;

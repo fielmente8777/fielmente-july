@@ -45,10 +45,15 @@ const Form = () => {
       return;
     }
 
+    // const formTestApi =
+    //   "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/jncSLqGC#generic-webhook";
+    const formApi =
+      "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/7lHAUjtz#generic-webhook";
+
     try {
       const { data } = await axios.post(
         // `https://nexon.eazotel.com/eazotel/addcontacts`,
-        `https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/7lHAUjtz#generic-webhook`,
+        formApi,
         {
           // Domain: "fielmente",
           // Domain: "abhijeet",

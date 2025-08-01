@@ -5,10 +5,11 @@ import React from "react";
 import { OutlineClose } from "@/utils/icons";
 import PopUpForm from "../forms/PopUpForm";
 import { AppContext } from "@/contextApi/AppContext";
+import { usePathname } from "next/navigation";
 
 const PopupForm = () => {
   const { isOpenPopupForm, setIsOpenPopupForm } = useContext(AppContext);
-
+  const pathName = usePathname();
   const [hasShown, setHasShown] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -49,6 +50,10 @@ const PopupForm = () => {
       clearTimeout(timerRef.current);
     }
   }, [setIsOpenPopupForm]);
+
+  if (pathName === "/thank-you/") {
+    return null;
+  }
 
   return (
     <>

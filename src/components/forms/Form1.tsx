@@ -44,11 +44,14 @@ const Form1 = () => {
       setEmailErrorMessage("Please enter a valid email address.");
       return;
     }
-
+    // const formTestApi =
+    //   "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/jncSLqGC#generic-webhook";
+    const formApi =
+      "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/7lHAUjtz#generic-webhook";
     try {
       const { data } = await axios.post(
         // `https://nexon.eazotel.com/eazotel/addcontacts`,
-        `https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/7lHAUjtz#generic-webhook`,
+        formApi,
         {
           // Domain: "fielmente",
           // Domain: "abhijeet",
@@ -177,23 +180,22 @@ const Form1 = () => {
       {formData.map((data, index) => (
         <div key={index} className="flex flex-col gap-1">
           <div className="flex  gap-2 text-gray-primary p-3 border bg-white border-blue-primary rounded-md">
-            
             {data.tag === "div"
               ? data.content
               : React.createElement(data.tag, {
-                id: data.name,
-                type: data.type,
-                name: data.name,
-                value: data.value,
-                onChange: data.onChange,
-                placeholder: data.placeholder,
-                required: data.required,
-                autoComplete: "off",
-                spellCheck: "false",
-                rows: data.tag === "textarea" ? 3 : undefined,
-                className:
-                  "w-full bg-transparent no-spinner resize-none focus:outline-none rounded-md valid:outline-blue-primary invalid:outline-Saffron-primary",
-              })}
+                  id: data.name,
+                  type: data.type,
+                  name: data.name,
+                  value: data.value,
+                  onChange: data.onChange,
+                  placeholder: data.placeholder,
+                  required: data.required,
+                  autoComplete: "off",
+                  spellCheck: "false",
+                  rows: data.tag === "textarea" ? 3 : undefined,
+                  className:
+                    "w-full bg-transparent no-spinner resize-none focus:outline-none rounded-md valid:outline-blue-primary invalid:outline-Saffron-primary",
+                })}
           </div>
           {data.name === "phone" && errorMessage && (
             <p className="text-sm text-red-500 mt-2">{errorMessage}</p>

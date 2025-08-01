@@ -29,7 +29,7 @@ const AboutCompany: React.FC<AboutCompanyPropsType> = ({
           </p>
           <ul className="flex flex-col gap-4">
             {listData.map((item, index) => (
-              <li key={index} className="flex items-center gap-2 text-light">
+              <li key={index} className="flex items-center gap-2 text-light text-xl">
                <span className=""><RightTickIcon /></span> {item}
               </li>
             ))}
