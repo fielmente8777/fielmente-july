@@ -35,7 +35,7 @@ export const homePageData = {
         title: "razorpay",
       },
       {
-        imgSrc: "/slack.png",
+        imgSrc: "/slack.webp",
         title: "slack",
       },
       {
