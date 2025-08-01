@@ -25,9 +25,9 @@ const ServicesTitles = ({ title }: { title: string[] }) => {
           },
         }}
         renderSlide={(item, index) => (
-          <ul key={index} className="flex items-center justify-evenly gap-2 py-3 w-full">
+          <ul key={index} className="flex items-center justify-center gap-2 py-3 w-full relative">
             <li className="text-white text-nowrap text-xl">{item}</li>
-            <span className="text-white">•</span>
+            <span className="text-white absolute -right-[4.5px]">•</span>
           </ul>
         )}
       />
