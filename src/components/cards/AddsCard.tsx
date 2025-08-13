@@ -17,7 +17,7 @@ const AddsCard: React.FC<AddsCardsPropsType> = ({
       defaultPadding={false}
     >
       <div
-        className="rounded-4xl px-14 py-12 after:content-['']
+        className="rounded-4xl md:px-14 md:py-12 px-4 py-[40px] after:content-['']
       after:rounded-4xl relative after:absolute after:inset-0 after:bg-[url('/CTA.png')] after:bg-cover after:bg-no-repeat after:bg-center after:w-full after:z-[-1]"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl md:gap-28 items-center mx-auto">
@@ -34,7 +34,7 @@ const AddsCard: React.FC<AddsCardsPropsType> = ({
                 onclick={() => setIsOpenPopupForm(true)}
                 key={index}
                 label={link.label}
-                className="mt-6 text-secondary bg-white rounded-lg font-medium border-secondary"
+                className="mt-6 max-md:w-full text-secondary bg-white rounded-lg font-medium border-secondary"
               />
             ))}
           </div>

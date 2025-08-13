@@ -58,7 +58,7 @@ const PopupForm = () => {
   return (
     <>
       <section
-        className={`fixed inset-0 z-[999] bg-black/50 duration-700 ease-in-out transition-all ${isOpenPopupForm ? "block" : "hidden"}`}
+        className={`fixed inset-0 z-[99999] bg-black/50 duration-700 ease-in-out transition-all ${isOpenPopupForm ? "block" : "hidden"}`}
         onClick={closeModal}
       >
         <article

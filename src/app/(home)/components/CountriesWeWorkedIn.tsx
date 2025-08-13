@@ -10,11 +10,11 @@ const CountriesWeWorkedIn: React.FC<CountriesWeWorkedInPropsType> = ({
     const img = imagesSrc[0];
   return (
     <Section>
-      <div className="md:space-y-12 space-y-8">
+      <div className="md:space-y-12 space-y-8 max-md:px-4">
         <SectionHeadingDesc
           title={title}
           subTitle={subTitle}
-          textcenter
+          mdTextCenter={true}
           wrapperClassName="max-w-5xl mx-auto text-color"
         />
         <div className="relative h-full max-h-[800px] aspect-[4/2]">

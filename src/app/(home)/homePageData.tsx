@@ -114,7 +114,7 @@ export const homePageData = {
     ],
     cards: [
       {
-        imgClassName:"w-[20rem] aspect-square",
+        imgClassName: "w-[20rem] aspect-square",
         imgWrapperClassName: "-top-[9rem] -right-10 z-20",
         imgSrc: "/home/sv1.webp",
         title: "Website Development",
@@ -122,7 +122,7 @@ export const homePageData = {
           "We design fast, SEO-friendly websites tailed to your hospitality brand. We ensure a smooth and engaging experience from design to launch.",
       },
       {
-        imgClassName:"w-[13.5rem] aspect-square",
+        imgClassName: "w-[13.5rem] aspect-square",
         imgWrapperClassName: "-top-[5rem] right-1 z-20",
         imgSrc: "/home/sv2.webp",
         title: "Search Engine Optimization",
@@ -130,7 +130,7 @@ export const homePageData = {
           "Boost online visibility and drive quality traffic with expert SEO using targeted keywords, and smart technical optimization for higher search rankings.",
       },
       {
-        imgClassName:"w-[14rem] aspect-square",
+        imgClassName: "w-[14rem] aspect-square",
         imgWrapperClassName: "-top-[5rem] right-1 z-20",
         imgSrc: "/home/sv3.webp",
         title: "Performance Marketing",
@@ -212,7 +212,8 @@ export const homePageData = {
   },
   ourWork: {
     title: "Our Work",
-    subTitle: "Glimpse into Our Client Works that <b>Made an</b> <i>Impact!</i>",
+    subTitle:
+      "Glimpse into Our Client Works that <b>Made an</b> <i>Impact!</i>",
     description:
       "Highlighting exceptional client projects and celebrating collaborations that drive innovation and results.",
     imagesSrc: ["/ourWork/im1.png"],
@@ -238,7 +239,7 @@ export const homePageData = {
   maximizeGrowthData: {
     title: "MAXIMIZE YOUR HOTEL GROWTH",
     subTitle:
-      "Let us handle your Hotel Marketing Services & <b>grow your occupancy rate by 5X</b>",
+      "Let us handle your Hotel Marketing Services &</br> <b>grow your occupancy rate by 5X</b>",
     cards: [
       {
         icon: <DriveDirectBookingIcon />,
@@ -267,7 +268,7 @@ export const homePageData = {
     ],
   },
   ourValuedClientsData: {
-    title: "Our Valued Clients",
+    title: "Our Valued Hospitality Clients",
     cards: ClientImages,
   },
   testimonialsData: {

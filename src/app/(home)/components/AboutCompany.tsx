@@ -17,12 +17,13 @@ const AboutCompany: React.FC<AboutCompanyPropsType> = ({
     const { setIsOpenPopupForm } = useContext(AppContext);
   
   return (
-    <SectionWithContainer sectionClassName="about-class">
+    <SectionWithContainer sectionClassName="about-class md:py-24 max-md:pt-24 max-md:pb-10" defaultPadding={false}>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
         <div className="md:col-span-3 flex flex-col gap-8 max-w-2xl">
           <SectionHeadingDesc
             title={title}
             subTitle={subTitle}
+            subTitleClassName="text-color"
           />
           <p className="text-light text-xl">
             {description[0]}
@@ -39,14 +40,14 @@ const AboutCompany: React.FC<AboutCompanyPropsType> = ({
           </p>
           <div className="flex gap-4">
             {linksData.map((item, index) => (
-              <button onClick={() => setIsOpenPopupForm(true)} key={index} className="text-secondary bg-white py-3 px-8 border border-secondary rounded-lg btn-shadow2">
+              <button onClick={() => setIsOpenPopupForm(true)} key={index} className="text-secondary md:w-fit w-full bg-white py-3 px-8 border border-secondary rounded-lg btn-shadow2">
                 {item.label}
               </button>
             ))}
           </div>
         </div>
         <div className="md:col-span-2">
-          <div className="relative w-full  aspect-square">
+          <div className="relative w-full md:block hidden aspect-square">
             <Image
               src={imgSrc[0]}
               alt={title}

@@ -19,16 +19,17 @@ const ServicesTitles = ({ title }: { title: string[] }) => {
           pauseOnMouseEnter: false,
         }}
         slidesPerView={2}
+        spaceBetween={24}
         breakpoints={{
           768: {
             slidesPerView: 4,
           },
         }}
         renderSlide={(item, index) => (
-          <ul key={index} className="flex items-center justify-center gap-2 py-3 w-full relative">
-            <li className="text-white text-nowrap text-xl">{item}</li>
+          <div key={index} className="flex items-center justify-center gap-2 py-3 w-full relative">
+            <p className="text-white text-nowrap text-xl">{item}</p>
             <span className="text-white absolute -right-[4.5px]">•</span>
-          </ul>
+          </div>
         )}
       />
     </Section>

@@ -13,19 +13,28 @@ const Testimonials: React.FC<TestimonialsPropsType> = ({
   cards,
   links,
 }) => {
-  const {setIsOpenPopupForm} = useContext(AppContext);
+  const { setIsOpenPopupForm } = useContext(AppContext);
   return (
     <SectionWithContainer>
       <div className="grid grid-cols-1 md:grid-cols-8 gap-7 items-center">
         <div className=" space-y-4 md:col-span-2">
-          <SectionHeadingDesc title={title} subTitle={subTitle} subTitleClassName="leading-tight" />
-          {links.map((link, index) => (
-            <div key={index} className="flex items-center gap-2">
-              <button onClick={() => setIsOpenPopupForm(true)} className="text-secondary font-medium bg-white py-3 px-8 border border-secondary rounded-lg btn-shadow2">
-                {link.label}
-              </button>
-            </div>
-          ))}
+          <SectionHeadingDesc
+            title={title}
+            subTitle={subTitle}
+            subTitleClassName="leading-tight"
+          />
+          <div className="md:block hidden">
+            {links.map((link, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <button
+                  onClick={() => setIsOpenPopupForm(true)}
+                  className="text-secondary font-medium bg-white py-3 px-8 border border-secondary rounded-lg btn-shadow2"
+                >
+                  {link.label}
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="md:col-span-6 w-full space-y-8">
           <div className="border border-secondary box-shadow rounded-3xl overflow-hidden bg-[#F5F5F5]">
@@ -36,13 +45,24 @@ const Testimonials: React.FC<TestimonialsPropsType> = ({
               modules={[Autoplay, Pagination]}
               autoplay={{ delay: 5000, disableOnInteraction: false }}
               pagination={{ clickable: true, el: ".pagination_testimonials" }}
-              
               renderSlide={(item, index) => (
                 <TestimonialCard key={index} {...item} />
               )}
             />
           </div>
           <div className="pagination_testimonials flex items-center justify-center"></div>
+          <div className="md:hidden px-4">
+            {links.map((link, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <button
+                  onClick={() => setIsOpenPopupForm(true)}
+                  className="text-secondary w-full font-medium bg-white py-3 px-8 border border-secondary rounded-lg btn-shadow2"
+                >
+                  {link.label}
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </SectionWithContainer>

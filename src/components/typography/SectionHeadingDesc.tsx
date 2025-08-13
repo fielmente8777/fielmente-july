@@ -14,6 +14,7 @@ interface SectionHeadingDescProps {
   titleClassName?: string;
   subTitleClassName?: string;
   descriptionClassName?: string;
+  mdTextCenter?: boolean;
 }
 
 const SectionHeadingDesc: React.FC<SectionHeadingDescProps> = ({
@@ -25,6 +26,7 @@ const SectionHeadingDesc: React.FC<SectionHeadingDescProps> = ({
   titleColor,
   subTitleColor,
   smTextCenter = false,
+  mdTextCenter = false,
   wrapperClassName="",
   titleClassName="",
   subTitleClassName="",
@@ -35,14 +37,14 @@ const SectionHeadingDesc: React.FC<SectionHeadingDescProps> = ({
       {title && (
         <Headings
           level={2}
-          className={`${titleClassName} ${textcenter ? "text-center mx-auto" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${titleColor ? `text-${titleColor}` : "text-secondary"} $ shadow-inner uppercase font-medium bg-[#FFE7DE] py-2 px-4 w-fit rounded-full`}
+          className={`${titleClassName} ${mdTextCenter ? "md:text-center" : ""} ${textcenter ? "text-center mx-auto" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${titleColor ? `text-${titleColor}` : "text-secondary"} $ shadow-inner uppercase font-medium bg-[#FFE7DE] py-2 px-4 w-fit rounded-full`}
           heading={title}
         />
       )}
       {subTitle && (
         <Headings
           level={3}
-          className={`${subTitleClassName} ${textcenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} lg_font_s font-medium`}
+          className={`${subTitleClassName} ${mdTextCenter ? "md:text-center" : ""} ${textcenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} lg_font_s font-medium`}
           heading={subTitle}
         />
       )}
