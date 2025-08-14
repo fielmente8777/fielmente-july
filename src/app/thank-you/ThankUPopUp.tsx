@@ -32,7 +32,7 @@ const ThankUPopUp = () => {
               <div>
                 <Link
                   href={"/"}
-                  className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
+                  className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.5] aspect-[3/1]"
                 >
                   <Image src="/Logo2.png" alt="fielment logo" fill />
                 </Link>
