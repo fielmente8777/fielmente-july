@@ -1,119 +1,134 @@
 "use client";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
+import { Container, Section, SectionWithContainer } from "@/components";
+import Link from "next/link";
+import { footerData } from "@/components/footers/footerData";
+import {
+  ImageIcon,
+  Mail,
+  ArrowOrange,
+  ImageTwoIcon,
+  WhatsAppIcon2,
+  ArrowIcon2,
+} from "@/utils/icons";
+import { contacts } from "../../../contact";
 
 const ThankUPopUp = () => {
-  // const [name, setName] = useState("Guest"); // Default value
+  // back to website
   const router = useRouter();
-
-  // useEffect(() => {
-  //   const params = new URLSearchParams(window.location.search);
-  //   const nameParam = params.get("name");
-  //   if (nameParam) {
-  //     setName(nameParam);
-  //   }
-  // }, []);
-  // useEffect(() => {
-  //   // Google Ads Conversion Tracking
-  //   const script = document.createElement('script');
-  //   script.innerHTML = `
-  //      gtag('event', 'conversion', {'send_to': 'AW-10860806708/6GvFCPKGytgZELSE67oo'});
-  //   `;
-  //   document.head.appendChild(script);
-  // }, []);
-
-  const link = [
-    {
-      label: "What we do",
-      link: "/hospitality-marketing-services",
-    },
-    {
-      label: "Who we are",
-      link: "/about-fielmente-best-hospitality-marketing-agency",
-    },
-    {
-      label: "Insights",
-      link: "/#testimonials",
-    },
-  ];
-
-  const redirectToHome = () => {
+  const handleBackToWebsite = () => {
     router.push("/");
   };
 
-
   return (
-    <section>
-      <div className="max-w-[1900px] mx-auto">
-        <div className="relative w-full h-[80vh] lg:h-screen aspect-[16/9] ">
-          <Image
-            src="/thank-u.webp"
-            alt="hospitality marketing"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute flex flex-col lg:items-start px-5 md:p-24 lg:justify-start gap-8 justify-center h-full w-full bg-black/20">
-            <div className="flex flex-col max-width lg:items-start lg:justify-start justify-center">
-              <h1 className="text-[28px]/[38px]  lg:text-4xl font-medium text-[#4486C5] mb-4">
-                Leave it with us
-                <br />
-                {/* {name} */}
+    <Section defaultPadding={false} className="md:p-2 thank_you_bg">
+      <div className="thank_you_page w-full ">
+        {/* navigation */}
+        <div className="md_box_shadow py-7">
+          <Container>
+            <nav className="flex items-center justify-between ">
+              <div>
+                <Link
+                  href={"/"}
+                  className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
+                >
+                  <Image src="/Logo2.png" alt="fielment logo" fill />
+                </Link>
+              </div>
+              {footerData.linksData.slice(0, 1).map((item, index) => (
+                <ul className="flex items-center gap-4" key={index}>
+                  {item.listOfLinks.map((link, index) => (
+                    <li key={index} className="flex items-center">
+                      <Link
+                        href={link.href}
+                        target="_blank"
+                        className="flex items-center justify-center hover:bg-secondary text-secondary hover:text-white bg-white rounded-lg w-10 h-10 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 shadow-4d"
+                      >
+                        <span className="sr-only">{link.label}</span>
+                        {link.icon}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </nav>
+          </Container>
+        </div>
+        <SectionWithContainer defaultPadding={false} sectionClassName="py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex flex-col md:gap-8 gap-6">
+              <div className="max-md:mx-auto">
+                <Mail />
+              </div>
+
+              <h1 className="md:text-[2.75rem] text-[2rem] max-md:text-center text-white font-semibold max-w-md">
+                Thank you for submitting!
               </h1>
-              <p className="text-[18px] lg:text-[24px] text-white/80 mb-8 leading-12 text-start">
-                We&apos;ve got your request and we&apos;ll get
-                <br className="hidden lg:block" />
-                back to you as soon as we can.
+              <div className="md:hidden">
+                <ImageTwoIcon />
+              </div>
+              <p className="text-white md:text-[1.75rem] text-xl max-md:text-center">
+                We’ve received your request and will get back to you shortly.
               </p>
               <button
-                className="border w-max border-white text-white py-3 px-6 text-[14px] lg:text-2xl rounded-full shadow-inner hover:bg-[#4486C5] transition duration-200"
-                onClick={redirectToHome}
+                onClick={handleBackToWebsite}
+                aria-label="back to website"
+                className="text-secondary w-fit max-md:mx-auto text-lg font-medium bg-white py-3 px-8 border border-secondary rounded-lg btn-shadow2"
               >
                 Back to website
               </button>
             </div>
-            <div className="flex flex-col max-width lg:items-start lg:justify-start gap-8 justify-center">
-              <Link
-                href="https://fielmente.com"
-                target="_blank"
-                className="text-2xl text-white/60 hover:text-[#4486C5] transition duration-200"
-              >
-                Learn more about Fielmente.
-              </Link>
-              <div className="flex gap-4 lg:gap-4">
-                {link.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.link}
-                    className="text-[12px] lg:text-2xl text-white group hover:text-[#4486C5] transition duration-200 flex max-sm:justify-between items-center gap-2"
-                  >
-                    {item.label}
-                    <span className="sr-only">{item.label}</span>
-
-                    <span
-                      aria-hidden="true"
-                      className="text-[#01000E] bg-white rounded-full transition duration-200 group-hover:bg-[#4486C5] group-hover:text-white flex items-center justify-center w-7 p-1 aspect-square text-lg font-bold"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                      </svg>
-                    </span>
-                  </Link>
-                ))}
-              </div>
+            <div className="md:block hidden">
+              <ImageIcon />
             </div>
           </div>
-        </div>
+          <div className="bg-[linear-gradient(to_right,_#110d3c,_#FFFFFF,_#110D3c)] md:my-6 my-10 h-[0.8px] w-full max-w-[90rem] mx-auto" />
+
+          <div className="w-full md:flex hidden items-center justify-center md:gap-10">
+            <span>
+              <ArrowOrange />
+            </span>
+            <div className="grid grid-cols-3 gap-4 max-w-[338px]">
+              <div className="w-full relative aspect-[1/1]">
+                <Image src="/qr-code.png" alt="QR Code" fill />
+              </div>
+              <div className="col-span-2 flex flex-col justify-between">
+                <h3 className="text-white md:text-[2rem] font-semibold">
+                  Scan Me
+                </h3>
+                <p className="text-white text-xl">
+                  To connect with us on <b>WhatsApp!</b>
+                </p>
+              </div>
+            </div>
+            <span className="rotate-180">
+              <ArrowOrange />
+            </span>
+          </div>
+          <div className="md:hidden flex flex-col gap-6">
+            <h2 className="text-white text-center text-[1.75rem] font-semibold">Tap Here </h2>
+            <div className="flex items-center justify-center gap-6">
+              <span>
+                <ArrowIcon2 />
+              </span>
+              <Link
+                href={`https://wa.me/${contacts.phone_1.replace(/\s+/g, "")}`}
+              >
+                <WhatsAppIcon2 />
+              </Link>
+              <span className="rotate-180">
+                <ArrowIcon2 />
+              </span>
+            </div>
+            <p className="text-white text-xl text-center max-w-[15rem] mx-auto">
+              To connect with us on <b>WhatsApp!</b>
+            </p>
+          </div>
+        </SectionWithContainer>
       </div>
-    </section>
+    </Section>
   );
 };
 
