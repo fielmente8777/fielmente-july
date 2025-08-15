@@ -18,7 +18,7 @@ const Banner: React.FC<BannerPropsType> = ({
   return (
     <Section
       defaultPadding={false}
-      className="relative overflow-hidden w-full md:aspect-[16/8] aspect-[4/4.5] bg1"
+      className="relative overflow-hidden w-full md:aspect-[16/8.7] aspect-[4/4.5] bg1"
     >
       <Image
         src={imgSrc}

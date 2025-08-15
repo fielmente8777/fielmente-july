@@ -13,6 +13,7 @@ import {
   WhatsAppIcon2,
   ArrowIcon2,
 } from "@/utils/icons";
+
 import { contacts } from "../../../contact";
 
 const ThankUPopUp = () => {
@@ -34,7 +35,7 @@ const ThankUPopUp = () => {
                   href={"/"}
                   className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.5] aspect-[3/1]"
                 >
-                  <Image src="/Logo2.png" alt="fielment logo" fill />
+                  <Image src="/logo2.png" alt="fielment logo" fill />
                 </Link>
               </div>
               {footerData.linksData.slice(0, 1).map((item, index) => (
@@ -56,8 +57,9 @@ const ThankUPopUp = () => {
             </nav>
           </Container>
         </div>
+        {/* main content */}
         <SectionWithContainer defaultPadding={false} sectionClassName="py-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0">
             <div className="flex flex-col md:gap-8 gap-6">
               <div className="max-md:mx-auto">
                 <Mail />
@@ -66,7 +68,7 @@ const ThankUPopUp = () => {
               <h1 className="md:text-[2.75rem] text-[2rem] max-md:text-center text-white font-semibold max-w-md">
                 Thank you for submitting!
               </h1>
-              <div className="md:hidden">
+              <div className="md:hidden w-full">
                 <ImageTwoIcon />
               </div>
               <p className="text-white md:text-[1.75rem] text-xl max-md:text-center">
@@ -80,8 +82,10 @@ const ThankUPopUp = () => {
                 Back to website
               </button>
             </div>
-            <div className="md:block hidden">
-              <ImageIcon />
+            <div className="md:block hidden aspect-[4/3] relative">
+              <div className="absolute inset-0">
+                <ImageIcon />
+              </div>
             </div>
           </div>
           <div className="bg-[linear-gradient(to_right,_#110d3c,_#FFFFFF,_#110D3c)] md:my-6 my-10 h-[0.8px] w-full max-w-[90rem] mx-auto" />
