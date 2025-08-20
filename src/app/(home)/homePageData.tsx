@@ -216,7 +216,7 @@ export const homePageData = {
       "Glimpse into Our Client Works that <b>Made an</b> <i>Impact!</i>",
     description:
       "Highlighting exceptional client projects and celebrating collaborations that drive innovation and results.",
-    imagesSrc: ["/ourWork/im1.png"],
+    imagesSrc: ["/ourWork/client1.webp", "/ourWork/client2.webp", "/ourWork/client3.webp"],
     linksData: [
       {
         label: "Contact Us",

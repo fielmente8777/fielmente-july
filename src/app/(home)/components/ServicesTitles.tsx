@@ -18,7 +18,7 @@ const ServicesTitles = ({ title }: { title: string[] }) => {
           disableOnInteraction: false,
           pauseOnMouseEnter: false,
         }}
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={24}
         breakpoints={{
           768: {
@@ -26,9 +26,13 @@ const ServicesTitles = ({ title }: { title: string[] }) => {
           },
         }}
         renderSlide={(item, index) => (
-          <div key={index} className="flex items-center justify-center gap-2 py-3 w-full relative">
-            <p className="text-white text-nowrap text-xl">{item}</p>
-            <span className="text-white absolute -right-[4.5px]">•</span>
+          <div key={index} className="py-3 w-full">
+            <div className="relative">
+              <p className="text-white text-nowrap text-xl">{item}</p>
+              <span className="text-white absolute right-[5px] top-1/2 translate-y-[-50%]">
+                •
+              </span>
+            </div>
           </div>
         )}
       />

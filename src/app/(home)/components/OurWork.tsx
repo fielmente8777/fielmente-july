@@ -1,11 +1,15 @@
 "use client";
 import { OurWorkPropsType } from "@/@types/@types";
-import { SectionHeadingDesc, SectionWithContainer } from "@/components";
+import {
+  Section,
+  SectionHeadingDesc,
+  SectionWithContainer,
+} from "@/components";
 import SwiperCarousel from "@/components/SwiperCarousel";
 import { AppContext } from "@/contextApi/AppContext";
 import Image from "next/image";
 import { useContext } from "react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 
 const OurWork: React.FC<OurWorkPropsType> = ({
   title,
@@ -16,26 +20,68 @@ const OurWork: React.FC<OurWorkPropsType> = ({
 }) => {
   const { setIsOpenPopupForm } = useContext(AppContext);
   return (
-    <SectionWithContainer  sectionClassName="relative before:content-[''] before:inset-0 before:absolute before:bg-[url('/home/bg.png')] before:bg-cover before:bg-no-repeat md:before:w-[621px] md:before:h-[560px] before:h-[210px] before:bg-center before:opacity-10 before:z-[-1] after:content-[''] after:inset-0 after:absolute after:bg-[#f5f5f5] after:z-[-2]">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center md:gap-8">
-        <div className="md:col-span-2">
-          <SwiperCarousel
-            data={imagesSrc}
-            slidesPerView={1}
-            spaceBetween={24}
-            modules={[Autoplay]}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
-            renderSlide={(item, index) => (
-              <div key={index} className="w-full h-full relative aspect-[4/2.2]">
-                <Image
-                  src={item}
-                  alt="img"
-                  fill
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            )}
-          />
+    <Section className="relative after:content-[''] after:inset-0 after:absolute after:bg-[#f5f5f5] after:z-[-2]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center md:gap-8 xl:max-w-[1420px] lg:max-w-[1024px] w-full max-md:px-4">
+        <div className="md:col-span-2 md:space-y-8 space-y-4 border-y border-r max-md:border-l overflow-hidden border-secondary md:rounded-tr-[40px] max-md:rounded-3xl md:rounded-br-[40px] md:py-9 py-3">
+          <div className="demo">
+            <SwiperCarousel
+              data={imagesSrc ?? []}
+              slidesPerView={2.5}
+              spaceBetween={16}
+              loop={true}
+              speed={5000}
+              modules={[Autoplay, FreeMode]}
+              freeMode={true}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+              }}
+              renderSlide={(item, index) => (
+                <div
+                  key={index}
+                  className="w-full h-full relative md:aspect-[4/2] aspect-[4/2.5] "
+                >
+                  <Image
+                    src={item}
+                    alt="img"
+                    fill
+                    className="object-top object-cover rounded-lg"
+                  />
+                </div>
+              )}
+            />
+          </div>
+          <div className="demo">
+            <SwiperCarousel
+              data={imagesSrc ?? []}
+              slidesPerView={2.5}
+              spaceBetween={16}
+              loop={true}
+              speed={5000}
+              modules={[Autoplay, FreeMode]}
+              freeMode={true}
+              dir="rtl"
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+              }}
+              renderSlide={(item, index) => (
+                <div
+                  key={index}
+                  className="w-full h-full relative md:aspect-[4/2] aspect-[4/2.5]"
+                >
+                  <Image
+                    src={item}
+                    alt="img"
+                    fill
+                    className="object-top object-cover rounded-lg"
+                  />
+                </div>
+              )}
+            />
+          </div>
         </div>
         <div className="md:col-span-1">
           <div className="space-y-6">
@@ -59,7 +105,7 @@ const OurWork: React.FC<OurWorkPropsType> = ({
           </div>
         </div>
       </div>
-    </SectionWithContainer>
+    </Section>
   );
 };
 
