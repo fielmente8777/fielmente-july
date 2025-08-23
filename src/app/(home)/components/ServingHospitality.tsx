@@ -45,8 +45,9 @@ const ServingHospitality: React.FC<ServingHospitalityPropsType> = ({
                   fill
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center z-10 ">
                   <h3 className="text-white text-center lg_font_s font-medium uppercase">{item.title}</h3>
+                  <p className="bg-white md:text-xl text-lg rounded-[8px] p-3 text-primary">Marketing</p>
                 </div>
               </div>
             )}

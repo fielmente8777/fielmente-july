@@ -14,7 +14,7 @@ import { data } from "@/utils/testimonialsData";
 
 export const homePageData = {
   bannerData: {
-    imgSrc: "/banner.jpg",
+    imgSrc: "/banner_11zon.jpg",
     title: "Fielmente - India’s Leading",
     subTitle: `<span>Hospitality Marketing </span><i>Agency</i>`,
     description:
