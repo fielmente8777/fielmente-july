@@ -165,7 +165,7 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`grid grid-cols-4 rounded-full overflow-hidden border border-white bg-white/40`}
+      className={`grid grid-cols-4 rounded-full overflow-hidden glassy-card p-2 `}
     >
       <div className="col-span-3 grid grid-cols-3 py-2">
         {formData.map((data, index) => (
@@ -201,13 +201,13 @@ const Form = () => {
         ))}
       </div>
 
-      <button className="w-full text-center bg-secondary text-white justify-center border-orange-primary text-md px-8 h-full   font-semibold hover:bg-white hover:text-secondary duration-300 rounded-full border-white hover:scale-105 border">
+      <button className="w-full text-center bg-white text-black border-orange-primary text-md px-8 h-full   font-semibold  duration-300 rounded-full border-white hover:scale-105 border">
         {formRes ? (
           "Loading...."
         ) : (
           <span className="flex items-center justify-center gap-2">
             Get a FREE Quote!
-            <span>
+            <span className="aspect-square bg-black text-white rounded-full flex items-center justify-center">
               <ArrowBtn />
             </span>
           </span>

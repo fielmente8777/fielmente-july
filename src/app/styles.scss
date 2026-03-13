@@ -14,35 +14,6 @@
         box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
     }
 
-    .xx_lg_font_s {
-        font-size: 4.5rem; // 72px
-        @media (max-width: 768px) {
-            font-size: 2rem;
-        }
-    }
-
-    .x_lg_font_s {
-        font-size: 3.5rem; // 56px
-        @media (max-width: 768px) {
-            font-size: 1.5rem;
-        }
-    }
-
-    .lg_font_s {
-        font-size: 2.75rem; // 44px
-        @media (max-width: 768px) {
-            font-size: 1.75rem; // 28px
-        }
-    }
-
-    .md_font_s {
-        font-size: 2rem; // 32px
-    }
-
-    .sm_font_s {
-        font-size: 1.75rem; // 28px
-    }
-
     // container sizes
 
     .max_screen_width {
@@ -60,11 +31,11 @@
         padding-inline: 1rem;
         @media (min-width: 768px) {
             max-width: 720px;
-        padding-inline: 1rem;
+            padding-inline: 1rem;
         }
         @media (min-width: 992px) {
             max-width: 960px;
-        padding-inline: 1rem;
+            padding-inline: 1rem;
         }
         @media (min-width: 1200px) {
             max-width: 1140px;
@@ -75,59 +46,35 @@
             padding-inline: 0;
         }
     }
+}
 
-    .shadow-4d {
-        &:active {
-            box-shadow: 0px 0px 0px 5px rgba(242, 102, 51, 0.5);
-        }
+.inter-link {
+    a {
+        text-decoration: underline;
+        color: var(--primary);
+        cursor: pointer;
+        font-weight: 700;
     }
-
-    .btn-shadow2 {
-        transition: all 0.3s ease-in-out;
-        box-shadow:
-            25px 25px 0px 0px rgba(242, 102, 51, 0.05),
-            20px 20px 0px 0px rgba(242, 102, 51, 0.1),
-            15px 15px 0px 0px rgba(242, 102, 51, 0.2),
-            10px 10px 0px 0px rgba(242, 102, 51, 0.3),
-            5px 5px 0px 0px rgba(242, 102, 51, 0.4);
-        &:hover {
-            box-shadow:
-                30px 30px 0px 0px rgba(242, 102, 51, 0.05),
-                25px 25px 0px 0px rgba(242, 102, 51, 0.05),
-                20px 20px 0px 0px rgba(242, 102, 51, 0.05),
-                15px 15px 0px 0px rgba(242, 102, 51, 0.1),
-                10px 10px 0px 0px rgba(242, 102, 51, 0.2),
-                5px 5px 0px 0px rgba(242, 102, 51, 0.3),
-                0px 0px 0px 0px rgba(242, 102, 51, 0.4);
-            scale: 1.05;
-            background-color: var(--secondary);
-            color: white;
-        }
-        &:active {
-            box-shadow: none;
-            scale: 0.95;
-        }
+}
+.inter-link-2 {
+    a {
+        text-decoration: underline;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 700;
     }
 }
 
-// heading
-.heading {
+.span-color {
     span {
-        font-weight: 600;
-    }
-    i {
-        color: var(--secondary);
+        color: #ff824f;
     }
 }
-.text-color {
-    span,
-    b,
-    i,
-    Strong {
-        color: var(--secondary);
+.span-color-2 {
+    span {
+        color: #ff9062;
     }
 }
-
 // navbar
 .nav {
     a {
@@ -238,170 +185,6 @@
     }
 }
 
-// bg images class
-.about-class {
-    position: relative;
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-    }
-    &::before {
-        top: 30;
-        right: 0;
-        width: 286px;
-        height: 56px;
-        background-image: url("/frame.png");
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-        @media (max-width: 768px) {
-            right: 50%;
-            transform: translateX(50%);
-        }
-    }
-    &::after {
-        bottom: -19%;
-        left: -12%;
-        width: 490px;
-        height: 490px;
-        background-image: url("/home/vector.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        z-index: -1;
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-}
-
-.work_bg_class {
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        background: no-repeat;
-        background-size: contain;
-        background-position: center;
-        z-index: -1;
-        width: 248px;
-        height: 27.67px;
-    }
-    &::before {
-        top: 45%;
-        left: 26%;
-        background-image: url("/home/arrowdown.png");
-    }
-    &::after {
-        top: 55%;
-        left: 57%;
-        background-image: url("/home/arrowup.png");
-    }
-    @media (max-width: 768px) {
-        &::before {
-            display: none;
-        }
-        &::after {
-            display: none;
-        }
-    }
-}
-
-.bg1,
-.bg2,
-.bg3 {
-    position: relative;
-    &::after,
-    &::before {
-        content: "";
-        position: absolute;
-        background: no-repeat;
-        background-size: contain;
-        background-position: center;
-        z-index: 99999;
-    }
-}
-
-.bg1 {
-    overflow: hidden;
-    &::after {
-        top: 4rem;
-        right: -1.98rem;
-        width: 142.24px;
-        height: 150.89px;
-        background-image: url("/home/group2.png");
-        @media (max-width: 768px) {
-            top: 0;
-            right: -2rem;
-            width: 100px;
-            height: 100px;
-        }
-    }
-    &::before {
-        bottom: 0;
-        left: -1.98rem;
-        width: 95.22px;
-        height: 101.01px;
-        background-image: url("/home/Group.png");
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-}
-
-.bg2 {
-    &::after {
-        top: -1.98rem;
-        left: 16.5%;
-        width: 68.9px;
-        height: 9.94px;
-        background-image: url("/home/vector6.png");
-        @media (max-width: 768px) {
-            top: -1.98rem;
-            left: 4%;
-        }
-    }
-    &::before {
-        bottom: -180px;
-        left: 25px;
-        width: 80px;
-        height: 16px;
-        background-image: url("/home/frame1.png");
-        @media (max-width: 768px) {
-            bottom: -40px;
-            left: 20px;
-            width: 60px;
-            height: 15px;
-        }
-    }
-}
-
-.bg3 {
-    &::after {
-        top: -86%;
-        left: -15%;
-        width: 569.58px;
-        height: 561.75px;
-        rotate: 5deg;
-        background: cover;
-        background-image: url("/home/Vector4.png");
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-    &::before {
-        bottom: -450px;
-        right: -150px;
-        width: 538px;
-        height: 400px;
-        background-image: url("/home/Vector2.png");
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-}
-
 .thank_you_page {
     position: relative;
     &::before,
@@ -435,7 +218,7 @@
     }
 }
 
-.thank_you_bg{
+.thank_you_bg {
     position: relative;
     &::before,
     &::after {
@@ -463,4 +246,82 @@
     @media (max-width: 768px) {
         box-shadow: 0 7px 29px rgba(100, 100, 111, 0.2);
     }
+}
+
+.marquee-wrapper {
+    display: flex;
+    width: max-content;
+    animation: marquee 18s linear infinite;
+}
+
+.marquee-track {
+    display: flex;
+    white-space: nowrap;
+}
+
+.marquee-item {
+    display: inline-flex;
+    align-items: center; /* vertical center */
+    gap: 32px; /* spacing like image */
+    margin-right: 32px;
+    white-space: nowrap;
+}
+
+.separator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.elevate-brand {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+    &::after {
+        background-color: #050510;
+        z-index: -2;
+    }
+    &::before {
+        background-image: url("/home/bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+.glassy-card {
+    background: hsla(0, 0%, 100%, 0.18);
+    // border: 0.75px solid hsla(0, 0%, 100%, 0.1);
+    box-shadow:
+        inset 0 0 8px 1px hsla(0, 0%, 100%, 0.25),
+        -1px 0px 0px 1px hsla(0, 0%, 100%, 0.45),
+        1px 0px 0px 1px hsla(0, 0%, 100%, 0.45);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+.glassy-card-2 {
+    background: #0a0a0a;
+    border: 0.75px solid hsla(0, 0%, 100%, 0.1);
+    box-shadow:
+        -1px 0px 2px 1px hsla(0, 0%, 100%, 1),
+        1px 0px 2px 1px hsla(0, 0%, 100%, 1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }

@@ -1,12 +1,10 @@
-"use client"
 import { BannerPropsType } from "@/@types/@types";
-import { Container, Section } from "../sectionComponants";
 import Image from "next/image";
-import { Headings } from "../typography";
 import Form from "../forms/Form";
-import { ArrowBtn } from "@/utils/icons";
-import { useContext } from "react";
-import { AppContext } from "@/contextApi/AppContext";
+import { Container, SectionWithContainer } from "../sectionComponants";
+import { Headings } from "../typography";
+import Link from "next/link";
+import AnimatedWord from "./ui/AnimatedWord";
 
 const Banner: React.FC<BannerPropsType> = ({
   title,
@@ -14,67 +12,52 @@ const Banner: React.FC<BannerPropsType> = ({
   description,
   imgSrc,
 }) => {
-  const { setIsOpenPopupForm } = useContext(AppContext);
   return (
-    <Section
+    <SectionWithContainer
       defaultPadding={false}
-      className="relative overflow-hidden w-full md:aspect-[16/8.7] aspect-[4/4.5] bg1"
+      sectionClassName="py-7"
+      containerClassName=""
     >
-      <Image
-        src={imgSrc}
-        alt={title}
-        fill
-        className="object-cover md:object-top"
-        priority
-        loading="eager"
-        sizes="100vw"
-      />
-      <Image
-        src={"/home/Vector3.png"}
-        alt={title}
-        width={525}
-        height={276.87}
-        className="object-cover md:block  hidden absolute top-28 left-[42%] -translate-x-[42%] -translate-y-1/2 z-50"
-        priority
-        loading="eager"
-        sizes="100vw"
-      />
-      <div className="absolute inset-0 bg-primary/90 flex items-center justify-center">
-        <Container className="bg2">
-          <div className="flex flex-col gap-8 bg3 pointer-events-none">
-            <Headings
-              level={1}
-              className="text-white text-center x_lg_font_s leading-2"
-              heading={title}
-            />
+      <div className="relative overflow-hidden w-full lg:aspect-[4/1.9255] ">
+        <Image
+          src={imgSrc}
+          alt={title}
+          fill
+          className="object-contain"
+          priority
+          loading="eager"
+          sizes="100vw"
+        />
 
-            <Headings
-              level={2}
-              className="text-white text-center xx_lg_font_s heading"
-              heading={subTitle}
-            />
-            <div className="max-w-5xl mx-auto md:block hidden pointer-events-auto">
-              <Form />
+        <div className="absolute inset-0  z-20">
+          <Container className="mt-20">
+            <div className="flex flex-col gap-7">
+              {/* <div className="flex justify-center items-center gap-2 px-2.5 py-1.5 bg-white/10 backdrop-blur-xs text-white shadow-2xl shadow-white/15 rounded-full w-fit mx-auto"> */}
+              <div className="flex justify-center items-center gap-2 px-2.5 py-1.5 text-white rounded-full w-fit mx-auto glassy-card">
+                <Image src="/home/Frame-3.png" alt="hotels" width={40} height={20} />
+                <p>{title}</p>
+              </div>
+              <h1 className="text-white text-center md:text-[2.5rem]/tight font-semibold pointer-events-auto">
+                Fielmente - India’s Leading <br />
+                <Link className="inter-link" href="/">
+                  <span>
+                    <AnimatedWord /> Marketing{" "}
+                  </span>
+                  <i> Agency</i>
+                </Link>
+              </h1>
+
+              <p className="text-white text-center md:text-lg max-w-5xl mx-auto">
+                {description}
+              </p>
+              <div className="max-w-5xl mx-auto">
+                <Form />
+              </div>
             </div>
-            <p className="text-white text-center md:text-xl max-w-5xl mx-auto">
-              {description}
-            </p>
-
-            <button
-              onClick={() => setIsOpenPopupForm(true)}
-              className="w-fit pointer-events-auto mx-auto py-3 text-center bg-secondary text-white justify-center border-orange-primary text-md px-8 h-full   font-semibold hover:bg-white hover:text-secondary duration-300 rounded-full border-white hover:scale-105 border"
-            >
-              <span className="flex items-center justify-center gap-2">
-                Get a FREE Quote!
-                <span>
-                  <ArrowBtn />
-                </span>
-              </span>
-            </button>
-          </div>
-        </Container>
+          </Container>
+        </div>
       </div>
-    </Section>
+    </SectionWithContainer>
   );
 };
 

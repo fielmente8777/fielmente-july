@@ -26,22 +26,17 @@ interface FooterLinksPropstype {
 
 export const SocialLinks: Link[] = [
   {
-    label: Object.keys(contacts.socialContacts)[0],
-    href: contacts.socialContacts.facebook,
-    icon: <FillFaceBookIcon />,
-  },
-  {
-    label: Object.keys(contacts.socialContacts)[1],
-    href: contacts.socialContacts.instagram,
-    icon: <OutLineInstagramIcon />,
-  },
-  {
     label: Object.keys(contacts.socialContacts)[2],
     href: contacts.socialContacts.linkedin,
     icon: <FillLinkedinIcon />,
   },
   {
-    label: Object.keys(contacts.socialContacts)[3],
+    label: Object.keys(contacts.socialContacts)[0],
+    href: contacts.socialContacts.facebook,
+    icon: <FillFaceBookIcon />,
+  },
+  {
+    label: Object.keys(contacts.socialContacts)[2],
     href: contacts.socialContacts.twitter,
     icon: <OutLineXIcon />,
   },
@@ -49,11 +44,10 @@ export const SocialLinks: Link[] = [
 
 export const footerData: FooterLinksPropstype = {
   logo: "/logo2.png",
-  description:
-    "Fielmente is an advisory, consultation and marketing firm dedicated to F&B and the hospitality industry.",
+  description: "© Fielmente Hospitality Marketing Agency",
   linksData: [
     {
-      title: "Follow Us",
+      title: "Follow Fielmente",
       listOfLinks: SocialLinks,
     },
     {

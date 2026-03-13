@@ -1,20 +1,15 @@
 "use client";
-import { HiMenuAlt3 } from "react-icons/hi";
-import { IoClose } from "react-icons/io5";
-import { useContext } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { OutlineDrpopdown } from "@/utils/icons";
 import { AppContext } from "@/contextApi/AppContext";
-import { navLinks } from "./navLinks";
-import { Container } from "../sectionComponants";
-import { AiOutlineMenu } from "react-icons/ai";
+import { OutlineDrpopdown } from "@/utils/icons";
+import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useContext } from "react";
+import { Container } from "../sectionComponants";
+import { navLinks } from "./navLinks";
 const Header = () => {
   const {
-    isOpenPopupForm,
     setIsOpenPopupForm,
-    isMobileNavOpen,
     setIsMobileNavOpen,
   } = useContext(AppContext);
 

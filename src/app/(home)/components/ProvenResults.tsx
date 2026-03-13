@@ -1,0 +1,51 @@
+import { SectionWithContainer } from "@/components";
+import LinkButton from "@/components/buttons/LinkButton";
+import SectionHeading from "@/components/typography/SectionHeadingDesc";
+
+interface Props {
+  title: string;
+  subTitle: string;
+  link: {
+    label: string;
+    href: string;
+  };
+  data: {
+    number: string;
+    description: string;
+  }[];
+}
+
+const ProvenResults: React.FC<Props> = ({ title, subTitle, link, data }) => {
+  return (
+    <SectionWithContainer sectionClassName="bg-[#F9FAFB]">
+      <div className="bg-white p-6 rounded-[20px] grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="space-y-6">
+          <SectionHeading
+            title={title}
+            subTitle={subTitle}
+            wrapperClassName="gap-4"
+          />
+
+          <LinkButton
+            href={link.href}
+            label={link.label}
+            className="w-fit rounded-full bg-[#1B1B1B] text-white font-medium"
+          />
+        </div>
+        <div className="flex justify-between gap-4">
+          {data.map((item, index) => (
+            <div key={index} className="flex flex-col gap-2">
+              <h3
+                className="text-primary text-5xl font-bold"
+                dangerouslySetInnerHTML={{ __html: item.number }}
+              ></h3>
+              <p className="text-[#6B7280]">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </SectionWithContainer>
+  );
+};
+
+export default ProvenResults;

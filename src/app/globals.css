@@ -16,8 +16,9 @@
 
   /* colors */
   @theme inline {
-    --color-primary: var(--primary);
-    --color-secondary: var(--secondary);
+    --color-primary: #1B2231;
+    --color-secondary: #424E61;
+    --color-tertiary: #FF824F;
     --color-light: var(--light);
     --color-skyBlue: var(--skyBlue);
     --color-sapphireBlue: var(--sapphireBlue);
@@ -28,7 +29,7 @@
 
   /* typography */
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-jakarta);
   }
 
   a,
@@ -37,3 +38,12 @@
   }
 
 }
+
+
+/* .image-container {
+    width: 100%;
+    overflow: hidden;
+
+    clip-path: path(
+      "M 0 40 A 40,40 0,0,1 40 0 L 1280 0 A 40,40 0,0,1 1320 40 L 1320 540 A 40,40 0,0,1 1280 580 L 690 580 A 25,25 0,0,0 680 583 L 6 700 ");
+} */

@@ -1,62 +1,107 @@
+import Image from "next/image";
 import Headings from "./Headings";
-import dynamic from "next/dynamic";
 
 interface SectionHeadingDescProps {
   title?: string;
   subTitle?: string;
-  description?: string;
-  descriptionColor?: string;
-  textcenter?: boolean;
+
+  level?: 1 | 2 | 3 | 4 | 5 | 6; // base level (title)
+  subLevel?: 2 | 3 | 4 | 5 | 6; // optional override
+
+  textCenter?: boolean;
+  mdTextCenter?: boolean;
+  smTextCenter?: boolean;
   titleColor?: string;
   subTitleColor?: string;
-  smTextCenter?: boolean;
   wrapperClassName?: string;
   titleClassName?: string;
   subTitleClassName?: string;
-  descriptionClassName?: string;
-  mdTextCenter?: boolean;
+  icon?: boolean;
+  logo?: boolean;
+  fontPrimary?: boolean;
 }
 
-const SectionHeadingDesc: React.FC<SectionHeadingDescProps> = ({
+const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   title,
   subTitle,
-  description,
-  descriptionColor,
-  textcenter = false,
+  icon = true,
+  textCenter = false,
   titleColor,
   subTitleColor,
   smTextCenter = false,
   mdTextCenter = false,
-  wrapperClassName="",
-  titleClassName="",
-  subTitleClassName="",
-  descriptionClassName="",
+  wrapperClassName = "",
+  titleClassName = "",
+  subTitleClassName = "",
+  level,
+  subLevel,
 }) => {
+  const titleLevel = level ?? 2;
+  const subTitleLevel = subLevel ?? Math.min(titleLevel + 1, 6);
+
   return (
-    <div className={`flex flex-col w-full gap-4 ${wrapperClassName}`}>
+    <div className={`flex flex-col gap-1 icon ${wrapperClassName}`}>
       {title && (
-        <Headings
-          level={2}
-          className={`${titleClassName} ${mdTextCenter ? "md:text-center" : ""} ${textcenter ? "text-center mx-auto" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${titleColor ? `text-${titleColor}` : "text-secondary"} $ shadow-inner uppercase font-medium bg-[#FFE7DE] py-2 px-4 w-fit rounded-full`}
-          heading={title}
-        />
+        <div
+          className={`${icon && "lg:flex items-center gap-4"} ${textCenter && "mx-auto"}`}
+        >
+          {icon && (
+            <span className="">
+              <IconBox />
+            </span>
+          )}
+
+          <Headings
+            level={titleLevel}
+            heading={title}
+            className={`${titleClassName} ${
+              mdTextCenter ? "md:text-center" : ""
+            } ${textCenter ? "text-center" : ""} ${
+              smTextCenter ? "max-md:text-center" : ""
+            } ${
+              titleColor ? `text-${titleColor}` : "text-secondary"
+            }  text-sm font-bold`}
+          />
+        </div>
       )}
       {subTitle && (
         <Headings
-          level={3}
-          className={`${subTitleClassName} ${mdTextCenter ? "md:text-center" : ""} ${textcenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} lg_font_s font-medium`}
+          level={subTitleLevel}
+          className={`md:text-[2.5rem]/[3rem] font-semibold ${subTitleClassName} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} ${
+            mdTextCenter ? "md:text-center" : ""
+          } ${textCenter ? "text-center mx-auto" : ""} ${
+            smTextCenter ? "max-md:text-center" : ""
+          }`}
           heading={subTitle}
         />
-      )}
-      {description && (
-        <p
-          className={`${descriptionClassName} ${textcenter ? "text-center" : ""} ${smTextCenter ? "max-md:text-center" : ""} ${descriptionColor ? `text-${descriptionColor}` : "text-light"} md:text-lg text-base`}
-        >
-          {description}
-        </p>
       )}
     </div>
   );
 };
 
-export default SectionHeadingDesc;
+export default SectionHeading;
+
+export const IconBox = () => (
+  <svg
+    width={10}
+    height={10}
+    viewBox="0 0 10 10"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect width={10} height={10} rx={2} fill="url(#paint0_radial_1_4727)" />
+    <defs>
+      <radialGradient
+        id="paint0_radial_1_4727"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(5 5) rotate(90) scale(5)"
+      >
+        <stop stopColor="#91A4E8" />
+        <stop offset={1} stopColor="#0F31AA" />
+      </radialGradient>
+    </defs>
+  </svg>
+);
