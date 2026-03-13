@@ -40,6 +40,7 @@ export interface ServicesDataTypes {
   title: string;
   subTitle: string;
   cards: {
+    icon?: JSX.Element;
     title: string;
     description: string;
   }[];

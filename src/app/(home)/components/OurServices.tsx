@@ -46,11 +46,11 @@ const OurServices: React.FC<ServicesDataTypes> = ({
               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
               direction="horizontal"
               className="h-full"
-              renderSlide={(sector) => (
+              renderSlide={(sector, index) => (
                 <button
-                  className={`text-sm font-semibold ${activeIndex ? "text-primary" : "text-secondary"}`}
+                  className={`text-sm font-semibold flex items-center gap-2 px-5 py-2.5 rounded-[10px]  ${activeIndex === index ? "text-[#0D54EB] bg-[#E7F4FF]" : "text-secondary"}`}
                 >
-                  {sector.title}
+                  <span> {sector.icon} </span> {sector.title}
                 </button>
               )}
             />
@@ -61,7 +61,7 @@ const OurServices: React.FC<ServicesDataTypes> = ({
             data={cards}
             slidesPerView={1}
             loop
-            modules={[Navigation, Thumbs,EffectFade]}
+            modules={[Navigation, Thumbs, EffectFade]}
             effect="fade"
             thumbs={{
               swiper:
@@ -84,7 +84,9 @@ const OurServices: React.FC<ServicesDataTypes> = ({
                 </div>
                 <h3 className="text-2xl">{sector.title}</h3>
                 <p className="text-lg">{sector.description}</p>
-                <button className="text-white bg-[#1B1B1B] rounded-full px-6 py-3 font-semibold">Grow My Socials</button>
+                <button className="text-white bg-[#1B1B1B] rounded-full px-6 py-3 font-semibold">
+                  Grow My Socials
+                </button>
               </div>
             )}
           />

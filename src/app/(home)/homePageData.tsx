@@ -1,5 +1,5 @@
 import { ClientImages } from "@/utils/client";
-import { AiFrontDeskIcon, AiReservationDeskIcon, BookingEngineIcon, CmsIcon, ConsultIcon, CustomizedHotelMarketingSolutions, EffectiveHotelPerformanceMarketingIcon, ExceptionalHotelWebsiteDevelopment, ExecuteIcon, OptimizedForSearchEngines, PaymentGatewayIcon, StrategicSocialMediaMarketingForHotel, StrategiseIcon, WebsiteBuilderIcon, WhatsAppMarketingIcon } from "@/utils/homeIcons";
+import { AiFrontDeskIcon, AiReservationDeskIcon, AiSearchOptimizationIcon, BookingEngineIcon, CmsIcon, ConsultIcon, CustomizedHotelMarketingSolutions, EffectiveHotelPerformanceMarketingIcon, ExceptionalHotelWebsiteDevelopment, ExecuteIcon, LocalSeoIcon, OptimizedForSearchEngines, OtaManagementIcon, PaymentGatewayIcon, PreOpeningMarketingIcon, SocialMediaIcons, StrategicSocialMediaMarketingForHotel, StrategiseIcon, WebsiteBuilderIcon, WebsiteSeoIcon, WhatsAppMarketingIcon } from "@/utils/homeIcons";
 import {
   FillFaceBookIcon,
   FillLinkedinIcon,
@@ -143,38 +143,47 @@ export const homePageData = {
       "Transforming Hospitality Brands with Expert <a href='/industries-we-serve/hotel-marketing-agency/'>Hospitality Marketing Services</a>",
     cards: [
       {
+        icon: <SocialMediaIcons />,
         title: "Social Media Management",
         description: "Turn Instagram & Facebook into booking engines.",
       },
       {
+        icon: <LocalSeoIcon />,
         title: "Local SEO",
         description: "Dominate Google Maps and local hotel searches.",
       },
       {
+        icon: <WebsiteSeoIcon />,
         title: "Website SEO",
         description: "Boost organic traffic and search rankings.",
       },
       {
+        icon: <AiSearchOptimizationIcon />,
         title: "AI Search Optimization",
         description: "Optimize visibility for ChatGPT and Gemini searches.",
       },
       {
+        icon: <PreOpeningMarketingIcon />,
         title: "Preopening Marketing",
         description: "Launch your property with strong demand generation.",
       },
       {
+        icon: <OtaManagementIcon />,
         title: "OTA Management",
         description: "Reduce commissions and optimize OTA performance.",
       },
       {
+        icon: <WebsiteSeoIcon />,
         title: "Website Development",
         description: "Conversion-focused hotel websites.",
       },
       {
+        icon: <SocialMediaIcons />,
         title: "Sales & Marketing Automation",
         description: "Automate lead nurturing and campaigns.",
       },
       {
+        icon: <SocialMediaIcons />,
         title: "Content Creation",
         description: "Professional photo, video, and storytelling.",
       },
