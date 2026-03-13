@@ -15,7 +15,7 @@ const HowItWork: React.FC<HowItWorksDataTypes> = ({
           {cards.map((card, index) => (
             <HowItWorkCard key={index} {...card} />
           ))}
-          <div className="h-[280px] w-px border-l border-dashed border-[#0D54EB] absolute top-8 left-6 z-[-1]"></div>
+          <div className="h-[150px] w-px border-l border-dashed border-[#0D54EB] absolute top-20 left-6 scale-y-200  z-[-1]"></div>
         </div>
       </div>
     </SectionWithContainer>
