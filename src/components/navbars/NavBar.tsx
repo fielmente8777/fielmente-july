@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import Header from "./Header";
 
 
+
 const NavBar = () => {
   const pathName = usePathname();
   const RenderNavBar = Header;
