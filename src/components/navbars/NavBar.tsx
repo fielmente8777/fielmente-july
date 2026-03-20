@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import Header from "./Header";
 import LandingNav from "./LandingNav";
 
+
 const NavBar = () => {
   const pathName = usePathname();
   const RenderNavBar = Header;
