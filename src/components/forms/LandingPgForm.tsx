@@ -80,17 +80,17 @@ const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
       className="flex flex-col gap-4 justify-between md:h-full p-4 md:p-6  text-base rounded-2xl w-full bg-[#010101]"
       noValidate
     >
-      <h2 className="text-xl md:text-2xl text-center font-normal text-white">
+      <h2 className="text-xl md:text-2xl text-center font-semibold text-white">
         Get A FREE Consultation!
       </h2>
-      <p className="text-white text-center">
+      <p className="text-white font-medium text-center">
         Let&apos;s work on boosting your hotel&apos;s profitability!
       </p>
 
       <div className="flex flex-col justify-between gap-4">
         {formFields.map((field, index) => (
           <div key={index} className={`flex flex-col gap-2 `}>
-            <label className="text-white ">{field.label}</label>
+            <label className="text-white font-medium">{field.label}</label>
 
             {field.tag === "input" && (
               <input

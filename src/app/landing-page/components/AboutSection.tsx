@@ -51,24 +51,24 @@ const AboutSection: React.FC<Props> = ({
         {points.map((point, index) => (
           <div
             key={index}
-            className="relative w-full aspect-square overflow-hidden rounded-2xl"
+            className="relative w-full md:aspect-square aspect-4/4.75 overflow-hidden rounded-2xl"
           >
             <Image src={point.src} alt="about" fill className="object-cover" />
             <div className="absolute inset-0 bg-linear-to-t from-black/20 to-black/10" />
             <p
-              className={`text-white text-[23px] absolute  z-10  ${index === 0 ? "text-xl inset-x-0 top-0 px-6 py-9" : "text-center backdrop-blur-xs bg-[#0A0C2D]/50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap px-5 py-1.5 rounded-full"} `}
+              className={`text-white  absolute  z-10  ${index === 0 ? "text-xl md:text-[23px] inset-x-0 top-0 px-6 py-9" : "md:text-[23px] text-xl text-center backdrop-blur-xs bg-[#0A0C2D]/50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap px-5 py-1.5 rounded-full"} `}
               dangerouslySetInnerHTML={{ __html: point.list[0] }}
             ></p>
             <div
               className={`flex items-center gap-2 ${index === 0 ? "justify-between" : "justify-center"} absolute inset-x-0 bottom-0 z-10 px-6 py-9`}
             >
               {index === 0 && (
-                <div className="p-2 w-17.25 aspect-4/1.5 rounded-[100px] bg-linear-to-r from-50% from-[#0B57F8] to-100% to-[#3B92E3] flex items-center justify-end">
-                  <span className="bg-white w-4 aspect-square rounded-full"></span>
+                <div className="p-2 w-17.25 md:aspect-4/1.5  rounded-[100px] bg-linear-to-r from-50% from-[#0B57F8] to-100% to-[#3B92E3] flex items-center justify-end">
+                  <span className="bg-white md:w-4 w-2.5 aspect-square rounded-full"></span>
                 </div>
               )}
               <p
-                className={`text-white ${index === 0 ? "text-xl" : "text-center"}`}
+                className={`text-white ${index === 0 ? "md:text-xl text-[0.95rem]" : "text-center"}`}
                 dangerouslySetInnerHTML={{ __html: point.list[1] }}
               ></p>
             </div>
