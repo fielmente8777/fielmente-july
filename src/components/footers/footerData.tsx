@@ -135,36 +135,57 @@ export const footerData: FooterLinksPropstype = {
     {
       title: "Offices",
       listOfLinks: [
-        {
-          label: contacts.address_1,
-          href: contacts.address_1_mapUrl,
+        ...contacts.addressesInIndia.map((address) => ({
+          label: address.address,
+          href: address.mapUrl,
           icon: <FillLocationIcon />,
-        },
-        {
-          label: contacts.address_2,
-          href: contacts.address_2_mapUrl,
-          icon: <FillLocationIcon />,
-        },
-        {
-          label: contacts.address_3,
-          href: contacts.address_3_mapUrl,
-          icon: <FillLocationIcon />,
-        },
+        })),
       ],
     },
     {
       title: "Contact",
       listOfLinks: [
-        {
-          label: contacts.phone_1,
-          href: `tel:${contacts.phone_1}`,
+        ...contacts.phone.map((phone) => ({
+          label: phone,
+          href: `tel:${phone}`,
           icon: <FillPhoneIcon />,
-        },
-        {
-          label: contacts.email_1,
-          href: `mailto:${contacts.email_1}`,
+        })),
+        ...contacts.email.map((email) => ({
+          label: email,
+          href: `mailto:${email}`,
           icon: <FillMailIcon />,
-        },
+        })),
+      ],
+    },
+  ],
+};
+export const landingFooterData: FooterLinksPropstype = {
+  logo: "/logo2.png",
+  description: "© Fielmente Hospitality Marketing Agency",
+  linksData: [
+    {
+      title: "Offices",
+      listOfLinks: [
+        ...contacts.addressesInIndia.map((address) => ({
+          label: address.address,
+          href: address.mapUrl,
+          icon: <FillLocationIcon />,
+        })),
+      ],
+    },
+    {
+      title: "Contact",
+      listOfLinks: [
+        ...contacts.phone.map((phone) => ({
+          label: phone,
+          href: `tel:${phone}`,
+          icon: <FillPhoneIcon />,
+        })),
+        ...contacts.email.map((email) => ({
+          label: email,
+          href: `mailto:${email}`,
+          icon: <FillMailIcon />,
+        })),
       ],
     },
   ],

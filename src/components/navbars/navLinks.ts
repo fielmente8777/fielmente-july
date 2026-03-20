@@ -2,10 +2,6 @@ import { NavLinksProps } from "@/@types/@types";
 
 export const navLinks: NavLinksProps[] = [
   {
-    label: "Home",
-    href: "/",
-  },
-  {
     label: "About Us",
     href: "/about-fielmente-best-hospitality-marketing-agency",
   },
@@ -16,6 +12,20 @@ export const navLinks: NavLinksProps[] = [
       {
         label: "Hotel Marketing",
         href: "/industries-we-serve/hotel-marketing-agency",
+        subLinks: [
+          {
+            label: "Hotel Social Media",
+            href: "/industries-we-serve/hotel-marketing-agency/hotel-social-media/",
+          },
+          {
+            label: "Hotel Ads",
+            href: "/industries-we-serve/hotel-marketing-agency/hotel-google-ads/",
+          },
+          {
+            label: "Hotel SEO",
+            href: "/industries-we-serve/hotel-marketing-agency/hotel-seo/",
+          },
+        ],
       },
       {
         label: "Restaurant Marketing",
@@ -39,28 +49,28 @@ export const navLinks: NavLinksProps[] = [
       },
     ],
   },
-  {
-    label: "Hotel Marketing",
-    href: "/industries-we-serve/hotel-marketing-agency",
-    subLinks: [
-      {
-        label: "Hotel Social Media",
-        href: "/industries-we-serve/hotel-marketing-agency/hotel-social-media/",
-      },
-      {
-        label: "Hotel Ads",
-        href: "/industries-we-serve/hotel-marketing-agency/hotel-google-ads/",
-      },
-      {
-        label: "Hotel SEO",
-        href: "/industries-we-serve/hotel-marketing-agency/hotel-seo/",
-      },
-      // {
-      //   label: "Hotel PR Services",
-      //   href: "/hotelprservices",
-      // },
-    ],
-  },
+  // {
+  //   label: "Hotel Marketing",
+  //   href: "/industries-we-serve/hotel-marketing-agency",
+  //   subLinks: [
+  //     {
+  //       label: "Hotel Social Media",
+  //       href: "/industries-we-serve/hotel-marketing-agency/hotel-social-media/",
+  //     },
+  //     {
+  //       label: "Hotel Ads",
+  //       href: "/industries-we-serve/hotel-marketing-agency/hotel-google-ads/",
+  //     },
+  //     {
+  //       label: "Hotel SEO",
+  //       href: "/industries-we-serve/hotel-marketing-agency/hotel-seo/",
+  //     },
+  //     // {
+  //     //   label: "Hotel PR Services",
+  //     //   href: "/hotelprservices",
+  //     // },
+  //   ],
+  // },
   {
     label: "services",
     href: "/hospitality-marketing-services/",
@@ -77,14 +87,40 @@ export const navLinks: NavLinksProps[] = [
         label: "Paid Ad Campaigns",
         href: "/hospitality-marketing-services/google-ads-agency/",
       },
+      {
+        label: "hotel OTA management",
+        href: "/hotel-ota-management/",
+      },
     ],
+  },
+  {
+    label: "Resources",
+    href: "",
+    subLinks: [
+      {
+        label: "Blog",
+        href: "/blogs/",
+      },
+      {
+        label: "Success Stories",
+        href: "/case-study/",
+      },
+      {
+        label: "Our Clients",
+        href: "/our-clients/",
+      },
+      {
+        label: "Our Work",
+        href: "https://www.eazotel.com/our-work",
+      },
+    ],
+  },
+  {
+    label: "contact us",
+    href: "/contact-us",
   },
   // {
   //   label: "blogs",
   //   href: "/blogs",
-  // },
-  // {
-  //   label: "contact us",
-  //   href: "/contact",
   // },
 ];

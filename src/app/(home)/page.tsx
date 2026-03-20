@@ -24,7 +24,7 @@ import SlidingTitle from "@/components/slider/SlidingTitle";
 
 export default function Home() {
   return (
-    <main>
+    <main className="mt-18">
       <Banner {...homePageData.bannerData} />
       <BusinessPartners {...homePageData.businessPartnersData} />
       <HomeAbout {...homePageData.aboutCompanyData} />

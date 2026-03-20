@@ -28,11 +28,12 @@ export interface AboutCompanyDataTypes {
 
 export interface IndustryWeServeDataTypes {
   title: string;
-  description: string;
+  subTitle: string;
+  description?: string;
   cards: {
     imgSrc: string;
     title: string;
-    description: string;
+    desc: string;
   }[];
 }
 
@@ -55,6 +56,10 @@ export interface ProductsDataTypes {
     title: string;
     description: string;
   }[];
+  cta?: {
+    label: string;
+    type: string;
+  };
 }
 
 export interface HowItWorksDataTypes {
@@ -156,4 +161,14 @@ export interface TestimonialsDataTypes {
     title: string;
     description: string;
   }[];
+}
+
+export interface UniqueSectionTypes {
+  title: string;
+  description: string[];
+  images: string[];
+  link: {
+    label: string;
+    href: string;
+  };
 }

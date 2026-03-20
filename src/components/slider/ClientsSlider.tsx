@@ -8,9 +8,14 @@ import { Autoplay, FreeMode } from "swiper/modules";
 interface Props {
   cards: OurValuedClientsPropsType["cards"];
   wrapperClassName?: string;
+  lgSlidePerView?: number;
 }
 
-const ClientsSlider: React.FC<Props> = ({ cards, wrapperClassName }) => {
+const ClientsSlider: React.FC<Props> = ({
+  cards,
+  wrapperClassName,
+  lgSlidePerView = 5,
+}) => {
   return (
     <div className={`w-full demo ${wrapperClassName ? wrapperClassName : ""}`}>
       <SwiperCarousel
@@ -31,7 +36,7 @@ const ClientsSlider: React.FC<Props> = ({ cards, wrapperClassName }) => {
             slidesPerView: 3,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: lgSlidePerView,
           },
         }}
         renderSlide={(item, index) => (

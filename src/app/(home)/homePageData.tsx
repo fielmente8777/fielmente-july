@@ -1,5 +1,27 @@
 import { ClientImages } from "@/utils/client";
-import { AiFrontDeskIcon, AiReservationDeskIcon, AiSearchOptimizationIcon, BookingEngineIcon, CmsIcon, ConsultIcon, CustomizedHotelMarketingSolutions, EffectiveHotelPerformanceMarketingIcon, ExceptionalHotelWebsiteDevelopment, ExecuteIcon, LocalSeoIcon, OptimizedForSearchEngines, OtaManagementIcon, PaymentGatewayIcon, PreOpeningMarketingIcon, SocialMediaIcons, StrategicSocialMediaMarketingForHotel, StrategiseIcon, WebsiteBuilderIcon, WebsiteSeoIcon, WhatsAppMarketingIcon } from "@/utils/homeIcons";
+import {
+  AiFrontDeskIcon,
+  AiReservationDeskIcon,
+  AiSearchOptimizationIcon,
+  BookingEngineIcon,
+  CmsIcon,
+  ConsultIcon,
+  CustomizedHotelMarketingSolutions,
+  EffectiveHotelPerformanceMarketingIcon,
+  ExceptionalHotelWebsiteDevelopment,
+  ExecuteIcon,
+  LocalSeoIcon,
+  OptimizedForSearchEngines,
+  OtaManagementIcon,
+  PaymentGatewayIcon,
+  PreOpeningMarketingIcon,
+  SocialMediaIcons,
+  StrategicSocialMediaMarketingForHotel,
+  StrategiseIcon,
+  WebsiteBuilderIcon,
+  WebsiteSeoIcon,
+  WhatsAppMarketingIcon,
+} from "@/utils/homeIcons";
 import {
   FillFaceBookIcon,
   FillLinkedinIcon,
@@ -111,24 +133,49 @@ export const homePageData = {
 
   servingHospitalityData: {
     title: "INDUSTRY WE SERVE",
-    description:
-      "Diverse Solutions for a Wide Range of <b>Hospitality Industry</b>",
+    subTitle:
+      "Diverse Solutions for a Wide Range of <span>Hospitality Industry</span>",
 
     cards: [
       {
-        imgSrc: "/industry/resort.webp",
-        title: "Resort Marketing",
-        description: "Fill weekends & off-season with targeted campaigns.",
-      },
-      {
-        imgSrc: "/industry/hotel.webp",
+        imgSrc: "/home/im8.webp",
         title: "Hotel Marketing",
-        description: "Increase occupancy & maximize RevPAR.",
+        desc: "Increase occupancy & maximize RevPAR",
       },
       {
-        imgSrc: "/industry/airbnb.webp",
+        imgSrc: "/home/im7.webp",
+        title: "Resort Marketing",
+        desc: "Fill weekends & off-season with targeted campaigns",
+      },
+      {
+        imgSrc: "/home/im6.webp",
+        title: "Home Stay Marketing",
+        desc: "Rank locally on Google & drive direct bookings",
+      },
+      {
+        imgSrc: "/home/im5.webp",
         title: "Airbnb Marketing",
-        description: "Attract more guests & reduce commission costs.",
+        desc: "Attract more guests & reduce commission costs",
+      },
+      {
+        imgSrc: "/home/im4.webp",
+        title: "Villas Marketing",
+        desc: "Promote luxury stays & attract high-value travelers",
+      },
+      {
+        imgSrc: "/home/im3.webp",
+        title: "Glamping Marketing",
+        desc: "Boost visibility & appeal to experience-seeking guests",
+      },
+      {
+        imgSrc: "/home/im2.webp",
+        title: "Cafe Marketing",
+        desc: "Enhance presence & attract coffee lovers searching nearby",
+      },
+      {
+        imgSrc: "/home/im1.webp",
+        title: "Restaurant Marketing",
+        desc: "Drive attention & reach foodies looking for dining spots",
       },
     ],
   },
@@ -202,7 +249,7 @@ export const homePageData = {
         description: `Easily manage hotel content, offers, and promotions. Update menus, rooms, and packages in seconds — no IT team needed.`,
       },
       {
-        icon: <BookingEngineIcon/>,
+        icon: <BookingEngineIcon />,
         title: `Booking Engine`,
         description: `Seamless booking engine designed for hotels. Boost direct reservations by 30%+ and reduce OTA commissions instantly`,
       },
@@ -436,37 +483,37 @@ export const homePageData = {
     title: "Force of 50+ Hospitality Marketing Experts",
     cards: [
       {
-        icon: <ExecuteIcon/>,
+        icon: <ExecuteIcon />,
         title: `Expertise in hotel`,
         subtitle:
           "With a decade of experience in the hotel industry, we are the perfect partner to market your hotel, resort, villa & restaurant.",
       },
       {
-        icon: <StrategicSocialMediaMarketingForHotel/>,
+        icon: <StrategicSocialMediaMarketingForHotel />,
         title: "Strategic Social Media Marketing",
         subtitle:
           "Our proven strategy of hotel social media management boost your brand’s exposure engage your target audience and gives you more bookings.",
       },
       {
-        icon: <OptimizedForSearchEngines/>,
+        icon: <OptimizedForSearchEngines />,
         title: "Optimized for Search Engines",
         subtitle:
           "Maximise your hotel’s google visibility and increase organic traffic through search engine optimisation and increase more queries.",
       },
       {
-        icon: <EffectiveHotelPerformanceMarketingIcon/>,
+        icon: <EffectiveHotelPerformanceMarketingIcon />,
         title: "Effective Hotel Performance Marketing",
         subtitle:
           "Get the best results with our impactful campaigns that bring in targeted visitors and maximize your return on investment.",
       },
       {
-        icon : <CustomizedHotelMarketingSolutions/>,
+        icon: <CustomizedHotelMarketingSolutions />,
         title: "Customized hotel Marketing Solutions",
         subtitle:
           "A compelling reason for you to choose us is our commitment to providing tailored and customized marketing solutions.",
       },
       {
-        icon: <ExceptionalHotelWebsiteDevelopment/>,
+        icon: <ExceptionalHotelWebsiteDevelopment />,
         title: "Exceptional hotel Website Development",
         subtitle:
           "Our website development expertise provides an outstanding user experience from design to functionality.",
@@ -480,34 +527,12 @@ export const homePageData = {
     description:
       "Stay updated with the latest insights, strategies, and trends in hotel marketing, digital growth, and hospitality performance optimization.",
     cards: [
-      
-      // {
-      //   src: "",
-      //   title: "How Hotels Can Increase Direct Bookings in 2026",
-      //   date: "Apr 12, 2026",
-      //   description:
-      //     "Learn how modern hotels are reducing OTA dependency and driving more direct reservations through smart digital marketing, website optimization, and performance campaigns.",
-      // },
-      // {
-      //   src: "",
-      //   title: "The Role of Digital Marketing in Luxury Hospitality Growth",
-      //   date: "Mar 28, 2026",
-      //   description:
-      //     "Discover how luxury hotels build strong online presence, attract premium travelers, and maintain brand positioning through data-driven marketing strategies.",
-      // },
-      // {
-      //   src: "",
-      //   title: "Hotel SEO Strategies That Actually Drive Revenue",
-      //   date: "Mar 10, 2026",
-      //   description:
-      //     "From local search visibility to intent-based keywords, explore proven SEO techniques that help hotels rank higher and convert search traffic into bookings.",
-      // },
-      ...blogData.slice(0,3).map((item) => ({
+      ...blogData.slice(0, 3).map((item) => ({
         src: item.url,
         title: item.title,
         date: "Mar 10, 2026",
         description: item.description?.slice(0, 180) + "...",
-      }))
+      })),
     ],
   },
 
@@ -617,21 +642,21 @@ export const homePageData = {
     title: "Contact Us",
     subTitle: "Get in touch with Us",
     links: [
-      ...contacts.email.map((email) => ({
-        label: email,
-        href: `mailto:${email}`,
-        title: "Email:",
-      })),
-      ...contacts.phone.map((phone) => ({
+      ...contacts?.phone?.map((phone) => ({
         label: phone,
         href: `tel:${phone}`,
         title: "Phone:",
       })),
-      {
-        label: contacts.address_1,
-        href: contacts.address_1_mapUrl,
+      ...contacts?.email?.map((email) => ({
+        label: email,
+        href: `mailto:${email}`,
+        title: "Email:",
+      })),
+      ...contacts?.addressesInIndia?.map((address) => ({
+        label: address.address,
+        href: address.mapUrl,
         title: "Address:",
-      },
+      })),
     ],
     socialLinks: {
       title: "Follow Fielmente:",

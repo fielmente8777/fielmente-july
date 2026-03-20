@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 export const AppContext = createContext<{
   isOpenPopupForm: boolean;
@@ -33,4 +33,11 @@ export const AppProvider = ({ children }: Props) => {
       {children}
     </AppContext.Provider>
   );
+};
+
+export const useAppContext = () => {
+  if (!AppContext) {
+    throw new Error("useAppContext must be used within a AppProvider");
+  }
+  return useContext(AppContext);
 };

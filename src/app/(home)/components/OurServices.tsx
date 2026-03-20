@@ -2,13 +2,12 @@
 
 import { ServicesDataTypes } from "@/@types/@homeType";
 import { SectionWithContainer } from "@/components";
-import LinkButton from "@/components/buttons/LinkButton";
 import SwiperCarousel from "@/components/slider/SwiperCarousel";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import Image from "next/image";
 import { useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
-import { EffectFade, Navigation, Thumbs } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Thumbs } from "swiper/modules";
 
 const OurServices: React.FC<ServicesDataTypes> = ({
   title,
@@ -27,7 +26,7 @@ const OurServices: React.FC<ServicesDataTypes> = ({
             subTitleClassName="lg:text-[30px]"
             wrapperClassName="pr-16"
           />
-          <div className="aspect-4/2 mt-4">
+          <div className="aspect-4/2.5 mt-4">
             <SwiperCarousel
               data={cards}
               onSwiper={setThumbsSwiper}
@@ -43,12 +42,11 @@ const OurServices: React.FC<ServicesDataTypes> = ({
                 },
               }}
               modules={[Thumbs]}
-              onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
               direction="horizontal"
               className="h-full"
               renderSlide={(sector, index) => (
                 <button
-                  className={`text-sm font-semibold flex items-center gap-2 px-5 py-2.5 rounded-[10px]  ${activeIndex === index ? "text-[#0D54EB] bg-[#E7F4FF]" : "text-secondary"}`}
+                  className={`text-sm font-semibold flex items-center gap-2 px-5 py-2.5 rounded-[10px] hover:text-color4 hover:bg-[#E7F4FF] duration-300 ease-in-out transition-all  ${index === activeIndex ? "text-color4 bg-[#E7F4FF]" : "text-secondary"}`}
                 >
                   <span> {sector.icon} </span> {sector.title}
                 </button>
@@ -61,19 +59,23 @@ const OurServices: React.FC<ServicesDataTypes> = ({
             data={cards}
             slidesPerView={1}
             loop
-            modules={[Navigation, Thumbs, EffectFade]}
+            modules={[Navigation, Thumbs, EffectFade, Autoplay]}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            spaceBetween={16}
+            speed={1000}
             effect="fade"
             thumbs={{
               swiper:
                 thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
             }}
+            onSlideChange={(swiper) => setActiveIndex(swiper?.realIndex)}
             navigation={{
               nextEl: ".sector-next",
               prevEl: ".sector-prev",
             }}
             renderSlide={(sector) => (
               <div className="space-y-4 bg-white py-6 px-4">
-                <div className="w-full relative aspect-4/1.5 rounded-[28.66px] border-2 border-white  box-shadow overflow-hidden">
+                <div className="w-full relative aspect-4/1.5 rounded-[28.66px] border-6 border-white  shadow overflow-hidden">
                   <Image
                     src="/home/im8.png"
                     alt={sector.title}

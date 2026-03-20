@@ -4,7 +4,7 @@ import { OutlineDrpopdown } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useContext } from "react";
+import { Fragment, useContext } from "react";
 import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
 const Header = () => {
@@ -13,26 +13,22 @@ const Header = () => {
   const pathName = usePathname();
 
   return (
-    <div>
-      <header className="max_screen">
+    <div className="fixed flex inset-x-0 items-center justify-center top-0 z-50 bg-white/60 backdrop-blur-sm">
+      <header className="max_screen w-full">
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">
-              <Link
-                href={"/"}
-                className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.8] aspect-[3/1]"
-              >
+              <Link href={"/"} className="flex relative w-36 aspect-[4/1.8]">
                 <Image src="/Logo.png" alt="fielment logo" fill />
               </Link>
             </div>
             <ul className="lg:flex hidden item-center gap-10">
               {navLinks.map((link, index) => {
-                // const id = index + 1;
                 return (
                   <li key={index} className="relative nav">
                     <Link
                       href={link.href ? link.href : "#"}
-                      className="relative text-nowrap py-2 capitalize flex items-center gap-1 text-dark"
+                      className="relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 text-dark"
                     >
                       {link.label}
                       <span className="span-border"></span>
@@ -46,14 +42,11 @@ const Header = () => {
                       <span className="nav-1">
                         {link.subLinks.map((subLink, index) => {
                           return (
-                            <>
-                              <span
-                                className="relative group nav-2"
-                                key={index + 1}
-                              >
+                            <Fragment key={index + 1}>
+                              <span className="relative group nav-2">
                                 <Link
                                   href={subLink.href ? subLink.href : "#"}
-                                  className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-dark ${pathName === subLink.href ? "bg-primary !text-white" : ""}`}
+                                  className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-dark ${pathName === subLink.href ? "bg-primary text-white!" : ""}`}
                                 >
                                   {subLink.label}
                                   {subLink.subLinks && (
@@ -88,7 +81,7 @@ const Header = () => {
                                   </span>
                                 )}
                               </span>
-                            </>
+                            </Fragment>
                           );
                         })}
                       </span>

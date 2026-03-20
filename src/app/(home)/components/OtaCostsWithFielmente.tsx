@@ -1,5 +1,6 @@
 import { MaximizeGrowthDataTypes } from "@/@types/@homeType";
 import { SectionWithContainer } from "@/components";
+import { CtaBtn } from "@/components/buttons/CtaBtn";
 import LinkButton from "@/components/buttons/LinkButton";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import Image from "next/image";
@@ -30,8 +31,8 @@ const OtaCostsWithFielmente: React.FC<MaximizeGrowthDataTypes> = ({
           <OtaCostsCard key={index} {...card} />
         ))}
       </div>
-      <LinkButton
-        href={link.href}
+      <CtaBtn
+        type="button"
         label={link.label}
         className="w-fit text-black font-medium bg-white mx-auto rounded-full"
       />
@@ -48,7 +49,7 @@ export const OtaCostsCard: React.FC<MaximizeGrowthDataTypes["cards"][0]> = ({
 }) => {
   return (
     <div className="flex items-center justify-center gap-8 overflow-hidden border bg-black border-[#414141] rounded-2xl">
-      <div className="w-56 aspect-4/6 relative ">
+      <div className="w-56 aspect-auto h-full relative ">
         <Image
           src={src}
           alt={title}

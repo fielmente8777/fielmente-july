@@ -17,14 +17,17 @@ interface SectionHeadingDescProps {
   titleClassName?: string;
   subTitleClassName?: string;
   icon?: boolean;
+  icon2?: boolean;
   logo?: boolean;
   fontPrimary?: boolean;
+  titleWrapperClassName?: string;
 }
 
 const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   title,
   subTitle,
-  icon = true,
+  icon2 = false,
+  icon = icon2 ? false : true,
   textCenter = false,
   titleColor,
   subTitleColor,
@@ -35,6 +38,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   subTitleClassName = "",
   level,
   subLevel,
+  titleWrapperClassName = "",
 }) => {
   const titleLevel = level ?? 2;
   const subTitleLevel = subLevel ?? Math.min(titleLevel + 1, 6);
@@ -43,14 +47,18 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
     <div className={`flex flex-col gap-1 icon ${wrapperClassName}`}>
       {title && (
         <div
-          className={`${icon && "lg:flex items-center gap-4"} ${textCenter && "mx-auto"}`}
+          className={`${icon && "lg:flex items-center gap-2"} ${ icon2 && "lg:flex items-center gap-2"} ${textCenter && "mx-auto"} ${titleWrapperClassName}`}
         >
           {icon && (
             <span className="">
               <IconBox />
             </span>
           )}
-
+          {icon2 && (
+            <span className="">
+              <IconBox2 />
+            </span>
+          )}
           <Headings
             level={titleLevel}
             heading={title}
@@ -101,6 +109,31 @@ export const IconBox = () => (
       >
         <stop stopColor="#91A4E8" />
         <stop offset={1} stopColor="#0F31AA" />
+      </radialGradient>
+    </defs>
+  </svg>
+);
+
+export const IconBox2 = () => (
+  <svg
+    width={10}
+    height={10}
+    viewBox="0 0 10 10"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect width={10} height={10} rx={2} fill="url(#paint0_radial_88_21799)" />
+    <defs>
+      <radialGradient
+        id="paint0_radial_88_21799"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(5 5) rotate(90) scale(5)"
+      >
+        <stop stopColor="#F8D897" />
+        <stop offset={1} stopColor="#AA570F" />
       </radialGradient>
     </defs>
   </svg>
