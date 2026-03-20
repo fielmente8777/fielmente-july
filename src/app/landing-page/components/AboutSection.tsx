@@ -36,7 +36,7 @@ const AboutSection: React.FC<Props> = ({
 }) => {
   return (
     <SectionWithContainer sectionClassName="relative after:absolute after:inset-2 after:rounded-2xl after:bg-white before:content-[''] before:inset-0 before:absolute before:bg-[#F9FAFB] before:z-[-2] after:z-[-1]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-4 items-center">
         <SectionHeading
           title={title}
           subTitle={subTitle}
@@ -47,7 +47,7 @@ const AboutSection: React.FC<Props> = ({
           dangerouslySetInnerHTML={{ __html: description[0] }}
         ></p>
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-10">
+      <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6 mt-10">
         {points.map((point, index) => (
           <div
             key={index}
@@ -75,7 +75,7 @@ const AboutSection: React.FC<Props> = ({
           </div>
         ))}
         <div className="px-6 py-9.5 bg-[#E7F1FF] rounded-2xl flex flex-col items-center justify-between">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 lg:gap-3.5">
             <h3 className="text-[2.5rem] font-bold text-primary">{stats.no}</h3>
             <h4 className="text-2xl text-primary">{stats.list[0]}</h4>
             <p
@@ -83,7 +83,7 @@ const AboutSection: React.FC<Props> = ({
               dangerouslySetInnerHTML={{ __html: stats.list[1] }}
             ></p>
           </div>
-          <div className="space-y-4 w-full">
+          <div className="space-y-4 w-full max-xl:mt-6">
             {stats.growthPercentage.map((growth, index) => (
               <div
                 key={index}
@@ -124,7 +124,7 @@ const AboutSection: React.FC<Props> = ({
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between gap-4 mt-14 w-full">
+      <div className="flex items-center max-md:flex-col justify-between gap-4 mt-14 w-full">
         <p
           className="span-color text-[2.2rem] font-semibold text-primary"
           dangerouslySetInnerHTML={{ __html: description[1] }}

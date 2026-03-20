@@ -13,7 +13,7 @@ export const blogPageData = {
         src: item.url,
         title: item.title,
         read: "5 min read",
-        slug: item.link,
+        slug: item.slug,
         description: item.description?.slice(0, 80) + "...",
       })),
     ],

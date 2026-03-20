@@ -68,7 +68,7 @@ export const aboutUsPageData = {
         label: "Satisfaction Rate",
       },
       {
-        value: "8+",
+        value: "8<span>+</span>",
         label: "Years of Experience",
       },
     ],

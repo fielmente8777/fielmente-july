@@ -7,13 +7,13 @@ const ChooseFielmente: React.FC<{ title: string; description: string }> = ({
 }) => {
   return (
     <SectionWithContainer
-      sectionClassName="bg-[#F9FAFB]"
-      containerClassName="bg-white py-6 rounded-[20px]"
+      sectionClassName=" relative after:absolute after:inset-0 after:bg-[#F9FAFB] after:z-[-2]"
+      containerClassName="relative after:absolute md:after:-inset-4 max-md:after:inset-x-2 after:-inset-y-6 after:rounded-2xl after:bg-white after:z-[-1]"
     >
       <div className="max-w-5xl mx-auto space-y-5 ">
         <SectionHeading title={title} />
         <p
-          className="text-primary text-2xl/snug font-semibold"
+          className="text-primary span-color-2 md:text-2xl/snug font-semibold"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>

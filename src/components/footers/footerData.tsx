@@ -4,8 +4,7 @@ import {
   FillLocationIcon,
   FillMailIcon,
   FillPhoneIcon,
-  OutLineInstagramIcon,
-  OutLineXIcon,
+  OutLineXIcon
 } from "@/utils/icons";
 import { contacts } from "../../../contact";
 
@@ -21,6 +20,7 @@ interface FooterLinksPropstype {
   linksData: {
     title: string;
     listOfLinks: Link[];
+    icon?: React.ReactNode;
   }[];
 }
 
@@ -165,6 +165,7 @@ export const landingFooterData: FooterLinksPropstype = {
   linksData: [
     {
       title: "Offices",
+      icon: <FillLocationIcon />,
       listOfLinks: [
         ...contacts.addressesInIndia.map((address) => ({
           label: address.address,
@@ -175,6 +176,7 @@ export const landingFooterData: FooterLinksPropstype = {
     },
     {
       title: "Contact",
+      icon: <FillPhoneIcon />,
       listOfLinks: [
         ...contacts.phone.map((phone) => ({
           label: phone,

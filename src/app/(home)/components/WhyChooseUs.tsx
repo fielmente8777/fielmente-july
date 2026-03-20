@@ -44,10 +44,15 @@ export const ChooseCard1: React.FC<
     <SectionWithContainer
       sectionClassName={`${index % 2 !== 0 ? "bg-[#F5F6F8]" : ""}
     `}
-      containerClassName="grid lg:grid-cols-9 grid-cols-1 gap-6 md:gap-16"
+      containerClassName="grid xl:grid-cols-9 grid-cols-1 gap-6 xl:gap-16"
     >
       <div
-        className={`md:col-span-6 space-y-5 ${index % 2 === 0 ? "md:order-2" : ""}`}
+        className={`relative w-full xl:hidden aspect-4/3  rounded-2xl overflow-hidden border-4 border-[#F7F7F7]`}
+      >
+        <Image src={src} alt={heading} fill className="object-cover" />
+      </div>
+      <div
+        className={`xl:col-span-6 space-y-5 ${index % 2 === 0 ? "md:order-2" : ""}`}
       >
         <SectionHeading
           subTitle={heading}
@@ -79,7 +84,7 @@ export const ChooseCard1: React.FC<
         )}
       </div>
       <div
-        className={`relative w-full aspect-auto h-auto rounded-2xl overflow-hidden border-4 border-[#F7F7F7] md:col-span-3`}
+        className={`relative w-full xl:block hidden aspect-auto h-auto rounded-2xl overflow-hidden border-4 border-[#F7F7F7] xl:col-span-3`}
       >
         <Image src={src} alt={heading} fill className="object-cover" />
       </div>
@@ -91,7 +96,7 @@ export const ChooseCard2: React.FC<
   WhyChooseUsDataTypes["cardsData"][0] & { index: number }
 > = ({ heading, description, src }) => {
   return (
-    <div className="p-6 space-y-8 rounded-2xl border border-[#E3E5E8]">
+    <div className="p-6 space-y-8 rounded-2xl border border-main-border">
       <div className="relative w-full aspect-4/2 rounded-2xl overflow-hidden border-4 border-[#F7F7F7]">
         <Image src={src} alt={heading} fill className="object-cover" />
       </div>

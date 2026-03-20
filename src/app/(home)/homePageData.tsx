@@ -182,7 +182,7 @@ export const homePageData = {
   chooseFielmenteData: {
     title: "CHOOSE FIELMENTE",
     description:
-      "Choose <i>Fielmente</i> as your Hotel digital marketing partner to transform your hospitality business with assured success and innovation. We are the best of India <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency</a>and <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Agency</a>.",
+      "Choose <i>Fielmente</i> as your Hotel digital marketing partner to transform your hospitality business with assured success and innovation. We are the best of India <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency</a> and <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Agency</a>.",
   },
   servicesData: {
     title: "OUR SERVICES",
@@ -339,8 +339,8 @@ export const homePageData = {
       href: "",
     },
     data: [
-      { number: "700+", description: "RevPAR Increase" },
-      { number: "2X", description: "Corporate & Event Leads" },
+      { number: "₹700<span class='text-color4'>+</span>", description: "RevPAR Increase" },
+      { number: "2<span class='text-color4'>X</span>", description: "Corporate & Event Leads" },
       { number: "-15%", description: "OTA Commission Costs" },
     ],
   },
@@ -531,6 +531,7 @@ export const homePageData = {
         src: item.url,
         title: item.title,
         date: "Mar 10, 2026",
+        slug: item.slug,
         description: item.description?.slice(0, 180) + "...",
       })),
     ],

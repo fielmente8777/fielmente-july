@@ -21,6 +21,7 @@ interface SectionHeadingDescProps {
   logo?: boolean;
   fontPrimary?: boolean;
   titleWrapperClassName?: string;
+  iconClassName?: string;
 }
 
 const SectionHeading: React.FC<SectionHeadingDescProps> = ({
@@ -39,6 +40,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   level,
   subLevel,
   titleWrapperClassName = "",
+  iconClassName = "",
 }) => {
   const titleLevel = level ?? 2;
   const subTitleLevel = subLevel ?? Math.min(titleLevel + 1, 6);
@@ -47,15 +49,15 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
     <div className={`flex flex-col gap-1 icon ${wrapperClassName}`}>
       {title && (
         <div
-          className={`${icon && "lg:flex items-center gap-2"} ${ icon2 && "lg:flex items-center gap-2"} ${textCenter && "mx-auto"} ${titleWrapperClassName}`}
+          className={`${icon && "flex items-center gap-2"} ${icon2 && "flex items-center gap-2"} ${textCenter && "mx-auto"} ${titleWrapperClassName}`}
         >
           {icon && (
-            <span className="">
+            <span className={iconClassName}>
               <IconBox />
             </span>
           )}
           {icon2 && (
-            <span className="">
+            <span className={iconClassName}>
               <IconBox2 />
             </span>
           )}
@@ -75,7 +77,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
       {subTitle && (
         <Headings
           level={subTitleLevel}
-          className={`md:text-[2.5rem]/[3rem] font-semibold ${subTitleClassName} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} ${
+          className={`md:text-[2.5rem]/[3rem] text-xl font-semibold ${subTitleClassName} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} ${
             mdTextCenter ? "md:text-center" : ""
           } ${textCenter ? "text-center mx-auto" : ""} ${
             smTextCenter ? "max-md:text-center" : ""

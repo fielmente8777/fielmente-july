@@ -25,10 +25,13 @@ const Milestone: React.FC<MilestoneProps> = ({ src, items }) => {
       />
       <div className="absolute inset-0 bg-black/20 z-10" />
       <div className="absolute inset-0 flex flex-col justify-center items-center z-20">
-        <ul className="md:max-w-4xl md:w-full rounded-2xl glassy-card backdrop-blur-sm! flex max-md:flex-col items-center justify-between gap-6 md:py-10 md:px-20 px-10 py-5">
+        <ul className="md:max-w-4xl md:w-full rounded-2xl glassy-card backdrop-blur-sm! flex max-md:flex-col md:items-center justify-between gap-6 md:py-10 md:px-20 px-10 py-5">
           {items.map((item, index) => (
             <li key={index} className="text-white">
-              <span className="text-5xl font-semibold">{item.value}</span>
+              <span
+                className="text-5xl font-semibold span-color-2"
+                dangerouslySetInnerHTML={{ __html: item.value }}
+              ></span>
               <br />
               {item.label}
             </li>

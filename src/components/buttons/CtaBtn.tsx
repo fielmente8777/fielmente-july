@@ -41,18 +41,24 @@ export const CtaBtn: React.FC<CtaBtnProps> = ({
       onClick={onClick ? onClick : openPopupForm}
     >
       {startIcon === "whatsapp" && (
-        <span className="w-6 aspect-square flex items-center justify-center text-white">
+        <span
+          className={`w-6 aspect-square flex items-center justify-center text-white ${startIconClass}`}
+        >
           <WhatsappIcon />
         </span>
       )}
       {label}
       {icon === "arrow" && (
-        <span className="w-6 aspect-square flex items-center justify-center bg-white rounded-full text-primary">
+        <span
+          className={`w-6 aspect-square flex items-center justify-center rounded-full ${iconClass ? iconClass : "text-primary"} bg-white`}
+        >
           <ArrowBtn />
         </span>
       )}
       {icon === "arrow2" && (
-        <span className="w-6 aspect-square flex items-center justify-center bg-white rounded-full text-primary">
+        <span
+          className={`w-6 aspect-square flex items-center justify-center rounded-full ${iconClass ? iconClass : "text-primary"} bg-white`}
+        >
           <ArrowBtn2 />
         </span>
       )}
@@ -65,7 +71,28 @@ export const CtaBtn: React.FC<CtaBtnProps> = ({
       className={`transition-all text-nowrap max-md:w-full flex items-center gap-2 justify-center font-medium border duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-2xl px-6 py-3  ${className}`}
       onClick={onClick}
     >
+      {startIcon === "whatsapp" && (
+        <span
+          className={`w-6 aspect-square flex items-center justify-center text-white ${startIconClass}`}
+        >
+          <WhatsappIcon />
+        </span>
+      )}
       {label}
+      {icon === "arrow" && (
+        <span
+          className={`w-6 aspect-square flex items-center justify-center rounded-full ${iconClass ? iconClass : "text-primary"} bg-white`}
+        >
+          <ArrowBtn />
+        </span>
+      )}
+      {icon === "arrow2" && (
+        <span
+          className={`w-6 aspect-square flex items-center justify-center rounded-full ${iconClass ? iconClass : "text-primary"} bg-white`}
+        >
+          <ArrowBtn2 />
+        </span>
+      )}
     </Link>
   );
 };

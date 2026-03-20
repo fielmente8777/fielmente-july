@@ -29,19 +29,19 @@ const ContactUsSection: React.FC<Props> = ({
 }) => {
   return (
     <SectionWithContainer
-      sectionClassName="relative after:absolute after:inset-6 after:rounded-2xl after:bg-white before:content-[''] before:inset-0 before:absolute before:bg-[#F9FAFB] before:z-[-2] after:z-[-1]"
-      containerClassName="grid md:grid-cols-2 gap-16"
+      sectionClassName="relative after:absolute md:after:inset-6 after:inset-3 after:rounded-2xl after:bg-white before:content-[''] before:inset-0 before:absolute before:bg-[#F9FAFB] before:z-[-2] after:z-[-1]"
+      containerClassName="grid md:grid-cols-2 lg:gap-16 gap-6"
     >
-      <div className="space-y-8">
+      <div className="md:space-y-8 space-y-4 max-md:px-4 max-md:pt-4 w-full">
         <SectionHeading title={title} subTitle={subTitle} />
         <ul className="space-y-4">
           {links.map((link, index) => (
             <li key={index}>
               <Link
                 href={link.href}
-                className="flex flex-col gap-.5 text-lg text-primary"
+                className="flex flex-col gap-.5 font-medium md:text-lg text-sm text-primary"
               >
-                <span className="text-sm">{link.title}</span>
+                <span className="text-xs md:text-base text-secondary">{link.title}</span>
                 {link.label}
               </Link>
             </li>

@@ -75,27 +75,27 @@ const Form1 = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-4 max-md:px-4 p-6 max-md:mt-6 text-base rounded-2xl w-full bg-[#010101]"
+      className="flex flex-col gap-4 max-md:px-4 p-6 text-base rounded-2xl w-full bg-[#010101]"
       noValidate
     >
       <h2 className="text-xl md:text-2xl font-normal text-white">
         Get A FREE Consultation!
       </h2>
-      <p className="text-white">
+      <p className="text-white max-md:text-sm">
         Let&apos;s work on boosting your hotel&apos;s profitability!
       </p>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid xl:grid-cols-2 gap-4">
         {formFields.map((field, index) => (
           <div
             key={index}
-            className={`flex flex-col gap-2 ${
+            className={`flex flex-col xl:gap-2 gap-3 ${
               field.tag === "textarea" || field.type === "email"
-                ? "col-span-2"
-                : "col-span-1"
+                ? "xl:col-span-2"
+                : "xl:col-span-1"
             }`}
           >
-            <label className="text-white ">{field.label}</label>
+            <label className="text-white max-md:text-sm">{field.label}</label>
 
             {field.tag === "input" && (
               <input

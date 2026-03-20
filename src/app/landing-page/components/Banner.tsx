@@ -12,16 +12,16 @@ interface Props {
 const Banner: React.FC<Props> = ({ title, subtitle, description, images }) => {
   return (
     <SectionWithContainer sectionClassName="relative">
-      <div className="absolute inset-x-0 h-[35%] z-[-1] bg-background-black1 bottom-0"></div>
-      <div className="grid md:grid-cols-2 gap-5 pb-8">
+      <div className="absolute inset-x-0 md:h-[35%] h-[60%] z-[-1] bg-background-black1 bottom-0"></div>
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 pb-8">
         <div className="flex flex-col gap-4">
-          <div className="flex justify-center items-center gap-2 px-2.5 py-1.5 text-primary rounded-full w-fit border border-main-border">
+          <div className="flex justify-center items-center gap-2 md:px-2.5 px-2 py-1.5 text-primary rounded-full w-fit border border-main-border">
             <Image src={images[0]} alt="hotels" width={40} height={20} />
-            <p className="text-sm">{subtitle}</p>
+            <p className="md:text-sm text-[10px]">{subtitle}</p>
           </div>
-          <h1 className="md:text-[2.875rem] text-primary font-bold">{title}</h1>
-          <p>{description}</p>
-          <div className="flex items-center gap-4">
+          <h1 className="md:text-[2.875rem] text-3xl max-md:text-center text-primary font-bold">{title}</h1>
+          <p className="text-sm text-secondary max-md:text-center">{description}</p>
+          <div className="flex items-center max-md:justify-center gap-4">
             <div className="flex items-center justify-center w-10 aspect-square rounded-lg border border-main-border">
               <GoogleIcon />
             </div>
@@ -29,12 +29,15 @@ const Banner: React.FC<Props> = ({ title, subtitle, description, images }) => {
               <Star />
             </div>
           </div>
-          <div className="w-full relative aspect-4/1.75 -mt-10">
+          <div className="w-full md:block hidden relative aspect-4/1.75 md:-mt-10">
             <Image src={images[1]} alt={title} fill className="object-cover" />
           </div>
         </div>
-        <div className="max-w-xl w-full ml-auto">
+        <div className="md:max-w-xl w-full md:ml-auto">
           <LandingPgForm />
+          <div className="w-full md:hidden relative aspect-4/1.75 mt-4">
+            <Image src={images[1]} alt={title} fill className="object-cover" />
+          </div>
         </div>
       </div>
     </SectionWithContainer>

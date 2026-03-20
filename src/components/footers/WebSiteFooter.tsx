@@ -1,10 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "../sectionComponants";
-import { footerData, policyLinks } from "./footerData";
-import Image from "next/image";
+import { footerData } from "./footerData";
 
 const WebSiteFooter = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
   return (
     <footer className="max_screen_width bg-[#0A0A0C] md:py-18 py-10">
       <Container className="relative after:absolute md:after:inset-0 max-md:after:top-6 max-md:after:left-4 max-md:after:w-[90%] after:bg-[url('/map.png')] after:bg-contain after:bg-no-repeat after:opacity-8 md:after:bg-center after:w-full after:h-full after:z-[-1]">
@@ -45,7 +45,7 @@ const WebSiteFooter = () => {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {footerData.linksData.slice(1, 4).map((item, index) => (
               <div className="flex flex-col md:gap-6 gap-4" key={index}>
                 <h3 className="text-white text-lg font-medium">

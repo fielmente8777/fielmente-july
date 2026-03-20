@@ -35,6 +35,7 @@ const IndustryWeServeSlider: React.FC<{
             },
           }}
           speed={900}
+          className="max-md:w-[78%]!"
           swiperSlideClassName="flex items-center justify-center w-full h-full aspect-[4/4.75]"
           onSlideChange={(swiper) => setActiveSlide(swiper?.realIndex)}
           renderSlide={(card, index) => (
@@ -45,7 +46,7 @@ const IndustryWeServeSlider: React.FC<{
             />
           )}
         />
-        <div className="flex items-center justify-between w-full gap-6 max-md:mt-8 md:absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[96%]">
+        <div className="flex items-center justify-between w-full gap-6 absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[96%]">
           <button className="w-10 aspect-square rounded-full bg-color4 disabled:bg-[#494949] flex items-center justify-center industries-prev rotate-180">
             <Foo />
           </button>

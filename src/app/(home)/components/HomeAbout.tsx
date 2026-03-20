@@ -15,9 +15,9 @@ const HomeAbout: React.FC<AboutCompanyDataTypes> = ({
   src,
 }) => {
   return (
-    <SectionWithContainer sectionClassName="relative after:absolute after:inset-4 after:rounded-[24px] after:bg-[#F9FAFB] after:z-[-1]">
+    <SectionWithContainer sectionClassName="relative after:absolute md:after:inset-4 after:inset-2 md:after:rounded-[24px] after:rounded-xl after:bg-[#F9FAFB] after:z-[-1]">
       <div className="grid lg:grid-cols-[1.7fr_1.5fr] gap-10 items-center">
-        <div className="space-y-6">
+        <div className="space-y-6 max-md:px-2">
           <SectionHeading
             title={title}
             subTitle={subTitle}
@@ -47,14 +47,14 @@ const HomeAbout: React.FC<AboutCompanyDataTypes> = ({
          <Image src={src} alt={title} fill className="object-contain" />
          </div>
       </div>
-      <div className="grid lg:grid-cols-4 items-center gap-2.5 p-2.5 rounded-[15px] mt-14 bg-[#F5F6F8]">
+      <div className="grid xl:grid-cols-4 grid-cols-2 items-center gap-2.5 p-2.5 rounded-[15px] mt-14 bg-[#F5F6F8]">
         {stats.map((item, index) => (
           <div
             key={index}
-            className="text-center bg-white p-4 rounded-[10px] space-y-3"
+            className="text-center h-full bg-white p-4 rounded-[10px] space-y-3"
           >
-            <h3 className="text-primary text-3xl font-bold">{item.number}</h3>
-            <p className="text-[#6B7280]">{item.label}</p>
+            <h3 className="text-primary md:text-3xl text-xl font-bold">{item.number}</h3>
+            <p className="text-[#6B7280] max-md:text-xs max-md:px-4">{item.label}</p>
           </div>
         ))}
       </div>

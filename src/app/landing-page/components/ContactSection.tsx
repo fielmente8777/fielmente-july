@@ -30,31 +30,33 @@ const ContactSection: React.FC<Props> = ({
 }) => {
   return (
     <SectionWithContainer sectionClassName="bg-black">
-      <div className="grid md:grid-cols-8 gap-20">
-        <div className="md:col-span-5">
-          <div className="w-full relative aspect-4/3.5 overflow-hidden rounded-2xl">
+      <div className="grid xl:grid-cols-8 lg:gap-20 gap-8">
+        <div className="xl:col-span-5">
+          <div className="w-full relative md:aspect-4/3.5 aspect-4/7 overflow-hidden rounded-2xl">
             <Image
               src={images[0]}
               alt="bg-img"
               fill
               className="object-cover object-top"
             />
-            <div className="absolute inset-0 z-10 px-10 flex flex-col justify-center">
-              <div className="w-full max-w-xl items-center grid  md:grid-cols-[.6fr_1fr] gap-3">
+            <div className="absolute inset-0 z-10 md:px-10 px-4 flex flex-col justify-center">
+              <div className="w-full max-w-xl items-center grid  md:grid-cols-[.6fr_1fr] grid-cols-1 gap-3">
                 <SectionHeading
                   title={title}
                   subTitle={subTitle}
                   titleColor="white"
                   subTitleColor="white"
                   subTitleClassName="md:text-[2rem]!"
+                  titleWrapperClassName="max-md:mx-auto"
+                  smTextCenter
                 />
-                <p className="text-white text-sm">{description}</p>
+                <p className="text-white text-sm max-md:text-center">{description}</p>
               </div>
-              <div className="grid md:grid-cols-2 gap-5 mt-6 w-full max-w-md">
+              <div className="grid grid-cols-2 md:gap-5 gap-3 mt-6 w-full md:max-w-md">
                 {listOfLinks.slice(0, 3).map((item, index) =>
                   item.links.map((link, linkIndex) => (
                     <div
-                      className={`px-5 rounded-2xl shadow-inner bg-white/5 text-white flex flex-col  ${index === 2 ? "col-span-2 flex-row items-center gap-4 py-6" : "py-2.5 gap-2.5 "}`}
+                      className={`md:px-5 px-3 rounded-2xl shadow-inner bg-white/5 text-white flex flex-col  ${index === 2 ? "col-span-2 flex-row items-center justify-center gap-4 py-6" : "py-2.5 gap-2.5 "}`}
                       key={linkIndex}
                     >
                       <div>
@@ -64,8 +66,8 @@ const ContactSection: React.FC<Props> = ({
                         </span>
                       </div>
                       <div className="space-y-1.5">
-                        <h3 className="">{link.title}</h3>
-                        <Link href={link.href}>{link.label}</Link>
+                        <h3 className="text-sm">{link.title}</h3>
+                        <Link href={link.href} className="max-md:text-[10px]">{link.label}</Link>
                       </div>
                     </div>
                   ))
@@ -89,7 +91,7 @@ const ContactSection: React.FC<Props> = ({
             </div>
           </div>
         </div>
-        <div className="border border-[#333F50] rounded-2xl md:col-span-3">
+        <div className="border border-[#333F50] rounded-2xl xl:col-span-3">
           <LandingPgForm btnBgColor="bg-color4" />
         </div>
       </div>

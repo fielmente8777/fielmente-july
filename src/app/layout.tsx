@@ -5,6 +5,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import "./styles.scss";
 import PopupForm from "@/components/pop-ups/PopupForm";
+import MobileNav from "@/components/navbars/MobileNav";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -100,6 +101,8 @@ export default function RootLayout({
       >
         <AppProvider>
           <NavBar />
+          <MobileNav />
+
           {children}
           <Footer />
           <PopupForm />

@@ -15,10 +15,10 @@ const BusinessPartnersSlider: React.FC<Props> = ({
   wrapperClassName,
 }) => {
   return (
-    <div className={`w-full demo ${wrapperClassName ? wrapperClassName : ""}`}>
+    <div className={`w-full block overflow-hidden demo ${wrapperClassName ? wrapperClassName : ""}`}>
       <SwiperCarousel
         data={cards}
-        slidesPerView={2}
+        slidesPerView={2.5}
         spaceBetween={20}
         speed={5000}
         loop={true}
@@ -31,7 +31,7 @@ const BusinessPartnersSlider: React.FC<Props> = ({
         }}
         breakpoints={{
           768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
           1024: {
             slidesPerView: 5,

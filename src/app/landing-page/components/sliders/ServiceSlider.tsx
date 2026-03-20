@@ -1,27 +1,25 @@
 "use client";
-
-import { IndustryWeServeDataTypes } from "@/@types/@homeType";
 import { Container } from "@/components";
+import { ServiceCard } from "../cards/ServiceCard";
 import SwiperCarousel from "@/components/slider/SwiperCarousel";
 import { Autoplay, Navigation } from "swiper/modules";
-import IndustryWeServeCard from "../cards/IndustryWeServeCard";
+import { ServicesSectionProps } from "@/@types/@landingPageType";
 
-const IndustryWeServeSlider: React.FC<{
-  cards: IndustryWeServeDataTypes["cards"];
-}> = ({ cards }) => {
+const ServiceSlider: React.FC<{
+  services: ServicesSectionProps["services"];
+}> = ({ services }) => {
   return (
-    <div className="relative md:mt-12 mt-7">
+    <div className="lg:hidden w-full mt-6">
       <Container>
         <SwiperCarousel
-          data={cards}
+          data={services}
           slidesPerView={1}
           spaceBetween={20}
           modules={[Autoplay, Navigation]}
-          centeredSlides
           loop
           navigation={{
-            nextEl: ".industries-next",
-            prevEl: ".industries-prev",
+            nextEl: ".service-next",
+            prevEl: ".service-prev",
           }}
           autoplay={{
             delay: 2500,
@@ -29,18 +27,17 @@ const IndustryWeServeSlider: React.FC<{
           }}
           breakpoints={{
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
           }}
-          className="max-md:w-[78%]!"
           speed={900}
-          renderSlide={(card) => <IndustryWeServeCard {...card} />}
+          renderSlide={(card) => <ServiceCard {...card} />}
         />
-        <div className="flex items-center text-color4 justify-between w-full gap-6 absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[96%]">
-          <button className="w-10 aspect-square rounded-full bg-[#F5F6F8] disabled:bg-[#494949] flex items-center justify-center industries-prev rotate-180">
+        <div className="flex items-center justify-between w-full gap-6 mt-4">
+          <button className="w-10 aspect-square rounded-full bg-color4 disabled:bg-[#494949] flex items-center justify-center service-prev rotate-180">
             <Foo />
           </button>
-          <button className="w-10 aspect-square rounded-full bg-[#F5F6F8] disabled:bg-[#494949] flex items-center justify-center industries-next">
+          <button className="w-10 aspect-square rounded-full bg-color4 disabled:bg-[#494949] flex items-center justify-center service-next">
             <Foo />
           </button>
         </div>
@@ -49,7 +46,7 @@ const IndustryWeServeSlider: React.FC<{
   );
 };
 
-export default IndustryWeServeSlider;
+export default ServiceSlider;
 
 export const Foo = () => (
   <svg
@@ -61,7 +58,7 @@ export const Foo = () => (
   >
     <path
       d="M16.627 12.75H5.25C5.03717 12.75 4.859 12.6782 4.7155 12.5345C4.57183 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.57183 11.609 4.7155 11.4655C4.859 11.3218 5.03717 11.25 5.25 11.25H16.627L11.4577 6.08076C11.3091 5.93209 11.2357 5.75809 11.2375 5.55876C11.2395 5.35942 11.318 5.18217 11.473 5.02701C11.6282 4.88217 11.8038 4.80717 12 4.80201C12.1962 4.79684 12.3718 4.87184 12.527 5.02701L18.8673 11.3673C18.9609 11.4609 19.0269 11.5597 19.0652 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0652 12.3365C19.0269 12.4403 18.9609 12.5391 18.8673 12.6328L12.527 18.973C12.3885 19.1115 12.217 19.1823 12.0125 19.1855C11.808 19.1887 11.6282 19.1178 11.473 18.973C11.318 18.8178 11.2405 18.6397 11.2405 18.4385C11.2405 18.2372 11.318 18.0589 11.473 17.9038L16.627 12.75Z"
-      fill="currentColor"
+      fill="white"
     />
   </svg>
 );

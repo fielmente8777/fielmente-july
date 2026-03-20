@@ -24,8 +24,8 @@ const AboutFounder: React.FC<AboutFounderProps> = ({
 }) => {
   return (
     <SectionWithContainer
-      sectionClassName="relative after:absolute after:inset-y-[36px] after:inset-x-[39px] after:rounded-2xl after:bg-white before:content-[''] before:inset-0 before:absolute before:bg-[#191919] before:z-[-2] after:z-[-1]"
-      containerClassName="grid md:grid-cols-2 gap-16 max-w-7xl! py-6"
+      sectionClassName="relative after:absolute xl:after:inset-y-[36px] after:inset-y-[10px] xl:after:inset-x-[39px] after:inset-x-[8px] after:rounded-2xl after:bg-white before:content-[''] before:inset-0 before:absolute before:bg-[#191919] before:z-[-2] after:z-[-1]"
+      containerClassName="grid lg:grid-cols-2 gap-16 max-w-7xl! py-6"
     >
       <div className="space-y-8">
         <SectionHeading
@@ -44,15 +44,15 @@ const AboutFounder: React.FC<AboutFounderProps> = ({
           />
         </div>
       </div>
-      <div className="flex flex-col justify-between gap-6">
+      <div className="flex flex-col justify-between xl:gap-6 gap-4">
         {description.map((item, index) => (
           <p
             key={index}
-            className="text-secondary text-lg"
+            className="text-secondary xl:text-lg"
             dangerouslySetInnerHTML={{ __html: item }}
           />
         ))}
-        <ul className="grid grid-cols-2 w-fit gap-6 items-center">
+        <ul className="grid md:grid-cols-2 md:w-fit md:gap-6 gap-3.5 items-center">
           {links.map((item, index) => (
             <li key={index}>
               <Link

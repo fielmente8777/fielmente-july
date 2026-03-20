@@ -150,6 +150,7 @@ export interface BlogsDataTypes {
     src: string | undefined | StaticImageData;
     title: string;
     date: string;
+    slug: string;
     description: string;
   }[];
 }

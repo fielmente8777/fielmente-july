@@ -12,7 +12,7 @@ const TestimonialsSlider: React.FC<Props> = ({ cards }) => {
     <div className={`w-full`}>
       <SwiperCarousel
         data={cards}
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={20}
         speed={3000}
         loop={true}

@@ -77,7 +77,7 @@ const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-4 justify-between h-full max-md:px-4 p-6 max-md:mt-6 text-base rounded-2xl w-full bg-[#010101]"
+      className="flex flex-col gap-4 justify-between md:h-full p-4 md:p-6  text-base rounded-2xl w-full bg-[#010101]"
       noValidate
     >
       <h2 className="text-xl md:text-2xl text-center font-normal text-white">
@@ -87,7 +87,7 @@ const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
         Let&apos;s work on boosting your hotel&apos;s profitability!
       </p>
 
-      <div className="flex flex-col justify-between h-full gap-3">
+      <div className="flex flex-col justify-between gap-4">
         {formFields.map((field, index) => (
           <div key={index} className={`flex flex-col gap-2 `}>
             <label className="text-white ">{field.label}</label>

@@ -1,14 +1,14 @@
 "use client";
-import { AppContext } from "@/contextApi/AppContext";
+import { useAppContext } from "@/contextApi/AppContext";
 import { OutlineDrpopdown } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Fragment, useContext } from "react";
+import { Fragment } from "react";
 import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
 const Header = () => {
-  const { setIsOpenPopupForm, setIsMobileNavOpen } = useContext(AppContext);
+  const { setIsOpenPopupForm, setIsMobileNavOpen } = useAppContext();
 
   const pathName = usePathname();
 
@@ -22,7 +22,7 @@ const Header = () => {
                 <Image src="/Logo.png" alt="fielment logo" fill />
               </Link>
             </div>
-            <ul className="lg:flex hidden item-center gap-10">
+            <ul className="xl:flex hidden item-center gap-10">
               {navLinks.map((link, index) => {
                 return (
                   <li key={index} className="relative nav">
@@ -90,21 +90,16 @@ const Header = () => {
                 );
               })}
             </ul>
-            <div className="max-lg:block hidden">
-              <button
-                className="lg:hidden"
-                onClick={() => setIsMobileNavOpen(true)}
-              >
-                <MenuIcon />
-              </button>
-              {/* <MobileNav
-                  mobileMenu={mobileMenu}
-                  setMobileMenu={setMobileMenu}
-                /> */}
-            </div>
+            <button
+              className="xl:hidden"
+              onClick={() => setIsMobileNavOpen(true)}
+            >
+              <MenuIcon />
+            </button>
+
             <button
               onClick={() => setIsOpenPopupForm(true)}
-              className="inline-flex max-md:hidden items-center text-lg justify-center gap-2 px-8 py-3 tracking-wide text-white bg-[#1B1B1B] hover:text-white rounded-full duration-300 ease-in-out active:scale-95"
+              className="inline-flex max-xl:hidden items-center text-lg justify-center gap-2 px-8 py-3 tracking-wide text-white bg-[#1B1B1B] hover:text-white rounded-full duration-300 ease-in-out active:scale-95"
             >
               Contact Us
               <span className="w-6 aspect-square flex items-center justify-center bg-white rounded-full text-primary">

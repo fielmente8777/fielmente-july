@@ -17,10 +17,10 @@ const ClientsSlider: React.FC<Props> = ({
   lgSlidePerView = 5,
 }) => {
   return (
-    <div className={`w-full demo ${wrapperClassName ? wrapperClassName : ""}`}>
+    <div className={`w-full block overflow-hidden demo ${wrapperClassName ? wrapperClassName : ""}`}>
       <SwiperCarousel
         data={cards}
-        slidesPerView={2}
+        slidesPerView={2.5}
         spaceBetween={20}
         speed={5000}
         loop={true}

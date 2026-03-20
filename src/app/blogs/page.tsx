@@ -6,10 +6,10 @@ import BlogCard from "./components/BlogCard";
 
 export default function Blogs() {
   return (
-    <main className="mt-22">
+    <main className="md:mt-22 mt-23">
       <Section
         defaultPadding={false}
-        className="w-full relative aspect-[4/.935]"
+        className="w-full relative xl:aspect-[4/.935] lg:aspect-[4/.89] md:aspect-4/1.5 aspect-4/1.75 border"
       >
         <Image
           src="/images/blog/bnr.png"

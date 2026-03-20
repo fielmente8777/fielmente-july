@@ -19,20 +19,21 @@ import Img6 from "../../public/images/blog/asset-6.png";
 import Img7 from "../../public/images/blog/asset-7.jpeg";
 import Img8 from "../../public/images/blog/asset-8.png";
 import Img9 from "../../public/images/blog/asset-9.jpeg";
-import certificate from "../../public/images/blog/Another-milestone-in-Fielmente-journey-page.png";
+// import add from "../../public/images/blog/Post1.jpg";
 import AsianWok1 from "../../public/images/blog/Asian-Wok-1.png";
 import AsianWok2 from "../../public/images/blog/Asian-Wok-2.png";
 import AsianWok3 from "../../public/images/blog/Asian-Wok-3.png";
 import AsianWok4 from "../../public/images/blog/Asian-Wok-4.png";
 import PunjabiChic from "../../public/images/blog/Punjabi-Chic.jpg";
 
-
 export interface blogtype {
   url?: StaticImageData | string;
+  bnr?: boolean;
+  date?: string;
   addimg?: StaticImageData;
   description?: string;
   title: string;
-  link: string;
+  slug: string;
   data: string;
   isShow: boolean;
   meta?: {
@@ -50,7 +51,7 @@ export const blog: blogtype[] = [
         "UP’s Homestay Policy 2025 legalizes BnBs in Noida, offering homeowners incentives, subsidies, and training to boost tourism and income opportunities.",
     },
     title: "BnBs in Noida Set to Become Legal Under New Homestay Policy 2025",
-    link: "bnbs-in-noida-set-to-become-legal-under-new-homestay-policy-2025",
+    slug: "bnbs-in-noida-set-to-become-legal-under-new-homestay-policy-2025",
     description:
       "The hospitality landscape in Noida is about to witness a major shift. The Uttar Pradesh government has rolled out the Bed and Breakfast (BnB) and Homestay Policy 2025, bringing much-needed legitimacy and structure to guest accommodation facilities that have so far been operating informally.",
     data: `
@@ -119,7 +120,7 @@ This landmark move opens new doors for property owners, offering not just legali
     url: "/high-angle.jpg",
     title:
       "Why Hotels in the USA Hire Fielmente Hospitality Marketing Agency in India",
-    link: "why-hotels-in-the-usa-hire-fielmente-hospitality-marketing-agency-in-india",
+    slug: "why-hotels-in-the-usa-hire-fielmente-hospitality-marketing-agency-in-india",
     description:
       "In today’s hyper-competitive hospitality landscape, hotels across the United States are seeking smarter, cost-effective, and results-driven ways to attract guests, increase bookings, and boost their digital presence. Surprisingly, many of these hotels are turning to Fielmente, a hospitality marketing agency based in India, to achieve their goals. But why would a U.S. hotel outsource such a critical function overseas? Let’s dive into the reasons.",
     data: `
@@ -192,10 +193,11 @@ This landmark move opens new doors for property owners, offering not just legali
     // addimg: add,
     isShow: false,
     title: "How to Digitally Market your Hostel with Fielmente",
-    link: "how-to-digitally-market-your-hostel-with-fielmente-2",
+    slug: "how-to-digitally-market-your-hostel-with-fielmente-2",
 
     data: `
   <div>
+  
     <p>
       Hostel Owners handle quite delicate issues. Being a
       sensitive job, it becomes relatively difficult to market
@@ -342,7 +344,7 @@ This landmark move opens new doors for property owners, offering not just legali
     url: Img2,
     isShow: true,
     title: "How to Reply to Google Business Profile and Facebook Feedback",
-    link: "respond-to-facebook-google-reviews",
+    slug: "respond-to-facebook-google-reviews",
     description: `In recent times, opinions and reviews have become crucial
       for most businesses of all sizes. Consumers read reviews
       to decide if that particular business or store is worth
@@ -1139,7 +1141,7 @@ This landmark move opens new doors for property owners, offering not just legali
     url: Img3,
     isShow: true,
     title: "Why do you need Fielmente Hospitality Marketing Agency?",
-    link: "hospitality-consultants-in-india",
+    slug: "hospitality-consultants-in-india",
     description: `A hospitality digital marketing agency brings its clients
       revenue with its tailored hospitality marketing solutions.
       This helps the hotel to be more visible to its potential
@@ -1599,7 +1601,7 @@ This landmark move opens new doors for property owners, offering not just legali
     isShow: true,
     title:
       "How to start Cloud Kitchen in India – Ultimate Guide to open the Cloud Kitchen",
-    link: "how-to-start-cloud-kitchen-in-india-ultimate-guide-to-open-the-cloud-kitchen",
+    slug: "how-to-start-cloud-kitchen-in-india-ultimate-guide-to-open-the-cloud-kitchen",
     description: `Here’s what happens exactly in a cloud kitchen model: Orders come in, meals are cooked, packed, and then whisked immediately to their delivery locations by the assigned fleet.
 Why does this work? Because you’re cutting costs on front-of-house activities and concentrating on your food. With the availability of third-party services and the growing comfort of mobile ordering, this model seems just right to experiment with.`,
     data: `<div>
@@ -2211,7 +2213,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img5,
     isShow: true,
     title: "HTML or WordPress: Which one is Best for Your hotel/restaurant?",
-    link: "html-or-wordpress-which-one-is-best-for-your-hotel-restaurant-2",
+    slug: "html-or-wordpress-which-one-is-best-for-your-hotel-restaurant-2",
     description:
       "A website is a must if you own a restaurant and want to create a digital identity for your business. A website is important to interact with customers and attract potential customers through the website. Therefore, the website for any restaurant needs to be interactive. However, there are so many different website platforms that it becomes difficult to choose a feature-rich platform that provides you with all the features. One of the two most popular platforms for a restaurant website is HTML and WordPress, and people are usually confused between the two. Both types of websites have their advantage, but which is best for a restaurant? Let’s find out.",
     data: `<div>
@@ -2378,7 +2380,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img6,
     isShow: true,
     title: "A Complete Step-by-Step Process to Create a Brand Guide For Hotels",
-    link: "a-complete-process-to-create-a-brand-guide-for-hotels",
+    slug: "a-complete-process-to-create-a-brand-guide-for-hotels",
     description: `A one-page document highlighting the creative assets of
         a brand, like a logo, design, colour, typography, and
         brand philosophy to make customers aware and educated
@@ -2576,7 +2578,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img7,
     isShow: true,
     title: "6 Creative Ways to Market Your Hotel on a Shoestring Budget",
-    link: "6-creative-ways-to-market-your-hotel-on-a-shoestring-budget-2",
+    slug: "6-creative-ways-to-market-your-hotel-on-a-shoestring-budget-2",
     description: `As digital marketing is shifting rapidly, your hotel must use the best marketing concepts to drive new
     business. Online marketing through SEO, content, social media, paid campaigns, chatbots, and reputation management
     could greatly impact your hotel business. Oh, wait! Your website’s user experience is also important. But, don’t
@@ -2662,7 +2664,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     isShow: true,
     title:
       "8 Marketing Strategies for Food & Beverage Industry to Plan in 2022",
-    link: "8-marketing-strategies-for-food-beverage-industry-to-plan-in-2022",
+    slug: "8-marketing-strategies-for-food-beverage-industry-to-plan-in-2022",
     description: `This article is designed for any manager in the Food and Beverage Industry who wants to grow their business by
     executing a successful marketing strategy. This quick guide will help you plan your marketing strategy for 2022.`,
     data: `<p>This article is designed for any manager in the Food and Beverage Industry who wants to grow their business by
@@ -2745,14 +2747,14 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img9,
     isShow: true,
     title: "Another milestone in Fielmente’s journey",
-    link: "another-milestone-in-fielmente-s-journey",
+    slug: "another-milestone-in-fielmente-s-journey",
     description: `It’s been a year since we dared to act. Fielmente launched in 2020 to create a difference in the hospitality
       industry. We are a hospitality marketing that has always believed in the strength of creative ideas along with
       technology. Our goal is to help passionate brands unlock their full potential with this belief. So far we have been
       successful in helping out more than 50 brands by offering our 6 exclusive services and guidance.`,
-    addimg: certificate,
     data: `
   <div>
+  <img src="/images/blog/Another-milestone-in-Fielmente-journey-page.png" alt="caqm-relaxes" />
     <h2>Success comes to those who dare to act.</h2>
     <p>It’s been a year since we dared to act. Fielmente launched in 2020 to create a difference in the hospitality
       industry. We are a hospitality marketing that has always believed in the strength of creative ideas along with
@@ -2781,7 +2783,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img10,
     isShow: true,
     title: "Top 3 Food & Beverage Business Pitches on Shark Tank India",
-    link: "top-3-food-beverage-business-pitches-on-shark-tank-india",
+    slug: "top-3-food-beverage-business-pitches-on-shark-tank-india",
     description: `Are you too hooked on Shark Tank India just like most of us? We knew it and we don’t blame you. The show is the
       perfect blend of educational and entertaining. It showcases some of India’s most innovative business ideas and today
       we are going to share with you our top three favorite pitches for a food and beverage business venture. We will
@@ -2876,7 +2878,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img11,
     isShow: true,
     title: "How SEO helps to boost restaurant business",
-    link: "how-can-seo-help-a-local-restaurant-to-build-their-brand",
+    slug: "how-can-seo-help-a-local-restaurant-to-build-their-brand",
     description:
       "Businesses are always on the lookout for new strategies they can use to get ahead of the competition. Search engine optimization, commonly abbreviated as SEO, is one of those strategies that can be used by small businesses to create a name for themselves online. If you’re not sure how SEO for local restaurants could be helpful, here are just a few of the ways that SEO for restaurants could help build your brand.",
     data: `
@@ -2950,7 +2952,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img12,
     isShow: true,
     title: "6 Steps To Do Performance Marketing For Restaurants",
-    link: "steps-to-do-performance-marketing-for-restaurants",
+    slug: "steps-to-do-performance-marketing-for-restaurants",
     description:
       "Being a restaurant owner is exciting, challenging, and requires lots of work. Can you see yourself, lunch rush accompanying you as usual, with all the food orders coming in? Or are you looking to take on the challenge of performance marketing? The chances are high that if you have even thought about launching a new concept or selling your restaurant’s services to different venues, performance marketing is one of the ways.",
     data: `
@@ -3053,7 +3055,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img13,
     isShow: true,
     title: "Restaurant Marketing in the MetaVerse – Web 3.0",
-    link: "restaurant-marketing-in-the-metaverse",
+    slug: "restaurant-marketing-in-the-metaverse",
     description:
       "Unless you have been living under a rock, the name MetaVerse might sound a bit familiar to you. Everyone everywhere is talking about it. There have been discussions and debates around this topic. But what really is MetaVerse?",
     data: `
@@ -3117,7 +3119,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     isShow: true,
     title:
       "7 Restaurant Marketing Strategies in India to Follow for Your Business",
-    link: "restaurant-marketing-strategies-in-india",
+    slug: "restaurant-marketing-strategies-in-india",
     description:
       "Marketing in the restaurant industry is challenging. There are so many different jobs to do, so many aspects of customer service, and so many ways to do things wrong.",
     data: `<div>
@@ -3198,7 +3200,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img15,
     isShow: false,
     title: "Project on The Asian Wok",
-    link: "project-on-the-asian-wok",
+    slug: "project-on-the-asian-wok",
     data: `
       
       <div>
@@ -3254,7 +3256,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img16,
     isShow: true,
     title: "Tips for Engagement on Social Media of Cloud Kitchen",
-    link: "tips-for-engagement-on-social-media-of-cloud-kitchen",
+    slug: "tips-for-engagement-on-social-media-of-cloud-kitchen",
     description:
       "This may help you to be more active in the marketing field and up-to-date.",
     data: `
@@ -3278,7 +3280,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     <h2>Facebook Fan Page</h2>
     <ul>
       <li>Insert strategic objective</li>
-      <li>Share a mix of relevant links, engaging content, videos, and polls</li>
+      <li>Share a mix of relevant slugs, engaging content, videos, and polls</li>
       <li>Make sure you promote upcoming events and create them in the Events tab</li>
       <li>Engage with influencers</li>
     </ul>
@@ -3358,10 +3360,10 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     <ul>
       <li>Hey [First Name]! A very delicious paneer recipe is available for Friday Night. We can get you set up with a 15%
         discount if you purchase today. Are you interested?</li>
-      <li>₹ 50 Monday- Get PUNJABI RASOI KA PANEER at Just ₹ 50. Order now [ Link]</li>
+      <li>₹ 50 Monday- Get PUNJABI RASOI KA PANEER at Just ₹ 50. Order now [ slug]</li>
       <li>Tasty Tuesday – Feed the family with ₹ 500 – Thali for all – Save time Order Online</li>
       <li>₹ 40 off on MAHARAJA THALI – Order now or Call</li>
-      <li>Hi [First Name]. Order for a friend and you any time during the month of December and get ₹100 off. Tap the link
+      <li>Hi [First Name]. Order for a friend and you any time during the month of December and get ₹100 off. Tap the slug
         to learn more.</li>
       <li>???? Our new location in Agra is now open! Order and celebrate with us and get 15% off your purchase today
         through Saturday. Order Now!!</li>
@@ -3374,7 +3376,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       <li>Happy birthday, month, [First Name]! ???? Show this text to your nearby Veganic outlet on your next visit this
         month and we’ll give you a free CHAKNA. ????</li>
       <li>Hey, vegetarian fans! We’re giving away special dishes to one lucky winner and a friend. Just reply to this text
-        with the word ‘BFF’ and you’ll be entered to win. See full contest details here: [Link]</li>
+        with the word ‘BFF’ and you’ll be entered to win. See full contest details here: [slug]</li>
       <li>Last Chance to get it before it is empty – THIS TOO SHALL PASTA at just ₹ 40</li>
       <li>Free Beverage when you order 2 MAKE A TOAST. Order now and don’t miss out</li>
       <li>Don’t forget to try our GHAR WALE RAJMA at ₹ 90. Order on Swiggy or Zomato.</li>
@@ -3387,7 +3389,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       <li>What better way to celebrate this beautiful holiday than with a mint SAB KI PYARI DAL MAKHANI or DHABEWALI DAL
         FRY? Available now</li>
       <li>Hey [Name], are you hungry? Our menu has changed since the last time we heard from you—check out what’s new
-        here: [Link]</li>
+        here: [slug]</li>
       <li>What’s your favorite dish?</li>
     </ul>
     <ol>
@@ -3418,7 +3420,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       "Cloud Kitchen Consulting Services: 6 Reasons Why You Need Fielmente for It",
     description:
       "The whole world is getting tech-savvy, so why don’t your food? The Cloud kitchen concept is one of the best ideas that this virtual Internet world has given us. You may know it by other names like ghost kitchen, dark kitchen, and virtual kitchen, but they all are the need of the hour. Everything is switching into an online world so why don’t restaurants? Cloud Kitchen allows you to enjoy restaurant-like food at your doorsteps. You must have heard about a popular saying,",
-    link: "cloud-kitchen-consulting-services",
+    slug: "cloud-kitchen-consulting-services",
     data: `
   <div>
     <p>The whole world is getting tech-savvy, so why don’t your food? The Cloud kitchen concept is one of the best ideas
@@ -3463,7 +3465,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       Digital Marketing experts whose sole work is to grow the social media accounts of their clients. <a
         href="">Developing social
         media accounts</a> has given us fantabulous results in the past. Social media accounts like Instagram, WhatsApp,
-      Facebook, Linked ln, Pinterest, and Google My Business, are something worth spending time and money on. They give
+      Facebook, sluged ln, Pinterest, and Google My Business, are something worth spending time and money on. They give
       you high profits with extreme interest. We also give you attractive social media highlights, that other company
       fails to provide. Do you know what makes us unique? Our Pinterest marketing skills. We divert almost one-fourth of
       our customers from Pinterest which gives us extra bonus.</p>
@@ -3524,7 +3526,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img18,
     isShow: false,
     title: "Congratulations Team Punjabi Chic Inn, Jodhpur",
-    link: "congratulations-team-punjabi-chic-inn-jodhpur",
+    slug: "congratulations-team-punjabi-chic-inn-jodhpur",
     data: `<div>
     <p>The One and only Restaurant Guru concluded its annual survey for the year 2021. It reviewed hundreds of restaurants
       around Jodhpur and finally listed “the Best Restaurants” in which our restaurant got the 8th Rank in Jodhpur!!
@@ -3607,7 +3609,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img19,
     isShow: false,
     title: "Which POS is best for Cloud Kitchen?",
-    link: "which-pos-is-best-for-cloud-kitchen",
+    slug: "which-pos-is-best-for-cloud-kitchen",
     description:
       "The concept of a cloud kitchen is booming in India, especially during the ongoing pandemic, when takeaway has become the most preferred choice of customers. However, managing a cloud kitchen has always been baffling, fortunately, there are POS solutions.",
     data: `
@@ -3661,7 +3663,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: "/images/blog/last-2nd-bg.png",
     isShow: true,
     title: "Improved Hotel Business Solutions for the New Normal",
-    link: "strategies-for-hotel-business",
+    slug: "strategies-for-hotel-business",
     description:
       "The pandemic caught us off guard as it hit our hospitality and tourism industry so hard that international tourist arrivals dropped to -72.2% in 2020 and many talented employees had to lose their jobs. And in 2023 as we are nearing the end of the year we see how in the aftermath of COVID-19, our industry is adjusting to the new normal.",
     data: `
@@ -3973,7 +3975,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     url: Img6,
     isShow: false,
     title: "How to Digitally Market your Hostel with Fielmente",
-    link: "how-to-digitally-market-your-hostel-with-fielmente",
+    slug: "how-to-digitally-market-your-hostel-with-fielmente",
     data: `
   <div>
     <p>Hostel Owners handle quite delicate issues. Being a sensitive job, it becomes relatively difficult to market such
@@ -4057,11 +4059,50 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       without any delay.</p>
   </div>`,
   },
+  {
+    url: "/images/blog/caqm-relaxes.jpeg",
+    // date: "13 March 2023",
+    bnr: false,
+    isShow: true,
+    title:
+      "CAQM Relaxes Approved Fuel Norms: What It Means for Hotels & Restaurants in NCR",
+    slug: "caqm-relaxes-approved-fuel-norms-hotels-restaurants-ncr",
+    description:
+      "The Commission for Air Quality Management (CAQM) issued an order on 13 March 2026 temporarily relaxing the approved fuel norms for industries, hotels, restaurants, and other establishments operating in the National Capital Region (NCR). This decision comes in response to disruptions in global energy supply and the regulated distribution of natural gas in India.",
+    data: `
+  <div>
+  
+  <p>The Commission for Air Quality Management (CAQM) issued an order on 13 March 2026 temporarily relaxing the approved fuel norms for industries, hotels, restaurants, and other establishments operating in the National Capital Region (NCR). This decision comes in response to disruptions in global energy supply and the regulated distribution of natural gas in India.</p>
+  <img src="/images/blog/caqm-relaxes.jpeg" alt="caqm-relaxes" />
+  
+    <h2>Why This Order Was Issued</h2>
+
+    <p>The Government of India introduced the Natural Gas (Supply Regulation) Order, 2026, which prioritizes the supply of natural gas to essential sectors. Due to these regulations and supply disruptions, many commercial establishments reported operational challenges caused by limited PNG availability. Following consultations with the Ministry of Petroleum and Natural Gas, City Gas Distribution Companies, and Pollution Control Boards, CAQM reviewed the situation and provided temporary flexibility in fuel usage for NCR businesses.</p>
+
+    <h2>Temporary Alternative Fuels Allowed</h2>
+
+    <p>Hotels and restaurants are now permitted to temporarily use alternative fuels instead of natural gas. The allowed fuels include High-Speed Diesel (HSD), Biomass, and RDF Pellets (Refuse-Derived Fuel). If these fuels are unavailable, establishments may also temporarily use coal or kerosene. This relaxation applies to industries, hotels, restaurants, and other enterprises operating across the NCR region, including Delhi.</p>
+
+    <h2>Duration of the Relaxation</h2>
+
+    <p>The permission to use alternative fuels is temporary and valid for one month from the date of the order (13 March 2026), or until further instructions are issued. All other provisions of CAQM Direction No. 65 dated 23 June 2022 will remain unchanged.</p>
+
+    <h2>What This Means for Hotels and Restaurants</h2>
+
+    <p>For hospitality operators in NCR, this decision provides practical operational relief. Hotels and restaurants that rely heavily on PNG for kitchens, boilers, and heating systems can continue operations without interruption by switching to permitted alternative fuels when necessary.</p>
+
+    <h2>Strategic Considerations for Hospitality Businesses</h2>
+
+    <p>The current situation highlights the importance of operational resilience and energy diversification. Hotels and restaurants should evaluate hybrid fuel systems, energy-efficient equipment, and contingency planning to reduce dependence on a single energy source.</p>
+
+    <h3>About Fielmente</h3>
+
+    <p>Fielmente works closely with hospitality businesses across India, helping hotels, restaurants, and resorts navigate industry challenges through digital transformation, operational insights, and growth-driven marketing strategies.</p>
+  </div>`,
+  },
 ];
 
 export const blogData = blog.filter((item) => item.isShow === true);
-
-
 
 // tips-for-engagement-on-social-media-of-cloud-kitchen
 // <a class="hidden" target="_blank" rel="noreferrer" href="https://supportdigitalindia.in/business-whatsapp.php">SDI Business Whatsapp Sender| Bulk Whatsapp Marketing |
