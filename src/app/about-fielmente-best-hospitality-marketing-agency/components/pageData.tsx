@@ -83,6 +83,12 @@ export const aboutUsPageData = {
       "/about/unique-1.jpg",
       "/about/unique-2.jpg",
       "/about/unique-3.png",
+      "/about/unique-4.png",
+      "/about/unique-5.png",
+      "/about/unique-6.png",
+      "/about/unique-7.png",
+      "/about/unique-8.png",
+      "/about/unique-9.png",
     ],
     link: {
       label: "Get Started",

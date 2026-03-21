@@ -165,13 +165,13 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`grid grid-cols-4 rounded-full overflow-hidden glassy-card p-2 `}
+      className={`grid md:grid-cols-4 md:rounded-full rounded-[20px] overflow-hidden glassy-card p-2 `}
     >
-      <div className="col-span-3 grid grid-cols-3 py-2">
+      <div className="md:col-span-3 grid md:grid-cols-3 md:py-2">
         {formData.map((data, index) => (
           <div
             key={index}
-            className={`w-full  flex gap-2 items-center px-4 ${formData.length - 1 !== index ? "border-r" : ""} border-white/40 "}`}
+            className={`w-full  flex gap-2 items-center md:px-4 max-md:py-2 ${formData.length - 1 !== index ? "md:border-r border-b" : ""} border-white/40 "}`}
           >
             <label htmlFor={data.name}>{data.icon}</label>
             <div className={`w-full  bg-transparent flex items-center `}>
@@ -188,7 +188,7 @@ const Form = () => {
                     autoComplete: "off",
                     spellCheck: "false",
                     className:
-                      "w-full placeholder:text-white bg-transparent text-white no-spinner resize-none focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary py-2",
+                      "w-full placeholder:text-white max-md:text-sm bg-transparent text-white no-spinner resize-none focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary py-2",
                   })}
             </div>
             {data.name === "phone" && errorMessage && (
@@ -201,7 +201,7 @@ const Form = () => {
         ))}
       </div>
 
-      <button className="w-full text-center bg-white text-black border-orange-primary text-md px-8 h-full   font-semibold  duration-300 rounded-full border-white hover:scale-105 border">
+      <button className="w-full max-md:py-2 text-center bg-white text-black border-orange-primary text-md px-8 h-full   font-semibold  duration-300 rounded-full border-white hover:scale-105 border">
         {formRes ? (
           "Loading...."
         ) : (
