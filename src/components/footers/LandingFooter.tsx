@@ -34,6 +34,8 @@ const LandingFooter = () => {
                     <li key={index}>
                       <Link
                         href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-[#FFFFFFB2] max-md:text-sm hover:text-secondary transition-all duration-300 ease-in-out"
                       >
                         {link.label}
