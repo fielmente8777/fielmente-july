@@ -1,6 +1,8 @@
 "use client";
+import { BtnType } from "@/@types/@types";
 import { useAppContext } from "@/contextApi/AppContext";
 import Link from "next/link";
+
 
 type CtaBtnProps = {
   label: string;
@@ -9,7 +11,7 @@ type CtaBtnProps = {
   iconClass?: string;
   startIconClass?: string;
   onClick?: () => void;
-  type: "link" | "button";
+  type: BtnType;
   [key: string]: unknown;
   target?: string;
   icon?: "arrow" | "arrow2" | "none";
@@ -22,7 +24,7 @@ export const CtaBtn: React.FC<CtaBtnProps> = ({
   href,
   className = "",
   onClick,
-  type,
+  type = "button",
   target,
   icon,
   iconClass,

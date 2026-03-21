@@ -1,16 +1,11 @@
-import { footerData, SocialLinks } from "@/components/footers/footerData";
-import {
-  AiFrontDeskIcon,
-  AiReservationDeskIcon,
-  BookingEngineIcon,
-  CmsIcon,
-  PaymentGatewayIcon,
-  WebsiteBuilderIcon,
-  WhatsAppMarketingIcon,
-} from "@/utils/homeIcons";
+import { homePageData } from "@/app/(home)/homePageData";
+import { SocialLinks } from "@/components/footers/footerData";
+import { ClientImages } from "@/utils/client";
 import { FillLocationIcon, FillMailIcon, FillPhoneIcon } from "@/utils/icons";
 import { contacts } from "../../../../contact";
-import { ClientImages } from "@/utils/client";
+import { BtnType } from "@/@types/@types";
+
+const btnType: BtnType = "link";
 
 export const landingPageData = [
   {
@@ -131,7 +126,9 @@ export const landingPageData = [
       },
       cta: {
         label: "Book My Free Consultation Call",
-        type: "button",
+        type: btnType,
+        href: contacts.WhatsAppCta,
+        target: "_blank",
       },
     },
 
@@ -193,11 +190,15 @@ export const landingPageData = [
       ctaS: [
         {
           label: "View Case Studies",
-          type: "button",
+          type: btnType,
+          href: contacts.WhatsAppCta,
+          target: "_blank",
         },
         {
           label: "Book a Free Strategy Call",
-          type: "button",
+          type: btnType,
+          href: contacts.WhatsAppCta,
+          target: "_blank",
         },
       ],
     },
@@ -220,7 +221,9 @@ export const landingPageData = [
           result: "+30% direct reservations within 60 days",
           cta: {
             label: "Get a Demo",
-            type: "button",
+            type: btnType,
+            href: contacts.WhatsAppCta,
+            target: "_blank",
           },
         },
         {
@@ -230,7 +233,9 @@ export const landingPageData = [
           result: "Avg. 2.4× ROAS",
           cta: {
             label: "See Case Study",
-            type: "button",
+            type: btnType,
+            href: contacts.WhatsAppCta,
+            target: "_blank",
           },
         },
         {
@@ -241,7 +246,9 @@ export const landingPageData = [
           result: "Top 3 in 90 days on average",
           cta: {
             label: "Book a free SEO audit",
-            type: "button",
+            type: btnType,
+            href: contacts.WhatsAppCta,
+            target: "_blank",
           },
         },
         {
@@ -251,7 +258,9 @@ export const landingPageData = [
             "Google Business optimisation & map pack domination for walk ins and same day bookings.",
           cta: {
             label: "Check your local rankings",
-            type: "button",
+            type: btnType,
+            href: contacts.WhatsAppCta,
+            target: "_blank",
           },
         },
         {
@@ -261,7 +270,9 @@ export const landingPageData = [
             "Strategy, creation & community management across Instagram, Facebook & TikTok.",
           cta: {
             label: "See our content work",
-            type: "button",
+            type: btnType,
+            href: contacts.WhatsAppCta,
+            target: "_blank",
           },
         },
         {
@@ -271,7 +282,9 @@ export const landingPageData = [
             "Listings, rate parity & ranking optimisation across Booking.com, Expedia & Airbnb.",
           cta: {
             label: "Audit my OTA listing",
-            type: "button",
+            type: btnType,
+            href: contacts.WhatsAppCta,
+            target: "_blank",
           },
         },
       ],
@@ -281,7 +294,9 @@ export const landingPageData = [
           "Free 15-minute strategy call. No sales pitch. Just clear growth advice.",
         cta: {
           label: "Book My Free Consultation Call",
-          type: "button",
+          type: btnType,
+          href: contacts.WhatsAppCta,
+          target: "_blank",
         },
       },
     },
@@ -293,70 +308,11 @@ export const landingPageData = [
         "Our AI-powered hotel tools are built to increase direct bookings, cut OTA costs, and enhance guest experiences — helping you grow revenue while streamlining operations.<br/>Trusted by 120+ hotels & resorts worldwide",
       cta: {
         label: "Get a Demo",
-        type: "button",
+        type: btnType,
+        href: contacts.WhatsAppCta,
+        target: "_blank",
       },
-      cards: [
-        {
-          icon: <CmsIcon />,
-          title: `CMS`,
-          description: `Easily manage hotel content, offers, and promotions. Update menus, rooms, and packages in seconds — no IT team needed.`,
-        },
-        {
-          icon: <BookingEngineIcon />,
-          title: `Booking Engine`,
-          description: `Seamless booking engine designed for hotels. Boost direct reservations by 30%+ and reduce OTA commissions instantly`,
-        },
-        {
-          icon: <AiReservationDeskIcon />,
-          title: `AI Reservation Desk`,
-          description: `AI-powered assistant that answers guest queries 24/7, reduces missed inquiries, and converts chats into confirmed bookings`,
-        },
-        {
-          icon: <PaymentGatewayIcon />,
-          title: `Payment Gateway`,
-          description: `Secure, integrated payments for smooth guest checkout — supporting multi-currency & one-click payments`,
-        },
-        {
-          icon: <BookingEngineIcon />,
-          title: `Email Marketing`,
-          description: `Automated and personalized campaigns that deliver 4× higher open rates than traditional hotel emails`,
-        },
-        {
-          icon: <AiFrontDeskIcon />,
-          title: `AI Front Desk`,
-          description: `Your virtual receptionist available 24/7 — answering queries, upselling rooms, and handling guest requests instantly`,
-        },
-        {
-          icon: <WhatsAppMarketingIcon />,
-          title: `WhatsApp Marketing`,
-          description: `Engage guests directly where they spend most time. From booking confirmations to offers — drive faster responses & repeat stays`,
-        },
-        {
-          icon: <WebsiteBuilderIcon />,
-          title: `Website Builder`,
-          description: `All-in-one hotel website builder with integrated booking and SEO optimization — live in just 7 days`,
-        },
-        {
-          title: `AI Concierge Desk`,
-          description: `Smart concierge that recommends dining, spa, and activities — increasing ancillary revenue per guest by up to 25%.`,
-        },
-        {
-          title: `AI Chatbot`,
-          description: `Automate inquiries, FAQs, and booking queries — saving staff time and increasing conversions by 35%+`,
-        },
-        {
-          title: `AI Voice Agent`,
-          description: `Answer guest calls automatically with a friendly AI agent trained for hospitality. Reduce call handling time by 50%.`,
-        },
-        {
-          title: `Local SEO`,
-          description: `Rank higher on Google Maps & ‘near me’ searches. Hotels we optimize see 2× more calls & direct inquiries within weeks`,
-        },
-        {
-          title: `CRM`,
-          description: `Centralize guest data, manage loyalty, and run targeted campaigns that increase repeat stays by 40%`,
-        },
-      ],
+      cards: homePageData.productsData.cards,
     },
 
     resultsSection: {
@@ -381,7 +337,9 @@ export const landingPageData = [
       ],
       cta: {
         label: "Contact Us",
-        type: "button",
+        type: btnType,
+        href: contacts.WhatsAppCta,
+        target: "_blank",
       },
     },
 
@@ -411,7 +369,9 @@ export const landingPageData = [
       ],
       cta: {
         label: "Get a Demo",
-        type: "button",
+        type: btnType,
+        href: contacts.WhatsAppCta,
+        target: "_blank",
       },
     },
 

@@ -1,3 +1,4 @@
+import { CtaBtnPropsType } from "@/@types/@types";
 import { SectionWithContainer } from "@/components";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
@@ -20,10 +21,7 @@ interface Props {
       progress: number;
     }[];
   };
-  cta: {
-    label: string;
-    type: string;
-  };
+  cta: CtaBtnPropsType;
 }
 
 const AboutSection: React.FC<Props> = ({
@@ -130,8 +128,10 @@ const AboutSection: React.FC<Props> = ({
           dangerouslySetInnerHTML={{ __html: description[1] }}
         ></p>
         <CtaBtn
-          type="button"
+          type={cta.type}
           label={cta.label}
+          href={cta.href}
+          target={cta.target}
           className="bg-color4 text-white md:w-fit rounded-full justify-between!"
           icon="arrow"
         />

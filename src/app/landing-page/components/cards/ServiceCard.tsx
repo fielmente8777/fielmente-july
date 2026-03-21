@@ -42,7 +42,9 @@ export const ServiceCard: React.FC<ServicesSectionProps["services"][0]> = ({
         )}
         <CtaBtn
           label={cta.label}
-          type="button"
+          type={cta.type}
+          href={cta.href}
+          target={cta.target}
           className="bg-background-black1 mt-auto text-white w-full rounded-full justify-between!"
           icon="arrow"
         />

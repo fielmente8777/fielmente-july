@@ -1,6 +1,8 @@
 "use client";
 import { ProductsDataTypes } from "@/@types/@homeType";
 import { SectionWithContainer } from "@/components";
+import ProductCard from "@/components/cards/ProductCard";
+import ProductSlider from "@/components/slider/ProductSlider";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import { useState } from "react";
 
@@ -24,11 +26,14 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
           dangerouslySetInnerHTML={{ __html: description }}
         ></p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"> */}
+      <div className="md:flex hidden flex-wrap justify-center gap-5.5 mt-10">
         {cards.slice(0, showMore ? cards.length : 8).map((card, index) => (
           <ProductCard key={index} {...card} />
         ))}
       </div>
+      <ProductSlider cards={cards} />
+
       <div className="mt-8 flex justify-center gap-4">
         <button
           onClick={login}
@@ -50,25 +55,3 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
 };
 
 export default OurProducts;
-
-const ProductCard: React.FC<ProductsDataTypes["cards"][0]> = ({
-  title,
-  description,
-  icon,
-}) => {
-  return (
-    <div className="bg-[#FAFAFA] border border-[#E3E3E3] rounded-2xl p-6 space-y-4 group hover:bg-[#2b59ff] transition-colors duration-300 ease-in-out">
-      <div className="group-hover:bg-white group-hover:text-[#2b59ff] group-hover:border-none flex items-center justify-center  w-14 aspect-square rounded-full border border-[#E3E3E3]">
-        {icon}
-      </div>
-      <div className="space-y-2">
-        <h3 className="text-2xl font-semibold text-primary group-hover:text-white">
-          {title}
-        </h3>
-        <p className="text-sm text-[#6B7280] group-hover:text-[#DDDDDD]">
-          {description}
-        </p>
-      </div>
-    </div>
-  );
-};

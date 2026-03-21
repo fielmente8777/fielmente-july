@@ -20,7 +20,7 @@ const ThankUPopUp = () => {
   // back to website
   const router = useRouter();
   const handleBackToWebsite = () => {
-    router.push("/");
+    router.push("https://fielmente.com/");
   };
 
   return (

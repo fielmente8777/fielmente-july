@@ -3,20 +3,9 @@ import { CtaBtn } from "@/components/buttons/CtaBtn";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import ResultsSlider from "./sliders/ResultsSlider";
 import { ResultStatsCard } from "./cards/ResultStatsCard";
+import { ResultsSectionProps } from "@/@types/@landingPageType";
 
-interface ResultsSectionProps {
-  title: string;
-  heading: string;
-  stats: {
-    value: string;
-    label: string;
-    description: string;
-  }[];
-  cta: {
-    label: string;
-    type: string;
-  };
-}
+
 
 const ResultsSection: React.FC<ResultsSectionProps> = ({
   title,
@@ -35,7 +24,9 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
             subTitleColor="white"
           />
           <CtaBtn
-            type="button"
+            type={cta.type}
+            href={cta.href}
+            target={cta.target}
             label={cta.label}
             className="mt-8 w-full justify-between! bg-color4 border-color4 text-white rounded-full"
             icon="arrow"

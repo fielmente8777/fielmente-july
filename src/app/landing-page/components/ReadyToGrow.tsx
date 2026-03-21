@@ -1,3 +1,4 @@
+import { CtaBtnPropsType } from "@/@types/@types";
 import { SectionWithContainer } from "@/components";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
@@ -8,10 +9,7 @@ interface Props {
   subTitle: string;
   description: string;
   src: string;
-  ctaS: {
-    label: string;
-    type: string;
-  }[];
+  ctaS: CtaBtnPropsType[];
 }
 const ReadyToGrow: React.FC<Props> = ({
   title,
@@ -40,7 +38,9 @@ const ReadyToGrow: React.FC<Props> = ({
               <CtaBtn
                 key={cta.label}
                 label={cta.label}
-                type="button"
+                type={cta.type}
+                href={cta.href}
+                target={cta.target}
                 className={`rounded-full w-fit border-none ${index === 1 ? "bg-white text-color4" : "glassy-card text-white"}` }
                 icon={index === 1 ? "arrow2" : "none"}
                 iconClass={index === 1 ? "text-color4" : "text-white"}

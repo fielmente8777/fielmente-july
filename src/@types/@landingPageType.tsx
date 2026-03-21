@@ -1,3 +1,5 @@
+import { CtaBtnPropsType } from "./@types";
+
 export interface ServicesSectionProps {
   title: string;
   subTitle: string;
@@ -8,22 +10,14 @@ export interface ServicesSectionProps {
     title: string;
     description: string;
     result?: string;
-    cta: {
-      label: string;
-      type: string;
-    };
+    cta: CtaBtnPropsType;
   }[];
   ctaCard: {
     title: string;
     description: string;
-    cta: {
-      label: string;
-      type: string;
-    };
+    cta: CtaBtnPropsType;
   };
 }
-
-
 
 export interface ResultsSectionProps {
   title: string;
@@ -33,12 +27,8 @@ export interface ResultsSectionProps {
     label: string;
     description: string;
   }[];
-  cta: {
-    label: string;
-    type: string;
-  };
+  cta: CtaBtnPropsType;
 }
-
 
 export interface GrowthSectionProps {
   title: string;

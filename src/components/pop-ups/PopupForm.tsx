@@ -58,11 +58,11 @@ const PopupForm = () => {
   return (
     <>
       <section
-        className={`fixed inset-0 z-[99999] bg-black/50 duration-700 ease-in-out transition-all ${isOpenPopupForm ? "block" : "hidden"}`}
+        className={`fixed inset-0 z-99999 bg-black/50 duration-700 ease-in-out transition-all ${isOpenPopupForm ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-95"}`}
         onClick={closeModal}
       >
         <article
-          className={`${isOpenPopupForm ? "flex justify-center items-center h-full scale-100 opacity-100 max-md:px-4" : "h-0 scale-0 opacity-0"} transition-all duration-700 ease-in-out`}
+          className={`flex justify-center items-center h-full max-md:px-4`}
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex max-w-3xl w-full shadow-2xl relative rounded-lg overflow-hidden bg-white">
@@ -73,7 +73,7 @@ const PopupForm = () => {
             >
               <OutlineClose />
             </button>
-            <div className="relative w-full md:aspect-[4/4] max-md:hidden">
+            <div className="relative w-full md:aspect-4/4 max-md:hidden">
               <Image
                 src={"/popup2.jpg"}
                 alt="Hospitality Marketing"

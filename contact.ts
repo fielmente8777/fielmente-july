@@ -3,11 +3,11 @@ export const contacts = {
   phone_1: "+91 95018 68775",
   email: ["sachin@fielmente.com"],
   phone: [
-    // "+91 95018 68775",
-    "+91 81789 39108",
+    // "+91 81789 39108",
+    "+91 95018 68775",
   ],
   WhatsAppCta:
-    "https://wa.me/+918178939108?text=Hello+I+would+like+to+know+more+about+Fielmente+Hospitality+Marketing+Agency",
+    "https://wa.me/+919501868775?text=Hello+I+would+like+to+know+more+about+Fielmente+Hospitality+Marketing+Agency",
   addressesInIndia: [
     {
       address:

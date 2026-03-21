@@ -1,15 +1,20 @@
 import { ClientImages } from "@/utils/client";
 import {
+  AiConciergeDeskIcon,
   AiFrontDeskIcon,
   AiReservationDeskIcon,
   AiSearchOptimizationIcon,
+  AiVoiceAgentIcon,
   BookingEngineIcon,
   CmsIcon,
   ConsultIcon,
+  CRMIcon,
   CustomizedHotelMarketingSolutions,
   EffectiveHotelPerformanceMarketingIcon,
+  EmailMarketingIcon,
   ExceptionalHotelWebsiteDevelopment,
   ExecuteIcon,
+  LocalSEOIcon,
   LocalSeoIcon,
   OptimizedForSearchEngines,
   OtaManagementIcon,
@@ -264,7 +269,7 @@ export const homePageData = {
         description: `Secure, integrated payments for smooth guest checkout — supporting multi-currency & one-click payments`,
       },
       {
-        icon: <BookingEngineIcon />,
+        icon: <EmailMarketingIcon />,
         title: `Email Marketing`,
         description: `Automated and personalized campaigns that deliver 4× higher open rates than traditional hotel emails`,
       },
@@ -284,22 +289,27 @@ export const homePageData = {
         description: `All-in-one hotel website builder with integrated booking and SEO optimization — live in just 7 days`,
       },
       {
+        icon: <AiConciergeDeskIcon />,
         title: `AI Concierge Desk`,
         description: `Smart concierge that recommends dining, spa, and activities — increasing ancillary revenue per guest by up to 25%.`,
       },
       {
+        icon: <AiReservationDeskIcon />,
         title: `AI Chatbot`,
         description: `Automate inquiries, FAQs, and booking queries — saving staff time and increasing conversions by 35%+`,
       },
       {
+        icon: <AiVoiceAgentIcon />,
         title: `AI Voice Agent`,
         description: `Answer guest calls automatically with a friendly AI agent trained for hospitality. Reduce call handling time by 50%.`,
       },
       {
+        icon: <LocalSEOIcon />,
         title: `Local SEO`,
         description: `Rank higher on Google Maps & ‘near me’ searches. Hotels we optimize see 2× more calls & direct inquiries within weeks`,
       },
       {
+        icon: <CRMIcon />,
         title: `CRM`,
         description: `Centralize guest data, manage loyalty, and run targeted campaigns that increase repeat stays by 40%`,
       },

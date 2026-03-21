@@ -1,5 +1,14 @@
 import { ClientData } from "@/utils/client";
 import { JSX } from "react";
+
+export type BtnType = "button" | "link";
+
+export interface CtaBtnPropsType {
+  label: string;
+  href?: string;
+  type: BtnType;
+  target?: string;
+}
 export interface NavLinksProps {
   href: string;
   label: string;

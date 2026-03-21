@@ -1,6 +1,6 @@
 "use client";
 import { ProductsDataTypes } from "@/@types/@homeType";
-import { ProductCard } from "@/components/cards/ProductCard";
+import ProductCard from "@/components/cards/ProductCard";
 import SwiperCarousel from "@/components/slider/SwiperCarousel";
 import { Autoplay } from "swiper/modules";
 

@@ -1,6 +1,7 @@
 import { ClientData } from "@/utils/client";
 import { StaticImageData } from "next/image";
 import { JSX } from "react";
+import { CtaBtnPropsType } from "./@types";
 
 export interface BusinessPartnersDataTypes {
   title: string;
@@ -56,10 +57,7 @@ export interface ProductsDataTypes {
     title: string;
     description: string;
   }[];
-  cta?: {
-    label: string;
-    type: string;
-  };
+  cta?: CtaBtnPropsType;
 }
 
 export interface HowItWorksDataTypes {

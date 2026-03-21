@@ -1,12 +1,13 @@
 "use client";
 import { usePathname } from "next/navigation";
 
-import axios from "axios";
-import React, { useState } from "react";
+import useClickOutside from '@/hooks/useClickOutside';
 import { countries } from "@/utils/countryCode";
 import { OutlineCallIcon, OutlineDrpopdown, OutlineMail, OutlineMessageIcon, OutlineUserIcon, WhatsAppIcon } from "@/utils/icons";
+import axios from "axios";
 import Link from "next/link";
-import useClickOutside from '@/hooks/useClickOutside';
+import React, { useState } from "react";
+import { contacts } from "../../../contact";
 
 const PopUpForm = () => {
     const [userName, setUserName] = useState("");
@@ -51,19 +52,18 @@ const PopUpForm = () => {
 
         try {
             const { data } = await axios.post(
-                // `https://nexon.eazotel.com/eazotel/addcontacts`,
-                `https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/7lHAUjtz#generic-webhook`,
+                `https://nexon.eazotel.com/eazotel/addcontacts`,
+                // `https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/7lHAUjtz#generic-webhook`,
                 {
-                    // Domain: "fielmente",
-                    // Domain: "abhijeet",
-                    // email: userEmail,
-                    // Name: userName,
-                    // Contact: `${countryCode}${userPhone}`,
-                    // Description: userMessage,
+                    Domain: "fielmente",
                     email: userEmail,
-                    name: userName,
-                    phone: `${countryCode}${userPhone}`,
-                    message: userMessage,
+                    Name: userName,
+                    Contact: `${countryCode}${userPhone}`,
+                    Description: userMessage,
+                    // email: userEmail,
+                    // name: userName,
+                    // phone: `${countryCode}${userPhone}`,
+                    // message: userMessage,
                 },
                 {
                     headers: {
@@ -80,9 +80,7 @@ const PopUpForm = () => {
                 setUserPhone("");
                 setCountryCode("+91"); // Reset country code
                 setFormRes(false);
-                // router.push(`/thank-you/`);
                 window.open("/thank-you/", "_blank");
-                // router.push(`/thank-you/?name=${encodeURIComponent(userName)}`);
             } else {
                 setFormRes(false);
                 alert("Something went wrong!");
@@ -227,7 +225,7 @@ const PopUpForm = () => {
 
     const pathname = usePathname();
     const ukno = "+447438375533";
-    const indNo = "+919501868775";
+    const indNo = contacts.phone.length > 1 ? contacts.phone[1] : contacts.phone[0];
 
     return (
         <form
@@ -282,7 +280,7 @@ const PopUpForm = () => {
                 {formRes ? "Loading...." : "Get a Free Consultation"}
             </button>
 
-            <Link target="_blank" href={`https://wa.me/${pathname === "/uk" ? ukno : indNo}`} className="text-blue-dark flex items-center justify-center gap-1 text-md font-semibold px-8 py-2 duration-300 active:scale-75 hover:scale-105 group">
+            <Link target="_blank" href={`https://wa.me/${pathname === "/uk" ? ukno.replace(/\s+/g, "") : indNo.replace(/\s+/g, "")}`} className="text-blue-dark flex items-center justify-center gap-1 text-md font-semibold px-8 py-2 duration-300 active:scale-75 hover:scale-105 group">
                 <span className="mr-2">
                     <WhatsAppIcon />
                 </span>

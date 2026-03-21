@@ -3,31 +3,9 @@ import { CtaBtn } from "@/components/buttons/CtaBtn";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import { ServiceCard } from "./cards/ServiceCard";
 import ServiceSlider from "./sliders/ServiceSlider";
+import { ServicesSectionProps } from "@/@types/@landingPageType";
 
-interface ServicesSectionProps {
-  title: string;
-  subTitle: string;
-  points: string[];
-  services: {
-    label?: string;
-    src: string;
-    title: string;
-    description: string;
-    result?: string;
-    cta: {
-      label: string;
-      type: string;
-    };
-  }[];
-  ctaCard: {
-    title: string;
-    description: string;
-    cta: {
-      label: string;
-      type: string;
-    };
-  };
-}
+
 const ServicesSection: React.FC<ServicesSectionProps> = ({
   title,
   subTitle,
@@ -71,7 +49,9 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
         </div>
         <CtaBtn
           label={ctaCard.cta.label}
-          type="button"
+          type={ctaCard.cta.type}
+          href={ctaCard.cta.href}
+          target={ctaCard.cta.target}
           icon="arrow2"
           className="bg-color4 rounded-full text-white border-none"
           iconClass="bg-transparent!"
