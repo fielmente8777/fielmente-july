@@ -52,18 +52,18 @@ const Form = () => {
 
     try {
       const { data } = await axios.post(
-        // `https://nexon.eazotel.com/eazotel/addcontacts`,
-        formApi,
+        `https://nexon.eazotel.com/eazotel/addcontacts`,
+        // formApi,
         {
-          // Domain: "fielmente",
+          Domain: "fielmente",
           // Domain: "abhijeet",
-          // email: userEmail,
-          // Name: userName,
-          // Contact: `${countryCode}${userPhone}`,
-          // Description: userMessage,
           email: userEmail,
-          name: userName,
-          phone: `${countryCode}${userPhone}`,
+          Name: userName,
+          Contact: `${countryCode}${userPhone}`,
+          Description: userMessage,
+          // email: userEmail,
+          // name: userName,
+          // phone: `${countryCode}${userPhone}`,
         },
         {
           headers: {
@@ -72,7 +72,8 @@ const Form = () => {
         }
       );
 
-      if (data.success) {
+      if (data.Status) {
+      // if (data.success) {
         setFormRes(true);
         setUserName("");
         setUserEmail("");
@@ -171,7 +172,7 @@ const Form = () => {
         {formData.map((data, index) => (
           <div
             key={index}
-            className={`w-full  flex gap-2 items-center md:px-4 max-md:py-2 ${formData.length - 1 !== index ? "md:border-r border-b" : ""} border-white/40 "}`}
+            className={`w-full  flex gap-2 items-center md:px-4 max-md:py-2 ${formData.length - 1 !== index ? "md:border-r max-md:border-b" : ""} border-white/40 "}`}
           >
             <label htmlFor={data.name}>{data.icon}</label>
             <div className={`w-full  bg-transparent flex items-center `}>
