@@ -312,6 +312,10 @@
         background-size: cover;
         background-repeat: no-repeat;
         z-index: -1;
+        // @media (width < 500px) {
+        //    background-image: url("/home/bg2.png"); 
+        //    background-size: cover;
+        // }
     }
 }
 

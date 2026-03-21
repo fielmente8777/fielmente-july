@@ -537,7 +537,7 @@ export const homePageData = {
     description:
       "Stay updated with the latest insights, strategies, and trends in hotel marketing, digital growth, and hospitality performance optimization.",
     cards: [
-      ...blogData.slice(0, 3).map((item) => ({
+      ...blogData.map((item) => ({
         src: item.url,
         title: item.title,
         date: "Mar 10, 2026",

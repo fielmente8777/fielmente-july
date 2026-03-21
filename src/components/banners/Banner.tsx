@@ -1,14 +1,12 @@
 import { BannerPropsType } from "@/@types/@types";
 import Image from "next/image";
+import Link from "next/link";
 import Form from "../forms/Form";
 import { Container, SectionWithContainer } from "../sectionComponants";
-import { Headings } from "../typography";
-import Link from "next/link";
 import AnimatedWord from "./ui/AnimatedWord";
 
 const Banner: React.FC<BannerPropsType> = ({
   title,
-  subTitle,
   description,
   imgSrc,
 }) => {
@@ -18,26 +16,36 @@ const Banner: React.FC<BannerPropsType> = ({
       sectionClassName="py-7"
       containerClassName=""
     >
-      <div className="relative overflow-hidden w-full lg:aspect-[4/1.9255] ">
+      <div className="relative overflow-hidden w-full md:aspect-[4/1.9255] aspect-[4/6.2]">
         <Image
           src={imgSrc}
           alt={title}
           fill
-          className="object-contain"
+          className="object-contain md:block hidden"
+          priority
+          loading="eager"
+          sizes="100vw"
+        />
+
+        <Image
+          src="/home/bnr-sm.png"
+          alt={title}
+          fill
+          className="object-contain md:hidden block"
           priority
           loading="eager"
           sizes="100vw"
         />
 
         <div className="absolute inset-0  z-20">
-          <Container className="mt-20">
-            <div className="flex flex-col gap-7">
+          <Container className="lg:mt-20 mt-4">
+            <div className="flex flex-col lg:gap-7 gap-3.5">
               {/* <div className="flex justify-center items-center gap-2 px-2.5 py-1.5 bg-white/10 backdrop-blur-xs text-white shadow-2xl shadow-white/15 rounded-full w-fit mx-auto"> */}
               <div className="flex justify-center items-center gap-2 px-2.5 py-1.5 text-white rounded-full w-fit mx-auto glassy-card">
                 <Image src="/home/Frame-3.png" alt="hotels" width={40} height={20} />
-                <p>{title}</p>
+                <p className="max-md:text-[10px] text-[10px]">{title}</p>
               </div>
-              <h1 className="text-white text-center md:text-[2.5rem]/tight font-semibold pointer-events-auto">
+              <h1 className="text-white text-center lg:text-[2.5rem]/tight md:text-2xl text-[1.4rem] max-sm:h-[99px]  font-semibold pointer-events-auto">
                 Fielmente - India’s Leading <br />
                 <Link className="inter-link" href="/">
                   <span>
@@ -47,7 +55,7 @@ const Banner: React.FC<BannerPropsType> = ({
                 </Link>
               </h1>
 
-              <p className="text-white text-center md:text-lg max-w-5xl mx-auto">
+              <p className="text-white text-center lg:text-lg max-sm:text-[10px] max-w-5xl mx-auto">
                 {description}
               </p>
               <div className="max-w-5xl mx-auto">

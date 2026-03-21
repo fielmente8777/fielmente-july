@@ -28,7 +28,7 @@ const OtaCostsWithFielmente: React.FC<MaximizeGrowthDataTypes> = ({
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {cards.map((card, index) => (
-          <OtaCostsCard key={index} {...card} />
+          <OtaCostsCard key={index} {...card} index={index} />
         ))}
       </div>
       <CtaBtn
@@ -42,25 +42,24 @@ const OtaCostsWithFielmente: React.FC<MaximizeGrowthDataTypes> = ({
 
 export default OtaCostsWithFielmente;
 
-export const OtaCostsCard: React.FC<MaximizeGrowthDataTypes["cards"][0]> = ({
+export const OtaCostsCard: React.FC<MaximizeGrowthDataTypes["cards"][0] & {index: number}> = ({
   title,
   description,
   src,
 }) => {
   return (
-    <div className="flex items-center justify-center gap-8 overflow-hidden border bg-black border-[#414141] rounded-2xl">
-      <div className="w-56 aspect-auto h-full relative ">
+    <div className="grid md:grid-cols-[1fr_2.4fr] grid-cols-[1fr_2.4fr] items-center gap-8 overflow-hidden border bg-black border-[#414141] rounded-2xl">
+      <div className={`w-full aspect-[4/5] relative`}>
         <Image
           src={src}
           alt={title}
           fill
-          className="object-contain"
-          sizes="100vw"
+          className="object-cover"
         />
       </div>
-      <div className="py-9 pr-4.5">
-        <h3 className="text-[1.375rem] font-bold text-white">{title}</h3>
-        <p className="text-[#C6C9CE]">{description}</p>
+      <div className=" pr-4.5 space-y-1">
+        <h3 className="md:text-[1.375rem] font-bold text-white">{title}</h3>
+        <p className="text-[#C6C9CE] max-sm:text-sm">{description}</p>
       </div>
     </div>
   );

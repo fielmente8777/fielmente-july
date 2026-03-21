@@ -4,7 +4,7 @@ import { OutlineDrpopdown } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
 const Header = () => {
@@ -12,14 +12,43 @@ const Header = () => {
 
   const pathName = usePathname();
 
+  const paths = [
+    "/about-fielmente-best-hospitality-marketing-agency/",
+    "/services/",
+    "/contact-us/",
+  ];
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // threshold
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed flex inset-x-0 items-center justify-center top-0 z-50 bg-white/60 backdrop-blur-sm">
+    <div
+      className={`fixed flex inset-x-0 items-center justify-center top-0 z-50  transition-all ease-in-out duration-300 backdrop-blur-sm ${paths.includes(pathName) ? (isScrolled ? "bg-white/90" : "bg-transparent") : "bg-white/90"}`}
+    >
       <header className="max_screen w-full">
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">
-              <Link href={"/"} className="flex relative w-36 aspect-[4/1.8]">
-                <Image src="/Logo.png" alt="fielment logo" fill />
+              <Link href={"/"} className="flex relative md:w-36 w-25 aspect-[4/1.69]">
+                <Image
+                  src={
+                    paths.includes(pathName)
+                      ? isScrolled
+                        ? "/Logo.png"
+                        : "/Logo2.png"
+                      : "/Logo.png"
+                  }
+                  alt="fielment logo"
+                  fill
+                />
               </Link>
             </div>
             <ul className="xl:flex hidden item-center gap-10">
@@ -28,7 +57,7 @@ const Header = () => {
                   <li key={index} className="relative nav">
                     <Link
                       href={link.href ? link.href : "#"}
-                      className="relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 text-dark"
+                      className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark"}`}
                     >
                       {link.label}
                       <span className="span-border"></span>
@@ -91,7 +120,7 @@ const Header = () => {
               })}
             </ul>
             <button
-              className="xl:hidden"
+                className={`xl:hidden ${paths.includes(pathName) ? (isScrolled ? "text-[#6A7691]" : "text-white") : "text-[#6A7691]"}`}
               onClick={() => setIsMobileNavOpen(true)}
             >
               <MenuIcon />
@@ -99,7 +128,7 @@ const Header = () => {
 
             <button
               onClick={() => setIsOpenPopupForm(true)}
-              className="inline-flex max-xl:hidden items-center text-lg justify-center gap-2 px-8 py-3 tracking-wide text-white bg-[#1B1B1B] hover:text-white rounded-full duration-300 ease-in-out active:scale-95"
+              className="inline-flex max-xl:hidden items-center text-lg backdrop-blur-md justify-center gap-2 px-8 py-3 tracking-wide text-white bg-[#1B1B1B]/95 shadow-inner rounded-full duration-300 ease-in-out active:scale-95"
             >
               Contact Us
               <span className="w-6 aspect-square flex items-center justify-center bg-white rounded-full text-primary">
@@ -117,23 +146,15 @@ export default Header;
 
 export const MenuIcon = () => (
   <svg
-    width={32}
-    height={32}
-    viewBox="0 0 32 32"
+    width="40"
+    height="18"
+    viewBox="0 0 16 11"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M27.4287 7.99979C27.4287 7.3686 26.917 6.85693 26.2859 6.85693H4.57157C3.94037 6.85693 3.42871 7.3686 3.42871 7.99979C3.42871 8.63098 3.94037 9.14265 4.57157 9.14265H26.2859C26.917 9.14265 27.4287 8.63098 27.4287 7.99979Z"
-      fill="#F26633"
-    />
-    <path
-      d="M27.0283 15.9999C27.0283 15.3687 26.5166 14.8569 25.8855 14.8569L13.314 14.8573C12.6828 14.8573 12.1712 15.3689 12.1712 16.0001C12.1712 16.6313 12.6828 17.143 13.314 17.143L25.8855 17.1428C26.5166 17.1428 27.0283 16.631 27.0283 15.9999Z"
-      fill="#F26633"
-    />
-    <path
-      d="M26.2859 22.8569C26.917 22.8569 27.4287 23.3686 27.4287 23.9998C27.4287 24.6309 26.917 25.1425 26.2859 25.1425H6.85728C6.22608 25.1425 5.71443 24.6309 5.71443 23.9998C5.71443 23.3686 6.22608 22.8569 6.85728 22.8569H26.2859Z"
-      fill="#F26633"
+      d="M0.6875 10.3299C0.492708 10.3299 0.329465 10.264 0.197771 10.1321C0.0659237 10.0005 0 9.83713 0 9.64219C0 9.4474 0.0659237 9.28415 0.197771 9.15246C0.329465 9.02092 0.492708 8.95515 0.6875 8.95515H14.8958C15.0906 8.95515 15.2539 9.02099 15.3856 9.15269C15.5174 9.28454 15.5833 9.44793 15.5833 9.64287C15.5833 9.83767 15.5174 10.0009 15.3856 10.1326C15.2539 10.2641 15.0906 10.3299 14.8958 10.3299H0.6875ZM0.6875 5.85246C0.492708 5.85246 0.329465 5.78653 0.197771 5.65469C0.0659237 5.52284 0 5.35952 0 5.16473C0 4.96978 0.0659237 4.80654 0.197771 4.675C0.329465 4.54331 0.492708 4.47746 0.6875 4.47746H14.8958C15.0906 4.47746 15.2539 4.54338 15.3856 4.67523C15.5174 4.80708 15.5833 4.9704 15.5833 5.16519C15.5833 5.36013 15.5174 5.52338 15.3856 5.65492C15.2539 5.78661 15.0906 5.85246 14.8958 5.85246H0.6875ZM0.6875 1.37477C0.492708 1.37477 0.329465 1.30892 0.197771 1.17723C0.0659237 1.04538 0 0.881986 0 0.687041C0 0.49225 0.0659237 0.329007 0.197771 0.197312C0.329465 0.0657705 0.492708 0 0.6875 0H14.8958C15.0906 0 15.2539 0.0659237 15.3856 0.197771C15.5174 0.329465 15.5833 0.492785 15.5833 0.687729C15.5833 0.882521 15.5174 1.04576 15.3856 1.17746C15.2539 1.309 15.0906 1.37477 14.8958 1.37477H0.6875Z"
+      fill="currentColor"
     />
   </svg>
 );
