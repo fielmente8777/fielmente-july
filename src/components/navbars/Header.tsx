@@ -43,7 +43,7 @@ const Header = () => {
                     paths.includes(pathName)
                       ? isScrolled
                         ? "/Logo.png"
-                        : "/Logo2.png"
+                        : "/logo2.webp"
                       : "/Logo.png"
                   }
                   alt="fielment logo"

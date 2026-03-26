@@ -84,7 +84,7 @@ const OurServices: React.FC<ServicesDataTypes> = ({
               <div className="space-y-4 bg-white py-6 px-4">
                 <div className="w-full relative aspect-4/1.5 rounded-[28.66px] border-6 border-white  shadow overflow-hidden">
                   <Image
-                    src="/home/im8.png"
+                    src={sector.src}
                     alt={sector.title}
                     fill
                     className="object-cover "

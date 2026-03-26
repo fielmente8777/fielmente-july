@@ -45,6 +45,7 @@ export interface ServicesDataTypes {
     icon?: JSX.Element;
     title: string;
     description: string;
+    src: string;
   }[];
 }
 
