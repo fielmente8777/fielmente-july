@@ -8,7 +8,6 @@ import { SwiperProps } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-fade";
 
@@ -27,7 +26,8 @@ const SwiperCarousel = <T,>({
   ...props
 }: SwiperCaroselProps<T>) => {
   return (
-    <Swiper className={className} {...props}>
+    <Swiper className={className} {...props} autoplay={props.autoplay}
+  modules={props.modules}>
       {data?.map((item, index) => (
         <SwiperSlide className={swiperSlideClassName} key={index}>
           {renderSlide(item, index)}

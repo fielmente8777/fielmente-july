@@ -136,7 +136,19 @@ export interface TestimonialsPropsType {
     href: string;
   }[];
 }
-
+export interface FeaturedTestimonialsPropsType {
+  title: string;
+  subTitle: string;
+  cards: {
+    title: string;
+    description: string;
+    src: string;  
+  }[];
+  links: {
+    label: string;
+    href: string;
+  }[];
+}
 export interface FaqsPropsType {
   title: string;
   cards: {

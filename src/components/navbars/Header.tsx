@@ -16,6 +16,7 @@ const Header = () => {
     "/about-fielmente-best-hospitality-marketing-agency/",
     "/services/",
     "/contact-us/",
+    "/testimonial/",
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
