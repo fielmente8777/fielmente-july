@@ -661,7 +661,7 @@ export const ClientImages: ClientData[] = [
     alt: "north-wind",
     className: "#1b1b1be6",
     href: "https://www.northwind57bir.com/",
-    clientType: "international",
+    clientType: "national",
   },
   {
     src: "/clientsLogo/masti.webp",

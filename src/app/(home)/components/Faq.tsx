@@ -4,7 +4,6 @@ import LinkButton from "@/components/buttons/LinkButton";
 import { Accordion } from "@/components/cards";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import Image from "next/image";
-import Link from "next/link";
 
 const Faq: React.FC<FaqsDataTypes> = ({ title, subTitle, faqs, card }) => {
   return (
