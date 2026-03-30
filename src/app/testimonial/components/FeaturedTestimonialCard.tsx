@@ -28,7 +28,7 @@ const FeaturedTestimonialCard: React.FC<FeaturedTestimonialsPropsType["cards"][0
 
         {/* USER INFO (OPTIONAL but matches Figma) */}
         <div className="flex items-center gap-3 mt-4">
-          <div className="w-8 h-8 bg-gray-300 rounded-full" />
+          {/* <div className="w-8 h-8 bg-gray-300 rounded-full" /> */}
           <div>
             <p className="text-sm font-medium">Priya Verma</p>
             <p className="text-xs text-gray-500">
