@@ -19,7 +19,21 @@ interface FormField {
   ) => void;
 }
 
-const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
+const LandingPgForm = ({
+  btnBgColor,
+  bgColor,
+  textColor,
+  subTextColor,
+  placeholderColor,
+  inputBgColor,
+}: {
+  btnBgColor?: string;
+  bgColor?: string;
+  textColor?: string;
+  subTextColor?: string;
+  placeholderColor?: string;
+  inputBgColor?: string;
+}) => {
   const {
     formData,
     isSubmitting,
@@ -66,7 +80,7 @@ const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
     {
       tag: "textarea",
       name: "message",
-      placeholder: "What services you are looking for?",
+      placeholder: "Message ...",
       required: true,
       value: formData.message,
       onChange: handleChange,
@@ -77,20 +91,21 @@ const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-4 justify-between md:h-full p-4 md:p-6  text-base rounded-2xl w-full bg-[#010101]"
-      noValidate
+      className={`flex flex-col gap-4 justify-between md:h-full p-4 md:p-6  text-base rounded-2xl w-full  ${bgColor ? bgColor : "bg-[#010101]"} ${textColor ? textColor : "text-white"}`}
     >
-      <h2 className="text-xl md:text-2xl text-center font-semibold text-white">
+      <h2 className="text-xl md:text-2xl text-center font-semibold ">
         Get A FREE Consultation!
       </h2>
-      <p className="text-white font-medium text-center">
+      <p className={`font-medium text-center ${subTextColor && subTextColor}`}>
         Let&apos;s work on boosting your hotel&apos;s profitability!
       </p>
 
       <div className="flex flex-col justify-between gap-4">
         {formFields.map((field, index) => (
           <div key={index} className={`flex flex-col gap-2 `}>
-            <label className="text-white font-medium">{field.label}</label>
+            <label className={`font-medium ${subTextColor && subTextColor}`}>
+              {field.label}
+            </label>
 
             {field.tag === "input" && (
               <input
@@ -100,7 +115,7 @@ const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
                 required={field.required}
                 value={field.value}
                 onChange={field.onChange}
-                className="outline-none bg-[#1E1E1E] w-full rounded-lg p-3.5 placeholder:text-[#9EA3AB] text-white"
+                className={`outline-none w-full rounded-lg p-3.5 ${placeholderColor || "placeholder:text-[#9EA3AB]"} ${textColor || "text-white"} ${inputBgColor || "bg-[#1E1E1E]"}`}
               />
             )}
 
@@ -112,16 +127,18 @@ const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
                 value={field.value}
                 onChange={field.onChange}
                 rows={4}
-                className="outline-none bg-[#1E1E1E] resize-none w-full rounded-lg p-3.5 placeholder:text-[#9EA3AB] text-white"
+                className={`outline-none  resize-none w-full rounded-lg p-3.5 ${placeholderColor || "placeholder:text-[#9EA3AB]"} text-white ${inputBgColor || "bg-[#1E1E1E]"}`}
               />
             )}
             {field.tag === "div" && (
-              <div className="flex gap-2 bg-[#1E1E1E] w-full rounded-lg p-3.5">
+              <div
+                className={`flex gap-2  w-full rounded-lg p-3.5 ${inputBgColor || "bg-[#1E1E1E]"}`}
+              >
                 <select
                   name="countryCode"
                   value={formData.countryCode}
                   onChange={(e) => setFieldValue("countryCode", e.target.value)}
-                  className="outline-none text-white"
+                  className={`outline-none ${textColor || "text-white"}`}
                 >
                   {countries.map((country, index) => (
                     <option key={index} value={country.code}>
@@ -130,13 +147,13 @@ const LandingPgForm = ({btnBgColor}: {btnBgColor?: string}) => {
                   ))}
                 </select>
                 <input
-                  type={field.type}
+                  type="tel"
                   name={field.name}
                   placeholder={field.placeholder}
                   required={field.required}
                   value={field.value}
                   onChange={field.onChange}
-                  className="outline-none bg-[#1E1E1E] w-full rounded-lg px-2 placeholder:text-[#9EA3AB] text-white"
+                  className={`outline-none ${inputBgColor || "bg-[#1E1E1E]"} w-full rounded-lg px-2 ${placeholderColor || "placeholder:text-[#9EA3AB]"} ${textColor || "text-white"}`}
                 />
               </div>
             )}

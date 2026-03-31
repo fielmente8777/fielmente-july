@@ -8,14 +8,18 @@ import { Autoplay, FreeMode } from "swiper/modules";
 interface Props {
   cards: BusinessPartnersDataTypes["cards"];
   wrapperClassName?: string;
+  xlSlidesPerView?: number;
 }
 
 const BusinessPartnersSlider: React.FC<Props> = ({
   cards,
   wrapperClassName,
+  xlSlidesPerView = 6,
 }) => {
   return (
-    <div className={`w-full block overflow-hidden demo ${wrapperClassName ? wrapperClassName : ""}`}>
+    <div
+      className={`w-full block overflow-hidden demo ${wrapperClassName ? wrapperClassName : ""}`}
+    >
       <SwiperCarousel
         data={cards}
         slidesPerView={2.5}
@@ -35,6 +39,9 @@ const BusinessPartnersSlider: React.FC<Props> = ({
           },
           1024: {
             slidesPerView: 5,
+          },
+          1280: {
+            slidesPerView: xlSlidesPerView,
           },
         }}
         renderSlide={(item, index) => (

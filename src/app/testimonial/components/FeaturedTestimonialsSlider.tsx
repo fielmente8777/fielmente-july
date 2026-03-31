@@ -13,7 +13,7 @@ interface Props {
 
 const FeaturedTestimonialsSlider: React.FC<Props> = ({ cards }) => {
   return (
-    <div className={`w-full`}>
+    <div className={`w-full relative testimonial-slider`}>
       <SwiperCarousel
         data={cards}
         slidesPerView={1}
@@ -21,6 +21,7 @@ const FeaturedTestimonialsSlider: React.FC<Props> = ({ cards }) => {
         speed={3000}
         loop={true}
         modules={[Autoplay, Navigation]}
+        navigation={true}
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,

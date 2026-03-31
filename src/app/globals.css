@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #110D3C;
+  --primary: #1B2231;
+  --primary2: #110D3C;
   --secondary: #F26633;
   --light: #6A6A6A;
   --color4: #0D54EB;
@@ -20,6 +21,7 @@
   /* colors */
   @theme inline {
     --color-primary: #1B2231;
+    --color-primary2: #110D3C;
     --color-secondary: #424E61;
     --color-tertiary: #FF824F;
     --color-color4: #0D54EB;

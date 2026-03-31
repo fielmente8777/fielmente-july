@@ -3,7 +3,23 @@ import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import Image from "next/image";
 import { blogPageData } from "./components/pageData";
 import BlogCard from "./components/BlogCard";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Blogs - Fielmente",
+  description:
+    "Another milestone in Fielmente’s journey 8 Marketing Strategies for Food &amp; Beverage Industry to Plan in 2022 How SEO helps to boost restaurant business Top 3 Food &amp; Beverage Business Pitches on Shark Tank India Restaurant Marketing in the MetaVerse – Web 3.0 Facebook Twitter LinkedIn Blogs Fielmente",
+    alternates: {
+      canonical: "https://fielmente.com/blogs/",
+      languages: {
+        "en-US": "https://fielmente.com/blogs/",
+      },
+    },
+    openGraph: {
+      title: "Blogs - Fielmente",
+      description:"Another milestone in Fielmente’s journey 8 Marketing Strategies for Food &amp; Beverage Industry to Plan in 2022 How SEO helps to boost restaurant business Top 3 Food &amp; Beverage Business Pitches on Shark Tank India Restaurant Marketing in the MetaVerse – Web 3.0 Facebook Twitter LinkedIn Blogs Fielmente",
+    }
+};
 export default function Blogs() {
   return (
     <main className="md:mt-22 mt-23">

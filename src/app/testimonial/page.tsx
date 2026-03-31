@@ -1,5 +1,8 @@
+import { CtaBtn } from "@/components/buttons/CtaBtn";
 import FeaturedTestimonials from "./components/FeaturedTestimonials";
 import { homePageData } from "@/app/(home)/homePageData";
+import CtaSection from "@/components/common/CtaSection";
+import Section from "@/components/sectionComponants/Section";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 export default function TestimonialPage() {
   const { testimonialsData } = homePageData;
@@ -62,7 +65,23 @@ export default function TestimonialPage() {
         <FeaturedTestimonials cards={testimonialsData.cards} />
 
 </div>
-    </div>
+{/* ✅ CTA SECTION HERE */}
+<Section className="py-12">
+  <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
     
+    <CtaSection 
+      title="Ready to grow your hotel business?"
+      description="Join 120+ hotels already using Eazotel to increase bookings and streamline operations." 
+    >
+        <CtaBtn
+        label="Try Eazotel"
+        type="button"
+        className="mt-8 bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
+      />
+    </CtaSection>
+  </div>
+</Section>
+    
+    </div>
   );
 }

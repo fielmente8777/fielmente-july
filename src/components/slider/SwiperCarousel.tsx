@@ -26,10 +26,18 @@ const SwiperCarousel = <T,>({
   ...props
 }: SwiperCaroselProps<T>) => {
   return (
-    <Swiper className={className} {...props} autoplay={props.autoplay}
-  modules={props.modules}>
+    <Swiper
+      className={className}
+      slidesPerView={1}
+      centeredSlides={true}
+      spaceBetween={30}
+      {...props}
+    >
       {data?.map((item, index) => (
-        <SwiperSlide className={swiperSlideClassName} key={index}>
+        <SwiperSlide
+          key={index}
+          className={`flex justify-center ${swiperSlideClassName || ""}`}
+        >
           {renderSlide(item, index)}
         </SwiperSlide>
       ))}
