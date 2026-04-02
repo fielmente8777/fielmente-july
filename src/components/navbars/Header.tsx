@@ -7,18 +7,34 @@ import { usePathname } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
 import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
+import { casStudiesData } from "@/app/case-study/[story]/components/caseData";
 const Header = () => {
   const { setIsOpenPopupForm, setIsMobileNavOpen } = useAppContext();
 
   const pathName = usePathname();
+
+  const CaseStudySlug = casStudiesData.map(
+    (item) => "/case-study/" + item.slug + "/"
+  );
 
   const paths = [
     "/about-fielmente-best-hospitality-marketing-agency/",
     "/services/",
     "/contact-us/",
     "/testimonial/",
+    "/case-study/",
+    ...CaseStudySlug,
+    "/our-clients/",
+    "/our-partners/",
+    "/testimonial/",
+    "/hospitality-marketing-services/social-media-marketing-agency/",
+    "/hospitality-marketing-services/seo-agency/",
+    "/hospitality-marketing-services/google-ads-agency/",
+    "/search-engine-optimization/",
+    "/hospitality-marketing-services/social-media-marketing-agency/",
+    "/social-media-marketing/",
+    "/search-engine-marketing/"
   ];
-
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -32,13 +48,16 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed flex inset-x-0 items-center justify-center top-0 z-50  transition-all ease-in-out duration-300 backdrop-blur-sm ${paths.includes(pathName) ? (isScrolled ? "bg-white/90" : "bg-transparent") : "bg-white/90"}`}
+      className={`fixed flex inset-x-0 items-center justify-center top-0 z-50  transition-all ease-in-out duration-300  ${paths.includes(pathName) ? (isScrolled ? "bg-white/90 backdrop-blur-sm" : "bg-transparent") : "bg-white/90 backdrop-blur-sm"}`}
     >
       <header className="max_screen w-full">
         <Container>
           <nav className="flex items-center justify-between py-3">
             <div className="">
-              <Link href={"/"} className="flex relative md:w-36 w-25 aspect-[4/1.69]">
+              <Link
+                href={"/"}
+                className="flex relative md:w-36 w-25 aspect-[4/1.69]"
+              >
                 <Image
                   src={
                     paths.includes(pathName)
@@ -121,7 +140,7 @@ const Header = () => {
               })}
             </ul>
             <button
-                className={`xl:hidden ${paths.includes(pathName) ? (isScrolled ? "text-[#6A7691]" : "text-white") : "text-[#6A7691]"}`}
+              className={`xl:hidden ${paths.includes(pathName) ? (isScrolled ? "text-[#6A7691]" : "text-white") : "text-[#6A7691]"}`}
               onClick={() => setIsMobileNavOpen(true)}
             >
               <MenuIcon />

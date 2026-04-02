@@ -153,7 +153,7 @@ const PopUpForm = () => {
                                 }}
                                 className="w-max pr-2 h-full flex items-center justify-between gap-2"
                             >
-                                <span className="text-start text-blue-dark md:text-lg">
+                                <span className="text-start text-primary2 md:text-lg">
                                     {countryCode}
                                 </span>
                                 <OutlineDrpopdown
@@ -280,7 +280,7 @@ const PopUpForm = () => {
                 {formRes ? "Loading...." : "Get a Free Consultation"}
             </button>
 
-            <Link target="_blank" href={`https://wa.me/${pathname === "/uk" ? ukno.replace(/\s+/g, "") : indNo.replace(/\s+/g, "")}`} className="text-blue-dark flex items-center justify-center gap-1 text-md font-semibold px-8 py-2 duration-300 active:scale-75 hover:scale-105 group">
+            <Link target="_blank" href={`https://wa.me/${pathname === "/uk" ? ukno.replace(/\s+/g, "") : indNo.replace(/\s+/g, "")}`} className="text-primary2 flex items-center justify-center gap-1 text-md font-semibold px-8 py-2 duration-300 active:scale-75 hover:scale-105 group">
                 <span className="mr-2">
                     <WhatsAppIcon />
                 </span>

@@ -12,7 +12,7 @@ export const industriesWeServePageData = {
   sections: [
     {
       title: "Why Your Hotel need to Go Online",
-      image: "",
+      image: "/industry/rich-luxury-modern-residential.webp",
       description:
         "Unshackle your hotel business’s full potential online! Elevate success with India’s top hospitality consultants and the best hospitality digital marketing agency. Discover the industries we serve and seize growth today!",
       faq: [
@@ -56,7 +56,8 @@ export const industriesWeServePageData = {
     },
     {
       title: "Why Your Restaurant Should Have Online Presence",
-      image: "",
+      image:
+        "/industry/popular-val-s-restaurant-freret-street-shade-palm-tree-during-summer-day-1.webp",
       description:
         "Take your Restaurant to new heights! Partner with India’s top hospitality consultants and premier hospitality digital marketing agency. Elevate your brand presence and conquer new markets today!",
       faq: [
@@ -98,7 +99,8 @@ export const industriesWeServePageData = {
     },
     {
       title: "Why Your Cloud Kitchen need to Go Online",
-      image: "",
+      image:
+        "/industry/three-chefs-are-restaurant-kitchen-one-them-is-wearing-white-apron-1.webp",
       description: `Catapult your cloud kitchen to the top! Partner with India’s foremost hospitality consultants and the ultimate hospitality digital marketing agency. Check out the industries we serve and taste unrivaled success today!`,
       faq: [
         {
@@ -150,7 +152,7 @@ export const industriesWeServePageData = {
     description: `Wanna taste the ultimate hospitality success? Rocket your hotel’s visibility with our expert SEO, captivating website development, social media magic, targeted Google Ads, and influencer prowess. Industries we serve trust our hospitality digital marketing!`,
     card: {
       title: "Our Expertise : Your Tremendous Business Growth Awaits",
-      image: "",
+      image: "/industry/coats-hanging-rack-with-fur-collar-them-1.webp",
       description: [
         "Click the true potential of your business as thriving destinations with our unmatched hospitality digital marketing solutions. ",
         "Tantalize taste buds and elevate your business’s success with Fielmente The premier Hospitality marketing agency in the industries we serve!",

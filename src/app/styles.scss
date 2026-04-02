@@ -23,7 +23,7 @@
     }
 
     // container sizes for xl, lg, md, sm screens
-
+    .max-width,
     .max_width {
         max-width: 100%;
         width: 100%;
@@ -80,7 +80,7 @@
     a,
     b,
     span {
-        color: #F26633;
+        color: #f26633;
     }
 }
 
@@ -320,7 +320,7 @@
         background-repeat: no-repeat;
         z-index: -1;
         // @media (width < 500px) {
-        //    background-image: url("/home/bg2.png"); 
+        //    background-image: url("/home/bg2.png");
         //    background-size: cover;
         // }
     }
@@ -478,5 +478,96 @@
     // Spacing between sections
     > *:not(:last-child) {
         margin-bottom: 0.5rem;
+    }
+}
+
+.service-pagination {
+    .swiper-pagination-bullet {
+        background-color: #abaaba;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        width: 30px;
+        height: 8px;
+        border-radius: 4px;
+    }
+}
+
+// dubai page
+.bg-banner {
+    background-image: url("/BG3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 45%;
+    background-position: top;
+}
+.bg-banner2 {
+    background-image: url("/BG3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+}
+
+.bullets-Portfolio {
+    .swiper-pagination-bullet {
+        border: none;
+        background-color: #ffffff;
+        inline-size: 0.5rem;
+        block-size: 0.5rem;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #f26633;
+        inline-size: 1rem;
+        block-size: 0.5rem;
+        border-radius: 0.5rem;
+    }
+}
+.client-pagination {
+    .swiper-pagination-bullet {
+        background-color: #ffffff;
+        inline-size: 0.7rem;
+        block-size: 0.7rem;
+        opacity: 1;
+        border-radius: 50%;
+        border: 1px solid #f26633;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #f26633;
+        inline-size: 0.7rem;
+        block-size: 0.7rem;
+        border-radius: 0.5rem;
+    }
+}
+.com {
+    .pagination-Portfolio {
+        .swiper-pagination-bullet {
+            background-color: #ffffff;
+            inline-size: 0.7rem;
+            block-size: 0.7rem;
+            opacity: 1;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 2rem;
+            border-radius: 0.5rem;
+        }
+    }
+    .pagination-ourservice {
+        .swiper-pagination-bullet {
+            background-color: #ffffffa5;
+            inline-size: 0.5rem;
+            block-size: 0.5rem;
+            opacity: 1;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 2rem;
+            border-radius: 0.5rem;
+        }
     }
 }

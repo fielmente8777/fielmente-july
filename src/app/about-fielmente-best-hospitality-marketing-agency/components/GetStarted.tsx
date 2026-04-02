@@ -1,5 +1,5 @@
 import { SectionWithContainer } from "@/components";
-import LinkButton from "@/components/buttons/LinkButton";
+import { CtaBtn } from "@/components/buttons/CtaBtn";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import Image from "next/image";
 
@@ -40,7 +40,7 @@ const GetStarted: React.FC<GetStartedProps> = ({
           sizes="100vw"
         />
       </div>
-      <LinkButton href={action.href} label={action.label} className="mx-auto w-fit rounded-full bg-[#1B1B1B] text-white" />
+      <CtaBtn type="button" icon="arrow" href={action.href} label={action.label} className="mx-auto w-fit rounded-full bg-[#1B1B1B] text-white" />
     </SectionWithContainer>
   );
 };

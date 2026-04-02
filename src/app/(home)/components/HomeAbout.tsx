@@ -4,6 +4,7 @@ import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import { TickIcon } from "./WhyChooseUs";
 import LinkButton from "@/components/buttons/LinkButton";
 import Image from "next/image";
+import { CtaBtn } from "@/components/buttons/CtaBtn";
 
 const HomeAbout: React.FC<AboutCompanyDataTypes> = ({
   title,
@@ -37,7 +38,9 @@ const HomeAbout: React.FC<AboutCompanyDataTypes> = ({
               </li>
             ))}
           </ul>
-          <LinkButton
+          <CtaBtn
+            type="button"
+            icon="arrow"
             href={cta.href}
             label={cta.label}
             className="w-fit rounded-full bg-[#1B1B1B] text-white font-medium"

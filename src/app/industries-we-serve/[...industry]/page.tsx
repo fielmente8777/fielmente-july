@@ -1,26 +1,26 @@
 import { SectionWithContainer } from "@/components";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
+import Banner2 from "./components/Banner2";
 import BenefitsSection from "./components/BenefitsSection";
 import Clients from "./components/Clients";
 import Clients2 from "./components/Clients2";
 import ConnectSection from "./components/ConnectSection";
+import EnquirySection from "./components/EnquirySection";
+import FaqSection from "./components/FaqSection";
 import GridCard from "./components/GridCard";
+import MarketingStrategy from "./components/MarketingStrategy";
 import Milestone from "./components/Milestone";
 import Need2 from "./components/Need2";
 import SubPageBanner from "./components/SubPageBanner";
 import Testimonials from "./components/Testimonials";
 import WhyNeed from "./components/WhyNeed";
 import WhyNeedSeo from "./components/WhyNeedSeo";
+import WhyNeedWebsite from "./components/WhyNeedWebsite";
 import WhyToJoin from "./components/WhyToJoin";
+import WhyYouNeedGrid from "./components/WhyYouNeedGrid";
 import { subPageData } from "./components/subPageData";
 import { industriesData } from "./pageData";
-import FaqSection from "./components/FaqSection";
-import Clients3 from "./components/Clients3";
-import Banner2 from "./components/Banner2";
-import MarketingStrategy from "./components/MarketingStrategy";
-import WhyNeedWebsite from "./components/WhyNeedWebsite";
-import WhyYouNeedGrid from "./components/WhyYouNeedGrid";
 interface Params {
   params: Promise<{
     industry: string[];
@@ -190,6 +190,7 @@ export default async function IndustryPage({ params }: Params) {
         )}
         {industry?.clients && <Clients {...industry.clients} />}
         {industry?.testimonials && <Testimonials {...industry.testimonials} />}
+        {industry?.enquiry2 && <EnquirySection {...industry.enquiry2} />}
       </main>
     );
   }

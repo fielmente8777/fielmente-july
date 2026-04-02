@@ -30,7 +30,7 @@ const Revenue: React.FC<RevenueProps> = ({
         </div>
         <div className="max-w-xl flex flex-col gap-6 w-full">
           <span className="max-md:mx-auto">{icon}</span>
-          <h2 className="md:text-[2.5rem]/[3rem] text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-dark to-orange-primary max-md:text-center">
+          <h2 className="md:text-[2.5rem]/[3rem] text-2xl font-semibold bg-clip-text text-transparent bg-linear-to-r from-primary2 to-[#f26633] max-md:text-center">
             {title}
           </h2>
           <div className="relative w-full aspect-[4/3.5] md:hidden">
@@ -39,7 +39,7 @@ const Revenue: React.FC<RevenueProps> = ({
           <p className="md:text-lg text-[#6F6F6F]">{description}</p>
           <button
             onClick={() => setIsOpenPopupForm(true)}
-            className="bg-orange-primary text-white text-lg md:py-4 py-3 px-6 rounded-lg w-fit hover:bg-white hover:text-orange-primary border border-orange-primary hover:scale-95 transition-all duration-300 ease-in-out active:scale-100"
+            className="bg-[#f26633] text-white text-lg md:py-4 py-3 px-6 rounded-lg w-fit hover:bg-white hover:text-[#f26633] border border-[#f26633] hover:scale-95 transition-all duration-300 ease-in-out active:scale-100"
           >
             {links[0].title}
           </button>

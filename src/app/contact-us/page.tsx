@@ -4,9 +4,10 @@ import ClientSection from "@/components/slider/ClientSection";
 import Image from "next/image";
 import { contactUsPageData } from "./components/pageData";
 import BusinessPartnersSlider from "@/components/slider/BusinessPartnersSlider";
-import CtaSection from "@/components/common/CtaSection";
+import CtaSection from "@/components/commonSections/CtaSection";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import { Metadata } from "next";
+import GridCtaSection from "@/components/commonSections/GridCtaSection";
 
 export const metadata: Metadata = {
   title: "Contact Fielmente - Fielmente",
@@ -29,16 +30,16 @@ export default function ContactUsPage() {
   return (
     <main>
       <Section defaultPadding={false} className="pb-36">
-        <div className="w-full relative aspect-[4/1.8]">
+        <div className="w-full relative xl:aspect-[4/1.8] md:aspect-4/3.75 aspect-4/9.5">
           <Image
             src="/contact-us-banner.png"
             alt="Contact Us"
             fill
             className="object-cover"
           />
-          <div className="absolute inset-x-0 md:top-40 z-10">
+          <div className="absolute inset-x-0 md:top-40 top-21 z-10">
             <Container>
-              <div className="grid md:grid-cols-[1.8fr_1fr] grid-cols-1 text-white">
+              <div className="grid xl:grid-cols-[1.8fr_1fr] grid-cols-1 max-xl:gap-8 text-white">
                 <div className="flex flex-col gap-4">
                   <h1 className="md:text-5xl text-2xl font-semibold">
                     Contact Us
@@ -61,6 +62,8 @@ export default function ContactUsPage() {
         </div>
       </Section>
       <ClientSection {...contactUsPageData.clients} />
+      <GridCtaSection {...contactUsPageData.ctaSection} />
+
       <Section>
         <BusinessPartnersSlider
           cards={contactUsPageData.businessPartners}
@@ -68,43 +71,6 @@ export default function ContactUsPage() {
           xlSlidesPerView={8}
         />
       </Section>
-      <section className="py-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-r from-[#020617] via-[#020c2b] to-[#0a1a3a] rounded-2xl px-8 py-10 md:px-10 md:py-10 text-white">
-            <div className="grid md:grid-cols-2 gap-6 items-center">
-              {/* LEFT */}
-              <div className="flex flex-col gap-4">
-                <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
-                  Start growing with <br /> Eazotel
-                </h2>
-
-                <div className="flex gap-4 mt-4 flex-wrap">
-                  <CtaBtn
-                    label="Try Eazotel"
-                    type="button"
-                    className="bg-white text-blue-600 border-transparent rounded-md"
-                  />
-                  <CtaBtn
-                    label="Book a demo"
-                    type="button"
-                    icon="arrow"
-                    className="border-white/30 text-white rounded-md"
-                  />
-                </div>
-              </div>
-
-              {/* RIGHT */}
-              <div>
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  Run your hotel operations effortlessly with our free plan.
-                  Upgrade anytime to unlock advanced automation, integrations,
-                  and revenue tools.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

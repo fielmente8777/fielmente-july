@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-fade";
+import "swiper/css/grid";
 
 interface SwiperCaroselProps<T> extends SwiperProps {
   data: T[];
@@ -28,9 +29,6 @@ const SwiperCarousel = <T,>({
   return (
     <Swiper
       className={className}
-      slidesPerView={1}
-      centeredSlides={true}
-      spaceBetween={30}
       {...props}
     >
       {data?.map((item, index) => (

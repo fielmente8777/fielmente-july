@@ -7,4 +7,19 @@ export const contactUsPageData = {
     clients: ClientImages,
   },
   businessPartners: homePageData.businessPartnersData.cards,
+  ctaSection: {
+    title: "Start growing with Fielmente",
+    description:
+      "Run your hotel operations effortlessly with our free plan. Upgrade anytime to unlock advanced automation, integrations, and revenue tools.",
+    ctas: [
+      {
+        label: "Try Fielmente",
+        href: "/contact-us",
+      },
+      {
+        label: "Book a Demo",
+        href: "/contact-us",
+      },
+    ],
+  },
 };

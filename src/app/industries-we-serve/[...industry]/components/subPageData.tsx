@@ -208,7 +208,7 @@ export const subPageData = [
     banner: {
       title: "HOTEL GOOGLE ADS",
       heading: `Excel at Google Ads with India’s Leading Hotel Marketing Agency.`,
-      image: "/industry/4tg4fc4.webp",
+      image: "/google-ads.png",
       description:
         "Drive Revenue with Hotel Google Ads. With the Expertise of Fielmente- One of the best Hotel Marketing Companies in India to Maximize Your Online Visibility and Generate High-Conversion Bookings.",
     },
@@ -367,6 +367,353 @@ export const subPageData = [
               "It display the rates of your hotel alongside your competition. It allows travelers to compare and choose.",
               "Google provides analytics and insights to help you understand how your ads are performing. It helps to make necessary adjustments",
               "Many travelers use mobile devices to search and book hotels. Google Ads help hotels appear seamlessly on every device.",
+            ],
+          },
+        },
+      ],
+    },
+  },
+  {
+    slug: "hotel-marketing-agency/restaurant-google-ads",
+    metaData: {
+      title: "India's Leading Restaurant Google Ads Agency - Fielmente",
+      description:
+        "Drive restaurant success with our leading restaurant Google Ads agency in India. Maximize ROI with expertly managed campaigns. Partner with us now!",
+    },
+    banner: {
+      title: "Restaurant GOOGLE ADS",
+      heading: `Excel at Google Ads with India’s Leading Restaurant Marketing Agency.`,
+      image: "/google-ads.png",
+      description:
+        "Drive Revenue with Restaurant Google Ads. With the Expertise of     Fielmente- One of the best Restaurant Marketing Companies in India to Maximize Your Online Visibility and Generate High-Conversion     Reservations.",
+    },
+    benefitsSection: {
+      image: "/industry/Keyboard.png",
+      title: " What We Offer: Paid Ads for Restaurant",
+      description:
+        "Paid Ads Drive Immediate Visibility, Targeted Reach, and High-Converting Reservations, Amplifying Your Online Presence and Revenue Potential.",
+      cta: {
+        label: "Contact us",
+        type: btnType,
+      },
+      stats: [
+        {
+          value: "3K+",
+          label: "COMPLETED PROJECTS",
+        },
+        {
+          value: "89%",
+          label: "SATISFACTION RATE",
+        },
+        {
+          value: "15",
+          label: "YEARS OF EXPERIENCE",
+        },
+      ],
+    },
+    connectSection: {
+      title:
+        "Enhance Your Restaurant’s Digital Presence, with Targeted Ads Tailored for Restaurants.",
+      description:
+        "Staying on Top for Maximizing Online Success: From increasing reservations to dominating search rankings, our tailored SEO strategies for restaurants drive targeted traffic, boost visibility, and skyrocket revenue. Experience the power of restaurant SEO today!",
+      cards: [
+        {
+          title:
+            "Save more and get visibility for your business with google Ads.",
+          cta: {
+            label: "Contact us",
+            type: btnType,
+          },
+        },
+        {
+          src: "/industry/icons/web-Search.png",
+          title: "Accelerate Your Restaurant’s Growth with Paid Ads.",
+          subtitle: `Paid Ads Drive Immediate Visibility, Targeted Reach, and High-Converting Reservations, Amplifying Your Online Presence and Revenue Potential.`,
+        },
+        {
+          src: "/industry/icons/ContentWriting.png",
+          title: "Increased Visibility",
+          subtitle:
+            "Boost your restaurant’s online presence with targeted advertising strategies, expanding your reach and capturing the attention of your ideal audience.",
+        },
+        {
+          src: "/industry/icons/Promote.png",
+          title: "Targeted Advertising",
+          subtitle:
+            "With Fielmente’s expertise, your restaurant’s paid ads reach the right audience, maximizing engagement and driving high-quality leads.",
+        },
+        {
+          src: "/industry/icons/Hoursglass.png",
+          title: "Cost-Effective Results",
+          subtitle: `Maximize your advertising budget with our cost-effective solutions, driving tangible results and high returns on investment for your restaurant.`,
+        },
+        {
+          src: "/industry/icons/ContentWriting.png",
+          title: "Drive Direct Reservations",
+          subtitle:
+            "Fielmente’s tailored paid ads effectively drive direct reservations, empowering your restaurant to attract and convert potential guests.",
+        },
+        {
+          src: "/industry/icons/Promote.png",
+          title: "Compete Effectively ",
+          subtitle: `Stay ahead of the competition in the hospitality industry by leveraging our powerful paid advertising strategies, positioning your restaurant as the top choice for guests`,
+        },
+        {
+          src: "/industry/icons/Hoursglass.png",
+          title: "Real-Time Optimization",
+          subtitle:
+            "Benefit from real-time optimization of your paid ads, ensuring continuous improvement and maximum performance for your restaurant marketing efforts.",
+        },
+      ],
+    },
+
+    whyToJoinSection: {
+      title: "Want to join?",
+      description:
+        "Find a team of digital marketers you can rely on. Every day, we build trust through communication, transparency, and results.",
+      cta: {
+        label: "Contact us",
+        type: btnType,
+      },
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      faqs: [
+        {
+          question: "What is Restaurant Google Ads?",
+          body: {
+            type: "null",
+            header:
+              "Restaurant Google Ads are the digital advertisements. These Ads are specially designed to promote your restaurants and their offerings on Google’s advertising platform.",
+          },
+        },
+        {
+          question: "How to Advertise a Restaurant online?",
+          header: "To advertise a restaurant online, follow these steps:",
+          body: {
+            type: "number",
+            list: [
+              "Create a user-friendly, responsive website. It should showcase your Restaurant, menu, and services.",
+              "Use search engine optimization (SEO) techniques. Ensure your website appears in relevant search results when users look for restaurants in your area.",
+              "You should use Social Media platforms like Facebook, Instagram, and Twitter. Share high-quality images, videos, and information about your restaurant on those platforms.",
+              " Partner with popular Online Food Delivery Platforms (OTAs). Like Swiggy, Zomato, Uber Eats, and DoorDash to list your property and attract potential customers.",
+              "Creatively use Google’s restaurant advertising platform. For displaying your restaurant’s pricing and availability directly in search results.",
+              " Create valuable and informative content related to food, local attractions, and tips for food enthusiasts. This can attract potential customers and establish your restaurant as an authority in the field.",
+              "Collect email addresses from interested parties and send out promotional offers, newsletters, and updates.",
+            ],
+          },
+        },
+        {
+          question: "How do I write a restaurant Ads?",
+          body: {
+            type: "null",
+            header:
+              "Writing tempting restaurant Ads involves showcasing your restaurant’s special features. Like the menu, ambiance, benefits, etc. Use clarifying language, focus on what sets your restaurant apart, and consider using attention-seeking headlines. Mention key selling points like location, cuisine types, special offers, and customer experiences.",
+          },
+        },
+        {
+          question: "How does Google Restaurant Ads work?",
+          body: {
+            type: "list",
+            header:
+              "Google Restaurant Ads allows your restaurants to show the rates and availability directly within Google Search and Google Maps. When users search for dining options, they see a list of restaurants with their rates and reservation options. When they click on any of the restaurants, it leads them to a page with more details. The page in which there is an option to book directly through the restaurant’s website or other reservation platforms.",
+          },
+        },
+        {
+          question: "What are Google Local Ads?",
+          body: {
+            type: "null",
+            list: [
+              " Google Local Ads is a type of online advertising. Local Ads help local businesses and restaurants to rank on SERPs. When the users search for services in their local area, the restaurants appear at the top of Google Search results. These ads include the business or restaurant’s name, contact information, reviews, and a short description.",
+              "Google Local Ads is also known as Local Services Ads.",
+            ],
+          },
+        },
+        {
+          question: "What are the benefits of Google Restaurant Ads?",
+          body: {
+            type: "number",
+            header: "The Benefits of using Google Restaurant Ads are:",
+            list: [
+              "It helps to increase the visibility of your restaurant. Your restaurant is displayed on Google Search and Maps results.",
+              "It can target specific audiences. They can be based on factors like location, dining preferences, and more.",
+              "It displays the menu items and special offers of your restaurant alongside your competition. It allows customers to compare and choose.",
+              "Google provides analytics and insights to help you understand how your ads are performing. It helps to make necessary adjustments",
+              "Many travelers use mobile devices to search and book restaurants. Google Ads help restaurants appear seamlessly on every device.",
+            ],
+          },
+        },
+      ],
+    },
+  },
+  {
+    slug: "hotel-marketing-agency/cloud-kitchen-google-ads",
+    metaData: {
+      title: "India's Leading Cloud Kitchen Google Ads Agency - Fielmente",
+      description:
+        "Drive cloud kitchen success with our leading cloud kitchen Google Ads agency in India. Maximize ROI with expertly managed campaigns. Partner with us now!",
+    },
+    banner: {
+      title: "CLOUD KITCHEN GOOGLE ADS",
+      heading: `Excel at Google Ads with India’s Leading Cloud Kitchen Marketing Agency.`,
+      image: "/google-ads.png",
+      description:
+        "Drive Revenue with Cloud Kitchen Google Ads. With the Expertise of Fielmente- One of the best Cloud Kitchen Marketing Companies in India to Maximize Your Online Visibility and Generate High-Conversion Reservations.",
+    },
+    benefitsSection: {
+      image: "/industry/Keyboard.png",
+      title: "What We Offer: Paid Ads for Cloud Kitchen",
+      description:
+        "Paid Ads Drive Immediate Visibility, Targeted Reach, and High-Converting Reservations, Amplifying Your Online Presence and Revenue Potential.",
+      cta: {
+        label: "Contact us",
+        type: btnType,
+      },
+      stats: [
+        {
+          value: "3K+",
+          label: "COMPLETED PROJECTS",
+        },
+        {
+          value: "89%",
+          label: "SATISFACTION RATE",
+        },
+        {
+          value: "15",
+          label: "YEARS OF EXPERIENCE",
+        },
+      ],
+    },
+
+    connectSection: {
+      title:
+        "Enhance Your Cloud Kitchen’s Digital Presence, with Targeted Ads Tailored for Cloud Kitchens.",
+      description:
+        "Staying on Top for Maximizing Online Success: From increasing reservations to dominating search rankings, our tailored SEO strategies for cloud kitchens drive targeted traffic, boost visibility, and skyrocket revenue. Experience the power of cloud kitchen SEO today!",
+      cards: [
+        {
+          title:
+            "Save more and get visibility for your business with google Ads.",
+          cta: {
+            label: "Contact us",
+            type: btnType,
+          },
+        },
+        {
+          src: "/industry/icons/web-Search.png",
+          title: "Accelerate Your Cloud Kitchen’s Growth with Paid Ads.",
+          subtitle: `Paid Ads Drive Immediate Visibility, Targeted Reach, and High-Converting Reservations, Amplifying Your Online Presence and Revenue Potential.`,
+        },
+        {
+          src: "/industry/icons/ContentWriting.png",
+          title: "Increased Visibility",
+          subtitle:
+            "Boost your cloud kitchen’s online presence with targeted advertising strategies, expanding your reach and capturing the attention of your ideal audience.",
+        },
+        {
+          src: "/industry/icons/Promote.png",
+          title: "Targeted Advertising",
+          subtitle:
+            "With Fielmente’s expertise, your cloud kitchen’s paid ads reach the right audience, maximizing engagement and driving high-quality leads.",
+        },
+        {
+          src: "/industry/icons/Hoursglass.png",
+          title: "Cost-Effective Results",
+          subtitle: `Maximize your advertising budget with our cost-effective solutions, driving tangible results and high returns on investment for your cloud kitchen.`,
+        },
+        {
+          src: "/industry/icons/ContentWriting.png",
+          title: "Drive Direct Reservations",
+          subtitle:
+            "Fielmente’s tailored paid ads effectively drive direct reservations, empowering your cloud kitchen to attract and convert potential customers.",
+        },
+        {
+          src: "/industry/icons/Promote.png",
+          title: "Compete Effectively ",
+          subtitle: `Stay ahead of the competition in the hospitality industry by leveraging our powerful paid advertising strategies, positioning your cloud kitchen as the top choice for customers `,
+        },
+        {
+          src: "/industry/icons/Hoursglass.png",
+          title: "Real-Time Optimization",
+          subtitle:
+            "Benefit from real-time optimization of your paid ads, ensuring continuous improvement and maximum performance for your cloud kitchen marketing efforts.",
+        },
+      ],
+    },
+
+    whyToJoinSection: {
+      title: "Want to join?",
+      description:
+        "Find a team of digital marketers you can rely on. Every day, we build trust through communication, transparency, and results.",
+      cta: {
+        label: "Contact us",
+        type: btnType,
+      },
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      faqs: [
+        {
+          question: "What is Cloud Kitchen Google Ads?",
+          body: {
+            type: "null",
+            header:
+              "Cloud Kitchen Google Ads are the digital advertisements. These Ads are specially designed to promote your cloud kitchens and their services on Google’s advertising platform.",
+          },
+        },
+        {
+          question: "How to Advertise a Cloud Kitchen online?",
+          header: "To advertise a cloud kitchen online, follow these steps:",
+          body: {
+            type: "number",
+            list: [
+              "Create a user-friendly, responsive website. It should showcase your Cloud Kitchen, services, and offerings.",
+              "Use search engine optimization (SEO) techniques. Ensure your website appears in relevant search results when users look for cloud kitchens in your area.",
+              "You should use Social Media platforms like Facebook, Instagram, and Twitter. Share high-quality images, videos, and information about your cloud kitchen on those platforms.",
+              " Partner with popular Online Food Delivery Platforms (OTAs). Like Swiggy, Zomato, Uber Eats, and DoorDash to list your property and attract potential customers.",
+              "Creatively use Google’s cloud kitchen advertising platform. For displaying your cloud kitchen’s pricing and availability directly in search results.",
+              " Create valuable and informative content related to food delivery, local cuisine, and tips for customers. This can attract potential customers and establish your cloud kitchen as an authority in the field.",
+              "Collect email addresses from interested parties and send out promotional offers, newsletters, and updates.",
+            ],
+          },
+        },
+        {
+          question: "How do I write a cloud kitchen Ads?",
+          body: {
+            type: "null",
+            header:
+              "Writing tempting cloud kitchen Ads involves showcasing your cloud kitchen’s special features. Like the amenities, benefits, etc. Use clarifying language, focus on what sets your cloud kitchen apart, and consider using attention-seeking headlines. Mention key selling points like location, menu options, special offers, and customer   experiences.",
+          },
+        },
+        {
+          question: "How does Google Cloud Kitchen Ads work?",
+          body: {
+            type: "list",
+            header:
+              "Google Cloud Kitchen Ads allows your cloud kitchens to show the rates and availability directly within Google Search and Google Maps. When users search for cloud kitchens, they see a list of cloud kitchens with their rates and reservation options. When they click on any of the cloud kitchens, it leads them to a page with more details. The page in which there is an option to book directly through the cloud kitchen’s website or other reservation platforms.",
+          },
+        },
+        {
+          question: "What are Google Local Ads?",
+          body: {
+            type: "null",
+            list: [
+              " Google Local Ads is a type of online advertising. Local Ads help local businesses and cloud kitchens to rank on SERPs. When the users search for services in their local area, the cloud kitchens appear at the top of Google Search results. These ads include the business or cloud kitchen’s name, contact information, reviews, and a short description.",
+              "Google Local Ads is also known as Local Services Ads.",
+            ],
+          },
+        },
+        {
+          question: "What are the benefits of Google Cloud Kitchen Ads?",
+          body: {
+            type: "number",
+            header: "The Benefits of using Google Cloud Kitchen Ads are:",
+            list: [
+              "It helps to increase the visibility of your cloud kitchen. Your cloud kitchen is displayed on Google Search and Maps results.",
+              "It can target specific audiences. They can be based on factors like location, travel dates, and preferences.",
+              "It display the rates of your cloud kitchen alongside your competition. It allows customers to compare and choose.",
+              "Google provides analytics and insights to help you understand how your ads are performing. It helps to make necessary adjustments",
+              "Many customers use mobile devices to search and book cloud kitchens. Google Ads help cloud kitchens appear seamlessly on every device.",
             ],
           },
         },

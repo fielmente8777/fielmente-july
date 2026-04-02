@@ -2,23 +2,29 @@
 import { usePathname } from "next/navigation";
 import Header from "./Header";
 import LandingNav from "./LandingNav";
-
+import LandingHeader from "./landingHeader";
 
 const NavBar = () => {
   const pathName = usePathname();
   const RenderNavBar = Header;
 
-  switch (pathName) {
-    case "/thank-you/":
-      return null;
-    case "/landing-page/":
-      return <LandingNav />;
-    default:
-      return (
-        <>
-          <RenderNavBar />
-        </>
-      );
+  const paths = [
+    "/resort/",
+    "/hospitality/",
+    "/dubai-restaurant/",
+    "/restaurant/",
+    "/UK/",
+    "/USA/",
+  ];
+  if (pathName === "/thank-you/") {
+    return null;
+  }
+  if (paths.includes(pathName)) {
+    return <LandingHeader />;
+  } else if (pathName === "/landing-page/") {
+    return <LandingNav />;
+  } else {
+    return <Header />;
   }
 };
 

@@ -1,84 +1,47 @@
+import { CtaBtn } from "@/components/buttons/CtaBtn";
 import Image from "next/image";
 import Link from "next/link";
 
 interface CasStudyCardProps {
-  slug: string;
-  img: string;
+  src: string;
   title: string;
   description: string;
-  className?: string;
+  slug: string;
 }
 
 const CasStudyCard: React.FC<CasStudyCardProps> = ({
   slug,
-  img,
   title,
   description,
-  className,
+  src,
 }) => {
   return (
-    // <Link
-    //   href={`/case-study/${slug}`}
-    //   className="cursor-pointer flex flex-col gap-4 rounded-3xl p-6 bg-white"
-    // >
-    //   <div className="w-full relative aspect-[4/1.5]">
-    //     <Image
-    //       src={img}
-    //       alt={title}
-    //       fill
-    //       className={`${className ? className : "object-cover"} rounded-2xl`}
-    //     />
-    //   </div>
-    //   <div className="flex flex-col gap-2">
-    //     <h2 className="text-xl font-bold text-[#363636] uppercase">
-    //       {slug.replace("-", " ")}
-    //     </h2>
-    //     <p className="text-[#363636] text-lg">
-    //       {description.slice(0, 230)} ...
-    //     </p>
-    //     <span className=" text-orange-primary flex items-center gap-2 text-lg">
-    //       Read More{" "}
-    //       <span>
-    //         <ArrowUp />
-    //       </span>
-    //     </span>
-    //   </div>
-    // </Link>
-    <Link
-  href={`/case-study/${slug}`}
-  className="group flex flex-col gap-3 rounded-2xl p-4 bg-white shadow-sm hover:shadow-xl transition-all duration-300"
->
-  {/* IMAGE */}
-  <div className="w-full relative aspect-[4/2] overflow-hidden rounded-xl">
-    <Image
-      src={img || "/fallback.png"}
-      alt={title}
-      fill
-      className="object-cover group-hover:scale-105 transition duration-300"
-    />
-  </div>
-
-  {/* CONTENT */}
-  <div className="flex flex-col gap-1">
-    
-    {/* TITLE */}
-    <h2 className="text-sm font-semibold text-gray-800 leading-tight">
-      {title}
-    </h2>
-
-    {/* DESCRIPTION */}
-    <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
-      {description}
-    </p>
-
-    {/* BUTTON */}
-    <span className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-blue-600">
-      Read more
-      <ArrowUp />
-    </span>
-
-  </div>
-</Link>
+    <div
+      className="cursor-pointer flex flex-col gap-6 rounded-2xl p-6 bg-white border border-main-border"
+    >
+      <div className="w-full relative lg:aspect-4/2 aspect-4/3">
+        <Image
+          src={src}
+          alt={title}
+          fill
+          className={`object-cover rounded-2xl`}
+        />
+      </div>
+      <div className="flex flex-col gap-2">
+        <h2 className="text-xl font-bold text-[#363636] uppercase">
+          {slug.replace("-", " ")}
+        </h2>
+        <p className="text-secondary text-lg"> <span className="font-semibold">Problem:</span> {description.slice(0, 50)} ...</p>
+        <CtaBtn
+          type="link"
+          href={`/case-study/${slug}`}
+          label="Read More"
+          icon="arrow2"
+          iconClass="max-lg:w-6 text-white bg-transparent!"
+          className="justify-between! border-none w-full max-w-40 rounded-lg mt-6 ml-auto max-lg:px-2! max-lg:py-2 bg-color4 text-white"
+        />
+      </div>
+    </div>
   );
 };
 

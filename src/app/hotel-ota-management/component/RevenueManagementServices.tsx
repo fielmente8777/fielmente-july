@@ -12,7 +12,7 @@ const RevenueManagementServices: React.FC<RevenueManagementServicesType> = ({
   cards,
 }) => {
   return (
-    <SectionWithContainer sectionClassName="bg-blue-dark">
+    <SectionWithContainer sectionClassName="bg-primary2">
       <div className="flex flex-col w-full items-center md:gap-14 gap-6">
         <div className="max-w-2xl mx-auto text-center space-y-8 poppins">
           <h2 className="bg-[#FFE7DE] uppercase text-orange-primary text-sm rounded-full px-4 w-fit mx-auto py-2">
@@ -28,8 +28,9 @@ const RevenueManagementServices: React.FC<RevenueManagementServicesType> = ({
             <SwiperCarousel
               data={cards}
               speed={2000}
-              className="max-md:w-[280px] mx-auto"
+              className="max-md:w-70 mx-auto"
               autoplay={{ delay: 2000 }}
+              loop={true}
               modules={[Pagination, Navigation]}
               pagination={{
                 clickable: true,

@@ -12,12 +12,12 @@ const SectionCard: React.FC<SectionCardType & { index: number }> = ({
   index,
 }) => {
   return (
-    <SectionWithContainer containerClassName="md:max-w-5xl! space-y-8">
+    <SectionWithContainer containerClassName="md:max-w-300! md:space-y-12 space-y-8">
       <SectionHeading subTitle={title} subLevel={2} textCenter />
 
-      <div className="grid md:grid-cols-6 grid-cols-1 gap-4">
-        <div className={`md:col-span-2 col-span-1 relative aspect-[4/3] ${index % 2 !== 0 ? "md:order-2" : ""}`}>
-          <Image src={image} alt={title} fill className="object-cover" />
+      <div className="grid md:grid-cols-6 grid-cols-1 md:gap-12 gap-4">
+        <div className={`md:col-span-2 col-span-1 relative aspect-[4/6] ${index % 2 !== 0 ? "md:order-2" : ""}`}>
+          <Image src={image} alt={title} fill className="object-cover rounded-2xl" />
         </div>
         <div className="md:col-span-4 col-span-1 flex flex-col">
           <p className="md:text-lg text-secondary mb-6">{description}</p>

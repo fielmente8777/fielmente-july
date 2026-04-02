@@ -1,5 +1,6 @@
 import { FaqsDataTypes } from "@/@types/@homeType";
 import { SectionWithContainer } from "@/components";
+import { CtaBtn } from "@/components/buttons/CtaBtn";
 import LinkButton from "@/components/buttons/LinkButton";
 import { Accordion } from "@/components/cards";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
@@ -31,7 +32,9 @@ const Faq: React.FC<FaqsDataTypes> = ({ title, subTitle, faqs, card }) => {
               </h3>
               <p className="text-sm text-secondary">{card.description}</p>
             </div>
-            <LinkButton
+            <CtaBtn
+              type="button"
+              icon="arrow"
               href={card.links.href}
               label={card.links.label}
               className="text-white bg-[#1B1B1B] rounded-full text-sm font-medium"

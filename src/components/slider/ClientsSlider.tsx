@@ -1,9 +1,9 @@
 "use client";
 
 import { OurValuedClientsPropsType } from "@/@types/@types";
-import SwiperCarousel from "./SwiperCarousel";
 import Image from "next/image";
 import { Autoplay, FreeMode } from "swiper/modules";
+import SwiperCarousel from "./SwiperCarousel";
 
 interface Props {
   cards: OurValuedClientsPropsType["cards"];

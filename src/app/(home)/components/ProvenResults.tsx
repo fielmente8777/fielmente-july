@@ -1,4 +1,5 @@
 import { SectionWithContainer } from "@/components";
+import { CtaBtn } from "@/components/buttons/CtaBtn";
 import LinkButton from "@/components/buttons/LinkButton";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 
@@ -26,7 +27,9 @@ const ProvenResults: React.FC<Props> = ({ title, subTitle, link, data }) => {
             wrapperClassName="gap-4"
           />
 
-          <LinkButton
+          <CtaBtn
+            type="button"
+            icon="arrow"
             href={link.href}
             label={link.label}
             className="w-fit rounded-full bg-[#1B1B1B] text-white font-medium"

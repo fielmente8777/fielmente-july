@@ -142,7 +142,7 @@ export interface FeaturedTestimonialsPropsType {
   cards: {
     title: string;
     description: string;
-    src: string;  
+    src?: string;
   }[];
   links: {
     label: string;

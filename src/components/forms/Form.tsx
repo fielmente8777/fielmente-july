@@ -1,9 +1,10 @@
 "use client";
 
 import { countries } from "@/utils/countryCode";
-import { ArrowBtn, CallIcon, MailIcon, UserIcon } from "@/utils/icons";
+import { CallIcon, MailIcon, UserIcon } from "@/utils/icons";
 import axios from "axios";
 import React, { useState } from "react";
+import { MdArrowOutward } from "react-icons/md";
 
 const Form = () => {
   const [userName, setUserName] = useState("");
@@ -166,9 +167,9 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`grid md:grid-cols-4 md:rounded-full rounded-[20px] overflow-hidden glassy-card p-2 `}
+      className={`grid md:grid-cols-4 md:rounded-full rounded-[20px] overflow-hidden glassy-card xl:p-2 `}
     >
-      <div className="md:col-span-3 grid md:grid-cols-3 md:py-2">
+      <div className="md:col-span-3 grid md:grid-cols-3 md:py-2 py-1">
         {formData.map((data, index) => (
           <div
             key={index}
@@ -189,7 +190,7 @@ const Form = () => {
                     autoComplete: "off",
                     spellCheck: "false",
                     className:
-                      "w-full placeholder:text-white max-md:text-sm bg-transparent text-white no-spinner resize-none focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary py-2",
+                      "w-full placeholder:text-white max-md:text-sm bg-transparent text-white no-spinner resize-none focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary md:py-2",
                   })}
             </div>
             {data.name === "phone" && errorMessage && (
@@ -202,14 +203,14 @@ const Form = () => {
         ))}
       </div>
 
-      <button className="w-full max-md:py-2 text-center bg-white text-black border-orange-primary text-md px-8 h-full   font-semibold  duration-300 rounded-full border-white hover:scale-105 border">
+      <button className="w-full max-md:py-2 text-center bg-white text-black border-orange-primary px-8 h-full max-md:text-sm text-nowrap  font-semibold  duration-300 rounded-full border-white hover:scale-105 border">
         {formRes ? (
           "Loading...."
         ) : (
           <span className="flex items-center justify-center gap-2">
             Get a FREE Quote!
-            <span className="aspect-square bg-black text-white rounded-full flex items-center justify-center">
-              <ArrowBtn />
+            <span className="aspect-square md:text-lg text-sm w-7  bg-black text-white rounded-full flex items-center justify-center">
+              <MdArrowOutward />
             </span>
           </span>
         )}

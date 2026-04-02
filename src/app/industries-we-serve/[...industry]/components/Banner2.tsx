@@ -23,6 +23,15 @@ const Banner2: React.FC<Banner2Props> = ({
             className="md:text-5xl text-2xl span-color-4"
             dangerouslySetInnerHTML={{ __html: title }}
           />
+          <div className="w-full aspect-4/2.5 relative lg:hidden">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
           {description.map((desc, index) => (
             <p key={index} className="mt-4  md:text-lg">
               {desc}
@@ -34,7 +43,7 @@ const Banner2: React.FC<Banner2Props> = ({
             className="bg-tertiary rounded-md border-none w-fit text-white md:text-lg"
           />
         </div>
-        <div className="w-full aspect-4/2.5 relative">
+        <div className="w-full aspect-4/2.5 relative lg:block hidden">
           <Image
             src={image}
             alt={title}

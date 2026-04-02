@@ -7,12 +7,12 @@ const ContactCard: React.FC<contactCardType> = ({ title, lists, links }) => {
   const {setIsOpenPopupForm} = useAppContext();
   return (
     <SectionWithContainer sectionClassName="bg-[#FFF]">
-      <div className="w-full rounded-3xl bg-[#F5F5F5] border border-orange-primary box-shadow2 px-4">
-        <div className="max-w-[65rem] mx-auto md:py-14 py-6">
+      <div className="w-full rounded-3xl bg-[#F5F5F5] border border-[#f26633] box-shadow2 px-4">
+        <div className="max-w-260 mx-auto md:py-14 py-6">
           <div className="grid md:grid-cols-5 grid-cols-1 gap-8">
             <div className="md:col-span-3 col-span-1 space-y-6">
               <h2
-                className="text-blue-dark md:text-3xl text-2xl text-color"
+                className="text-primary2 md:text-3xl text-2xl text-color"
                 dangerouslySetInnerHTML={{ __html: title }}
               />
               
@@ -20,7 +20,7 @@ const ContactCard: React.FC<contactCardType> = ({ title, lists, links }) => {
                 {lists.map((item, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <span className="">{item.icon}</span>
-                    <span className="text-lg text-blue-dark line-through">
+                    <span className="text-lg text-primary2 line-through">
                       {item.title}
                     </span>
                   </li>
@@ -31,7 +31,7 @@ const ContactCard: React.FC<contactCardType> = ({ title, lists, links }) => {
               <button
                 type="button"
                 onClick={() => setIsOpenPopupForm(true)}
-                className="flex items-center gap-4 bg-orange-primary text-white hover:bg-white hover:text-orange-primary border border-orange-primary hover:scale-95 transition-all duration-300 ease-in-out active:scale-100 text-lg md:py-4 py-3 px-6 rounded-lg w-fit"
+                className="flex items-center gap-4 bg-[#f26633] text-white hover:bg-white hover:text-orange-primary border border-orange-primary hover:scale-95 transition-all duration-300 ease-in-out active:scale-100 text-lg md:py-4 py-3 px-6 rounded-lg w-fit"
               >
                 {links[0].title}
               </button>

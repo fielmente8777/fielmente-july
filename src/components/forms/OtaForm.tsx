@@ -130,7 +130,7 @@ const OtaForm = () => {
     {
       id: "phone",
       customContent: (
-        <div className="flex gap-2 text-lg divide-x divide-[#D7D7D7]">
+        <div className="flex gap-2 w-full text-lg divide-x divide-[#D7D7D7]">
           <select
             value={countryCode}
             onChange={(e) => setCountryCode(e.target.value)}
@@ -149,14 +149,14 @@ const OtaForm = () => {
             ))}
           </select>
           <input
-            type="number"
+            type="tel"
             id="userPhone"
             name="userPhone"
             max={"9999999999"}
             placeholder="Your Phone*"
             value={formData.userPhone}
             onChange={handlePhoneChange}
-            className="w-full bg-transparent py-4 ps-2 placeholder:text-black-primary text-black no-spinner focus:outline-none"
+            className="w-full bg-transparent py-4 px-2 placeholder:text-black-primary text-black no-spinner focus:outline-none"
           />
         </div>
       ),
@@ -183,13 +183,13 @@ const OtaForm = () => {
       className="flex flex-col gap-2 max-md:p-4 px-4 py-6  rounded-xl w-full bg-[#FFFFFF]"
       noValidate
     >
-      <h2 className="text-2xl  font-semibold text-blue-dark">
+      <h2 className="text-2xl  font-semibold text-primary2">
         Get A FREE Consultation!
       </h2>
 
       {formFields.map((field) => (
         <div key={field.id} className="flex flex-col gap-1">
-          <div className="flex gap-2 text-gray-primary border bg-white border-[#D7D7D7] rounded-lg">
+          <div className="flex gap-2 text-gray-700 border bg-white border-[#D7D7D7] rounded-lg">
             {field.customContent ? (
               field.customContent
             ) : field.type === "textarea" ? (
@@ -227,7 +227,7 @@ const OtaForm = () => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full text-center bg-orange-primary text-white justify-center border-orange-primary text-xl px-8 py-2 font-semibold rounded-md hover:bg-white hover:text-orange-primary duration-300 active:scale-75 hover:scale-105 border border-blue-primary disabled:opacity-70 disabled:cursor-not-allowed"
+        className="w-full text-center bg-[#f26633] text-white justify-center border-orange-primary text-xl px-8 py-2 font-semibold rounded-md hover:bg-white hover:text-orange-primary duration-300 active:scale-75 hover:scale-105 border border-blue-primary disabled:opacity-70 disabled:cursor-not-allowed"
       >
         {isSubmitting ? "Submitting..." : "Submit"}
       </button>

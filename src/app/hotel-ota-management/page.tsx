@@ -8,18 +8,18 @@ import {
   Revenue,
   RevenueManagementServices,
 } from "./component";
-// import OurClients from "@/components/landing-pages/LandingPage1/components/OurClients";
+import OurClients from "./component/OurClients";
 
 const page = () => {
   return (
-    <main>
+    <main className="overflow-x-clip mt-22 border-t border-main-border">
       <Banner2 {...newPagedata.bannerData} />
       <Revenue {...newPagedata.revenue} />
       <RevenueManagementServices {...newPagedata.revenueManagementServices} />
       <ChooseUs {...newPagedata.chooseUs} />
       <ContactCard {...newPagedata.contactCard} />
       <CountiesWeWorked {...newPagedata.countriesWeWorkedWith} />
-      {/* <OurClients {...newPagedata.ourClients} /> */}
+      <OurClients {...newPagedata.ourClients} />
       <OtaAdd {...newPagedata.otaAdd} />
     </main>
   );

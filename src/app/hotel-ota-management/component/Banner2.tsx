@@ -15,7 +15,7 @@ interface bannerType {
 const Banner2: React.FC<bannerType> = ({ title, list, images }) => {
   return (
     <Section className="!p-0 overflow-hidden relative after:absolute after:inset-0 after:bg-white after:z-[-2]">
-      <div className="bg-blue-dark w-full lg:py-14 max-md:pt-10 flex items-center justify-center">
+      <div className="bg-primary2 w-full lg:py-14 max-md:pt-10 flex items-center justify-center">
         <Container>
           <div className="grid lg:grid-cols-12  gap-8 text-white items-center poppins">
             <div className="lg:col-span-7 col-span-1 space-y-8 max-w-2xl">
@@ -58,7 +58,7 @@ const Banner2: React.FC<bannerType> = ({ title, list, images }) => {
 
       {/* rounded shape  */}
       <div className="md:h-20 h-16 lg:mt-0 -mt-4 overflow-hidden relative rotate-180 -z-[1]">
-        <div className="w-[7800px] h-[7800px] rounded-full bg-bg absolute top-0 left-1/2 -translate-x-1/2 bg-blue-dark" />
+        <div className="w-[7800px] h-[7800px] rounded-full bg-bg absolute top-0 left-1/2 -translate-x-1/2 bg-primary2" />
       </div>
     </Section>
   );

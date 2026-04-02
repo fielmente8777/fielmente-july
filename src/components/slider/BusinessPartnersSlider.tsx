@@ -1,9 +1,9 @@
 "use client";
 
 import { BusinessPartnersDataTypes } from "@/@types/@homeType";
-import SwiperCarousel from "./SwiperCarousel";
 import Image from "next/image";
 import { Autoplay, FreeMode } from "swiper/modules";
+import SwiperCarousel from "./SwiperCarousel";
 
 interface Props {
   cards: BusinessPartnersDataTypes["cards"];

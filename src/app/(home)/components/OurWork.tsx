@@ -1,5 +1,6 @@
 import { OurWorkDataTypes } from "@/@types/@homeType";
 import { SectionWithContainer } from "@/components";
+import { CtaBtn } from "@/components/buttons/CtaBtn";
 import LinkButton from "@/components/buttons/LinkButton";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import Image from "next/image";
@@ -21,7 +22,9 @@ const OurWork: React.FC<OurWorkDataTypes> = ({
             wrapperClassName="gap-4"
           />
           <p className="text-secondary">{description}</p>
-          <LinkButton
+          <CtaBtn
+            type="button"
+            icon="arrow"
             href={link.href}
             label={link.label}
             className="w-fit rounded-full bg-[#1B1B1B] text-white font-medium"

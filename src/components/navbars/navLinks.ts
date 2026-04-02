@@ -25,6 +25,10 @@ export const navLinks: NavLinksProps[] = [
             label: "Hotel SEO",
             href: "/industries-we-serve/hotel-marketing-agency/hotel-seo/",
           },
+          {
+            label: "hotel OTA",
+            href: "/hotel-ota-management/",
+          },
         ],
       },
       {
@@ -35,6 +39,10 @@ export const navLinks: NavLinksProps[] = [
             label: "Restaurant Social Media",
             href: "/industries-we-serve/restaurant-marketing-agency/restaurant-social-media/",
           },
+          {
+            label: "Restaurant Ads",
+            href: "/industries-we-serve/restaurant-marketing-agency/restaurant-google-ads/",
+          },
         ],
       },
       {
@@ -44,6 +52,10 @@ export const navLinks: NavLinksProps[] = [
           {
             label: "Cloud Kitchen Social Media",
             href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-social-media/",
+          },
+          {
+            label: "Cloud Kitchen Ads",
+            href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-google-ads/",
           },
         ],
       },
@@ -76,7 +88,7 @@ export const navLinks: NavLinksProps[] = [
     href: "/hospitality-marketing-services/",
     subLinks: [
       {
-        label: " Social Media Marketing",
+        label: " Social Media Management",
         href: "/hospitality-marketing-services/social-media-marketing-agency/",
       },
       {
@@ -84,12 +96,8 @@ export const navLinks: NavLinksProps[] = [
         href: "/hospitality-marketing-services/seo-agency/",
       },
       {
-        label: "Paid Ad Campaigns",
+        label: "Performance Marketing",
         href: "/hospitality-marketing-services/google-ads-agency/",
-      },
-      {
-        label: "hotel OTA management",
-        href: "/hotel-ota-management/",
       },
     ],
   },
@@ -108,6 +116,14 @@ export const navLinks: NavLinksProps[] = [
       {
         label: "Our Clients",
         href: "/our-clients/",
+      },
+      {
+        label: "Testimonials",
+        href: "/testimonials/",
+      },
+      {
+        label: "Our Partners",
+        href: "/our-partners/",
       },
       {
         label: "Our Work",

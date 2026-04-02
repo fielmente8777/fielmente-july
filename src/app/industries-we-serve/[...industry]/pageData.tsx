@@ -352,6 +352,11 @@ export const industriesData = [
   },
   {
     slug: "cloud-kitchen-marketing-agency",
+    metaData: {
+      title: "Best Cloud Kitchen Marketing Agency in India- Fielmente",
+      description:
+        "Fielmente is a premier cloud kitchen marketing agency in India and skyrocket your cloud kitchen success digitally with our amazing marketing services.",
+    },
     banner2: {
       title: "The Best Cloud Kitchen Marketing Agency in <span>India.</span>",
       image: "/industry/cloud-kitchen-1.png",

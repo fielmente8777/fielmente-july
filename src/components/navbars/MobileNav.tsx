@@ -41,6 +41,7 @@ const MobileNav = () => {
               <div key={index} className="text-lg">
                 <div className="flex items-center justify-between">
                   <Link
+                    onClick={() => setIsMobileNavOpen(false)}
                     href={link.href || "#"}
                     className="text-nowrap font-semibold capitalize text-primary"
                   >
@@ -72,6 +73,7 @@ const MobileNav = () => {
                               ? "text-secondary"
                               : "text-primary"
                           }`}
+                          onClick={() => setIsMobileNavOpen(false)}
                         >
                           {subLink.label}
                         </Link>
