@@ -55,7 +55,7 @@ export default async function Page(props: Params) {
         />
         <div className="absolute inset-0 bg-[#111609]/30 flex items-center justify-center">
           <Container className="md:space-y-16 space-y-5">
-            <p className="px-4 py-1.5 bg-[#111609]/40 backdrop-blur-md shadow-inner border-[0.1px] border-white/30 rounded-full w-fit">
+            <p className="px-4 py-1.5 bg-[#111609]/40 backdrop-blur-md shadow-inner shadow-white border-[0.1px] border-white/30 rounded-full w-fit">
               <span className="text-white">Case Study</span>
             </p>
             <h1 className="lg:text-[2.5rem]/[3.5rem] lg:max-w-lg text-white font-semibold text-[1.5rem]/[2.2rem]">
