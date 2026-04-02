@@ -1,4 +1,7 @@
-import { SectionWithContainer } from "@/components/sectionComponants";
+import {
+  Container,
+  SectionWithContainer,
+} from "@/components/sectionComponants";
 import Image from "next/image";
 import { casStudiesData } from "./components/caseData";
 import CtaSection from "@/components/commonSections/CtaSection";
@@ -43,13 +46,23 @@ export default async function Page(props: Params) {
   }
   return (
     <main>
-      <div className="w-full mx-auto relative aspect-[4/1.8]">
+      <div className="w-full mx-auto relative lg:aspect-[4/1.8] md:aspect-4/2 aspect-4/3.5">
         <Image
           src={data?.hotelImg || data.img}
           alt={data?.title || "case study"}
           fill
           className={`object-cover`}
         />
+        <div className="absolute inset-0 bg-[#111609]/30 flex items-center justify-center">
+          <Container className="md:space-y-16 space-y-5">
+            <p className="px-4 py-1.5 bg-[#111609]/40 backdrop-blur-md shadow-inner border-[0.1px] border-white/30 rounded-full w-fit">
+              <span className="text-white">Case Study</span>
+            </p>
+            <h1 className="lg:text-[2.5rem]/[3.5rem] lg:max-w-lg text-white font-semibold text-[1.5rem]/[2.2rem]">
+              {data?.title}
+            </h1>
+          </Container>
+        </div>
       </div>
       <SectionWithContainer sectionClassName="">
         <div className="flex flex-col gap-4 w-full">
@@ -61,9 +74,6 @@ export default async function Page(props: Params) {
               className={`${data.className ? data.className : "object-cover"} rounded-2xl`}
             />
           </div> */}
-          <h1 className="lg:text-[2.5rem]/[3.5rem] text-[1.5rem]/[2.5rem]">
-            {data?.title}
-          </h1>
 
           {data?.data?.map((item, index) => (
             <div className="flex flex-col gap-4" key={index}>

@@ -3,7 +3,7 @@ export const casStudiesData = [
     slug: "anand-vardhan-resort",
     className: "object-contain",
     img: "/avr-logo.png",
-    hotelImg: "/home/client.png",
+    hotelImg: "/abt2.webp",
     title: "SEO Success Story for Anand Vardhan Resorts",
     description:
       "Anand Vardhan Resorts aimed to improve its organic visibility for niche, high-intent keywords related to vegetarian resorts in Naggar and Manali, wellness resorts in Himachal Pradesh, and pure vegetarian resort options. The goal was to attract targeted traffic from travelers searching for vegetarian-friendly and wellness-oriented stays in the region.",
