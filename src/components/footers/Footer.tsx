@@ -6,12 +6,20 @@ import LandingPageFooter2 from "./LandingPageFooter2";
 const Footer = () => {
   const pathName = usePathname();
   const RenderFooter = WebSiteFooter;
+
+
+
+
+
+
   switch (pathName) {
     case "/thank-you/":
       return null;
     case "/landing-page/":
       return <LandingFooter />;
     case "/resort/":
+      return <LandingFooter />;
+    case "/hospitality/":
       return <LandingFooter />;
     case "/dubai-restaurant/":
       return <LandingPageFooter2 />;
