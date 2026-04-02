@@ -45,7 +45,7 @@ export default async function Page(props: Params) {
     <main>
       <div className="w-full mx-auto relative aspect-[4/1.8]">
         <Image
-          src={data?.img && data.img !== "" ? data.img : "/fallback.png"}
+          src={data?.hotelImg || data.img}
           alt={data?.title || "case study"}
           fill
           className={`object-cover`}

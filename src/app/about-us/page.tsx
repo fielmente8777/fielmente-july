@@ -1,13 +1,14 @@
-import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
-import { homePageData } from "../(home)/homePageData";
-import Banner from "./components/Banner";
-import { aboutUsPageData } from "./components/pageData";
-import AboutFounder from "./components/AboutFounder";
-import GridCard from "./components/GridCard";
-import Milestone from "./components/Milestone";
-import Unique from "./components/Unique";
-import GetStarted from "./components/GetStarted";
+
 import { Metadata } from "next";
+import AboutFounder from "../about-fielmente-best-hospitality-marketing-agency/components/AboutFounder";
+import GridCard from "../about-fielmente-best-hospitality-marketing-agency/components/GridCard";
+import Milestone from "../about-fielmente-best-hospitality-marketing-agency/components/Milestone";
+import Unique from "../about-fielmente-best-hospitality-marketing-agency/components/Unique";
+import GetStarted from "../about-fielmente-best-hospitality-marketing-agency/components/GetStarted";
+import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
+import { aboutUsPageData } from "../about-fielmente-best-hospitality-marketing-agency/components/pageData";
+import { homePageData } from "../(home)/homePageData";
+import Banner from "../about-fielmente-best-hospitality-marketing-agency/components/Banner";
 
 export const metadata: Metadata = {
   title: "Fielmente Agency | Best Hospitality Marketing Consultants in India",

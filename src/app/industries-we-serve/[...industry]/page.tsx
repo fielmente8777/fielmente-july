@@ -90,6 +90,9 @@ export async function generateMetadata({ params }: Params) {
       description: subPage?.metaData?.description,
       alternate: {
         canonical: `https://fielmente.com/industries-we-serve/${subPage?.slug}/`,
+        languages:{
+          "en_US": `https://fielmente.com/industries-we-serve/${subPage?.slug}/`,
+        }
       },
       openGraph: {
         title: subPage?.metaData?.title,

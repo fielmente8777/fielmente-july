@@ -1098,7 +1098,7 @@ export const subPageData = [
   {
     slug: "cloud-kitchen-marketing-agency/cloud-kitchen-social-media",
     metaData: {
-      title: "Best Cloud Kitchen Social Media Agency in India- Fielmente",
+      title: "Best Cloud Kitchen Social Media Agency in India - Fielmente",
       description:
         "Drive success with Fielmente, the top cloud kitchen social media agency in India. Elevate your brand with expert social media marketing.",
     },

@@ -1,7 +1,5 @@
-import { BtnType } from "@/@types/@types";
 import { casStudiesData } from "../[story]/components/caseData";
 
-const btn: BtnType = "button";
 
 export const caseStudyPageData = {
   bannerData: {

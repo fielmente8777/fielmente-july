@@ -1,6 +1,5 @@
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import Image from "next/image";
-import Link from "next/link";
 
 interface CasStudyCardProps {
   src: string;
@@ -19,12 +18,12 @@ const CasStudyCard: React.FC<CasStudyCardProps> = ({
     <div
       className="cursor-pointer flex flex-col gap-6 rounded-2xl p-6 bg-white border border-main-border"
     >
-      <div className="w-full relative lg:aspect-4/2 aspect-4/3">
+      <div className="w-full relative lg:aspect-[4/2.2] aspect-4/3">
         <Image
           src={src}
           alt={title}
           fill
-          className={`object-cover rounded-2xl`}
+          className={`object-fill rounded-2xl`}
         />
       </div>
       <div className="flex flex-col gap-2">

@@ -21,7 +21,7 @@ const Header = () => {
     "/about-fielmente-best-hospitality-marketing-agency/",
     "/services/",
     "/contact-us/",
-    "/testimonial/",
+    "/testimonials/",
     "/case-study/",
     ...CaseStudySlug,
     "/our-clients/",

@@ -1,10 +1,9 @@
 import SlidingTitle from "@/components/slider/SlidingTitle";
-import AboutSection from "./components/AboutSection";
+import { Metadata } from "next";
 import Banner from "./components/Banner";
 import BusinessPartners from "./components/BusinessPartners";
 import ContactSection from "./components/ContactSection";
 import CountriesWeWorked from "./components/CountriesWeWorked";
-import GrowthSection from "./components/GrowthSection";
 import IndustryWeServe from "./components/IndustryWeServe";
 import OurClients from "./components/OurClients";
 import OurProducts from "./components/OurProducts";
@@ -12,7 +11,6 @@ import { landingPageData } from "./components/pageData";
 import ReadyToGrow from "./components/ReadyToGrow";
 import ResultsSection from "./components/ResultsSection";
 import ServicesSection from "./components/ServicesSection";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Fielmente : Hospitality Marketing Agency in India",
@@ -52,6 +50,7 @@ export const metadata: Metadata = {
     ],
   },
 };
+
 export default function LandingPage() {
   const page = landingPageData.find((pg) => pg.slug === "landing-page");
   if (!page) {

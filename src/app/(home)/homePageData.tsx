@@ -369,7 +369,8 @@ export const homePageData = {
 
   whyChooseUsData: {
     title: "Why Choose Us",
-    subTitle: `AI-Driven Marketing for the Your Hotel, Resort & Restaurant - Fielmente <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel</a> & <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Agency</a> in India`,
+    subTitle: `AI-Driven Marketing for the Your Hotel, Resort & Restaurant `,
+    // - Fielmente <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel</a> & <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Agency</a> in India`,
     description: [
       `In today’s AI-driven digital landscape, hotels, restaurants, and resorts need more than traditional advertising. They need a <b>data-backed, AI-ready marketing strategy</b> that ensures visibility across Google, ChatGPT, Gemini, and future search platforms. <b>Fielmente</b> is a performance-focused <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency in India</a> that helps hospitality brands grow bookings, brand authority, and direct revenue through intelligent digital marketing solutions.`,
       `As a full-service <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Company</a>, Fielmente understands the hospitality buyer journey from discovery to booking. We create marketing ecosystems that position your hotel, restaurant, or resort as the top recommendation across AI-powered searches and voice-based discovery platforms.`,
