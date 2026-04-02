@@ -127,7 +127,7 @@ const LandingPgForm = ({
                 value={field.value}
                 onChange={field.onChange}
                 rows={4}
-                className={`outline-none  resize-none w-full rounded-lg p-3.5 ${placeholderColor || "placeholder:text-[#9EA3AB]"} text-white ${inputBgColor || "bg-[#1E1E1E]"}`}
+                className={`outline-none resize-none w-full rounded-lg p-3.5 ${placeholderColor || "placeholder:text-[#9EA3AB]"} ${textColor || "text-white"} ${inputBgColor || "bg-[#1E1E1E]"}`}
               />
             )}
             {field.tag === "div" && (
