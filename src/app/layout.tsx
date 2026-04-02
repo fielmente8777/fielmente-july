@@ -192,19 +192,7 @@ export default function RootLayout({
         ></cript> */}
         <Salesiq />
 
-        <Script
-          id="google-tag-manager"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WQ5LPRNM');
-            `,
-          }}
-        />
+        
         <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" />
 
         {/* <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" /> */}
@@ -215,6 +203,19 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce(‘https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js’); })(document,‘script’); })(‘bElvO73o52V7ZMqj’);
+            `,
+          }}
+        />
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WQ5LPRNM');
             `,
           }}
         />
