@@ -104,7 +104,7 @@ export default function RootLayout({
         />
 
         {/* <!-- Clarity tracking code for Fielmente new 06 09 2024--> */}
-        <Script
+        {/* <Script
           id="clarity-script"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -114,9 +114,9 @@ export default function RootLayout({
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "o0h0ldtiip");`,
           }}
-        />
+        /> */}
 
-        <Script
+        {/* <Script
           id="google-analytics"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -127,7 +127,7 @@ export default function RootLayout({
 
             gtag('config', 'G-PVZG7NGGMG');`,
           }}
-        />
+        /> */}
 
         {/* <Script
           id="google-conversion-tracking"
@@ -137,12 +137,13 @@ export default function RootLayout({
           }}
         /> */}
 
-        <Script
+        {/* <Script
           async
           strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-5H2JL2ZPTS"
-        ></Script>
-        <Script
+        ></Script> */}
+
+        {/* <Script
           id="gtag-init"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -151,10 +152,10 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-5H2JL2ZPTS');`,
           }}
-        />
+        /> */}
 
         {/* LeadBooster Configuration Script */}
-        <Script
+        {/* <Script
           id=""
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -183,7 +184,7 @@ export default function RootLayout({
               })();
             `,
           }}
-        />
+        /> */}
         {/* LeadBooster Loader Script */}
         {/* <script
           src="https://leadbooster-chat.pipedrive.com/assets/loader.js"
@@ -191,11 +192,11 @@ export default function RootLayout({
         ></cript> */}
 
         
-        <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" />
+        {/* <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" /> */}
 
         {/* <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" /> */}
 
-        <Script
+        {/* <Script
           id=""
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -203,9 +204,9 @@ export default function RootLayout({
               (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce(‘https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js’); })(document,‘script’); })(‘bElvO73o52V7ZMqj’);
             `,
           }}
-        />
+        /> */}
 
-        <Script
+        {/* <Script
           id="google-tag-manager"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -217,15 +218,15 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-WQ5LPRNM');
             `,
           }}
-        />
+        /> */}
       </head>
       <body
         className={`${jakarta.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <noscript>
+        {/* <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ5LPRNM"></iframe>
-        </noscript>
+        </noscript> */}
         <AppProvider>
           <NavBar />
           <MobileNav />
