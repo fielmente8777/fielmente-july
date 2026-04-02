@@ -9,6 +9,7 @@ import MobileNav from "@/components/navbars/MobileNav";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import Script from "next/script";
 import Salesiq from "@/components/zohochatbot/Salesiq";
+import GTMTracker from "@/components/GTMTracker";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -104,6 +105,20 @@ export default function RootLayout({
           content="vKQyk75wG0kfB4x60GCRAmVeErtPS9rgcM9-YNRAvLw"
         />
 
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WQ5LPRNM');
+            `,
+          }}
+        />
+
         {/* <!-- Clarity tracking code for Fielmente new 06 09 2024--> */}
         <Script
           id="clarity-script"
@@ -192,7 +207,6 @@ export default function RootLayout({
         ></cript> */}
         <Salesiq />
 
-        
         <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" />
 
         {/* <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" /> */}
@@ -206,26 +220,16 @@ export default function RootLayout({
             `,
           }}
         />
-        <Script
-          id="google-tag-manager"
-          dangerouslySetInnerHTML={{
-            __html: `
-             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WQ5LPRNM');
-            `,
-          }}
-        />
+        
       </head>
       <body
         className={`${jakarta.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-         <noscript>
+        <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ5LPRNM"></iframe>
         </noscript>
+        <GTMTracker />
         <AppProvider>
           <NavBar />
           <MobileNav />
