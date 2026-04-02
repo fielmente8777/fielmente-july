@@ -29,7 +29,7 @@ export const ServiceCard: React.FC<ServicesSectionProps["services"][0]> = ({
           </>
         )}
       </div>
-      <div className="px-1.5 py-2 flex flex-col gap-4 md:min-h-75 min-h-65">
+      <div className="px-1.5 py-2 flex flex-col gap-4 md:min-h-[11rem] min-h-[11.25rem]">
         <h3 className="md:text-[27px] text-xl text-primary font-semibold">{title}</h3>
         <p className="md:text-lg text-sm text-secondary">{description}</p>
         {result && (
@@ -40,14 +40,14 @@ export const ServiceCard: React.FC<ServicesSectionProps["services"][0]> = ({
             <p> {result}</p>
           </div>
         )}
-        <CtaBtn
+        {/* <CtaBtn
           label={cta.label}
           type={cta.type}
           href={cta.href}
           target={cta.target}
           className="bg-background-black1 mt-auto text-white w-full rounded-full justify-between!"
           icon="arrow"
-        />
+        /> */}
       </div>
     </div>
   );

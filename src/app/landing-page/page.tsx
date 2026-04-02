@@ -68,7 +68,7 @@ export default function LandingPage() {
       {page.businessPartnersData && (
         <BusinessPartners {...page.businessPartnersData} />
       )}
-      {page.aboutSection && <AboutSection {...page.aboutSection} />}
+      {/* {page.aboutSection && <AboutSection {...page.aboutSection} />} */}
       {page.industriesSection && (
         <IndustryWeServe {...page.industriesSection} />
       )}
@@ -76,7 +76,7 @@ export default function LandingPage() {
       {page.servicesSection && <ServicesSection {...page.servicesSection} />}
       {page.productsData && <OurProducts {...page.productsData} />}
       {page.resultsSection && <ResultsSection {...page.resultsSection} />}
-      {page.growthSection && <GrowthSection {...page.growthSection} />}
+      {/* {page.growthSection && <GrowthSection {...page.growthSection} />} */}
       {page.countriesSection && (
         <CountriesWeWorked {...page.countriesSection} />
       )}

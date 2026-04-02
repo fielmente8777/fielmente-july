@@ -571,3 +571,36 @@
         }
     }
 }
+
+
+
+
+
+body {
+  &::-webkit-scrollbar {
+    inline-size: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #1d1d1d;
+    border-radius: 0.5rem;
+    margin-block: 0.2rem;
+    border: #1d1d1dbf 1px solid;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #fffaee;
+    border-radius: 0.6rem;
+    border: #1d1d1d 1px solid;
+  }
+}
+
+.bg-gradient {
+  // background: var(--gradient)
+  background: linear-gradient(180deg, #e5f2ef, #e4f2ee, #fffaee, #ffffff);
+}
+
+.bg-gradient-second {
+  // background: var(--gradient-second)
+  background: linear-gradient(#ffffff, #ecf2fb, #e4f2ee);
+}

@@ -149,7 +149,7 @@ const LandingPageForm = ({ title, bold }: { title: string; bold: string }) => {
             ))}
           </select>
           <input
-            type="number"
+            type="tel"
             id="phone"
             name="phone"
             max={"9999999999"}

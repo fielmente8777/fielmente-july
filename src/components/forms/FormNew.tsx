@@ -139,7 +139,7 @@ const FormNew = () => {
       );
 
       // if (data.success) {
-      if (data.status){
+      if (data.Status){
         // Reset form
         setFormState({
           userName: "",

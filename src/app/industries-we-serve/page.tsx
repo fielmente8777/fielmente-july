@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 };
 export default function IndustriesWeServe() {
   return (
-    <main className="mt-18">
+    <main className="mt-18 bg-gradient">
       <SectionWithContainer>
         <h1 className="md:text-6xl text-primary font-semibold text-center">
           {industriesWeServePageData.title}

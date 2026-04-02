@@ -17,7 +17,8 @@ export const landingPageData = [
     },
 
     heroSection: {
-      title: "India's Leading Hotel Marketing Agency",
+      title:
+        "Grow Your Hotel’s Direct and OTA Bookings by <span>30 - 50%</span>",
       subtitle: "Trusted by 120+ Hotels & Resorts Across India, UAE & UK",
       description:
         "Worked with more than 500+ brands since 2020 across the globe we help to increase revenue through our marketing strategies and Eazotel product",
@@ -183,17 +184,18 @@ export const landingPageData = [
 
     readyToGrowSection: {
       title: "Contact Us",
-      subTitle: "Ready to Grow Your Hospitality Business?",
+      // subTitle: "Ready to Grow Your Hospitality Business?",
+      subTitle: "Grow Your Hotel Resort Business?",
       description:
         "Join 120+ hospitality brands already growing their direct revenue. Let's build a strategy tailored to your property.",
       src: "/landing-pages/grow-Card.jpg",
       ctaS: [
-        {
-          label: "View Case Studies",
-          type: btnType,
-          href: contacts.WhatsAppCta,
-          target: "_blank",
-        },
+        // {
+        //   label: "View Case Studies",
+        //   type: btnType,
+        //   href: contacts.WhatsAppCta,
+        //   target: "_blank",
+        // },
         {
           label: "Book a Free Strategy Call",
           type: btnType,

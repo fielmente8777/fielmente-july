@@ -19,8 +19,13 @@ const Banner: React.FC<Props> = ({ title, subtitle, description, images }) => {
             <Image src={images[0]} alt="hotels" width={40} height={20} />
             <p className="md:text-sm text-[10px]">{subtitle}</p>
           </div>
-          <h1 className="md:text-[2.875rem] text-3xl max-md:text-center text-primary font-bold">{title}</h1>
-          <p className="text-sm text-secondary max-md:text-center">{description}</p>
+          <h1
+            className="md:text-[2.875rem] text-3xl span-color-2 max-md:text-center text-primary font-bold"
+            dangerouslySetInnerHTML={{ __html: title }}
+          ></h1>
+          <p className="text-sm text-secondary max-md:text-center">
+            {description}
+          </p>
           <div className="flex items-center max-md:justify-center gap-4">
             <div className="flex items-center justify-center w-10 aspect-square rounded-lg border border-main-border">
               <GoogleIcon />
