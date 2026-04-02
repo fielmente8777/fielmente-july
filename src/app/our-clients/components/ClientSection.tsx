@@ -10,7 +10,7 @@ interface Props {
 }
 const ClientSection: React.FC<Props> = ({ title, description, client }) => {
   return (
-    <SectionWithContainer sectionClassName="bg-[#101010]">
+    <SectionWithContainer sectionClassName="bg-[#101010]" sectionId="All-clients">
       <div className="space-y-4">
         <SectionHeading
           subTitle={title}

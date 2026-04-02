@@ -2,6 +2,7 @@ import Image from "next/image";
 import { CtaBtn } from "../buttons/CtaBtn";
 import { SectionWithContainer } from "../sectionComponants";
 import ClientCard from "@/app/our-clients/components/ClientCard";
+import { CtaBtnPropsType } from "@/@types/@types";
 
 type CardType = {
   imgSrc: string;
@@ -15,10 +16,7 @@ interface CommonTowColGridLayoutSectionProps {
   title: string;
   description: string;
   cards: CardType[];
-  cta: {
-    label: string;
-    href: string;
-  };
+  cta: CtaBtnPropsType;
 }
 
 const CommonTowColGridLayoutSection: React.FC<
@@ -34,8 +32,9 @@ const CommonTowColGridLayoutSection: React.FC<
           ></h2>
           <p className="text-lg text-secondary">{description}</p>
           <CtaBtn
-            type="button"
+            type={cta.type}
             label={cta.label}
+            href={cta.href}
             icon="arrow2"
             iconClass="max-lg:w-6 text-white bg-transparent!"
             className="justify-between! max-w-60 rounded-lg max-lg:text-xs! max-lg:px-2! max-lg:py-2 bg-color4 text-white"

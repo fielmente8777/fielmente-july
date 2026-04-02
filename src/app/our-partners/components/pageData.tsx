@@ -1,4 +1,7 @@
+import { BtnType } from "@/@types/@types";
 import { homePageData } from "@/app/(home)/homePageData";
+
+const btnType: BtnType = "button";
 
 export const ourPartnersPageData = {
   banner: {
@@ -24,6 +27,7 @@ export const ourPartnersPageData = {
     cta: {
       label: "Book a Demo",
       href: "/contact-us",
+      type: btnType,
     },
   },
   ctaSection: {

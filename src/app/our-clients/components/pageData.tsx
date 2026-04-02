@@ -2,6 +2,7 @@ import { BtnType } from "@/@types/@types";
 import { ClientImages } from "@/utils/client";
 
 const btnType: BtnType = "button";
+const btnType2: BtnType = "link";
 
 export const clientPageData = {
   bannerData: {
@@ -17,6 +18,7 @@ export const clientPageData = {
     cta: {
       label: "Vew All Clients",
       href: "#All-clients",
+      type: btnType2,
     },
     clients: ClientImages.map((client) => ({
       imgSrc: client.src,
