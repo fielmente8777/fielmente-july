@@ -8,6 +8,7 @@ import { Fragment, useEffect, useState } from "react";
 import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
 import { casStudiesData } from "@/app/case-study/[story]/components/caseData";
+import { contacts } from "../../../contact";
 const Header = () => {
   const { setIsOpenPopupForm, setIsMobileNavOpen } = useAppContext();
 
@@ -33,7 +34,7 @@ const Header = () => {
     "/search-engine-optimization/",
     "/hospitality-marketing-services/social-media-marketing-agency/",
     "/social-media-marketing/",
-    "/search-engine-marketing/"
+    "/search-engine-marketing/",
   ];
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -147,15 +148,17 @@ const Header = () => {
               <MenuIcon />
             </button>
 
-            <button
-              onClick={() => setIsOpenPopupForm(true)}
+            <Link
+              href={contacts.WhatsAppCta}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex max-xl:hidden items-center text-lg backdrop-blur-md justify-center gap-2 px-8 py-3 tracking-wide text-white bg-[#1B1B1B]/95 shadow-inner rounded-full duration-300 ease-in-out active:scale-95"
             >
               Contact Us
               <span className="w-6 aspect-square flex items-center justify-center bg-white rounded-full text-primary">
                 <ICon />
               </span>
-            </button>
+            </Link>
           </nav>
         </Container>
       </header>
