@@ -25,29 +25,29 @@ import SlidingTitle from "@/components/slider/SlidingTitle";
 export default function Home() {
   return (
     <main className="mt-18">
-      <Banner {...homePageData.bannerData} />
-      <BusinessPartners {...homePageData.businessPartnersData} />
-      <HomeAbout {...homePageData.aboutCompanyData} />
-      <IndustryWeServe {...homePageData.servingHospitalityData} />
-      <ChooseFielmente {...homePageData.chooseFielmenteData}/>
-      <OurServices {...homePageData.servicesData} />
-      <OurProducts {...homePageData.productsData} />
-      <HowItWork {...homePageData.howItWorksData} />
-      <ProvenResults {...homePageData.provenResults} />
-      <WhyChooseUs {...homePageData.whyChooseUsData} />
-      <CountriesWeWorked {...homePageData.countriesWeWorkedIn} />
+      <Banner {...homePageData?.bannerData} />
+      <BusinessPartners {...homePageData?.businessPartnersData} />
+      <HomeAbout {...homePageData?.aboutCompanyData} />
+      <IndustryWeServe {...homePageData?.servingHospitalityData} />
+      <ChooseFielmente {...homePageData?.chooseFielmenteData}/>
+      <OurServices {...homePageData?.servicesData} />
+      <OurProducts {...homePageData?.productsData} />
+      <HowItWork {...homePageData?.howItWorksData} />
+      <ProvenResults {...homePageData?.provenResults} />
+      <WhyChooseUs {...homePageData?.whyChooseUsData} />
+      <CountriesWeWorked {...homePageData?.countriesWeWorkedIn} />
       <SlidingTitle titles={homePageData.servicesTitles} />
-      {/* <OurWork {...homePageData.ourWorkData} /> */}
-      <OtaCostsWithFielmente {...homePageData.maximizeGrowthData} />
-      <SlidingTitle titles={homePageData.servicesTitles} />
-      <MarketingExperts {...homePageData.marketingExpertiseData} />
-      <Blogs {...homePageData.blogsData} />
-      <WorkWithIndiasHotel {...homePageData.workWithHotel} />
-      <OurValuedClient {...homePageData.ourValuedClient} />
-      <Testimonials {...homePageData.testimonialsData} />
-      <ElevateBrand {...homePageData.ElevateBrand} />
-      <Faq {...homePageData.faqsData} />
-      <ContactUsSection {...homePageData.contactUsSection}/>
+      {/* <OurWork {...homePageData?.ourWorkData} /> */}
+      <OtaCostsWithFielmente {...homePageData?.maximizeGrowthData} />
+      <SlidingTitle titles={homePageData?.servicesTitles} />
+      <MarketingExperts {...homePageData?.marketingExpertiseData} />
+      <Blogs {...homePageData?.blogsData} />
+      <WorkWithIndiasHotel {...homePageData?.workWithHotel} />
+      <OurValuedClient {...homePageData?.ourValuedClient} />
+      <Testimonials {...homePageData?.testimonialsData} />
+      <ElevateBrand {...homePageData?.ElevateBrand} />
+      <Faq {...homePageData?.faqsData} />
+      <ContactUsSection {...homePageData?.contactUsSection}/>
     </main>
   );
 }

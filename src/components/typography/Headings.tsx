@@ -10,7 +10,7 @@ const Headings: React.FC<HeadingsProps> = ({ heading, level, className }) => {
   return (
     <Tag
       className={`${className}`}
-      dangerouslySetInnerHTML={{ __html: heading }}
+      dangerouslySetInnerHTML={{ __html: heading || "" }}
     />
   );
 };

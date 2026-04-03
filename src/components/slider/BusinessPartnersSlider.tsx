@@ -21,7 +21,7 @@ const BusinessPartnersSlider: React.FC<Props> = ({
       className={`w-full block overflow-hidden demo ${wrapperClassName ? wrapperClassName : ""}`}
     >
       <SwiperCarousel
-        data={cards}
+        data={cards || []}
         slidesPerView={2.5}
         spaceBetween={20}
         speed={5000}

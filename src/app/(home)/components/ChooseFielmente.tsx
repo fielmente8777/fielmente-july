@@ -14,7 +14,7 @@ const ChooseFielmente: React.FC<{ title: string; description: string }> = ({
         <SectionHeading title={title} />
         <p
           className="text-primary span-color-2 md:text-2xl/snug font-semibold"
-          dangerouslySetInnerHTML={{ __html: description }}
+          dangerouslySetInnerHTML={{ __html: description || "" }}
         />
       </div>
     </SectionWithContainer>

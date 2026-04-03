@@ -17,7 +17,7 @@ const WorkWithIndiasHotel: React.FC<Props> = ({ title, description }) => {
           <p
             key={index}
             className="text-[#E6E8EB] text-xl"
-            dangerouslySetInnerHTML={{ __html: item }}
+            dangerouslySetInnerHTML={{ __html: item || "" }}
           ></p>
         ))}
       </div>

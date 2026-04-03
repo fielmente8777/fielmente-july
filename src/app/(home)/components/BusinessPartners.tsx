@@ -10,7 +10,7 @@ const BusinessPartners: React.FC<BusinessPartnersDataTypes> = ({
     <SectionWithContainer containerClassName="grid lg:grid-cols-5 items-center gap-10">
       <h2
         className="md:text-2xl text-xl font-semibold text-primary lg:col-span-1 span-color-2"
-        dangerouslySetInnerHTML={{ __html: title }}
+        dangerouslySetInnerHTML={{ __html: title || "" }}
       />
       <BusinessPartnersSlider cards={cards} wrapperClassName="lg:col-span-4" />
     </SectionWithContainer>

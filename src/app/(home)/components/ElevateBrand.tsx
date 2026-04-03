@@ -23,7 +23,7 @@ const ElevateBrand: React.FC<Props> = ({ title, description, button, src }) => {
             </h2>
             <p
               className="inter-link-2"
-              dangerouslySetInnerHTML={{ __html: description }}
+              dangerouslySetInnerHTML={{ __html: description || "" }}
             />
             <CtaBtn
               type="button"

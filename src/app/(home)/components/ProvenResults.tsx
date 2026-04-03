@@ -40,7 +40,7 @@ const ProvenResults: React.FC<Props> = ({ title, subTitle, link, data }) => {
             <div key={index} className={`flex flex-col items-center xl:justify-center gap-2 ${index === 2 ? "max-xl:col-span-2" : ""}`}>
               <h3
                 className="text-primary lg:text-5xl text-4xl font-bold"
-                dangerouslySetInnerHTML={{ __html: item.number }}
+                dangerouslySetInnerHTML={{ __html: item.number || "" }}
               ></h3>
               <p className="text-[#6B7280] max-md:text-xs">{item.description}</p>
             </div>

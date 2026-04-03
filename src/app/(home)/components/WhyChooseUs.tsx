@@ -20,7 +20,7 @@ const WhyChooseUs: React.FC<WhyChooseUsDataTypes> = ({
             <p
               key={index}
               className="text-secondary text-lg text-center"
-              dangerouslySetInnerHTML={{ __html: item }}
+              dangerouslySetInnerHTML={{ __html: item || "" }}
             ></p>
           ))}
         </div>

@@ -23,7 +23,7 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
         <SectionHeading title={title} subTitle={subTitle} />
         <p
           className="text-secondary text-lg"
-          dangerouslySetInnerHTML={{ __html: description }}
+          dangerouslySetInnerHTML={{ __html: description || "" }}
         ></p>
       </div>
       {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"> */}
