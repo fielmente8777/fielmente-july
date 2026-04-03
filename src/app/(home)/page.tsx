@@ -37,7 +37,7 @@ export default function Home() {
       <WhyChooseUs {...homePageData.whyChooseUsData} />
       <CountriesWeWorked {...homePageData.countriesWeWorkedIn} />
       <SlidingTitle titles={homePageData.servicesTitles} />
-      <OurWork {...homePageData.ourWorkData} />
+      {/* <OurWork {...homePageData.ourWorkData} /> */}
       <OtaCostsWithFielmente {...homePageData.maximizeGrowthData} />
       <SlidingTitle titles={homePageData.servicesTitles} />
       <MarketingExperts {...homePageData.marketingExpertiseData} />
