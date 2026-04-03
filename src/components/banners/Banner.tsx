@@ -32,7 +32,7 @@ const Banner: React.FC<BannerPropsType> = ({
           alt={title}
           fill
           className="object-contain md:hidden block"
-          priority
+          priority={true}
           loading="eager"
           sizes="100vw"
         />
