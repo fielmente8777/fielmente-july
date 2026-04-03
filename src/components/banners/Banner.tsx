@@ -5,11 +5,7 @@ import Form from "../forms/Form";
 import { Container, SectionWithContainer } from "../sectionComponants";
 import AnimatedWord from "./ui/AnimatedWord";
 
-const Banner: React.FC<BannerPropsType> = ({
-  title,
-  description,
-  imgSrc,
-}) => {
+const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
   return (
     <SectionWithContainer
       defaultPadding={false}
@@ -22,7 +18,7 @@ const Banner: React.FC<BannerPropsType> = ({
           alt={title}
           fill
           className="object-contain md:block hidden"
-          priority
+          priority={true}
           loading="eager"
           sizes="100vw"
         />
@@ -42,7 +38,12 @@ const Banner: React.FC<BannerPropsType> = ({
             <div className="flex flex-col lg:gap-7 gap-3.5">
               {/* <div className="flex justify-center items-center gap-2 px-2.5 py-1.5 bg-white/10 backdrop-blur-xs text-white shadow-2xl shadow-white/15 rounded-full w-fit mx-auto"> */}
               <div className="flex justify-center items-center gap-2 px-2.5 py-1.5 text-white rounded-full w-fit mx-auto glassy-card">
-                <Image src="/home/Frame-3.png" alt="hotels" width={40} height={20} />
+                <Image
+                  src="/home/Frame-3.png"
+                  alt="hotels"
+                  width={40}
+                  height={20}
+                />
                 <p className="max-md:text-[10px] text-[10px]">{title}</p>
               </div>
               <h1 className="text-white text-center lg:text-[2.5rem]/tight md:text-2xl text-[1.4rem] max-sm:h-[99px]  font-semibold pointer-events-auto">
