@@ -42,7 +42,7 @@ import { blogData } from "@/utils/blogdata";
 export const homePageData = {
   bannerData: {
     imgSrc: "/Banner.png",
-    title: "Trusted by 120+ Hotels & Resorts Worldwide",
+    title: "Trusted by 500+ Hotels & Resorts Worldwide",
     subTitle: `Increase <b>Direct Resort Bookings by up to 40%</b> Without OTAs`,
     description:
       "Boost Your Online Presence, Drive More Bookings, and Grow Your Hospitality Business with AI-Driven Digital Strategies through India’s best Hospitality Marketing Company.",

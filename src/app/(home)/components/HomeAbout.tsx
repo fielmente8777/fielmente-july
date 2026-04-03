@@ -1,10 +1,9 @@
 import { AboutCompanyDataTypes } from "@/@types/@homeType";
 import { SectionWithContainer } from "@/components";
-import SectionHeading from "@/components/typography/SectionHeadingDesc";
-import { TickIcon } from "./WhyChooseUs";
-import LinkButton from "@/components/buttons/LinkButton";
-import Image from "next/image";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
+import SectionHeading from "@/components/typography/SectionHeadingDesc";
+import Image from "next/image";
+import { TickIcon } from "./WhyChooseUs";
 
 const HomeAbout: React.FC<AboutCompanyDataTypes> = ({
   title,
@@ -20,8 +19,8 @@ const HomeAbout: React.FC<AboutCompanyDataTypes> = ({
       <div className="grid lg:grid-cols-[1.7fr_1.5fr] gap-10 items-center">
         <div className="space-y-6 max-md:px-2">
           <SectionHeading
-            title={title}
             subTitle={subTitle}
+            subLevel={2}
             subTitleClassName="md:pr-16 span-color"
           />
           <p className="text-secondary text-xl">{description}</p>
