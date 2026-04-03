@@ -58,10 +58,8 @@ const OurServices: React.FC<ServicesDataTypes> = ({
                 <button
                   className={`text-sm w-fit max-xl:w-full max-xl:justify-center font-semibold flex items-center gap-2 px-5 py-2.5 rounded-[10px] hover:text-color4 hover:bg-[#E7F4FF] duration-300 ease-in-out transition-all  ${index === activeIndex ? "text-color4 bg-[#E7F4FF]" : "text-secondary"}`}
                 >
-                  <span className="sr-only">
-                    {sector.title}
-                  </span>
-                  <span> {sector.icon} </span> {sector.title}
+                  <span className="sr-only">{sector?.title}</span>
+                  <span> {sector?.icon} </span> {sector?.title}
                 </button>
               )}
             />
@@ -86,25 +84,25 @@ const OurServices: React.FC<ServicesDataTypes> = ({
               prevEl: ".sector-prev",
             }}
             renderSlide={(sector) => (
-              <div className="space-y-4 bg-white py-6 px-4">
-                <div className="w-full relative aspect-4/1.5 rounded-[28.66px] border-6 border-white  shadow overflow-hidden">
+              <div className="space-y-4 bg-white py-6 xl:px-4">
+                <div className="w-full relative lg:aspect-4/1.75 aspect-4/2.5 rounded-[28.66px] border-6 border-white  shadow overflow-hidden">
                   <Image
-                    src={sector.src}
-                    alt={sector.title}
+                    src={sector?.src}
+                    alt={sector?.title}
                     fill
                     className="object-cover "
                     sizes="100vw"
                   />
                 </div>
-                <h3 className="text-2xl">{sector.title}</h3>
-                <p className="text-lg">{sector.description}</p>
+                <h3 className="text-2xl">{sector?.title}</h3>
+                <p className="text-lg">{sector?.description}</p>
                 {/* <button className="text-white bg-[#1B1B1B] rounded-full px-6 py-3 font-semibold">
                   Grow My Socials
                 </button> */}
                 <CtaBtn
                   type="button"
-                  label="Grow My Socials"
-                  href="/"
+                  label={sector?.cta.label}
+                  href={sector?.cta.href}
                   icon="arrow"
                   className="text-white bg-[#1B1B1B] rounded-full px-6 py-3 font-semibold"
                 />

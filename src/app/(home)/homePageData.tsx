@@ -198,58 +198,94 @@ export const homePageData = {
       "Transforming Hospitality Brands with Expert <a href='/industries-we-serve/hotel-marketing-agency/'>Hospitality Marketing Services</a>",
     cards: [
       {
-        src:"/home/im8.png",
+        src: "/home/im8.png",
         icon: <SocialMediaIcons />,
         title: "Social Media Management",
         description: "Turn Instagram & Facebook into booking engines.",
+        cta: {
+          label: "Get More Bookings",
+          href: "",
+        },
       },
       {
-        src:"/home/service-1.png",
+        src: "/home/service-1.png",
         icon: <LocalSeoIcon />,
         title: "Local SEO",
         description: "Dominate Google Maps and local hotel searches.",
+        cta: {
+          label: "Boost My Local Visibility",
+          href: "",
+        },
       },
       {
-        src:"/home/service-2.png",
+        src: "/home/service-2.png",
         icon: <WebsiteSeoIcon />,
         title: "Website SEO",
         description: "Boost organic traffic and search rankings.",
+        cta: {
+          label: "Increase Organic Bookings",
+          href: "",
+        },
       },
       {
-        src:"/home/service-3.png",
+        src: "/home/service-3.png",
         icon: <AiSearchOptimizationIcon />,
         title: "AI Search Optimization",
         description: "Optimize visibility for ChatGPT and Gemini searches.",
+        cta: {
+          label: "Optimize for AI Search",
+          href: "",
+        },
       },
       {
-        src:"/home/service-4.png",
+        src: "/home/service-4.png",
         icon: <PreOpeningMarketingIcon />,
         title: "Preopening Marketing",
         description: "Launch your property with strong demand generation.",
+        cta: {
+          label: "Plan My Hotel Launch",
+          href: "",
+        },
       },
       {
-        src:"/home/service-5.png",
+        src: "/home/service-5.png",
         icon: <OtaManagementIcon />,
         title: "OTA Management",
         description: "Reduce commissions and optimize OTA performance.",
+        cta: {
+          label: "Optimize My OTA Listings",
+          href: "",
+        },
       },
       {
-        src:"/home/service-6.png",
+        src: "/home/service-6.png",
         icon: <WebsiteDevelopmentIcon />,
         title: "Website Development",
         description: "Conversion-focused hotel websites.",
+        cta: {
+          label: "Build My Hotel Website",
+          href: "",
+        },
       },
       {
-        src:"/home/service-7.png",
+        src: "/home/service-7.png",
         icon: <MarketingAutomationIcon />,
         title: "Sales & Marketing Automation",
         description: "Automate lead nurturing and campaigns.",
+        cta: {
+          label: "Automate My Bookings",
+          href: "",
+        },
       },
       {
-        src:"/home/service-8.png",
+        src: "/home/service-8.png",
         icon: <ContentCreationIcon />,
         title: "Content Creation",
         description: "Professional photo, video, and storytelling.",
+        cta: {
+          label: "Create High-Converting Content",
+          href: "",
+        },
       },
     ],
   },
@@ -361,8 +397,14 @@ export const homePageData = {
       href: "",
     },
     data: [
-      { number: "₹700<span class='text-color4'>+</span>", description: "RevPAR Increase" },
-      { number: "2<span class='text-color4'>X</span>", description: "Corporate & Event Leads" },
+      {
+        number: "₹700<span class='text-color4'>+</span>",
+        description: "RevPAR Increase",
+      },
+      {
+        number: "2<span class='text-color4'>X</span>",
+        description: "Corporate & Event Leads",
+      },
       { number: "-15%", description: "OTA Commission Costs" },
     ],
   },

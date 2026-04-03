@@ -56,7 +56,7 @@ const HomeAbout: React.FC<AboutCompanyDataTypes> = ({
             className="text-center h-full bg-white p-4 rounded-[10px] space-y-3"
           >
             <h3 className="text-primary md:text-3xl text-xl font-bold">{item.number}</h3>
-            <p className="text-[#6B7280] max-md:text-xs max-md:px-4">{item.label}</p>
+            <p className="text-[#6B7280] max-md:text-sm max-md:px-4">{item.label}</p>
           </div>
         ))}
       </div>

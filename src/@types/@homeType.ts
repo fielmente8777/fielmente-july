@@ -46,6 +46,10 @@ export interface ServicesDataTypes {
     title: string;
     description: string;
     src: string;
+    cta: {
+      label: string;
+      href: string;
+    };
   }[];
 }
 

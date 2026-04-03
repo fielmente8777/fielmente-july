@@ -38,7 +38,7 @@ export default function AboutFielmenteBestHospitalityMarketingAgency() {
       <GridCard {...aboutUsPageData.marketingSection} index={2} />
       <Milestone {...aboutUsPageData.statsData} />
       <Unique {...aboutUsPageData.uniqueSection} />
-      <GetStarted {...aboutUsPageData.collaborationSection} />
+      {/* <GetStarted {...aboutUsPageData.collaborationSection} /> */}
       <ContactUsSection {...homePageData.contactUsSection} />
     </main>
   );
