@@ -19,15 +19,17 @@ export const BlogCard: React.FC<BlogCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-6 h-full border border-main-border rounded-2xl p-6">
-      <div className="w-full relative aspect-4/2.25 rounded-lg overflow-hidden">
-        <Image
-          src={src ?? ""}
-          alt={title}
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-      </div>
+      {src && (
+        <div className="w-full relative aspect-4/2.25 rounded-lg overflow-hidden">
+          <Image
+            src={src ?? ""}
+            alt={title}
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+      )}
       <div className="flex flex-col gap-4 justify-between">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p>{description}</p>
