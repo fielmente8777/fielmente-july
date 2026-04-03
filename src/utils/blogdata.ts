@@ -4264,18 +4264,18 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
   },
   {
-  slug: "resort-marketing-agency-himachal",
-  title: "Best Resort Marketing Agency in Himachal",
-  isShow: true,
-  meta: {
-    title: "Resort Marketing Agency in Himachal Pradesh | Fielmente",
+    slug: "resort-marketing-agency-himachal",
+    title: "Best Resort Marketing Agency in Himachal",
+    isShow: true,
+    meta: {
+      title: "Resort Marketing Agency in Himachal Pradesh | Fielmente",
+      description:
+        "Himachal Pradesh is one of India’s top travel destinations, with heavy competition among hotels and resorts.",
+    },
+    date: "April 3, 2026",
     description:
       "Himachal Pradesh is one of India’s top travel destinations, with heavy competition among hotels and resorts.",
-  },
-  date: "April 3, 2026",
-  description:
-    "Himachal Pradesh is one of India’s top travel destinations, with heavy competition among hotels and resorts.",
-  data: `
+    data: `
     <div>
 
       <p>Himachal Pradesh is one of India’s top travel destinations, with heavy competition among hotels and resorts.</p>
@@ -4298,6 +4298,154 @@ Why does this work? Because you’re cutting costs on front-of-house activities
         <li>Data-driven marketing</li>
         <li>Proven ROI & occupancy growth</li>
       </ul>
+
+    </div>
+  `,
+  },
+  {
+  slug: "hotel-resort-marketing-agency-goa",
+  title: "Hotel & Resort Marketing Agency in Goa",
+  isShow: true,
+  meta: {
+    title: "Hotel & Resort Marketing Agency in Goa | Fielmente",
+    description:
+      "Boost bookings for your hotel or resort in Goa with Fielmente. Experts in SEO, ads, and luxury hospitality marketing.",
+  },
+  date: "April 3, 2026",
+  description:
+    "Boost bookings for your hotel or resort in Goa with Fielmente. Experts in SEO, ads, and luxury hospitality marketing.",
+
+  data: `
+    <div>
+
+      <h2>Introduction</h2>
+
+      <p>Goa is one of India’s most competitive hospitality markets — from luxury beach resorts and private villas to boutique stays and party hostels.</p>
+
+      <p>With thousands of options available to travelers, simply being listed on OTAs is not enough.</p>
+
+      <p>At Fielmente, we help hotels, resorts, and villas in Goa:</p>
+
+      <ul>
+        <li>Increase direct bookings</li>
+        <li>Reduce OTA commissions</li>
+        <li>Build a strong brand presence</li>
+        <li>Attract high-paying guests</li>
+      </ul>
+
+      <h2>Our Services for Goa Hotels & Resorts</h2>
+
+      <h3>1. SEO for Goa Hospitality</h3>
+
+      <p>We rank your property for high-intent searches like:</p>
+
+      <ul>
+        <li>“Beach resort in Goa”</li>
+        <li>“Luxury villa in North Goa”</li>
+        <li>“Best stay in South Goa”</li>
+      </ul>
+
+      <ul>
+        <li>✔ Google ranking</li>
+        <li>✔ Google My Business optimization</li>
+        <li>✔ Location-based keyword strategy</li>
+      </ul>
+
+      <h3>2. Performance Marketing (Google & Meta Ads)</h3>
+
+      <p>We create high-converting ad campaigns targeting:</p>
+
+      <ul>
+        <li>Delhi, Mumbai, Bangalore travelers</li>
+        <li>International tourists</li>
+        <li>Luxury & honeymoon audiences</li>
+      </ul>
+
+      <ul>
+        <li>✔ Lead generation</li>
+        <li>✔ Direct booking campaigns</li>
+        <li>✔ WhatsApp & call integration</li>
+      </ul>
+
+      <h3>3. Social Media & Reel Marketing</h3>
+
+      <p>Goa sells visually — and we make your property stand out.</p>
+
+      <ul>
+        <li>Instagram growth strategy</li>
+        <li>Reel creation & storytelling</li>
+        <li>Influencer collaborations</li>
+        <li>Luxury content shoots</li>
+      </ul>
+
+      <h3>4. Website & Booking Engine</h3>
+      <p>We build high-converting websites that:</p>
+      <ul>
+        <li>Drive direct bookings</li>
+        <li>Showcase your property beautifully</li>
+        <li>Integrate booking engines & payments</li>
+      </ul>
+
+      <h3>5. Reputation Management</h3>
+
+      <p>Your reviews define your bookings.</p>
+
+      <ul>
+        <li>✔ Google & OTA review management</li>
+        <li> ✔ Automated review responses</li>
+        <li>✔ Rating improvement strategies</li>
+      </ul>
+
+      <h2>Why Choose Fielmente for Goa?</h2>
+
+      <ul>
+        <li>Specialized in hospitality marketing only</li>
+        <li>Experience with resorts, villas, and boutique stays</li>
+        <li>Proven increase in direct bookings & ROI</li>
+        <li>Strong mix of creative + performance marketing</li>
+        <li>Deep understanding of Goa travel trends & seasons</li>
+      </ul>
+
+      <h2>Who We Work With in Goa</h2>
+
+      <ul>
+        <li>Luxury Resorts</li>
+        <li>Private Villas</li>
+        <li>Boutique Hotels</li>
+        <li>Beach Shacks & Cafes</li>
+        <li>Party & Event Venues</li>
+      </ul>
+
+      <h2>Goa-Specific Strategy (Your Edge)</h2>
+
+      <p>We don’t run generic campaigns — we tailor strategy for Goa:</p>
+
+      <ul>
+        <li>Seasonal campaigns (New Year, peak winter, monsoon offers)</li>
+        <li>Location targeting (North Goa vs South Goa audiences)</li>
+        <li>Experience-based marketing (party, luxury, wellness, workations)</li>
+        <li>Weekend getaway targeting (Delhi/Mumbai quick travelers)</li>
+      </ul>
+
+      <h2>FAQs</h2>
+
+      <p><strong>Q1. How can I increase direct bookings for my Goa hotel?</strong><br/>
+      By combining SEO, Google Ads, and a strong website booking engine, you can reduce dependency on OTAs.</p>
+
+      <p><strong>Q2. Do you work with villas in Goa?</strong><br/>
+      Yes, we specialize in marketing luxury villas and boutique stays.</p>
+
+      <p><strong>Q3. What budget is required for marketing in Goa?</strong><br/>
+      It depends on your property size, but we recommend starting with performance + SEO combined.</p>
+
+      <p><strong>Q4. Can you help with influencer marketing in Goa?</strong><br/>
+      Yes, we collaborate with travel and luxury influencers to boost reach.</p>
+
+
+      <h3>Ready to increase your bookings in Goa?</h3>
+
+      <p>👉 Get a free strategy call with Fielmente<br/>
+      👉 Let’s grow your hotel, resort, or villa</p>
 
     </div>
   `,

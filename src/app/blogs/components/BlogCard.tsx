@@ -18,7 +18,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
   slug,
 }) => {
   return (
-    <div className="flex flex-col gap-6 h-full border border-main-border rounded-2xl p-6">
+    <div className={`flex flex-col gap-6 ${!src ? "h-fit": "h-full"} border border-main-border rounded-2xl p-6`}>
       {src && (
         <div className="w-full relative aspect-4/2.25 rounded-lg overflow-hidden">
           <Image
