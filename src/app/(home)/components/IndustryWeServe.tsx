@@ -11,10 +11,10 @@ const IndustryWeServe: React.FC<IndustryWeServeDataTypes> = ({
   return (
     <Section>
       <SectionHeading
-        title={title}
         subTitle={subTitle}
         subTitleClassName="span-color"
         textCenter
+        subLevel={2}
         wrapperClassName="max-w-2xl mx-auto max-lg:px-4"
       />
       <IndustryWeServeSlider cards={cards} />

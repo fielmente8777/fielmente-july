@@ -38,6 +38,7 @@ import {
 import { data } from "@/utils/testimonialsData";
 import { contacts } from "../../../contact";
 import { blogData } from "@/utils/blogdata";
+import { AiFillInstagram } from "react-icons/ai";
 
 export const homePageData = {
   bannerData: {
@@ -201,7 +202,8 @@ export const homePageData = {
         src: "/home/im8.png",
         icon: <SocialMediaIcons />,
         title: "Social Media Management",
-        description: "Turn your social presence into a booking engine. We create high-converting content, manage campaigns, and build a brand voice that converts followers into guests.",
+        description:
+          "Turn your social presence into a booking engine. We create high-converting content, manage campaigns, and build a brand voice that converts followers into guests.",
         cta: {
           label: "Get More Bookings",
           href: "",
@@ -211,7 +213,8 @@ export const homePageData = {
         src: "/home/service-1.png",
         icon: <LocalSeoIcon />,
         title: "Local SEO",
-        description: "Be the first choice when guests search nearby. We optimize your Google presence and local rankings to drive high-intent traffic and direct inquiries.",
+        description:
+          "Be the first choice when guests search nearby. We optimize your Google presence and local rankings to drive high-intent traffic and direct inquiries.",
         cta: {
           label: "Boost My Local Visibility",
           href: "",
@@ -221,7 +224,8 @@ export const homePageData = {
         src: "/home/service-2.png",
         icon: <WebsiteSeoIcon />,
         title: "Website SEO",
-        description: "Rank higher and drive consistent organic bookings. Our SEO strategies ensure your hotel appears where it matters most.",
+        description:
+          "Rank higher and drive consistent organic bookings. Our SEO strategies ensure your hotel appears where it matters most.",
         cta: {
           label: "Increase Organic Bookings",
           href: "",
@@ -231,7 +235,8 @@ export const homePageData = {
         src: "/home/service-3.png",
         icon: <AiSearchOptimizationIcon />,
         title: "AI Search Optimization",
-        description: "Get discovered on ChatGPT, Gemini, and AI-driven platforms. We position your brand for the future of search and travel discovery.",
+        description:
+          "Get discovered on ChatGPT, Gemini, and AI-driven platforms. We position your brand for the future of search and travel discovery.",
         cta: {
           label: "Optimize for AI Search",
           href: "",
@@ -241,7 +246,8 @@ export const homePageData = {
         src: "/home/service-4.png",
         icon: <PreOpeningMarketingIcon />,
         title: "Preopening Marketing",
-        description: "Launch with impact and demand from day one. We create buzz, build positioning, and generate early bookings before your property opens.",
+        description:
+          "Launch with impact and demand from day one. We create buzz, build positioning, and generate early bookings before your property opens.",
         cta: {
           label: "Plan My Hotel Launch",
           href: "",
@@ -251,7 +257,8 @@ export const homePageData = {
         src: "/home/service-5.png",
         icon: <OtaManagementIcon />,
         title: "OTA Management",
-        description: "Maximize OTA performance while reducing dependency. We optimize listings, pricing, and visibility to drive higher revenue.",
+        description:
+          "Maximize OTA performance while reducing dependency. We optimize listings, pricing, and visibility to drive higher revenue.",
         cta: {
           label: "Optimize My OTA Listings",
           href: "",
@@ -261,7 +268,8 @@ export const homePageData = {
         src: "/home/service-6.png",
         icon: <WebsiteDevelopmentIcon />,
         title: "Website Development",
-        description: "Build a high-performance website designed for direct bookings. Fast, mobile-first, and tailored for hospitality conversion.",
+        description:
+          "Build a high-performance website designed for direct bookings. Fast, mobile-first, and tailored for hospitality conversion.",
         cta: {
           label: "Build My Hotel Website",
           href: "",
@@ -271,7 +279,8 @@ export const homePageData = {
         src: "/home/service-7.png",
         icon: <MarketingAutomationIcon />,
         title: "Sales & Marketing Automation",
-        description: "Capture, nurture, and convert every lead automatically. We set up systems that turn inquiries into confirmed bookings.",
+        description:
+          "Capture, nurture, and convert every lead automatically. We set up systems that turn inquiries into confirmed bookings.",
         cta: {
           label: "Automate My Bookings",
           href: "",
@@ -281,7 +290,8 @@ export const homePageData = {
         src: "/home/service-8.png",
         icon: <ContentCreationIcon />,
         title: "Content Creation",
-        description: "Create content that sells the experience. From visuals to storytelling, we position your property as a must-visit destination.",
+        description:
+          "Create content that sells the experience. From visuals to storytelling, we position your property as a must-visit destination.",
         cta: {
           label: "Create High-Converting Content",
           href: "",
@@ -736,6 +746,11 @@ export const homePageData = {
           label: Object.keys(contacts.socialContacts)[0],
           href: contacts.socialContacts.facebook,
           icon: <FillFaceBookIcon />,
+        },
+        {
+          label: Object.keys(contacts.socialContacts)[1],
+          href: contacts.socialContacts.instagram,
+          icon: <AiFillInstagram />,
         },
         {
           label: Object.keys(contacts.socialContacts)[2],

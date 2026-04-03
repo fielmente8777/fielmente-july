@@ -374,7 +374,7 @@ export const subPageData = [
     },
   },
   {
-    slug: "hotel-marketing-agency/restaurant-google-ads",
+    slug: "restaurant-marketing-agency/restaurant-google-ads",
     metaData: {
       title: "India's Leading Restaurant Google Ads Agency - Fielmente",
       description:
@@ -547,7 +547,7 @@ export const subPageData = [
     },
   },
   {
-    slug: "hotel-marketing-agency/cloud-kitchen-google-ads",
+    slug: "cloud-kitchen-marketing-agency/cloud-kitchen-google-ads",
     metaData: {
       title: "India's Leading Cloud Kitchen Google Ads Agency - Fielmente",
       description:

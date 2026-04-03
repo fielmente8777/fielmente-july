@@ -34,7 +34,7 @@ export const contacts = {
 
   socialContacts: {
     facebook: "https://www.facebook.com/Fielmentemarketing/",
-    instagram: "https://www.instagram.com/fielmente_hospitality/",
+    instagram: "https://www.instagram.com/fielmente_offical/",
     linkedin: "https://www.linkedin.com/company/fielmente/",
     twitter: "https://x.com/fieladvisors?lang=en",
   },

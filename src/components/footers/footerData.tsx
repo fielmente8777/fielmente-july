@@ -7,6 +7,7 @@ import {
   OutLineXIcon
 } from "@/utils/icons";
 import { contacts } from "../../../contact";
+import { AiFillInstagram } from "react-icons/ai";
 
 interface Link {
   label: string;
@@ -34,6 +35,11 @@ export const SocialLinks: Link[] = [
     label: Object.keys(contacts.socialContacts)[0],
     href: contacts.socialContacts.facebook,
     icon: <FillFaceBookIcon />,
+  },
+  {
+    label: Object.keys(contacts.socialContacts)[1],
+    href: contacts.socialContacts.instagram,
+    icon: <AiFillInstagram />,
   },
   {
     label: Object.keys(contacts.socialContacts)[2],
