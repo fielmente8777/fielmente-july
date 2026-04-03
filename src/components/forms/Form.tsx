@@ -167,7 +167,7 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`grid md:grid-cols-4 md:rounded-full rounded-[20px] overflow-hidden glassy-card xl:p-2 `}
+      className={`grid md:grid-cols-4 md:rounded-full rounded-[20px] overflow-hidden glassy-card xl:p-2 max-md:p-2`}
     >
       <div className="md:col-span-3 grid md:grid-cols-3 md:py-2 py-1">
         {formData.map((data, index) => (

@@ -55,19 +55,19 @@ export const footerData: FooterLinksPropstype = {
       listOfLinks: [
         {
           label: "About",
-          href: "",
+          href: "/about-fielmente-best-hospitality-marketing-agency/",
         },
         {
           label: "Industries We Serve",
-          href: "",
+          href: "/industries-we-serve/",
         },
         {
           label: "Services",
-          href: "",
+          href: "/hospitality-marketing-services/",
         },
         {
           label: "Our Work",
-          href: "",
+          href: "https://www.eazotel.com/our-work/",
         },
         {
           label: "Career",
@@ -75,15 +75,15 @@ export const footerData: FooterLinksPropstype = {
         },
         {
           label: "Blogs",
-          href: "",
+          href: "/blogs/",
         },
         {
           label: "Success Stories",
-          href: "",
+          href: "/case-study/",
         },
         {
           label: "Contact Us",
-          href: "",
+          href: "/contact-us/",
         },
         {
           label: "Our Team",
@@ -96,15 +96,15 @@ export const footerData: FooterLinksPropstype = {
       listOfLinks: [
         {
           label: "Hotel Marketing ",
-          href: "",
+          href: "/industries-we-serve/hotel-marketing-agency/",
         },
         {
           label: "Hotel Social Media",
-          href: "",
+          href: "/industries-we-serve/hotel-marketing-agency/hotel-social-media/",
         },
         {
           label: "Hotel SEO",
-          href: "",
+          href: "/industries-we-serve/hotel-marketing-agency/hotel-seo/",
         },
         {
           label: "Resort Marketing",
@@ -120,11 +120,11 @@ export const footerData: FooterLinksPropstype = {
         },
         {
           label: "Restaurant Social Media",
-          href: "",
+          href: "/industries-we-serve/restaurant-marketing-agency/restaurant-social-media/",
         },
         {
           label: "Restaurant Marketing",
-          href: "",
+          href: "/industries-we-serve/restaurant-marketing-agency/",
         },
         {
           label: "Restaurant SEO",

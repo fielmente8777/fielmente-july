@@ -39,9 +39,11 @@ const IndustryWeServeSlider: React.FC<{
         <div className="flex items-center text-color4 justify-between w-full gap-6 absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[96%]">
           <button className="w-10 aspect-square rounded-full bg-[#F5F6F8] disabled:bg-[#494949] flex items-center justify-center industries-prev rotate-180">
             <Foo />
+            <span className="sr-only">Previous</span>
           </button>
           <button className="w-10 aspect-square rounded-full bg-[#F5F6F8] disabled:bg-[#494949] flex items-center justify-center industries-next">
             <Foo />
+            <span className="sr-only">Next</span>
           </button>
         </div>
       </Container>

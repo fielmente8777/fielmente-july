@@ -143,6 +143,7 @@ const Header = () => {
               className={`xl:hidden ${paths.includes(pathName) ? (isScrolled ? "text-[#6A7691]" : "text-white") : "text-[#6A7691]"}`}
               onClick={() => setIsMobileNavOpen(true)}
             >
+              <span className="sr-only">Open main menu</span>
               <MenuIcon />
             </button>
 

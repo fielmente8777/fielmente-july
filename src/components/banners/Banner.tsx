@@ -58,7 +58,7 @@ const Banner: React.FC<BannerPropsType> = ({
               <p className="text-white text-center lg:text-lg max-sm:text-[10px] max-w-5xl mx-auto">
                 {description}
               </p>
-              <div className="max-w-5xl mx-auto">
+              <div className="max-w-5xl w-full mx-auto">
                 <Form />
               </div>
             </div>

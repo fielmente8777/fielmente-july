@@ -3,15 +3,15 @@ import { NavLinksProps } from "@/@types/@types";
 export const navLinks: NavLinksProps[] = [
   {
     label: "About Us",
-    href: "/about-fielmente-best-hospitality-marketing-agency",
+    href: "/about-fielmente-best-hospitality-marketing-agency/",
   },
   {
     label: "Industry we serve",
-    href: "/industries-we-serve",
+    href: "/industries-we-serve/",
     subLinks: [
       {
         label: "Hotel Marketing",
-        href: "/industries-we-serve/hotel-marketing-agency",
+        href: "/industries-we-serve/hotel-marketing-agency/",
         subLinks: [
           {
             label: "Hotel Social Media",
@@ -133,7 +133,7 @@ export const navLinks: NavLinksProps[] = [
   },
   {
     label: "contact us",
-    href: "/contact-us",
+    href: "/contact-us/",
   },
   // {
   //   label: "blogs",

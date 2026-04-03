@@ -34,9 +34,11 @@ const GrowthSlider: React.FC<{ cards: GrowthSectionProps["points"] }> = ({
       <div className="flex items-center justify-between w-full gap-6 mt-4">
         <button className="w-10 aspect-square rounded-full bg-color4 disabled:bg-[#494949] flex items-center justify-center service-prev rotate-180">
           <Foo />
+          <span className="sr-only">Previous</span>
         </button>
         <button className="w-10 aspect-square rounded-full bg-color4 disabled:bg-[#494949] flex items-center justify-center service-next">
           <Foo />
+          <span className="sr-only">Next</span>
         </button>
       </div>
     </div>
@@ -44,7 +46,6 @@ const GrowthSlider: React.FC<{ cards: GrowthSectionProps["points"] }> = ({
 };
 
 export default GrowthSlider;
-
 
 export const Foo = () => (
   <svg
@@ -62,4 +63,4 @@ export const Foo = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);

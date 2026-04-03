@@ -30,6 +30,7 @@ const MobileNav = () => {
           className="float-right"
           onClick={() => setIsMobileNavOpen(false)}
         >
+          <span className="sr-only">Close mobile navigation</span>
           <IoClose size={24} />
         </button>
 
@@ -53,6 +54,7 @@ const MobileNav = () => {
                       onClick={() => handleDropdown(index)}
                       className="duration-300 transition-all ease-in-out"
                     >
+                      <span className="sr-only">Open dropdown</span>
                       <OutlineDrpopdown
                         className={`transition-transform duration-300 ${
                           isActive ? "rotate-180" : ""
