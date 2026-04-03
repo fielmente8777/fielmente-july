@@ -58,6 +58,9 @@ const OurServices: React.FC<ServicesDataTypes> = ({
                 <button
                   className={`text-sm w-fit max-xl:w-full max-xl:justify-center font-semibold flex items-center gap-2 px-5 py-2.5 rounded-[10px] hover:text-color4 hover:bg-[#E7F4FF] duration-300 ease-in-out transition-all  ${index === activeIndex ? "text-color4 bg-[#E7F4FF]" : "text-secondary"}`}
                 >
+                  <span className="sr-only">
+                    {sector.title}
+                  </span>
                   <span> {sector.icon} </span> {sector.title}
                 </button>
               )}

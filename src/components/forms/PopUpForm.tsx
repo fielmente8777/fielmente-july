@@ -156,6 +156,9 @@ const PopUpForm = () => {
                                 <span className="text-start text-primary2 md:text-lg">
                                     {countryCode}
                                 </span>
+                                <span className="sr-only">
+                                    Country Code
+                                </span>
                                 <OutlineDrpopdown
                                     className={` text-orange-primary transition-transform ${isOpen ? "rotate-180" : ""
                                         }`}

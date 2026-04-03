@@ -199,6 +199,7 @@ const FormNew = () => {
                 key={index}
                 value={country.code}
                 className="text-black bg-gray-100"
+                aria-label="Country Code"
               >
                 {country.code}
               </option>

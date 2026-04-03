@@ -139,9 +139,10 @@ const LandingPgForm = ({
                   value={formData.countryCode}
                   onChange={(e) => setFieldValue("countryCode", e.target.value)}
                   className={`outline-none ${textColor || "text-white"}`}
+                  aria-label="Country Code"
                 >
                   {countries.map((country, index) => (
-                    <option key={index} value={country.code}>
+                    <option key={index} value={country.code} aria-label="Country Code">
                       {country.code}
                     </option>
                   ))}

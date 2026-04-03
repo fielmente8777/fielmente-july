@@ -34,6 +34,7 @@ const Accordion: React.FC<AccordionProps> = ({ question, answer }) => {
         <button
           className={`duration-300 ease-in-out transition-all ${isOpen ? "rotate-180" : ""}`}
         >
+          <span className="sr-only">Open question</span>
           {isOpen ? <MinusIcon /> : <AddIcon />}
         </button>
       </div>

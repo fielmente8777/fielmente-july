@@ -98,6 +98,7 @@ const Accordion2: React.FC<AccordionProps> = ({ item }) => {
             isOpen ? "rotate-180" : ""
           }`}
         >
+          <span className="sr-only">Toggle answer</span>
           {isOpen ? <MinusIcon /> : <AddIcon />}
         </button>
       </div>
