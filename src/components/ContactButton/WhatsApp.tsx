@@ -19,7 +19,7 @@ function Whatsapp() {
     // "/UK/",
     // "/USA/",
     // "/dubai-restaurant/",
-    // "/landing-page/",
+    "/landing-page/",
     "/test/",
   ];
 

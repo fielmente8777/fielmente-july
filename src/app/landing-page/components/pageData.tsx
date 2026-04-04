@@ -217,7 +217,7 @@ export const landingPageData = [
         {
           src: "/landing-pages/hotel-website-development.png",
           label: "MOST POPULAR",
-          title: "Hotel Website Development",
+          title: " Website Design & Development",
           description:
             "High converting websites designed to increase direct bookings.",
           result: "+30% direct reservations within 60 days",
@@ -230,7 +230,7 @@ export const landingPageData = [
         },
         {
           src: "/landing-pages/performance-marketing.png",
-          title: "Performance Marketing",
+          title: " Google & Meta Ads",
           description: "High ROI Google & Meta ads that drive direct bookings.",
           result: "Avg. 2.4× ROAS",
           cta: {
@@ -242,7 +242,7 @@ export const landingPageData = [
         },
         {
           src: "/landing-pages/seo-for-hotel.png",
-          title: "SEO for Hotels",
+          title: "Search Engine Optimization",
           description:
             "Rank higher on Google and attract booking ready travelers.",
           result: "Top 3 in 90 days on average",
@@ -255,7 +255,7 @@ export const landingPageData = [
         },
         {
           src: "/landing-pages/local-seo.png",
-          title: "Local SEO",
+          title: "Google Local SEO",
           description:
             "Google Business optimisation & map pack domination for walk ins and same day bookings.",
           cta: {
@@ -269,7 +269,7 @@ export const landingPageData = [
           src: "/landing-pages/social-media-management.png",
           title: "Social Media Management",
           description:
-            "Strategy, creation & community management across Instagram, Facebook & TikTok.",
+            "Strategy, creation & community management across Instagram & Facebook.",
           cta: {
             label: "See our content work",
             type: btnType,
@@ -279,7 +279,7 @@ export const landingPageData = [
         },
         {
           src: "/landing-pages/ota-management.png",
-          title: "OTA Management",
+          title: "OTA Listing & Management",
           description:
             "Listings, rate parity & ranking optimisation across Booking.com, Expedia & Airbnb.",
           cta: {
