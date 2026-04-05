@@ -31,12 +31,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
 
-    images: [
-      {
-        url: "https://fielmente.com/landing-page/images/Fielmente-og.png",
-        width: 1200,
-      },
-    ],
+   
   },
 };
 

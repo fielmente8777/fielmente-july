@@ -101,12 +101,7 @@ export async function generateMetadata({ params }: Params) {
         siteName: "Fielmente",
         locale: "en_IN",
         type: "website",
-        images: [
-          {
-            url: `https://fielmente.com/industries-we-serve/${subPage?.slug}-og.png`,
-            width: 1200,
-          },
-        ],
+        
       },
       robots: {
         index: true,

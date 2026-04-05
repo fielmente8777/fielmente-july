@@ -1,13 +1,12 @@
 import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
+import { Metadata } from "next";
 import { homePageData } from "../(home)/homePageData";
-import Banner from "./components/Banner";
-import { aboutUsPageData } from "./components/pageData";
 import AboutFounder from "./components/AboutFounder";
+import Banner from "./components/Banner";
 import GridCard from "./components/GridCard";
 import Milestone from "./components/Milestone";
+import { aboutUsPageData } from "./components/pageData";
 import Unique from "./components/Unique";
-import GetStarted from "./components/GetStarted";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Fielmente Agency | Best Hospitality Marketing Consultants in India",

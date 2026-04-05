@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Params) {
       type: "website",
       images: [
         {
-          url: `https://fielmente.com/${post?.slug}-og.png`,
+          url: post?.url || `https://fielmente.com/Logo.png`,
           width: 1200,
         },
       ],

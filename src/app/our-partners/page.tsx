@@ -4,22 +4,50 @@ import GridCtaSection from "@/components/commonSections/GridCtaSection";
 import BusinessPartnersSlider from "@/components/slider/BusinessPartnersSlider";
 import { ourPartnersPageData } from "./components/pageData";
 
-// export const metadata: Metadata = {
-//   title: "Fielmente | Our Partners",
-//   description:
-//     "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
-//   alternates: {
-//     canonical: "https://fielmente.com/our-partners/",
-//     languages: {
-//       "en-US": "https://fielmente.com/our-partners/",
-//     },
-//   },
-//   openGraph: {
-//     title: "Fielmente | Our Partners",
-//     description:
-//       "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
-//   },
-// };
+export const metadata = {
+  title: "Partner with Fielmente | Hotel Growth Platform & OTA Integrations",
+  
+  description:
+    "Partner with Fielmente to scale your hotel business using powerful tools, seamless OTA integrations, and trusted platforms like Google, AWS, Booking.com, and Airbnb.",
+  
+  keywords: [
+    "hotel growth platform",
+    "OTA integration hotel",
+    "hotel automation tools",
+    "hotel booking platforms integration",
+    "hospitality technology partner",
+    "hotel SaaS platform India",
+    "Fielmente partners",
+    "hotel revenue tools",
+    "hotel business automation",
+    "channel manager integrations"
+  ],
+
+
+  alternates: {
+    canonical: "https://fielmente.com/our-partners", 
+
+  },
+
+  openGraph: {
+    title: "Partner with Fielmente | Scale Your Hotel Business",
+    description:
+      "Boost hotel revenue with Fielmente’s powerful integrations with Google, Meta, AWS, Booking.com, Airbnb & more.",
+    url: "https://fielmente.com/our-partners",
+    siteName: "Fielmente",
+    
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Fielmente Partner Ecosystem",
+    description:
+      "Seamless integrations with top hotel booking & marketing platforms.",
+  },
+
+  
+};
 export default function OurPartners() {
   return (
     <main>

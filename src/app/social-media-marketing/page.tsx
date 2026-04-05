@@ -18,6 +18,11 @@ export const metadata: Metadata = {
         "https://fielmente.com/hospitality-marketing-services/social-media-marketing-agency/",
     },
   },
+  openGraph: {
+    title: "India's Best Hospitality Social Media Marketing Agency - Fielmente",
+    description:
+      "Rocket your brand's online presence with Fielmente, the top hospitality social media marketing agency. Boost success with our expert!",
+  },
 };
 
 const CardData1 = [
