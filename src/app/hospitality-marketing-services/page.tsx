@@ -24,7 +24,14 @@ export const metadata: Metadata = {
     title: "India's Leading Hospitality Marketing Services - Fielmente",
     description:
       "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
-  },
+  images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    },
 };
 
 export interface AccordingDataPropsTypes {

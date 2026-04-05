@@ -9,19 +9,25 @@ export const metadata: Metadata = {
   title: "Fielmente | Our Clients",
   description:
     "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
-    alternates: {
-      canonical: "https://fielmente.com/our-clients/",
-      languages: {
-        "en-US": "https://fielmente.com/our-clients/",
-      },
+  alternates: {
+    canonical: "https://fielmente.com/our-clients/",
+    languages: {
+      "en-US": "https://fielmente.com/our-clients/",
     },
-    openGraph: {
-      title: "Fielmente | Our Clients",
-      description:
-        "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
-    }
-}
-
+  },
+  openGraph: {
+    title: "Fielmente | Our Clients",
+    description:
+      "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function OurClientsPage() {
   return (

@@ -33,6 +33,13 @@ export async function generateMetadata(props: Params) {
     openGraph: {
       title: `Case Study - Fielmente`,
       description: `Case Study - Fielmente`,
+      images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     },
   };
 }

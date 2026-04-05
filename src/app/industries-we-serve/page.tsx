@@ -20,6 +20,13 @@ export const metadata: Metadata = {
     title: "Fielmente Marketing Agency - Industries We Serve | Contact Now",
     description:
       "Here's our expertise in the hospitality industries we serve: hotels, restaurants, cloud kitchens, and resorts. Get in touch with our experts!",
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 export default function IndustriesWeServe() {

@@ -38,7 +38,13 @@ export const metadata: Metadata = {
       "Outsmart the competition with best-in-class restaurant marketing services. Acquire more customers & increase your sales with Fielmente.",
     url: "https://fielmente.com/restaurant/",
     siteName: "Fielmente",
-    
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },

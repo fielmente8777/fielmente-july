@@ -49,7 +49,14 @@ export async function generateMetadata({ params }: Params) {
       url: `https://fielmente.com/${post?.slug}/`,
       siteName: "Fielmente",
       locale: "en_IN",
-      type: "website",
+      type: "article",
+      images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     },
     robots: {
       index: true,

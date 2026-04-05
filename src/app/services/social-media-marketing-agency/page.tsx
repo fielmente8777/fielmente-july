@@ -22,6 +22,13 @@ export const metadata: Metadata = {
     title: "India's Best Hospitality Social Media Marketing Agency - Fielmente",
     description:
       "Rocket your brand's online presence with Fielmente, the top hospitality social media marketing agency. Boost success with our expert!",
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

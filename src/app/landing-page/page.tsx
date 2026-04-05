@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://fielmente.com/landing-page/",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -44,8 +45,9 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://fielmente.com/hospitality/images/Fielmente-og.png",
+        url: "https://fielmente.com/fielmente_logo.png",
         width: 1200,
+        height: 630,
       },
     ],
   },

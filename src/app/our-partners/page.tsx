@@ -35,7 +35,13 @@ export const metadata = {
       "Boost hotel revenue with Fielmente’s powerful integrations with Google, Meta, AWS, Booking.com, Airbnb & more.",
     url: "https://fielmente.com/our-partners",
     siteName: "Fielmente",
-    
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     type: "website",
   },
 

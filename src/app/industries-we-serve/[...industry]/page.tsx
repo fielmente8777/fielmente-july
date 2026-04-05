@@ -90,9 +90,9 @@ export async function generateMetadata({ params }: Params) {
       description: subPage?.metaData?.description,
       alternate: {
         canonical: `https://fielmente.com/industries-we-serve/${subPage?.slug}/`,
-        languages:{
-          "en_US": `https://fielmente.com/industries-we-serve/${subPage?.slug}/`,
-        }
+        languages: {
+          en_US: `https://fielmente.com/industries-we-serve/${subPage?.slug}/`,
+        },
       },
       openGraph: {
         title: subPage?.metaData?.title,
@@ -101,7 +101,13 @@ export async function generateMetadata({ params }: Params) {
         siteName: "Fielmente",
         locale: "en_IN",
         type: "website",
-        
+        images: [
+          {
+            url: "https://fielmente.com/fielmente_logo.png",
+            width: 1200,
+            height: 630,
+          },
+        ],
       },
       robots: {
         index: true,
@@ -153,13 +159,23 @@ export default async function IndustryPage({ params }: Params) {
       <main className="mt-10">
         {industry?.banner && <GridCard {...industry.banner} />}
         {industry?.banner2 && <Banner2 {...industry.banner2} />}
-        {industry?.MarketingStrategy && <MarketingStrategy {...industry.MarketingStrategy} />}
+        {industry?.MarketingStrategy && (
+          <MarketingStrategy {...industry.MarketingStrategy} />
+        )}
         {industry?.section2 && <GridCard {...industry.section2} index={1} />}
         {industry?.stats && <Milestone stats={industry.stats} />}
-        {industry?.whyNeedWebsite && <WhyNeedWebsite {...industry.whyNeedWebsite} />}
-        {industry?.whyNeedSEO2 && <WhyYouNeedGrid {...industry.whyNeedSEO2} index={1} />}
-        {industry?.whyNeedInfluencerMarketing && <WhyYouNeedGrid {...industry.whyNeedInfluencerMarketing} />}
-        {industry?.powerOfSocialMedia && <MarketingStrategy {...industry.powerOfSocialMedia} />}
+        {industry?.whyNeedWebsite && (
+          <WhyNeedWebsite {...industry.whyNeedWebsite} />
+        )}
+        {industry?.whyNeedSEO2 && (
+          <WhyYouNeedGrid {...industry.whyNeedSEO2} index={1} />
+        )}
+        {industry?.whyNeedInfluencerMarketing && (
+          <WhyYouNeedGrid {...industry.whyNeedInfluencerMarketing} />
+        )}
+        {industry?.powerOfSocialMedia && (
+          <MarketingStrategy {...industry.powerOfSocialMedia} />
+        )}
         {industry?.whyNeed && <WhyNeed {...industry.whyNeed} />}
         {industry?.whyNeedSeo && <WhyNeedSeo {...industry.whyNeedSeo} />}
         {industry?.need2 && <Need2 {...industry.need2} />}
@@ -212,17 +228,14 @@ export default async function IndustryPage({ params }: Params) {
         )}
         <div className="max_width h-px bg-[#D1D5DB] my-4" />
         {subPageSlug?.connectSection && (
-          <ConnectSection {...subPageSlug?.connectSection}/>
+          <ConnectSection {...subPageSlug?.connectSection} />
         )}
         {subPageSlug?.clients && <Clients2 {...subPageSlug.clients} />}
         {subPageSlug?.whyToJoinSection && (
           <WhyToJoin {...subPageSlug.whyToJoinSection} />
         )}
-        {subPageSlug?.faq && (
-          <FaqSection {...subPageSlug.faq} />
-        )}
+        {subPageSlug?.faq && <FaqSection {...subPageSlug.faq} />}
       </main>
     );
   }
 }
-  

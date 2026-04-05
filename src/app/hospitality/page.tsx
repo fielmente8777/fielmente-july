@@ -30,7 +30,13 @@ export const metadata: Metadata = {
     siteName: "Fielmente",
     locale: "en_IN",
     type: "website",
-
+images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
    
   },
 };

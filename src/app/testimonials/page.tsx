@@ -33,7 +33,13 @@ export const metadata = {
       "Hear from hoteliers who transformed their business with Fielmente’s marketing and revenue solutions.",
     url: "https://fielmente.com/testimonials/",
     siteName: "Fielmente",
-   
+   images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     type: "website",
   },
 

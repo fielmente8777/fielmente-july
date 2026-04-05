@@ -25,6 +25,13 @@ export const metadata: Metadata = {
     title: "Best Hotel Marketing Company in India - Fielmente",
     description:
       "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

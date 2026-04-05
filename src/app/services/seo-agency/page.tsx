@@ -25,6 +25,13 @@ export const metadata: Metadata = {
     title: "India's Leading Hospitality SEO Agency - Fielmente",
     description:
       "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

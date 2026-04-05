@@ -25,11 +25,18 @@ export const metadata: Metadata = {
     title: "Restaurant Marketing Agency India | Restuarant Marketing Company",
     description:
       "Looking for your restaurant marketing success? Fielmente is the leading restaurant marketing agency in India and boosting your restaurant's digital presence. Contact us!",
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 
 function page() {
-  const industry = commonPageData[1]
+  const industry = commonPageData[1];
   return (
     <main className="bg-white pt-10">
       {industry?.banner && <GridCard {...industry.banner} />}

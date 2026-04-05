@@ -41,10 +41,9 @@ export const metadata = {
     siteName: "Fielmente",
     images: [
       {
-        url: "/og.png", // keep this if you want OG image preview
+        url: "https://fielmente.com/fielmente_logo.png",
         width: 1200,
         height: 630,
-        alt: "Fielmente Hospitality Marketing Agency",
       },
     ],
     type: "website",

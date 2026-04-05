@@ -1,6 +1,30 @@
 import { Section, Container } from "@/components";
+import { Metadata } from "next";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
+  alternates: {
+    canonical: "https://fielmente.com/privacy-policy",
+    languages: {
+      "en-US": "https://fielmente.com/privacy-policy",
+    },
+  },
+  openGraph: {
+    title: "Privacy Policy - Fielmente",
+    description:
+      "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
+    images: [
+      {
+        url: "https://fielmente.com/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 const page = () => {
   return (
     <main className="page_date">
