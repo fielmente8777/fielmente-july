@@ -25,35 +25,36 @@ function getRandomBlog(currentSlug: string, count = 3) {
 }
 
 export async function generateStaticParams() {
-  const blogPosts = await blogData;
-
-  return blogPosts.map((post) => ({
+  return blogData.map((post) => ({
     slug: post.slug,
-    fallback: false,
   }));
 }
 
 export async function generateMetadata({ params }: Params) {
-  const path = await params;
-  const post = blogData.find((post) => post.slug === path.slug);
+  const post = blogData.find((post) => post.slug === params.slug);
+  const url = `https://fielmente.com/${post?.slug}`;
 
+  const image = `https://fielmente.com/api/og?title=${encodeURIComponent(
+    post?.title || ""
+  )}`;
   return {
     title: post?.meta?.title || post?.title,
     description: post?.meta?.description || post?.description,
     alternate: {
-      canonical: `https://fielmente.com/${post?.slug}/`,
+      canonical: url,
     },
     openGraph: {
       title: post?.meta?.title || post?.title,
       description: post?.meta?.description || post?.description,
-      url: `https://fielmente.com/${post?.slug}/`,
+      url: url,
       siteName: "Fielmente",
       locale: "en_IN",
-      type: "website",
+      type: "article",
       images: [
         {
-          url: post?.url || `https://fielmente.com/Logo.png`,
+          url: image,
           width: 1200,
+          height: 630,
         },
       ],
     },
@@ -74,10 +75,9 @@ export async function generateMetadata({ params }: Params) {
 }
 
 export default async function LandingPage({ params }: Params) {
-  const path = await params;
-  const data = blogData.find((post) => post.slug === path.slug);
+  const data = blogData.find((post) => post.slug === params.slug);
 
-  const randomBLogs = getRandomBlog(path.slug);
+  const randomBLogs = getRandomBlog(params.slug);
 
   const randomData = {
     title: "Explore More Blogs",
