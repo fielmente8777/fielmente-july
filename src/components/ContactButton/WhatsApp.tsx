@@ -43,7 +43,7 @@ function Whatsapp() {
       className={`fixed z-20 cursor-pointer ${
         isRightSide
           ? "lg:right-10 right-4 bottom-10"
-          : "lg:left-10 left-4 bottom-10"
+          : "lg:left-10 left-4 bottom-17"
       }`}
     >
       <Link

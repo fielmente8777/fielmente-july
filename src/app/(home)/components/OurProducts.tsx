@@ -37,7 +37,7 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
       <div className="mt-8 flex justify-center gap-4">
         <button
           onClick={login}
-          className="text-sm text-white bg-[#1B1B1B] font-semibold border border-[#1B1B1B] rounded-full px-6 py-3"
+          className="text-sm text-white bg-[#1B1B1B] max-sm:hidden font-semibold border border-[#1B1B1B] rounded-full px-6 py-3"
         >
           Login/SignUp <span></span>
         </button>

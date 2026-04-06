@@ -6,7 +6,7 @@ const ProductCard: React.FC<ProductsDataTypes["cards"][0]> = ({
   icon,
 }) => {
   return (
-    <div className="bg-[#FAFAFA] md:max-w-78.25 w-full border border-[#E3E3E3] rounded-2xl md:p-6 p-5 space-y-4 group hover:bg-[#2b59ff] transition-colors duration-300 ease-in-out">
+    <div className="bg-[#FAFAFA] max-sm:h-70 md:max-w-78.25 w-full border border-[#E3E3E3] rounded-2xl md:p-6 p-5 space-y-4 group hover:bg-[#2b59ff] transition-colors duration-300 ease-in-out">
       <div className="group-hover:bg-white group-hover:text-[#2b59ff] group-hover:border-none flex items-center justify-center  w-14 aspect-square rounded-full border border-[#E3E3E3]">
         {icon}
       </div>

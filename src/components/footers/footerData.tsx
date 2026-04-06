@@ -75,10 +75,10 @@ export const footerData: FooterLinksPropstype = {
           label: "Our Work",
           href: "https://www.eazotel.com/our-work/",
         },
-        {
-          label: "Career",
-          href: "",
-        },
+        // {
+        //   label: "Career",
+        //   href: "",
+        // },
         {
           label: "Blogs",
           href: "/blogs/",
@@ -91,10 +91,10 @@ export const footerData: FooterLinksPropstype = {
           label: "Contact Us",
           href: "/contact-us/",
         },
-        {
-          label: "Our Team",
-          href: "",
-        },
+        // {
+        //   label: "Our Team",
+        //   href: "",
+        // },
       ],
     },
     {
@@ -112,18 +112,18 @@ export const footerData: FooterLinksPropstype = {
           label: "Hotel SEO",
           href: "/industries-we-serve/hotel-marketing-agency/hotel-seo/",
         },
-        {
-          label: "Resort Marketing",
-          href: "",
-        },
-        {
-          label: "Resort Social Media",
-          href: "",
-        },
-        {
-          label: "Resort SEO",
-          href: "",
-        },
+        // {
+        //   label: "Resort Marketing",
+        //   href: "",
+        // },
+        // {
+        //   label: "Resort Social Media",
+        //   href: "",
+        // },
+        // {
+        //   label: "Resort SEO",
+        //   href: "",
+        // },
         {
           label: "Restaurant Social Media",
           href: "/industries-we-serve/restaurant-marketing-agency/restaurant-social-media/",
@@ -132,10 +132,7 @@ export const footerData: FooterLinksPropstype = {
           label: "Restaurant Marketing",
           href: "/industries-we-serve/restaurant-marketing-agency/",
         },
-        {
-          label: "Restaurant SEO",
-          href: "",
-        },
+        
       ],
     },
     {

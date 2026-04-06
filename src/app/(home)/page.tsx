@@ -44,7 +44,7 @@ export default function Home() {
       <OtaCostsWithFielmente {...homePageData?.maximizeGrowthData} />
       <SlidingTitle titles={homePageData?.servicesTitles} />
       <MarketingExperts {...homePageData?.marketingExpertiseData} />
-      <Blogs {...homePageData?.blogsData} />
+      {/* <Blogs {...homePageData?.blogsData} /> */}
       <WorkWithIndiasHotel {...homePageData?.workWithHotel} />
       <OurValuedClient {...homePageData?.ourValuedClient} />
       <Testimonials {...homePageData?.testimonialsData} />

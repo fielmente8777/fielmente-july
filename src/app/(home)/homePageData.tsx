@@ -304,7 +304,7 @@ export const homePageData = {
     title: "OUR PRODUCTS",
     subTitle: "AI Tools That Grow Bookings & Enhance Guest Experience",
     description:
-      "Our AI-powered hotel tools are built to increase direct bookings, cut OTA costs, and enhance guest experiences — helping you grow revenue while streamlining operations.<br/>Trusted by 120+ hotels & resorts worldwide",
+      "Our AI-powered hotel tools are built to increase direct bookings, cut OTA costs, and enhance guest experiences — helping you grow revenue while streamlining operations.",
     cards: [
       {
         icon: <CmsIcon />,
