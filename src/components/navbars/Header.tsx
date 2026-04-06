@@ -1,6 +1,6 @@
 "use client";
 import { useAppContext } from "@/contextApi/AppContext";
-import { OutlineDrpopdown } from "@/utils/icons";
+import { CallIcon, OutlineDrpopdown } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -140,13 +140,24 @@ const Header = () => {
                 );
               })}
             </ul>
-            <button
-              className={`xl:hidden ${paths.includes(pathName) ? (isScrolled ? "text-[#6A7691]" : "text-white") : "text-[#6A7691]"}`}
-              onClick={() => setIsMobileNavOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <MenuIcon />
-            </button>
+            <div className="xl:hidden flex items-center gap-4">
+              <Link
+                href={"tel:" + contacts.phone[0]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary"
+              >
+                <span className="sr-only">call icon</span>
+                <CallIcon />
+              </Link>
+              <button
+                className={` ${paths.includes(pathName) ? (isScrolled ? "text-[#6A7691]" : "text-white") : "text-[#6A7691]"}`}
+                onClick={() => setIsMobileNavOpen(true)}
+              >
+                <span className="sr-only">Open main menu</span>
+                <MenuIcon />
+              </button>
+            </div>
 
             <Link
               href={contacts.WhatsAppCta}
