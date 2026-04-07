@@ -1,5 +1,11 @@
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
-Disallow:
+Allow: /
+
+Disallow: /admin/
+Disallow: /login/
+Disallow: /checkout/
+Disallow: /thank-you/
 
 Sitemap: https://fielmente.com/sitemap.xml
