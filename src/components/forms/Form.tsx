@@ -175,7 +175,7 @@ const Form = () => {
             key={index}
             className={`w-full  flex gap-2 items-center md:px-4 max-md:py-2 ${formData.length - 1 !== index ? "md:border-r max-md:border-b" : ""} border-white/40 "}`}
           >
-            <label htmlFor={data.name}>{data.icon}</label>
+            <label htmlFor={data.name} className="text-white">{data.icon}</label>
             <div className={`w-full  bg-transparent flex items-center `}>
               {data.tag === "div"
                 ? data.content

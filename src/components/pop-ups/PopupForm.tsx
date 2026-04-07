@@ -23,8 +23,13 @@ const PopupForm = () => {
       document.body.style.overflow = "auto";
     };
   }, [isOpenPopupForm]);
-
+  const AUTO_OPEN_PATHS = ["/landing-page/","/restaurant/","/dubai-restaurant/","/UK/","/USA/","/resort/","/hospitality/"]; // add your routes here
   useEffect(() => {
+    const shouldAutoOpen = AUTO_OPEN_PATHS.includes(pathName);
+
+    // Only trigger on allowed paths
+    if (!shouldAutoOpen) return;
+
     // Only show if not already shown and modal isn't open
     if (!hasShown && !isOpenPopupForm) {
       timerRef.current = setTimeout(() => {
@@ -39,7 +44,7 @@ const PopupForm = () => {
         clearTimeout(timerRef.current);
       }
     };
-  }, [isOpenPopupForm, hasShown, setIsOpenPopupForm]);
+  }, [isOpenPopupForm, hasShown, setIsOpenPopupForm, pathName]);
 
   const closeModal = useCallback(() => {
     setIsOpenPopupForm(false);
