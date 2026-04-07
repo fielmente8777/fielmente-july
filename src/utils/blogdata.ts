@@ -194,8 +194,10 @@ This landmark move opens new doors for property owners, offering not just legali
     isShow: false,
     title: "How to Digitally Market your Hostel with Fielmente",
     slug: "how-to-digitally-market-your-hostel-with-fielmente-2",
+    description:"Hostel Owners handle quite delicate issues. Being a sensitive job, it becomes relatively difficult to market such services. So, to pitch and attract new people who may need you, your services must be visible to all your prospects online.",
 
     data: `
+    <p>Hostel Owners handle quite delicate issues. Being a sensitive job, it becomes relatively difficult to market such services. So, to pitch and attract new people who may need you, your services must be visible to all your prospects online.</p>
   <div>
   
     <p>
@@ -3201,6 +3203,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     isShow: false,
     title: "Project on The Asian Wok",
     slug: "project-on-the-asian-wok",
+    description:"The One and only Restaurant Guru concluded its annual survey for the year 2021. It reviewed hundreds of restaurants around Jodhpur and finally listed “the Best Restaurants” in which our restaurant got the 8th Rank in Jodhpur!! Favorite around town! Punjabi Chic Inn is a very old, classic, and popular restaurant.",
     data: `
       
       <div>
@@ -3527,6 +3530,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     isShow: false,
     title: "Congratulations Team Punjabi Chic Inn, Jodhpur",
     slug: "congratulations-team-punjabi-chic-inn-jodhpur",
+    description:"The One and only Restaurant Guru concluded its annual survey for the year 2021. It reviewed hundreds of restaurants around Jodhpur and finally listed “the Best Restaurants” in which our restaurant got the 8th Rank in Jodhpur!! Favorite around town! Punjabi Chic Inn is a very old, classic, and popular restaurant.",
     data: `<div>
     <p>The One and only Restaurant Guru concluded its annual survey for the year 2021. It reviewed hundreds of restaurants
       around Jodhpur and finally listed “the Best Restaurants” in which our restaurant got the 8th Rank in Jodhpur!!
@@ -3976,6 +3980,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     isShow: false,
     title: "How to Digitally Market your Hostel with Fielmente",
     slug: "how-to-digitally-market-your-hostel-with-fielmente",
+    description:"Hostel Owners handle quite delicate issues. Being a sensitive job, it becomes relatively difficult to market such services. So, to pitch and attract new people who may need you, your services must be visible to all your prospects online.",
     data: `
   <div>
     <p>Hostel Owners handle quite delicate issues. Being a sensitive job, it becomes relatively difficult to market such
@@ -4449,10 +4454,3161 @@ Why does this work? Because you’re cutting costs on front-of-house activities
 
     </div>
   `,
+},
+
+{
+  isShow: false,
+  meta: {
+    title: "5 Proven Ghost Kitchen Marketing Strategies To Attract Customers",
+    description:
+      "5 Proven Ghost Kitchen Marketing Strategies To Attract Customers",
+  },
+  title: "5 Proven Ghost Kitchen Marketing Strategies To Attract Customers",
+  slug: "5-proven-ghost-kitchen-marketing-strategies-to-attract-customers",
+  description:
+    "Everybody talks about Social Media management and creating an appealing website when it comes to marketing. But Fielmente has come up with more. Break the barriers of traditional marketing that everyone follows, and learn some new customer retention ways!",
+  data: `
+  <div>
+
+    <p>
+      Everybody talks about Social Media management and creating an appealing website when it comes to marketing. But Fielmente has come up with more. Break the barriers of traditional marketing that everyone follows, and learn some new customer retention ways!
+    </p>
+
+    <p>
+      Ghost Kitchen is a new term that many haven’t heard of. Ghost kitchens are also termed cloud kitchens or shadow kitchens. They are actual restaurants with a place set up for cooking with the best chefs but do not offer dine-in services. They only provide deliver-only meals.
+    </p>
+
+    <h2>Create your Loyalty Program</h2>
+
+    <p>
+      To attract new customers to your ghost kitchen, a loyalty program shall be on your bucket list to engage with new clients. This is essential because faithful customers expend more and act as ideal brand preachers. To retain new customers, incentivize them via Loyalty Programs.
+    </p>
+
+    <p>
+      A Loyalty Program offers customers monetary benefits or other rewards in terms of -
+    </p>
+
+    <ul>
+      <li>Coupons,</li>
+      <li>order-based points,</li>
+      <li>home delivery,</li>
+      <li>points to customers for giving positive reviews on websites,</li>
+      <li>points for posting review content on their social media profiles,</li>
+      <li>Referral codes</li>
+      <li>deal of the day, etc.</li>
+    </ul>
+
+    <h2>Establish your brand voice with packaging</h2>
+
+    <p>
+      Food Packaging creates a crucial role in establishing your brand voice among customers. To be an ultimate ghost kitchen brand, your packaging must stand out from the crowd. If the packaging is eye-catching, it will boost your online ordering revenue from customers and clients.
+    </p>
+
+    <p>Food packaging must reflect the theme of your ghost kitchen business.</p>
+
+    <ul>
+      <li>Incorporate your restaurant’s symbol on the packets</li>
+      <li>Use the best-in-market food packaging material that delivers an outstanding customer experience.</li>
+      <li>Consider using sustainable or recyclable containers that are durable so that the customers can use them several times for various purposes.</li>
+    </ul>
+
+    <h2>Create a brand recall on reviewing sites</h2>
+
+    <p>
+      Online consumer reviews and feedbacks are critical for any ghost kitchen business, just like a brick-and-mortar restaurant. As customers cannot physically visit and participate in dining, they depend heavily on the reviews put on food delivery apps or restaurant review sites. Ghost kitchen brands that have high positive ratings have the chance of receiving more orders online.
+    </p>
+
+    <ul>
+      <li>You can send an automated SMS or Email to your buyers as soon as their food is delivered, pitching them to review your ghost kitchen.</li>
+      <li>You can consider providing customers with a digital feedback form with a link.</li>
+      <li>Partner with food delivery apps. Consumers can rate your food there too.</li>
+      <li>Partner review sites so that buyers can rate your kitchen on websites. This increases the chance of Local SEO.</li>
+    </ul>
+
+    <h2>Master the Art of Online Menu Management‍</h2>
+
+    <p>
+      The menu is something very important for a ghost kitchen because there is no physical establishment for dine-in. Customers have to choose based on names and photographs. So -
+    </p>
+
+    <ul>
+      <li>Set proper names for every dish and combo. Make it eye-catching yet understandable.</li>
+      <li>Include pictures for every dish.</li>
+      <li>Add accurate food descriptions for every dish and drink.</li>
+      <li>Consider adding cost-effective dishes for everyone in the market.</li>
+      <li>You must put your menus on your website and other food delivery platforms.</li>
+      <li>Make sure your ghost kitchen logo and design are identical across all media and menus.</li>
+    </ul>
+
+    <h2>Influencer Marketing</h2>
+
+    <p>
+      People are enthusiastic to know about recipes, food, and the nutritional value of the dishes. Thousands of food bloggers are active on the internet, especially on Instagram, sharing about food, the place of food, and much more related. Influencer marketing can be the key to your success for food startups like ghost or cloud kitchen. Influencers can share your food, rate it, make video content, and more.
+    </p>
+
+    <ul>
+      <li>Make a list of famous food bloggers with potential followers who are available for new projects.</li>
+      <li>Approach them to promote your brand.</li>
+    </ul>
+
+    <p>
+      The next step is ....... Haha! Let Fielmente handle it for you to get the best ROI
+    </p>
+
+    <h2>Let Fielmente do it for you</h2>
+
+    <p>
+      You must have a productive marketing plan for your ghost kitchen to flourish. The objectives of your marketing strategy should be greater digital presence and more sales. A good ghost kitchen marketing strategy will help you get more engagement with potential customers. A poor marketing strategy will solely add unwanted and high expenses to your budget.
+    </p>
+
+    <p>
+      Fielmente can craft the right marketing plan to improve your ghost kitchen's credibility and provide stellar service. Utilize our affordable yet effective cloud kitchen marketing service and take your business to new heights!
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Cafe Marketing: Challenges and Solutions",
+    description: "Cafe Marketing: Challenges and Solutions",
+  },
+  title: "Cafe Marketing: Challenges and Solutions",
+  slug: "cafe-marketing-challenges-and-solutions",
+  description:
+    "A good cafe marketing strategy is a series of methods to showcase and promote your company to customers.But there is some reality that cafe owners must face. Let us talk about them and their solutions.",
+  data: `
+  <div>
+
+    <p>
+      A good cafe marketing strategy is a series of methods to showcase and promote your company to customers. But there is some reality that cafe owners must face. Let us talk about them and their solutions.
+    </p>
+
+    <h2>Challenge: Fewer Visitors</h2>
+    <h2>Solution: Create Fancy Coffee Cups</h2>
+
+    <p>
+      You can create fabric coffee cups with cool or aesthetic designs, and your customers will adore them. Especially school kids and college students will start visiting your cafe daily just to drink coffee in cute cups! You can even create multiple designs with a slight difference in price and let customers choose from — people love being given the opportunity to choose. This is one of the simplest and cost-effective ways of traditional advertisement
+    </p>
+
+    <h2>Challenge: No Customer Retention</h2>
+    <h2>Solution: Offer Bottomless Mug Policy</h2>
+
+    <p>
+      Coffee lovers usually drink twice or even more. So you can retain your potential customers by offering them a bottomless mug. Not just coffee lovers, most customers will stay for longer with this method.
+    </p>
+
+    <p>
+      Wait, what is a bottomless mug? Mug with no bottom? Haha.. NO! It is a method of offering free refills till they leave the cafe. You can obviously charge a higher one-time payment for this service. This method makes buyers feel they’re obtaining an excellent deal and welcome many nighters.
+    </p>
+
+    <h2>Challenge: Less Visitors during a certain time of the year</h2>
+    <h2>Solution: Create Seasonal Drinks</h2>
+
+    <p>
+      Many cafes in the market serve the same stuff - coffee every day, the whole year — boring. Like in India, people do not prefer coffee during summer; hence no visitors. You can create a refreshing smoothie to attract customers. You need revenue, right?
+    </p>
+
+    <p>
+      Seasonal drinks break the monotony of your morning coffee. So, many people will prefer to try new drinks and tastes. With this marketing concept, your cafe can be the spotlight among customers seeking a change and distinguishes you from your competitor.
+    </p>
+
+    <h2>Challenge: Local visitors prefer other cafes</h2>
+
+    <h2>Solution: Create Directional Signage</h2>
+
+    <p>
+      I am talking about traditional old-school signage, like billboards and bus shelters.
+    </p>
+
+    <p>
+      It may not be an effective medium to attract customers from far away places. Still, outdoor can be an effective and functional way to get your brand in front of large, 100% local customers. Even digital marketing cannot do it that effectively.
+    </p>
+
+    <p>
+      It’s a scheme that fast-food chains have been practicing for decades:
+    </p>
+
+    <p>
+      Just include your cafe name, logo, and a simple line to describe your food (like “mango mania” or “free-flow with lunch”) along with an indicator to portray where to go. It is a convincing way to keep your cafe branding a priority in the minds of the local people.
+    </p>
+
+   <h2>What else can you do?</h2>
+
+<ul>
+  <li>
+    <strong>Stunning café menus:</strong> There are readymade menu generators available online that can help you to create a menu. But in that case, it won't be effective as food is your main business. Dailykit allows you to personalize your café menu while preserving the professional marketing edge.
+  </li>
+
+  <li>
+    <strong>Professional café logos:</strong> An eye-catching logo is crucial to help strengthen your brand. Marketing strategically is also about branding smartly.
+  </li>
+
+  <li>
+    <strong>Offer strong wifi:</strong> College and University students shall prefer your cafe because you are offering strong wifi. No one shall visit a restaurant with low internet speed. Show your buyers who you are and what you offer boldly!
+  </li>
+
+  <li>
+    <strong>Loyalty Cards:</strong> Loyalty Programs are a fantastic way to retain customers. Reach new heights with your brand. Offer order-based points, coupons, free delivery, scratch cards, and more to attract customers.
+  </li>
+</ul>
+
+    <h2>Fielmente to your rescue!</h2>
+
+    <p>
+      Fielmente knows how to confront your customers and develop cafe branding solidity, product demand, and double ROI. Marketing techniques greatly count on the industry, resources, target audience, and location.
+    </p>
+
+    <p>We combine -</p>
+
+    <ul>
+      <li>search engine optimization (hotel seo)</li>
+      <li>email marketing,</li>
+      <li>social media marketing,</li>
+      <li>reputation management,</li>
+      <li>Google & Search Engine Ads</li>
+      <li>Video Commercials</li>
+      <li>Digital Menus and Signage and much more with our hotel seo marketing strategy.</li>
+    </ul>
+
+    <p>
+      We can do anything - from as simple as managing advertisements to as complex as ghost kitchen and menu management. In a world where you have to compete against gigantic chains like Starbucks, you’ll surely need a reliable marketing strategy from Fielmente to stand out.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Guide To Setup Automation Of Your Hotel Google My Business Messages",
+    description:
+      "Guide To Setup Automation Of Your Hotel Google My Business Messages",
+  },
+  title: "Guide To Setup Automation Of Your Hotel Google My Business Messages",
+  slug: "guide-to-setup-automation-of-your-hotel-google-my-business-messages",
+  description:
+    "How would you like to be ignored? not good right? Similarly, when people visit your website or digital marketplace they are filled with queries and expect someone to solve them, but again on your end you are also not available all the time, and you can’t put every bit of information online, that’s where automation of your hotel’s Google my business messages is important. It is very critical in the hospitality sector. Just imagine you are anyone interested in staying in your hotel is mandatory to have multiple doubts and queries, like the exact address, additional services, discounts, location, distance and whatnot, and therefore it becomes inevitable for you to automate your google my business messages for your hotel, having said that, here is a quick guide how to setup adopt automation for your hotel",
+  data: `
+  <div>
+
+    <p>
+      How would you like to be ignored? not good right? Similarly, when people visit your website or digital marketplace they are filled with queries and expect someone to solve them, but again on your end you are also not available all the time, and you can’t put every bit of information online, that’s where automation of your hotel’s Google my business messages is important. It is very critical in the hospitality sector. Just imagine you are anyone interested in staying in your hotel is mandatory to have multiple doubts and queries, like the exact address, additional services, discounts, location, distance and whatnot, and therefore it becomes inevitable for you to automate your google my business messages for your hotel, having said that, here is a quick guide how to setup adopt automation for your hotel
+    </p>
+
+    <h2>Prepare a response team</h2>
+
+    <p>
+      Set a live agent, and do remember that visitors often like prompt replies and so also set up a messaging availability for it, this explains to the visitor that humans are not available.
+    </p>
+
+    <p>
+      As much as people like to avoid human interaction they often like someone to have a direct conversation with them and solve their queries, It is good to have automated messages set, but its also good to redirect visitors to a support number they can call or to a website with simple FAQs to help them resolve their queries
+    </p>
+
+    <h2>Be ready with follow-up responses</h2>
+
+    <p>
+      It often happens that many live agents repeat their answers to the visitors, and it is just frustrating for the visitors to keep up the conversation because they know that live agents or automation are offering predetermined replies
+    </p>
+
+    <p>
+      Don’t do that, on the contrary, always have good follow responses ready so that the visitors can feel good about your message automation.
+    </p>
+
+    <h2>Don’t react, respond</h2>
+
+    <p>
+      Suppose a visitor has a query that does not fit in the usual responses immediately send them the support number, this way you are ensuring a healthy response which is also called a proactive fallback. If the live agent or automated message doesn’t answer in the right path, it will immediately ruin the visitor’s interest.
+    </p>
+
+    <h2>Offer prompt transition</h2>
+
+    <p>
+      Never hold a visitor for extra questions from the automated response end, if it is clear what the visitor is asking immediately perform the handoffs. If they want to have human interaction, send the support number asap, this way you are building swift, active and agile conversation. Never set a complex question for the visitor, they are more interested in asking rather than replying.
+    </p>
+
+    <h2>Set customized messages</h2>
+
+    <p>
+      There are options for customizing messaging automation, the more personal or brand-oriented message it is, the more there are chances for a visitor to remember it.
+    </p>
+
+    <p>
+      At last, people always remember the good services offered, if you are a hotel owner with a website, automated messages and live agents can be your first impression and conversation starters with your potential customers.
+    </p>
+
+    <h2>A few quick tips would be -</h2>
+
+    <ul>
+      <li>Have a response time</li>
+      <li>Don’t let visitors ask the question twice, they don’t like it</li>
+      <li>Keep the messaging crisp and on point, informative.</li>
+      <li>Share quality information</li>
+      <li>Always be responsive</li>
+    </ul>
+
+    <p>
+      “Good messages create great impressions”
+    </p>
+
+    <p>
+      We guess that if you are already going through this blog means you are interested in setting up automation for your hotel business having said that, Fielmente is here you to help you elevate your Google my business strategies along with multiple marketing services as per your choice.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How can Google maps citation increase your hotel / restaurant business?",
+    description:
+      "How can Google maps citation increase your hotel / restaurant business?",
+  },
+  title: "How can Google maps citation increase your hotel / restaurant business?",
+  slug: "how-can-google-maps-citation-increase-your-hotel-restaurant-business",
+  description:
+    "If you are running a hotel or restaurant business, online promotions are one of the best ways to attract new customers.  While most popular online marketing techniques include social media and websites, SEO, Google My Business listing, and Google Maps citations are also very important. Whenever people have to search for a service online, they Google it. Doing so gives them a list of all the stores and services nearby.",
+  data: `
+  <div>
+
+    <h2>Introduction</h2>
+
+    <p>
+      If you are running a hotel or restaurant business, online promotions are one of the best ways to attract new customers. While most popular online marketing techniques include social media and websites, SEO, Google My Business listing, and Google Maps citations are also very important. Whenever people have to search for a service online, they Google it. Doing so gives them a list of all the stores and services nearby.
+    </p>
+
+    <p>
+      If your business is popular on the Google platform, you can expect new customers to come in regularly. Google Maps is very important in promoting your restaurant as it can provide potential customers with the exact location, images, reviews, address, phone number, and more.
+    </p>
+
+    <h2>What are Google Citations?</h2>
+
+    <p>
+      Google Map Citations are a mention of your restaurant business with other necessary details. It is similar to a business directory, where the potential customer can see your business details through the Google Map citation link. The same citation can be used on various third-party websites, apps, and social platforms. It is easy to share the details of your restaurant business with anyone through any platform. A restaurant owner can also directly link the citations to their website.
+    </p>
+
+    <h2>Registering to Google Business</h2>
+
+<p>
+  One of the first things to do when using Google Citation is -
+</p>
+
+<ul>
+  <li>
+    register your restaurant or hotel business on Google My Business. It creates a business profile page for you so the customer can get all the information about your restaurant through your profile link.
+  </li>
+
+  <li>
+    Once you register your hotel on Google My Business, you have to give details like Address, Phone number, Images of the hotel or restaurant, and all the other information about the business you think is necessary for display.
+  </li>
+
+  <li>
+    At the same time, you would also need to mark the restaurant's location on Google Maps.
+  </li>
+</ul>
+
+<p>
+  Now, whenever someone clicks on the Google map citations, it will show all the business details you saved on the Google My Business page.
+</p>
+
+<p>
+  Well now that's a hectic task, and needs to be done efficiently. No Worries! You got Fielmente for you. We will help set up your Google Business.
+</p>
+
+    <h2>Benefits of using Google Map citations</h2>
+
+    <p>
+      Google map citations are great for promoting your restaurant and have various advantages.
+    </p>
+
+    <ul>
+      <li>
+        It helps to engage the customer online as they get all the information about the restaurant through a single link. They can not only inquire through the details mentioned, but it will be easier to come to your store through its map location.
+      </li>
+    </ul>
+
+    <ul>
+    <li>
+        Using the Google citations links would also help you build a loyal fanbase. The more people know about your restaurant, the more they will suggest others to search on Google. It will also help to increase the positive review, which will be visible in citations with ratings.
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        Citations use the power of both Google Maps and Google My Business, which makes it easier for people to find your business. It is beneficial, especially when people are searching for a restaurant in the local area.
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        Using Google map citations will allow the users to explore the details of your restaurant business, increasing their confidence and attracting them to the restaurant to try the services.
+      </li>
+    </ul>
+
+    <h2>Increased visibility at an affordable cost and hence ROI</h2>
+
+    <p>
+      Listing your restaurant on Google Maps and My Business would increase its visibility. Since people search for almost every service on Google, Maps and My Business listing would help consumers search for a specific business easily. The more people like and share the citation, the higher it will list in the search ranking. Also, since it is free to use, you do not have to pay for promotion or map citations. It also provides customers access to your details like operational or business hours and days, review rating, address, phone number, and more. It also boosts your restaurant business in Local SEO.
+    </p>
+
+    <h2>Verdict</h2>
+
+    <p>
+      Using Google Map citations surely helps a business gain a competitive edge in the market without spending money on online marketing. Using these tools, you can share data with the customer and show them videos and images. So use the Google citations now to provide complete details of your restaurant to the customers in a click.
+    </p>
+
+    <p>
+      So wait no more and let Fielmente do it for you. Fielmente is an Indian Government certified startup helping 60+ brands to achieve a strong digital presence.
+    </p>
+
+    <p>
+      You can be customers' favorite hotel. Let's do it.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How Can Ota Optimisation Help Your Hotel Get Millions Of Benefit",
+    description:
+      "How Can Ota Optimisation Help Your Hotel Get Millions Of Benefit",
+  },
+  title: "How Can Ota Optimisation Help Your Hotel Get Millions Of Benefit",
+  slug: "how-can-ota-optimisation-help-your-hotel-get-millions-of-benefit",
+  description:
+  "The travel and hotel industry has been on a journey of evolution over the past two decades. Nowadays, due to the pandemic and the influence of technology, booking accommodation for travel has also evolved. Now, these are called OTA or online travel agencies. For Hoteliers, this is a very crucial step. It helps consumers to get information about hotels online, which are hard to find. Therefore, even the smallest business can make its way out with these sites.",
+  data: `
+  <div>
+
+    <p>
+      The travel and hotel industry has been on a journey of evolution over the past two decades. Nowadays, due to the pandemic and the influence of technology, booking accommodation for travel has also evolved. Now, these are called OTA or online travel agencies. For Hoteliers, this is a very crucial step. It helps consumers to get information about hotels online, which are hard to find. Therefore, even the smallest business can make its way out with these sites.
+    </p>
+
+    <h2>What is OTA optimization?</h2>
+
+    <p>
+      OTA has gained importance in the hotel industry. OTA, in simple words, is just those websites where hotels can be listed to make their business more visible to an interested audience and ensure bookings from them. There are many OTAs available in the global hospitality sector. Some major OTAs are Expedia, <a href="https://www.booking.com" target="_blank">Booking.com</a>, and Priceline. OTAs help their potential customers with an easy comparison of Hotel options on filters such as location facilities, reviews, price, etc.
+    </p>
+
+    <p>
+      Moreover, OTAs control over 2/3rd of online bookings. Therefore as a marketing strategy, it is never a good idea to limit the connection of hotels with 2/3 OTA sites. These help the business to generate maximum income revenue and reach out to more guests.
+    </p>
+
+    <h2>Benefits of OTA Optimisation-</h2>
+
+    <p>
+      OTA can provide many benefits to hotel owners. Some of them are-
+    </p>
+
+    <ol>
+      <li>
+        <strong>Increasing visibility-</strong><br/>
+        It is one of the most vital steps for any business. The massive popularity of OTA provides huge exposure globally to interested customers.
+      </li>
+
+      <li>
+        <strong>Traffic-</strong><br/>
+        Experts believe that OTA can make 53% of the customers visit the hotels more after seeing the room listed as an OTA. Travelers are always curious about the standard of services provided by different hotels. They always browse an online travel agency to check out the rooms.
+      </li>
+
+      <li>
+        <strong>Rankings and reviews</strong><br/>
+        The OTA sites help their customers check hotels according to reviews to get an idea about the Hotel services. Therefore, hotels with better reviews will have a better ranking on OTA according to the booking made by many guests each time.
+      </li>
+
+      <li>
+        <strong>Increase of Bookings-</strong><br/>
+        Things according to statistics, more than 70% of Travellers book online through OTA, and around 20% of direct bookings come from customers who purchase a room after researching through an OTA. Even Google suggests that hotels can benefit greatly by showcasing their service and being listed on OTA or the hotel website.
+      </li>
+
+      <li>
+        <strong>Target audience</strong><br/>
+        OTAs help hoteliers to reach their target audience. Regardless of what kind of hotel one owns, listing on multiple will bring the expected kind of travelers or crowd to the hotel avoiding any obstruction while catering to any guests
+      </li>
+
+      <li>
+        <strong>Market efficient-</strong><br/>
+        Online travel agencies invest an enormous amount of money in promoting their website. Therefore, if the hotel owners want a cost-effective large global audience with a limited market budget, this is the best. A strong pricing strategy, SEO and search strategy, keeping the brand name in paid search, and selecting organic keyword combinations can ensure maximum benefits.
+      </li>
+
+      <li>
+        <strong>Gaining valuable insights</strong><br/>
+        By listing a hotel in OTAs, hoteliers can analyze the customer's buying pattern and test different pricing strategies and new trends to make better business decisions.
+      </li>
+
+      <li>
+        <strong>Getting more bookings on the low season-</strong><br/>
+        Hoteliers, when experiencing low sales, by listing them on OTA can help them to profit by selling their tools more quickly and in a cost-effective manner, even by factoring the commissions.
+      </li>
+    </ol>
+
+    <h2>Wrapping Up - How can Fielmente help you ?</h2>
+
+    <p>
+      Currently, there are over 400 OTAs globally. Therefore, hoteliers need to analyze and take time to improve OTA rankings for their business. The process of OTA Optimization might look tedious and time consuming, but there is an easiest way to get it done - through Fielmente.
+    </p>
+
+    <p>
+      Also, many hoteliers do not enjoy working with online distribution channels because they fear paying a very high commission and not gaining a profit margin. But in this case one can trust us and But still, hoteliers can take advantage of OTA's large marketing budgets to increase their visibility and boost their bookings.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Mahabir Palace: The New Place Of Tourist Attraction",
+    description:
+      "Mahabir Palace: The New Place Of Tourist Attraction",
+  },
+  title: "Mahabir Palace: The New Place Of Tourist Attraction",
+  slug: "mahabir-palace-the-new-place-of-tourist-attraction",
+  description:
+  "      Mahabir Palace in Kathmandu offers lodging with a restaurant, free private parking, a bar, and a garden, about a 14-minute walk from Swayambhu. Visitors can stay at this hotel and use the terrace and family rooms. The hotel offers room service and a constantly staffed front desk.",
+  data: `
+  <div>
+
+    <p>
+      Mahabir Palace in Kathmandu offers lodging with a restaurant, free private parking, a bar, and a garden, about a 14-minute walk from Swayambhu. Visitors can stay at this hotel and use the terrace and family rooms. The hotel offers room service and a constantly staffed front desk.
+    </p>
+
+    <p>
+      For its guests, the hotel provides a breakfast buffet.
+    </p>
+
+    <p>
+      The luxurious Garden of Dreams is 5 km away, and the Kathmandu Durbar Square is 2 km away from this posh hotel. The distance to Tribhuvan International Airport is 9 kilometres. The large rooms and suites provide free WiFi, flat-screen TVs, minifridges, and amenities for making tea and coffee. Living spaces are added to suites and renovated rooms.
+    </p>
+
+    <h2>The USPs Of Mahabir Palace</h2>
+
+    <p>
+      Hanuman Dhoka, Kathmandu Durbar Square, and Swayambhunath Temple are popular attractions close to Mahabir Palace. There is a laid-back eatery, a bar, a cafe on the roof, and a cafe with a patio.
+    </p>
+
+    <p>
+      A spa, a gym, and a meeting and event area are further features. A front desk is open 24 hours a day, as well as dry cleaning, laundry services, and luggage storage. Onsite parking is provided for free.
+    </p>
+
+    <p>
+      Enjoy a filling dinner in the restaurant at Mahabir Palace. At the lounge or bar, quench your thirst with a variety of beverages. Breakfast is available every day from 6:00 AM to 10:30 AM as a free buffet.
+    </p>
+
+   <h2>The Tourist Attraction</h2>
+
+<ul>
+  <li>
+    In Kathmandu, Mahabir Palace puts you within a 5-minute walk of Taleju Temple and a 10-minute drive of Chhauni Museum. Durbar Marg is 3 miles (4.8 km), and Kathmandu Durbar Square is 1.5 miles (2.3 km) away from this hotel.
+  </li>
+
+  <li>
+    The nearest 0.1 miles and kilometres are displayed for all distances. Tribhuvan Intl. Airport (KTM), which is 9.7 kilometres (miles) away, is the closest large airport.
+  </li>
+</ul>
+
+<h2>Services Offered By Mahabir Palace</h2>
+
+<ul>
+  <li>
+    In one of the 58 guestrooms, you can make yourself at home. There is a free wireless Internet connection available to keep connected. There are shared restrooms with robes and slippers. As per the request, irons and ironing boards are available in addition to daily housekeeping.
+  </li>
+
+  <li>
+    A welcoming assortment of hot and cold dishes is available at the breakfast bar to meet the needs of all visitors. A free buffet is open every morning from 6:00 AM until 10:30 AM.
+  </li>
+
+  <li>
+    Both in the rooms and throughout the hotel, there is free WiFi.
+  </li>
+
+  <li>
+    A flexible, high-tech meeting/function room measuring about 5,382 square feet (500 square meters) is available from Event Spaces.
+  </li>
+</ul>
+    <p>
+      "Kathmandu is an evergreen and dynamic city that offers a wide variety of cultural and historical attractions. The whole city is a catalogue of warm locals, intriguing districts, and an array of places to see and things to do," We are convinced that the Mahabir Palace Kathmandu will surpass visitors' expectations and meet their needs while they are in the area because Mahabir Palace is convenient to all of them.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "The Importance Of A Brand Guide For Hotel",
+    description:
+      "The Importance Of A Brand Guide For Hotel",
+  },
+  title: "The Importance Of A Brand Guide For Hotel",
+  slug: "the-importance-of-a-brand-guide-for-hotel",
+  description:
+    "I cannot believe that we have to literally write and create content to explain to you the importance of a brand guide especially if you belong to the hospitality industry. Please understand that a brand guide works like a resume for your business. It is not a generic document you share with everyone. They are created with the central idea to market the brand you are trying to build.",
+  data: `
+  <div>
+
+    <p>
+      I cannot believe that we have to literally write and create content to explain to you the importance of a brand guide especially if you belong to the hospitality industry. Please understand that a brand guide works like a resume for your business. It is not a generic document you share with everyone. They are created with the central idea to market the brand you are trying to build.
+    </p>
+
+    <p>
+      We know you believe in traditional marketing tactics but trust us when we say that it will not generate the ROI you are expecting at the same time, do not forget, it is not always about the business but branding; it is always good to get in touch with a <strong> branding agency hospitality </strong> and learn. It is not always about customers but having a broad-scope reputation and goodwill. Now you may think that you have all of this, but then the real question arises why are you not excelling in your business?
+    </p>
+
+    <h2>Represents Effort</h2>
+
+    <p>
+      When you create and get a designed brand guide for your hotel. It shows your effort towards your business. It makes people appreciate that you take your brand and work seriously. In modern marketing, there are still many businesses that believe in traditional ways of advertising and promotion, but it sincerely lacks effort because you are not doing anything out of the box or something creative; you are just following a herd of sheep.
+    </p>
+
+    <h2>An Element of Design</h2>
+
+    <p>
+      Brand guides are distinctive, brief, and crisp and add to the creative value of a brand, especially when it comes to hotels and cafes because the hospitality industry is majorly influenced by good pictures, good taste, great services and most importantly working towards adding value to the status of people. If businesses are connecting with you more, it is because of the reputation that you have created, there are many cafes in the world. It applies to both businesses and customers.
+    </p>
+
+    <h2>Less Is More</h2>
+
+    <p>
+      When we say - less is more, we mean that when promoting your business, taking action for <strong>restaurant advertisements</strong> or helping people understand your work it is essential to keep things private and crisp and on point. The bitter truth of society is that nobody has time to go through long pages of documents or reports, people easily get bored and shift to new things very easily.
+    </p>
+
+    <p>
+      To save yourself from ignorance work on your brand guide and build superb yet slick content that makes people fall in love with your work and business.
+    </p>
+
+    <h2>Building Network</h2>
+
+    <p>
+      A brand guide is not only limited to customers, you can always share it with small and interested businesses that want to connect with you. It is most useful when people need to share details on social media platforms and professional platforms like Instagram and Linkedin. Most people do not understand that having a brand guide ready with you helps you save time and energy while connecting with new prospects, and it looks elegant and attracts more and more people whereas
+    </p>
+
+    <h2>Easy To Share</h2>
+
+    <p>
+      A brand guide is easy to share because as a hotel, you do not want to share every bit of information with someone, but with a brand guide, you only share a limited amount of information with you. So that people become intrigued with your brand and want to know more about it. It is a subtle way of doing promotions and advertising for your hotels and restaurants.
+    </p>
+
+    <p>
+      In the end, we can only tell you that if you are looking to brand your business, take it to new heights and are interested in creating a brand guide for it, do connect with us at Fielmente to offer you complete marketing solutions customised just for you and your brand.
+    </p>
+
+    <p>
+      Brand guide - Behance Link
+    </p>
+
+    <p>
+      Look in the SOP
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Top 10 WordPress Plugin To Upload On Your Hotel Website",
+    description:
+      "Top 10 WordPress Plugin To Upload On Your Hotel Website",
+  },
+  title: "Top 10 WordPress Plugin To Upload On Your Hotel Website",
+  slug: "top-10-wordpress-plugin-to-upload-on-your-hotel-website",
+  description:
+    "Generally, when people search for such articles, they know what plugins are what they are used for and how to use them but since we believe in learning from basics let us give you a quick understanding of website plugins especially when you are from the hotel industry.",
+  data: `
+  <div>
+
+    <p>
+      Generally, when people search for such articles, they know what plugins are what they are used for and how to use them but since we believe in learning from basics let us give you a quick understanding of website plugins especially when you are from the hotel industry.
+    </p>
+
+    <h2>What are WordPress plugins?</h2>
+
+    <p>
+      They are extensions to add to your website so that a new function can be introduced or regulated without interfering with the hosting program itself. These plugins are generally used in digital video, audio and web browsing. With the help of this article, you can ask your <strong>hospitality marketing company</strong> to have the right plugins installed on your hotel’s website. These plugins help programmers to add new features and make the website more smooth, informative and attractive. In general, language, if we could suffice, each plugin is an extension that works like an ornament or accessory while designing a website, the more correct accessories are added, the cooler the website becomes.
+    </p>
+
+    <h2>How is it going to help your hotel website?</h2>
+
+    <p>
+      You won’t believe it, but plugins will help your website take and manage the visitor's queries and will automate online booking, help in scheduling, and manage a whole calendar for you. There are great benefits that you can reap from WordPress booking plugins but it doesn’t stop there, hence we have a list of the top 10 WordPress plugins that you can add to your hotel website.
+    </p>
+
+    <h2>Gravity forms</h2>
+    <p>
+      It is a direct booking website plugin, something every hotelier personally seeks, it offers third-party services and add-ons to help in the smooth functioning of hotel lead generation. Some of its key features are -
+    </p>
+    <ul>
+      <li>Multi-column layouts</li>
+      <li>Data routing</li>
+      <li>Field validation</li>
+    </ul>
+
+    <h2>Booking Ultra Pro- Appointment Booking Plugin</h2>
+    <p>
+      It offers 24x7 appointment management. It helps you manage your appointments 24/7 at your convenience. It is simple to add 4 step plugin with a better interface to complement the WordPress website.
+    </p>
+    <p>Some key features are -</p>
+    <ul>
+      <li>Paypal integrated</li>
+      <li>Supports different language settings.</li>
+      <li>Adjustable time slots and rescheduling is also provided.</li>
+    </ul>
+
+    <h2>Bookly Plugin</h2>
+    <p>
+      The third plugin on the list comes with a modern appearance and UI  It allows backend and frontend designing and user friendly for people not aware of coding. Its main features are -
+    </p>
+    <ul>
+      <li>Email automation and SMS system</li>
+      <li>Add multiple services to the booking page</li>
+      <li>Comes with paid and free versions as well</li>
+    </ul>
+
+    <h2>Yoast SEO</h2>
+    <p>
+      Yoast SEO is a free plugin which is predetermined to get visitors and search engines to cultivate the most for your hotel website. It offers SEO improvements and its main features are -
+    </p>
+    <ul>
+      <li>It helps in internal linking suggestions.</li>
+      <li>There is a premium version available for a fee and offers focus keyword reporting</li>
+      <li>It caters to readability analysis, sitemaps and meta-description templating.</li>
+    </ul>
+
+    <h2>WP Hotel Booking</h2>
+    <p>
+      Third, comes WP Hotel Booking, a renowned reservation plugin used in WordPress. It allows coupon, room, booking and client management features, a hotel owner can use it on their website to add links to additional packages, WiFI, parking and cab services etc. Its main features are -
+    </p>
+    <ul>
+      <li>Provides booking report</li>
+      <li>Stripe payment</li>
+      <li>It is available for free to use</li>
+      <li>Payment authorization with PayPal.</li>
+    </ul>
+
+    <h2>Booked Plugin</h2>
+    <p>
+      The next one on the list is the Booked plugin. It has a pricing of $49 and offers multilingual options and offer customised and specific calendars, its main feature of it is -
+    </p>
+    <ul>
+      <li>No or less buffer time.</li>
+      <li>Comes with a good UI.</li>
+      <li>Has one-time pricing which then makes it comparatively low to others</li>
+    </ul>
+
+    <h2>Team Booking</h2>
+    <p>
+      On number five we have Team booking, which is known for its minimum cost which is only $28 with features like Paypal and Stripe. It offers a modern calendar interface and maps can also be incorporated. Some good effects of it are -
+    </p>
+    <ul>
+      <li>Maps are integrated into forms to send locations.</li>
+      <li>People can schedule and make last-minute appointments.</li>
+      <li>The plugin is affordable.</li>
+    </ul>
+
+    <h2>Amelia Plugin</h2>
+    <p>
+      On number six, we have the Amelia Plugin which is an event scheduling plugin, it is more focused towards small businesses (hotels and resorts), It offers an automatic booking system and is works smoothly with the WordPress website, its key features of it are -
+    </p>
+    <ul>
+      <li>Zoom integration and SMS system</li>
+      <li>Outlook and Google calendars synced</li>
+      <li>Front-end panel for visitors and potential customers.</li>
+    </ul>
+
+    <h2>10to8 Online WP Booking System</h2>
+    <p>
+      We wonder how we forget about this amazing plugin especially for hotel owners and their WordPress websites. 10to8 Booking System for scheduling and appointments, it is highly professional and comes with various features, some of the prominent ones are -
+    </p>
+    <ul>
+      <li>It offers integration of over 500+ apps.</li>
+      <li>Online payment options and is free to use plugins.</li>
+      <li>The plugin helps in tracking payment history and offers access restriction features.</li>
+    </ul>
+
+    <h2>CM Booking Calendar Plugin</h2>
+    <p>
+      The CM in the CM Booking calendar refers to creative minds, it allows potential customers to book or make reservations directly from your hotel’s website. The cost of the plugin is $39 and offers lifetime access and 1-year of support and updates. The plugin offers -
+    </p>
+    <ul>
+      <li>Multiple calendars and the best calendar display for customer visibility.</li>
+      <li>The labels and texts become editable with this plugin to make them fit with any language.</li>
+    </ul>
+
+    <p>
+      We guess this list can really help you elevate your hotel’s website performance and growth.
+    </p>
+
+    <p>
+      Fielmente is one of the top <strong>restaurant advertising agencies</strong> that can help you with each and every plugin and are a good option to actually have a team managing it. First, we understand your business and accordingly we ensure that only the right plugins are used on your website to keep it in swift functionality.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Top 10 WordPress Plugin To Upload On Your Restaurant Website",
+    description:
+      "Top 10 WordPress Plugin To Upload On Your Restaurant Website",
+  },
+  title: "Top 10 WordPress Plugin To Upload On Your Restaurant Website",
+  slug: "top-10-wordpress-plugin-to-upload-on-your-restaurant-website",
+  description:
+    "There is a huge difference between a hotel and a restaurant, many people still confuse them and that’s where they are making a mistake , it changes the game plan depending on whether you are a hotel owner or a restaurant owner. When you are building a website for your restaurant you can always connect with a restaurant marketing agency to help you with end-to-end marketing services but there are several plugins that you have to install that are strictly made for restaurant-centric websites and not hotel-based websites.",
+  data: `
+  <div>
+
+    <p>
+      There is a huge difference between a hotel and a restaurant, many people still confuse them and that’s where they are making a mistake, it changes the game plan depending on whether you are a hotel owner or a restaurant owner. When you are building a website for your restaurant you can always connect with a <strong>restaurant marketing agency</strong> to help you with end-to-end marketing services but there are several plugins that you have to install that are strictly made for restaurant-centric websites and not hotel-based websites.
+    </p>
+
+    <p>
+      So here we are with the top 10 WordPress websites plugins to upload to your restaurant website -
+    </p>
+
+    <h2>Foodpress</h2>
+    <p>
+      This is a multiple-purpose plugin that caters to the online menu as well as a reservation form. You can upload photos in the menu and link them to dishes and set the entire arrangement and menu structure with each dish getting its description. The plugin gives full control of the layout and it's as simple and user-friendly as non-technical restaurateurs can also use it effectively.
+    </p>
+
+    <h2>WP store locator</h2>
+    <p>
+      A customized plugin helps your customers locate your establishment. It offers directions to your location if you have a restaurant with multiple branches this plugin can sort the location and direction issues with your restaurant. The map is tailor-made and there are options for multiple languages, zoom, information about timings, contact details and more.
+    </p>
+
+    <h2>Five-star restaurants reservation plugin</h2>
+    <p>
+      This particular plugin allows you to create your restaurant menu smartly and stylishly. You can design every section make individual changes and regulate it as much as you want to. There is no limit to which you can add the dishes and it automatically gets divided into sections.
+    </p>
+
+    <h2>Store hours manager</h2>
+    <p>
+      Many owners that are using WooCommerce for online orders in their restaurants surely know about this plugin which lets you set the opening hours for the online market. It simply works for the objective of not taking orders when your restaurant is closed. But that's not it, you can also enjoy the feature of setting up special hours for holidays. Last but not the least, among many father features, it allows you to turn off the online orders facility if your place is already jam-packed.
+    </p>
+
+    <h2>Gravity Forms</h2>
+    <p>
+      Though there are many form plugins available for WordPress Gravity forms stand at top of them all. It has a free version but it is better to pay for this one. If you are looking to manage your restaurant website without s a webmaster this plugin is a must for you. It comes with a drag-and-drop feature with add-ons for ESPs like MailChimp, Aweber and more. It helps in the collection of valuable information and creates data from customers and website visitors.
+    </p>
+
+    <h2>Yelp Review Slider Plugin</h2>
+    <p>
+      Take control of the reviews you wish to be visible, yes the yelp review slider plugin makes an attractive note on your restaurant’s website and displays only the reviews you want to more and more good reviews in such a slider can catch the eyes of new customers and it will be helpful to elevate the restaurant sales. The slider is customizable, which means that you can change its colour, font, display type, border or artwork.
+    </p>
+
+    <h2>Bookly</h2>
+    <p>
+      It is a premium plugin used to cater reservations, if you often organise or take party orders or events like weddings and family gatherings, this plugin will surely help you. Again, it has multiple features and is worth the price tag it comes with. It allows table reservations and dealing with online and in-person bookings so that you don’t confuse or overbook.
+    </p>
+
+    <h2>Build-A-Meal</h2>
+    <p>
+      It is an animated and responsive website plugin to offer dieting tips and fitness hacks to your customers and site visitors. It does not apply to all restaurant websites but for some niche restaurants, it works like an important tool by offering diet calculators and providing nutrition facts. The plugin has unlimited ingredient and dish support.
+    </p>
+
+    <h2>Restaurant and Cafe Addon for Elementor</h2>
+    <p>
+      It is a free add-on plugin for page building in WordPress, it offers seamless browsing and unlimited features to add to your restaurant or cafe’s website. Though it works efficiently if you want more added features there is an upgraded version of it called the Restaurant & Cafe Addon Pro. It offers gift cards, custom product elements, product filters, WooCommerce support, OpenTable integration, pricing tabs and whatnot.
+    </p>
+
+    <h2>Easy Notification Bar</h2>
+    <p>
+      A good notification bar always comes in handy right? You can always use this notification bar to update your customers about a new menu item or an upcoming event that is happening at your restaurant or a simple “quote of the day” Yes, a good food quote is also an attention-drawing point for some visitors. This notification bar plugin comes in different colours and fonts, link buttons and custom message options.
+    </p>
+
+    <p>
+      At last, we believe all these 10 plugins are great and you must try them with your restaurant’s website, But it is important to optimize your website well enough to stand every issue or avoid any problem and that’s where the <strong>hospitality marketing services</strong> come in to help you and make your website better and maintain for a long time. Do connect with us and let us help you make a wonderful website.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Why Contenting Marketing Is Crucial For Hotels And Restaurants",
+    description:
+      "Why Contenting Marketing Is Crucial For Hotels And Restaurants",
+  },
+  title: "Why Contenting Marketing Is Crucial For Hotels And Restaurants",
+  slug: "why-contenting-marketing-is-crucial-for-hotels-and-restaurants",
+  description:
+    "We'll just assume that if you stumbled on this blog, you want to learn more about content marketing.",
+  data: `
+  <div>
+
+    <h1>Why Contenting Marketing Is Crucial For Hotels And Restaurants</h1>
+
+    <p>
+      We'll just assume that if you stumbled on this blog, you want to learn more about content marketing.
+    </p>
+
+    <p>
+      Is it just a fancy word for you in the world of social media and digital marketing?
+    </p>
+
+    <p>
+      If you are reading this blog, we guess you are interested in using content marketing as your strength. As a popular <strong>restaurant marketing agency</strong>, we are here to give you all the insights you need on content marketing.
+    </p>
+
+    <p>
+      Now in simple terms, content marketing is nothing but the creation and distribution of content to elevate your business’s growth, reach, reputation, and brand image. You might think, why create so much content? What is its ultimate goal?
+    </p>
+
+    <p>
+      So, let’s go through a step-by-step understanding of how and why content marketing is important for your hotel and restaurant businesses and clear all looming doubts.
+    </p>
+
+    <h2>Creating Audience Attraction</h2>
+
+    <p>
+      There are some industries in which content marketing plays a vital role compared to others. The hospitality sector is one such industry because it is all about influencing the mindset of clients, attracting them, and making them avail the services as much as possible.
+    </p>
+
+    <p>
+      The better your content marketing skills get, you will attract clients organically. If you need expert insights, you can connect with a <strong>hotel digital marketing agency</strong> to explore more avenues.
+    </p>
+
+    <h2>Creating a Competitive Advantage</h2>
+
+    <p>
+      When we were creating this blog, we were focused on attracting you to our website so that when you search for a blog about content marketing or the hospitality sector you visit our website and not our competitors.
+    </p>
+
+    <p>
+      Just like this, with all the content you create or already have that can be optimized, what are you doing with it? And most importantly; what is it that you are doing that your competitors are not? The answer is the same; content marketing offers a competitive advantage and edge to your hotels and restaurants because you are going the extra mile.
+    </p>
+
+    <h2>Affordable Marketing</h2>
+
+    <p>
+      If you are a hotelier, you know how expensive and explicit the marketing budgets are. In such a scenario, content marketing is convenient, cheap, creative, centralized, and most importantly the core of digital marketing strategies. A content marketing strategy is a multi-layered approach to content creation and distribution through various channels with specific goals and time-bound expectations.
+    </p>
+
+    <h2>Your Content= Your Reputation</h2>
+
+    <p>
+      Suppose, you promote your services through newsletters or a digital magazine that is solely focused on the hospitality industry. From the perspective of a <strong>hotel digital marketing agency</strong>, this is a great move!
+    </p>
+
+    <p>
+      The use case can be explained very easily.
+    </p>
+
+    <ul>
+      <li>A client planning for a trip abruptly checks his email at night.</li>
+      <li>He finds your newsletter in his inbox, reads it, and likes your content.</li>
+      <li>He is intrigued to know more about your services & therefore, searches your hotel on Google.</li>
+      <li>When he comes across your digital magazine, he is delighted and visits your official hotel website.</li>
+      <li>He is so amazed by your videos, blogs, and content displayed in general that he ends up booking a stay in your hotel.</li>
+    </ul>
+
+    <p>
+      Now you may think that this is just a far-fetched scenario and nothing like this ever happens. But in reality, this is exactly how targeted searches meet good content and end up earning your hotel good business.
+    </p>
+
+    <p>
+      That’s why we say your content is your reputation and revenue!
+    </p>
+
+    <h2>How Can You Create Your Content Marketing Strategy?</h2>
+
+    <p>
+      If you have reached this section of the blog, we know you are convinced that you need content marketing for your hotel. So let us help you with some simple actionable steps -
+    </p>
+
+    <h2>Hire a Hotel Digital Marketing Agency</h2>
+
+    <p>
+      There is no flaw in accepting that you just can’t do everything on your own! That’s why you need a <strong>hotel digital marketing agency</strong>. More importantly, your business needs experts who can create quality content and guide you through the labyrinth of digital marketing approaches and strategies.
+    </p>
+
+    <h2>Set Your Goals</h2>
+
+    <p>
+      Always have clear goals for your business. In the hospitality industry, you need to have measured and decisive goals.
+    </p>
+
+    <p>
+      If you are confused about what you want to achieve with content marketing, its benefits might never bear fruit.
+    </p>
+
+    <h2>Choose Your Channels</h2>
+
+    <p>
+      You can’t market content that's made for Facebook via email. It is quintessential to know your channels, and what content works best with it. Most people make this common mistake. It is better to take the time & understand the channel, its relevance to your business, and most importantly, the content best suited for it.
+    </p>
+
+    <h2>Pick The Relevant Topics</h2>
+
+    <p>
+      Meaningful content on channels and profiles= Booming business.
+    </p>
+
+    <p>
+      If you are a hotel, restaurant, or cafe, finding topics that are industry-centered can be a task. Simply consulting with experts can make your doubts go away.
+    </p>
+
+    <p>
+      Simply being a hotelier does not guarantee that you will be able to gauge what your audience needs. With expert help, your concerns about content marketing can be at ease.
+    </p>
+
+    <h2>
+      Consult a hotel marketing agency today.
+    </h2>
+
+    <p>
+      If you are interested in content marketing and looking to partner with an agency for quality content, Fielmente, a top-tier <strong>restaurant marketing agency</strong> can help you structure your website and social media platforms with the perfect content. Connect with us & discuss endless possibilities for your business today.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Why Is Your Hotel's Online Reputation So Important?",
+    description:
+      "Why Is Your Hotel's Online Reputation So Important?",
+  },
+  title: "Why Is Your Hotel's Online Reputation So Important?",
+  slug: "why-is-your-hotels-online-reputation-so-important",
+  description:
+    "Maintaining a positive internet reputation for hotels is essential given the country's and the world's growing digital populations. Due to this, ideas and techniques like online reputation management have emerged (ORM). Since more people rely on internet reviews and social media to make booking decisions, it is not surprising that hotel reputation management has become more and more popular.",
+  data: `
+  <div>
+
+    <p>
+      Maintaining a positive internet reputation for hotels is essential given the country's and the world's growing digital populations. Due to this, ideas and techniques like online reputation management have emerged (ORM). Since more people rely on internet reviews and social media to make booking decisions, it is not surprising that hotel reputation management has become more and more popular.
+    </p>
+
+    <h2>Why Hotel Reputation Management Is Important?</h2>
+
+    <p>
+      For all hotels, reputation management is crucial, particularly for managing your internet reputation
+    </p>
+
+    <p>
+      How guests see, evaluate, share, and search for information about your hotel directly impacts its business. Travelers are starting to rely more on online reviews from different travel websites. However, most hotels cannot make the best use of this specific component of the current travel market. Therefore, hoteliers must utilize these technologies to build a positive online reputation while interacting with potential customers in the virtual world and comprehending the significance of the enormous possibility behind ORM.
+    </p>
+
+    <h2>Benefits Of Upholding A Positive Online Reputation</h2>
+
+    <p>
+      The following section lists some of the factors that make keeping a positive hotel reputation online essential for success:
+    </p>
+
+    <ul>
+      <li>
+        <strong>It Boosts Sales</strong><br/>
+        Before making a decision, consumers study brands, services, and products online. People often read online evaluations left by those who have already visited a place before going there. Businesses with positive internet reviews typically draw more customers. Large sales are lost by companies with a poor reputation and those with the most negative evaluations. Because of this, your brand needs to have great online reviews.
+      </li>
+
+      <li>
+        <strong>It Enhances Credibility</strong><br/>
+        Social media platforms have allowed us to express our opinions on anything. Utilizing trusted brands is preferred by consumers. A bad rumor about your company will get around more quickly than a good one. Again, having no opinion about your company is a symptom of your unreliability and lack of trust. But tackling that will be easier with an efficient ORM strategy and prompt resolution.
+      </li>
+
+      <li>
+        <strong>It Contributes To Increased Visibility</strong><br/>
+        Positive online evaluations can provide businesses with several chances to improve awareness and influence among potential customers. Online reviews are crucial for managing your hotel's reputation and expanding clientele. Positive evaluations also contribute to the brand's increased visibility, which helps it draw in more customers. Although additional traffic does not always result in more reservations for hotel rooms, it does enhance the likelihood of doing so.
+      </li>
+
+      <li>
+        <strong>It Aids In Optimizing Your Revenue</strong><br/>
+        In the present, fiercely competitive market and business environment, how consumers perceive your brand directly affects your company's sales and revenue. As a result, it assists in increasing revenue while fostering a positive reputation.
+      </li>
+    </ul>
+
+    <h2>Down The Line - What Fielmente can do for you !</h2>
+
+    <p>
+      A lot of time and work is required to start and expand a firm. Your existing consumers may be happy with your fantastic services. Still, there is one important issue you must attend to if you want to safeguard and support the expansion of your company. Maintaining your company's online reputation is essential in today's digital age. Because there are so many alternatives available, ORM has become crucial for businesses to monitor, ascertain, and change the digital reputation of brands. A quick online search can frequently provide all the information you need to learn about a company's reputation, which is an important consideration for tourists when choosing where to stay.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Why Local Seo Is Important For Cloud Kitchens, Ghost Kitchens Or Multi-Brand Kitchens?",
+    description:
+      "Why Local Seo Is Important For Cloud Kitchens, Ghost Kitchens Or Multi-Brand Kitchens?",
+  },
+  title: "Why Local Seo Is Important For Cloud Kitchens, Ghost Kitchens Or Multi-Brand Kitchens?",
+  slug: "why-local-seo-is-important-for-cloud-kitchens-ghost-kitchens-or-multi-brand-kitchens",
+  description:
+    "Digital marketing is not a new term now, but with the consistent appearance of new patterns and innovations, it is developing continually.",
+  data: `
+  <div>
+
+    <p>
+      restaurant advertising agency, food brand marketing company
+    </p>
+
+    <p>
+      Digital marketing is not a new term now, but with the consistent appearance of new patterns and innovations, it is developing continually. Everybody knows about its significance, yet without fusing the latest trends & strategies in digital marketing, the business can’t receive its greatest rewards.
+    </p>
+
+    <p>
+      For online food businesses like <a href="https://bingage.com/blog/what-is-cloud-kitchen-business-model/" target="_blank">cloud kitchen</a> or ghost kitchen or any other food delivering business, digital advertising may be a remarkable useful resource in promoting, in addition to operating the business. Their target consumer base is tech-savvy and stays energetic on social media platforms. So, it makes the best feel for online food delivery businesses to capitalize on online resources by reaching out & connecting with the audience on numerous digital marketing channels.
+    </p>
+
+    <p>
+      In this post, we are going to discuss how the cloud kitchen can leverage the power of Social media. Let’s start –
+    </p>
+
+    <h2>1. Do Register Locally (Basic SEO)</h2>
+
+    <p>
+      Be easy to find out by your local audience, register your business on Google my business, and increase your searchability on Google. Suppose you are delivering South Indian food online…
+    </p>
+
+    <p>
+      Generally, there are two situations whereby either someone entered the location directly into the search parameters (search for “south Indian restaurant nearby me”) or someone in a location and Google returned search results based on your GPS (you were in the town of where your business located and ran a search for “south Indian Food corner”) which can greatly impact your restaurant’s online traffic.
+    </p>
+
+    <p>
+      Restaurants can receive online orders for pickup or delivery directly from Google Search, Maps, or the Assistant. Users who search for your restaurant may see an “Order Online” button (If you have a website), which they can tap to view a menu and start their order. More info is here. Also, it shows the link of online food delivery app which redirect the user to your outlet’s page on Swiggy
+    </p>
+
+    <p>
+      Related Read – <a href="https://bingage.com/blog/how-to-tie-up-with-swiggy/" target="_blank">Step by Step Guide on how to tie up with swiggy</a>
+    </p>
+
+    <p>
+      Let’s understand this with an example of famous Cloud Kitchen Behrouz Biryani –
+    </p>
+
+    <h2>2. Have an SEO Friendly Website</h2>
+
+    <p>
+      If you wanna increase online food ordering traffic, then having an SEO friendly website could help with it.
+    </p>
+
+    <p>
+      Tips for making an SEO friendly website –
+    </p>
+
+    <ol>
+      <li>Make sure your food ordering website has key SEO elements in place such as title, meta tags, user-friendly URL structure sitemaps, 301 redirects, image alt tags, duplicate content control to be able to rank in search engines.</li>
+      <li>Optimize your website content by including relevant keywords like “online restaurants in &lt;location&gt;”, “order food online”, “ online food ordering business”, “food delivery in &lt;location&gt;”, “cloud kitchen business” “delivery-only restaurant” this will helps to gain visibility on search engines.</li>
+      <li>If possible start a blog that allows you to produce good content on the relevant subject. Share about the recipes, nutritious value, new cuisines, etc. Besides, a blog will also allow you to target relevant keywords & attract more traffic to your website. Make sure to have a proper Call to Action Button that redirects the user to your homepage that increases online ordering.</li>
+    </ol>
+
+    <h2>3. Be engaging on Social Media</h2>
+
+    <p>
+      Social Media Marketing is emerging day by day, especially after the Covid19 pandemic, people have learned that technologies can connect people sitting far away from each other, now we are becoming more tech-friendly. hence the businesses are leveraging the power of Social Media by using the latest trends of social media marketing.
+    </p>
+
+    <p>
+      Go creative on social media, know about your audience. according to a study, over one million mentions on social media sites about the restaurant, food and beverage industry, 57 <a href="https://www.statista.com/statistics/462518/restaurant-food-and-beverage-industry-sector-social-media-mentions-worldwide/" target="_blank">percent of these</a> were about quick-service restaurants.
+    </p>
+
+    <p>Tips for Social Media Marketing –</p>
+
+    <ol>
+      <li>Post creatives images, videos, recipes on social media.</li>
+      <li>Complete your profile with relevant hashtags & details.</li>
+      <li>Be real with the audience, due to covid19 customers are cautious about cleanliness & hygiene, post images, and videos of your kitchen making dishes with safety and proper care.</li>
+      <li>Other than being creative, also focus on your customers. Re-share customer’s content. Reply to their comments and queries timely. Pay attention to their feedback. Run offers & loyalty programs exclusively on social media.</li>
+      <li>Promote business through social media can help to generate more leads and create a buzz around the brand.</li>
+    </ol>
+
+    <h2>4. Video is the future of content marketing</h2>
+
+    <p>
+      Video marketing will be the trendsetter in upcoming years, now people engage with video more than images. According to Buffer, 81% of businesses prefer video marketing on Facebook.
+    </p>
+
+    <p>Other Video Marketing Statistics as per <a href="https://optinmonster.com/video-marketing-statistics-what-you-must-know/" target="_blank">Optinmosnter</a> –</p>
+
+    <ul>
+      <li>89% of video marketers say video gives them a good ROI.</li>
+      <li>83% of video marketers say video helps them with lead generation.</li>
+      <li>87% of video marketers say video has increased traffic to their website.</li>
+      <li>80% of video marketers say video has directly helped increase sales.</li>
+    </ul>
+
+    <p>
+      Put small engaging videos on social media that can be funny, informative, or emotional.
+    </p>
+
+    <p>Tips on Video marketing for cloud kitchen & restaurant –</p>
+
+    <p>
+      Days are gone when people use to make a general business explanatory video, now it is the time of explaining about your business with the help of creative storytelling with a mixed feeling of emotions & imagination. Use that!
+    </p>
+
+    <p>
+      Convey your message to the audience with the help of videos like what are the measures you following amidst Covid19, steps taking for <a href="https://bingage.com/blog/safe-online-food-delivery-during-coronavirus-pandemic/" target="_blank">safe online food deliveries</a> 
+    </p>
+
+    <p>
+      You can share recipe videos, Giffy, tips & ideas to keep your viewers engaged. Like a few days back I saw a video on Instagram and it took me 2 minutes to follow the page and see the profile. Sharing here –
+    </p>
+
+    <h2>5. Go with Influencer Marketing (Highly Trending)</h2>
+
+    <p>
+      Nothing works like word of mouth marketing, Influencer marketing is taking the new trend of marketing among social media. A study also revealed that 6 out of 10 teenagers follow the advice of influencer than any other celebrity.
+    </p>
+
+    <p>
+      Brands are getting positive response from influencer marketing campaigns, According to mediakix, 89% of marketers say that ROI from influencer marketing is comparable or better than other marketing channels.
+    </p>
+
+    <p>What is Influencer marketing –</p>
+
+    <p>
+      Let’s understand this in short, Influencer marketing, As we mentioned earlier, people are just crazy to know about food, recipes & nutritious value of the food they consume. There are thousands of food bloggers active on the internet especially on Instagram, sharing about food, the place of food, and much more related to that. For food startups, cloud kitchen, or any other restaurant, they have a huge number of influencers ready to market in the exchange of some rewards.
+    </p>
+
+    <p>Tips to leverage the power of influencer marketing for cloud kitchen & restaurant –</p>
+
+    <ol>
+      <li>Make a list of high performing food blogger in your city who have good followers, approach them to advertise about your brand.</li>
+      <li>A featured article or blog about having your business name and website or social media page can give you better ROI than cost.</li>
+      <li>Make sure, your customers are the most prominent influencers.</li>
+    </ol>
+
+    <h2>6. Do not undervalue the power of SMS & Email-marketing</h2>
+
+    <p>
+      Not all your customers visit your website frequently and have your application installed, so to reach out & inform those customers the latest offerings and details about their orders promptly, Email & SMS are common yet the trustable mode of communication.
+    </p>
+
+    <p>Here are some tips for effective Email & SMS marketing –</p>
+
+    <ol>
+      <li> Use personalized SMS marketing, every customer receives several messages in a day so they don’t pay much attention to that but if you send SMS & email containing their name like “Hi Rohan, Hi Nimish, an etc” can increase 48% more chances of conversion. </li>
+      <li>Use a marketing automation tool like cloud kitchen CRM, personalized marketing tools, to capture the customer data and make the user experience more personalized with the help of analytics. </li>
+      <li>Send birthday and anniversary wishes to your customers through SMS with their first name, Bingage AI-Enabled CRM & marketing automation tool helps you to schedule birthday wishes of your customer 5 days before, 2 days before, and the same day.  then it will automatically send to all of your customers having a birthday on the same month with their first name. </li>
+    </ol>
+    <p>
+    Found interesting,<a href="https://bingage.com/" target="_blank"> Ask for a Free Demo Now. </a>
+    </p>
+
+    <h2>7. Run Exclusive Offers & Contest</h2>
+
+    <p>
+Run special offers & contests, like the festive season is coming so plan a contest or offers keeping the festive theme in the mind. You can leverage <a href="https://bingage.com/blog/referral-marketing-program/" target="_blank">referral marketing</a>and encourage people to refer your business to their friends and families to earn special rewards or coupons.    </p>
+
+    <p>
+      Try <a href="https://bingage.com/" target="_blank">Bingage</a> as a growth tool to help your restaurants business reach new heights (Simple & easy to understand). Increase repeat customers, Win-back lost customers, Boost sales. Personalised campaigns, Cashback, Coupons, and 7+ Automated Tools. Ideal for Restaurants. Cafes & Cloud kitchen. Start for Free.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Why Use Alt Text For Instagram",
+    description:
+      "Why Use Alt Text For Instagram",
+  },
+  title: "Why Use Alt Text For Instagram",
+  slug: "why-use-alt-text-for-instagram",
+  description:
+    "If you have come to this blog searching about Alt texts, you might be on your way to upgrading your Instagram algorithm!",
+  data: `
+  <div>
+
+    <p>
+      If you have come to this blog searching about Alt texts, you might be on your way to upgrading your Instagram algorithm!
+    </p>
+
+    <p>
+      For many people who don't know about alt-text, it simply means naming or describing pictures while uploading them to your online content. It is for Google to read the images and align them with the SEO practices.
+    </p>
+
+    <p>
+      It is widely used in websites and blog posting activities with banners & stock images. But what most people do not know is that using alt-text in social media precisely on Instagram can bring them excellent results for gaining publicity in their niche.
+    </p>
+
+    <p>
+      The description added with alt text reads aloud with a screen reading program. It helps them clearly identify the thing being talked about.
+    </p>
+
+    <p>
+      So today in this blog we will encounter some of the key reasons why you should use Alt text in Instagram. We will also guide you on how to add these to your content to make it more engaging!
+    </p>
+
+    <p>Use case for Alt Text-</p>
+
+    <ul>
+      <li>It helps Instagram sort your image in content and aids in describing photos to blind or impaired users.</li>
+      <li>Though Instagram uses object recognition technology to describe your posts, Instagram users can manually add alt text to their photos.</li>
+      <li>When you don’t add an alt text, Instagram automatically does it for you. But it is up to you who needs to add key aspects to your posts.</li>
+    </ul>
+
+    <p>
+      Do note that you don’t have to delete your post to add an alt-text to it; you can do it even after you have posted it. To do so-
+    </p>
+
+    <ol>
+      <li>Go to the 'edit post' option</li>
+      <li>Choose the picture (it will automatically guide you to the standard text)</li>
+      <li>You shall find the edit alt text button</li>
+      <li>Describe your post in the best way possible.</li>
+    </ol>
+
+    <p>
+      <strong>An important tip - Try to limit your description to under 100 characters including spaces. Try not to use phrases like - “picture of” or “photo of”</strong>
+    </p>
+
+    <p>
+      Now, an important question asked by many is- "Instagram already has object recognition technology, and does the alt text for us? Why do we need to stress about it or do it manually?"
+    </p>
+
+    <p>
+      The answer is quite simple -  the automated feature of Instagram is highly inaccurate and misinterprets major elements of a photo. Therefore, it is not reliable. When you personally add an alt-text, you bring clarity to reach a wider audience.
+    </p>
+
+    <p>
+      <strong>Consult a hospitality marketing agency for your concerns</strong>
+    </p>
+
+    <p>
+      We hope that we made a point to make you realize how important alt text is in posting on Instagram. To know more critical aspects of digital marketing for your hospitality business, connect with Fielmente today.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Woocommerce VS Shopify",
+    description:
+      "Woocommerce VS Shopify",
+  },
+  title: "Woocommerce VS Shopify",
+  slug: "woocommerce-vs-shopify",
+  description:
+    "In the digital world, hotel businesses are increasing rapidly. People are opening online stores in the hope of getting more customers. However, setting up an online store is not as simple as it seems. Many hoteliers and cafe owners face difficulty deciding on a suitable E-Commerce platform.",
+  data: `
+  <div>
+
+    <p>
+      In the digital world, hotel businesses are increasing rapidly. People are opening online stores in the hope of getting more customers. However, setting up an online store is not as simple as it seems. Many hoteliers and cafe owners face difficulty deciding on a suitable E-Commerce platform.
+    </p>
+
+    <p>
+      When it comes to E-Commerce then, nothing can match up Woocommerce and Shopify. Both are unique and bring the best for the clients in their manner. There are a lot of doubts in an online store owner's mind. If you are someone who wants to expand your business with the support of online means, then this article will surely benefit you.
+    </p>
+
+    <h2>What is Woocommerce?</h2>
+
+    <p>
+      Woocommerce was launched in 2011 as a free, open-source E-Commerce plugin that enables patent holders to make adjustments per their needs. The plugin is designed for WordPress-based sites.
+    </p>
+
+    <h2>What is Shopify?</h2>
+
+    <p>
+      Shopify is a forum for online business. The E-Commerce application development was done in 2006 to assist retailers. Anyone can build their store online and sell products.
+    </p>
+
+    <h2>Differences between them in terms of -</h2>
+
+    <p>
+      The following features will generate a better understanding of which option is adequate.
+    </p>
+<ol>
+
+  <li>
+    <strong>Customization</strong>
+
+    <p>
+      <strong>Woocommerce</strong>: The WordPress Plugin Woocommerce provides multiple customizable options to its users. For example, store owners can work on the checkout page and delete, rewrite or change the quantity. You can alter the homepage and many more.
+    </p>
+
+    <p>
+      <strong>Shopify</strong>: The E-Commerce platform permits owners to customize and edit their online stores. A business owner can sell any number of products. They can put pictures and videos too.
+    </p>
+  </li>
+
+  <li>
+    <strong>Payment and Security</strong>
+
+    <p>
+      <strong>Woocommerce</strong>: Business owners enjoy full control with the assistance of REST API. It is an application programming interface that uses HTTP for building APIs. They can pay and receive payments through PayPal, Square, and Stripe. <strong>Woocommerce is a secure place as it utilizes Sucuri, which is recognized for the protection of websites from cybercrime and hackers.</strong>
+    </p>
+
+    <ol>
+    <li>
+      The E-Commerce plugin reports all the details about APIs, extensions, etc. The holders of the stores receive a 'verified owner' tag for clarity and transparency.
+    </li>
+    </ol>
+
+    <p>
+      <strong>Shopify</strong>: Payments can be made with the help of PayPal, Apple Pay, or Amazon Pay. There are credit card options as well. <strong>Store owners have to pay about 30% to Shopify if they involve a third party.</strong> That's why clients have to depend on Shopify Payment for ease. The platform is secure due to the SSL certificate.
+    </p>
+  </li>
+
+  <li>
+    <strong>Combining</strong>
+
+    <p>
+      <strong>Woocommerce</strong>: To expand your business, you can attach with a third party like Hubspot. Retailers are allowed to take as many orders, prices, and several commodities. <strong>A business owner can select his location along with the local language and currency of their residing country.</strong> There are more than 400 valid extensions at Woocommerce.
+    </p>
+
+    <p>
+      <strong>Shopify</strong>: Shopify has more than 70 themes for store owners. Shopify has prepared a mobile web app framework for its users, which <strong>enables customers to shop from anywhere with their phones.</strong> If the owner wishes, he can trade on platforms like Amazon and eBay. Shopify allows users to link their stores with Twitter, Instagram, Facebook, etc.
+    </p>
+  </li>
+
+  <li>
+    <strong>Cost</strong>
+
+    <p>
+      <strong>Woocommerce</strong>: Woocommerce can be installed free of cost. If you are running a small-scale business, it will amount to <strong>$200</strong>. It is quite reasonable.
+    </p>
+
+    <p>
+      <strong>Shopify</strong>: Shopify is on the pricey side. <strong>Its subscription plans will range from $29 to $299. Shopify takes 30% of earnings if a third-party plugin is inserted.</strong> There is a 14-day trial option. Shopify provides any-time service to store owners. There is no fee for high traffic in the store.
+    </p>
+  </li>
+
+</ol>
+
+    <h2>Why Woocommerce?</h2>
+
+    <h3>Merits</h3>
+    <ul>
+      <li>The service allows easy and limitless customization.</li>
+      <li>They can pick a nice theme and edit the homepage, contact details, etc.</li>
+      <li>Woocommerce is cost-effective.</li>
+    </ul>
+
+    <h3>Demerits</h3>
+    <ul>
+      <li>Woocommerce can be difficult to use.</li>
+      <li>The store owners have to do most tasks while using Woocommerce and are not promising to measure your business growth.</li>
+    </ul>
+
+    <h2>Why Shopify?</h2>
+
+    <h3>Merits</h3>
+    <ul>
+      <li>Shopify enables businesses to sell on other sites such as eBay and Amazon.</li>
+      <li>You can take a 14-day trial for certainty without any payment details.</li>
+      <li>The platform is suitable for beginners. They provide a 24-hour service too.</li>
+      <li>The yearly or monthly plans comprise limitless storage, domain, and hosting.</li>
+      <li>You can analyze your business.</li>
+    </ul>
+
+    <h3>Demerits</h3>
+    <ul>
+      <li>Shopify is expensive for small businesses.</li>
+      <li>About 30% is paid to Shopify when third parties are present, resulting in dependence on Shopify Payments.</li>
+    </ul>
+
+    <h2>Final Words</h2>
+
+    <p>
+      Woocommerce is tough to use. Shopify has a system that makes it look easier to newcomers. On the other hand, mobile application design and development brings hustle-free customization. Shopify helps in attracting more traffic at high rates. You can decide according to your requirements.
+    </p>
+
+    <p>
+      <strong>MOST WEBSITES WORK. BUT FIELMENTE MAKES THEM WORK HARDER.</strong>
+</p>
+      <p>
+      We at Fielmente offer fully customized web design and development services for your hospitality business. Our dynamic designers and developers work in unison with the client’s team to deliver high-end web solutions and web applications. The young and dedicated professionals are proficient and creative and have the requisite technical expertise and latest software to take your hospitality brand and website a notch higher.
+    </p>
+
+    <ul>
+      <li>WordPress Websites</li>
+      <li>Website Designing</li>
+      <li>Website Development</li>
+      <li>Content Writing</li>
+      <li>Responsive Websites</li>
+      <li>Mobile Websites</li>
+    </ul>
+
+    <p>
+      A one-stop solution without breaking your bank! Let’s connect.
+    </p>
+
+  </div>
+  `,
+},
+// {
+//   isShow: false,
+//   meta: {
+//     title: "Why Writing Blogs Is Important For Your Hotels And Restaurant's Website",
+//     description:
+//       "Why Writing Blogs Is Important For Your Hotels And Restaurant's Website",
+//   },
+//   title: "Why Writing Blogs Is Important For Your Hotels And Restaurant's Website",
+//   slug: "why-writing-blogs-is-important-for-your-hotels-and-restaurants-website",
+//   description:
+//     "Why Writing Blogs Is Important For Your Hotels And Restaurant's Website",
+//   data: `
+//   <div>
+
+//     <h1>
+//       Why Writing Blogs Is Important For Your Hotels And Restaurant's Website
+//     </h1>
+
+//     <p>
+//       <a href="https://www.searchenginejournal.com/7-reasons-why-blogging-is-still-important-in-2012/39225/" target="_blank">
+//         6 Reasons Why Blogging Is Important For Marketing And SEO
+//       </a>
+//     </p>
+
+//   </div>
+//   `,
+// },
+{
+  isShow: false,
+  meta: {
+    title: "Why SEO Is Important For Restaurants",
+    description:
+      "Why SEO Is Important For Restaurants",
+  },
+  title: "Why SEO Is Important For Restaurants",
+  slug: "why-seo-is-important-for-restaurants",
+  description:
+    "It is not the 90s we are living in, each day technology evolves, and the least smart thing about your smartphone is it being a phone.",
+  data: `
+  <div>
+
+    <h1>Why SEO Is Important For Restaurants</h1>
+
+    <p>
+      It is not the 90s we are living in, each day technology evolves, and the least smart thing about your smartphone is it being a phone. Rest is what it provides with its browsing, Internet, apps and everything else. More than 80% of all searches start on a smartphone, it is critical to value the top listings and ensure better reach, presence and most importantly a conversion rate. A good <strong>hospitality marketing company</strong> can help you understand all such statistics well but what you as a restaurant owner need to understand first is you are not going to look for a restaurant in a phonebook, today all the reviews, information, likes, dislikes, photos, menu and ratings are available on Google with just a click away. But with this accessibility to customers, it becomes competitive for restaurant businesses to ensure, how do you make sure that your restaurant establishment is gaining the likes, the right traction and visibility on Google.
+    </p>
+
+    <p>
+      SEO, right?
+    </p>
+
+    <p>
+      So we all agree that SEO is important for restaurants so now let’s talk about how and how much it is important for restaurants and eateries. SEO farms new customers at a 14.6% rate, which is highly efficient compared to other print advertising and direct mail, that’s the power of SEO.
+    </p>
+
+    <h2>Cost-effectiveness</h2>
+
+    <p>
+      Today when traditional marketing is failing miserably, and it takes a lot to try marketing channels that may drive attention but are highly expensive, SEO is something cost-effective and offers a focused presence and marketing at the same time. All you need is the right SEO strategy, and all it demands is patience.
+    </p>
+
+    <p>
+      It doesn’t matter if you are a small restaurant or a big one, SEO can do wonders for you, but it requires patience, with a reasonable budget, a good google my business listing and a location setup, small restaurants can make good visibility.
+    </p>
+
+    <h2>Branding</h2>
+
+    <p>
+      It is critical and quintessential for small restaurants if you think that all the customers are going to the big-shot restaurant in your area. SEO can help you build your brand with the right tools and strategies, suppose the customers try to find a good restaurant in your area and always see your restaurant’s name on the top, it is most likely that they will visit your restaurant because more visibility means more impact and more impact will lead to a higher conversion rate.
+    </p>
+
+    <p>
+      <strong>Always have a website ready for your restaurant. It serves as a digital footprint and address for your customers.</strong>
+    </p>
+
+    <h2>Good Traffic leads to great engagement</h2>
+
+    <p>
+      Always remember that as a restaurant owner your competitors are already indulging in SEO strategies and, therefore, it becomes a traffic game, for <strong>restaurant advertising</strong> your website, the first search ranking on Google seeks an average click-through rate of 27.5%. No one likes to visit the second page of Google, therefore a good SEO plan ensures higher traffic by letting people click on your restaurant before anyone else. The higher the traffic, the more conversion is possible.
+    </p>
+
+    <p>
+      As per advanced statistics, it takes up to 5-7 impressions for customers to make a memory of your business. And here we are talking about the restaurant business so your customers need to know you are there. So for your restaurants to gain maximum traffic, traction and ranking, they have to also be on google search results.
+    </p>
+
+    <p>
+      We hope to have informed you in an exhaustive way how much restaurants need SEO for their business growth
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "10 Amazing Digital Marketing Strategies To Increase Online Bookings",
+    description:
+      "10 Amazing Digital Marketing Strategies To Increase Online Bookings",
+  },
+  title: "10 Amazing Digital Marketing Strategies To Increase Online Bookings",
+  slug: "10-amazing-digital-marketing-strategies-to-increase-online-bookings",
+  description:
+    "Today one of the most competitive sectors is the hospitality industry, once the pandemic was offered people started travelling like there was never a pandemic, never existed. It is also important because the hotel industry is directly linked to the tourism industry.",
+  data: `
+  <div>
+
+    <h1>10 Amazing Digital Marketing Strategies To Increase Online Bookings</h1>
+
+    <p>
+      Today one of the most competitive sectors is the hospitality industry, once the pandemic was offered people started travelling like there was never a pandemic, never existed. It is also important because the hotel industry is directly linked to the tourism industry.
+    </p>
+
+    <p>
+      People travel, and people stay a lot in hotels and make bookings and plan such trips months before they go or are planning to go. Now, the problem with bookings is that too many options not only raise the competition but also create a lot of clutter and unnecessary ways for people to go search and search and never receive or reach the perfect information and website. Now, in such a scenario, it becomes challenging to come and be at the top, Therefore here we are to discuss 10 amazing digital marketing strategies to help you hike your hotel bookings directly and indirectly -
+    </p>
+
+    <h2>The top 10 digital marketing strategies are -</h2>
+
+    <ol>
+
+      <li>
+        <strong>Strong presence and internet visibility</strong>
+        <p>
+          Create a strong presence on the internet, now this may look more easily said than done, but there are multiple ways and operations that you need to perform daily without losing consistency to ensure that your website is receiving traction.
+        </p>
+        <p>
+          To start with the first thing you have to do is to make your website SEO friendly, this is a critical task and may require months of effort to finally get your website ranked or at least get to the first page of search engines. Writing blogs, adding plugins and decorating your website with the right images and videos but at the same time, remember customers have a short span of interest therefore it is important that your hotel website runs effectively during it else the customer will never think twice about leaving your website and never coming back again.
+        </p>
+        <p>
+          So, work on website load speed, optimize it well with the right keywords and take care of both on-page and off-page SEO by creating the right backlinks.
+        </p>
+      </li>
+
+      <li>
+        <strong>Remarketing</strong>
+        <p>
+          What better way to market your hotel than to go back and re-engage with customers that have already shown interest in your hotel, they are the best potential customers you have. If you don’t get it, let us explain to you, suppose a customer comes to your website and after a certain amount of time leaves without making a booking, this particular scenario happens a lot because it is the core of human behaviour but then how do you remarket yourself to them?
+        </p>
+        <p>
+          The answer is remarketing will show the same visitor ads of your hotel on different websites they will browse or log in to. The basic concept of this is to keep reminding them of the original interest and trigger them to come back to complete the booking. Moreover, it is not limited to websites but you can retarget them on social media platforms.
+        </p>
+        <p>
+          Interesting fact - statistically, it is proven through remarketing more than 70% of visitors come back to complete their booking.
+        </p>
+      </li>
+
+      <li>
+        <strong>Increase budget in season months</strong>
+        <p>
+          We are sorry to break this to you but if you think digital marketing is all about technicality and effort then our answer is no. there are ad campaigns that are executed on different platforms like Instagram, Facebook, and Google ads, this way you can promote a particular post for a particular time. But the most important thing to remember is that the marketing budget can vary from time to time. Always target your peak seasons, and know when you can increase your digital marketing budget.
+        </p>
+      </li>
+
+      <li>
+        <strong>Influencer Marketing</strong>
+        <p>
+          Now, we know you are a hotel owner and you want that extra marketing done for your hotel by some famous people, obviously not every owner can have a big celebrity endorsing their hotel but that doesn’t mean you lack options. Because today social media platforms and content creation skills have made many creators good and popular internet personalities. You can always connect with them as per their reach and track of social media engagement for example - you can connect with influencers with a reach of 25K, and in the same range let’s say you connect with 4 influencers then you can reach up to one lac potential customers.
+        </p>
+        <p>
+          Either you pay them in cash or get a barter negotiation for any product. If you are generous enough you can ask them to come and stay in your hotel for a day and night recording everything they do, like, what they eat and visit and posting it on their social media handles to promote your hotel.
+        </p>
+      </li>
+
+      <li>
+        <strong>OTA Listing</strong>
+        <p>
+          If we speak of online travelling agencies, there is a different competition going on between them, some of the famous OTAs in India are GoIbibo, Paytm, Cleartrip, MakeMyTrip and Ixigo, but we talk globally the statistics are promising as well as competitive.
+        </p>
+        <p>
+          Approximately 40% of travellers prefer OTAs which means there is 60% of the customer base is yet to be captured, but that 40% is again bifurcated around 30% book through travel agents, and the rest 20% choose other small options available.
+        </p>
+        <p>
+          This shows how much potential customer base is lying unattended which you can capture using good OTA listings.
+        </p>
+        <p>
+          Link for statistics reference -
+          <br/>
+          <a href="https://www.travelperk.com/blog/online-travel-booking-statistics/#:~:text=41%25%20of%20those%20surveyed%20prefer,booking%20hotel%20rooms%20(Hospitalitynet)." target="_blank">
+            https://www.travelperk.com/blog/online-travel-booking-statistics/
+          </a>
+        </p>
+      </li>
+
+      <li>
+        <strong>Market your location</strong>
+        <p>
+          In this segment, let’s think about how and why should people be visiting your hotel so often, for it, there has to be a purpose or need for the visitor to come and stay in your hotel, and your hotel alone can’t be the reason for it.
+        </p>
+        <p>
+          Therefore comes the element of marketing your location. Initially, it works in tourism aspects where parallel to your hotel you also market your location and play on the factor that your customers are willing or planning to visit your city. You can take advantage of your local popular sites and market them to indirectly market yourself. This is one of the key benefits of hospitality marketing that you can take leverage on other locations to promote your business. Cover festivals, and fairs, gathering and advertising them.
+        </p>
+      </li>
+
+      <li>
+        <strong>Pamper your loyal customers</strong>
+        <p>
+          Never forget your loyal customers, they are your biggest assets, and forgetting about them is as common as compromising your taste after building a customer base for your dishes. The more important it is to have new customers it is equally important to make your old customers know how much important they are.
+        </p>
+        <p>
+          And as far as new customers are concerned, remember your old customers can bring in new customers because there has been no greater publicity ever created than word of mouth and references. From offering free snacks to giving goodbye gifts, people always remember small gestures.
+        </p>
+      </li>
+
+      <li>
+        <strong>Email marketing</strong>
+        <p>
+          Let's play out a scenario, you have visitors in your hotel and you collect their data like contact numbers and email addresses this same scenario you can play out on your website as well, by adding a feature of asking browsing visitors to submit their email addresses whenever they come to your website.
+        </p>
+        <p>
+          Once you have the email addresses collected use them as a data source, remember in the age of the internet data is the new oil, start sending blogs to these email addresses or start an update service offering weekly and monthly newsletters to your database customers.
+        </p>
+        <p>
+          When you do this, you always present in the inbox of your customers and target audience, and it again is a good way of creating a strong presence on the internet. For customers who have visited, this strategy helps in retaining them.
+        </p>
+      </li>
+
+      <li>
+        <strong>Target the right audience at the right place</strong>
+        <p>
+          You need to identify places where your target audience resides, it can be an adventure camp or a happening local spot where most people come from outside. Knowing when to find your target audience and reaching out to them is the foremost strategy there is.
+        </p>
+        <p>
+          When we speak of digital marketing strategies, look for online travel communities, or travel clubs and connect with them to partner or invite them for a weekend getaway. Search for travel pages and collaborate with them. Remember anything can be used for marketing, all you need is the right strategy for it.
+        </p>
+      </li>
+
+      <li>
+        <strong>Keeping one eye on competitors</strong>
+        <p>
+          Yes, one of the most critical aspects that you timely follow is to ensure that you constantly track the business, operations, offers and activities of your competitors. Self-centred companies tend to fail in the market because eventually, they never thought about what their competitor is doing, and by the time they react, it's already very late.
+        </p>
+        <p>
+          Now here we are not asking you to copy your business rivals but to have in mind the strategies that they are implementing is always a good option.
+        </p>
+      </li>
+
+    </ol>
+
+    <p>
+      We hope the blog was insightful and interesting for you, we can always connect to discuss the possibilities of your businesses. Fielmente is often ready to serve you and partner with you in collaborative growth.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How To Market A Hotel Online",
+    description:
+      "How To Market A Hotel Online",
+  },
+  title: "How To Market A Hotel Online",
+  slug: "how-to-market-a-hotel-online",
+  description:
+    "Marketing a hotel is challenging, especially in the modern tourism industry because everyone is trying their best to create an environment of cutthroat competition in the hospitality industry. Gone are the days when traditional marketing techniques used to work in hotels and restaurants. Now, customers want everything at their fingertips.",
+  data: `
+  <div>
+
+    <h1>How To Market A Hotel Online</h1>
+
+    <p>
+      Marketing a hotel is challenging, especially in the modern tourism industry because everyone is trying their best to create an environment of cutthroat competition in the hospitality industry. Gone are the days when traditional marketing techniques used to work in hotels and restaurants. Now, customers want everything at their fingertips.
+    </p>
+
+    <p>
+      So let’s say you have a hotel business, how are you planning to market it online that too in today’s marketing scenarios? Hoarding and placards won’t work, nor pamphlets nor offline marketing. We are talking about online marketing strategies to promote your hotel. So without wasting any more time let’s check out the main strategies that you need to promote your hotel online -
+    </p>
+
+    <h2>Website</h2>
+
+    <p>
+      Okay, first things first, you need a website and most importantly you need a hotel website with online booking and reservation options. It is a must, elsewhere else will you promote your business. Understand that websites are your first digital presence, anyone who is searching for your hotel will search for it on Google and without a website, there will be no digital presence or a virtual address to track or send to your customers, therefore a website is a must needed thing for you to have for your hotel.
+    </p>
+
+    <p>
+      At the same time, you can decorate and attract people to your website using blogs, links, offers, images, graphics, multiple-level options, links, videos and all other forms of content creation that are trending.
+    </p>
+
+    <h2>Social Media Presence</h2>
+
+    <p>
+      Using and catering to all social media platforms, especially Instagram and Facebook to run ads, good creatives, good hashtags and great creativity are what always pays. Those who do not know about your hotel can reach out to them using social media platforms. You won’t believe but people with product-based businesses have started taking orders on Instagram.
+    </p>
+
+    <p>
+      It is not limited to your marketing only, when people visit new places and hotels they are most likely to click and post pictures on Instagram and tag the place, so when you make a social media presence and let people tag you, you create more organic reach and make people follow you.
+    </p>
+
+    <h2>Search Engine Optimization (SEO)</h2>
+
+    <p>
+      SEO, is one of the most critical aspects of digital marketing, to know SEO to be updated with it and finally use it for your hotel business are the three most important factors one must practice.
+    </p>
+
+    <p>
+      Being updated with Google’s algorithm, optimising every page of the hotel’s website, creating internal external links, using content and tools to create backlinks and using photos, videos, and website credentials to draw more and more people to your business is a tedious task but at the same time, it is worth doing because when done right all these practices pay enormously.
+    </p>
+
+    <p>
+      Not going into detail, but the above three are the critical elements that every hotel business must work on to ensure they are marketing their hotel in the right way. If you have well regulated, monitored and maintained website, you are regularly posting on social media platforms and responsibly working on SEO strategies, you are already head to head with your competitors in terms of marketing, all the other elements like writing blogs, guest posting, email marketing, influencer marketing, google ads, running campaigns quora posting are parts of it. In case, you find it hard to do it all by yourself, you should always look for a good digital marketing agency to help you with that.
+    </p>
+
+    <p>
+      We hope that our blog has helped you understand the importance of digital marketing and elaborated on ways to market your hotel. If you are also looking to market your hotel online and are in search of an end-to-end marketing agency Fielmente is the right destination for you, we specialize in hospitality marketing and help you build a long-term business.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Marketing A Hostel: The Basics",
+    description:
+      "Marketing A Hostel: The Basics",
+  },
+  title: "Marketing A Hostel: The Basics",
+  slug: "marketing-a-hostel-the-basics",
+  description:
+    "The history of product marketing spans many centuries, almost as long as there have been goods to sell.  But those times when hanging up posters was the thing to do are long gone. We have a wide variety of marketing options at our disposal today. What's best? So many of these are completely free and only call for a little knowledge. Given how quickly the hostel sector is expanding, it is more crucial than ever to use marketing to connect with potential customers.",
+  data: `
+  <div>
+
+    <h1>Marketing A Hostel: The Basics</h1>
+
+    <p>
+      The history of product marketing spans many centuries, almost as long as there have been goods to sell. But those times when hanging up posters was the thing to do are long gone. We have a wide variety of marketing options at our disposal today. What's best? So many of these are completely free and only call for a little knowledge. Given how quickly the hostel sector is expanding, it is more crucial than ever to use marketing to connect with potential customers.
+    </p>
+
+    <p>
+      Here are some efficient hostel marketing suggestions that you should not disregard.
+    </p>
+<ol>
+
+  <li>
+    <h2>Maintain Contact With Your Target Market</h2>
+
+    <p>
+      One of the foundational pieces of creating your brand is focusing on your target market. Your target demographic will determine your marketing tactics and the channels you should use. Additionally, effectively serving your target customers can help you control a large market segment and establish yourself as an industry leader. You had better start keeping a close eye on them if you do, though.
+    </p>
+
+    <ul>
+      <li>Trends might support your organic growth by increasing awareness of your chain of hostels.</li>
+      <li>Consider memes; utilizing a popular meme format can do wonders for your company and increase brand visibility on appropriate channels.</li>
+    </ul>
+
+    <p>
+      On the other hand, if your target market is the kind that visits your website or utilizes email, you may adjust your strategy accordingly.
+    </p>
+  </li>
+
+  <li>
+    <h2>Referrals & Reviews</h2>
+
+    <p>
+      When customers are unsure which brand to choose, reviews can be quite helpful. You may see why by recalling your most recent Amazon purchase, where you read several reviews. Do not be afraid to request reviews from your guests; even better, request them while they stay at your hostel. They're enjoying themselves and will be more likely to give you the positive review you're hoping for because they're having a good time.
+    </p>
+
+    <ul>
+      <li>Hostels encourage connection and socialization, unlike hotels, which tend to have a sense of isolation.</li>
+      <li>Conveying that sense of engagement is critical because doing so will help you build relationships with your audience anywhere you have a presence. However convenient it may sound, avoid using an automated response if possible.</li>
+      <li>Personalizing your comments demonstrates your concern and will significantly enhance your audience's perception of you.</li>
+    </ul>
+  </li>
+
+  <li>
+    <h2>Never Undervalue Your Website</h2>
+
+    <p>
+      Do you know how everyone is always stressing how crucial first impressions are? It's accurate and doesn't simply apply to people, though. Even if you contend that people frequently view your Instagram account, remember that everything online ultimately points to your website. Your website needs to target your target demographic and reflect your brand identity effectively.
+    </p>
+  </li>
+
+  <li>
+    <h2>Employ SEO</h2>
+
+    <p>
+      It's crucial to remember that you must now satisfy your target audience and the search engine algorithms. You can use the power of SEO, many of which may be completed without spending any money. Because of this, it ranks as one of the best marketing counsel for hostels.
+    </p>
+
+    <ul>
+      <li>Use main keywords on your website to start, as they will help you rank better in search engines.</li>
+      <li>To determine which terms are more relevant than others, make use of both free and paid web tools like Ubersuggest, Google Adwords, and Google Trends.</li>
+    </ul>
+  </li>
+
+  <li>
+    <h2>Don't Go Overboard</h2>
+
+    <p>
+      We have a dizzying array of marketing techniques, so you must also exercise prudence. This is possibly the most underutilized hostel marketing tip there is. Anyone would not want to be inundated with texts, emails, and forwards everywhere they turn.
+    </p>
+
+    <ul>
+      <li>Based on the analysis, pick your marketing channels appropriately.</li>
+      <li>Although email marketing is effective, that doesn't necessarily indicate that it will be effective for you. Avoid WhatsApp if you won't gain anything from using it as a conduit.</li>
+    </ul>
+  </li>
+
+</ol>
+    
+    <h2>Conclusion</h2>
+
+    <p>
+      These practical hostel marketing suggestions are merely the broad strokes of what you ought to be doing. But you need an organized marketing plan to achieve success, which Filemente can provide you. Consistency is essential since doing the right thing will increase your brand awareness and clientele.
+    </p>
+
+    <p>We combine -</p>
+
+    <ul>
+      <li>search engine optimization (hotel seo)</li>
+      <li>email marketing</li>
+      <li>social media marketing</li>
+      <li>reputation management</li>
+      <li>Google & Search Engine Ads</li>
+      <li>Video Commercials</li>
+      <li>OTA Optimization and much more with our hostel seo marketing strategy.</li>
+    </ul>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How Google Map Citation Improves Your Hotel's Online Presence",
+    description:
+      "How Google Map Citation Improves Your Hotel's Online Presence",
+  },
+  title: "How Google Map Citation Improves Your Hotel's Online Presence",
+  slug: "how-google-map-citation-improves-your-hotels-online-presence",
+  description:
+    "If you're not yet familiar with Google Map citation, no worries! Simply put, a citation is when you share your business name, address, website, and contact details on other websites. It's a great way to help people find you! These are business listings done by millions of websites that comprise a business listing directory for yours.",
+
+  data: `
+  <div>
+
+    <h1>How Google Map Citation Improves Your Hotel's Online Presence</h1>
+
+    <p>
+      If you're not yet familiar with <strong>Google Map citation</strong>, no worries! Simply put, a citation is when you share your business name, address, website, and contact details on other websites. It's a great way to help people find you! These are business listings done by millions of websites that comprise a business listing directory for yours.
+    </p>
+
+    <p>
+      So, let's start with the basics.
+    </p>
+
+    <p>
+      You have a business- a restaurant, a cafe, or a hotel per se. What does it mean for you to be listed and viewed on a Google search?
+    </p>
+
+    <p>
+      When we discuss restaurants, hotels, and eateries, it is not just any business- it is an establishment. As the owner of such an establishment, you would like people to come in as much as possible. You would be elated to know if they enjoyed it, and tell others too. For this to happen different Google and SEO tools like Semrush, Keyword Planner, and Google My Business will help you, and Google Citation is one of the pivotal ones.
+    </p>
+
+    <p>
+      <strong>Let's explore how Google citations can enhance your hotel or restaurant's visibility in the digital marketplace.</strong>
+    </p>
+
+    <h2>SEO Technicalities</h2>
+
+    <p>
+      We all want to please Google- and that's a fact! For that, you need to show Google a strong digital presence for your business. It is quite important especially when it comes to cafes, eateries, and restaurants. As your business listings increase, you have a better chance to secure good Google rankings. Being present everywhere with standard, essential details gives your business a very reputed digital structure.
+    </p>
+
+    <h2>The Tagging Game</h2>
+
+    <p>
+      A good map citation helps a business in multiple ways. We cannot stress it enough! It's critical to make a strong digital presence for your brand. When people visit an impressive place, they like to post stories, click pictures, and most importantly, add its location and tag it. If you are not present on the <strong>Google map citation</strong>, it can significantly impact your business credibility and rankings. Well, that is a big problem! So, to promote organic publicity and attract more visitors, you need an effective map citation on Google.
+    </p>
+
+    <h2>For People Who Don't Use Google</h2>
+
+    <p>
+      Yes, we know! It's unbelievable. Many people do not use Google as their first option for research. So if a potential customer is trying to search for a good hotel or a restaurant, but searching on a platform other than Google- will you be found? The answer is yes. <strong>Google Map Citation</strong> exists for this very reason. With a clear redirection to your directory listing, it attracts potential clients from anywhere instantly.
+    </p>
+
+    <h2>Paid Ads and Subscriptions</h2>
+
+    <p>
+      Multiple business listing websites offer premium services and listings for a price. Through this, they keep your business on top of their search results, offer ad banners and many other options for you to promote your business. In India, platforms like Justdial, Indiamart, Sulekha, etc. are great examples. Similarly, some websites allow you to promote your business for free which eventually adds up to your digital business profile and Google citations.
+    </p>
+
+    <h2>Business Promotion and Directions</h2>
+
+    <p>
+      Suppose a person visited your hotel, liked your service and told all his friends about this amazing stay he had. Now one day, one of his friends decides to visit your hotel based on the good reviews from his friend. But wait- there is no location on the map! Since your hotel never ranked on Google citation, your business lost a potential customer. This is just one example. Things can go wrong in many ways for your future clients.
+    </p>
+
+    <p>
+      So, what are you waiting for?
+    </p>
+
+    <p>
+      Connect with experts like Fielmente to learn more about Google Map Citation strategies.
+    </p>
+
+    <p>
+      Consult with our hospitality marketing agency today.
+    </p>
+
+    <p>
+      Are you facing similar issues while understanding the ups and downs of Google listing and business promotion? Connect with us at Fielmente and discover what we can do for your brand's digital image. Ensure your business has the right level of exposure and presence.
+    </p>
+
+    <p>
+      Get a consultation today!
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How are these restaurants in Canada disrupting the restaurant business through digital marketing",
+    description:
+      "How are these restaurants in Canada disrupting the restaurant business through digital marketing",
+  },
+  title: "How are these restaurants in Canada disrupting the restaurant business through digital marketing",
+  slug: "how-restaurants-in-canada-are-disrupting-the-restaurant-business-through-digital-marketing",
+  description:
+    "The restaurant business in Canada has been at an all-time high due to the variety of cultures present.",
+  data: `
+  <div>
+
+    <h1>How are these restaurants in Canada disrupting the restaurant business through digital marketing</h1>
+
+    <p>
+      The restaurant business in Canada has been at an all-time high. The major reason for this is the variety of cultures that are present. Due to this, there are a wide variety of restaurants in Canada that are hugely popular and have created a benchmark in the <span style="background-color: yellow;"><strong>F&B industry</strong></span>. However, the last few years have had a big impact on the restaurant business. The major reason has been the pandemic, which has now existed for a couple of years now. Due to it, people feared going out to a restaurant and having their favourite meal.
+    </p>
+
+    <p>
+      The sales in restaurants started going down quickly and as a result, many of them had to shut down completely. However, a few of them understood and evaluated the conditions in such a way that it turned out to be a boon for them and they have converted it into an opportunity. Many branded restaurants like <span style="background-color: yellow;">Dhruvees by Wingell Hospitality, The Hakka Club Saint Barbara, The Hakka Club Argentia, and Desi Bar & Grill</span> have <strong>used the Digital Marketing strategy from Fielmente hospitality marketing agency, India</strong> to make the most of the situation and still remain in the picture, even if people were unable to go out for dining.
+    </p>
+
+    <h2>How Digital Marketing is boosting the restaurant industry in Canada?</h2>
+
+    <p>
+      During the last few years, the strategy of attracting more customers has completely changed. <span style="background-color: yellow;">Where the F&B industry was more reliant on physical and word-of-mouth promotions in the past, they have now started approaching potential customers through digital mediums. It is where Digital Marketing has been the most powerful tool for the segment to connect with people and place themselves as a brand.</span>
+    </p>
+
+    <ul>
+      <li>Digital Marketing keeps the business in focus or of relevance by making sure that it is active on social media and gaining more followers.</li>
+      <li>Regular updates on the website and optimizing it in a way so that it ranks higher on the search engines every time.</li>
+      <li>Increasing the online presence of the business using various platforms</li>
+      <li>Providing more ways to contact the restaurant and increasing their online business at times when offline business is low.</li>
+      <li>Increasing the interaction with the customer by getting their feedback, views, and reviews through various modes like E-mail, Social Media, survey forms, and more.</li>
+      <li>Using Influencer marketing on social media websites and platforms.</li>
+      <li>Network and Associate with other local businesses to increase the business network.</li>
+      <li>Email Marketing to let the customers know about the latest discounts and new offerings.</li>
+    </ul>
+
+    <h2>How these restaurants are making the most out of the business using Digital Marketing</h2>
+
+    <p>
+      One of the major reasons why restaurants like Dhruvees, The Hakka Club Saint Barbara, The Hakka Club Argentia, Desi Bar & Grill have been able to make the most out of their business using digital marketing is because of representing them as a brand. It is one thing that is common among all of them. They have used digital marketing tools to make sure that their restaurant comes out as a brand, which would eventually lead to a brand loyal following. <span style="background-color: yellow;">Since people have been spending more time online during the pandemic, especially on social media websites, it has become the perfect platform to connect with customers and let them know</span> about the restaurants near them
+    </p>
+
+    <p>
+      It leads to more and more companies coming online and increasing their presence on social media platforms to stay highlighted every time. The same strategy was also used by the restaurants where they focused on increasing their presence on these social media websites and also through their own website. Using the digital marketing tools they were able to create a better and more engaging website for themselves which increased the customer interaction and also promoted them as a self-sufficient brand. Similarly, the restaurants became more active on social media websites, through their pages and advertisements, which made sure that they came as the top results in relevant searches. Here are a few things and strategies that were used by all these restaurants in Canada to promote their business.
+    </p>
+
+    <p><strong>Image:</strong> Instagram Page of The Hakka Club Saint Barbara</p>
+
+    <h2>Visual Appeal</h2>
+
+    <p>
+      Food that looks good, makes you hungry and tempts it even more. It is one strategy that these restaurants have used to attract more customers. If you look at the <span style="background-color: yellow;"><a href="https://www.instagram.com/thehakkaclub_saintbarbara/" target="_blank">Instagram</a></span> page of The Hakka Club Saint Barbara, you will find that it has various pictures of their recipes. These images have been edited in a way that looks a lot more tempting and delicious, which automatically attracts the customer to want and try their food. The same is the case with the pages on Facebook. These restaurants have been adding various posts and images of their food to attract more and more customers to try it. Similar things can be done on the website as well, where it is regularly updated with new content and attractive images of the food delivered by the restaurant.
+    </p>
+
+    <h2>Online Delivery</h2>
+
+    <p>
+      Digital Marketing has helped these restaurants in the online delivery of their food as well. Even if the customers are not willing to visit the restaurant due to pandemic precautions, they can still order their food online. With the help of Digital marketing, these restaurants were able to create engaging websites which allowed them to order the food directly without any hassle. The navigation on the website has made it easy for people to check the menu and order directly. Similarly, the same online delivery promotions were used to inform people about online deliveries at their doorstep and the discounts one can avail of from that. Through Digital Marketing, their restaurant was able to convey a message to the customers that even if they are unable to visit the restaurant, they can relish the same taste from their home. One of such examples that restaurants have adopted is the delivery of food in a fixed and promised time.
+    </p>
+
+    <h2>Expanding the Network</h2>
+
+    <p>
+      Digital marketing not only helps to set up the restaurant as a brand but also helps them to increase their network of business which would further help them in earning revenue. Through Digital marketing, restaurant owners can strategize with other small business owners in the area and use affiliate relationships to increase their business. For example, guest posting on each other's blogs and recommending the restaurant services is one such way of increasing the network. Another example is that you can connect with a local hotel, which can recommend the restaurant on their website and social media page with discounts.
+    </p>
+
+    <h2>High Online Engagement with Blogs</h2>
+
+    <p>
+      Blogs are one of the best mediums through which you can get reviews and feedback from users. Through Digital Marketing, the engagement on these blogs is kept high, which helps in increasing the community who are brand loyal to the restaurant. Similarly, the restaurant can update the website and blog regularly so that people are able to see something new every time they visit it. It can be an offer, discount, scheme, introduction of a new recipe, and much more. Digital marketing keeps the community involved to increase their engagement and also increase their referrals to others.
+    </p>
+
+    <h2>Improving the Local SEO</h2>
+
+    <p>
+      You might have often searched for a restaurant near your home or office, with the words, "Restaurant near me". The results that you get from the search show you the most popular restaurants in the area that are close to you. This is what we call Local SEO. Improving the search parameters through Local SEO is one of the best ways to bring customers to the restaurant organically. It is one of the most important steps to attract the customer and something which all the popular restaurants mentioned above have done. Using Local SEO, whenever a person will search online for a restaurant nearby, the restaurant will mark the top place among the search results.
+    </p>
+
+    <h2>Verdict</h2>
+
+    <p>
+      These are some of the major digital marketing techniques followed by restaurants like Dhruvees, The Hakka Club Saint Barbara, The Hakka Club Argentia, Desi Bar & Grill, and a lot more. It has not only helped them in their offline restaurant business but has also helped them to build their brand image among people. As a result, they now have a much bigger fan following for their food and they could connect with the customers anytime through the online platform. It has not only helped the restaurants build a larger base, but also helped them to stay connected with the customers, no matter what the situation is.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How Digital Marketing and SEO changing the face of Cloud Kitchen business",
+    description:
+      "How Digital Marketing and SEO changing the face of Cloud Kitchen business",
+  },
+  title: "How Digital Marketing and SEO changing the face of Cloud Kitchen business",
+  slug: "how-digital-marketing-and-seo-changing-the-face-of-cloud-kitchen-business",
+  description:
+    "Digital Marketing and online marketing techniques are not new to anyone.",
+  data: `
+  <div>
+
+    <h1>How Digital Marketing and SEO changing the face of Cloud Kitchen business</h1>
+
+    <p>
+      Digital Marketing and online marketing techniques are not new to anyone. However, in the last few years, various techniques of Digital marketing have evolved so much that even industries that relied on physical promotion have started using online marketing techniques. One such business is Cloud Kitchen business, which has evolved a lot in the last few years, especially during the time of the pandemic, when people were hesitant to go outside. Many hotel marketing solutions have been developed for such Cloud Kitchen business which has not only increased their business online but has also helped them in establishing their image as a brand. In this entire process, SEO has played a very important role, where users were increasingly noticing the cloud kitchen brand online. Digital Marketing techniques like restaurant marketing blog, SEO, E-mail marketing, social media marketing, and more have been used efficiently to promote the business. This article will discuss various restaurant digital marketing strategies and how hospitality marketing has helped in the hotel branding of Cloud Kitchen.
+    </p>
+
+    <h2>Registering the business on My Business from Google</h2>
+
+    <p>
+      When it comes to cloud kitchen marketing, registering it on My Business from Google should be the primary step. Almost all the hotel marketing companies in India would suggest this to a cloud kitchen. While registering on the website, the users are asked about the hotel or cloud business, the location, and all the other necessary details. Once the details are saved and a profile is created for your business, you will be available for search whenever someone searches for a business similar to yours on Google. Not only this, but this hotel's digital marketing technique will also help you to enhance your Local SEO. When someone will search for a cloud kitchen or restaurant near them or in the same area, your Cloud kitchen profile page would appear instantly on the search results. Improving your Local SEO like this would help in increasing your business and brand value locally.
+    </p>
+
+    <h2>Creating an SEO friendly Website</h2>
+
+    <p>
+      One of the major features of any cloud kitchen is that they are prominently working on online sources. Therefore, you need to have a strong presence on the internet, which would include you to have a good SEO-friendly website. Having a good website is the primary requirement of cloud kitchen marketing and hotel digital marketing. Unless you have your own SEO-friendly website, you will not be able to set up yourself as a brand among people. To have a great SEO-friendly website, you need a few elements.
+    </p>
+
+    <h3>Use all the elements</h3>
+
+    <p>
+      You need to make sure that your website has all the elements that would increase its visibility of it on the internet. It includes metatags, title, meta description, sitemap, alt tags, and original content.
+    </p>
+
+    <h3>Keywords for SEO search improvements</h3>
+
+    <p>
+      Once you have the website ready, you will have to add content to it as well. You will have to make sure that as per the restaurant's digital marketing, you need to add all the keywords associated with your business. The more accurate the keywords are, the more you will appear in the top ranks of Google Search.
+    </p>
+
+    <h3>Incorporate a Blog</h3>
+
+    <p>
+      Adding a blog to your website is one of the primary marketing strategies for the restaurant. A blog can be helpful for cloud businesses in many ways. First, it would allow the users or customers to directly give feedback on the food or the improvements they can make. Secondly, you can attract customers to the website by adding blogs based on similar topics to your business. It would help in increasing the traffic to the website. Lastly, it would also help in restaurant branding. Having direct communication with customers through blogs has a very positive impact on customer relationships.
+    </p>
+
+    <h2>Be more active on Social Media</h2>
+
+    <p>
+      There is no doubt in the fact that Social Media has been one of the best digital marketing techniques for cloud kitchens and restaurants. However, not many people know how to use it effectively for their business. Just like building a website for restaurant branding, you need to amp up the content in social media marketing using various elements. A hotel marketing company would always suggest you post regular and attractive posts on social media to attract a lot of potential customers.
+    </p>
+
+    <h3>Create a Profile on Facebook, Instagram, Youtube, and more</h3>
+
+    <p>
+      One of the major requirements of cloud kitchen marketing is to create a profile on every social media platform. An active social medial profile on websites like Facebook Instagram, Pinterest, Youtube, Twitter, and more would keep you connected with the customers. An active association on social media platforms will make sure that your brand image always remains fresh in the customer's minds and they are always able to remember you immediately when they think about your business.
+    </p>
+
+    <h3>Graphics and Visuals</h3>
+
+    <p>
+      As per many hotel marketing companies in India, text and simple images on Social Media do not work anymore to attract customers. A cloud Kitchen should post attractive images, videos, and new things to attract the customer's view on it. It is one of the best ways to increase organic traffic for any cloud kitchen. Similarly, you can also create a Q/A session for your followers or just a feedback session from them.
+    </p>
+
+    <h3>Promotions through Influencers</h3>
+
+    <p>
+      It is one of the most used hotel digital marketing techniques right now where cloud kitchen business is promoting their brand through many social media influencers on Youtube, Facebook, and Instagram, who already have millions of followers. This technique is not only effective but also gives great results as well.
+    </p>
+
+    <h3>Video Marketing</h3>
+
+    <p>
+      Video Marketing is one of the most effective techniques for restaurant branding. Restaurant marketing companies in India have been using video now not only to create video ads but to give an experience to the users. These videos are meant to connect with the potential customers emotionally to attract them and connect them with the business as a brand. This marketing strategy for restaurants helps to create videos that include stories, emotions, and imaginations that would instantly connect with the customers. Live video sessions, providing recipe details, promoting the most authentic and nostalgic recipes, and giving information on Covid guidelines are some of the personalized details one can add in the video for the cloud kitchen business.
+    </p>
+
+    <h2>SMS and E-mail marketing</h2>
+
+    <p>
+      It is one of the most used cloud kitchen marketing techniques that almost every business is using right now. Using SMS and e-mails helps not only to stay connected with the user but also let me know about what new you are offering to them. This marketing technique in restaurant advertising is one of the best ways to inform the customers about the latest offering and give them details about the orders. These are especially more effective if the user is not as active on social media and is more connected through e-mail.
+    </p>
+
+    <h3>Use CRM tools</h3>
+
+    <p>
+      Using automated CRM tools in E-mail and SMS marketing can be of great help. The automated process makes sure that the e-mails and notifications are regularly sent to the customers. The CRM tool will also help you to capture customers' data and provide a more personalized user experience based on it.
+    </p>
+
+    <h3>Sending Personal Greetings</h3>
+
+    <p>
+      One of the trade secrets of e-mail and SMS marketing under hotel digital marketing is that they often use personalized messages for the customers on their birthdays, anniversaries, and other personal events. Wishing them on such events will automatically help create a bond between the customer and cloud kitchen brand which would increase their brand loyally.
+    </p>
+
+    <h3>Exclusive Offers</h3>
+
+    <p>
+      SMS and E-mail marketing are also a great way for customers to know about any exclusive offer and discount that the cloud kitchen is currently running. Also, it is a great way to link the website with the e-mail, which would automatically increase the traffic on the website as well. The business can also send coupons to the customers via e-mail where they can be stored permanently.
+    </p>
+
+    <h2>Verdict</h2>
+
+    <p>
+      These are a few and most effective marketing techniques for restaurant branding and especially for cloud kitchens. Be it any hotel marketing company in India, would use these techniques to promote a cloud kitchen business. If you have started a cloud kitchen recently or are planning to open one soon, then make sure that you use these restaurant digital marketing to effectively reach the customers.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How Facebook and Instagram ads can increase your food orders",
+    description:
+      "How Facebook and Instagram ads can increase your food orders and how you get the benefits out of it",
+  },
+  title: "How Facebook and Instagram ads can increase your food orders and how you get the benefits out of it and why it is the most important part of the social media",
+  slug: "how-facebook-and-instagram-ads-can-increase-your-food-orders",
+  description:
+    "Life can be tough for an independent hotel or restaurant. Social media marketing strategies can help drive traffic and increase revenue.",
+  data: `
+  <div>
+
+    <h1>How Facebook and Instagram ads can increase your food orders and how you get the benefits out of it and why it is the most important part of the social media</h1>
+
+    <p>
+      Life can be tough for an independent hotel or restaurant. Whether it’s competing with chains, attracting business travelers and vacationers, or just getting people to stop in for lunch, there are lots of factors to consider. Luckily, the rise of social media has given small businesses an easy way to get their messages out into the world. This post shares some ways that you can use social media marketing strategies to drive traffic and make more money at your establishment.
+    </p>
+
+    <h2>What is hotel & restaurant marketing through social media?</h2>
+
+    <p>
+      Recently, more restaurants are opening around the globe, making certain areas hotspots for foodie tourism. Not to mention ghost kitchens are giving tough competition to the traditional restaurants and hotels. Enforcing them indirectly to implement restaurant and restaurant performance marketing through social media.
+    </p>
+
+    <p>
+      In contrast to more traditional hospitality marketing strategies such as yellow pages and newspaper ads, social media platforms such as Facebook and Instagram have played a significant role. The use of social media has enabled businesses to reach a huge audience across the globe while also providing a cost-effective method of promoting their products and services.
+    </p>
+
+    <p>
+      Put simply, growing a hotel or restaurant through digital marketing is the process of using popular social media platforms like Facebook and Instagram. Where it becomes easier to attract potential customers by sharing key visuals of beverages, foods, and affordable services to build a social standing in the market. Let's learn more about Instagram and Facebook marketing in depth.
+    </p>
+
+    <h2>Importance of Facebook and Instagram ads in 2022</h2>
+
+    <p>
+      We are living in a time where social media has become so integrated into our modern lives that it has become an essential part of daily life. This is evident by its increasing global popularity as well as its almost constant connectivity with people from all regions on Earth. At the moment there are over four billion users on Facebook and 1.5 billion active users on Instagram.
+    </p>
+
+    <p>
+      Hence, over the next few years, we will see even more Instagram and Facebook usage with the continued growth of ad spending in these areas. This is largely due to their popularity among younger demographics. The ability to reach people from a much wider demographic range such as children and teens through social media ads is what drives their usage.
+    </p>
+
+    <h2>An integral part of the social media ecosystem</h2>
+
+    <p>
+      Social media has become an enormous business that is worth billions of dollars every year. There are many different kinds of businesses that use Facebook and Instagram to promote their brands by creating or sharing content with their followers. They post photos and videos, share news and events, ask for feedback or use giveaways to involve their followers in their brand's life.
+    </p>
+
+    <h2>More conversions with better outreach</h2>
+
+    <p>
+      To increase business outcomes, it’s important to reach as many potential clients as possible as quickly as possible while also making sure that they become more loyal customers over time. More than 60% of individuals complete their purchases within a day of their initial interaction with the social ad. Because these advertisements are designed to generate interactions that actually lead to sales.
+    </p>
+
+    <h2>Increase food orders based on community feelings</h2>
+
+    <p>
+      One advantage that makes Facebook and Instagram promotions so effective is that they generate community-oriented feelings. This makes it easy for people to establish relationships with brands through their photos, posts, and videos. Additionally, this allows users to feel as though they know a brand, which can ultimately lead to more food orders and the sharing of information.
+    </p>
+
+    <h2>Best for businesses with kitchen marketing needs</h2>
+
+    <p>
+      As more people use social media sites such as Facebook and Instagram on a daily basis, businesses largely focused on the kitchen industry can gain from capitalizing on these opportunities. Businesses that engage in product marketing and advertising on platforms such as Facebook and Instagram, in particular, can reap huge rewards by capitalizing on their rising audiences.
+    </p>
+
+    <h2>How to get the most out of your paid social ad campaigns?</h2>
+
+    <p>
+      The answer to this question largely depends on the type of business you are running. For instance, if you are in charge of a restaurant or hotel, there is a different set of tactics than if your business is in the clothing industry. That being said, there are attributes that most successful social ads have in common and we’ve compiled some advice below to help you reach your goals.
+    </p>
+
+    <ol>
+
+      <li>
+        <strong>Automate the marketing process</strong>
+        <p>
+          If you are looking to create campaigns that are more effective, one of the best ways to do this is to improve the automation of your process. By adhering to a well-defined campaign process, you will be able to repeat it for each campaign and be able to increase effectiveness across all types of campaigns. This is because recurring campaigns require less testing and creative direction. And can help you supercharge your hospitality performance marketing activities more effectively.
+        </p>
+      </li>
+
+      <li>
+        <strong>Using visually attractive media</strong>
+        <p>
+          The success of such ads depends on the quality of creativity that is used. To be effective the images and text must be aligned with the company's brand messaging, target audience, and product or service. It is vital to ensure that all of these elements are clearly defined before, during, and after the campaign. If a marketer has clear goals for their campaign and understands how it fits in with their business model then they'll be more likely to connect with audience members.
+        </p>
+      </li>
+
+      <li>
+        <strong>Promote hotel branding with logo and blogs</strong>
+        <p>
+          By definition, hotels represent a high standard of luxury and attention to detail. They are synonymous with leisure and comfort, featuring luxurious amenities and superior facilities that are perfect for business travelers or holidaymakers alike. Therefore, utilizing your restaurant logo and brand value combined, can create an everlasting first impression on every new customer. On top of that, you can boost the growth by starting a blog for restaurant marketing where people can read reviews and get a better understanding of your services.
+        </p>
+      </li>
+
+      <li>
+        <strong>Adding cloud kitchen marketing to the campaigns</strong>
+        <p>
+          Cloud kitchens are being used by marketers to help create a new customer experience while creating a new revenue stream. The technology gives marketers the ability to start a virtual cloud kitchen hassle-free. And with new cooking tools and appliances, marketers can test-run recipes and track sales data in real-time. Not to mention the hotel logo plays an essential role in such situations when you don't have a physical storefront.
+        </p>
+      </li>
+
+      <li>
+        <strong>Hiring a Restaurant marketing company in India</strong>
+        <p>
+          Restaurant marketing companies work on behalf of restaurants in India. This means that if you want your restaurant to be successful, you need to choose the right company and pitch them with convincing reasons why they should take on your project.
+        </p>
+      </li>
+
+      <li>
+        <strong>Creating a marketing strategy for restaurant</strong>
+        <p>
+          This will allow you to align your creative assets with the campaign goals and create ads that will appeal to your audience members. The more defined your strategy, the clearer it will be for everyone involved in creating ads so that they understand how their efforts fit into the bigger picture.
+        </p>
+      </li>
+
+      <li>
+        <strong>Regular tracking of campaigns</strong>
+        <p>
+          To ensure the campaign continues to run successfully, you will also want to keep track of your campaigns. This can be easily done from the ad campaigns dashboard of the platform that allows you to view analytics on results and performance.
+        </p>
+      </li>
+
+      <li>
+        <strong>Follow audience interests</strong>
+        <p>
+          Trying different hotel marketing solutions may seem like a difficult task but it's totally worth it when you compare the results. Start by paying more attention to user-generated content (images, short videos, etc).
+        </p>
+      </li>
+
+    </ol>
+
+    <h2>Bottom line</h2>
+
+    <p>
+      Getting in more orders for your new restaurant or hotel can be quite difficult if you have entered the market recently. However, choosing a reliable marketing agency or following our methods can push you through the difficulties more easily. Needless to say, using Facebook and Instagram for marketing purposes can actually turn into a fun activity with a positive approach.
+    </p>
+
+    <h2>References</h2>
+
+    <ul>
+      <li>
+        <a href="https://www.bigcommerce.com/blog/social-media-advertising/#social-media-advertising-examples" target="_blank">
+          https://www.bigcommerce.com/blog/social-media-advertising/
+        </a>
+      </li>
+      <li>
+        <a href="https://pos.toasttab.com/blog/on-the-line/examples-of-awesome-restaurant-social-media" target="_blank">
+          https://pos.toasttab.com/blog/on-the-line/examples-of-awesome-restaurant-social-media
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How Can LinkedIn Help You To Expand Your Restaurant Business?",
+    description:
+      "How Can LinkedIn Help You To Expand Your Restaurant Business?",
+  },
+  title: "How Can LinkedIn Help You To Expand Your Restaurant Business?",
+  slug: "how-linkedin-helps-expand-your-restaurant-business",
+  description:
+    "Utilizing social media to promote a restaurant marketing company in India does not have to be expensive, but it does take time. Don't waste time choosing which social media platforms are ideal for promoting your restaurant. Each tool has its personality, giving you access to distinct features. There are several reasons why restaurants should use LinkedIn for restaurant advertising.",
+  data: `
+  <div>
+
+    <h1>How Can LinkedIn Help You To Expand Your Restaurant Business?</h1>
+
+    <p>
+      Utilizing social media to promote a <strong>restaurant marketing company in India</strong> does not have to be expensive, but it does take time. Don't waste time choosing which social media platforms are ideal for promoting your restaurant. Each tool has its personality, giving you access to distinct features. There are several reasons why restaurants should use LinkedIn for <strong>restaurant advertising</strong>.
+    </p>
+
+    <p>
+      LinkedIn is a professional networking site. Think of it as a continuous trade exhibition where you may promote your <strong>cloud kitchen marketing</strong>. There are a variety of major and little alternatives available to help you earn money and establish a more known <strong>restaurant branding</strong>. Examine the alternatives below and consider making a few tweaks to expand your business's options.
+    </p>
+
+    <h2>LinkedIn's Advantages in the Restaurant Marketing Agency</h2>
+
+    <p>
+      The following are some LinkedIn's Advantages in the <strong>Restaurant Marketing Agency</strong>:
+    </p>
+
+    <ul>
+      <li><strong>Specialist:</strong> It isn't easy to succeed in the restaurant sector without assistance, specifically if it's your first time. A restaurant investor with a track record of success can assist your company in overcoming hurdles.</li>
+      <li><strong>Research into the market:</strong> Investigate what your rivals are up to, who they are communicating with, and what they are posting.</li>
+      <li><strong>Recruiting Talent:</strong> From head chefs to bartenders, search for and hire new personnel marketing strategy for restaurants.</li>
+      <li><strong>Recruiting Talent:</strong> From head chefs to bartenders, search for and hire new personnel for your restaurant marketing.</li>
+      <li><strong>Demonstrating your abilities:</strong> Create extremely graphic postings to highlight your professional knowledge and skills.</li>
+      <li><strong>Engage with high-end clients:</strong> Appeal to people who may have substantial money to spend or invest in your environment if you're speaking to a group of senior executives.</li>
+      <li><strong>Interactions:</strong> Experienced restaurant investors have industry contacts and can expose you to industry experts, partners, and business possibilities that you would not have had the opportunity to meet otherwise.</li>
+    </ul>
+
+    <h2>On LinkedIn, who should you connect with?</h2>
+
+    <p>
+      LinkedIn caters to a wide range of people that could be interested in your restaurant. You may connect and communicate with anybody, from <strong>restaurant branding</strong> whom you would want to pay you a visit to top-tier chefs whom you might want to join your team.
+    </p>
+
+    <p>
+      You may also attract possible new suppliers, performers, and business leaders to organize breakfast meetings and luncheons in your restaurant. From <strong>restaurant marketing</strong> to potential skilled workers, you may make contacts and communicate with them.
+    </p>
+
+    <p>
+      Connecting with entertainers, developing new supplier contacts, and requesting out-of-house meetings with business officials might be beneficial uses of LinkedIn.
+    </p>
+
+    <h2>Making plans for your LinkedIn strategy</h2>
+
+    <p>
+      Some eateries set up a corporate profile on LinkedIn. Others utilize a personal page to build a stronger relationship with their clients. Creating a Linkedin account for someone that consumers identify as the face of the company is an efficient approach to achieve this. A suitable candidate is a long-time manager who makes most of the business relationships.
+    </p>
+
+    <p>
+      Many <strong>restaurant marketing companies in India</strong> have mastered the art of integrating social media marketing. They personalize Facebook postings for social customers, while LinkedIn posts are tailored to the customer's professional life.
+    </p>
+
+    <h2>Expand your network</h2>
+
+    <p>
+      If you ever want your network to expand, you'll have to put in some effort to make it happen. Your network will never expand and flourish unless you make an effort to connect with other users. So, keep an eye out for potential partners, individuals of interest, and potential future workers in your network and through LinkedIn's automated suggestions.
+    </p>
+
+    <p>
+      If you discover someone interesting, you may send them a personal message to start a discussion. You can ask for an introduction from a mutual friend if you have one.
+    </p>
+
+    <h2>Catering</h2>
+
+    <p>
+      Catering is one of the most common ways to extend a <strong>restaurant agency</strong>. This may be highly useful to your bottom line if you are located in a large city. Caterers may make a lot of money by catering weddings, conferences, parties, and other events. People are familiar with your meals if you have a well-known <strong>restaurant branding</strong>.
+    </p>
+
+    <p>
+      Play around with a prospective catering menu to determine whether it's a viable choice for your company. You'll need to figure out what kind of catering you'll be doing, whether with service help or just meal delivery. You can evaluate the benefits and drawbacks of several solutions and decide if catering is something you want to try.
+    </p>
+
+    <h2>Service of Delivery</h2>
+
+    <p>
+      Offering delivery service is a simple way to add a new dimension to your <strong>restaurant agency</strong>. Even if you're a sit-down restaurant, there are ways to get your menu items to your customers. Begin by delivering only a small number of menu items in a given location. If you discover a need for this service, you may expand your service area and hire more delivery drivers.
+    </p>
+
+    <p>
+      Offering delivery services might help your business by providing a second cash stream. Consider your location and whether or not this is realistic. Before starting a delivery service with your <strong>restaurant marketing</strong>, there are a few things to think about. Take notes to evaluate whether this is a viable solution for your company.
+    </p>
+
+    <h2>Creating new dining locations</h2>
+
+    <p>
+      Opening a new eating place would be a great way to expand. Maybe your <strong>marketing strategy for a restaurant</strong> is in a huge metropolis, and you'd like to expand into the next town over. If there is a demand, you can locate a good site, and you have the time and energy to start a new venue, this might be helpful.
+    </p>
+
+    <p>
+      This is the most expensive expansion, but it may also be the most lucrative. Do your research if you're thinking of launching a new <strong>restaurant agency</strong>. Investigate the region you're contemplating, scout places, conduct diner surveys, etc. You want to know if the choice will help you achieve rather than be a waste of time and money.
+    </p>
+
+    <h2>You have a sturdy and dependable squad on your side</h2>
+
+    <p>
+      If you have a stable and dependable staff of hardworking individuals, managing the growth of your restaurant will be much easier.
+    </p>
+
+    <p>
+      Please remember that if you're planning an expansion, the greatest thing you can do is collaborate with your most dependable personnel and cycle between the restaurants.
+    </p>
+
+    <p>
+      They can also provide you with useful information on what guests are saying and how they feel about the service and business.
+    </p>
+
+    <h2>Join in the conversation</h2>
+
+    <p>
+      Join groups to initiate discussions, and don't limit yourself to <strong>restaurant branding</strong> or <strong>cloud kitchen marketing</strong>. If you start discussions in these groups yourself, make sure they're worthwhile. This will pique people's interest in your company and persuade them to learn more.
+    </p>
+
+    <p>
+      Encourage your staff to create LinkedIn profiles so that they may contribute to your marketing efforts by sharing material and participating in discussions. Make sure they put your restaurant as their place of employment since this will help you grow organically.
+    </p>
+
+    <h2>The demand has grown</h2>
+
+    <p>
+      It's a sign that you should grow your business if your customers tell you that you need additional restaurants or that you need to build more stores.
+    </p>
+
+    <p>
+      Consumers may believe they must travel a great distance to reach your restaurant. You may need to construct a second restaurant in a key area. Maybe your customers say this because your restaurant's capacity is currently limited, or maybe they think it's such a nice thing to say.
+    </p>
+
+    <h2>Quality and consistency</h2>
+
+    <p>
+      Customers will come to your second <strong>restaurant agency</strong> because of the success of your first restaurant and the brand name, but only exceptional cuisine and service will keep them there. Maintaining consistency and quality across all stores is essential when running a restaurant chain.
+    </p>
+
+    <p>
+      Recipe standardization is critical for maintaining the food's taste and quality. When it comes to long-chain restaurants, brand image is crucial to their success. A consistent format and menu help to maintain the brand's image.
+    </p>
+
+    <h2>Publicize Your Company's News</h2>
+
+    <p>
+      If you have a large event, are establishing a new restaurant in your chain, have reached an agreement on a new financial relationship, or have any other good news to communicate about your <strong>restaurant agency</strong>, post a link to a press release about it on your newsfeed.
+    </p>
+
+    <p>
+      You'll quickly have users interested in what you have to say and commenting on any news you post if you lay the groundwork to establish your network.
+    </p>
+
+    <h2>Advertise</h2>
+
+    <p>
+      There is also the possibility to promote on LinkedIn if you start to have some success on the network through organic means. LinkedIn ads may be used to reach out to potential business partners, new investors, or potential sponsors for an upcoming event.
+    </p>
+
+    <p>
+      You might also try to target people searching for a location to rent for Christmas parties or those planning weddings and want a pre-wedding dinner celebration. To ensure that you reach the proper individuals, you may divide your advertising by industry, firm size, geography, and title.
+    </p>
+
+    <p>
+      LinkedIn is a terrific tool for growing your reputation within an industry, communicating with people in your sector, and connecting with folks who might provide value to your business, even if it doesn’t create a lot of online reservations for your restaurant.
+    </p>
+
+    <p>
+      You may build a loyal following and a buzz about your restaurant. It improves the exposure of what you're trying to do daily in your business, and possibly some outside investment, by working hard at it.
+    </p>
+
+    <h2>Your company can function even if you are not present</h2>
+
+    <p>
+      At this point, your company must have enough operational processes in place to ensure that it runs smoothly. For a successful business to run well, the owner or the person in control does not need to be there. Its personnel must understand their responsibilities and how to react in various situations.
+    </p>
+
+    <p>
+      It's also a good idea to automate your restaurant to familiarize your employees with all of the procedures. This saves time and effort. For instance, as a restaurant owner, you may automate culinary operations, waiter communication with customers, and digital and content marketing activities, among other things.
+    </p>
+
+    <h2>Conclusion</h2>
+
+    <p>
+      Analytics is one of the most beneficial features of utilizing LinkedIn's <strong>marketing strategy for restaurants</strong>. LinkedIn's statistics are comprehensive and user-friendly, allowing you to assess the impact of your efforts.
+    </p>
+
+    <p>
+      Many <strong>restaurant agency</strong> operators use LinkedIn as part of their social media strategy. Beyond the typical Facebook marketing options, restaurants discover that LinkedIn is a terrific way to spread the word and cultivate customer loyalty. Consider these or other choices for expanding your business to continue to see it grow and prosper.
+    </p>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How to grow your hotel & restaurant business through digital marketing",
+    description:
+      "How to grow your hotel & restaurant business through digital marketing",
+  },
+  title: "How to grow your hotel & restaurant business through digital marketing",
+  slug: "how-to-grow-hotel-restaurant-business-digital-marketing",
+  description:
+    "Digital marketing is a common practice in most industries and especially in the hotel and restaurant industry. Since restaurants are constantly competing for customers, it is extremely important to invest in digital marketing to stand out from other restaurants.To grow such a new business, one of the best practices for hotels is a live chat software which can help increase the customer retention rate. Likewise, we will be discussing some other methods for skyrocketing the growth of your hotel or restaurant with digital marketing in 2022.",
+
+  data: `
+  <div>
+
+    <h1>How to grow your hotel & restaurant business through digital marketing</h1>
+
+    <p>
+      Digital marketing is a common practice in most industries and especially in the hotel and restaurant industry. Since restaurants are constantly competing for customers, it is extremely important to invest in digital marketing to stand out from other restaurants.
+    </p>
+
+    <p>
+      To grow such a new business, one of the best practices for hotels is a live chat software which can help increase the customer retention rate. Likewise, we will be discussing some other methods for skyrocketing the growth of your hotel or restaurant with digital marketing in 2022.
+    </p>
+
+    <h2>What is digital marketing?</h2>
+
+    <p>
+      Digital marketing is the process of generating and executing digital strategies in order to drive sales opportunities. This can be done through online advertising, social media, search engine optimization, email marketing campaigns, or mobile app development.
+    </p>
+
+    <p>
+      Digital marketing's goal is to use digital platforms to target customers with messages that will influence buying decisions and make them more aware of a company's brand about a certain product or service. In this case, we will be taking advantage of these methods to attract more customers to our hotel and restaurant more quickly.
+    </p>
+
+    <h2>Importance of digital marketing for growing your hotel or restaurant in 2022</h2>
+
+    <p>
+      Digital marketing is an essential part of a company’s overall marketing strategy. A healthy digital presence ensures that customers know you exist and have the tools to find you online. In this day and age, it is nearly impossible to survive without one! As more than 80% of the people prefer to look up services online and check the ratings before actually paying for them.
+    </p>
+
+    <p>
+      Hence, growing your new hotel or restaurant quickly is not possible without building a solid presence on the internet. If you are able to drive online visitors to your business each month it will automatically boost the business growth and the number of sales as well.
+    </p>
+
+    <p>
+      However, if you are not getting enough people to visit your business frequently, it is a direct indicator of poor revenue generation and unstable growth. And to drive more visitors and accumulate more loyal customers in the long-run, digital marketing is something that you can rely on.
+    </p>
+
+    <h2>How to grow your hotel and restaurant business through digital marketing?</h2>
+
+    <p>
+      Getting started with digital marketing can be a little bit difficult for a non-technical person. But you should not worry as the process is straightforward once you have been through it. Moreover, it includes increasing the engagement ratio with potential customers to convert them into returning ones. So let's go through the efficient yet reliable ways for growing your hotel or restaurant successfully in 2022 with digital marketing.
+    </p>
+
+    <p>
+      <strong>Getting more exposure on the internet by having</strong> a professional website for your hotel or restaurant is the first step to growth in the digital world. However, simply creating a website doesn't mean that you will start receiving tons of orders and calls right away! And the sole reason why it won't happen is that no one is aware of your business online.
+    </p>
+
+    <p>
+      So the best solution for gaining more exposure on the internet is to promote your website while implementing the different digital marketing methods that we have discussed. Not to mention, you need a live and professional website for this method.
+    </p>
+
+    <h3>Utilizing social media platforms</h3>
+
+    <p>
+      One of the most effective ways to grow your restaurant or hotel with digital marketing is by connecting with your customers on different social media platforms. Social media platforms like Instagram, Snapchat, and Facebook offer a wide range of filters and features to help a business target their customers more effectively.
+    </p>
+
+    <p>
+      With access to these features, you can instantly spread the word about any new products, dishes, or ongoing discounts to encourage new customers visually. What makes this more preferred is the fact that you don't need to spend a fortune for hiring marketing agencies or running ad campaigns.
+    </p>
+
+    <h3>Effective email marketing campaigns</h3>
+
+    <p>
+      For many people, email is the “it” way to communicate. It’s ubiquitous, it’s frequent, and it flows straight from your fingertips to the screen of someone who wants to consume it. Fortunately, restaurants and hotels looking to turn visitors into loyal customers via email marketing, have some powerful tools at their disposal. By which it gets a lot easier to create high converting personalized email campaigns that improve your brand presence as well. You can get professional help with tools like Aweber instantly.
+    </p>
+
+    <h3>Accurate Influencer marketing</h3>
+
+    <p>
+      Having an influencer market your hotel or restaurant can be quite useful with the right approach. But, how can you find people who would be willing to do influencer marketing for you? Well, there are some social media sites that you can use to find these people and hopefully give you a return on the investment. One of them is Upfluence.com. They have a perk that allows you to search for influencers by topic and location, even better than that it also allows you to narrow down your search based on specific interests so that your marketing doesn't fall on deaf ears.
+    </p>
+
+    <h3>Paying attention to testimonials</h3>
+
+    <p>
+      As a restaurant or hotel owner, it is essential to have reviews from different audiences and sources. Reviews are also important for faster growth in the hospitality industry because reviews generate business. Therefore, the most effective way to grow your hotel or restaurant is by having reviews from visitors.
+    </p>
+
+    <p>
+      On top of that, it is highly recommended to keep checking on the reviews regularly. Because in some cases people are known to post fake reviews just to bring down the reputation of a certain business. So make sure to get rid of those spammy reviews before they start affecting your growth.
+    </p>
+
+    <h3>Never ignore local SEO</h3>
+
+    <p>
+      With local SEO, there is a different approach to determining which businesses appear in local SERPs than with conventional (or “organic”) results. Instead of looking at relevance, Google looks at the local intent.
+    </p>
+
+    <p>
+      For example, if you live in London and search for “best restaurants in London,” Google will show you the top-rated and most popular eateries in your area. Therefore, It’s important to note that working on your local SEO can drive more customers and sales as the competition is low.
+    </p>
+
+    <h3>Emerge as a trustworthy brand</h3>
+
+    <p>
+      Emerging as a trustworthy brand in the internet world will attract a lot of potential customers and spread the word more easily. Because Branding is important because it creates something that distinguishes your business from the competition. It creates a look, feels, and public perception that will turn people into repeat customers. Focus on what sets you apart: As a new restaurant or hotel brand you probably won't have the funding to compete with the big players at first but that is okay because finding your niche and being the best at it, is more important.
+    </p>
+
+    <h3>Promote your business through paid ads</h3>
+
+    <p>
+      As for the last method on this list, growing your business with targeted ad campaigns can be quite effective. Since every restaurant and hotel has different needs, it is important to tailor messages to customers depending on their needs. You can start with popular platforms such as Google Adwords or Facebook to have more control over the ad spend and customizations. Plus, it would be wise to geotarget your audience based on their recent interests to get the most out of your paid ad campaigns.
+    </p>
+
+    <h2>Things to keep in mind before implementing digital marketing</h2>
+
+    <ul>
+      <li>Never invest in digital marketing campaigns or related activities without knowing your target audience.</li>
+      <li>Since most restaurants are customer-centric, it is important to develop strategies that will attract their target market which in this case are customers.</li>
+      <li>A hotel/restaurant should be able to adapt campaigns relevant to its intended customer base.</li>
+      <li>Larger companies may benefit from using multiple restaurants to spread out their investment cost and reduce any possible losses when implementing new business strategies.</li>
+      <li>Furthermore, a restaurant should ensure that the company’s size matches the level of digital marketing they want to deploy.</li>
+    </ul>
+
+    <h2>Final Verdict</h2>
+
+    <p>
+      In summary, digital marketing is dependent on the company’s size and its area of focus since large companies can easily afford the high costs of implementing online marketing methods successfully, on the contrary, startups may find it difficult to allocate extra budget for it. But we recommend estimating the overall cost for the whole process to ensure it fits into the business's budget goals. In addition, tracking your progress and customer count is a good practice to see whether your efforts and money are flowing in the right direction or not.
+    </p>
+
+    <h2>References</h2>
+
+    <ul>
+      <li><a href="https://www.siteminder.com/r/hotel-digital-marketing/" target="_blank">https://www.siteminder.com/r/hotel-digital-marketing/</a></li>
+      <li><a href="https://digitalagencynetwork.com/8-effective-digital-marketing-strategies-for-restaurants-attract-customers-and-drive-sales/" target="_blank">https://digitalagencynetwork.com/8-effective-digital-marketing-strategies-for-restaurants-attract-customers-and-drive-sales/</a></li>
+      <li><a href="https://www.siteminder.com/r/hotel-marketing-this-year/" target="_blank">https://www.siteminder.com/r/hotel-marketing-this-year/</a></li>
+      <li><a href="https://www.skyramtechnologies.com/blog/effective-digital-marketing-strategies-restaurant-hotel/" target="_blank">https://www.skyramtechnologies.com/blog/effective-digital-marketing-strategies-restaurant-hotel/</a></li>
+    </ul>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "How to grow your hotel & restaurant business through digital marketing",
+    description:
+      "How to grow your hotel & restaurant business through digital marketing",
+  },
+  title: "How to grow your hotel & restaurant business through digital marketing",
+  slug: "how-to-grow-hotel-restaurant-business-digital-marketing",
+  description:
+    "Digital marketing is a common practice in most industries and especially in the hotel and restaurant industry.",
+  data: `
+  <div>
+
+    <h1>How to grow your hotel & restaurant business through digital marketing</h1>
+
+    <p>
+      Digital marketing is a common practice in most industries and especially in the hotel and restaurant industry. Since restaurants are constantly competing for customers, it is extremely important to invest in digital marketing to stand out from other restaurants.
+    </p>
+
+    <p>
+      To grow such a new business, one of the best practices for hotels is a live chat software which can help increase the customer retention rate. Likewise, we will be discussing some other methods for skyrocketing the growth of your hotel or restaurant with digital marketing in 2022.
+    </p>
+
+    <h2>What is digital marketing?</h2>
+
+    <p>
+      Digital marketing is the process of generating and executing digital strategies in order to drive sales opportunities. This can be done through online advertising, social media, search engine optimization, email marketing campaigns, or mobile app development.
+    </p>
+
+    <p>
+      Digital marketing's goal is to use digital platforms to target customers with messages that will influence buying decisions and make them more aware of a company's brand about a certain product or service. In this case, we will be taking advantage of these methods to attract more customers to our hotel and restaurant more quickly.
+    </p>
+
+    <h2>Importance of digital marketing for growing your hotel or restaurant in 2022</h2>
+
+    <p>
+      Digital marketing is an essential part of a company’s overall marketing strategy. A healthy digital presence ensures that customers know you exist and have the tools to find you online. In this day and age, it is nearly impossible to survive without one! As more than 80% of the people prefer to look up services online and check the ratings before actually paying for them.
+    </p>
+
+    <p>
+      Hence, growing your new hotel or restaurant quickly is not possible without building a solid presence on the internet. If you are able to drive online visitors to your business each month it will automatically boost the business growth and the number of sales as well.
+    </p>
+
+    <p>
+      However, if you are not getting enough people to visit your business frequently, it is a direct indicator of poor revenue generation and unstable growth. And to drive more visitors and accumulate more loyal customers in the long-run, digital marketing is something that you can rely on.
+    </p>
+
+    <h2>How to grow your hotel and restaurant business through digital marketing?</h2>
+
+    <p>
+      Getting started with digital marketing can be a little bit difficult for a non-technical person. But you should not worry as the process is straightforward once you have been through it. Moreover, it includes increasing the engagement ratio with potential customers to convert them into returning ones. So let's go through the efficient yet reliable ways for growing your hotel or restaurant successfully in 2022 with digital marketing.
+    </p>
+
+    <p>
+      Getting more exposure on the internet by having a professional website for your hotel or restaurant is the first step to growth in the digital world. However, simply creating a website doesn't mean that you will start receiving tons of orders and calls right away! And the sole reason why it won't happen is that no one is aware of your business online.
+    </p>
+
+    <p>
+      So the best solution for gaining more exposure on the internet is to promote your website while implementing the different digital marketing methods that we have discussed. Not to mention, you need a live and professional website for this method.
+    </p>
+
+    <h3>Utilizing social media platforms</h3>
+
+    <p>
+      One of the most effective ways to grow your restaurant or hotel with digital marketing is by connecting with your customers on different social media platforms. Social media platforms like Instagram, Snapchat, and Facebook offer a wide range of filters and features to help a business target their customers more effectively.
+    </p>
+
+    <p>
+      With access to these features, you can instantly spread the word about any new products, dishes, or ongoing discounts to encourage new customers visually. What makes this more preferred is the fact that you don't need to spend a fortune for hiring marketing agencies or running ad campaigns.
+    </p>
+
+    <h3>Effective email marketing campaigns</h3>
+
+    <p>
+      For many people, email is the “it” way to communicate. It’s ubiquitous, it’s frequent, and it flows straight from your fingertips to the screen of someone who wants to consume it. Fortunately, restaurants and hotels looking to turn visitors into loyal customers via email marketing, have some powerful tools at their disposal. By which it gets a lot easier to create high converting personalized email campaigns that improve your brand presence as well. You can get professional help with tools like Aweber instantly.
+    </p>
+
+    <h3>Accurate Influencer marketing</h3>
+
+    <p>
+      Having an influencer market your hotel or restaurant can be quite useful with the right approach. But, how can you find people who would be willing to do influencer marketing for you? Well, there are some social media sites that you can use to find these people and hopefully give you a return on the investment. One of them is Upfluence.com. They have a perk that allows you to search for influencers by topic and location, even better than that it also allows you to narrow down your search based on specific interests so that your marketing doesn't fall on deaf ears.
+    </p>
+
+    <h3>Paying attention to testimonials</h3>
+
+    <p>
+      As a restaurant or hotel owner, it is essential to have reviews from different audiences and sources. Reviews are also important for faster growth in the hospitality industry because reviews generate business. Therefore, the most effective way to grow your hotel or restaurant is by having reviews from visitors.
+    </p>
+
+    <p>
+      On top of that, it is highly recommended to keep checking on the reviews regularly. Because in some cases people are known to post fake reviews just to bring down the reputation of a certain business. So make sure to get rid of those spammy reviews before they start affecting your growth.
+    </p>
+
+    <h3>Never ignore local SEO</h3>
+
+    <p>
+      With local SEO, there is a different approach to determining which businesses appear in local SERPs than with conventional (or “organic”) results. Instead of looking at relevance, Google looks at the local intent.
+    </p>
+
+    <p>
+      For example, if you live in London and search for “best restaurants in London,” Google will show you the top-rated and most popular eateries in your area. Therefore, It’s important to note that working on your local SEO can drive more customers and sales as the competition is low.
+    </p>
+
+    <h3>Emerge as a trustworthy brand</h3>
+
+    <p>
+      Emerging as a trustworthy brand in the internet world will attract a lot of potential customers and spread the word more easily. Because Branding is important because it creates something that distinguishes your business from the competition. It creates a look, feels, and public perception that will turn people into repeat customers. Focus on what sets you apart: As a new restaurant or hotel brand you probably won't have the funding to compete with the big players at first but that is okay because finding your niche and being the best at it, is more important.
+    </p>
+
+    <h3>Promote your business through paid ads</h3>
+
+    <p>
+      As for the last method on this list, growing your business with targeted ad campaigns can be quite effective. Since every restaurant and hotel has different needs, it is important to tailor messages to customers depending on their needs. You can start with popular platforms such as Google Adwords or Facebook to have more control over the ad spend and customizations. Plus, it would be wise to geotarget your audience based on their recent interests to get the most out of your paid ad campaigns.
+    </p>
+
+    <h2>Things to keep in mind before implementing digital marketing</h2>
+
+    <ul>
+      <li>Never invest in digital marketing campaigns or related activities without knowing your target audience.</li>
+      <li>Since most restaurants are customer-centric, it is important to develop strategies that will attract their target market which in this case are customers.</li>
+      <li>A hotel/restaurant should be able to adapt campaigns relevant to its intended customer base.</li>
+      <li>Larger companies may benefit from using multiple restaurants to spread out their investment cost and reduce any possible losses when implementing new business strategies.</li>
+      <li>Furthermore, a restaurant should ensure that the company’s size matches the level of digital marketing they want to deploy.</li>
+    </ul>
+
+    <h2>Final Verdict</h2>
+
+    <p>
+      In summary, digital marketing is dependent on the company’s size and its area of focus since large companies can easily afford the high costs of implementing online marketing methods successfully, on the contrary, startups may find it difficult to allocate extra budget for it. But we recommend estimating the overall cost for the whole process to ensure it fits into the business's budget goals. In addition, tracking your progress and customer count is a good practice to see whether your efforts and money are flowing in the right direction or not.
+    </p>
+
+    <h2>References</h2>
+
+    <ul>
+      <li><a href="https://www.siteminder.com/r/hotel-digital-marketing/" target="_blank">https://www.siteminder.com/r/hotel-digital-marketing/</a></li>
+      <li><a href="https://digitalagencynetwork.com/8-effective-digital-marketing-strategies-for-restaurants-attract-customers-and-drive-sales/" target="_blank">https://digitalagencynetwork.com/8-effective-digital-marketing-strategies-for-restaurants-attract-customers-and-drive-sales/</a></li>
+      <li><a href="https://www.siteminder.com/r/hotel-marketing-this-year/" target="_blank">https://www.siteminder.com/r/hotel-marketing-this-year/</a></li>
+      <li><a href="https://www.skyramtechnologies.com/blog/effective-digital-marketing-strategies-restaurant-hotel/" target="_blank">https://www.skyramtechnologies.com/blog/effective-digital-marketing-strategies-restaurant-hotel/</a></li>
+    </ul>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "10 reasons why restaurants need SEO",
+    description:
+      "10 reasons why restaurants need SEO",
+  },
+  title: "10 reasons why restaurants need SEO",
+  slug: "10-reasons-why-restaurants-need-seo",
+  description:
+    "Restaurant owners who optimize their websites for search engine optimization are more likely to be at the top of Google search results page than those who do not invest in SEO. A prime ranking on Google can mean an increase in organic traffic, which can lead to increased revenue! Restaurant or hotel owners who rely on word-of-mouth advertising will find that online advertising makes it much easier to reach more people at less cost. So let's discuss some reasons why you should invest your time and resources into SEO as a restaurant owner.",
+  data: `
+  <div>
+
+    <h1>10 reasons why restaurants need SEO</h1>
+
+    <p>
+      Restaurant owners who optimize their websites for search engine optimization are more likely to be at the top of a Google search results page than those who do not invest in SEO. A prime ranking on Google can mean an increase in organic traffic, which can lead to increased revenue! Restaurant or hotel owners who rely on word-of-mouth advertising will find that online advertising makes it much easier to reach more people at less cost. So let's discuss some reasons why you should invest your time and resources into SEO as a restaurant owner.
+    </p>
+
+    <h2>What is SEO for restaurants?</h2>
+
+    <p>
+      SEO for restaurants is a term that contains many different aspects. It may seem like it is difficult to understand and implement, but there are countless hotel marketing solutions and restaurant marketing companies in India, that can provide you with a variety of affordable SEO packages.
+    </p>
+
+    <p>
+      The first step in getting quality SEO for your restaurant would be to evaluate your needs, goals, strengths, weaknesses, and resources. Once you have this list set up, you will be able to find the perfect package that suits all of these categories. Secondly, while SEO is essential for restaurants and businesses alike; it is not always necessary or affordable if other strategies are put into motion before SEO is implemented.
+    </p>
+
+    <p>
+      For instance, if you have been relying on TV ads or physical mediums such as flyers and posters, they cost a lot of fortune. Wasting your money on them before moving to SEO isn't a wise choice at all. But why a restaurant or hotel owner should shift to digital marketing in 2022? Let's take a look at the big picture and understand why it is worth investing in better SEO for your restaurant.
+    </p>
+
+    <h2>Is it worth investing in better SEO?</h2>
+
+    <p>
+      This is one of the first questions that comes to hotel owners' minds, "Should I really invest in a new marketing strategy?". And it is completely normal when someone is not aware of the potential results and business growth with SEO. With so many doubts and questions regarding the new hospitality marketing concept, getting help from a professional hotel marketing agency is way better than spending hours on YouTube to get started from scratch.
+    </p>
+
+    <p>
+      No doubt, hospitality performance marketing is one of the most common methods of gaining an initial customer base. But it's only effective when your requirements are crystal clear. This can help you get the most out of your digital marketing campaigns or organic traffic generation efforts through SEO. But why you should pay for getting a better SEO for your business? Keep reading to find out!
+    </p>
+
+    <h2>Top 10 reasons why SEO is essential for restaurants</h2>
+
+    <ol>
+
+      <li>
+        <strong>Rank higher for local results</strong>
+        <p>
+          Local SEO has been a topic that receives much attention in recent years, as more people continue to take advantage of mobile technology. Using Google Maps, people can find restaurants simply by searching for their names throughout their area.
+        </p>
+        <p>
+          This also increases brand recognition for restaurants by helping add customers to your restaurants’ Facebook pages or websites through your smartphone. So with the right SEO, your restaurant can pop up in the search results which will help you gain more orders on a local level.
+        </p>
+      </li>
+
+      <li>
+        <strong>Significant growth in orders</strong>
+        <p>
+          Once the customer is on your page, it's just a matter of time until the visually attractive media encourages them to place an order. However, it is only possible when your hotel or restaurant is easily found by the potential customers who wish to order food or make advance bookings for a room.
+        </p>
+        <p>
+          Hence, the SEO agency will optimize your page so that it is easy to navigate and easily recognizable by a customer. So when someone looks up on Google "Restaurant near me", Google will display your business in the top positions due to the accurate SEO.
+        </p>
+      </li>
+
+      <li>
+        <strong>Impressive restaurant branding</strong>
+        <p>
+          Successful restaurant SEO services help improve the brand value of a restaurant or hotel. If your business ranks high on search engines, people will be more likely to trust you and visit your place of work. Not to mention using a unique and attractive hotel logo design will help you stand out more. Whereas, an appealing logo will help new customers remember your hotel branding with accuracy. And if restaurants and hotels in your area are not working on these aspects, you are more likely to get better results with the help of branding.
+        </p>
+      </li>
+
+      <li>
+        <strong>Benefit from restaurant listings</strong>
+        <p>
+          Ranking high on Google maps earns you a spot in their business directories. This can be used as an additional resource for promoting your business via social media platforms like Facebook and Twitter, or through digital marketing displaying specials or upcoming events for customers to see during their visits.
+        </p>
+        <p>
+          More importantly, holding onto the top positions on such lists is a little difficult without the right SEO guidance and growth hacks.
+        </p>
+      </li>
+
+      <li>
+        <strong>Stealing your competitor’s audience</strong>
+        <p>
+          If you have a restaurant then there maybe be a lot of restaurants or hotels that give you a hard time finding new returning customers. Because customers searching for the same products or services will search in different locations. And if the place is already crowded with similar businesses, the competition will increase automatically.
+        </p>
+        <p>
+          This is where the SEO service kicks in to help you keep your customers coming back. Plus, they help you rank higher on Google local searches as well as target people's interests to get people to visit your restaurant over your competition.
+        </p>
+      </li>
+
+      <li>
+        <strong>Bookings made quick and simple</strong>
+        <p>
+          Once customers are on a search engine page with information about you and your services, they can easily book an appointment by clicking a link or calling you directly on the provided contact details. This allows them to make a reservation for their visit without having to drive across town or wait until they arrive at your establishment.
+        </p>
+        <p>
+          All this is made possible only when your restaurant's website is listed properly on Google with SEO optimization.
+        </p>
+      </li>
+
+      <li>
+        <strong>Easier to promote new services/products</strong>
+        <p>
+          Being visible to a huge number of people with a proper restaurant marketing strategy is more than enough to launch your new products/services without having to worry about competition.
+        </p>
+        <p>
+          Additionally, using social media platforms and a restaurant marketing blog to attract first-time clients is an excellent way to debut any new product/service. Because it becomes easier to introduce new products to both loyal and new clients.
+        </p>
+      </li>
+
+      <li>
+        <strong>Builds a foundation for social media marketing</strong>
+        <p>
+          If your restaurant has a website or blog, you are already one step ahead of your competitors because most restaurants do not even have a website. Social media marketing requires an online presence for maximum impact so it is essential that you leverage SEO's ability to drive organic traffic to your site.
+        </p>
+        <p>
+          On top of that, social media marketing is quite effective when it comes to sharing content based on different foods and hospitality services. For example, people love to scroll on Instagram or Facebook, looking for new food items, recipes, and much more content opportunities.
+        </p>
+      </li>
+
+      <li>
+        <strong>An affordable alternative to restaurant advertising</strong>
+        <p>
+          Advertising can disturb your overall budget, especially if you are using channels that are not as targeted as popular online advertising platforms like Facebook and Google. On the contrary hiring, a professional business kitchen marketing agency can drastically lower your promotion costs and turn them into more profit for the business.
+        </p>
+        <p>
+          Which you can use later for expanding the business even further or simply use for more promotions.
+        </p>
+      </li>
+
+      <li>
+        <strong>Higher conversions with targeted visitors</strong>
+        <p>
+          Targeting visitors based on the food items or services you offer sounds almost impossible. However, if you want people to know what different services you provide and lead them to your hotel or restaurant quickly, The search engine optimization team can work with you to find keywords or phrases that will help convince people to visit your location during working hours.
+        </p>
+        <p>
+          The main benefit of having targeted traffic is that such people are looking for what your business offers which simply means higher conversions with fewer investments.
+        </p>
+      </li>
+
+    </ol>
+
+    <h2>Wrapping Up</h2>
+
+    <p>
+      SEO is a rather complicated side of the marketing industry that demands sufficient knowledge of what to do, and how to do it. This makes the process of SEO implementation lengthy and may not produce the expected results when not done by professionals.
+    </p>
+
+    <p>
+      Especially when there is raging competition in the market for staying at the top. Therefore, leaving your restaurant performance marketing department for a group of SEO experts is more promising. Make sure to check the customer reviews for such agencies or marketing companies before allowing them to lead your business.
+    </p>
+
+    <h2>References</h2>
+
+    <ul>
+      <li><a href="https://www.touchbistro.com/blog/restaurant-seo-tips/" target="_blank">https://www.touchbistro.com/blog/restaurant-seo-tips/</a></li>
+      <li><a href="https://www.uplers.com/blog/15-critical-reasons-restaurant-needs-seo-strategy/" target="_blank">https://www.uplers.com/blog/15-critical-reasons-restaurant-needs-seo-strategy/</a></li>
+      <li><a href="https://www.searchenginejournal.com/restaurant-seo-tips/208644/#close" target="_blank">https://www.searchenginejournal.com/restaurant-seo-tips/208644/#close</a></li>
+    </ul>
+
+  </div>
+  `,
+},
+{
+  isShow: false,
+  meta: {
+    title: "Why Reputation Management Services Are Important For Restaurants & Hotels?",
+    description:
+      "Why Reputation Management Services Are Important For Restaurants & Hotels?",
+  },
+  title: "Why Reputation Management Services Are Important For Restaurants & Hotels?",
+  slug: "why-reputation-management-services-important-restaurants-hotels",
+  description:
+    "A high-end guide that focuses on Online Reputation Hotel management teaches hoteliers the value of continually focusing on their management by crushing their review score, enhancing their guest feedback approach, optimizing their website, and giving an exceptional guest experience with a perfect restaurant marketing blog.",
+  data: `
+  <div>
+
+    <h1>Why Reputation Management Services Are Important For Restaurants & Hotels?</h1>
+
+    <p>
+      A high-end guide that focuses on Online Reputation Hotel management teaches hoteliers the value of continually focusing on their management by crushing their review score, enhancing their guest feedback approach, optimizing their website, and giving an exceptional guest experience with a perfect <span style="background-color: #f8d7da;">restaurant marketing blog.</span>
+    </p>
+
+    <h2>What Is The Definition Of Hotel Reputation Management?</h2>
+
+    <p>
+      The technique of monitoring and influencing how your hotel is perceived on the internet is known as hotel reputation management. The concept originated in public relations, but it has since expanded to include new review sites, social media platforms, and search engines. Few industries are as subject to or affected by reputation management as the hospitality industry.
+    </p>
+
+    <p>Experts claim that:</p>
+
+    <ul>
+      <li>Ninety-three percent of customers consult online reviews when deciding which hotel to stay at while looking at the <span style="background-color: #f8d7da;">restaurant logo</span> or the <span style="background-color: #f8d7da;">hotel logo.</span></li>
+      <li>53% of those polled said they would not book a hotel without reading online reviews.</li>
+    </ul>
+
+    <p>
+      The importance of internet reviews and reputation, on the other hand, can benefit the hospitality business. User-generated content (UGC), such as reviews and other user-generated content (UGC), substantially impacts a customer's purchasing decision. As a result, collecting positive feedback from satisfied clients is now a key concern for hotel owners and managers. According to the results of a poll:
+    </p>
+
+    <ul>
+      <li>Peer reviews were trusted by 68 percent of respondents</li>
+      <li>During a buying choice, UGC influences 53% of people.</li>
+      <li>You must now master hotel reputation management and keep track of your internet reputation as a hotelier and add to the <span style="background-color: #f8d7da;">hospitality performance marketing.</span></li>
+    </ul>
+
+    <h2>Hotel Reputation Management Online</h2>
+
+    <p>
+      The consensus of the public opinion over an individual or an institution on digital platforms and the internet is known as online reputation. The increased accessibility to the internet and the quick expansion of social media has propelled its appeal. An <span style="background-color: #f8d7da;">restaurant marketing</span> content has the most impact on its brand image, followed by user engagement and reaction. The following are some of the factors that influence one's online reputation:
+    </p>
+
+    <ul>
+      <li>Negative feedback</li>
+      <li>Use of social media</li>
+      <li>Campaigns that fail</li>
+      <li>Breach of security</li>
+    </ul>
+
+    <p>The following statistics demonstrate the growing importance of online reputation:</p>
+
+    <ul>
+      <li>Eighty-five percent of consumers trust online reviews as much as personal recommendations. This adds to <span style="background-color: #f8d7da;">Restaurant Performance marketing.</span></li>
+      <li>Sixty-five percent of consumers trust online search engines the most when researching hotels.</li>
+    </ul>
+
+    <p>
+      The travel industry is one of the world's greatest service industries, and it is growing in importance in the modern era. With the advancement of technology, many clients opt to book their travel online using a mobile phone or travel app. The internet travel booking market is expected to account for roughly 63 percent of the travel industry's $1.2 trillion in revenue. As a result, the ORM has seen a boom in popularity as hotels recognize its relevance. The following two aspects of internet reputation can be separated:
+    </p>
+
+    <ul>
+      <li>Remembering what's being stated about you on the internet</li>
+      <li>Actively striving to improve the importance of your hotel</li>
+    </ul>
+
+    <p>
+      Because of the large range of options accessible to guests worldwide, hotels have realized the importance of hotel reputation and the significant resources required to project a positive brand image and maintain a strong online presence.
+    </p>
+
+    <h2>What Is Included in Hotel Reputation Management?</h2>
+
+    <p>
+      Online reputation and client reviews are extremely important in the hotel industry. Your <span style="background-color: #f8d7da;">hotel marketing agency</span> has a reputation that will directly impact its occupancy levels in the long term. As a result, hotel reputation management is important to the company's overall success. If done correctly, it can boost hotel revenue by increasing brand value, repeat guests, and brand value. Customers benefit from hotel reviews because they get a clear picture of the services and amenities offered by the hotel, allowing them to make an informed booking decision. The following are some of the characteristics that make it an important aspect of the company:
+    </p>
+
+    <ul>
+      <li>Reputation Monitoring: Reputation management allows you to assess your problem and create a reputation monitoring strategy. The aim is establishing its goal is to establish and maintain a positive online reputation.</li>
+      <li>Reputation Repair: The act of mending one's reputation entails recognizing harmful content in search results and, if necessary, rectifying it. Taking care of these difficulties usually aids in the development of goodwill and a positive reputation of any <span style="background-color: #f8d7da;">hotel marketing company.</span></li>
+      <li>Building a positive hotel reputation can help you portray a positive brand image and attract more visitors to your website. Creating positive content is one way to accomplish this for the right <span style="background-color: #f8d7da;">hotel marketing solutions.</span></li>
+    </ul>
+
+    <h2>How Important Is Hotel Reputation Management?</h2>
+
+    <p>
+      For all hotels, reputation management is critical, especially for managing your internet reputation marketing like <span style="background-color: #f8d7da;">cloud kitchen marketing:</span>
+    </p>
+
+    <ul>
+      <li>The success of your hotel is strongly influenced by how guests perceive, evaluate, review, discuss, and search for information about it. Travelers are increasingly relying on internet reviews found on various travel websites for the best <span style="background-color: #f8d7da;">hotel marketing company in India.</span></li>
+      <li>On the other hand, most hotels cannot fully exploit this facet of the new tourism industry. As a result, hoteliers must recognize the importance of the great possibility inside ORM and take advantage of such technologies to build a positive online reputation while communicating with potential visitors in the virtual realm.</li>
+    </ul>
+
+    <h2>The Advantages of Having a Positive Online Reputation</h2>
+
+    <p>
+      Establishing and growing a business with <span style="background-color: #f8d7da;">restaurant branding</span> takes a lot of time and effort. Your services may be outstanding and delight your current clients, but there is one critical aspect of your organization that you must address to protect and fuel its growth. Maintaining your company's online reputation is crucial in today's digital age. With so many alternatives on the market for the best <span style="background-color: #f8d7da;">Restaurant marketing company in India</span>, ORM has become critical for organizations to monitor, determine, and shape their <span style="background-color: #f8d7da;">restaurant digital marketing</span>.
+    </p>
+
+    <p>
+      A simple search can frequently provide enough information about a brand's reputation, an important aspect in tourists' decision-making when reserving a hotel or thinking to start a cloud kitchen. In the next part, we'll go over some of the reasons why maintaining a good hotel reputation online is so important for success:
+    </p>
+
+    <ul>
+      <li>It aids in increasing sales: Before making a final decision, people study companies, services, and goods online. Before visiting a destination, many rely on online recommendations from others who have been there. Positive online reviews encourage people to patronize businesses. Businesses with a bad reputation and many negative reviews lose a lot of money. That is why your company must have great online reviews.</li>
+      <li>It helps to establish credibility: Social media platforms have given us the ability to express our opinions on anything. People prefer to use well-known brands. Having no idea about your firm is, once again, a sign of dependability and distrust. Having a good ORM strategy, <span style="background-color: #f8d7da;">hotel digital marketing</span> strategy and resolving it quickly, on the other hand, can assist.</li>
+      <li>It aids in the recruitment of employees: Reviews aid in the recruitment of staff and customers. A positive internet reputation with the right <span style="background-color: #f8d7da;">hospitality marketing</span> attracts many applicants for any job position.</li>
+      <li>It aids visibility: Positive online evaluations, in particular, can provide organizations with several opportunities to improve exposure and influence over prospects with <span style="background-color: #f8d7da;">restaurant advertising</span>. Paying attention to online reviews is critical for maintaining your hotel's reputation and expanding your business. Positive evaluations also serve to raise the brand's awareness and, as a result, attract more customers. Although increased traffic does not always imply increased room bookings, it does enhance the likelihood of increased <span style="background-color: #f8d7da;">business to kitchen marketing.</span></li>
+      <li>It helps you maximize your revenue: In today's highly competitive market and business environment, how people perceive your brand directly impacts your company's sales and revenue. As a result, it aids in optimizing earnings while also establishing a positive reputation with <span style="background-color: #f8d7da;">marketing strategy for restaurant.</span></li>
+    </ul>
+
+    <h2>In A Nutshell!</h2>
+
+    <p>
+      Hotel reputation management has progressed from an optional component of a hotel's revenue plan to a critical element for staying competitive. Gathering feedback and properly disseminating it will boost your presence on social media, review sites, and booking platforms and drive traffic to your website. Hotel reputation management is an autonomous system once it is implemented. Investing in a hotel reputation management solution frees up more time for you, the hotelier, to focus on offering the greatest possible experience for your guests, one that they are likely to review and add to the <span style="background-color: #f8d7da;">hotel branding.</span>
+    </p>
+
+    <p>
+      It has become vital for hotels to provide a seamless and ideal guest experience to each of their guests, and they must portray this feature to potential guests in the virtual realm while doing so. This is significant since a hotel's favorable or negative reputation can often determine the hotel's long-term success. Hotels must recognize its significance and devote resources to this domain to acquire a competitive advantage and can also read every benefit being offered in the future for a strong online hotel reputation and exposure.
+    </p>
+
+  </div>
+  `,
 }
 ];
-
-export const blogData = blog.filter((item) => item.isShow === true);
+export const blogData = blog
+// export const blogData = blog.filter((item) => item.isShow === true);
 
 // tips-for-engagement-on-social-media-of-cloud-kitchen
 // <a class="hidden" target="_blank" rel="noreferrer" href="https://supportdigitalindia.in/business-whatsapp.php">SDI Business Whatsapp Sender| Bulk Whatsapp Marketing |
