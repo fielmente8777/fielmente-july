@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       "Get in touch with Fielmente for hotel marketing, SEO, and revenue management services. Book a consultation and grow your hotel bookings with expert strategies.",
     images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },

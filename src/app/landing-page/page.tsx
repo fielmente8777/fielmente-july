@@ -33,19 +33,19 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  authors: [{ name: "Fielmente", url: "https://fielmente.com/hospitality/" }],
+  authors: [{ name: "Fielmente", url: "https://fielmente.com/landing-page/" }],
   openGraph: {
     title: "Fielmente : Hotel Marketing Agency in India",
     description:
       "Best marketing agency in India for hotels, resorts and restaurant",
-    url: "https://fielmente.com/hospitality/",
+    url: "https://fielmente.com/landing-page/",
     siteName: "Fielmente",
     locale: "en_IN",
     type: "website",
 
     images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },

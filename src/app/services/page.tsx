@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   description:
     "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
   alternates: {
-    canonical: "https://fielmente.com/hospitality-marketing-services/",
+    canonical: "https://fielmente.com/services/",
     languages: {
-      "en-US": "https://fielmente.com/hospitality-marketing-services/",
+      "en-US": "https://fielmente.com/services/",
     },
   },
   openGraph: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
     images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },

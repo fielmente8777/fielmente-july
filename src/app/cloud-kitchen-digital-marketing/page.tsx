@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Fielmente is a premier cloud kitchen marketing agency in India and skyrocket your cloud kitchen success digitally with our amazing marketing services.",
       images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },

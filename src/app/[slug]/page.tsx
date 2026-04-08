@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Params) {
       type: "article",
       images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },
@@ -141,7 +141,7 @@ export default async function LandingPage({ params }: Params) {
               </p>
             </div>
             {data.url && (
-              <div className="w-full relative aspect-4/3 md:aspect-[4/1.7] overflow-hidden rounded-2xl">
+              <div className="w-full relative aspect-4/3 md:aspect-[4/1.9] overflow-hidden rounded-2xl">
                 <Image
                   src={data.url}
                   alt={data.title}

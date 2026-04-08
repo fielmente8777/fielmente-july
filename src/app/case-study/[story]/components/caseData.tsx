@@ -1,6 +1,11 @@
 export const casStudiesData = [
   {
     slug: "anand-vardhan-resort",
+    metaData: {
+      title: "SEO Case Study: Anand Vardhan Resorts | Fielmente Results",
+      description:
+        "Discover how Fielmente ranked Anand Vardhan Resorts #1 on Google for vegetarian and wellness resort keywords in Manali within 2 months using advanced SEO strategies.",
+    },
     className: "object-contain",
     img: "/avr-logo.png",
     hotelImg: "/abt2.webp",
@@ -76,18 +81,24 @@ export const casStudiesData = [
       },
     ],
   },
-  {
-    slug: "north-wind-57",
-    // img: "/home/client.png",
-    img: "/north-wind.png",
-    title: "North Wind 57",
-    description:
-      "North Wind 57 aimed to rank at the top for competitive hotel and resort keywords related to Bir and Bir Billing, increase organic visibility in Google Hotel Pack results, and attract more direct bookings from",
-  },
+  // {
+  //   slug: "north-wind-57",
+  //   // img: "/home/client.png",
+  //   img: "/north-wind.png",
+  //   title: "North Wind 57",
+  //   description:
+  //     "North Wind 57 aimed to rank at the top for competitive hotel and resort keywords related to Bir and Bir Billing, increase organic visibility in Google Hotel Pack results, and attract more direct bookings from",
+  // },
   {
     slug: "wabi-sabi-resort",
     img: "/clientsLogo/wabi-sabi.png",
     title: "Wabi Sabi Resort",
-    description:"Wabi Sabi Resort is a luxurious retreat nestled amidst the serene landscapes of Igatpuri. The resort boasts stunning vistas, an infinity pool, and a harmonious blend of modern amenities and nature's embrace. With its 45"
-  }
+    metaData: {
+      title: "Wabi Sabi Resort Case Study | Hotel Marketing & SEO Results",
+      description:
+        "Explore how Fielmente helped Wabi Sabi Resort improve visibility, increase bookings, and grow revenue using SEO and hotel marketing strategies.",
+    },
+    description:
+      "Wabi Sabi Resort is a luxurious retreat nestled amidst the serene landscapes of Igatpuri. The resort boasts stunning vistas, an infinity pool, and a harmonious blend of modern amenities and nature's embrace. With its 45",
+  },
 ];
