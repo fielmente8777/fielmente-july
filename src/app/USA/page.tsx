@@ -8,6 +8,42 @@ import {
 import { OurServices } from "./components";
 import { BannerProps, DataType, GrowthCardProps } from "./types";
 
+export const metadata = {
+  title: "Hotel Marketing Company in USA | SEO, OTA & Revenue Growth",
+
+  description:
+    "Top hotel marketing company in the USA offering SEO, OTA management, social media, and revenue strategies to increase bookings and visibility.",
+
+  keywords: [
+    "hotel marketing company USA",
+    "hotel SEO USA",
+    "hospitality marketing USA",
+    "OTA management USA",
+    "hotel digital marketing agency USA",
+    "hotel revenue management USA"
+  ],
+
+  alternates: {
+    canonical: "https://fielmente.com/USA",
+  },
+
+  openGraph: {
+    title: "Hotel Marketing Company in the USA",
+    description:
+      "Grow your hotel bookings with expert marketing and revenue management services.",
+    url: "https://fielmente.com/USA",
+    siteName: "Fielmente",
+    images: [
+      {
+        url: "/fielmente_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Hotel Marketing USA",
+      },
+    ],
+  },
+};
+
 const page = () => {
   const bannerData: BannerProps = {
     img: "/images/usa_flag.webp",

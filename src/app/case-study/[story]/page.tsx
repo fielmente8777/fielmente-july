@@ -35,7 +35,7 @@ export async function generateMetadata(props: Params) {
       description: `Case Study - Fielmente`,
       images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },

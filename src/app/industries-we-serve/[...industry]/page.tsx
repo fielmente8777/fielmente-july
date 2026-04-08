@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: Params) {
         type: "website",
         images: [
           {
-            url: "https://fielmente.com/fielmente_logo.png",
+            url: "/fielmente_logo.png",
             width: 1200,
             height: 630,
           },

@@ -17,6 +17,8 @@ const Footer = () => {
       return null;
     case "/landing-page/":
       return <LandingFooter />;
+    case "/USA/":
+      return <LandingFooter />;
     case "/resort/":
       return <LandingFooter />;
     case "/hospitality/":

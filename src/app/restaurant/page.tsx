@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Fielmente",
     images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },

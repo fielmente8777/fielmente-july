@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
   alternates: {
     canonical:
-      "https://fielmente.com/hospitality-marketing-services/seo-agency/",
+      "https://fielmente.com/search-engine-optimization/",
     languages: {
       "en-US":
-        "https://fielmente.com/hospitality-marketing-services/seo-agency/",
+        "https://fielmente.com/search-engine-optimization/",
     },
   },
   openGraph: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
     images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },

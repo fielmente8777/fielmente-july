@@ -117,7 +117,7 @@ This landmark move opens new doors for property owners, offering not just legali
       description:
         "Discover why U.S. hotels hire Fielmente, India’s hospitality marketing agency, for cost-effective digital strategies, global reach, and proven expertise.",
     },
-    url: "/high-angle.jpg",
+    url: "/images/blog/high-angle.jpg",
     title:
       "Why Hotels in the USA Hire Fielmente Hospitality Marketing Agency in India",
     slug: "why-hotels-in-the-usa-hire-fielmente-hospitality-marketing-agency-in-india",
@@ -7613,6 +7613,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
 }
 ];
+
 export const blogData = blog
 // export const blogData = blog.filter((item) => item.isShow === true);
 

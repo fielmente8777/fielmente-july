@@ -386,7 +386,7 @@ export const ukLandingPageData = {
         alt: "thc",
       },
       {
-        src: "/images/D&G-logo-03-1.png",
+        src: "/clientsLogo/D&G-logo-03-1.png",
         alt: "D&G",
       },
       {
@@ -394,11 +394,11 @@ export const ukLandingPageData = {
         alt: "spice-haven",
       },
       {
-        src: "/images/chefkenzo.png",
+        src: "/clientsLogo/chefkenzo.png",
         alt: "chefkenzo",
       },
       {
-        src: "/images/BURKEY-BLACK-LOGO-01.png",
+        src: "/clientsLogo/BURKEY-BLACK-LOGO-01.png",
         alt: "BURKEY",
       },
       {

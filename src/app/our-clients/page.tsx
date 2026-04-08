@@ -6,9 +6,11 @@ import CommonTowColGridLayoutSection from "@/components/commonSections/CommonTow
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fielmente | Our Clients",
+  title: "Our Clients | Hospitality Brands That Trust Fielmente",
+
   description:
-    "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
+    "Explore hospitality brands, hotels, and restaurants that trust Fielmente for marketing, SEO, and revenue growth solutions across India and globally.",
+
   alternates: {
     canonical: "https://fielmente.com/our-clients/",
     languages: {
@@ -16,12 +18,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Fielmente | Our Clients",
+    title: "Our Clients | Hospitality Brands That Trust Fielmente",
+
     description:
-      "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
+      "Explore hospitality brands, hotels, and restaurants that trust Fielmente for marketing, SEO, and revenue growth solutions across India and globally.",
+
     images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },

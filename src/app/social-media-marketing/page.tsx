@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     "Rocket your brand's online presence with Fielmente, the top hospitality social media marketing agency. Boost success with our expert!",
   alternates: {
     canonical:
-      "https://fielmente.com/hospitality-marketing-services/social-media-marketing-agency/",
+      "https://fielmente.com/social-media-marketing/",
     languages: {
       "en-US":
-        "https://fielmente.com/hospitality-marketing-services/social-media-marketing-agency/",
+        "https://fielmente.com/social-media-marketing/",
     },
   },
   openGraph: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Rocket your brand's online presence with Fielmente, the top hospitality social media marketing agency. Boost success with our expert!",
     images: [
       {
-        url: "https://fielmente.com/fielmente_logo.png",
+        url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },
