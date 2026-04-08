@@ -5587,6 +5587,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     <p>
       Let’s understand this with an example of famous Cloud Kitchen Behrouz Biryani –
     </p>
+    
+    <img src="/images/blog/seo-exm.png" alt="seo example" />
 
     <h2>2. Have an SEO Friendly Website</h2>
 
@@ -5610,6 +5612,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       Social Media Marketing is emerging day by day, especially after the Covid19 pandemic, people have learned that technologies can connect people sitting far away from each other, now we are becoming more tech-friendly. hence the businesses are leveraging the power of Social Media by using the latest trends of social media marketing.
     </p>
 
+    <img src="/images/blog/seo-exm2.png" alt="seo example 2" />
+
     <p>
       Go creative on social media, know about your audience. according to a study, over one million mentions on social media sites about the restaurant, food and beverage industry, 57 <a href="https://www.statista.com/statistics/462518/restaurant-food-and-beverage-industry-sector-social-media-mentions-worldwide/" target="_blank">percent of these</a> were about quick-service restaurants.
     </p>
@@ -5623,6 +5627,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       <li>Other than being creative, also focus on your customers. Re-share customer’s content. Reply to their comments and queries timely. Pay attention to their feedback. Run offers & loyalty programs exclusively on social media.</li>
       <li>Promote business through social media can help to generate more leads and create a buzz around the brand.</li>
     </ol>
+     
+    <img src="/images/blog/seo-exm3.png" alt="seo example 3" />
 
     <h2>4. Video is the future of content marketing</h2>
 
