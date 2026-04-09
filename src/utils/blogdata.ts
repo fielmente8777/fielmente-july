@@ -4456,8 +4456,10 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 
+
+
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "5 Proven Ghost Kitchen Marketing Strategies To Attract Customers",
     description:
@@ -4872,7 +4874,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "How Can Ota Optimisation Help Your Hotel Get Millions Of Benefit",
     description:
@@ -4961,7 +4963,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Mahabir Palace: The New Place Of Tourist Attraction",
     description:
@@ -5039,7 +5041,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "The Importance Of A Brand Guide For Hotel",
     description:
@@ -5110,7 +5112,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Top 10 WordPress Plugin To Upload On Your Hotel Website",
     description:
@@ -5252,7 +5254,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Top 10 WordPress Plugin To Upload On Your Restaurant Website",
     description:
@@ -5331,7 +5333,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Why Contenting Marketing Is Crucial For Hotels And Restaurants",
     description:
@@ -5343,9 +5345,6 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     "We'll just assume that if you stumbled on this blog, you want to learn more about content marketing.",
   data: `
   <div>
-
-    <h1>Why Contenting Marketing Is Crucial For Hotels And Restaurants</h1>
-
     <p>
       We'll just assume that if you stumbled on this blog, you want to learn more about content marketing.
     </p>
@@ -5472,7 +5471,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Why Is Your Hotel's Online Reputation So Important?",
     description:
@@ -5537,11 +5536,11 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Why Local Seo Is Important For Cloud Kitchens, Ghost Kitchens Or Multi-Brand Kitchens?",
     description:
-      "Why Local Seo Is Important For Cloud Kitchens, Ghost Kitchens Or Multi-Brand Kitchens?",
+      "Digital marketing is not a new term now, but with the consistent appearance of new patterns and innovations, it is developing continually.",
   },
   title: "Why Local Seo Is Important For Cloud Kitchens, Ghost Kitchens Or Multi-Brand Kitchens?",
   slug: "why-local-seo-is-important-for-cloud-kitchens-ghost-kitchens-or-multi-brand-kitchens",
@@ -5717,11 +5716,11 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Why Use Alt Text For Instagram",
     description:
-      "Why Use Alt Text For Instagram",
+      "If you have come to this blog searching about Alt texts, you might be on your way to upgrading your Instagram algorithm!",
   },
   title: "Why Use Alt Text For Instagram",
   slug: "why-use-alt-text-for-instagram",
@@ -5793,11 +5792,11 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Woocommerce VS Shopify",
     description:
-      "Woocommerce VS Shopify",
+      "In the digital world, hotel businesses are increasing rapidly. People are opening online stores in the hope of getting more customers. However, setting up an online store is not as simple as it seems. Many hoteliers and cafe owners face difficulty deciding on a suitable E-Commerce platform.",
   },
   title: "Woocommerce VS Shopify",
   slug: "woocommerce-vs-shopify",
@@ -5978,7 +5977,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
 //   `,
 // },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Why SEO Is Important For Restaurants",
     description:
@@ -5990,9 +5989,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "It is not the 90s we are living in, each day technology evolves, and the least smart thing about your smartphone is it being a phone.",
   data: `
   <div>
-
-    <h1>Why SEO Is Important For Restaurants</h1>
-
     <p>
       It is not the 90s we are living in, each day technology evolves, and the least smart thing about your smartphone is it being a phone. Rest is what it provides with its browsing, Internet, apps and everything else. More than 80% of all searches start on a smartphone, it is critical to value the top listings and ensure better reach, presence and most importantly a conversion rate. A good <strong>hospitality marketing company</strong> can help you understand all such statistics well but what you as a restaurant owner need to understand first is you are not going to look for a restaurant in a phonebook, today all the reviews, information, likes, dislikes, photos, menu and ratings are available on Google with just a click away. But with this accessibility to customers, it becomes competitive for restaurant businesses to ensure, how do you make sure that your restaurant establishment is gaining the likes, the right traction and visibility on Google.
     </p>
@@ -6043,7 +6039,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "10 Amazing Digital Marketing Strategies To Increase Online Bookings",
     description:
@@ -6056,8 +6052,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
   data: `
   <div>
 
-    <h1>10 Amazing Digital Marketing Strategies To Increase Online Bookings</h1>
-
+    
     <p>
       Today one of the most competitive sectors is the hospitality industry, once the pandemic was offered people started travelling like there was never a pandemic, never existed. It is also important because the hotel industry is directly linked to the tourism industry.
     </p>
@@ -6196,7 +6191,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "How To Market A Hotel Online",
     description:
@@ -6208,9 +6203,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "Marketing a hotel is challenging, especially in the modern tourism industry because everyone is trying their best to create an environment of cutthroat competition in the hospitality industry. Gone are the days when traditional marketing techniques used to work in hotels and restaurants. Now, customers want everything at their fingertips.",
   data: `
   <div>
-
-    <h1>How To Market A Hotel Online</h1>
-
     <p>
       Marketing a hotel is challenging, especially in the modern tourism industry because everyone is trying their best to create an environment of cutthroat competition in the hospitality industry. Gone are the days when traditional marketing techniques used to work in hotels and restaurants. Now, customers want everything at their fingertips.
     </p>
@@ -6261,7 +6253,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "Marketing A Hostel: The Basics",
     description:
@@ -6273,9 +6265,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "The history of product marketing spans many centuries, almost as long as there have been goods to sell.  But those times when hanging up posters was the thing to do are long gone. We have a wide variety of marketing options at our disposal today. What's best? So many of these are completely free and only call for a little knowledge. Given how quickly the hostel sector is expanding, it is more crucial than ever to use marketing to connect with potential customers.",
   data: `
   <div>
-
-    <h1>Marketing A Hostel: The Basics</h1>
-
     <p>
       The history of product marketing spans many centuries, almost as long as there have been goods to sell. But those times when hanging up posters was the thing to do are long gone. We have a wide variety of marketing options at our disposal today. What's best? So many of these are completely free and only call for a little knowledge. Given how quickly the hostel sector is expanding, it is more crucial than ever to use marketing to connect with potential customers.
     </p>
@@ -6374,7 +6363,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "How Google Map Citation Improves Your Hotel's Online Presence",
     description:
@@ -6387,9 +6376,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
 
   data: `
   <div>
-
-    <h1>How Google Map Citation Improves Your Hotel's Online Presence</h1>
-
     <p>
       If you're not yet familiar with <strong>Google Map citation</strong>, no worries! Simply put, a citation is when you share your business name, address, website, and contact details on other websites. It's a great way to help people find you! These are business listings done by millions of websites that comprise a business listing directory for yours.
     </p>
@@ -6464,7 +6450,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
 },
 {
-  isShow: false,
+  isShow: true,
   meta: {
     title: "How are these restaurants in Canada disrupting the restaurant business through digital marketing",
     description:
@@ -6476,9 +6462,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "The restaurant business in Canada has been at an all-time high due to the variety of cultures present.",
   data: `
   <div>
-
-    <h1>How are these restaurants in Canada disrupting the restaurant business through digital marketing</h1>
-
     <p>
       The restaurant business in Canada has been at an all-time high. The major reason for this is the variety of cultures that are present. Due to this, there are a wide variety of restaurants in Canada that are hugely popular and have created a benchmark in the <span style="background-color: yellow;"><strong>F&B industry</strong></span>. However, the last few years have had a big impact on the restaurant business. The major reason has been the pandemic, which has now existed for a couple of years now. Due to it, people feared going out to a restaurant and having their favourite meal.
     </p>
@@ -6568,9 +6551,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "Digital Marketing and online marketing techniques are not new to anyone.",
   data: `
   <div>
-
-    <h1>How Digital Marketing and SEO changing the face of Cloud Kitchen business</h1>
-
     <p>
       Digital Marketing and online marketing techniques are not new to anyone. However, in the last few years, various techniques of Digital marketing have evolved so much that even industries that relied on physical promotion have started using online marketing techniques. One such business is Cloud Kitchen business, which has evolved a lot in the last few years, especially during the time of the pandemic, when people were hesitant to go outside. Many hotel marketing solutions have been developed for such Cloud Kitchen business which has not only increased their business online but has also helped them in establishing their image as a brand. In this entire process, SEO has played a very important role, where users were increasingly noticing the cloud kitchen brand online. Digital Marketing techniques like restaurant marketing blog, SEO, E-mail marketing, social media marketing, and more have been used efficiently to promote the business. This article will discuss various restaurant digital marketing strategies and how hospitality marketing has helped in the hotel branding of Cloud Kitchen.
     </p>
@@ -6681,9 +6661,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "Life can be tough for an independent hotel or restaurant. Social media marketing strategies can help drive traffic and increase revenue.",
   data: `
   <div>
-
-    <h1>How Facebook and Instagram ads can increase your food orders and how you get the benefits out of it and why it is the most important part of the social media</h1>
-
     <p>
       Life can be tough for an independent hotel or restaurant. Whether it’s competing with chains, attracting business travelers and vacationers, or just getting people to stop in for lunch, there are lots of factors to consider. Luckily, the rise of social media has given small businesses an easy way to get their messages out into the world. This post shares some ways that you can use social media marketing strategies to drive traffic and make more money at your establishment.
     </p>
@@ -6839,9 +6816,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "Utilizing social media to promote a restaurant marketing company in India does not have to be expensive, but it does take time. Don't waste time choosing which social media platforms are ideal for promoting your restaurant. Each tool has its personality, giving you access to distinct features. There are several reasons why restaurants should use LinkedIn for restaurant advertising.",
   data: `
   <div>
-
-    <h1>How Can LinkedIn Help You To Expand Your Restaurant Business?</h1>
-
     <p>
       Utilizing social media to promote a <strong>restaurant marketing company in India</strong> does not have to be expensive, but it does take time. Don't waste time choosing which social media platforms are ideal for promoting your restaurant. Each tool has its personality, giving you access to distinct features. There are several reasons why restaurants should use LinkedIn for <strong>restaurant advertising</strong>.
     </p>
@@ -7039,9 +7013,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
 
   data: `
   <div>
-
-    <h1>How to grow your hotel & restaurant business through digital marketing</h1>
-
     <p>
       Digital marketing is a common practice in most industries and especially in the hotel and restaurant industry. Since restaurants are constantly competing for customers, it is extremely important to invest in digital marketing to stand out from other restaurants.
     </p>
@@ -7183,9 +7154,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "Digital marketing is a common practice in most industries and especially in the hotel and restaurant industry.",
   data: `
   <div>
-
-    <h1>How to grow your hotel & restaurant business through digital marketing</h1>
-
     <p>
       Digital marketing is a common practice in most industries and especially in the hotel and restaurant industry. Since restaurants are constantly competing for customers, it is extremely important to invest in digital marketing to stand out from other restaurants.
     </p>
@@ -7327,9 +7295,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "Restaurant owners who optimize their websites for search engine optimization are more likely to be at the top of Google search results page than those who do not invest in SEO. A prime ranking on Google can mean an increase in organic traffic, which can lead to increased revenue! Restaurant or hotel owners who rely on word-of-mouth advertising will find that online advertising makes it much easier to reach more people at less cost. So let's discuss some reasons why you should invest your time and resources into SEO as a restaurant owner.",
   data: `
   <div>
-
-    <h1>10 reasons why restaurants need SEO</h1>
-
     <p>
       Restaurant owners who optimize their websites for search engine optimization are more likely to be at the top of a Google search results page than those who do not invest in SEO. A prime ranking on Google can mean an increase in organic traffic, which can lead to increased revenue! Restaurant or hotel owners who rely on word-of-mouth advertising will find that online advertising makes it much easier to reach more people at less cost. So let's discuss some reasons why you should invest your time and resources into SEO as a restaurant owner.
     </p>
@@ -7495,9 +7460,6 @@ Run special offers & contests, like the festive season is coming so plan a conte
     "A high-end guide that focuses on Online Reputation Hotel management teaches hoteliers the value of continually focusing on their management by crushing their review score, enhancing their guest feedback approach, optimizing their website, and giving an exceptional guest experience with a perfect restaurant marketing blog.",
   data: `
   <div>
-
-    <h1>Why Reputation Management Services Are Important For Restaurants & Hotels?</h1>
-
     <p>
       A high-end guide that focuses on Online Reputation Hotel management teaches hoteliers the value of continually focusing on their management by crushing their review score, enhancing their guest feedback approach, optimizing their website, and giving an exceptional guest experience with a perfect <span style="background-color: #f8d7da;">restaurant marketing blog.</span>
     </p>
