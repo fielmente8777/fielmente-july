@@ -42,7 +42,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 export const homePageData = {
   bannerData: {
-    imgSrc: "/Banner.png",
+    imgSrc: "/Banner.webp",
     title: "Trusted by 500+ Hotels & Resorts Worldwide",
     subTitle: `Increase <b>Direct Resort Bookings by up to 40%</b> Without OTAs`,
     description:

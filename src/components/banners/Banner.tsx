@@ -24,7 +24,7 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
         />
 
         <Image
-          src="/home/bnr-sm.png"
+          src="/home/bnr-sm.webp"
           alt={title}
           fill
           className="object-contain md:hidden block"
