@@ -230,7 +230,6 @@ export default function RootLayout({
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ5LPRNM"></iframe>
         </noscript>
-        <GTMTracker />
         <AppProvider>
           <NavBar />
           <MobileNav />
