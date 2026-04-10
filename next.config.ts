@@ -14,7 +14,18 @@ const nextConfig: NextConfig = {
         hostname: "cdn.builder.io",
       },
     ],
-    dangerouslyAllowSVG: true,
+  },
+
+  experimental: {
+    esmExternals: true, // helps prefer modern builds
+    optimizePackageImports: ["lodash", "date-fns", "react-icons"],
+    optimizeCss: true,
+    optimizeServerReact: true,
+  },
+  compiler: {
+    removeConsole: {
+      exclude: ["error"],
+    },
   },
 };
 
