@@ -38,14 +38,14 @@ export async function generateMetadata({ params }: Params) {
   const post = blogData.find((post) => post.slug === path.slug);
 
   return {
-    title: post?.title,
-    description: post?.description,
+    title: post?.meta?.title || post?.title,
+    description: post?.meta?.description || post?.description,
     alternate: {
       canonical: `https://fielmente.com/${post?.slug}/`,
     },
     openGraph: {
-      title: post?.title,
-      description: post?.description,
+      title: post?.meta?.title || post?.title,
+      description: post?.meta?.description || post?.description,
       url: `https://fielmente.com/${post?.slug}/`,
       siteName: "Fielmente",
       locale: "en_IN",
