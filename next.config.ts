@@ -27,6 +27,7 @@ const nextConfig: NextConfig = {
       exclude: ["error"],
     },
   },
+  productionBrowserSourceMaps: true,
 };
 
 export default nextConfig;
