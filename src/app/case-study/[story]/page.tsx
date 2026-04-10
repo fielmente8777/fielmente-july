@@ -22,8 +22,8 @@ export async function generateMetadata(props: Params) {
   const params = await props.params;
   const data = casStudiesData.find((item) => item.slug === params.story);
   return {
-    title: `Case Study - Fielmente`,
-    description: `Case Study - Fielmente`,
+    title: data?.metaData?.title || `Case Study - Fielmente`,
+    description: data?.metaData?.description || `Case Study - Fielmente`,
     alternates: {
       canonical: `https://fielmente.com/case-study/${data?.slug}/`,
       languages: {
@@ -31,8 +31,8 @@ export async function generateMetadata(props: Params) {
       },
     },
     openGraph: {
-      title: `Case Study - Fielmente`,
-      description: `Case Study - Fielmente`,
+      title: data?.metaData?.title || `Case Study - Fielmente`,
+      description: data?.metaData?.description || `Case Study - Fielmente`,
       images: [
       {
         url: "/fielmente_logo.png",
