@@ -113,9 +113,9 @@ const chooseUsData = [
 
 function page() {
   return (
-    <section>
+    <section className="bg-gradient">
       {/* Boost Your Business with Fielmente, India's top Hospitality Marketing Services! */}
-      <div className="lg:py-20 py-9 bg-gradient max_width">
+      <div className="lg:py-20 py-9 max_width">
         <div className="max_width">
           <div className="grid lg:grid-cols-2 gap-5 mt-12">
             <div>
