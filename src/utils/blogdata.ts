@@ -50,6 +50,7 @@ export const blog: blogtype[] = [
       description:
         "Learn how UP’s Homestay Policy 2025 legalizes BnBs in Noida, offering incentives, subsidies, and new income opportunities for homeowners.",
     },
+    url: "/images/blog/1.webp",
     title: "BnBs in Noida Set to Become Legal Under New Homestay Policy 2025",
     slug: "bnbs-in-noida-set-to-become-legal-under-new-homestay-policy-2025",
     description:
@@ -4225,6 +4226,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Top hotel marketing agency in Delhi helping hotels, resorts & restaurants increase bookings & visibility.",
     },
+    url: "/images/blog/2.webp",
     description:
       "Delhi is one of India’s most competitive hospitality markets. From luxury hotels in Aerocity to boutique stays in South Delhi, standing out requires more than just listings.",
     date: "April 3, 2026",
@@ -4270,6 +4272,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Mumbai’s hospitality industry thrives on visibility, reputation, and premium positioning. Whether you run a luxury hotel in South Mumbai or a boutique stay in Bandra, digital presence is everything.",
     },
+    url: "/images/blog/3.webp",
     description:
       "Mumbai’s hospitality industry thrives on visibility, reputation, and premium positioning. Whether you run a luxury hotel in South Mumbai or a boutique stay in Bandra, digital presence is everything.",
     date: "April 3, 2026",
@@ -4309,6 +4312,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Bengaluru’s hospitality market is driven by corporate travel, tech professionals, and long-stay guests.",
     },
+    url: "/images/blog/4.webp",
     date: "April 3, 2026",
     description:
       "Bengaluru’s hospitality market is driven by corporate travel, tech professionals, and long-stay guests.",
@@ -4348,6 +4352,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "From Mussoorie to Rishikesh to Nainital, Uttarakhand is a hub for destination travel and luxury stays.",
     },
+    url: "/images/blog/5.webp",
     date: "April 3, 2026",
     description:
       "From Mussoorie to Rishikesh to Nainital, Uttarakhand is a hub for destination travel and luxury stays.",
@@ -4388,6 +4393,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Himachal Pradesh is one of India’s top travel destinations, with heavy competition among hotels and resorts.",
     },
+    url: "/images/blog/6.webp",
     date: "April 3, 2026",
     description:
       "Himachal Pradesh is one of India’s top travel destinations, with heavy competition among hotels and resorts.",
@@ -4427,6 +4433,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Boost bookings for your hotel or resort in Goa with Fielmente. Experts in SEO, ads, and luxury hospitality marketing.",
     },
+    url: "/images/blog/7.webp",
     date: "April 3, 2026",
     description:
       "Boost bookings for your hotel or resort in Goa with Fielmente. Experts in SEO, ads, and luxury hospitality marketing.",
@@ -4574,6 +4581,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Discover 5 proven ghost kitchen marketing strategies to attract customers, increase online orders, and grow your cloud kitchen business.",
     },
+    url:"/images/blog/8.webp",
     title: "5 Proven Ghost Kitchen Marketing Strategies To Attract Customers",
     slug: "5-proven-ghost-kitchen-marketing-strategies-to-attract-customers",
     description:
@@ -4686,6 +4694,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Learn the biggest cafe marketing challenges and practical solutions to increase footfall, improve retention, and grow your cafe business.",
     },
+    url:"/images/blog/9.webp",
     title: "Cafe Marketing: Challenges and Solutions",
     slug: "cafe-marketing-challenges-and-solutions",
     description:
@@ -4798,6 +4807,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Step-by-step guide to automate Google My Business messages for hotels and improve customer response, engagement, and bookings.",
     },
+    url:"/images/blog/10.webp",
     title:
       "Guide To Setup Automation Of Your Hotel Google My Business Messages",
     slug: "guide-to-setup-automation-of-your-hotel-google-my-business-messages",
@@ -4880,6 +4890,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Learn how Google Maps citations improve local SEO, visibility, and customer traffic for hotels and restaurants.",
     },
+    url:"/images/blog/11.webp",
     title:
       "How can Google maps citation increase your hotel / restaurant business?",
     slug: "how-can-google-maps-citation-increase-your-hotel-restaurant-business",
@@ -4992,6 +5003,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Discover how OTA optimization helps hotels increase visibility, rankings, and bookings across platforms like Booking.com and Expedia.",
     },
+     url:"/images/blog/12.webp",
     title: "How Can Ota Optimisation Help Your Hotel Get Millions Of Benefit",
     slug: "how-can-ota-optimisation-help-your-hotel-get-millions-of-benefit",
     description:
@@ -5082,6 +5094,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Discover Mahabir Palace in Kathmandu, a luxury hotel near Swayambhunath and Kathmandu Durbar Square. Enjoy modern amenities, free WiFi, rooftop cafe, spa, and easy access to top tourist attractions.",
     },
+     url:"/images/blog/13.webp",
     title: "Mahabir Palace: The New Place Of Tourist Attraction",
     slug: "mahabir-palace-the-new-place-of-tourist-attraction",
     description:
@@ -5161,6 +5174,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Learn why a brand guide is essential for hotels and hospitality businesses. Discover how it strengthens branding, improves marketing, builds trust, and helps grow your hotel business.",
     },
+     url:"/images/blog/14.webp",
     title: "The Importance Of A Brand Guide For Hotel",
     slug: "the-importance-of-a-brand-guide-for-hotel",
     description:
@@ -5233,6 +5247,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Discover the top 10 WordPress plugins for hotel websites to improve bookings, SEO, and user experience. From booking systems to SEO tools, optimize your hotel site easily.",
     },
+     url:"/images/blog/15.webp",
     title: "Top 10 WordPress Plugin To Upload On Your Hotel Website",
     slug: "top-10-wordpress-plugin-to-upload-on-your-hotel-website",
     description:
@@ -5375,6 +5390,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Discover the best WordPress plugins to improve hotel bookings, SEO, and website performance with easy-to-use tools.",
     },
+     url:"/images/blog/16.webp",
     title: "Top 10 WordPress Plugin To Upload On Your Restaurant Website",
     slug: "top-10-wordpress-plugin-to-upload-on-your-restaurant-website",
     description:
@@ -5454,6 +5470,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Learn why content marketing is essential for hotels and restaurants to attract customers, build brand reputation, and grow business with effective digital strategies.",
     },
+     url:"/images/blog/17.webp",
     title: "Why Contenting Marketing Is Crucial For Hotels And Restaurants",
     slug: "why-contenting-marketing-is-crucial-for-hotels-and-restaurants",
     description:
@@ -5592,6 +5609,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Discover why online reputation management is crucial for hotels to boost bookings, build trust, and increase visibility through positive reviews and digital presence.",
     },
+     url:"/images/blog/18.webp",
     title: "Why Is Your Hotel's Online Reputation So Important?",
     slug: "why-is-your-hotels-online-reputation-so-important",
     description:
@@ -5658,6 +5676,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       description:
         "Learn why local SEO is essential for cloud kitchens and ghost kitchens to increase visibility, attract local customers, and boost online food orders.",
     },
+     url:"/images/blog/19.webp",
+
     title:
       "Why Local Seo Is Important For Cloud Kitchens, Ghost Kitchens Or Multi-Brand Kitchens?",
     slug: "why-local-seo-is-important-for-cloud-kitchens-ghost-kitchens-or-multi-brand-kitchens",
@@ -5839,6 +5859,8 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Discover the importance of using alt text on Instagram to improve accessibility, boost reach, and enhance your content visibility in search.",
     },
+     url:"/images/blog/20.webp",
+
     title: "Why Use Alt Text For Instagram",
     slug: "why-use-alt-text-for-instagram",
     description:
@@ -5915,6 +5937,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Compare WooCommerce vs Shopify to find the best eCommerce platform for your business based on customization, cost, security, and ease of use.",
     },
+    url:"/images/blog/21.webp",
     title: "Woocommerce VS Shopify",
     slug: "woocommerce-vs-shopify",
     description:
@@ -6100,6 +6123,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Discover why SEO is essential for restaurants to increase visibility, attract more customers, and boost online traffic and conversions.",
     },
+     url:"/images/blog/22.webp",
     title: "Why SEO Is Important For Restaurants",
     slug: "why-seo-is-important-for-restaurants",
     description:
@@ -6162,6 +6186,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Explore 10 effective digital marketing strategies to increase hotel bookings, improve online visibility, and drive more revenue.",
     },
+     url:"/images/blog/23.webp",
     title:
       "10 Amazing Digital Marketing Strategies To Increase Online Bookings",
     slug: "10-amazing-digital-marketing-strategies-to-increase-online-bookings",
@@ -6315,6 +6340,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Learn how to market your hotel online using SEO, social media, and digital strategies to increase visibility and attract more customers.",
     },
+     url:"/images/blog/24.webp",
     title: "How To Market A Hotel Online",
     slug: "how-to-market-a-hotel-online",
     description:
@@ -6377,6 +6403,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Discover effective hostel marketing strategies to attract more guests, build your brand, and grow your business with SEO and digital marketing.",
     },
+    url:"/images/blog/25.webp",
     title: "Marketing A Hostel: The Basics",
     slug: "marketing-a-hostel-the-basics",
     description:
@@ -6487,6 +6514,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Learn how Google Map citations boost your hotel’s online presence, improve local SEO, and help customers find your business easily.",
     },
+    url:"/images/blog/26.webp",
     title: "How Google Map Citation Improves Your Hotel's Online Presence",
     slug: "how-google-map-citation-improves-your-hotels-online-presence",
     description:
@@ -6574,6 +6602,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Discover how restaurants in Canada leverage digital marketing strategies to boost visibility, engage customers, and grow their business.",
     },
+    url:"/images/blog/27.webp",
     title:
       "How are these restaurants in Canada disrupting the restaurant business through digital marketing",
     slug: "how-restaurants-in-canada-are-disrupting-the-restaurant-business-through-digital-marketing",
@@ -6665,6 +6694,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Explore how digital marketing and SEO are transforming cloud kitchen businesses by increasing visibility, boosting orders, and building strong online brands.",
     },
+    url:"/images/blog/28.webp",
     title:
       "How Digital Marketing and SEO changing the face of Cloud Kitchen business",
     slug: "how-digital-marketing-and-seo-changing-the-face-of-cloud-kitchen-business",
@@ -6776,6 +6806,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Learn how Facebook and Instagram ads help restaurants boost food orders, reach more customers, and improve conversions through social media marketing.",
     },
+    url:"/images/blog/29.webp",
     title:
       "How Facebook and Instagram ads can increase your food orders and how you get the benefits out of it and why it is the most important part of the social media",
     slug: "how-facebook-and-instagram-ads-can-increase-your-food-orders",
@@ -6932,6 +6963,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Discover how LinkedIn can help grow your restaurant business by building connections, attracting clients, and expanding your professional network.",
     },
+    url:"/images/blog/30.webp",
     title: "How Can LinkedIn Help You To Expand Your Restaurant Business?",
     slug: "how-linkedin-helps-expand-your-restaurant-business",
     description:
@@ -7129,6 +7161,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Learn how digital marketing strategies can help grow your hotel and restaurant business by increasing online visibility, engagement, and customer retention.",
     },
+    url:"/images/blog/31.webp",
     title:
       "How to grow your hotel & restaurant business through digital marketing",
     slug: "how-to-grow-hotel-restaurant-business-digital-marketing",
@@ -7273,6 +7306,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Discover 10 powerful reasons why SEO is essential for restaurants to improve visibility, attract customers, and increase online orders.",
     },
+    url:"/images/blog/33.webp",
     title: "10 reasons why restaurants need SEO",
     slug: "10-reasons-why-restaurants-need-seo",
     description:
@@ -7439,6 +7473,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Learn why reputation management services are crucial for hotels and restaurants to build trust, improve reviews, and boost bookings.",
     },
+    url:"/images/blog/32.webp",
     title:
       "Why Reputation Management Services Are Important For Restaurants & Hotels?",
     slug: "why-reputation-management-services-important-restaurants-hotels",
