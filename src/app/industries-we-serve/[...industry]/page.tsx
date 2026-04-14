@@ -21,6 +21,7 @@ import WhyToJoin from "./components/WhyToJoin";
 import WhyYouNeedGrid from "./components/WhyYouNeedGrid";
 import { subPageData } from "./components/subPageData";
 import { industriesData } from "./pageData";
+import { notFound } from "next/navigation";
 interface Params {
   params: Promise<{
     industry: string[];
@@ -45,28 +46,44 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Params) {
   const path = await params;
-  const slug = await path.industry[0];
-  const industry = industriesData.find((ind) => ind.slug === slug);
-  const subPage = subPageData.find(
-    (ind) => ind.slug.split("/").join("/") === slug
-  );
-  if (industry) {
+  const slugArray = path.industry;
+
+  if (!slugArray || slugArray.length === 0) {
     return {
-      title: industry?.metaData?.title,
-      description: industry?.metaData?.description,
-      alternate: {
-        canonical: `https://fielmente.com/industries-we-serve/${industry?.slug}/`,
+      title: "Page Not Found",
+      robots: { index: false, follow: false },
+    };
+  }
+
+  const fullSlug = slugArray.join("/");
+
+  // ✅ Level 1 (industry)
+  if (slugArray.length === 1) {
+    const industry = industriesData.find((ind) => ind.slug === slugArray[0]);
+
+    if (!industry) {
+      return {
+        title: "Page Not Found",
+        robots: { index: false, follow: false },
+      };
+    }
+
+    return {
+      title: industry.metaData?.title,
+      description: industry.metaData?.description,
+      alternates: {
+        canonical: `https://fielmente.com/industries-we-serve/${industry.slug}/`,
       },
       openGraph: {
-        title: industry?.metaData?.title,
-        description: industry?.metaData?.description,
-        url: `https://fielmente.com/industries-we-serve/${industry?.slug}/`,
+        title: industry.metaData?.title,
+        description: industry.metaData?.description,
+        url: `https://fielmente.com/industries-we-serve/${industry.slug}/`,
         siteName: "Fielmente",
         locale: "en_IN",
         type: "website",
         images: [
           {
-            url: `https://fielmente.com/industries-we-serve/${industry?.slug}-og.png`,
+            url: `https://fielmente.com/industries-we-serve/${industry.slug}-og.png`,
             width: 1200,
           },
         ],
@@ -79,82 +96,72 @@ export async function generateMetadata({ params }: Params) {
           index: true,
           follow: true,
           noimageindex: true,
-          "max-snippet": -1,
           "max-video-preview": -1,
-        },
-      },
-    };
-  } else if (subPage) {
-    return {
-      title: subPage?.metaData?.title,
-      description: subPage?.metaData?.description,
-      alternate: {
-        canonical: `https://fielmente.com/industries-we-serve/${subPage?.slug}/`,
-        languages: {
-          en_US: `https://fielmente.com/industries-we-serve/${subPage?.slug}/`,
-        },
-      },
-      openGraph: {
-        title: subPage?.metaData?.title,
-        description: subPage?.metaData?.description,
-        url: `https://fielmente.com/industries-we-serve/${subPage?.slug}/`,
-        siteName: "Fielmente",
-        locale: "en_IN",
-        type: "website",
-        images: [
-          {
-            url: "/fielmente_logo.png",
-            width: 1200,
-            height: 630,
-          },
-        ],
-      },
-      robots: {
-        index: true,
-        follow: true,
-        nocache: true,
-        googleBot: {
-          index: true,
-          follow: true,
-          noimageindex: true,
+          "max-image-preview": "large",
           "max-snippet": -1,
-          "max-video-preview": -1,
-        },
-      },
-    };
-  } else {
-    return {
-      title: "Industry Not Found - Fielmente",
-      description:
-        "The industry you are looking for does not exist. Please check the URL and try again.",
-      robots: {
-        index: false,
-        follow: false,
-        nocache: true,
-        googleBot: {
-          index: false,
-          follow: false,
-          noimageindex: true,
         },
       },
     };
   }
+
+  // ✅ Level 2+ (subpages)
+  const subPage = subPageData.find((ind) => ind.slug === fullSlug);
+
+  if (!subPage) {
+    return {
+      title: "Page Not Found",
+      robots: { index: false, follow: false },
+    };
+  }
+
+  return {
+    title: subPage.metaData?.title,
+    description: subPage.metaData?.description,
+    alternates: {
+      canonical: `https://fielmente.com/industries-we-serve/${subPage.slug}/`,
+    },
+    openGraph: {
+      title: subPage.metaData?.title,
+      description: subPage.metaData?.description,
+      url: `https://fielmente.com/industries-we-serve/${subPage.slug}/`,
+      siteName: "Fielmente",
+      locale: "en_IN",
+      type: "website",
+      images: [
+        {
+          url: "/fielmente_logo.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+  };
 }
 
 export default async function IndustryPage({ params }: Params) {
   const data = await params;
   const slug = await data.industry;
-  if (!slug) {
-    return (
-      <main className="mt-10">
-        <h1>Industry Not Found</h1>
-      </main>
-    );
+  if (!slug || slug.length === 0) {
+    notFound();
   }
-
   if (slug.length === 1) {
     const industry = industriesData.find((ind) => ind.slug === slug[0]);
-
+    if (!industry) {
+      notFound();
+    }
     return (
       <main className="mt-10">
         {industry?.banner && <GridCard {...industry.banner} />}
@@ -213,11 +220,7 @@ export default async function IndustryPage({ params }: Params) {
       (ind) => ind.slug.split("/").join("/") === slug.join("/")
     );
     if (!subPageSlug) {
-      return (
-        <main className="mt-10">
-          <h1>Sub Page Not Found</h1>
-        </main>
-      );
+      notFound();
     }
     return (
       <main className="mt-10">

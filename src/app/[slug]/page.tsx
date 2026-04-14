@@ -5,6 +5,7 @@ import { SectionWithContainer } from "@/components";
 import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
 import { homePageData } from "../(home)/homePageData";
 import ExploreMoreBLogs from "./components/ExploreMoreBLogs";
+import { notFound } from "next/navigation";
 
 interface Params {
   params: {
@@ -37,6 +38,12 @@ export async function generateMetadata({ params }: Params) {
   const path = await params;
   const post = blogData.find((post) => post.slug === path.slug);
 
+  if (!post) {
+    return {
+      title: "page not found",
+    };
+  }
+
   return {
     title: post?.meta?.title || post?.title,
     description: post?.meta?.description || post?.description,
@@ -51,12 +58,12 @@ export async function generateMetadata({ params }: Params) {
       locale: "en_IN",
       type: "article",
       images: [
-      {
-        url: "/fielmente_logo.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+        {
+          url: "/fielmente_logo.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
     },
     robots: {
       index: true,
@@ -98,11 +105,7 @@ export default async function LandingPage({ params }: Params) {
   };
 
   if (!data) {
-    return (
-      <main>
-        <h1>404</h1>
-      </main>
-    );
+    notFound();
   }
 
   return (
