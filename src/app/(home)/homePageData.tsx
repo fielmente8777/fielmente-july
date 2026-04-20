@@ -199,7 +199,7 @@ export const homePageData = {
       "Transforming Hospitality Brands with Expert <a href='/industries-we-serve/hotel-marketing-agency/'>Hospitality Marketing Services</a>",
     cards: [
       {
-        src: "/home/im8.png",
+        src: "/home/social-media-management.png",
         icon: <SocialMediaIcons />,
         title: "Social Media Management",
         description:
@@ -210,7 +210,7 @@ export const homePageData = {
         },
       },
       {
-        src: "/home/service-1.png",
+        src: "/home/local-seo.png",
         icon: <LocalSeoIcon />,
         title: "Local SEO",
         description:
@@ -221,7 +221,7 @@ export const homePageData = {
         },
       },
       {
-        src: "/home/service-2.png",
+        src: "/home/website-seo.png",
         icon: <WebsiteSeoIcon />,
         title: "Website SEO",
         description:
@@ -232,7 +232,7 @@ export const homePageData = {
         },
       },
       {
-        src: "/home/service-3.png",
+        src: "/home/ai-search-optimization.png",
         icon: <AiSearchOptimizationIcon />,
         title: "AI Search Optimization",
         description:
@@ -243,7 +243,7 @@ export const homePageData = {
         },
       },
       {
-        src: "/home/service-4.png",
+        src: "/home/preopening-marketing.png",
         icon: <PreOpeningMarketingIcon />,
         title: "Preopening Marketing",
         description:
@@ -254,7 +254,7 @@ export const homePageData = {
         },
       },
       {
-        src: "/home/service-5.png",
+        src: "/home/ota-management.png",
         icon: <OtaManagementIcon />,
         title: "OTA Management",
         description:
@@ -265,7 +265,7 @@ export const homePageData = {
         },
       },
       {
-        src: "/home/service-6.png",
+        src: "/home/website-development.png",
         icon: <WebsiteDevelopmentIcon />,
         title: "Website Development",
         description:
@@ -276,7 +276,7 @@ export const homePageData = {
         },
       },
       {
-        src: "/home/service-7.png",
+        src: "/home/sales-marketing-automation.png",
         icon: <MarketingAutomationIcon />,
         title: "Sales & Marketing Automation",
         description:
@@ -287,7 +287,7 @@ export const homePageData = {
         },
       },
       {
-        src: "/home/service-8.png",
+        src: "/home/content-creation.png",
         icon: <ContentCreationIcon />,
         title: "Content Creation",
         description:
