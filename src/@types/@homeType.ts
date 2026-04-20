@@ -61,6 +61,8 @@ export interface ProductsDataTypes {
     icon?: JSX.Element;
     title: string;
     description: string;
+    fromColor?: string;
+    toColor?: string;
   }[];
   cta?: CtaBtnPropsType;
 }

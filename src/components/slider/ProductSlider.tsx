@@ -3,6 +3,7 @@ import { ProductsDataTypes } from "@/@types/@homeType";
 import ProductCard from "@/components/cards/ProductCard";
 import SwiperCarousel from "@/components/slider/SwiperCarousel";
 import { Autoplay } from "swiper/modules";
+import ProductCardNew from "../cards/ProductCardNew";
 
 const ProductSlider: React.FC<{ cards: ProductsDataTypes["cards"] }> = ({
   cards,
@@ -20,7 +21,7 @@ const ProductSlider: React.FC<{ cards: ProductsDataTypes["cards"] }> = ({
           disableOnInteraction: false,
         }}
         speed={900}
-        renderSlide={(card) => <ProductCard {...card} />}
+        renderSlide={(card) => <ProductCardNew {...card} />}
       />
     </div>
   );

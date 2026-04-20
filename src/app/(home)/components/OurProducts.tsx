@@ -1,7 +1,7 @@
 "use client";
 import { ProductsDataTypes } from "@/@types/@homeType";
 import { SectionWithContainer } from "@/components";
-import ProductCard from "@/components/cards/ProductCard";
+import ProductCardNew from "@/components/cards/ProductCardNew";
 import ProductSlider from "@/components/slider/ProductSlider";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import { useState } from "react";
@@ -27,9 +27,9 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
         ></p>
       </div>
       {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"> */}
-      <div className="md:flex hidden flex-wrap justify-center gap-5.5 mt-10">
+      <div className="md:flex hidden flex-wrap justify-center gap-8.5 mt-10">
         {cards.slice(0, showMore ? cards.length : 8).map((card, index) => (
-          <ProductCard key={index} {...card} />
+          <ProductCardNew key={index} {...card} />
         ))}
       </div>
       <ProductSlider cards={cards} />

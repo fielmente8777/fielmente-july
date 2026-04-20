@@ -5,6 +5,7 @@ import { CtaBtn } from "@/components/buttons/CtaBtn";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import ProductCard from "@/components/cards/ProductCard";
 import ProductSlider from "@/components/slider/ProductSlider";
+import ProductCardNew from "@/components/cards/ProductCardNew";
 
 const OurProducts: React.FC<ProductsDataTypes> = ({
   title,
@@ -24,9 +25,9 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
           ></p>
         </div>
         {/* <div className="md:grid hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"> */}
-        <div className="md:flex hidden flex-wrap justify-center gap-5.5 mt-10">
+        <div className="md:flex hidden flex-wrap justify-center gap-8.5 mt-10">
           {cards.map((card, index) => (
-            <ProductCard key={index} {...card} />
+            <ProductCardNew key={index} {...card} />
           ))}
         </div>
       </Container>
