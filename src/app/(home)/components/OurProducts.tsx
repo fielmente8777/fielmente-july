@@ -28,7 +28,7 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
       </div>
       {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"> */}
       <div className="md:flex hidden flex-wrap justify-center gap-8.5 mt-10">
-        {cards.slice(0, showMore ? cards.length : 8).map((card, index) => (
+        {cards.slice(0, showMore ? cards.length : 9).map((card, index) => (
           <ProductCardNew key={index} {...card} />
         ))}
       </div>
