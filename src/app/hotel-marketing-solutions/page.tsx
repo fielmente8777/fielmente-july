@@ -69,7 +69,7 @@ function page() {
         </SectionWithContainer>
       )}
       {industry?.clients && <Clients {...industry.clients} />}
-      {industry?.testimonials && <Testimonials {...industry.testimonials} />}
+      {/* {industry?.testimonials && <Testimonials {...industry.testimonials} />} */}
     </main>
   );
 }

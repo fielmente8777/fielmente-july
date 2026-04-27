@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 // import Form from "@/app/about-fielmente-best-hospitality-marketing-agency/components/Form";
+import ContactSection from "@/app/landing-page/components/ContactSection";
+import { landingPageData } from "@/app/landing-page/components/pageData";
 import type { Metadata } from "next";
 import ContactBtn3 from "../contactbtn/ContactBtn3";
-import ContactOldSection from "@/components/commonSections/ContactOldSection";
 
 export const metadata: Metadata = {
   title: "India's Best Hospitality Social Media Marketing Agency - Fielmente",
@@ -255,7 +256,8 @@ function page() {
         </div>
       </div>
 
-      <ContactOldSection />
+      {/* <ContactOldSection /> */}
+      {landingPageData[0].contactSection && <ContactSection {...landingPageData[0].contactSection} />}
     </section>
   );
 }

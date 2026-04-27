@@ -9,6 +9,8 @@ import AccordinContent from "./components/AccordinContent";
 import type { Metadata } from "next";
 import Contactbtn1 from "./contactbtn/Contactbtn1";
 import Contactbtn2 from "./contactbtn/Contactbtn2";
+import { landingPageData } from "../landing-page/components/pageData";
+import ContactSection from "../landing-page/components/ContactSection";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality Marketing Services - Fielmente",
@@ -398,7 +400,9 @@ function page() {
       <PeopleSay />
 
       {/* Form*** */}
-      <ContactOldSectionProps bgColor="primary2" />
+      {landingPageData[0].contactSection && <ContactSection {...landingPageData[0].contactSection} />}
+
+      {/* <ContactOldSectionProps bgColor="primary2" /> */}
     </section>
   );
 }

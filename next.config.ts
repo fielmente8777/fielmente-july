@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
 
   experimental: {
     esmExternals: true, // helps prefer modern builds
-    optimizePackageImports: ["lodash", "date-fns", "react-icons"],
+    optimizePackageImports: ["lodash", "date-fns", "react-icons","axios","swiper"],
     optimizeCss: true,
     optimizeServerReact: true,
   },

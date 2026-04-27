@@ -7,17 +7,17 @@ import Container from "@/components/sectionComponants/Container";
 import type { Metadata } from "next";
 import ContactBtn3 from "../contactbtn/ContactBtn3";
 import ContactOldSection from "@/components/commonSections/ContactOldSection";
+import { landingPageData } from "@/app/landing-page/components/pageData";
+import ContactSection from "@/app/landing-page/components/ContactSection";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality Google Ads Agency - Fielmente",
   description:
     "Boost your hotel, restaurant, or resort with Fielmente, the leading hospitality Google Ads agency. Campaigns for social media and business.",
   alternates: {
-    canonical:
-      "https://fielmente.com/services/google-ads-agency/",
+    canonical: "https://fielmente.com/services/google-ads-agency/",
     languages: {
-      "en-US":
-        "https://fielmente.com/services/google-ads-agency/",
+      "en-US": "https://fielmente.com/services/google-ads-agency/",
     },
   },
   openGraph: {
@@ -321,7 +321,10 @@ function page() {
       </div>
 
       {/* Form  */}
-      <ContactOldSection />
+      {/* <ContactOldSection /> */}
+      {landingPageData[0].contactSection && (
+        <ContactSection {...landingPageData[0].contactSection} />
+      )}
     </section>
   );
 }

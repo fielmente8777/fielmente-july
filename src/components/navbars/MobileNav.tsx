@@ -12,11 +12,18 @@ const MobileNav = () => {
   const { isMobileNavOpen, setIsMobileNavOpen } = useAppContext();
   const pathName = usePathname();
 
-  // ✅ store active dropdown index
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
 
   const handleDropdown = (index: number) => {
     setOpenDropdown((prev) => (prev === index ? null : index));
+  };
+
+  // ✅ external navigation handler
+  const handleNave = (href: string) => {
+    if (href) {
+      window.open(href, "_blank");
+      setIsMobileNavOpen(false);
+    }
   };
 
   return (
@@ -41,13 +48,24 @@ const MobileNav = () => {
             return (
               <div key={index} className="text-lg">
                 <div className="flex items-center justify-between">
-                  <Link
-                    onClick={() => setIsMobileNavOpen(false)}
-                    href={link.href || "#"}
-                    className="text-nowrap font-semibold capitalize text-primary"
-                  >
-                    {link.label}
-                  </Link>
+                  
+                  {/* ✅ Conditional link/button */}
+                  {link.type === "button" ? (
+                    <button
+                      onClick={() => handleNave(link.href)}
+                      className="text-nowrap font-semibold capitalize text-primary"
+                    >
+                      {link.label}
+                    </button>
+                  ) : (
+                    <Link
+                      href={link.href || "#"}
+                      onClick={() => setIsMobileNavOpen(false)}
+                      className="text-nowrap font-semibold capitalize text-primary"
+                    >
+                      {link.label}
+                    </Link>
+                  )}
 
                   {link.subLinks && (
                     <button
@@ -64,21 +82,31 @@ const MobileNav = () => {
                   )}
                 </div>
 
+                {/* ✅ SubLinks */}
                 {isActive && link.subLinks && (
                   <ul className="flex flex-col gap-4 mt-4">
                     {link.subLinks.map((subLink, subIndex) => (
                       <li key={subIndex}>
-                        <Link
-                          href={subLink.href || "#"}
-                          className={`text-nowrap font-semibold capitalize ${
-                            pathName === subLink.href
-                              ? "text-secondary"
-                              : "text-primary"
-                          }`}
-                          onClick={() => setIsMobileNavOpen(false)}
-                        >
-                          {subLink.label}
-                        </Link>
+                        {subLink.type === "button" ? (
+                          <button
+                            onClick={() => handleNave(subLink.href)}
+                            className="text-nowrap font-semibold capitalize text-primary"
+                          >
+                            {subLink.label}
+                          </button>
+                        ) : (
+                          <Link
+                            href={subLink.href || "#"}
+                            className={`text-nowrap font-semibold capitalize ${
+                              pathName === subLink.href
+                                ? "text-secondary"
+                                : "text-primary"
+                            }`}
+                            onClick={() => setIsMobileNavOpen(false)}
+                          >
+                            {subLink.label}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>

@@ -1,7 +1,9 @@
 import { Banner } from "@/components";
 import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
 import SlidingTitle from "@/components/slider/SlidingTitle";
-import Blogs from "./components/Blogs";
+import CountriesWeWorked from "../landing-page/components/CountriesWeWorked";
+import { landingPageData } from "../landing-page/components/pageData";
+import ResultsSection from "../landing-page/components/ResultsSection";
 import BusinessPartners from "./components/BusinessPartners";
 import ChooseFielmente from "./components/ChooseFielmente";
 import ElevateBrand from "./components/ElevateBrand";
@@ -15,13 +17,9 @@ import OurProducts from "./components/OurProducts";
 import OurServices from "./components/OurServices";
 import OurValuedClient from "./components/OurValuedClient";
 import ProvenResults from "./components/ProvenResults";
-import Testimonials from "./components/Testimonials";
 import WhyChooseUs from "./components/WhyChooseUs";
 import WorkWithIndiasHotel from "./components/WorkWithIndiasHotel";
 import { homePageData } from "./homePageData";
-import CountriesWeWorked from "../landing-page/components/CountriesWeWorked";
-import { landingPageData } from "../landing-page/components/pageData";
-import ResultsSection from "../landing-page/components/ResultsSection";
 
 export default function Home() {
   return (
@@ -47,7 +45,7 @@ export default function Home() {
       {/* <Blogs {...homePageData?.blogsData} /> */}
       <WorkWithIndiasHotel {...homePageData?.workWithHotel} />
       <OurValuedClient {...homePageData?.ourValuedClient} />
-      <Testimonials {...homePageData?.testimonialsData} />
+      {/* <Testimonials {...homePageData?.testimonialsData} /> */}
       <ElevateBrand {...homePageData?.ElevateBrand} />
       <Faq {...homePageData?.faqsData} />
       <ContactUsSection {...homePageData?.contactUsSection}/>

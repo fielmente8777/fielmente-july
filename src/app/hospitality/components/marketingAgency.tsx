@@ -1,12 +1,12 @@
 "use client";
-import FormOption from "@/components/forms/FormOption";
+import LandingPgForm from "@/components/forms/LandingPgForm";
 import { usePathname } from "next/navigation";
 
 function MarketingAgency() {
   const pathName = usePathname();
 
   return (
-    <section className="grid lg:grid-cols-2 gap-10">
+    <section className="grid lg:grid-cols-2 grid-cols-1 gap-10">
       {/* Left Content**** */}
       <div className="flex flex-col justify-center gap-6 text-white">
         {/* location */}
@@ -77,8 +77,17 @@ function MarketingAgency() {
       </div>
 
       {/* Right Consulation Form**** */}
-      <div className="flex lg:justify-end lg:pt-0 pt-2" id="contact">
-        <FormOption />
+      <div className="flex lg:justify-end lg:pt-10  pt-2" id="contact">
+        {/* <FormOption /> */}
+       <div className="md:max-w-md w-full">
+         <LandingPgForm
+          bgColor="bg-white shadow-xl"
+          textColor="text-black"
+          subTextColor="text-secondary"
+          inputBgColor="bg-[#F5F6F8]"
+          placeholderColor="placeholder:text-[#6B7280]"
+        />
+       </div>
       </div>
     </section>
   );

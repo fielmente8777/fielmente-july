@@ -8,6 +8,8 @@ import Section from "@/components/sectionComponants/Section";
 import type { Metadata } from "next";
 import ContactBtn3 from "../contactbtn/ContactBtn3";
 import ContactOldSection from "@/components/commonSections/ContactOldSection";
+import ContactSection from "@/app/landing-page/components/ContactSection";
+import { landingPageData } from "@/app/landing-page/components/pageData";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality SEO Agency - Fielmente",
@@ -25,14 +27,14 @@ export const metadata: Metadata = {
     title: "India's Leading Hospitality SEO Agency - Fielmente",
     description:
       "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
-  images: [
+    images: [
       {
         url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },
     ],
-    },
+  },
 };
 
 const CardData1 = [
@@ -404,7 +406,10 @@ function page() {
           {/* <Form title={"Looking to discuss with us?"} color={"black"} /> */}
         </div>
       </div>
-      <ContactOldSection />
+      {/* <ContactOldSection /> */}
+      {landingPageData[0].contactSection && (
+        <ContactSection {...landingPageData[0].contactSection} />
+      )}
     </section>
   );
 }

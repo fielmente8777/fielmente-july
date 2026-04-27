@@ -47,6 +47,12 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNave = (href: string) => {
+    if (href) {
+      window.open(href, "_blank");
+    }
+  };
+
   return (
     <div
       className={`fixed flex inset-x-0 items-center justify-center top-0 z-50  transition-all ease-in-out duration-300  ${paths.includes(pathName) ? (isScrolled ? "bg-white/90 backdrop-blur-sm" : "bg-transparent") : "bg-white/90 backdrop-blur-sm"}`}
@@ -76,18 +82,33 @@ const Header = () => {
               {navLinks.map((link, index) => {
                 return (
                   <li key={index} className="relative nav">
-                    <Link
-                      href={link.href ? link.href : "#"}
-                      className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark"}`}
-                    >
-                      {link.label}
-                      <span className="span-border"></span>
-                      {link.subLinks && (
-                        <span className="icon duration-300 transition-all ease-in-out">
-                          <OutlineDrpopdown />
-                        </span>
-                      )}
-                    </Link>
+                    {link.type === "button" ? (
+                      <button
+                        onClick={() => handleNave(link.href)}
+                        className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark"}`}
+                      >
+                        {link.label}
+                        <span className="span-border"></span>
+                        {/* {link.subLinks && (
+                          <span className="icon duration-300 transition-all ease-in-out">
+                            <OutlineDrpopdown />
+                          </span>
+                        )} */}
+                      </button>
+                    ) : (
+                      <Link
+                        href={link.href ? link.href : "#"}
+                        className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark"}`}
+                      >
+                        {link.label}
+                        <span className="span-border"></span>
+                        {link.subLinks && (
+                          <span className="icon duration-300 transition-all ease-in-out">
+                            <OutlineDrpopdown />
+                          </span>
+                        )}
+                      </Link>
+                    )}
                     {link.subLinks && (
                       <span className="nav-1">
                         {link.subLinks.map((subLink, index) => {

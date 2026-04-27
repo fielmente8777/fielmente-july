@@ -210,7 +210,7 @@ export default async function IndustryPage({ params }: Params) {
           </SectionWithContainer>
         )}
         {industry?.clients && <Clients {...industry.clients} />}
-        {industry?.testimonials && <Testimonials {...industry.testimonials} />}
+        {/* {industry?.testimonials && <Testimonials {...industry.testimonials} />} */}
         {industry?.enquiry2 && <EnquirySection {...industry.enquiry2} />}
       </main>
     );

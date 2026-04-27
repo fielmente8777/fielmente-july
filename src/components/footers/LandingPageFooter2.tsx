@@ -2,9 +2,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { contacts } from "../../../contact";
-import { OutLineCall, OutLineEmail, OutLineLocationIcon } from "@/utils/OldFormIcons";
+import {
+  OutLineCall,
+  OutLineEmail,
+  OutLineLocationIcon,
+} from "@/utils/OldFormIcons";
 import { Container, Section } from "../sectionComponants";
 import LandingPageForm from "../forms/LandingPageForm";
+import LandingPgForm from "../forms/LandingPgForm";
 
 const LandingPageFooter2 = () => {
   const pathName = usePathname();
@@ -117,8 +122,11 @@ const LandingPageFooter2 = () => {
               ))}
             </ul>
           </div>
-          <div className="flex items-center lg:justify-end justify-center">
-            <LandingPageForm title="Get in Touch Now!" bold="Elevate Your Restaurant" />
+          <div className="flex items-center lg:justify-end justify-center ">
+            <div className="max-w-md w-full">
+              <LandingPgForm />
+            </div>
+            {/* <LandingPageForm title="Get in Touch Now!" bold="Elevate Your Restaurant" /> */}
           </div>
         </div>
       </Container>

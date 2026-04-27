@@ -1,6 +1,7 @@
 import { Container, Section } from "@/components";
 import React from "react";
 import LandingPageForm from "../forms/LandingPageForm";
+import LandingPgForm from "../forms/LandingPgForm";
 
 interface BannerProps {
   title: string;
@@ -28,10 +29,11 @@ const Banner: React.FC<BannerProps> = ({ title, subTitle, description }) => {
             ></p>
           </div>
           <div className="col-span-1 lg:col-span-1">
-            <LandingPageForm
+            <LandingPgForm />
+            {/* <LandingPageForm
               title="Grow Your Restaurant!"
               bold="Partner with Fielmente"
-            />
+            /> */}
           </div>
         </div>
       </Container>

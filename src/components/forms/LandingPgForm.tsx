@@ -34,6 +34,7 @@ const LandingPgForm = ({
   placeholderColor?: string;
   inputBgColor?: string;
 }) => {
+  // const pathName = usePathname();
   const {
     formData,
     isSubmitting,
@@ -84,7 +85,7 @@ const LandingPgForm = ({
       required: true,
       value: formData.message,
       onChange: handleChange,
-      label: "Service",
+      label: "Message",
     },
   ];
 

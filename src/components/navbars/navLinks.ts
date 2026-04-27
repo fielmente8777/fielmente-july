@@ -83,23 +83,28 @@ export const navLinks: NavLinksProps[] = [
   //     // },
   //   ],
   // },
+  // {
+  //   label: "services",
+  //   href: "/hospitality-marketing-services/",
+  //   subLinks: [
+  //     {
+  //       label: " Social Media Management",
+  //       href: "/hospitality-marketing-services/social-media-marketing-agency/",
+  //     },
+  //     {
+  //       label: "Search Engine Optimization (SEO)",
+  //       href: "/hospitality-marketing-services/seo-agency/",
+  //     },
+  //     {
+  //       label: "Performance Marketing",
+  //       href: "/hospitality-marketing-services/google-ads-agency/",
+  //     },
+  //   ],
+  // },
   {
-    label: "services",
-    href: "/hospitality-marketing-services/",
-    subLinks: [
-      {
-        label: " Social Media Management",
-        href: "/hospitality-marketing-services/social-media-marketing-agency/",
-      },
-      {
-        label: "Search Engine Optimization (SEO)",
-        href: "/hospitality-marketing-services/seo-agency/",
-      },
-      {
-        label: "Performance Marketing",
-        href: "/hospitality-marketing-services/google-ads-agency/",
-      },
-    ],
+    label: "our Products",
+    href: "https://eazotel.com",
+    type: "button",
   },
   {
     label: "Resources",

@@ -7,6 +7,8 @@ import Container from "@/components/sectionComponants/Container";
 import type { Metadata } from "next";
 import ContactBtn3 from "../contactbtn/ContactBtn3";
 import ContactOldSection from "@/components/commonSections/ContactOldSection";
+import { landingPageData } from "@/app/landing-page/components/pageData";
+import ContactSection from "@/app/landing-page/components/ContactSection";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality Google Ads Agency - Fielmente",
@@ -321,7 +323,9 @@ function page() {
       </div>
 
       {/* Form  */}
-      <ContactOldSection />
+      {/* <ContactOldSection /> */}
+      {landingPageData[0].contactSection && <ContactSection {...landingPageData[0].contactSection} />}
+
     </section>
   );
 }

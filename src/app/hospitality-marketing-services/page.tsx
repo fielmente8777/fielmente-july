@@ -1,14 +1,15 @@
 // import Form from "@/app/about-fielmente-best-hospitality-marketing-agency/components/Form";
 import Image from "next/image";
 
+import AccordinContent from "./components/AccordinContent";
 import BrandWeWork from "./components/BrandWeWork";
 import PeopleSay from "./components/PeopleSay";
-import ContactOldSectionProps from "@/components/commonSections/ContactOldSection";
-import AccordinContent from "./components/AccordinContent";
 
 import type { Metadata } from "next";
 import Contactbtn1 from "./contactbtn/Contactbtn1";
 import Contactbtn2 from "./contactbtn/Contactbtn2";
+import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
+import { homePageData } from "../(home)/homePageData";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality Marketing Services - Fielmente",
@@ -395,10 +396,12 @@ function page() {
       <BrandWeWork />
 
       {/* What People Say About Us  */}
-      <PeopleSay />
+      {/* <PeopleSay /> */}
 
       {/* Form*** */}
-      <ContactOldSectionProps bgColor="primary2" />
+      {/* <ContactOldSectionProps bgColor="primary2" /> */}
+      <ContactUsSection {...homePageData?.contactUsSection}/>
+      
     </section>
   );
 }

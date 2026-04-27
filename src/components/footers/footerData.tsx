@@ -112,18 +112,18 @@ export const footerData: FooterLinksPropstype = {
           label: "Hotel SEO",
           href: "/industries-we-serve/hotel-marketing-agency/hotel-seo/",
         },
-        // {
-        //   label: "Resort Marketing",
-        //   href: "",
-        // },
-        // {
-        //   label: "Resort Social Media",
-        //   href: "",
-        // },
-        // {
-        //   label: "Resort SEO",
-        //   href: "",
-        // },
+        {
+          label: "Social Media Management",
+          href: "/hospitality-marketing-services/social-media-marketing-agency/",
+        },
+        {
+          label: "Search Engine Optimization (SEO)",
+          href: "/hospitality-marketing-services/seo-agency/",
+        },
+        {
+          label: "Performance Marketing",
+          href: "/hospitality-marketing-services/google-ads-agency/",
+        },
         {
           label: "Restaurant Social Media",
           href: "/industries-we-serve/restaurant-marketing-agency/restaurant-social-media/",

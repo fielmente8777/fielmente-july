@@ -12,6 +12,7 @@ export interface CtaBtnPropsType {
 export interface NavLinksProps {
   href: string;
   label: string;
+  type?: string;
   subLinks?: NavLinksProps[];
 }
 
