@@ -44,16 +44,26 @@ export async function generateMetadata({ params }: Params) {
     };
   }
 
+   const title =
+    post?.meta?.title ||
+    `${post.title} | Hotel Marketing Blog by Fielmente`;
+
+  const description =
+    post?.meta?.description ||
+    `${post.title} - Learn how hotels and restaurants grow using SEO, social media, and performance marketing strategies by Fielmente.`;
+
+  const url = `https://fielmente.com/${post.slug}/`;
+
   return {
-    title: post?.meta?.title || post?.title,
-    description: post?.meta?.description || post?.description,
+    title,
+    description,
     alternate: {
-      canonical: `https://fielmente.com/${post?.slug}/`,
+      canonical: url,
     },
     openGraph: {
-      title: post?.meta?.title || post?.title,
-      description: post?.meta?.description || post?.description,
-      url: `https://fielmente.com/${post?.slug}/`,
+      title,
+      description,
+      url: url,
       siteName: "Fielmente",
       locale: "en_IN",
       type: "article",
