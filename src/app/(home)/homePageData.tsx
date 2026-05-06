@@ -691,7 +691,7 @@ export const homePageData = {
         question:
           "What makes Fielmente the best <a class='inter-link' href='/'>hospitality marketing agency</a> in India?",
         answer:
-          "At Fielmente, we specialize in delivering tailored marketing solutions for hotels, resorts, and restaurants. Our expertise as a <a class='inter-link' href='/'>hospitality marketing agency</a> in India comes from years of working with top properties and helping them grow through digital marketing, social media, <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/>SEO</a>, and performance campaigns.",
+          "At Fielmente, we specialize in delivering tailored marketing solutions for hotels, resorts, and restaurants. Our expertise as a <a class='inter-link' href='/'>hospitality marketing agency</a> in India comes from years of working with top properties and helping them grow through digital marketing, social media, <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/'>SEO</a>, and performance campaigns.",
       },
       {
         question:
@@ -703,7 +703,7 @@ export const homePageData = {
         question:
           "How does a hospitality digital marketing agency help hotels and resorts?",
         answer:
-          "A hospitality digital marketing agency provides end-to-end online marketing services for hotels and resorts — including website optimization, <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/>hotel SEO services</a>, paid advertising, and <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-social-media/'>social media marketing for hotels</a>. We ensure your brand stands out in search results and attracts the right audience.",
+          "A hospitality digital marketing agency provides end-to-end online marketing services for hotels and resorts — including website optimization, <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/'>hotel SEO services</a>, paid advertising, and <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-social-media/'>social media marketing for hotels</a>. We ensure your brand stands out in search results and attracts the right audience.",
       },
       {
         question:
@@ -722,7 +722,7 @@ export const homePageData = {
       },
       {
         question:
-          "How do your <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/>hotel SEO services</a> work?",
+          "How do your <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/'>hotel SEO services</a> work?",
         answer: `Our SEO services for hotels include keyword optimization, local SEO (Google Maps, GMB), content creation, and link building. By working with a hotel digital marketing company in India like Fielmente, you ensure higher visibility on Google, more direct bookings, and reduced OTA costs.`,
       },
       {

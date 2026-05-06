@@ -1093,7 +1093,7 @@ This landmark move opens new doors for property owners, offering not just legali
         also are India’s leading hospitality digital marketing
         agency. would love to help you achieve your business
         goals.
-        <a href="/contact">
+        <a href="/contact-us/">
         Contact us!
         </a>
       </p>
@@ -2230,7 +2230,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       and hotel business idea to turn it into an amazing digital
       asset.
     </p>
-    <a href="/contact" >Start something</a>
+    <a href="/contact-us/" >Start something</a>
   </div>`,
   },
   {
@@ -2604,7 +2604,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       </p>
     </div>
     <br />
-    <a href="/contact" className="text-d-none">
+    <a href="/contact-us/" className="text-d-none">
     Start something
     </a>
   </div>`,
@@ -2697,7 +2697,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   <p><b>Let’s work together</b></p>
   <p>Get a free consultation and let us know your restaurant and hotel business idea to turn it into an amazing digital
     asset.</p>
-  <a href="/contact">Start something</a>`,
+  <a href="/contact-us/">Start something</a>`,
   },
   {
     url: Img8,

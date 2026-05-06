@@ -8,19 +8,19 @@ import Image from "next/image";
 import { contactUsPageData } from "./components/pageData";
 
 export const metadata: Metadata = {
-  title: "Contact | Fielmente - hotel marketing, SEO, and revenue management services",
+  title:
+    "Contact | Fielmente - hotel marketing, SEO, and revenue management services",
   description:
     "Get in touch with Fielmente for hotel marketing, SEO, and revenue management services. Book a consultation and grow your hotel bookings with expert strategies.",
   alternates: {
-    canonical: "https://fielmente.com/contact/",
-    languages: {
-      "en-US": "https://fielmente.com/en/contact/",
-    },
+    canonical: "https://fielmente.com/contact-us/",
   },
   openGraph: {
-    title: "Contact | Fielmente - hotel Marketing, SEO, and Revenue Management Services",
+    title:
+      "Contact | Fielmente - hotel Marketing, SEO, and Revenue Management Services",
     description:
       "Get in touch with Fielmente for hotel marketing, SEO, and revenue management services. Book a consultation and grow your hotel bookings with expert strategies.",
+    url: "https://fielmente.com/contact-us/",
     images: [
       {
         url: "/fielmente_logo.png",

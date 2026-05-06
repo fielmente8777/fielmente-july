@@ -45,7 +45,6 @@ const MoreStories: React.FC<MoreStoriesPropsType> = ({
                 subTitle={subTitle}
                 titleColor="white"
                 subTitleColor="white"
-                level={1}
                 wrapperClassName="gap-3 max-lg:hidden"
                 subTitleClassName="md:text-5xl!"
                 titleWrapperClassName="rounded-full w-fit px-4 py-2  bg-white/5 backdrop-blur-xs shadow-inner shadow-white/5 border-[0.2px] border-white/70"
