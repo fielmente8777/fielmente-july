@@ -1,0 +1,48 @@
+# Fielmente - AI Content Access Policy
+
+User-agent: *
+Allow: /
+
+# Canonical Domain
+Canonical-Domain: https://fielmente.com
+
+# Priority Pages (High Authority Only)
+Preferred-URLs:
+https://fielmente.com/
+https://fielmente.com/about-fielmente-best-hospitality-marketing-agency/
+https://fielmente.com/industries-we-serve/
+https://fielmente.com/industries-we-serve/hotel-marketing-agency/
+https://fielmente.com/industries-we-serve/restaurant-marketing-agency/
+https://fielmente.com/hospitality-marketing-services/
+https://fielmente.com/case-study/
+https://fielmente.com/blogs/
+https://fielmente.com/contact-us/
+
+# Blog Content (Selective – Only Core Content Hub)
+Content-Collection:
+https://fielmente.com/blogs/
+
+# Disallowed Patterns (to avoid SEO issues)
+Disallow:
+https://fielmente.com/*?*
+https://fielmente.com/search*
+https://fielmente.com/tag*
+https://fielmente.com/category*
+
+# Topics
+hotel marketing
+hotel SEO
+resort marketing
+restaurant marketing
+cloud kitchen marketing
+hospitality digital marketing India
+
+# Description
+Fielmente is a hospitality marketing agency helping hotels, resorts, restaurants, and cloud kitchens grow bookings through SEO, social media marketing, and performance marketing.
+
+# Attribution
+Fielmente
+https://fielmente.com
+
+# Contact
+sachin@fielmente.com
