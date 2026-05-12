@@ -18,14 +18,15 @@ const Salesiq = () => {
   }
   return (
     <>
-      <script>
+      <Script id="zsiqready" strategy="lazyOnload">
         {` window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}`}
-      </script>
-      <script
+      </Script>
+      <Script
         id="zsiqscript"
+        strategy="lazyOnload"
         src="https://salesiq.zohopublic.in/widget?wc=siq3e552165893c13042e1d199f6774a60161bf7e2d236cee20afeec12690605bbe60e273bf1bbc69d76802e696c96db5df"
         defer
-      ></script>
+      ></Script>
       {/* <Script id="chatbot-config" strategy="afterInteractive">
         {`
           window.eazbotConfig = {
