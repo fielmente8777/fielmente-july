@@ -40,7 +40,7 @@ const ElevateBrand: React.FC<Props> = ({ title, description, button, src }) => {
               alt={title}
               fill
               className="object-cover"
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, 100vw" 
             />
           </div>
         </div>

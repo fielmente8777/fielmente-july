@@ -20,7 +20,7 @@ const AIPoweredServicesCard: React.FC<ServicesPropsType["cards"][0]> = ({
                 fill
                 className="object-contain"
                 priority
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 100vw" 
               />
             </div>
           </div>
@@ -37,7 +37,7 @@ const AIPoweredServicesCard: React.FC<ServicesPropsType["cards"][0]> = ({
                 fill
                 className="object-contain"
                 priority
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 100vw" 
               />
             </div>
           </div>

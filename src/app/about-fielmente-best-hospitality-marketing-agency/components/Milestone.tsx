@@ -21,7 +21,7 @@ const Milestone: React.FC<MilestoneProps> = ({ src, items }) => {
         fill
         className="object-cover"
         priority
-        sizes="100vw"
+        sizes="(max-width: 768px) 100vw, 100vw" 
       />
       <div className="absolute inset-0 bg-black/20 z-10" />
       <div className="absolute inset-0 flex flex-col justify-center items-center z-20">

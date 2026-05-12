@@ -91,7 +91,7 @@ const OurServices: React.FC<ServicesDataTypes> = ({
                     alt={sector?.title}
                     fill
                     className="object-cover "
-                    sizes="100vw"
+                    sizes="(max-width: 768px) 100vw, 100vw" 
                   />
                 </div>
                 <p className="text-2xl">{sector?.title}</p>

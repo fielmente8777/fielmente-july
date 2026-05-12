@@ -57,22 +57,12 @@ export const metadata: Metadata = {
       url: "/favicon/favicon.ico",
     },
   ],
+  metadataBase: new URL("https://fielmente.com/"),
 
   keywords:
     "Fielmente, Hotel Marketing Agency, Cloud Kitchen Marketing Agency, Resort Marketing Agency",
   alternates: {
     canonical: "https://fielmente.com/",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   authors: [{ name: "Fielmente", url: "https://fielmente.com/" }],
   openGraph: {
@@ -90,6 +80,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -208,7 +209,10 @@ export default function RootLayout({
         ></cript> */}
         <Salesiq />
 
-        <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" defer />
+        <Script
+          src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js"
+          defer
+        />
 
         {/* <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" /> */}
 
@@ -221,7 +225,6 @@ export default function RootLayout({
             `,
           }}
         />
-        
       </head>
       <body
         className={`${jakarta.variable} antialiased`}

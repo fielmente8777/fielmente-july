@@ -61,7 +61,7 @@ const CommonTowColGridLayoutSection: React.FC<
                   className="object-contain"
                   priority
                   loading="eager"
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, 100vw" 
                 />
               </div>
             )

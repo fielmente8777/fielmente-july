@@ -36,7 +36,7 @@ const OurWork: React.FC<OurWorkDataTypes> = ({
             alt={title}
             fill
             className="object-cover border-[10.23px] border-[#7E7E7E1A]  rounded-[18.62px]"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 100vw" 
           />
         </div>
       </div>

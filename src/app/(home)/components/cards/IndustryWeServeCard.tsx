@@ -16,7 +16,7 @@ const IndustryWeServeCard: React.FC<IndustryWeServeDataTypes["cards"][0]> = ({
         fill
         className="object-cover"
         priority
-        sizes="100vw"
+        sizes="(max-width: 768px) 100vw, 100vw" 
       />
       <div className="absolute inset-0 flex flex-col font-medium justify-between p-6 text-white">
         <p className=" md:text-[27.64px] ">{title}</p>

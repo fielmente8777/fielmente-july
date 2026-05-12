@@ -37,7 +37,7 @@ const GetStarted: React.FC<GetStartedProps> = ({
           alt={title}
           fill
           className="object-contain"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 100vw" 
         />
       </div>
       <CtaBtn type="button" icon="arrow" href={action.href} label={action.label} className="mx-auto w-fit rounded-full bg-[#1B1B1B] text-white" />

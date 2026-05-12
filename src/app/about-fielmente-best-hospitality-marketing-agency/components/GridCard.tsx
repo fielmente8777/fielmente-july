@@ -31,7 +31,7 @@ const GridCard: React.FC<GridCardProps> = ({
             alt={title}
             fill
             className="object-cover"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 100vw" 
           />
         </div>
         <SectionHeading
@@ -58,7 +58,7 @@ const GridCard: React.FC<GridCardProps> = ({
             alt={title}
             fill
             className="object-cover"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 100vw" 
           />
         </div>
       </div>

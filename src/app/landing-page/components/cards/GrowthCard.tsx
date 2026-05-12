@@ -16,7 +16,7 @@ export const GrowthCard = ({
           alt={title}
           fill
           className="object-contain"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 100vw" 
         />
       </div>
     </div>

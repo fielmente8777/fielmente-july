@@ -21,7 +21,7 @@ const WebSiteFooter = () => {
                 className="object-cover"
                 priority
                 loading="eager"
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 100vw" 
               />
             </Link>
             <p className="text-white">{footerData.description}</p>

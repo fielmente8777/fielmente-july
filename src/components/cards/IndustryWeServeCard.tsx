@@ -14,7 +14,7 @@ const IndustryWeServeCard: React.FC<
         fill
         className="object-cover"
         priority
-        sizes="100vw"
+        sizes="(max-width: 768px) 100vw, 100vw" 
       />
         {index !== activeSlide && (
           <div className="absolute inset-x-0 top-0 h-25 bg-linear-to-b from-black/80 to-black/10" />

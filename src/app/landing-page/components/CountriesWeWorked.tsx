@@ -33,7 +33,7 @@ const CountriesWeWorked: React.FC<CountriesWeWorkedDataTypes> = ({
           alt={title}
           fill
           className="object-cover"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 100vw" 
         />
       </div>
     </SectionWithContainer>

@@ -18,7 +18,7 @@ export const ServiceCard: React.FC<ServicesSectionProps["services"][0]> = ({
           alt={title}
           fill
           className="object-cover"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 100vw" 
         />
         {label && (
           <>

@@ -21,7 +21,7 @@ export const BlogCard: React.FC<BlogsDataTypes["cards"][0]> = ({
             alt={title}
             fill
             className="object-cover rounded-2xl"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 100vw" 
           />
         </div>
       )}

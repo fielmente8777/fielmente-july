@@ -51,7 +51,7 @@ const ClientsSlider: React.FC<Props> = ({
               priority={true}
               className="object-contain w-full h-full p-2 rounded-md px-6 border border-[#E3E5E8]"
               alt={item.alt}
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, 100vw" 
               style={{ background: item.className }}
             />
           </div>

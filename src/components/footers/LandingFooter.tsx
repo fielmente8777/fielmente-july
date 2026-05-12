@@ -17,7 +17,7 @@ const LandingFooter = () => {
                 className="object-cover"
                 priority
                 loading="eager"
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 100vw" 
               />
             </div>
             <p className="text-white">{landingFooterData.description}</p>
