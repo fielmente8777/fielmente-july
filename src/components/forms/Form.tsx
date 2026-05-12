@@ -1,99 +1,33 @@
 "use client";
 
+import useConsultationForm from "@/hooks/useConsultationForm";
 import { countries } from "@/utils/countryCode";
 import { CallIcon, MailIcon, UserIcon } from "@/utils/icons";
-import axios from "axios";
-import React, { useState } from "react";
+import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 const Form = () => {
-  const [userName, setUserName] = useState("");
-  const [userEmail, setUserEmail] = useState("");
-  const [userPhone, setUserPhone] = useState("");
-  const [countryCode, setCountryCode] = useState("+91"); // Default country code
-  const [formRes, setFormRes] = useState(false);
-  const [emailErrorMessage, setEmailErrorMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const {
+    formData,
+    isSubmitting,
+    handleSubmit,
+    handleChange,
+    errors,
+    setFieldValue,
+  } = useConsultationForm({
+    includeMessage: false, 
+    onSubmitSuccess: () => {
+    },
+  });
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
     if (value.length <= 10) {
-      setUserPhone(value);
-      setErrorMessage(value.length < 10 ? "Please enter a valid number" : "");
+      setFieldValue("phone", value);
     }
   };
 
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setUserEmail(value);
-    setEmailErrorMessage(
-      !emailRegex.test(value) ? "Please enter a valid email address" : ""
-    );
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormRes(true);
-
-    if (userPhone.length !== 10) {
-      setErrorMessage("Phone number must be exactly 10 digits.");
-      return;
-    }
-
-    if (!emailRegex.test(userEmail)) {
-      setEmailErrorMessage("Please enter a valid email address.");
-      return;
-    }
-
-    // const formTestApi =
-    //   "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/jncSLqGC#generic-webhook";
-    const formApi =
-      "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/7lHAUjtz#generic-webhook";
-
-    try {
-      const { data } = await axios.post(
-        `https://nexon.eazotel.com/eazotel/addcontacts`,
-        // formApi,
-        {
-          Domain: "fielmente",
-          // Domain: "abhijeet",
-          email: userEmail,
-          Name: userName,
-          Contact: `${countryCode}${userPhone}`,
-          // Description: userMessage,
-          // email: userEmail,
-          // name: userName,
-          // phone: `${countryCode}${userPhone}`,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      if (data.Status) {
-      // if (data.success) {
-        setFormRes(true);
-        setUserName("");
-        setUserEmail("");
-        setUserPhone("");
-        setCountryCode("+91"); // Reset country code
-        setFormRes(false);
-        // router.push(`/thank-you/`);
-        window.open("/thank-you/", "_blank");
-        // router.push(`/thank-you/?name=${encodeURIComponent(userName)}`);
-      } else {
-        setFormRes(false);
-        alert("Something went wrong!");
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const formData = [
+  const formDataFields = [
     {
       icon: <UserIcon />,
       tag: "input",
@@ -101,14 +35,12 @@ const Form = () => {
       name: "name",
       placeholder: "Full Name*",
       required: true,
-      value: userName,
-      onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-        setUserName(e.target.value);
-      },
+      value: formData.name,
+      onChange: handleChange,
     },
     {
       icon: <CallIcon />,
-      tag: "div", // Use div to wrap select and input for phone number
+      tag: "div",
       name: "phone",
       placeholder: "Phone Number*",
       required: true,
@@ -117,10 +49,10 @@ const Form = () => {
           <select
             id="countryCode"
             name="countryCode"
-            value={countryCode}
-            onChange={(e) => setCountryCode(e.target.value)}
+            value={formData.countryCode}
+            onChange={(e) => setFieldValue("countryCode", e.target.value)}
             className="w-auto bg-transparent text-white focus:outline-none"
-            style={{ inlineSize: `${countryCode.length + 2}ch` }}
+            style={{ inlineSize: `${formData.countryCode.length + 2}ch` }}
             aria-label="Country Code"
           >
             {countries.map((country, index) => (
@@ -135,7 +67,7 @@ const Form = () => {
             name="phone"
             max={"9999999999"}
             placeholder="Phone Number*"
-            value={userPhone}
+            value={formData.phone}
             onChange={handlePhoneChange}
             className="w-full bg-transparent rounded-md placeholder:text-black-primary text-white no-spinner focus:outline-none py-2"
           />
@@ -149,67 +81,65 @@ const Form = () => {
       name: "email",
       placeholder: "Email Id*",
       required: true,
-      value: userEmail,
-      onChange: handleEmailChange,
+      value: formData.email,
+      onChange: handleChange,
     },
-    // {
-    //   tag: "textarea",
-    //   type: "text",
-    //   name: "",
-    //   placeholder: "Your Message*",
-    //   required: true,
-    //   value: userMessage,
-    //   onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-    //     setUserMessage(e.target.value);
-    //   },
-    // },
   ];
+
   return (
     <form
       onSubmit={handleSubmit}
       className={`grid md:grid-cols-4 md:rounded-full rounded-[20px] overflow-hidden glassy-card xl:p-2 max-md:p-2`}
+      noValidate
     >
       <div className="md:col-span-3 grid md:grid-cols-3 md:py-2 py-1">
-        {formData.map((data, index) => (
+        {formDataFields.map((data, index) => (
           <div
             key={index}
-            className={`w-full  flex gap-2 items-center md:px-4 max-md:py-2 ${formData.length - 1 !== index ? "md:border-r max-md:border-b" : ""} border-white/40 "}`}
+            className={`w-full flex gap-2 items-center md:px-4 max-md:py-2 ${
+              formDataFields.length - 1 !== index ? "md:border-r max-md:border-b" : ""
+            } border-white/40`}
           >
-            <label htmlFor={data.name} className="text-white">{data.icon}</label>
-            <div className={`w-full  bg-transparent flex items-center `}>
-              {data.tag === "div"
-                ? data.content
-                : React.createElement(data.tag, {
-                    id: data.name,
-                    type: data.type,
-                    name: data.name,
-                    value: data.value,
-                    onChange: data.onChange,
-                    placeholder: data.placeholder,
-                    required: data.required,
-                    autoComplete: "off",
-                    spellCheck: "false",
-                    className:
-                      "w-full placeholder:text-white max-md:text-sm bg-transparent text-white no-spinner resize-none focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary md:py-2",
-                  })}
+            <label htmlFor={data.name} className="text-white">
+              {data.icon}
+            </label>
+            <div className="w-full bg-transparent flex flex-col items-start">
+              <div className="w-full">
+                {data.tag === "div"
+                  ? data.content
+                  : React.createElement(data.tag, {
+                      id: data.name,
+                      type: data.type,
+                      name: data.name,
+                      value: data.value,
+                      onChange: data.onChange,
+                      placeholder: data.placeholder,
+                      required: data.required,
+                      autoComplete: "off",
+                      spellCheck: "false",
+                      className:
+                        "w-full placeholder:text-white max-md:text-sm bg-transparent text-white no-spinner resize-none focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary md:py-2",
+                    })}
+              </div>
+              {errors[data.name] && (
+                <p className="text-sm text-red-500 mt-1">{errors[data.name]}</p>
+              )}
             </div>
-            {data.name === "phone" && errorMessage && (
-              <p className="text-sm text-red-500 mt-2">{errorMessage}</p>
-            )}
-            {data.name === "email" && emailErrorMessage && (
-              <p className="text-sm text-red-500 mt-2">{emailErrorMessage}</p>
-            )}
           </div>
         ))}
       </div>
 
-      <button className="w-full max-md:py-2 text-center bg-white text-black border-orange-primary px-8 h-full max-md:text-sm text-nowrap  font-semibold  duration-300 rounded-full border-white hover:scale-105 border">
-        {formRes ? (
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full max-md:py-2 text-center bg-white text-black border-orange-primary px-8 h-full max-md:text-sm text-nowrap font-semibold duration-300 rounded-full border-white hover:scale-105 border disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {isSubmitting ? (
           "Loading...."
         ) : (
           <span className="flex items-center justify-center gap-2">
             Get a FREE Quote!
-            <span className="aspect-square md:text-lg text-sm w-7  bg-black text-white rounded-full flex items-center justify-center">
+            <span className="aspect-square md:text-lg text-sm w-7 bg-black text-white rounded-full flex items-center justify-center">
               <MdArrowOutward />
             </span>
           </span>
