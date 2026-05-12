@@ -27,7 +27,7 @@ const IndustryWeServeCard: React.FC<
         )}
          
       <div className="absolute inset-0 flex flex-col font-medium justify-between p-6 text-white">
-        <h3 className="text-lg md:text-[27.64px] font-semibold">{title}</h3>
+        <p className="text-lg md:text-[27.64px] font-semibold">{title}</p>
         <p className="md:text-lg">{desc}</p>
       </div>
     </div>

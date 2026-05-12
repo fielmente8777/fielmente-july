@@ -88,7 +88,7 @@ const Accordion2: React.FC<AccordionProps> = ({ item }) => {
           if (!isPinned) setIsOpen(false);
         }}
       >
-        <h3
+        <p
           className="text-primary text-lg font-semibold"
           dangerouslySetInnerHTML={{ __html: item.question }}
         />

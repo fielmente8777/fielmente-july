@@ -19,9 +19,9 @@ const RevenueManagementServices: React.FC<RevenueManagementServicesType> = ({
             {title}
           </h2>
 
-          <h3 className="md:text-[2.5rem]/[3rem] text-2xl font-medium text-white">
+          <p className="md:text-[2.5rem]/[3rem] text-2xl font-medium text-white">
             {subTitle}
-          </h3>
+          </p>
         </div>
         <div className="w-full">
           <div className="w-full relative ">

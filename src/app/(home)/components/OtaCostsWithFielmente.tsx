@@ -58,7 +58,7 @@ export const OtaCostsCard: React.FC<MaximizeGrowthDataTypes["cards"][0] & {index
         />
       </div>
       <div className=" pr-4.5 space-y-1">
-        <h3 className="md:text-[1.375rem] font-bold text-white">{title}</h3>
+        <p className="md:text-[1.375rem] font-bold text-white">{title}</p>
         <p className="text-[#C6C9CE] max-sm:text-sm">{description}</p>
       </div>
     </div>

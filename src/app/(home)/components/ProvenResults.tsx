@@ -38,10 +38,10 @@ const ProvenResults: React.FC<Props> = ({ title, subTitle, link, data }) => {
         <div className="grid grid-cols-2 xl:grid-cols-3 gap-6">
           {data.map((item, index) => (
             <div key={index} className={`flex flex-col items-center xl:justify-center gap-2 ${index === 2 ? "max-xl:col-span-2" : ""}`}>
-              <h3
+              <p
                 className="text-primary lg:text-5xl text-4xl font-bold"
                 dangerouslySetInnerHTML={{ __html: item.number || "" }}
-              ></h3>
+              ></p>
               <p className="text-[#6B7280] max-md:text-xs">{item.description}</p>
             </div>
           ))}

@@ -51,9 +51,9 @@ const Testimonial: React.FC<TestimonialProps> = ({ title, items }) => {
                   className="border border-[#ECC4B6] shadow-xl p-4 bg-white"
                 >
                   <div className="flex flex-col items-center gap-3">
-                    <h3 className="text-center text-xl text-primary2 helv">
+                    <p className="text-center text-xl text-primary2 helv">
                       {item.name}
-                    </h3>
+                    </p>
                     <span className="flex items-center gap-1">
                       <Star />
                       <Star />

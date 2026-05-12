@@ -26,7 +26,7 @@ export const BlogCard: React.FC<BlogsDataTypes["cards"][0]> = ({
         </div>
       )}
       <div className="space-y-2">
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <p className="text-lg font-semibold">{title}</p>
         <p className="text-sm text-[#6B7280]">{date}</p>
         <p>{description}</p>
       </div>

@@ -11,9 +11,9 @@ const ProductCard: React.FC<ProductsDataTypes["cards"][0]> = ({
         {icon}
       </div>
       <div className="space-y-2">
-        <h3 className="text-2xl font-semibold text-primary group-hover:text-white">
+        <p className="text-2xl font-semibold text-primary group-hover:text-white">
           {title}
-        </h3>
+        </p>
         <p className=" text-[#6B7280] group-hover:text-[#DDDDDD]">
           {description}
         </p>

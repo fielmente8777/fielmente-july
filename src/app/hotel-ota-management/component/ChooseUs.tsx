@@ -14,7 +14,7 @@ const ChooseUs: React.FC<ChooseUsType> = ({ title, subTitle, cards }) => {
             {title}
           </h2>
 
-          <h3
+          <p
             className="md:text-[2.5rem]/[3rem] text-2xl font-medium text-primary2"
             dangerouslySetInnerHTML={{ __html: subTitle }}
           />

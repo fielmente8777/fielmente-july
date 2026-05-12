@@ -34,9 +34,9 @@ const OurClients = ({ items, subTitle, title }: OurClientProps) => {
           {title}
         </h2>}
 
-        <h3 className="md:text-5xl text-3xl font-medium text-primary2 poppins">
+        <p className="md:text-5xl text-3xl font-medium text-primary2 poppins">
           {subTitle}
-        </h3>
+        </p>
       </div>
 
       <div className="mt-10 space-y-4 bg-white">

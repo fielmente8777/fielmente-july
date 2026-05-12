@@ -74,7 +74,7 @@ const AboutSection: React.FC<Props> = ({
         ))}
         <div className="px-6 py-9.5 bg-[#E7F1FF] rounded-2xl flex flex-col items-center justify-between">
           <div className="flex flex-col gap-2 lg:gap-3.5">
-            <h3 className="text-[2.5rem] font-bold text-primary">{stats.no}</h3>
+            <p className="text-[2.5rem] font-bold text-primary">{stats.no}</p>
             <h4 className="text-2xl text-primary">{stats.list[0]}</h4>
             <p
               className="text-secondary text-lg"

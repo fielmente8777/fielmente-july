@@ -128,7 +128,7 @@ function OurClients({
                     }}
                   />
 
-                  <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black z-30 text-2xl font-bold">{index}</h3>
+                  <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black z-30 text-2xl font-bold">{index}</p>
                 </Link>
               </SwiperSlide>
             ))}

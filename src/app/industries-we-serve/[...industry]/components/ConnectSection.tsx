@@ -72,9 +72,9 @@ export const ConnectCard: React.FC<ConnectSectionProps["cards"][0]> = ({
           <Image src={src} alt={title} fill className="object-contain" />
         </div>
       )}
-      <h3 className={`font-semibold ${!subtitle ? "md:text-4xl" : "text-2xl"}`}>
+      <p className={`font-semibold ${!subtitle ? "md:text-4xl" : "text-2xl"}`}>
         {title}
-      </h3>
+      </p>
       {subtitle && <p className="text-secondary md:text-lg">{subtitle}</p>}
       {list && (
         <ul className="list-disc list-inside text-secondary">

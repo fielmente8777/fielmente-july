@@ -94,7 +94,7 @@ const OurServices: React.FC<ServicesDataTypes> = ({
                     sizes="100vw"
                   />
                 </div>
-                <h3 className="text-2xl">{sector?.title}</h3>
+                <p className="text-2xl">{sector?.title}</p>
                 <p className="text-lg">{sector?.description}</p>
                 {/* <button className="text-white bg-[#1B1B1B] rounded-full px-6 py-3 font-semibold">
                   Grow My Socials

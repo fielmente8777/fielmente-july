@@ -41,10 +41,10 @@ const GridCard: React.FC<GridCardProps> = ({
                 dangerouslySetInnerHTML={{ __html: subTitle ?? "" }}
               ></h2>
             ) : (
-              <h3
+              <p
                 className="text-primary-2 font-medium md:text-5xl text-3xl span-color-4"
                 dangerouslySetInnerHTML={{ __html: subTitle ?? "" }}
-              ></h3>
+              ></p>
             )}
             <div className="mt-4 space-y-2">
               {description.map((item, idx) => (

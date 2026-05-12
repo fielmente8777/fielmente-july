@@ -39,9 +39,9 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
                   <Tick />
                 </span>
                 <div className="flex flex-col gap-2">
-                  <h3 className="lg:text-lg  font-semibold text-primary2 helv">
+                  <p className="lg:text-lg  font-semibold text-primary2 helv">
                     {item.title}
-                  </h3>
+                  </p>
                   <p className="text-[#3B3B3B] lg:text-base text-sm">
                     {item.description}
                   </p>

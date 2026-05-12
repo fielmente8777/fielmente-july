@@ -19,18 +19,18 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
           fill
           className="object-contain md:block hidden"
           priority={true}
-          loading="eager"
-          sizes="100vw"
+          quality={75}
+          sizes="(max-width: 768px) 100vw, 100vw"
         />
 
         <Image
           src="/home/bnr-sm.webp"
           alt={title}
           fill
-          className="object-contain md:hidden block"
+          className="object-cover md:hidden block"
           priority={true}
-          loading="eager"
-          sizes="100vw"
+          quality={75}
+          sizes="(max-width: 768px) 100vw, 100vw"
         />
 
         <div className="absolute inset-0  z-20">

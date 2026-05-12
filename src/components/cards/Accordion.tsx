@@ -27,10 +27,10 @@ const Accordion: React.FC<AccordionProps> = ({ question, answer }) => {
           if (!isPinned) setIsOpen(false);
         }}
       >
-        <h3
+        <p
           className="text-primary text-lg font-semibold"
           dangerouslySetInnerHTML={{ __html: question }}
-        ></h3>
+        ></p>
         <button
           className={`duration-300 ease-in-out transition-all ${isOpen ? "rotate-180" : ""}`}
         >

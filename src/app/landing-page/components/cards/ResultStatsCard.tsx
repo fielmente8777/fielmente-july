@@ -14,7 +14,7 @@ export const ResultStatsCard: React.FC<
         dangerouslySetInnerHTML={{ __html: value }}
       ></span>
       <div className="space-y-1">
-        <h3 className="text-base font-semibold">{label}</h3>
+        <p className="text-base font-semibold">{label}</p>
         <p className="text-sm text-[#CECECE] pr-6">{description}</p>
       </div>
     </div>

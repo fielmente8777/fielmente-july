@@ -30,7 +30,7 @@ const TestimonialCard: React.FC<TestimonialsPropsType["cards"][0]> = ({
       </p>
       <div className="flex items-center gap-4">
         <div className="h-4.5 bg-[#0D54EB] w-0.5 rounded-[7px]" />
-        <h3 className="text-primary text-lg font-semibold">{title}</h3>
+        <p className="text-primary text-lg font-semibold">{title}</p>
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ const WebSiteFooter = () => {
             <div className="space-y-4 md:block hidden">
               {footerData.linksData.slice(0, 1).map((item, index) => (
                 <div className="flex flex-col gap-4 md:mt-4" key={index}>
-                  <h3 className="text-white font-medium">{item.title}</h3>
+                  <p className="text-white font-medium">{item.title}</p>
                   <ul className="flex items-center gap-7">
                     {item.listOfLinks.map((link, index) => (
                       <li key={index} className="flex items-center">
@@ -50,7 +50,7 @@ const WebSiteFooter = () => {
           <div className="lg:grid hidden grid-cols-3 gap-4">
             {footerData.linksData.slice(1, 4).map((item, index) => (
               <div className="flex flex-col md:gap-6 gap-4" key={index}>
-                <h3 className="text-white text-lg font-medium">{item.title}</h3>
+                <p className="text-white text-lg font-medium">{item.title}</p>
                 <ul className="flex flex-col md:gap-5 gap-4">
                   {item.listOfLinks.map((link, index) => (
                     <li key={index}>
@@ -67,9 +67,9 @@ const WebSiteFooter = () => {
                   <div className="space-y-10">
                     {footerData.linksData.slice(4).map((item, index) => (
                       <div className="flex flex-col gap-4" key={index}>
-                        <h3 className="text-white text-lg font-medium">
+                        <p className="text-white text-lg font-medium">
                           {item.title}
-                        </h3>
+                        </p>
                         <ul className="flex flex-col gap-2">
                           {item.listOfLinks.map((link, index) => (
                             <li key={index}>
@@ -95,7 +95,7 @@ const WebSiteFooter = () => {
           <div className="lg:hidden grid grid-cols-2 gap-12">
             {footerData.linksData.slice(1).map((item, index) => (
               <div className="flex flex-col gap-3" key={index}>
-                <h3 className="text-white text-lg font-medium">{item.title}</h3>
+                <p className="text-white text-lg font-medium">{item.title}</p>
                 <ul className="flex flex-col gap-1.5">
                   {item.listOfLinks.map((link, index) => (
                     <li key={index}>
@@ -114,7 +114,7 @@ const WebSiteFooter = () => {
            <div className="space-y-4 md:hidden">
               {footerData.linksData.slice(0, 1).map((item, index) => (
                 <div className="flex flex-col gap-4 md:mt-4" key={index}>
-                  <h3 className="text-white font-medium">{item.title}</h3>
+                  <p className="text-white font-medium">{item.title}</p>
                   <ul className="flex items-center gap-7">
                     {item.listOfLinks.map((link, index) => (
                       <li key={index} className="flex items-center">

@@ -85,9 +85,9 @@ const MIleStonesNew = () => {
                 />
               </div>
               <div className="flex flex-col items-center gap-4 justify-center">
-                <h3 className="text-primary2 text-2xl font-semibold helv">
+                <p className="text-primary2 text-2xl font-semibold helv">
                   {item.number}
-                </h3>
+                </p>
                 <p className="text-primary2 text-base uppercase ">{item.title}</p>
               </div>
             </div>
@@ -128,9 +128,9 @@ const MIleStonesNew = () => {
                     />
                   </div>
                   <div className="flex flex-col items-center gap-4 justify-center">
-                    <h3 className="text-primary2 text-4xl font-semibold">
+                    <p className="text-primary2 text-4xl font-semibold">
                       {item.number}
-                    </h3>
+                    </p>
                     <p className="text-primary2 text-base uppercase">{item.title}</p>
                   </div>
                 </div>

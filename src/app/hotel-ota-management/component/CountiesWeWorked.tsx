@@ -26,7 +26,7 @@ const CountiesWeWorked = ({
             <h2 className="w-fit bg-[#FFE7DE] text-primary2 px-2 rounded-full">
               {title}
             </h2>
-            <h3 className="md:text-4xl text-2xl text-white">{subTitle}</h3>
+            <p className="md:text-4xl text-2xl text-white">{subTitle}</p>
           </div>
         </div>
 
@@ -67,9 +67,9 @@ const CountiesWeWorked = ({
                     />
                   </div>
 
-                  {/* <h3 className="text-center mt-2 poppins uppercase">
+                  {/* <p className="text-center mt-2 poppins uppercase">
                     {item?.alt}
-                  </h3> */}
+                  </p> */}
                 </div>
               </div>
             )}

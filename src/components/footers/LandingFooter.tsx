@@ -25,10 +25,10 @@ const LandingFooter = () => {
           <div className="grid md:grid-cols-2 md:gap-10 gap-6 ">
             {landingFooterData.linksData.map((item, index) => (
               <div className="flex flex-col  gap-4" key={index}>
-                <h3 className="text-white text-lg font-medium flex items-center gap-2">
+                <p className="text-white text-lg font-medium flex items-center gap-2">
                   {item.icon && <span className="">{item.icon}</span>}
                   {item.title}
-                </h3>
+                </p>
                 <ul className="flex flex-col gap-2">
                   {item.listOfLinks.map((link, index) => (
                     <li key={index}>

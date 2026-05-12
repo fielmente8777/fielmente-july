@@ -66,7 +66,7 @@ const ContactSection: React.FC<Props> = ({
                         </span>
                       </div>
                       <div className="space-y-1.5">
-                        <h3 className="text-sm">{link.title}</h3>
+                        <p className="text-sm">{link.title}</p>
                         <Link href={link.href} className="max-md:text-[10px]"
                           target="_blank"
                         rel="noopener noreferrer"
@@ -77,7 +77,7 @@ const ContactSection: React.FC<Props> = ({
                 )}
                 {listOfLinks.slice(3).map((item, index) => (
                   <div className="space-y-4" key={index}>
-                    {item.title && <h3 className="text-white text-sm font-medium">{item.title}</h3>}
+                    {item.title && <p className="text-white text-sm font-medium">{item.title}</p>}
                     <ul className="flex items-center gap-4">
                       {item.links.map((link, linkIndex) => (
                         <li key={linkIndex}>

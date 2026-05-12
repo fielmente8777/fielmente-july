@@ -56,7 +56,7 @@ export const StatsCard: React.FC<{ value: string; label: string }> = ({
 }) => {
   return (
     <div className="flex flex-col items-center gap-3 xl:max-w-[400px] md:max-w-[250px] w-full">
-      <h3 className="text-2xl md:text-4xl font-semibold">{value}</h3>
+      <p className="text-2xl md:text-4xl font-semibold">{value}</p>
       <p className="text-secondary md:text-xl">{label}</p>
     </div>
   );

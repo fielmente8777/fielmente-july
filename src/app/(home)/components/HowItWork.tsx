@@ -37,7 +37,7 @@ export const HowItWorkCard: React.FC<HowItWorksDataTypes["cards"][0]> = ({
         </div>
       </div>
       <div className="space-y-2">
-        <h3 className="text-[1.75rem] font-semibold text-primary">{title}</h3>
+        <p className="text-[1.75rem] font-semibold text-primary">{title}</p>
         <p className="text-sm text-secondary">{description}</p>
       </div>
     </div>

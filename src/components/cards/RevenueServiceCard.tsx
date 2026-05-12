@@ -8,7 +8,7 @@ const RevenueServiceCard: React.FC<
   return (
     <div className="flex flex-col items-center text-center gap-4 bg-white rounded-2xl md:w-full  px-4 py-6">
       <span className="">{icon}</span>
-      <h3 className="text-[1.25rem] text-primary2" dangerouslySetInnerHTML={{ __html: showTitle }}></h3>
+      <p className="text-[1.25rem] text-primary2" dangerouslySetInnerHTML={{ __html: showTitle }}></p>
     </div>
   );
 };

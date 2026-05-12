@@ -21,9 +21,9 @@ const FeaturedTestimonialCard: React.FC<
       </div>
 
       <div className="flex flex-col gap-4 justify-between h-full">
-        {/* <h3 className="text-sm font-semibold text-blue-500 uppercase">
+        {/* <p className="text-sm font-semibold text-blue-500 uppercase">
           {title}
-        </h3> */}
+        </p> */}
 
         <p className="text-secondary">
           {displayedText}
@@ -38,7 +38,7 @@ const FeaturedTestimonialCard: React.FC<
         </p>
         <div>
           {/* <p className="text-sm font-medium">Priya Verma</p> */}
-          <h3 className="text-xl text-primary">{title}</h3>
+          <p className="text-xl text-primary">{title}</p>
         </div>
       </div>
     </div>

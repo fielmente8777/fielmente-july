@@ -16,7 +16,7 @@ const ChooseUsCard: React.FC<ChooseUsPropsType["cards"][0]> = ({
         {icon}
       </div>
       <div className="flex flex-col gap-2">
-        <h3 className="text-secondary text-sm">{title}</h3>
+        <p className="text-secondary text-sm">{title}</p>
         <h4 className="md_font_s font-semibold text-primary">{subTitle}</h4>
       </div>
       <p className="text-light">{description}</p>

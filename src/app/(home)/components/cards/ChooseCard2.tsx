@@ -11,7 +11,7 @@ export const ChooseCard2: React.FC<
         <Image src={src} alt={heading} fill className="object-cover" />
       </div>
       <div className="space-y-4.5">
-        <h3 className="text-xl font-semibold">{heading}</h3>
+        <p className="text-xl font-semibold">{heading}</p>
 
         {description && <p className="text-secondary">{description}</p>}
       </div>

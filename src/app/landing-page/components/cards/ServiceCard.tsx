@@ -30,7 +30,7 @@ export const ServiceCard: React.FC<ServicesSectionProps["services"][0]> = ({
         )}
       </div>
       <div className="px-1.5 py-2 flex flex-col gap-4 md:min-h-[11rem] min-h-[11.25rem]">
-        <h3 className="md:text-[27px] text-xl text-primary font-semibold">{title}</h3>
+        <p className="md:text-[27px] text-xl text-primary font-semibold">{title}</p>
         <p className="md:text-lg text-sm text-secondary">{description}</p>
         {result && (
           <div className="text-[#16a34a] max-md:text-xs rounded-md w-fit font-semibold py-1.5 bg-[#ECFDF3] px-3 flex items-center gap-2">

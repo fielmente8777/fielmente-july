@@ -84,9 +84,9 @@ export default async function Page(props: Params) {
 
           {data?.data?.map((item, index) => (
             <div className="flex flex-col gap-4" key={index}>
-              <h3 className="text-[1.75rem]/[2.5rem] text-orange-primary">
+              <p className="text-[1.75rem]/[2.5rem] text-orange-primary">
                 {item.title}
-              </h3>
+              </p>
               {item?.description?.map((subItem, subIndex) => (
                 <p className="text-[1.25rem]/[1.5rem]" key={subIndex}>
                   {subItem}

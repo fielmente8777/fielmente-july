@@ -24,9 +24,9 @@ const AIPoweredServicesCard: React.FC<ServicesPropsType["cards"][0]> = ({
               />
             </div>
           </div>
-          <h3 className="text-primary md_font_s leading-9 font-semibold md:max-w-[60%] max-md:text-center max-md:mx-auto">
+          <p className="text-primary md_font_s leading-9 font-semibold md:max-w-[60%] max-md:text-center max-md:mx-auto">
             {title}
-          </h3>
+          </p>
           <div
             className={`absolute md:block hidden ${imgWrapperClassName ? imgWrapperClassName : "right-2 -top-16 z-20"}`}
           >

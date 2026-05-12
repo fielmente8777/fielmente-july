@@ -76,7 +76,7 @@ const Card = ({
               className="rounded-full"
             />
             <div className="flex flex-col gap-1">
-              <h3 className="text-black font-bold text-xl">{title}</h3>
+              <p className="text-black font-bold text-xl">{title}</p>
               <span className="text-lg">⭐⭐⭐⭐⭐</span>
             </div>
           </div>

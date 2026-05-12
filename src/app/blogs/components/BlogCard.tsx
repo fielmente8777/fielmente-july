@@ -31,7 +31,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
         </div>
       )}
       <div className="flex flex-col gap-4 justify-between">
-        <h3 className="text-lg font-semibold line-clamp-1">{title}</h3>
+        <p className="text-lg font-semibold line-clamp-1">{title}</p>
         <p>{description}</p>
         <div className="flex justify-between mt-2.5">
           <p className="text-[#6B7280]">{read}</p>

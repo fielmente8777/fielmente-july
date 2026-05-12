@@ -9,7 +9,7 @@ const WhyNeedCard: React.FC<WhyNeedProps["cards"][0]> = ({ title, src }) => {
           <Image src={src} alt={title} fill className="object-contain" />
         </div>
       </div>
-      <h3 className="text-center text-[1.375rem] text-[#222121] font-semibold px-7">{title}</h3>
+      <p className="text-center text-[1.375rem] text-[#222121] font-semibold px-7">{title}</p>
     </div>
   );
 };

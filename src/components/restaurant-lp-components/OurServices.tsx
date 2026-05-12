@@ -109,10 +109,10 @@ export const Card = ({
     <div className="flex flex-col gap-4 items-center bg-white p-4 rounded-lg">
       <span className="">{icon}</span>
       <div>
-        <h3 className="text-lg text-center text-primary2 helv">
+        <p className="text-lg text-center text-primary2 helv">
           {title}
           <br /> <b>{bold}</b>
-        </h3>
+        </p>
       </div>
     </div>
   );

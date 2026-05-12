@@ -67,7 +67,7 @@ export const Card = ({
   return (
     <div className="rounded-3xl bg-[#F5F5F5] h-full">
       <div className="flex flex-col gap-5 py-8 px-7">
-        <h3 className="text-black font-bold text-xl">{title}</h3>
+        <p className="text-black font-bold text-xl">{title}</p>
         <p className="text-black text-lg">
           {readMore
             ? description

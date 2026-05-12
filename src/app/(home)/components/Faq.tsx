@@ -27,9 +27,9 @@ const Faq: React.FC<FaqsDataTypes> = ({ title, subTitle, faqs, card }) => {
               />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-primary">
+              <p className="text-lg font-semibold text-primary">
                 {card.title}
-              </h3>
+              </p>
               <p className="text-sm text-secondary">{card.description}</p>
             </div>
             <CtaBtn

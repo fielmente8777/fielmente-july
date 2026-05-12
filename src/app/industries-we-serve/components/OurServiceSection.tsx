@@ -44,7 +44,7 @@ const OurServiceSection: React.FC<OurServiceSectionProps> = ({
           <div className="grid mt-4 grid-cols-2 gap-6 justify-center">
             {card.stats.map((stat, index) => (
               <div key={index} className="flex flex-col items-center gap-2">
-                <h3 className="md:text-4xl text-2xl text-[#e9d175] font-semibold">{stat.value}</h3>
+                <p className="md:text-4xl text-2xl text-[#e9d175] font-semibold">{stat.value}</p>
                 <p className="md:text-lg">{stat.label}</p>
               </div>
             ))}

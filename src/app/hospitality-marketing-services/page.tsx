@@ -204,9 +204,9 @@ function page() {
                       className="object-contain"
                     />
                   </div>
-                  <h3 className="text-black font-bold w-max text-[1rem]">
+                  <p className="text-black font-bold w-max text-[1rem]">
                     {item.title}
-                  </h3>
+                  </p>
                 </div>
               ))}
             </div>

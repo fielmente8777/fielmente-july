@@ -99,9 +99,9 @@ const ThankUPopUp = () => {
                 <Image src="/qr-code.png" alt="QR Code" fill />
               </div>
               <div className="col-span-2 flex flex-col justify-between">
-                <h3 className="text-white md:text-[2rem] font-semibold">
+                <p className="text-white md:text-[2rem] font-semibold">
                   Scan Me
-                </h3>
+                </p>
                 <p className="text-white text-xl">
                   To connect with us on <b>WhatsApp!</b>
                 </p>

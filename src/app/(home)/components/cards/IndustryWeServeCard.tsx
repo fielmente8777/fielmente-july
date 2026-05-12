@@ -19,7 +19,7 @@ const IndustryWeServeCard: React.FC<IndustryWeServeDataTypes["cards"][0]> = ({
         sizes="100vw"
       />
       <div className="absolute inset-0 flex flex-col font-medium justify-between p-6 text-white">
-        <h3 className=" md:text-[27.64px] ">{title}</h3>
+        <p className=" md:text-[27.64px] ">{title}</p>
         <p className="md:text-lg text-xs">{desc}</p>
       </div>
     </div>

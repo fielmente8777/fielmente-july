@@ -48,7 +48,7 @@ const ContactUsSection: React.FC<Props> = ({
           ))}
         </ul>
         <div className="flex flex-col gap-4">
-          <h3>{socialLinks.title}</h3>
+          <p>{socialLinks.title}</p>
           <ul className="flex items-center gap-2">
             {socialLinks.Link.map((link, index) => (
               <li key={index}>
