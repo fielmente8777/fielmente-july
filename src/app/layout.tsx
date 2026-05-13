@@ -9,7 +9,6 @@ import MobileNav from "@/components/navbars/MobileNav";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import Script from "next/script";
 import Salesiq from "@/components/zohochatbot/Salesiq";
-import GTMTracker from "@/components/GTMTracker";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],

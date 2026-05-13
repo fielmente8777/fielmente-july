@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
 
   // Disable source maps in production to reduce build size
-  productionBrowserSourceMaps: false,
+  productionBrowserSourceMaps: true,
 
   // Image optimization
   images: {
