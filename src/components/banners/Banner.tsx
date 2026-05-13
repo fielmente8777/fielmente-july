@@ -18,8 +18,9 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
           alt={title}
           fill
           className="object-contain md:block hidden"
-          quality={75}
           sizes="(max-width: 768px) 100vw, 100vw"
+          priority={true}
+          loading="eager"
         />
 
         <Image
@@ -27,7 +28,8 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
           alt={title}
           fill
           className="object-cover md:hidden block"
-          quality={75}
+          priority={true}
+          loading="eager"
           sizes="(max-width: 768px) 100vw, 100vw"
         />
 
