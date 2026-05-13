@@ -146,7 +146,6 @@ export default function RootLayout({
           }}
         />
 
-       
         <Script
           async
           strategy="lazyOnload"
@@ -194,7 +193,7 @@ export default function RootLayout({
             `,
           }}
         />
-       
+
         <Salesiq />
 
         <Script
@@ -202,14 +201,52 @@ export default function RootLayout({
           defer
         />
 
-
-        <Script
-          id=""
+        {/* <Script
+          id="leadfeeder"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
-              (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce(‘https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js’); })(document,‘script’); })(‘bElvO73o52V7ZMqj’);
+              (function(ss,ex){ 
+              window.ldfdr=window.ldfdr||function(){
+              (ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));
+              };
+               (function(d,s){
+                fs=d.getElementsByTagName(s)[0];
+                 function ce(src){ 
+                 var cs=d.createElement(s); 
+                 cs.src=src; cs.async=1; 
+                 fs.parentNode.insertBefore(cs,fs);
+                  }; 
+                  ce(‘https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js’); })(document,‘script’); })(‘bElvO73o52V7ZMqj’);
             `,
+          }}
+        /> */}
+        <Script
+          id="leadfeeder-script"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+      (function(ss, ex) {
+        window.ldfdr = window.ldfdr || function() {
+          (window.ldfdr._q = window.ldfdr._q || []).push([].slice.call(arguments));
+        };
+
+        (function(d, s) {
+          var fs = d.getElementsByTagName(s)[0];
+
+          function ce(src) {
+            var cs = d.createElement(s);
+            cs.src = src;
+            cs.async = true;
+            fs.parentNode.insertBefore(cs, fs);
+          }
+
+          ce('https://sc.lfeeder.com/lftracker_v1_' + ss + (ex ? '_' + ex : '') + '.js');
+
+        })(document, 'script');
+
+      })('bElvO73o52V7ZMqj');
+    `,
           }}
         />
       </head>
