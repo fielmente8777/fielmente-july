@@ -1,7 +1,6 @@
 import { WhyChooseUsDataTypes } from "@/@types/@homeType";
 import { Container, SectionWithContainer } from "@/components";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
-import Image from "next/image";
 import { ChooseCard1 } from "./cards/ChooseCard1";
 import { ChooseCard2 } from "./cards/ChooseCard2";
 

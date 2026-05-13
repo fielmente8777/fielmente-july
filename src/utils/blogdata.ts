@@ -3861,16 +3861,16 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       come up with strategies for the same. Even during the off-season, there are things you can do to increase hotel
       occupancy and generate revenue. Like,</p>
   
-    <p>– <b>Offer competitive rates and discounts</b> to attract budget-minded travelers.
+    <p>– <b>Offer competitive rates and discounts</b> to attract budget-minded travelers.</p>
   
     <p>– <b>Offer package deals</b> that include accommodation, meals, activities, or other amenities that your hotel can
       provide.
   
-    <p>– <b>Run promotions for large groups</b> of families or business travelers.
+    <p>– <b>Run promotions for large groups</b> of families or business travelers.</p>
   
     <p>– <b>Host events</b> such as conferences, expos, weddings, holiday parties, flea markets or music festivals.
   
-    <p>– You can also <b>target specific markets</b> such as business travelers, families or couples.
+    <p>– You can also <b>target specific markets</b> such as business travelers, families or couples.</p>
       <img src="/images/blog/last-2nd-bg2.png" alt="hero">
   
   </div>

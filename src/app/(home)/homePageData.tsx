@@ -466,7 +466,7 @@ export const homePageData = {
           "Top hotel marketing company for luxury resorts",
           "Who can grow hotel bookings digitally?",
         ],
-        description: `We optimize your digital presence using <strong>AI-friendly content structures,</strong> semantic SEO, local intent signals, and authority-driven branding ensuring your hotel ranks across both traditional and AI-generated results.`,
+        description: `We optimize your digital presence using <strong>AI-friendly content structures</strong>, semantic SEO, local intent signals, and authority-driven branding ensuring your hotel ranks across both traditional and AI-generated results.`,
       },
       {
         src: "/home/result-driven.png",
@@ -487,7 +487,7 @@ export const homePageData = {
         src: "/home/resort-marketing.png",
         heading: "Resort Marketing Firm Focused on Premium Growth",
         body: `Fielmente is a specialized <strong>Resort Marketing Firm in India</strong> working with luxury resorts, boutique stays, wellness retreats, and destination properties. We position resorts as premium experiences rather than just accommodations.
-        As a trusted <strong>Resort Marketing Firm,</strong> our strategies include:`,
+        As a trusted <strong>Resort Marketing Firm</strong>, our strategies include:`,
         points: [
           "High-intent SEO for resort bookings",
           "Experience-based storytelling for AI discovery",
@@ -506,7 +506,7 @@ export const homePageData = {
           "Build topical authority in hospitality marketing",
           "Convert AI traffic into real bookings",
         ],
-        description: `If you’re looking for a <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency,</a> <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Company </a> that understands how AI platforms influence customer decisions—<strong>Fielmente is your growth partner.`,
+        description: `If you’re looking for a <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency,</a> <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Company</a> that understands how AI platforms influence customer decisions—<strong>Fielmente is your growth partner.</strong>`,
       },
       {
         src: "/home/best-service.png",
@@ -523,7 +523,7 @@ export const homePageData = {
       {
         src: "/home/support.png",
         heading: "Support",
-        body: `DEDICATED SUPPORTS`,
+        body: `DEDICATED SUPPORT`,
         description: `We are here to help you get through all your concerns. We are always available in sorting out your issues throughout your journey. We would love to hear from you no matter what, in order to deliver the best. We value your business and are here to support you.`,
       },
     ],
@@ -550,7 +550,7 @@ export const homePageData = {
 
   maximizeGrowthData: {
     title: "Boost Occupancy & Reduce OTA Costs with Fielmente",
-    subTitle: `Let us handle your <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Services</a> &</br> <b>grow your occupancy rate by 5X</b>`,
+    subTitle: `Let us handle your <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Services</a> &<br/> <b>grow your occupancy rate by 5X</b>`,
     cards: [
       {
         src: "/home/Direct.png",

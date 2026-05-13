@@ -1,8 +1,21 @@
 "use client";
+
+import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Script from "next/script";
+
+declare global {
+  interface Window {
+    $zoho: {
+      salesiq?: {
+        ready?: () => void;
+      };
+    };
+  }
+}
+
 const Salesiq = () => {
   const pathname = usePathname();
+
   const url = [
     "/thank-you/",
     // "/landing-page/",
@@ -13,38 +26,46 @@ const Salesiq = () => {
     // "/UK/",
     // "/USA/",
   ];
-  if (url.includes(pathname)) {
+
+  const shouldHide = url.includes(pathname);
+
+  useEffect(() => {
+    if (shouldHide) return;
+
+    const timer = setTimeout(() => {
+      window.$zoho = window.$zoho || {};
+
+      window.$zoho.salesiq = window.$zoho.salesiq || {
+        ready: function () {},
+      };
+
+      if (document.getElementById("zsiqscript")) return;
+
+      const script = document.createElement("script");
+
+      script.id = "zsiqscript";
+
+      script.src =
+        "https://salesiq.zohopublic.in/widget?wc=siq3e552165893c13042e1d199f6774a60161bf7e2d236cee20afeec12690605bbe60e273bf1bbc69d76802e696c96db5df";
+
+      script.async = true;
+
+      document.body.appendChild(script);
+    }, 8000);
+
+    return () => clearTimeout(timer);
+  }, [shouldHide]);
+
+  if (shouldHide) {
     return null;
   }
+
   return (
     <>
-      {/* Preconnect */}
-      <link rel="preconnect" href="https://salesiq.zohopublic.in" />
-
-      <link rel="preconnect" href="https://js.zohocdn.com" />
-
-      <link rel="preconnect" href="https://css.zohocdn.com" />
-      <Script id="zsiqready" strategy="afterInteractive">
-        {` window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}`}
-      </Script>
-      <Script
-        id="zsiqscript"
-        strategy="afterInteractive"
-        src="https://salesiq.zohopublic.in/widget?wc=siq3e552165893c13042e1d199f6774a60161bf7e2d236cee20afeec12690605bbe60e273bf1bbc69d76802e696c96db5df"
-        defer
-      ></Script>
-      {/* <Script id="chatbot-config" strategy="afterInteractive">
-        {`
-          window.eazbotConfig = {
-            ndid: "09166f89-8fb1-4a65-b016-7ebbd3418701",
-            hid: "68017653",
-          };
-        `}
-      </Script>
-      <Script
-        src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
-        strategy="afterInteractive"
-      /> */}
+      <link
+        rel="preconnect"
+        href="https://salesiq.zohopublic.in"
+      />
     </>
   );
 };
