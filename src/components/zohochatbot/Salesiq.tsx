@@ -18,7 +18,13 @@ const Salesiq = () => {
   }
   return (
     <>
-      <Script id="zsiqready" strategy="afterInteractive" >
+      {/* Preconnect */}
+      <link rel="preconnect" href="https://salesiq.zohopublic.in" />
+
+      <link rel="preconnect" href="https://js.zohocdn.com" />
+
+      <link rel="preconnect" href="https://css.zohocdn.com" />
+      <Script id="zsiqready" strategy="afterInteractive">
         {` window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}`}
       </Script>
       <Script
