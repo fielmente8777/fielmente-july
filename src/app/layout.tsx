@@ -146,14 +146,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* <Script
-          id="google-conversion-tracking"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `gtag('event', 'conversion', {'send_to': 'AW-10860806708/6GvFCPKGytgZELSE67oo'});`,
-          }}
-        /> */}
-
+       
         <Script
           async
           strategy="lazyOnload"
@@ -201,11 +194,7 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* LeadBooster Loader Script */}
-        {/* <script
-          src="https://leadbooster-chat.pipedrive.com/assets/loader.js"
-          async
-        ></cript> */}
+       
         <Salesiq />
 
         <Script
@@ -213,7 +202,6 @@ export default function RootLayout({
           defer
         />
 
-        {/* <Script src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js" /> */}
 
         <Script
           id=""
