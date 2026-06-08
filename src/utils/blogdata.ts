@@ -7595,7 +7595,8 @@ Run special offers & contests, like the festive season is coming so plan a conte
   `,
   },
   {
-    isShow: false,
+    isShow: true,
+    date: "08 June 2026",
     meta: {
       title:
         "Why Hotels Need Local SEO Software in 2026 | Eazotel",
@@ -7676,7 +7677,8 @@ revenue.</p>
   },
 
   {
-    isShow: false,
+    isShow: true,
+    date: "08 June 2026",
     meta: {
       title:
         "Hotel Analytics Software to Increase Revenue & Direct Bookings | Eazotel",
