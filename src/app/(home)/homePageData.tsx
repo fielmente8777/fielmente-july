@@ -121,7 +121,8 @@ export const homePageData = {
   aboutCompanyData: {
     src: "/home/about.png",
     title: "ABOUT COMPANY",
-    subTitle: `Grow Your Hotel’s Direct and OTA Bookings by <span>30 - 50%</span>`,
+    subTitle: `Revenue Driven Hotel Marketing Agency, We help you achieve revenue by <span>7-10X</span>`,
+    // subTitle: `Grow Your Hotel’s Direct and OTA Bookings by <span>30 - 50%</span>`,
     description: [
       "We help hotels, resorts, and vacation rentals reduce OTA commissions and boost occupancy with AI-driven hospitality marketing strategies.",
     ],
