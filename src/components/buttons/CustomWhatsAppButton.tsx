@@ -26,7 +26,7 @@ const CustomWhatsAppButton: React.FC<CtaBtnProps> = ({
   return (
     <button
       {...props}
-      onClick={WhatsAppClick}
+      onClick={() => WhatsAppClick()}
       className={`transition-all text-nowrap max-md:w-full flex items-center gap-2 justify-center font-medium border duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-2xl px-6 py-3  ${className}`}
     >
       {startIcon === "whatsapp" && (
