@@ -121,7 +121,7 @@ export const homePageData = {
   aboutCompanyData: {
     src: "/home/about.png",
     title: "ABOUT COMPANY",
-    subTitle: `Revenue Driven Hotel Marketing Agency, We help you to achieve revenue by <span>7-10X</span>`,
+    subTitle: `Revenue Driven Hotel Marketing Agency, We help you to achieve revenue by <span>2-5X</span>`,
     // subTitle: `Grow Your Hotel’s Direct and OTA Bookings by <span>30 - 50%</span>`,
     description: [
       "We help hotels, resorts, and vacation rentals reduce OTA commissions and boost occupancy with AI-driven hospitality marketing strategies.",
@@ -192,9 +192,9 @@ export const homePageData = {
     ],
   },
   chooseFielmenteData: {
-    title: "CHOOSE FIELMENTE",
+    title: "WHY CHOOSE FIELMENTE",
     description:
-      "Choose <i>Fielmente</i> as your Hotel digital marketing partner to transform your hospitality business with assured success and innovation. We are the best of India <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency</a> and <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Agency</a>.",
+      "India's hospitality-focused digital marketing partner helping hotels, resorts, restaurants, cafes, and cloud kitchens generate more bookings, improve online visibility, and maximize revenue through performance marketing, SEO, social media, and brand strategy.",
   },
   servicesData: {
     title: "OUR SERVICES",
