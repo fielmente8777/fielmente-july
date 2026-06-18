@@ -1,9 +1,9 @@
-import { SectionWithContainer } from "@/components";
-import { CtaBtn } from "@/components/buttons/CtaBtn";
-import SectionHeading from "@/components/typography/SectionHeadingDesc";
-import ResultsSlider from "./sliders/ResultsSlider";
-import { ResultStatsCard } from "./cards/ResultStatsCard";
 import { ResultsSectionProps } from "@/@types/@landingPageType";
+import { SectionWithContainer } from "@/components";
+import CustomWhatsAppButton from "@/components/buttons/CustomWhatsAppButton";
+import SectionHeading from "@/components/typography/SectionHeadingDesc";
+import { ResultStatsCard } from "./cards/ResultStatsCard";
+import ResultsSlider from "./sliders/ResultsSlider";
 
 
 
@@ -23,10 +23,7 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
             titleColor="white"
             subTitleColor="white"
           />
-          <CtaBtn
-            type={cta.type}
-            href={cta.href}
-            target={cta.target}
+          <CustomWhatsAppButton
             label={cta.label}
             className="mt-8 w-full justify-between! bg-color4 border-color4 text-white rounded-full"
             icon="arrow"

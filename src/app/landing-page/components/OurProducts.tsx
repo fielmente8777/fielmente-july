@@ -1,11 +1,10 @@
 "use client";
 import { ProductsDataTypes } from "@/@types/@homeType";
 import { Container, Section } from "@/components";
-import { CtaBtn } from "@/components/buttons/CtaBtn";
-import SectionHeading from "@/components/typography/SectionHeadingDesc";
-import ProductCard from "@/components/cards/ProductCard";
-import ProductSlider from "@/components/slider/ProductSlider";
+import CustomWhatsAppButton from "@/components/buttons/CustomWhatsAppButton";
 import ProductCardNew from "@/components/cards/ProductCardNew";
+import ProductSlider from "@/components/slider/ProductSlider";
+import SectionHeading from "@/components/typography/SectionHeadingDesc";
 
 const OurProducts: React.FC<ProductsDataTypes> = ({
   title,
@@ -35,11 +34,8 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
       {cta && (
         <Container>
           <div className="md:mt-12 mt-4 flex justify-center gap-4">
-            <CtaBtn
+            <CustomWhatsAppButton
               label={cta.label}
-              type={cta.type}
-              href={cta.href}
-              target={cta.target}
               className="bg-background-black1 text-white md:w-54 rounded-full justify-between!"
               icon="arrow"
             />

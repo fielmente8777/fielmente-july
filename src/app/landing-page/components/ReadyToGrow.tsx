@@ -1,6 +1,6 @@
 import { CtaBtnPropsType } from "@/@types/@types";
 import { SectionWithContainer } from "@/components";
-import { CtaBtn } from "@/components/buttons/CtaBtn";
+import CustomWhatsAppButton from "@/components/buttons/CustomWhatsAppButton";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import Image from "next/image";
 
@@ -34,14 +34,11 @@ const ReadyToGrow: React.FC<Props> = ({
           />
           <p className="text-white text-center max-md:px-4">{description}</p>
           <div className="flex max-md:flex-col gap-4 justify-center">
-            {ctaS.map((cta,index) => (
-              <CtaBtn
+            {ctaS.map((cta, index) => (
+              <CustomWhatsAppButton
                 key={cta.label}
                 label={cta.label}
-                type={cta.type}
-                href={cta.href}
-                target={cta.target}
-                className={`rounded-full w-fit border-none ${index === 1 ? "bg-white text-color4" : "glassy-card text-white"}` }
+                className={`rounded-full w-fit border-none ${index === 1 ? "bg-white text-color4" : "glassy-card text-white"}`}
                 icon={index === 1 ? "arrow2" : "none"}
                 iconClass={index === 1 ? "text-color4" : "text-white"}
               />

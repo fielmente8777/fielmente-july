@@ -1,9 +1,9 @@
+import { ServicesSectionProps } from "@/@types/@landingPageType";
 import { SectionWithContainer } from "@/components";
-import { CtaBtn } from "@/components/buttons/CtaBtn";
+import CustomWhatsAppButton from "@/components/buttons/CustomWhatsAppButton";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import { ServiceCard } from "./cards/ServiceCard";
 import ServiceSlider from "./sliders/ServiceSlider";
-import { ServicesSectionProps } from "@/@types/@landingPageType";
 
 
 const ServicesSection: React.FC<ServicesSectionProps> = ({
@@ -47,11 +47,8 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
           />
           <p className="max-md:text-center">{ctaCard.description}</p>
         </div>
-        <CtaBtn
+        <CustomWhatsAppButton
           label={ctaCard.cta.label}
-          type={ctaCard.cta.type}
-          href={ctaCard.cta.href}
-          target={ctaCard.cta.target}
           icon="arrow2"
           className="bg-color4 rounded-full text-white border-none"
           iconClass="bg-transparent!"
