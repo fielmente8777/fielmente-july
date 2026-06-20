@@ -7,24 +7,16 @@ type WhatsappPosition = "left" | "right";
 
 type AppContextType = {
   isOpenPopupForm: boolean;
-  setIsOpenPopupForm: React.Dispatch<
-    React.SetStateAction<boolean>
-  >;
+  setIsOpenPopupForm: React.Dispatch<React.SetStateAction<boolean>>;
 
   isMobileNavOpen: boolean;
-  setIsMobileNavOpen: React.Dispatch<
-    React.SetStateAction<boolean>
-  >;
+  setIsMobileNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
 
   showWhatsapp: boolean;
-  setShowWhatsapp: React.Dispatch<
-    React.SetStateAction<boolean>
-  >;
+  setShowWhatsapp: React.Dispatch<React.SetStateAction<boolean>>;
 
   whatsappPosition: WhatsappPosition;
-  setWhatsappPosition: React.Dispatch<
-    React.SetStateAction<WhatsappPosition>
-  >;
+  setWhatsappPosition: React.Dispatch<React.SetStateAction<WhatsappPosition>>;
 
   WhatsAppClick: (pathname?: string) => Promise<void>;
 };
@@ -45,18 +37,12 @@ export const AppContext = createContext<AppContextType>({
   WhatsAppClick: async () => {},
 });
 
-export const AppProvider = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [isOpenPopupForm, setIsOpenPopupForm] = useState(false);
 
-  const [isMobileNavOpen, setIsMobileNavOpen] =
-    useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
-  const [showWhatsapp, setShowWhatsapp] =
-    useState(true);
+  const [showWhatsapp, setShowWhatsapp] = useState(true);
 
   const [whatsappPosition, setWhatsappPosition] =
     useState<WhatsappPosition>("left");
@@ -64,24 +50,17 @@ export const AppProvider = ({
   const WhatsAppClick = async (pathname?: string) => {
     try {
       // If pathname is not passed, use current browser path
-      const currentPath =
-        pathname ?? window.location.pathname;
+      const currentPath = pathname ?? window.location.pathname;
 
       // UK Number
       const ukNo = "+447438375533";
 
       // India Number
       const indNo =
-        contacts.phone.length > 1
-          ? contacts.phone[1]
-          : contacts.phone[0];
+        contacts.phone.length > 1 ? contacts.phone[1] : contacts.phone[0];
 
       // Select phone based on route
-      const selectedNumber = currentPath.startsWith(
-        "/UK/"
-      )
-        ? ukNo
-        : indNo;
+      const selectedNumber = currentPath.startsWith("/UK/") ? ukNo : indNo;
 
       const payload = {
         widget: "whatsapp",
@@ -94,10 +73,7 @@ export const AppProvider = ({
 
         websiteName: window.location.hostname,
 
-        phoneNumber: selectedNumber.replace(
-          /\D/g,
-          ""
-        ),
+        phoneNumber: selectedNumber.replace(/\D/g, ""),
 
         message: WhatsAppEmbeddedMessage,
       };
@@ -117,18 +93,13 @@ export const AppProvider = ({
 
       const data = await response.json();
 
-
-      const whatsappUrl =
-        data?.result?.doc?.whatsappUrl;
+      const whatsappUrl = data?.result?.doc?.whatsappUrl;
 
       if (whatsappUrl) {
         window.open(whatsappUrl, "_blank");
       }
     } catch (error) {
-      console.error(
-        "WhatsApp Click Error:",
-        error
-      );
+      console.error("WhatsApp Click Error:", error);
     }
   };
 

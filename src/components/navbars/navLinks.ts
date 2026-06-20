@@ -45,20 +45,20 @@ export const navLinks: NavLinksProps[] = [
           },
         ],
       },
-      {
-        label: "Cloud Kitchen Marketing",
-        href: "/industries-we-serve/cloud-kitchen-marketing-agency/",
-        subLinks: [
-          {
-            label: "Cloud Kitchen Social Media",
-            href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-social-media/",
-          },
-          {
-            label: "Cloud Kitchen Ads",
-            href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-google-ads/",
-          },
-        ],
-      },
+      // {
+      //   label: "Cloud Kitchen Marketing",
+      //   href: "/industries-we-serve/cloud-kitchen-marketing-agency/",
+      //   subLinks: [
+      //     {
+      //       label: "Cloud Kitchen Social Media",
+      //       href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-social-media/",
+      //     },
+      //     {
+      //       label: "Cloud Kitchen Ads",
+      //       href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-google-ads/",
+      //     },
+      //   ],
+      // },
     ],
   },
   // {

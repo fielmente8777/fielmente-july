@@ -4,7 +4,7 @@ import {
   FillLocationIcon,
   FillMailIcon,
   FillPhoneIcon,
-  OutLineXIcon
+  OutLineXIcon,
 } from "@/utils/icons";
 import { contacts } from "../../../contact";
 import { AiFillInstagram } from "react-icons/ai";
@@ -132,7 +132,18 @@ export const footerData: FooterLinksPropstype = {
           label: "Restaurant Marketing",
           href: "/industries-we-serve/restaurant-marketing-agency/",
         },
-        
+        {
+          label: "Cloud Kitchen Marketing",
+          href: "/industries-we-serve/cloud-kitchen-marketing-agency/",
+        },
+        {
+          label: "Cloud Kitchen Social Media",
+          href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-social-media/",
+        },
+        {
+          label: "Cloud Kitchen Ads",
+          href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-google-ads/",
+        },
       ],
     },
     {
