@@ -22,7 +22,7 @@ const Salesiq = () => {
     "/resort/",
     "/hospitality/",
     "/dubai-restaurant/",
-    "/restaurant/",
+    // "/restaurant/",
     "/UK/",
     "/USA/",
   ];
