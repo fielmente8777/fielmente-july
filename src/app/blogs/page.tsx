@@ -9,23 +9,24 @@ export const metadata: Metadata = {
   title: "Blogs - Fielmente",
   description:
     "Another milestone in Fielmente’s journey 8 Marketing Strategies for Food &amp; Beverage Industry to Plan in 2022 How SEO helps to boost restaurant business Top 3 Food &amp; Beverage Business Pitches on Shark Tank India Restaurant Marketing in the MetaVerse – Web 3.0 Facebook Twitter LinkedIn Blogs Fielmente",
-    alternates: {
-      canonical: "https://fielmente.com/blogs/",
-      languages: {
-        "en-US": "https://fielmente.com/blogs/",
-      },
+  alternates: {
+    canonical: "https://fielmente.com/blogs/",
+    languages: {
+      "en-US": "https://fielmente.com/blogs/",
     },
-    openGraph: {
-      title: "Blogs - Fielmente",
-      description:"Another milestone in Fielmente’s journey 8 Marketing Strategies for Food &amp; Beverage Industry to Plan in 2022 How SEO helps to boost restaurant business Top 3 Food &amp; Beverage Business Pitches on Shark Tank India Restaurant Marketing in the MetaVerse – Web 3.0 Facebook Twitter LinkedIn Blogs Fielmente",
-      images: [
+  },
+  openGraph: {
+    title: "Blogs - Fielmente",
+    description:
+      "Another milestone in Fielmente’s journey 8 Marketing Strategies for Food &amp; Beverage Industry to Plan in 2022 How SEO helps to boost restaurant business Top 3 Food &amp; Beverage Business Pitches on Shark Tank India Restaurant Marketing in the MetaVerse – Web 3.0 Facebook Twitter LinkedIn Blogs Fielmente",
+    images: [
       {
         url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },
     ],
-    }
+  },
 };
 
 export default function Blogs() {
@@ -53,6 +54,7 @@ export default function Blogs() {
             wrapperClassName="gap-4 max-w-md"
             icon={false}
           />
+          <p className="text-black">{blogPageData.blogs.cards.length}</p>
         </div>
       </Section>
       <SectionWithContainer>

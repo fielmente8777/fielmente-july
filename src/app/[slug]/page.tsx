@@ -6,6 +6,7 @@ import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
 import { homePageData } from "../(home)/homePageData";
 import ExploreMoreBLogs from "./components/ExploreMoreBLogs";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 interface Params {
   params: {
@@ -33,7 +34,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: Params) {
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const path = await params;
   const post = blogData.find((post) => post.slug === path.slug);
 
@@ -55,7 +56,7 @@ export async function generateMetadata({ params }: Params) {
   return {
     title,
     description,
-    alternate: {
+    alternates: {
       canonical: `https://fielmente.com/${post.slug}/`,
     },
     openGraph: {
@@ -111,6 +112,7 @@ export default async function LandingPage({ params }: Params) {
       })),
     ],
   };
+
 
   if (!data) {
     notFound();
