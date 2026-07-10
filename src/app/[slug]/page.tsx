@@ -30,7 +30,6 @@ export async function generateStaticParams() {
 
   return blogPosts.map((post) => ({
     slug: post.slug,
-    fallback: false,
   }));
 }
 
@@ -52,18 +51,17 @@ export async function generateMetadata({ params }: Params) {
     post?.meta?.description ||
     `${post.title} - Learn how hotels and restaurants grow using SEO, social media, and performance marketing strategies by Fielmente.`;
 
-  const url = `https://fielmente.com/${post.slug}/`;
 
   return {
     title,
     description,
     alternate: {
-      canonical: url,
+      canonical: `https://fielmente.com/${post.slug}/`,
     },
     openGraph: {
       title,
       description,
-      url: url,
+      url: `https://fielmente.com/${post.slug}/`,
       siteName: "Fielmente",
       locale: "en_IN",
       type: "article",
