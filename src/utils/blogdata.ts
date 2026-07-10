@@ -106,7 +106,7 @@ This landmark move opens new doors for property owners, offering not just legali
 
 <p>Final Word</p>
 
-<p>The BnB and Homestay Policy 2025 marks a turning point for Noida’s hospitality sector. By shifting informal guest accommodations into a regulated, incentive-driven framework, the government is not only fostering tourism growth but also empowering homeowners to become part of the city’s evolving travel ecosystem.<p>
+<p>The BnB and Homestay Policy 2025 marks a turning point for Noida’s hospitality sector. By shifting informal guest accommodations into a regulated, incentive-driven framework, the government is not only fostering tourism growth but also empowering homeowners to become part of the city’s evolving travel ecosystem.</p>
 
 <p>For homeowners in Noida, this is the perfect moment to explore hosting — legally, profitably, and sustainably.</p>
     `,
