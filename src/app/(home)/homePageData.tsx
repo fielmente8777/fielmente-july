@@ -41,6 +41,12 @@ import {
   LocalSEOIcon,
   WebsiteBuilderIcon,
 } from "@/utils/newHomeIcon";
+import {
+  AnalyticsReportIcon,
+  StarIcon,
+  UserIcon,
+  WhatsappIcon,
+} from "@/utils/newIcon";
 
 export const homePageData = {
   bannerData: {
@@ -191,6 +197,45 @@ export const homePageData = {
       },
     ],
   },
+
+  getFreeDashboardAccessData: {
+    title: "GET FREE DASHBOARD ACCESS",
+    subTitle:
+      "Manage WhatsApp, Leads, Reviews & Marketing from One Powerful Dashboard",
+    description:
+      "Register Now and get access to WhatsApp Manager and all our premium tools - ABSOLUTELY FREE",
+    cards: [
+      {
+        icon: <WhatsappIcon />,
+        color: "bg-[#34C759]/70",
+        title: "WhatsApp Manager",
+        description: "Team inbox, automation & quick replies",
+      },
+      {
+        icon: <UserIcon />,
+        color: "bg-[#FF2D55]/70",
+        title: "Lead Management",
+        description: "Capture, track & convert more leads",
+      },
+      {
+        icon: <StarIcon />,
+        color: "bg-[#FFCC00]/70",
+        title: "Reviews & Reputation",
+        description: "Manage reviews and build trust",
+      },
+      {
+        icon: <AnalyticsReportIcon />,
+        color: "bg-[#0088FF]/70",
+        title: "Analytics & Report",
+        description: "Powerful Insights for smarter decisions",
+      },
+    ],
+    list: ["100% Free", "Secure & Reliable", "Instant Access", "24/7 Support"],
+    cta: {
+      label: "Get Free Dashboard Access",
+      href: "whatsapp",
+    },
+  },
   chooseFielmenteData: {
     title: "WHY CHOOSE FIELMENTE",
     description:
@@ -315,6 +360,8 @@ export const homePageData = {
         description: `Easily manage hotel content, offers, and promotions. Update menus, rooms, and packages in seconds — no IT team needed.`,
         fromColor: "from-[#2563EB]",
         toColor: "to-[#1d4ed8]",
+        color: "#0D54EB",
+        image: "/products/cms.png",
       },
       {
         icon: <BookingEngineIcon />,
@@ -322,6 +369,8 @@ export const homePageData = {
         description: `Seamless booking engine designed for hotels. Boost direct reservations by 30%+ and reduce OTA commissions instantly`,
         fromColor: "from-[#4f46e5]",
         toColor: "to-[#4338ca]",
+        color: "#4F46E5",
+        image: "/products/booking-engine.png",
       },
       // {
       //   icon: <AiReservationDeskIcon />,
@@ -329,6 +378,8 @@ export const homePageData = {
       //   description: `AI-powered assistant that answers guest queries 24/7, reduces missed inquiries, and converts chats into confirmed bookings`,
       //   fromColor: "from-[#7c3aed]",
       //   toColor: "to-[#6d28d9]",
+      //   color:"#6F2ADB",
+      // image:'/products/ai-reservation-desk.png',
       // },
       {
         icon: <PaymentGatewayIcon />,
@@ -336,6 +387,8 @@ export const homePageData = {
         description: `Secure, integrated payments for smooth guest checkout — supporting multi-currency & one-click payments`,
         fromColor: "from-[#0891b2]",
         toColor: "to-[#0e7490]",
+        color: "#098EAE",
+        image: "/products/payment-gateway.png",
       },
       {
         icon: <EmailMarketingIcon />,
@@ -343,6 +396,8 @@ export const homePageData = {
         description: `Automated and personalized campaigns that deliver 4× higher open rates than traditional hotel emails`,
         fromColor: "from-[#db2777]",
         toColor: "to-[#be185d]",
+        color: "#3C58E2",
+        image: "/products/email-marketing.png",
       },
       // {
       //   icon: <AiFrontDeskIcon />,
@@ -350,6 +405,8 @@ export const homePageData = {
       //   description: `Your virtual receptionist available 24/7 — answering queries, upselling rooms, and handling guest requests instantly`,
       //   fromColor: "from-[#14b8a6]",
       //   toColor: "to-[#0f766e]",
+      //   color:"#12988B",
+      // image:'/products/ai-front-desk.png'
       // },
       {
         icon: <WhatsAppMarketingIcon />,
@@ -357,6 +414,8 @@ export const homePageData = {
         description: `Engage guests directly where they spend most time. From booking confirmations to offers — drive faster responses & repeat stays`,
         fromColor: "from-[#3b82f6]",
         toColor: "to-[#1f40af]",
+        color: "#2EA041",
+        image: "/products/whatsApp-marketing.png",
       },
       {
         icon: <LocalSEOIcon />,
@@ -364,6 +423,8 @@ export const homePageData = {
         description: `Rank higher on Google Maps & ‘near me’ searches. Hotels we optimize see 2× more calls & direct inquiries within weeks`,
         fromColor: "from-[#8b5cf6]",
         toColor: "to-[#6d28d9]",
+        color: "#773AE3",
+        image: "/products/local-seo.png",
       },
       // {
       //   icon: <AiConciergeDeskIcon />,
@@ -371,6 +432,8 @@ export const homePageData = {
       //   description: `Smart concierge that recommends dining, spa, and activities — increasing ancillary revenue per guest by up to 25%.`,
       //   fromColor: "from-[#06b6d4]",
       //   toColor: "to-[#0284c7]",
+      //   color:"#038AC9",
+      //   image:'/products/AI-Concierge-Desk.png'
       // },
       {
         icon: <AiChatBotIcon />,
@@ -378,6 +441,8 @@ export const homePageData = {
         description: `Automate inquiries, FAQs, and booking queries — saving staff time and increasing conversions by 35%+`,
         fromColor: "from-[#8194af]",
         toColor: "to-[#5e7290]",
+        color: "#627693",
+        image: "/products/AI-Chatbot.png",
       },
       {
         icon: <CrmIcon />,
@@ -385,6 +450,8 @@ export const homePageData = {
         description: `Centralize guest data, manage loyalty, and run targeted campaigns that increase repeat stays by 40%`,
         fromColor: "from-[#32c0cd]",
         toColor: "to-[#6994f8]",
+        color: "#55A4E8",
+        image: "/products/crm.png",
       },
       // {
       //   icon: <CmsIcon />,
@@ -392,6 +459,8 @@ export const homePageData = {
       //   description: `Answer guest calls automatically with a friendly AI agent trained for hospitality. Reduce call handling time by 50%.`,
       //   fromColor: "from-[#312e81]",
       //   toColor: "to-[#4338ca]",
+      //   color:"#39329F",
+      //   image:'/products/AI-Voice-Agent.png'
       // },
       // {
       //   icon: <WebsiteBuilderIcon />,
@@ -399,6 +468,8 @@ export const homePageData = {
       //   description: `All-in-one hotel website builder with integrated booking and SEO optimization — live in just 7 days`,
       //   fromColor: "from-[#c026d3]",
       //   toColor: "to-[#a21caf]",
+      //   color:"#424242",
+      //   image:'/products/Website-Builder.png'
       // },
     ],
   },

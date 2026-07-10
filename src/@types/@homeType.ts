@@ -58,11 +58,13 @@ export interface ProductsDataTypes {
   subTitle: string;
   description: string;
   cards: {
+    image: string;
     icon?: JSX.Element;
     title: string;
     description: string;
     fromColor?: string;
     toColor?: string;
+    color: string;
   }[];
   cta?: CtaBtnPropsType;
 }

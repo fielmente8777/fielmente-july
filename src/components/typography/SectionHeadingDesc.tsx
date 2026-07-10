@@ -70,7 +70,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
               smTextCenter ? "max-md:text-center" : ""
             } ${
               titleColor ? `text-${titleColor}` : "text-secondary"
-            }  text-sm font-bold`}
+            }  md:text-[1.25rem]/[2rem] text-sm font-bold`}
           />
         </div>
       )}

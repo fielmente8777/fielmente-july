@@ -20,6 +20,7 @@ import ProvenResults from "./components/ProvenResults";
 import WhyChooseUs from "./components/WhyChooseUs";
 import WorkWithIndiasHotel from "./components/WorkWithIndiasHotel";
 import { homePageData } from "./homePageData";
+import GetFreeDashboardAccess from "./components/GetFreeDashboardAccess";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <ChooseFielmente {...homePageData?.chooseFielmenteData}/>
       <OurServices {...homePageData?.servicesData} />
       <OurProducts {...homePageData?.productsData} />
+      <GetFreeDashboardAccess {...homePageData?.getFreeDashboardAccessData} />
       <HowItWork {...homePageData?.howItWorksData} />
       <ProvenResults {...homePageData?.provenResults} />
       <WhyChooseUs {...homePageData?.whyChooseUsData} />
