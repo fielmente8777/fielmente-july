@@ -5,7 +5,7 @@ export interface ClientData {
   show?: boolean;
   href?: string;
   clientType: "national" | "international";
-  websiteImgUrl?:string;
+  websiteImgUrl?: string;
 }
 
 export interface ChooseCardProsData {
@@ -138,7 +138,7 @@ export const ClientImages: ClientData[] = [
     className: "#f7f7f7",
     show: false,
     href: "https://thebunkerhouse.in/",
-    websiteImgUrl:"/website/bunker-house.png",
+    websiteImgUrl: "/website/bunker-house.png",
     clientType: "national",
   },
   {
@@ -674,5 +674,101 @@ export const ClientImages: ClientData[] = [
     alt: "eastrenspice",
     className: "#ffffff",
     clientType: "international",
+  },
+  {
+    src: "/clientsLogo/Elchi.webp",
+    alt: "Elchi",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/976Panagad.png",
+    alt: "976Panagad",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/Elakai.jpg",
+    alt: "Elakai",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/Oneearth.jpg",
+    alt: "One Earth",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/periyar.jpg",
+    alt: "Periyar River Lodge",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/saraaya.jpg",
+    alt: "Saraaya",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/tirthan.jpeg",
+    alt: "Tirthan Riverside Resort",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/thereddoor.png",
+    alt: "The Red Door",
+    className: "",
+    clientType: "international",
+  },
+  {
+    src: "/clientsLogo/aquarium.jpg",
+    alt: "Aquarium Island Cafe",
+    className: "",
+    clientType: "international",
+  },
+  {
+    src: "/clientsLogo/webcation.jpeg",
+    alt: "Webcation",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/alhathaifa.png",
+    alt: "Al Hathaifa",
+    className: "#ffffff",
+    clientType: "international",
+  },
+  {
+    src: "/clientsLogo/amhospitality.png",
+    alt: "A M Hospitality",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/arohapalms.png",
+    alt: "Aroha Palms",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/rudraksh.png",
+    alt: "Rudraksh Retreat",
+    className: "",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/swansuites.png",
+    alt: "Swan Suites",
+    className: "#ffffff",
+    clientType: "national",
+  },
+  {
+    src: "/clientsLogo/acacia.png",
+    alt: "The Acacia Hotel",
+    className: "",
+    clientType: "national",
   },
 ];
