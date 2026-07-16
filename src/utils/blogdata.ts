@@ -7602,6 +7602,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Improve local search rankings, manage reviews, track keywords, and increase direct bookings with Eazotel Local SEO Software built specifically for hotels, resorts, hostels, restaurants, and wedding venues.",
     },
+    url:"/images/blog/Why-Eazotel-Local-SEO.webp",
     title:
       "Why Eazotel Local SEO Software is Essential for Hotels, Resorts, and Hostels in 2026",
     slug: "why-eazotel-local-seo-software-is-essential-for-hotels-resorts-and-hostels-in-2026",
@@ -7680,10 +7681,11 @@ revenue.</p>
     date: "08 June 2026",
     meta: {
       title:
-        "Hotel Analytics Software to Increase Revenue & Direct Bookings | Eazotel",
+      "Hotel Analytics Software to Increase Revenue & Direct Bookings | Eazotel",
       description:
-        "Discover how Eazotel combines analytics, advertising performance, SEO insights, and booking intelligence to help hotels increase occupancy, direct bookings, and revenue.",
+      "Discover how Eazotel combines analytics, advertising performance, SEO insights, and booking intelligence to help hotels increase occupancy, direct bookings, and revenue.",
     },
+    url:"/images/blog/How-Hotels-Can-Leverage-Analytics.webp",
     title:
       "How Hotels Can Leverage Analytics, Advertising & Search Data Through Eazotel to Increase Revenue",
     slug: "how-hotels-can-leverage-analytics-advertising-search-data-through-eazotel-to-increase-revenue",
@@ -7778,6 +7780,7 @@ occupancy, and increased revenue.
       description:
         "In today’s digital-first hospitality industry, your website is more than just an online brochure—it is your most important sales channel. Whether you own a hotel, resort, villa, hostel, or homestay, your website directly impacts bookings, guest experience, and revenue.",
     },
+    url:"/images/blog/Why-Hotels-Should-Move-from-WordPress-to-Next.js.webp",
     title:
       "Why Hotels Should Move from WordPress to Next.js: A Guide for Modern Hospitality Businesses",
     slug: "why-hotels-should-move-from-wordpress-to-nextjs-a-guide-for-modern-hospitality-businesses",
@@ -8064,6 +8067,7 @@ occupancy, and increased revenue.
       description:
         "Discover how a hotel marketing agency can help hotels increase direct bookings, reduce OTA dependency, and improve occupancy rates.",
     },
+    url:"/images/blog/Hotel-Marketing-Agency-How-to-Increase-Direct-Bookings-by-300-in-2026.webp",
     title:
       "Hotel Marketing Agency: How to Increase Direct Bookings by 300% in 2026",
     slug: "hotel-marketing-agency-how-to-increase-direct-bookings-by-300-percent-in-2026",
@@ -8230,6 +8234,7 @@ occupancy, and increased revenue.
       description:
         "Learn how hotel SEO services help hotels rank higher on Google and generate more direct bookings.",
     },
+    url:"/images/blog/Hotel-SEO-Services.webp",
     title:
       "Hotel SEO Services: Complete Guide to Ranking Your Hotel Website on Google",
     slug: "hotel-seo-services-complete-guide-to-ranking-your-hotel-website-on-google",
@@ -8393,6 +8398,7 @@ occupancy, and increased revenue.
       description:
         "Discover why hospitality businesses need specialized marketing agencies to increase bookings and revenue.",
     },
+    url:"",
     title:
       "Hospitality Marketing Agency: Why Hospitality Brands Need Specialized Marketing",
     slug: "hospitality-marketing-agency-why-hospitality-brands-need-specialized-marketing",
