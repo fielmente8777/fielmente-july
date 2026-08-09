@@ -18,7 +18,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Fielmente - India's Leading Hospitality Marketing Agency",
   description:
-    "We're the best hospitality marketing agency in India serving hotels, resorts restaurants, and cloud kitchens for more than 10 years.",
+    "We're the best hospitality marketing agency in India serving hotels, resorts restaurants, and cloud kitchens for more than 5+ years.",
   icons: [
     {
       rel: "icon",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fielmente - India's Leading Hospitality Marketing Agency",
     description:
-      "We're the best hospitality marketing agency in India serving hotels, resorts restaurants, and cloud kitchens for more than 10 years.",
+      "We're the best hospitality marketing agency in India serving hotels, resorts restaurants, and cloud kitchens for more than 5+ years.",
     url: "https://fielmente.com/",
     siteName: "Fielmente",
     locale: "en_IN",

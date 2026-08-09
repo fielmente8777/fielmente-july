@@ -9,7 +9,7 @@ const ProductSlider: React.FC<{ cards: ProductsDataTypes["cards"] }> = ({
   cards,
 }) => {
   return (
-    <div className="md:hidden w-full pl-4 mt-6">
+    <div className="md:hidden w-full mt-6">
       <SwiperCarousel
         data={cards}
         slidesPerView={1.18}

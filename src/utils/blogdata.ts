@@ -39,6 +39,7 @@ export interface blogtype {
   meta?: {
     title?: string;
     description?: string;
+    keywords?: string | string[];
   };
 }
 
@@ -4080,101 +4081,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   </div>
   `,
   },
-  // {
-  //   url: Img6,
-  //   isShow: false,
-  //   meta: {
-  //     title: "How to Digitally Market Your Hostel for More Bookings",
-  //     description:
-  //       "Learn how digital marketing helps hostels increase visibility, attract travelers, and grow bookings with SEO, social media, and reputation management.",
-  //   },
-  //   title: "How to Digitally Market your Hostel with Fielmente",
-  //   slug: "how-to-digitally-market-your-hostel-with-fielmente",
-  //   description:
-  //     "Hostel Owners handle quite delicate issues. Being a sensitive job, it becomes relatively difficult to market such services. So, to pitch and attract new people who may need you, your services must be visible to all your prospects online.",
-  //   data: `
-  // <div>
-  //   <p>Hostel Owners handle quite delicate issues. Being a sensitive job, it becomes relatively difficult to market such
-  //     services. So, to pitch and attract new people who may need you, your services must be visible to all your prospects
-  //     online.</p>
-
-  //   <p>With our Hostel Marketing services, you can master the three pillars of digital success.</p>
-
-  //   <p>A loyal and satisfied customer base: For having long-term growth, there should be high customer satisfaction. And,
-  //     we help our clients in achieving the same level of satisfaction.</p>
-  //   <p>Excellent Online Reputation: Our services have reputation management tools that help clients recover unsatisfied
-  //     customers and enhance their retention.</p>
-  //   <p>Robust Internet Presence: We have some unique Hostel marketing strategies that improve your online presence
-  //     considerably. It will eventually help to attract maximum customers.</p>
-  //   <p>Why Hostel Marketing Services?</p>
-
-  //   <p>Surveys have shown that 70% of travelers and backpackers search online for the best hostel or dorm. Moreover, about
-  //     3 million people prefer using online platforms to find hostels every single month. So, it has become imperative to
-  //     use Hostel marketing services to reach more and more clients.</p>
-
-  //   <p>Our marketing solutions for Hostels have everything essential for their success. From online presence management to
-  //     marketing strategies and website development, we help our clients entirely in Hostel marketing.</p>
-
-  //   <p>Customized Website Designs for Hostels</p>
-
-  //   <p>First impressions always remain till the end, so make it worth your audience’s watch. Our marketing strategies will
-  //     not let your customers leave the website without making a step forward. Our team has experts in web designing, which
-  //     will make your website look catchy. We will help you create your website so that your customers set the right
-  //     expectations for you.</p>
-
-  //   <p>Managing Reputation Online</p>
-
-  //   <p>Most customers check for reviews before booking with a hostel. What is the method of making your services stand
-  //     apart from all others available out there? Yes, the answer is Online Reputation Management. With us, your services
-  //     will be generating more reviews online than before. We do this with the help of our specialized proprietary online
-  //     reputation platforms. Such platforms also help in monitoring the satisfaction of customers.</p>
-
-  //   <p>Some other Inclusions of Hostel Marketing services we provide:</p>
-
-  //   <p>If you question us about a marketing service that would not be the appropriate fit for you, we will let you know,
-  //     even if it intends to turn down a big payday. If you choose us to write content for you, we will ensure it is
-  //     travel-friendly, reliable, and scientifically correct. And, of course, we will never force you to use unethical
-  //     marketing strategies.</p>
-
-  //   <ul>
-
-  //     <li>Search Engine Optimization (SEO)</li>
-  //     <li>Web Development and Web Designing</li>
-  //     <li>Social Media Marketing</li>
-  //     <li>Pay Per Click</li>
-  //     <li>Online Reputation Management</li>
-  //     <li>Email Marketing</li>
-  //     <li>Video Production</li>
-  //     <li>Content Writing</li>
-  //     <li>Conversion Rate Optimization</li>
-  //     <li>What makes us stand apart?</li>
-  //   </ul>
-
-  //   <p>It’s essential to pick the right marketing agency for your psychotherapy practice. Although we have numerous
-  //     competitors, we believe Fielmente Hospitality Agency offers something unique.</p>
-
-  //   <p>We work by focusing on three fundamental pillars of digital Hostel marketing.</p>
-  //   <p>Short-term contracts which make our services more result-oriented.</p>
-  //   <p>Experts have tremendous experience building a successful online presence for Hostels.</p>
-  //   <p>Proprietary reputation management platform.</p>
-  //   <p>Frequently Asked Questions (FAQs)</p>
-
-  //   How digital marketing helps a Hostel grow?
-  //   <p>We apply the principles of Search Engine Optimization (SEO) to our client’s website. This makes their website
-  //     appear among the top search results. This way, potential customers can find you immediately when they require a
-  //     Hostel. This is how Hostel marketing works.</p>
-
-  //   How long have you been serving Hostels in their digital growth?
-  //   <p>We have about 3 years of work experience in digital marketing in total. Also, we have helped numerous clients from
-  //     the hospitality industry.</p>
-
-  //   When can I start catching results?
-  //   <p>Generally, if you opt for paid advertising, the results may come in a short time of 2 months. At the same time,
-  //     some other strategies may give results within 5 to 6 months. If you need a detailed quotation, then contact us
-  //     without any delay.</p>
-  // </div>`,
-  // },
-
+  
   {
     url: "/images/blog/caqm-relaxes.jpeg",
     // date: "13 March 2023",
@@ -6088,33 +5995,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
   </div>
   `,
   },
-  // {
-  //   isShow: false,
-  //   meta: {
-  //   title: "Why Blogging Is Important for Hotel and Restaurant Websites",
-  //   description:
-  //     "Discover why blogging is essential for hotel and restaurant websites to improve SEO, attract customers, and build a strong online presence.",
-  // },
-  //   title: "Why Writing Blogs Is Important For Your Hotels And Restaurant's Website",
-  //   slug: "why-writing-blogs-is-important-for-your-hotels-and-restaurants-website",
-  //   description:
-  //     "Why Writing Blogs Is Important For Your Hotels And Restaurant's Website",
-  //   data: `
-  //   <div>
-
-  //     <h1>
-  //       Why Writing Blogs Is Important For Your Hotels And Restaurant's Website
-  //     </h1>
-
-  //     <p>
-  //       <a href="https://www.searchenginejournal.com/7-reasons-why-blogging-is-still-important-in-2012/39225/" target="_blank">
-  //         6 Reasons Why Blogging Is Important For Marketing And SEO
-  //       </a>
-  //     </p>
-
-  //   </div>
-  //   `,
-  // },
+  
   {
     isShow: true,
     meta: {
@@ -7602,7 +7483,7 @@ Run special offers & contests, like the festive season is coming so plan a conte
       description:
         "Improve local search rankings, manage reviews, track keywords, and increase direct bookings with Eazotel Local SEO Software built specifically for hotels, resorts, hostels, restaurants, and wedding venues.",
     },
-    url:"/images/blog/Why-Eazotel-Local-SEO.webp",
+    url: "/images/blog/Why-Eazotel-Local-SEO.webp",
     title:
       "Why Eazotel Local SEO Software is Essential for Hotels, Resorts, and Hostels in 2026",
     slug: "why-eazotel-local-seo-software-is-essential-for-hotels-resorts-and-hostels-in-2026",
@@ -7681,11 +7562,11 @@ revenue.</p>
     date: "08 June 2026",
     meta: {
       title:
-      "Hotel Analytics Software to Increase Revenue & Direct Bookings | Eazotel",
+        "Hotel Analytics Software to Increase Revenue & Direct Bookings | Eazotel",
       description:
-      "Discover how Eazotel combines analytics, advertising performance, SEO insights, and booking intelligence to help hotels increase occupancy, direct bookings, and revenue.",
+        "Discover how Eazotel combines analytics, advertising performance, SEO insights, and booking intelligence to help hotels increase occupancy, direct bookings, and revenue.",
     },
-    url:"/images/blog/How-Hotels-Can-Leverage-Analytics.webp",
+    url: "/images/blog/How-Hotels-Can-Leverage-Analytics.webp",
     title:
       "How Hotels Can Leverage Analytics, Advertising & Search Data Through Eazotel to Increase Revenue",
     slug: "how-hotels-can-leverage-analytics-advertising-search-data-through-eazotel-to-increase-revenue",
@@ -7780,7 +7661,7 @@ occupancy, and increased revenue.
       description:
         "In today’s digital-first hospitality industry, your website is more than just an online brochure—it is your most important sales channel. Whether you own a hotel, resort, villa, hostel, or homestay, your website directly impacts bookings, guest experience, and revenue.",
     },
-    url:"/images/blog/Why-Hotels-Should-Move-from-WordPress-to-Next.js.webp",
+    url: "/images/blog/Why-Hotels-Should-Move-from-WordPress-to-Next.js.webp",
     title:
       "Why Hotels Should Move from WordPress to Next.js: A Guide for Modern Hospitality Businesses",
     slug: "why-hotels-should-move-from-wordpress-to-nextjs-a-guide-for-modern-hospitality-businesses",
@@ -8067,7 +7948,7 @@ occupancy, and increased revenue.
       description:
         "Discover how a hotel marketing agency can help hotels increase direct bookings, reduce OTA dependency, and improve occupancy rates.",
     },
-    url:"/images/blog/Hotel-Marketing-Agency-How-to-Increase-Direct-Bookings-by-300-in-2026.webp",
+    url: "/images/blog/Hotel-Marketing-Agency-How-to-Increase-Direct-Bookings-by-300-in-2026.webp",
     title:
       "Hotel Marketing Agency: How to Increase Direct Bookings by 300% in 2026",
     slug: "hotel-marketing-agency-how-to-increase-direct-bookings-by-300-percent-in-2026",
@@ -8234,7 +8115,7 @@ occupancy, and increased revenue.
       description:
         "Learn how hotel SEO services help hotels rank higher on Google and generate more direct bookings.",
     },
-    url:"/images/blog/Hotel-SEO-Services.webp",
+    url: "/images/blog/Hotel-SEO-Services.webp",
     title:
       "Hotel SEO Services: Complete Guide to Ranking Your Hotel Website on Google",
     slug: "hotel-seo-services-complete-guide-to-ranking-your-hotel-website-on-google",
@@ -8398,7 +8279,7 @@ occupancy, and increased revenue.
       description:
         "Discover why hospitality businesses need specialized marketing agencies to increase bookings and revenue.",
     },
-    url:"",
+    url: "",
     title:
       "Hospitality Marketing Agency: Why Hospitality Brands Need Specialized Marketing",
     slug: "hospitality-marketing-agency-why-hospitality-brands-need-specialized-marketing",
@@ -9927,6 +9808,414 @@ occupancy, and increased revenue.
     <h3>Which hospitality businesses can use EazBot?</h3>
     <p>
       EazBot is suitable for hotels, resorts, homestays, hostels, wellness retreats, luxury villas, and vacation rental businesses looking to automate guest communication and support direct bookings.
+    </p>
+
+  </div>
+  `,
+  },
+
+  {
+    isShow: true,
+    meta: {
+      title:
+        "Hotel Call Management Software: Why Every Hotel Needs Call Analytics in 2026",
+      description:
+        "Learn how hotel call management analytics helps hotels reduce missed calls, increase direct bookings, improve staff performance, and maximize revenue with Eazotel Call Analytics.",
+      keywords: [
+        "Hotel call management software",
+        "Call analytics for hotels",
+        "Hotel call tracking",
+        "Missed call tracking hotel",
+        "Hotel CRM with call analytics",
+        "Eazotel call management",
+        "Hotel call recording software",
+        "Hotel sales performance analytics",
+        "Direct booking optimization",
+        "Hotel revenue leak",
+        "Hotel enquiry management",
+        "Call conversion rate hotel",
+        "Hotel staff performance tracking",
+        "Hospitality call analytics",
+        "Hotel marketing ROI measurement",
+      ],
+    },
+    url: "/images/blog/image.png",
+    title:
+      "Why Call Management Analytics is Becoming the Most Important Technology for Hotels in 2026",
+    slug: "hotel-call-management-analytics-2026",
+    description:
+      "Imagine spending lakhs of rupees every month on Google Ads, Meta Ads, SEO, and OTA listings to generate enquiries. Now imagine 80% of those calls going unanswered. Unfortunately, this is the reality for many hotels today. A guest searching for accommodation usually calls 3-5 hotels before making a booking. If your property doesn't answer within a few seconds, they'll simply move to the next hotel. Every missed call represents a lost opportunity—not just for one booking, but potentially for repeat business and positive reviews. This is why Call Management Analytics has become one of the most important technologies for hotels, resorts, villas, and homestays.",
+    data: `
+  <div>
+    <h2>Why Every Missed Call is a Lost Booking</h2>
+
+    <p>
+      Imagine spending lakhs of rupees every month on Google Ads, Meta Ads, SEO, and OTA listings to generate enquiries.
+    </p>
+    <p>
+      Now imagine 80% of those calls going unanswered.
+    </p>
+    <p>
+      Unfortunately, this is the reality for many hotels today.
+    </p>
+    <p>
+      A guest searching for accommodation usually calls 3-5 hotels before making a booking. If your property doesn't answer within a few seconds, they'll simply move to the next hotel.
+    </p>
+    <p>
+      Every missed call represents a lost opportunity—not just for one booking, but potentially for repeat business and positive reviews.
+    </p>
+    <p>
+      This is why Call Management Analytics has become one of the most important technologies for hotels, resorts, villas, and homestays.
+    </p>
+
+    <h2>The Hidden Revenue Leak Most Hotels Ignore</h2>
+
+    <p>
+      Hotels invest heavily in:
+    </p>
+    <ul>
+      <li>Google Ads</li>
+      <li>Meta Ads</li>
+      <li>SEO</li>
+      <li>OTA Listings</li>
+      <li>Influencer Marketing</li>
+      <li>Social Media</li>
+    </ul>
+    <p>
+      But very few measure what happens after the phone rings.
+    </p>
+    <p>
+      Questions every hotel owner should ask:
+    </p>
+    <ul>
+      <li>How many calls did we receive today?</li>
+      <li>How many were answered?</li>
+      <li>How many were missed?</li>
+      <li>Which staff member handled the enquiry?</li>
+      <li>How long did the conversation last?</li>
+      <li>Was there a follow-up?</li>
+      <li>Did the call convert into a booking?</li>
+    </ul>
+    <p>
+      Without answers to these questions, it's impossible to know where revenue is being lost.
+    </p>
+
+    <h2>Why Phone Calls Still Matter</h2>
+
+    <p>
+      Despite online booking engines and chatbots, phone calls remain one of the highest-converting booking channels.
+    </p>
+    <p>
+      Guests often call to ask about:
+    </p>
+    <ul>
+      <li>Room availability</li>
+      <li>Special rates</li>
+      <li>Wedding packages</li>
+      <li>Group bookings</li>
+      <li>Corporate stays</li>
+      <li>Pet policies</li>
+      <li>Early check-in</li>
+      <li>Late check-out</li>
+      <li>Resort amenities</li>
+    </ul>
+    <p>
+      These conversations are often the deciding factor in whether a guest books with your property.
+    </p>
+
+    <h2>The Cost of a Missed Call</h2>
+
+    <p>
+      Let's assume:
+    </p>
+    <ul>
+      <li>Average Booking Value: ₹8,000</li>
+      <li>Calls per day: 50</li>
+      <li>Missed Calls: 20</li>
+      <li>Conversion Rate: 25%</li>
+    </ul>
+    <p>
+      That's approximately 5 potential bookings lost every day.
+    </p>
+    <p>
+      Potential revenue loss:
+    </p>
+    <ul>
+      <li>₹40,000 per day</li>
+      <li>₹12,00,000 per month</li>
+      <li>₹1.4+ crore annually</li>
+    </ul>
+    <p>
+      Most hotels focus on generating more leads instead of fixing this leakage.
+    </p>
+
+    <h2>What is Hotel Call Management Analytics?</h2>
+
+    <p>
+      Hotel Call Management Analytics is a system that tracks, records, analyzes, and reports every incoming and outgoing call.
+    </p>
+    <p>
+      Instead of simply answering calls, hotels gain complete visibility into their sales performance.
+    </p>
+    <p>
+      A modern solution should provide insights such as:
+    </p>
+    <ul>
+      <li>Total Calls</li>
+      <li>Successful Calls</li>
+      <li>Missed Calls</li>
+      <li>Success Rate</li>
+      <li>Missed Call Rate</li>
+      <li>Average Call Duration</li>
+      <li>Total Talk Time</li>
+      <li>Follow-up Status</li>
+      <li>Call Trends</li>
+      <li>Team Performance</li>
+    </ul>
+    <p>
+      These metrics help management identify gaps and improve booking conversions.
+    </p>
+
+    <h2>Introducing Eazotel Call Management Analytics</h2>
+
+    <p>
+      At Eazotel, we've built a dedicated Call Management Analytics Dashboard designed specifically for hotels and hospitality businesses.
+    </p>
+    <p>
+      Our dashboard gives hotel owners and managers a real-time view of call performance, allowing them to identify missed opportunities before they impact revenue.
+    </p>
+    <p>
+      Key metrics include:
+    </p>
+    <ul>
+      <li>Total Calls</li>
+      <li>Successful Calls</li>
+      <li>Missed Calls</li>
+      <li>Average Call Duration</li>
+      <li>Success Rate</li>
+      <li>Missed Call Percentage</li>
+      <li>Follow-Up Tracking</li>
+      <li>Total Talk Time</li>
+      <li>Daily Call Trends</li>
+    </ul>
+    <p>
+      Instead of relying on assumptions, hotels can make data-driven decisions to improve guest communication and increase bookings.
+    </p>
+
+    <h2>Features of Eazotel Call Analytics</h2>
+
+    <h3>1. Real-Time Call Dashboard</h3>
+    <p>
+      Instantly view all call activity including total calls, missed calls, success rates, and team performance at a glance.
+    </p>
+
+    <h3>2. Missed Call Tracking</h3>
+    <p>
+      Every missed call is logged automatically. Hotels can instantly identify unattended enquiries and follow up before the guest books elsewhere.
+    </p>
+
+    <h3>3. Call Recording</h3>
+    <p>
+      Record every conversation for:
+    </p>
+    <ul>
+      <li>Staff training</li>
+      <li>Quality assurance</li>
+      <li>Dispute resolution</li>
+      <li>Sales coaching</li>
+    </ul>
+    <p>
+      Managers gain valuable insights into how enquiries are being handled.
+    </p>
+
+    <h3>4. Sales Performance Analysis</h3>
+    <p>
+      Track:
+    </p>
+    <ul>
+      <li>Who answers the most calls</li>
+      <li>Conversion performance</li>
+      <li>Call handling quality</li>
+      <li>Response times</li>
+      <li>Follow-up effectiveness</li>
+    </ul>
+    <p>
+      This enables managers to coach teams based on real performance data.
+    </p>
+
+    <h3>5. Follow-Up Management</h3>
+    <p>
+      Many bookings are confirmed after multiple interactions. Eazotel tracks follow-up status, ensuring no enquiry falls through the cracks.
+    </p>
+
+    <h3>6. Call Trend Reports</h3>
+    <p>
+      Understand:
+    </p>
+    <ul>
+      <li>Peak calling hours</li>
+      <li>Busy days</li>
+      <li>Seasonal demand</li>
+      <li>Marketing campaign impact</li>
+    </ul>
+    <p>
+      This helps optimize staffing and marketing budgets.
+    </p>
+
+    <h3>7. Integrated CRM</h3>
+    <p>
+      Unlike standalone call tracking software, Eazotel links every call with the guest profile.
+    </p>
+    <p>
+      This means your team can instantly access:
+    </p>
+    <ul>
+      <li>Previous stays</li>
+      <li>Booking history</li>
+      <li>Guest preferences</li>
+      <li>Communication records</li>
+    </ul>
+    <p>
+      Every conversation becomes more personalized.
+    </p>
+
+    <h2>Why This Matters for Hotel Marketing</h2>
+
+    <p>
+      Hotels spend significant amounts on digital marketing.
+    </p>
+    <p>
+      Every click generated through:
+    </p>
+    <ul>
+      <li>Google Ads</li>
+      <li>Meta Ads</li>
+      <li>SEO</li>
+      <li>Social Media</li>
+    </ul>
+    <p>
+      should result in measurable enquiries and bookings.
+    </p>
+
+    <h2>Benefits for Hotel Owners</h2>
+
+    <p>
+      Implementing Call Management Analytics helps hotels:
+    </p>
+    <ul>
+      <li>Increase Direct Bookings</li>
+      <li>Reduce Missed Opportunities</li>
+      <li>Improve Guest Satisfaction</li>
+      <li>Measure Marketing ROI</li>
+      <li>Monitor Staff Performance</li>
+      <li>Increase Booking Conversions</li>
+      <li>Improve Follow-Up Rates</li>
+      <li>Make Better Business Decisions</li>
+    </ul>
+
+    <h2>Ideal for Every Hospitality Business</h2>
+
+    <p>
+      Eazotel Call Management is designed for:
+    </p>
+    <ul>
+      <li>Hotels</li>
+      <li>Resorts</li>
+      <li>Boutique Hotels</li>
+      <li>Luxury Hotels</li>
+      <li>Villas</li>
+      <li>Homestays</li>
+      <li>Serviced Apartments</li>
+      <li>Hotel Chains</li>
+      <li>Hostels</li>
+      <li>Vacation Rentals</li>
+    </ul>
+    <p>
+      Whether you're managing one property or multiple locations, every enquiry is captured and tracked.
+    </p>
+
+    <h2>The Future of Hotel Operations</h2>
+
+    <p>
+      Hospitality is becoming increasingly data-driven.
+    </p>
+    <p>
+      The hotels that succeed will not only invest in marketing but also measure how effectively enquiries are handled.
+    </p>
+    <p>
+      With AI, automation, and real-time analytics, hotel managers can identify problems immediately, improve staff performance, and maximize revenue without increasing advertising spend.
+    </p>
+    <p>
+      Call Analytics is no longer a luxury—it's a competitive advantage.
+    </p>
+
+    <h2>Why Hotels Choose Eazotel</h2>
+
+    <p>
+      Eazotel isn't just a CRM. It's a complete hospitality growth platform.
+    </p>
+    <p>
+      Our ecosystem includes:
+    </p>
+    <ul>
+      <li>Hotel CRM</li>
+      <li>Call Management Analytics</li>
+      <li>AI Call Recording & Analysis</li>
+      <li>Website Builder</li>
+      <li>Booking Engine</li>
+      <li>PMS</li>
+      <li>Channel Manager</li>
+      <li>WhatsApp Automation</li>
+      <li>Email Marketing</li>
+      <li>Lead Management</li>
+      <li>Marketing Analytics</li>
+      <li>Guest Communication</li>
+      <li>Sales Dashboard</li>
+    </ul>
+    <p>
+      Everything hotels need to grow—from generating enquiries to converting them into confirmed bookings.
+    </p>
+
+    <h2>Final Thoughts</h2>
+
+    <p>
+      Most hotels focus on generating more enquiries.
+    </p>
+    <p>
+      The smartest hotels focus on converting the enquiries they already receive.
+    </p>
+    <p>
+      Every unanswered phone call represents lost revenue, a missed guest relationship, and a marketing investment that failed to deliver.
+    </p>
+    <p>
+      With Eazotel Call Management Analytics, hotels gain complete visibility into their call performance, empower their teams with actionable insights, and create a seamless guest experience that drives more direct bookings.
+    </p>
+    <p>
+      If you're investing in marketing but not tracking what happens after the phone rings, you're only seeing half the picture.
+    </p>
+    <p>
+      It's time to measure every conversation, improve every interaction, and maximize every booking opportunity.
+    </p>
+
+    <h2>Ready to Transform Your Hotel's Call Performance?</h2>
+
+    <p>
+      With Eazotel Call Management Analytics, you can:
+    </p>
+    <ul>
+      <li>Track every hotel enquiry</li>
+      <li>Monitor missed calls in real time</li>
+      <li>Record and analyze conversations</li>
+      <li>Improve staff performance</li>
+      <li>Increase direct bookings</li>
+      <li>Connect calls with your CRM</li>
+      <li>Measure marketing ROI</li>
+    </ul>
+    <p>
+      Book a free demo today and discover how Eazotel can help your hotel convert more enquiries into revenue.
+    </p>
+    <p>
+      Website: https://www.eazotel.com
     </p>
 
   </div>

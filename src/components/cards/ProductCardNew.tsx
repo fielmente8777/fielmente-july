@@ -9,7 +9,7 @@ const ProductCardNew: React.FC<ProductsDataTypes["cards"][0]> = ({
   color,
 }) => {
   return (
-    <div className="flex flex-col rounded-xl max-sm:h-70 md:max-w-104 w-full overflow-hidden hover:shadow-none duration-300 ease-in-out shadow-md border border-main-border">
+    <div className="flex flex-col rounded-xl  md:max-w-104 w-full overflow-hidden hover:shadow-none duration-300 ease-in-out shadow-md border border-main-border">
       <div className="w-full relative aspect-4/2.5">
         <Image
           src={image}
