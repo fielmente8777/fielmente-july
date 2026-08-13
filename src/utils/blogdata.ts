@@ -8279,7 +8279,7 @@ occupancy, and increased revenue.
       description:
         "Discover why hospitality businesses need specialized marketing agencies to increase bookings and revenue.",
     },
-    url: "",
+    url: "/images/blog/Hospitality-Marketing-Agency-Why-Hospitality-Brands-Need-Specialized-Marketing.webp",
     title:
       "Hospitality Marketing Agency: Why Hospitality Brands Need Specialized Marketing",
     slug: "hospitality-marketing-agency-why-hospitality-brands-need-specialized-marketing",
@@ -8398,6 +8398,7 @@ occupancy, and increased revenue.
       description:
         "In today's digital world, over 80% of travelers begin their journey by searching online before booking accommodation. Whether they're looking for a luxury resort, a boutique hotel, a homestay, or a wellness retreat, Google is often the first place they turn.",
     },
+    url:"/images/blog/What-is-Hotel-Search-Engine-Optimization-Hotel-SEO.webp",
     title:
       "What is Hotel Search Engine Optimization (Hotel SEO)? A Complete Guide to Increasing Direct Bookings",
     slug: "what-is-hotel-search-engine-optimization-hotel-seo-a-complete-guide-to-increasing-direct-bookings",
@@ -8798,7 +8799,7 @@ occupancy, and increased revenue.
         "Discover how hyperlocal SEO can help your restaurant dominate local search, increase foot traffic by 50%+, and generate more online orders. Complete guide with actionable strategies, keyword examples, and proven tips for 2026.",
     },
     date: "29 June, 2026",
-    url: "",
+    url: "/images/blog/Why-Every-Restaurant-Should-Invest-in-Hyperlocal.webp",
     title: "Why Every Restaurant Should Invest in Hyperlocal SEO Marketing",
     slug: "why-every-restaurant-should-invest-in-hyperlocal-seo-marketing",
     description:
@@ -9195,7 +9196,7 @@ occupancy, and increased revenue.
       description:
         "Monitor website SEO, Google Maps visibility, and competitor rankings with Eazotel's SEO Dashboard. Perfect for hotels, resorts, cafes, and restaurants. Start tracking today.",
     },
-    url: "",
+    url: "/images/blog/How-Eazotel's-Website-SEO-&-Local-SEO-Dashboard.webp",
     date: "30 June 2026",
     title:
       "How Eazotel's Website SEO & Local SEO Dashboard Helps Hotels and Restaurants Analyze Keyword Rankings",
@@ -9504,7 +9505,7 @@ occupancy, and increased revenue.
         "Discover how Eazotel's EazBot AI chatbot helps hotels increase direct bookings, engage guests 24/7, capture leads, and reduce OTA dependency. Perfect for hotels, resorts, and homestays.",
     },
     date: "01 July 2026",
-    url: "",
+    url: "/images/blog/How-Eazotel-EazBot-AI-Chatbot.webp",
     title:
       "How Eazotel EazBot AI Chatbot Helps Hotels Increase Direct Bookings",
     slug: "eazbot-ai-chatbot-hotel-increase-direct-bookings",
