@@ -3,6 +3,12 @@ import { useDebounce } from "./useDebounce";
 import axios from "axios";
 import { contacts } from "../../contact";
 
+declare global {
+  interface Window {
+    oaiq?: (...args: any[]) => void;
+  }
+}
+
 export interface ConsultationFormData {
   name: string;
   countryCode: string;
@@ -202,17 +208,28 @@ const useConsultationForm = ({
       );
 
       if (data.Status) {
-        setSubmitSuccess(true);
-        resetForm();
-        if (onSubmitSuccess) {
-          onSubmitSuccess();
-        }
+  // OpenAI conversion event
+  window.oaiq?.(
+    "measure",
+    "lead_created",
+    { type: "customer_action" }
+  );
 
-        setTimeout(() => {
-          setSubmitSuccess(false);
-        }, 3000);
-        window.open("/thank-you/", "_blank");
-      } else {
+  setSubmitSuccess(true);
+  resetForm();
+
+  if (onSubmitSuccess) {
+    onSubmitSuccess();
+  }
+
+  setTimeout(() => {
+    setSubmitSuccess(false);
+  }, 3000);
+
+  window.open("/thank-you/", "_blank");
+}
+      
+      else {
         alert(data.message || "Something went wrong. Please try again.");
       }
     } catch (e) {
