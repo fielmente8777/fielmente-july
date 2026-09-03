@@ -132,6 +132,20 @@ export default function RootLayout({
           })(window, document, "clarity", "script", "o0h0ldtiip");`,
           }}
         />
+
+        <Script
+          id="google-analytics"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PVZG7NGGMG');`,
+          }}
+        />
+
         <Script id="openai-pixel" strategy="afterInteractive">
           {`
             (function (w, d, s, u) {
@@ -151,22 +165,16 @@ export default function RootLayout({
             })(window, document, "script", "https://bzrcdn.openai.com/sdk/oaiq.min.js");
 
             oaiq("init", {
-              pixelId: "YOUR_PIXEL_ID"
+              pixelId: "YC5yCXHuJoMj9wYFBgWuTC",
+              debug: true
             });
+                        oaiq(
+      "measure",
+      "page_viewed",
+      { type: "contents" }
+    );
           `}
         </Script>
-        <Script
-          id="google-analytics"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-PVZG7NGGMG');`,
-          }}
-        />
 
         <Script
           async
