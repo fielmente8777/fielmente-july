@@ -11,10 +11,10 @@ export default function Whatsapp() {
 
   const rightSidePaths = [
     "/test/",
-    "/UK/",
-    "/USA/",
-    "/dubai-restaurant/",
-    "/landing-page/",
+    // "/UK/",
+    // "/USA/",
+    // "/dubai-restaurant/",
+    // "/landing-page/",
   ];
 
   if (pathname === "/thank-you/") {

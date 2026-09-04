@@ -18,13 +18,13 @@ const Salesiq = () => {
 
   const url = [
     "/thank-you/",
-    "/landing-page/",
-    "/resort/",
-    "/hospitality/",
-    "/dubai-restaurant/",
+    // "/landing-page/",
+    // "/resort/",
+    // "/hospitality/",
+    // "/dubai-restaurant/",
     // "/restaurant/",
-    "/UK/",
-    "/USA/",
+    // "/UK/",
+    // "/USA/",
   ];
 
   const shouldHide = url.includes(pathname);
@@ -62,10 +62,7 @@ const Salesiq = () => {
 
   return (
     <>
-      <link
-        rel="preconnect"
-        href="https://salesiq.zohopublic.in"
-      />
+      <link rel="preconnect" href="https://salesiq.zohopublic.in" />
     </>
   );
 };
