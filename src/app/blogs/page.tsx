@@ -4,6 +4,7 @@ import Image from "next/image";
 import { blogPageData } from "./components/pageData";
 import BlogCard from "./components/BlogCard";
 import { Metadata } from "next";
+import Link from "next/dist/client/link";
 
 export const metadata: Metadata = {
   title: "Blogs - Fielmente",
@@ -29,7 +30,30 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Blogs() {
+const BLOGS_PER_PAGE = 9;
+
+export default async function Blogs({
+  searchParams,
+}: {
+  searchParams: Promise<{ page?: string }>;
+}) {
+  const params = await searchParams;
+
+  const currentPage = Math.max(1, Number(params.page) || 1);
+
+  const totalBlogs = blogPageData.blogs.cards.length;
+
+  const totalPages = Math.ceil(totalBlogs / BLOGS_PER_PAGE);
+
+  const page = Math.min(currentPage, totalPages);
+
+  const startIndex = (page - 1) * BLOGS_PER_PAGE;
+
+  const visibleBlogs = blogPageData.blogs.cards.slice(
+    startIndex,
+    startIndex + BLOGS_PER_PAGE
+  );
+
   return (
     <main className="md:mt-22 mt-23">
       <Section
@@ -63,11 +87,55 @@ export default function Blogs() {
           subTitle={blogPageData.blogs.subTitle}
           subTitleClassName="span-color-2"
         />
+
         <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-10">
-          {blogPageData.blogs.cards.map((card, index) => (
+          {visibleBlogs.map((card, index) => (
             <BlogCard key={index} {...card} />
           ))}
         </div>
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center gap-3 mt-12">
+            {/* Previous */}
+            {page > 1 && (
+              <Link
+                href={`/blogs/?page=${page - 1}`}
+                className="px-4 py-2 rounded-full border border-main-border hover:bg-color4 hover:text-white"
+              >
+                Previous
+              </Link>
+            )}
+            {/* Page Numbers */}
+            {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+              (pageNumber) => (
+                <Link
+                  key={pageNumber}
+                  href={
+                    pageNumber === 1 ? "/blogs/" : `/blogs/?page=${pageNumber}`
+                  }
+                  className={`w-10 h-10 rounded-full border flex items-center justify-center transition hover:text-white $
+                       { page === pageNumber 
+                        ? "bg-secondary text-secondary border-main-border : hover:bg-color4 hover:text-white" 
+                        
+                        }`}
+                >
+                  {pageNumber}
+                </Link>
+              )
+            )}
+
+            {/* Next */}
+            {page < totalPages && (
+              <Link
+                href={`/blogs/?page=${page + 1}`}
+                className="px-4 py-2 rounded-full border border-main-border hover:bg-color4 hover:text-white"
+              >
+                {" "}
+                Next
+              </Link>
+            )}
+          </div>
+        )}
       </SectionWithContainer>
     </main>
   );
