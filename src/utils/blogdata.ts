@@ -8920,7 +8920,7 @@ occupancy, and increased revenue.
     title: "ChatGPT Ads for Hotels & Resorts in India: Complete 2026 Guide",
 
     slug: "chatgpt-ads-for-hotels-resorts-in-india-complete-2026-guide",
-
+    url:"/blog banner/01-chatgpt-ads-for-hotels-resorts-in-india-complete-2026-guide-banner.png",
     description:
       "ChatGPT Ads add a paid discovery layer to conversational travel research. Hotels should approach the channel as a measurable direct-booking funnel, not as a standalone media experiment.",
 
@@ -9092,7 +9092,7 @@ occupancy, and increased revenue.
   {
     title: "ChatGPT Ads Management Services for Hotels in India",
     slug: "chatgpt-ads-management-services-for-hotels-in-india",
-    url: "",
+    url: "/blog banner/02-chatgpt-ads-management-services-for-hotels-in-india-banner.png",
     isShow: true,
     description:
       "A strong management service covers strategy, creative, landing pages, conversion tracking, daily optimisation and lead follow-up. Media buying alone is not enough for a hotel to judge commercial impact.",
@@ -9254,7 +9254,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
   {
   title: "ChatGPT Ads Agency for Hotels: What to Look For",
   slug: "chatgpt-ads-agency-for-hotels-what-to-look-for",
-  url: "",
+  url: "/blog banner/03-chatgpt-ads-agency-for-hotels-what-to-look-for-banner.png",
   isShow: true,
   description:
     "The right agency should understand room revenue, seasonality, weddings, events, direct booking and hotel operations. Platform familiarity matters, but hospitality expertise and measurement discipline matter more.",
@@ -9409,7 +9409,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads for Resorts: A Direct-Booking Playbook",
   slug: "chatgpt-ads-for-resorts-a-direct-booking-playbook",
-  url: "",
+  url: "/blog banner/04-chatgpt-ads-for-resorts-a-direct-booking-playbook-banner.png",
   isShow: true,
   description:
     "Resorts can use conversational advertising to meet travellers while they compare destinations, experiences and packages. Success depends on matching the ad, offer and landing experience to the exact trip being planned.",
@@ -9564,7 +9564,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "AI Performance Marketing for Hotels: A Practical Guide",
   slug: "ai-performance-marketing-for-hotels-a-practical-guide",
-  url: "",
+  url: "/blog banner/05-ai-performance-marketing-for-hotels-a-practical-guide-banner.png",
   isShow: true,
   description:
     "AI performance marketing combines media, first-party data, automation and human revenue judgement. It should improve the speed and relevance of decisions without handing strategy entirely to an algorithm.",
@@ -9719,7 +9719,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads Setup and Conversion Tracking for Hotels",
   slug: "chatgpt-ads-setup-and-conversion-tracking-for-hotels",
-  url: "",
+  url: "/blog banner/06-chatgpt-ads-setup-and-conversion-tracking-for-hotels-banner.png",
   isShow: true,
   description:
     "Correct setup begins with one valuable conversion definition and a testable data path. Hotels need to distinguish clicks, enquiries, qualified enquiries, booking-engine starts and confirmed revenue.",
@@ -9874,7 +9874,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads Landing Pages: How to Convert Travel Intent",
   slug: "chatgpt-ads-landing-pages-how-to-convert-travel-intent",
-  url: "",
+  url: "/blog banner/07-chatgpt-ads-landing-pages-how-to-convert-travel-intent-banner.png",
   isShow: true,
   description:
     "A ChatGPT Ads landing page should continue the traveller's conversation. It must answer the specific question behind the click, prove the property's fit and make the next step effortless on mobile.",
@@ -10029,7 +10029,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Hotel AI Marketing Services: From Discovery to Booking",
   slug: "hotel-ai-marketing-services-from-discovery-to-booking",
-  url: "",
+  url: "/blog banner/08-hotel-ai-marketing-services-from-discovery-to-booking-banner.png",
   isShow: true,
   description:
     "An integrated hotel AI service connects discovery, media, website conversations, WhatsApp, voice follow-up, CRM and reporting. The value comes from coordinated handoffs rather than isolated tools.",
@@ -10184,7 +10184,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Generative Engine Optimization for Hotels: The Complete Guide",
   slug: "generative-engine-optimization-for-hotels-the-complete-guide",
-  url: "",
+  url: "/blog banner/09-generative-engine-optimization-for-hotels-the-complete-guide-banner.png",
   isShow: true,
   description:
     "Generative Engine Optimization helps AI systems understand, verify and cite a hotel's information. It builds on sound SEO but places more emphasis on clear entities, direct answers, evidence and consistency across trusted sources.",
@@ -10339,7 +10339,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "AI Search Optimization for Hotels: How to Build Visibility",
   slug: "ai-search-optimization-for-hotels-how-to-build-visibility",
-  url: "",
+  url: "/blog banner/10-ai-search-optimization-for-hotels-how-to-build-visibility-banner.png",
   isShow: true,
   description:
     "AI search visibility comes from being easy to understand and easy to verify. Hotels need technically accessible pages, specific facts, strong local relevance and useful content for real travel decisions.",
@@ -10474,7 +10474,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads Launch in India: What Hotels Need to Know",
   slug: "chatgpt-ads-launch-in-india-what-hotels-need-to-know",
-  url: "",
+  url: "/blog banner/11-chatgpt-ads-launch-in-india-what-hotels-need-to-know-banner.png",
   isShow: true,
   description:
     "The India rollout creates an early paid opportunity inside a new travel-planning interface. Hotels should test carefully, verify what is available in their own account and preserve strong measurement from the first rupee.",
@@ -10619,7 +10619,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Run ChatGPT Ads in India: Step-by-Step Guide",
   slug: "how-to-run-chatgpt-ads-in-india-step-by-step-guide",
-  url: "",
+  url: "/blog banner/12-how-to-run-chatgpt-ads-in-india-step-by-step-guide-banner.png",
   isShow: true,
   description:
     "A reliable first campaign starts with a business outcome, moves through account and campaign setup, and ends with a verified conversion path. The launch button is only one small part of the work.",
@@ -10764,7 +10764,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads Manager India: Features, Eligibility and Setup",
   slug: "chatgpt-ads-manager-india-features-eligibility-and-setup",
-  url: "",
+  url: "/blog banner/13-chatgpt-ads-manager-india-features-eligibility-and-setup-banner.png",
   isShow: true,
   description:
     "Ads Manager access, features and reporting may vary during rollout. Teams should separate confirmed account capabilities from online speculation and document the exact options visible at setup.",
@@ -10909,7 +10909,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads Cost in India: Minimum Budget and Pricing",
   slug: "chatgpt-ads-cost-in-india-minimum-budget-and-pricing",
-  url: "",
+  url: "/blog banner/14-chatgpt-ads-cost-in-india-minimum-budget-and-pricing-banner.png",
   isShow: true,
   description:
     "Reported entry budgets make testing accessible, but the minimum is not a recommended hotel budget. A useful plan must account for learning time, creative testing, landing-page conversion and the value of a confirmed booking.",
@@ -11054,7 +11054,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How Do ChatGPT Ads Work for Hotels and Resorts?",
   slug: "how-do-chatgpt-ads-work-for-hotels-and-resorts",
-  url: "",
+  url: "/blog banner/15-how-do-chatgpt-ads-work-for-hotels-and-resorts-banner.png",
   isShow: true,
   description:
     "ChatGPT Ads are designed to appear as clearly identified sponsored placements around relevant conversations without changing the underlying answer. For hotels, the opportunity begins when a traveller is researching a trip, stay, event or experience.",
@@ -11199,7 +11199,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Who Can See ChatGPT Ads in India?",
   slug: "who-can-see-chatgpt-ads-in-india",
-  url: "",
+  url: "/blog banner/16-who-can-see-chatgpt-ads-in-india-banner.png",
   isShow: true,
   description:
     "Initial reporting says ads are aimed at logged-in adults on Free and Go plans in India, while higher paid tiers remain ad-free. Actual reach will also depend on rollout, eligibility, conversation context and safety exclusions.",
@@ -11344,7 +11344,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Sponsored Ads Explained for Indian Businesses",
   slug: "chatgpt-sponsored-ads-explained-for-indian-businesses",
-  url: "",
+  url: "/blog banner/17-chatgpt-sponsored-ads-explained-for-indian-businesses-banner.png",
   isShow: true,
   description:
     "Sponsored placements in a conversational product differ from banners and social interruption. Relevance to the user's current task, honest labelling and a useful post-click experience are central to performance and trust.",
@@ -11489,7 +11489,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Are ChatGPT Ads Available for Small Hotels in India?",
   slug: "are-chatgpt-ads-available-for-small-hotels-in-india",
-  url: "",
+  url: "/blog banner/18-are-chatgpt-ads-available-for-small-hotels-in-india-banner.png",
   isShow: true,
   description:
     "Small hotels can prepare for self-serve access and may be able to test with modest daily budgets, subject to account availability. Their advantage is specificity: a clear destination, authentic experience and fast owner-led follow-up.",
@@ -11634,7 +11634,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Best ChatGPT Ads Strategy for Independent Hotels",
   slug: "best-chatgpt-ads-strategy-for-independent-hotels",
-  url: "",
+  url: "/blog banner/19-best-chatgpt-ads-strategy-for-independent-hotels-banner.png",
   isShow: true,
   description:
     "Independent hotels should compete through specificity rather than volume. A tight campaign built around the property's strongest reason to book can outperform a broad message that tries to appeal to every traveller.",
@@ -11769,7 +11769,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How Resorts Can Generate Direct Bookings Through ChatGPT Ads",
   slug: "how-resorts-can-generate-direct-bookings-through-chatgpt-ads",
-  url: "",
+  url: "/blog banner/20-how-resorts-can-generate-direct-bookings-through-chatgpt-ads-banner.png",
   isShow: true,
   description:
     "Direct bookings become more likely when ads answer a specific planning need and the property makes rate, inclusions and next steps clear. The campaign should reduce uncertainty rather than merely promote the resort.",
@@ -11904,7 +11904,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads for Boutique Hotels: Campaign Structure and Budget",
   slug: "chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget",
-  url: "",
+  url: "/blog banner/21-chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget-banner.png",
   isShow: true,
   description:
     "Boutique properties should organise campaigns around distinctive experiences, neighbourhood fit and high-value stay occasions. Budget should be concentrated enough to produce learning instead of being fragmented across too many ad groups.",
@@ -12038,7 +12038,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Advertise a Destination Wedding Resort on ChatGPT",
   slug: "how-to-advertise-a-destination-wedding-resort-on-chatgpt",
-  url: "",
+  url: "/blog banner/22-how-to-advertise-a-destination-wedding-resort-on-chatgpt-banner.png",
   isShow: true,
   description:
     "Wedding advertising must qualify dates, guest count, room nights, venue needs and budget while still communicating emotion. ChatGPT Ads can introduce the venue, but the landing and sales process must handle the complex decision.",
@@ -12172,7 +12172,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads for Luxury Hotels: Targeting High-Intent Travellers",
   slug: "chatgpt-ads-for-luxury-hotels-targeting-high-intent-travellers",
-  url: "",
+  url: "/blog banner/23-chatgpt-ads-for-luxury-hotels-targeting-high-intent-travellers-banner.png",
   isShow: true,
   description:
     "Luxury hotel advertising should protect brand value while making choice easier. Audience quality, service proof, distinctive experiences and a seamless assisted-booking path are more important than maximising inexpensive clicks.",
@@ -12307,7 +12307,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads for Goa Hotels and Beach Resorts",
   slug: "chatgpt-ads-for-goa-hotels-and-beach-resorts",
-  url: "",
+  url: "/blog banner/24-chatgpt-ads-for-goa-hotels-and-beach-resorts-banner.png",
   isShow: true,
   description:
     "Goa demand varies by location, season, traveller type and occasion. Campaigns should distinguish beach access, nightlife, family stays, workations, weddings and quieter experiences instead of treating Goa as one generic audience.",
@@ -12441,7 +12441,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads for Wellness and Ayurveda Resorts",
   slug: "chatgpt-ads-for-wellness-and-ayurveda-resorts",
-  url: "",
+  url: "/blog banner/25-chatgpt-ads-for-wellness-and-ayurveda-resorts-banner.png",
   isShow: true,
   description:
     "Wellness advertising requires trust, accurate programme descriptions and responsible claims. The campaign should help guests understand who the stay is for, what is included and when professional guidance is necessary.",
@@ -12575,7 +12575,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads for Weekend Getaway Resorts Near Delhi",
   slug: "chatgpt-ads-for-weekend-getaway-resorts-near-delhi",
-  url: "",
+  url: "/blog banner/26-chatgpt-ads-for-weekend-getaway-resorts-near-delhi-banner.png",
   isShow: true,
   description:
     "Weekend campaigns win on immediacy: travel time, road access, check-in flexibility, activities and all-in value. Creative and landing pages should help a traveller decide quickly for a specific weekend.",
@@ -12709,7 +12709,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How Hotels Can Reduce OTA Dependency Using ChatGPT Ads",
   slug: "how-hotels-can-reduce-ota-dependency-using-chatgpt-ads",
-  url: "",
+  url: "/blog banner/27-how-hotels-can-reduce-ota-dependency-using-chatgpt-ads-banner.png",
   isShow: true,
   description:
     "ChatGPT Ads can diversify demand but should not be framed as an instant replacement for OTAs. Hotels need rate discipline, a strong direct-booking proposition, reliable technology and lifetime-value measurement.",
@@ -12843,7 +12843,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads for Hotel Packages, Weddings and Events",
   slug: "chatgpt-ads-for-hotel-packages-weddings-and-events",
-  url: "",
+  url: "/blog banner/28-chatgpt-ads-for-hotel-packages-weddings-and-events-banner.png",
   isShow: true,
   description:
     "Rooms, packages, weddings and events represent different buying journeys. They should not share one generic message or one unqualified form; each needs its own intent, evidence and conversion path.",
@@ -12977,7 +12977,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How Many Campaigns and Ad Groups Should a Hotel Run on ChatGPT?",
   slug: "how-many-campaigns-and-ad-groups-should-a-hotel-run-on-chatgpt",
-  url: "",
+  url: "/blog banner/29-how-many-campaigns-and-ad-groups-should-a-hotel-run-on-chatgpt-banner.png",
   isShow: true,
   description:
     "The best structure is the smallest one that preserves meaningful intent differences. With a low daily budget, one campaign and a few well-defined ad groups usually create clearer learning than a fragmented account.",
@@ -13111,7 +13111,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Best ChatGPT Ad Copy and Creative Ideas for Hotels",
   slug: "best-chatgpt-ad-copy-and-creative-ideas-for-hotels",
-  url: "",
+  url: "/blog banner/30-best-chatgpt-ad-copy-and-creative-ideas-for-hotels-banner.png",
   isShow: true,
   description:
     "Effective hotel ads connect the traveller's current plan to a concrete property benefit. Copy should be specific, provable and easy to continue on the landing page; imagery should show the experience being promised.",
@@ -13246,7 +13246,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads vs Google Ads for Hotels",
   slug: "chatgpt-ads-vs-google-ads-for-hotels",
-  url: "",
+  url: "/blog banner/31-chatgpt-ads-vs-google-ads-for-hotels-banner.png",
   isShow: true,
   description:
     "Google captures explicit search demand, while ChatGPT can meet travellers during a broader planning conversation. Hotels should compare intent quality, reach, control, measurement and incremental bookings rather than declaring one universal winner.",
@@ -13390,7 +13390,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads vs Meta Ads for Hotels",
   slug: "chatgpt-ads-vs-meta-ads-for-hotels",
-  url: "",
+  url: "/blog banner/32-chatgpt-ads-vs-meta-ads-for-hotels-banner.png",
   isShow: true,
   description:
     "Meta is strong for visual discovery and audience-led demand creation; ChatGPT is closer to active problem solving and planning. The better choice depends on the stay occasion, creative strength and follow-up funnel.",
@@ -13534,7 +13534,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads vs Hotel Metasearch Advertising",
   slug: "chatgpt-ads-vs-hotel-metasearch-advertising",
-  url: "",
+  url: "/blog banner/33-chatgpt-ads-vs-hotel-metasearch-advertising-banner.png",
   isShow: true,
   description:
     "Metasearch often reaches travellers comparing live rates for a known property or destination. ChatGPT Ads may enter earlier, when the traveller is shaping the trip. The channels therefore solve related but different jobs.",
@@ -13678,7 +13678,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Should Hotels Shift Budget from Google to ChatGPT Ads?",
   slug: "should-hotels-shift-budget-from-google-to-chatgpt-ads",
-  url: "",
+  url: "/blog banner/34-should-hotels-shift-budget-from-google-to-chatgpt-ads-banner.png",
   isShow: true,
   description:
     "Hotels should not make a wholesale shift based on launch excitement. Protect proven demand capture, fund a controlled ChatGPT test and move budget only when incremental booking evidence supports the change.",
@@ -13822,7 +13822,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads or Instagram Ads: Which Generates Better Hotel Leads?",
   slug: "chatgpt-ads-or-instagram-ads-which-generates-better-hotel-leads",
-  url: "",
+  url: "/blog banner/35-chatgpt-ads-or-instagram-ads-which-generates-better-hotel-leads-banner.png",
   isShow: true,
   description:
     "Lead volume does not determine the better channel. Hotels must compare valid contact rate, trip fit, dates, budget, response speed and confirmed revenue after giving each platform an appropriate creative treatment.",
@@ -13966,7 +13966,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads vs OTA Promotions: Which Produces More Direct Bookings?",
   slug: "chatgpt-ads-vs-ota-promotions-which-produces-more-direct-bookings",
-  url: "",
+  url: "/blog banner/36-chatgpt-ads-vs-ota-promotions-which-produces-more-direct-bookings-banner.png",
   isShow: true,
   description:
     "OTA promotion spend and discounting can generate marketplace visibility, whereas ChatGPT Ads can send travellers to the hotel's own journey. Compare net revenue, commission, discount cost, media cost and repeat-customer value.",
@@ -14110,7 +14110,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "SEO vs GEO vs ChatGPT Ads for Hotels",
   slug: "seo-vs-geo-vs-chatgpt-ads-for-hotels",
-  url: "",
+  url: "/blog banner/37-seo-vs-geo-vs-chatgpt-ads-for-hotels-banner.png",
   isShow: true,
   description:
     "SEO improves search visibility, GEO improves the chance of being understood and referenced by generative systems, and ChatGPT Ads buy sponsored exposure where available. A resilient hotel strategy uses all three with clear roles.",
@@ -14254,7 +14254,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Best Advertising Platform for Hotels in India in 2026",
   slug: "best-advertising-platform-for-hotels-in-india-in-2026",
-  url: "",
+  url: "/blog banner/38-best-advertising-platform-for-hotels-in-india-in-2026-banner.png",
   isShow: true,
   description:
     "There is no single best platform for every hotel. Google, Meta, metasearch, OTAs and conversational ads each perform different jobs; the right mix depends on demand maturity, destination, booking window and operational follow-up.",
@@ -14398,7 +14398,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Is ₹725 Per Day Enough for Hotel ChatGPT Ads?",
   slug: "is-725-per-day-enough-for-hotel-chatgpt-ads",
-  url: "",
+  url: "/blog banner/39-is-inr725-per-day-enough-for-hotel-chatgpt-ads-banner.png",
   isShow: true,
   description:
     "₹725 per day may be enough for a narrow learning test if that amount is available in the account, but it is not automatically enough to prove profitable scale. Concentration, tracking and response discipline become essential.",
@@ -14542,7 +14542,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Recommended ChatGPT Ads Budget for Hotels in India",
   slug: "recommended-chatgpt-ads-budget-for-hotels-in-india",
-  url: "",
+  url: "/blog banner/40-recommended-chatgpt-ads-budget-for-hotels-in-india-banner.png",
   isShow: true,
   description:
     "A recommended budget should come from booking value, target acquisition cost, conversion rate and the amount of data needed to make a decision. Copying another hotel's daily figure ignores commercial context.",
@@ -14686,7 +14686,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Calculate ROAS from ChatGPT Hotel Ads",
   slug: "how-to-calculate-roas-from-chatgpt-hotel-ads",
-  url: "",
+  url: "/blog banner/41-how-to-calculate-roas-from-chatgpt-hotel-ads-banner.png",
   isShow: true,
   description:
     "Return on ad spend is attributed booking revenue divided by advertising spend, but hotels should also examine net revenue, cancellation, commission, fulfilment and gross profit. A clean formula is only as reliable as its attribution.",
@@ -14830,7 +14830,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads KPIs Hotels Should Track",
   slug: "chatgpt-ads-kpis-hotels-should-track",
-  url: "",
+  url: "/blog banner/42-chatgpt-ads-kpis-hotels-should-track-banner.png",
   isShow: true,
   description:
     "Hotels need a KPI ladder from delivery to revenue: impressions, clicks, engaged visits, valid enquiries, qualified enquiries, booking starts, bookings, stayed revenue and profitability. Platform numbers alone cannot tell the whole story.",
@@ -14974,7 +14974,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Track Hotel Bookings from ChatGPT Ads",
   slug: "how-to-track-hotel-bookings-from-chatgpt-ads",
-  url: "",
+  url: "/blog banner/43-how-to-track-hotel-bookings-from-chatgpt-ads-banner.png",
   isShow: true,
   description:
     "Booking tracking requires persistent campaign parameters, analytics events, CRM source capture and booking-engine confirmation. Assisted bookings by phone or WhatsApp need the same source discipline as online bookings.",
@@ -15118,7 +15118,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads Conversion Tracking with GA4",
   slug: "chatgpt-ads-conversion-tracking-with-ga4",
-  url: "",
+  url: "/blog banner/44-chatgpt-ads-conversion-tracking-with-ga4-banner.png",
   isShow: true,
   description:
     "GA4 can show landing sessions and key events from tagged traffic, but it should be treated as one part of the evidence. Consent, cross-domain booking engines and offline sales can create gaps that require testing and reconciliation.",
@@ -15262,7 +15262,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "UTM Parameters for ChatGPT Ads: Complete Guide",
   slug: "utm-parameters-for-chatgpt-ads-complete-guide",
-  url: "",
+  url: "/blog banner/45-utm-parameters-for-chatgpt-ads-complete-guide-banner.png",
   isShow: true,
   description:
     "Consistent UTM parameters let analytics and CRM systems identify ChatGPT Ads traffic. The naming convention should be documented, lowercase, stable and detailed enough for decisions without becoming unmanageable.",
@@ -15406,7 +15406,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Why ChatGPT Ads Get Clicks but No Hotel Bookings",
   slug: "why-chatgpt-ads-get-clicks-but-no-hotel-bookings",
-  url: "",
+  url: "/blog banner/46-why-chatgpt-ads-get-clicks-but-no-hotel-bookings-banner.png",
   isShow: true,
   description:
     "Clicks without bookings usually indicate a mismatch in intent, offer, trust, price, page experience, booking flow or follow-up. The right response is a structured diagnosis, not an immediate increase in budget.",
@@ -15550,7 +15550,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads Landing Page Checklist for Hotels",
   slug: "chatgpt-ads-landing-page-checklist-for-hotels",
-  url: "",
+  url: "/blog banner/47-chatgpt-ads-landing-page-checklist-for-hotels-banner.png",
   isShow: true,
   description:
     "A strong landing page makes the property easy to evaluate and easy to contact. It should load quickly, answer the specific travel need, show credible proof and present a clear booking or enquiry action.",
@@ -15693,8 +15693,9 @@ Interest in chatgpt ads management services for hotels in india will create nois
 },
 {
   title: "How to Improve ChatGPT Ads Conversion Rate for Resorts",
-  slug: "how-to-improve-chatgpt-ads-conversion-rate-for-resorts",
-  url: "",
+  slug: 
+  "how-to-improve-chatgpt-ads-conversion-rate-for-resorts",
+  url: "/blog banner/48-how-to-improve-chatgpt-ads-conversion-rate-for-resorts-banner.png",
   isShow: true,
   description:
     "Conversion improves when resorts reduce uncertainty about location, experience, package, dates, inclusions and next steps. Optimisation should cover the full journey, including sales response after the form or WhatsApp click.",
@@ -15838,7 +15839,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Get Your Hotel Recommended by ChatGPT",
   slug: "how-to-get-your-hotel-recommended-by-chatgpt",
-  url: "",
+  url: "/blog banner/49-how-to-get-your-hotel-recommended-by-chatgpt-banner.png",
   isShow: true,
   description:
     "No hotel can guarantee a recommendation, but it can improve the quality and accessibility of information that AI systems may use. Clear facts, genuine usefulness, trusted mentions and consistent reputation signals are the foundation.",
@@ -15972,7 +15973,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "GEO for Hotels: Generative Engine Optimization Guide",
   slug: "geo-for-hotels-generative-engine-optimization-guide",
-  url: "",
+  url: "/blog banner/50-geo-for-hotels-generative-engine-optimization-guide-banner.png",
   isShow: true,
   description:
     "GEO is the practice of making content understandable, useful and verifiable for generative answer systems. It complements SEO rather than replacing crawlability, authority, internal linking and excellent pages.",
@@ -16106,7 +16107,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How Hotels Can Rank in ChatGPT Results",
   slug: "how-hotels-can-rank-in-chatgpt-results",
-  url: "",
+  url: "/blog banner/51-how-hotels-can-rank-in-chatgpt-results-banner.png",
   isShow: true,
   description:
     "ChatGPT does not operate like a fixed ten-blue-link ranking. Visibility can vary by prompt, location, freshness and available sources, so hotels should optimise for accurate inclusion and recommendation fit rather than a permanent rank.",
@@ -16240,7 +16241,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Hotel SEO vs AEO vs GEO: What Is the Difference?",
   slug: "hotel-seo-vs-aeo-vs-geo-what-is-the-difference",
-  url: "",
+  url: "/blog banner/52-hotel-seo-vs-aeo-vs-geo-what-is-the-difference-banner.png",
   isShow: true,
   description:
     "SEO focuses on discoverability in search, AEO on direct answers and GEO on visibility within generative responses. Their execution overlaps substantially, and hotels should manage them as one coordinated information-quality programme.",
@@ -16374,7 +16375,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Make a Hotel Website AI-Search Friendly",
   slug: "how-to-make-a-hotel-website-ai-search-friendly",
-  url: "",
+  url: "/blog banner/53-how-to-make-a-hotel-website-ai-search-friendly-banner.png",
   isShow: true,
   description:
     "An AI-search-friendly hotel website is crawlable, specific, structured and genuinely helpful. Key facts should exist as text on stable URLs instead of being trapped in images, scripts or vague marketing language.",
@@ -16508,7 +16509,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Schema Markup for Hotel and Resort Websites",
   slug: "schema-markup-for-hotel-and-resort-websites",
-  url: "",
+  url: "/blog banner/54-schema-markup-for-hotel-and-resort-websites-banner.png",
   isShow: true,
   description:
     "Schema markup helps machines interpret a hotel's identity, location, accommodation details, offers, FAQs and organisation information. It must match visible page content and should never be used to invent ratings, prices or availability.",
@@ -16642,7 +16643,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How Reviews Influence Hotel Visibility in AI Search",
   slug: "how-reviews-influence-hotel-visibility-in-ai-search",
-  url: "",
+  url: "/blog banner/55-how-reviews-influence-hotel-visibility-in-ai-search-banner.png",
   isShow: true,
   description:
     "Reviews help travellers and systems understand patterns in service, location and experience. Hotels should improve operational quality, request honest feedback and respond constructively rather than attempting to manipulate sentiment.",
@@ -16776,7 +16777,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Optimize Hotel FAQs for ChatGPT and Google",
   slug: "how-to-optimize-hotel-faqs-for-chatgpt-and-google",
-  url: "",
+  url: "/blog banner/56-how-to-optimize-hotel-faqs-for-chatgpt-and-google-banner.png",
   isShow: true,
   description:
     "Hotel FAQs work when they answer genuine pre-booking questions in clear language. They should reduce uncertainty about policies, location, facilities and experiences, while linking travellers to deeper pages or the booking path.",
@@ -16910,7 +16911,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Track Traffic and Bookings Coming from AI Assistants",
   slug: "how-to-track-traffic-and-bookings-coming-from-ai-assistants",
-  url: "",
+  url: "/blog banner/57-how-to-track-traffic-and-bookings-coming-from-ai-assistants-banner.png",
   isShow: true,
   description:
     "AI referral measurement is imperfect because referrers, apps and assisted journeys vary. Hotels should combine analytics source data, landing-page parameters, CRM self-reporting and booking reconciliation to build a directional view.",
@@ -17046,7 +17047,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Why Hotel Websites Need Original Destination Content for AI Search",
   slug: "why-hotel-websites-need-original-destination-content-for-ai-search",
-  url: "",
+  url: "/blog banner/58-why-hotel-websites-need-original-destination-content-for-ai-search-banner.png",
   isShow: true,
   description:
     "Generic destination summaries add little value because the same information exists everywhere. Hotels can contribute first-hand neighbourhood knowledge, practical itineraries and property-specific context that makes planning easier.",
@@ -17180,7 +17181,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads with AI WhatsApp Automation for Hotels",
   slug: "chatgpt-ads-with-ai-whatsapp-automation-for-hotels",
-  url: "",
+  url: "/blog banner/59-chatgpt-ads-with-ai-whatsapp-automation-for-hotels-banner.png",
   isShow: true,
   description:
     "ChatGPT Ads can create discovery while WhatsApp can support consent-based qualification and assisted booking. The transition must preserve the campaign context so guests do not have to repeat their request.",
@@ -17314,7 +17315,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Automatically Follow Up ChatGPT Ad Leads on WhatsApp",
   slug: "how-to-automatically-follow-up-chatgpt-ad-leads-on-whatsapp",
-  url: "",
+  url: "/blog banner/60-how-to-automatically-follow-up-chatgpt-ad-leads-on-whatsapp-banner.png",
   isShow: true,
   description:
     "Automated follow-up should acknowledge the enquiry, confirm consent, collect stay details and route valuable opportunities to a person. It should feel useful and timely, not like an endless promotional sequence.",
@@ -17448,7 +17449,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads with Hotel CRM Integration",
   slug: "chatgpt-ads-with-hotel-crm-integration",
-  url: "",
+  url: "/blog banner/61-chatgpt-ads-with-hotel-crm-integration-banner.png",
   isShow: true,
   description:
     "CRM integration turns anonymous media performance into a visible sales pipeline. Every lead should carry source, campaign, requested dates, value, stage, owner and final booking outcome.",
@@ -17582,7 +17583,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Using AI Voice Agents to Convert Hotel Advertising Leads",
   slug: "using-ai-voice-agents-to-convert-hotel-advertising-leads",
-  url: "",
+  url: "/blog banner/62-using-ai-voice-agents-to-convert-hotel-advertising-leads-banner.png",
   isShow: true,
   description:
     "AI voice agents can handle timely qualification, reminders and routine questions when consent and escalation are designed properly. High-value, emotional or complex conversations should move smoothly to trained hotel staff.",
@@ -17716,7 +17717,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "ChatGPT Ads to WhatsApp to Booking: Complete Hotel Funnel",
   slug: "chatgpt-ads-to-whatsapp-to-booking-complete-hotel-funnel",
-  url: "",
+  url: "/blog banner/63-chatgpt-ads-to-whatsapp-to-booking-complete-hotel-funnel-banner.png",
   isShow: true,
   description:
     "The complete funnel connects conversational discovery, a relevant click, WhatsApp qualification, human assistance, payment or booking, and revenue attribution. Each handoff should preserve context and ownership.",
@@ -17850,7 +17851,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How Hotel Chatbots Convert ChatGPT Advertising Traffic",
   slug: "how-hotel-chatbots-convert-chatgpt-advertising-traffic",
-  url: "",
+  url: "/blog banner/64-how-hotel-chatbots-convert-chatgpt-advertising-traffic-banner.png",
   isShow: true,
   description:
     "A website chatbot can convert ad traffic by answering immediate questions, collecting trip details and offering the right next step. It must use accurate hotel information and know when it cannot answer reliably.",
@@ -17984,7 +17985,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "Building an AI-Powered Direct Booking Funnel for Hotels",
   slug: "building-an-ai-powered-direct-booking-funnel-for-hotels",
-  url: "",
+  url: "/blog banner/65-building-an-ai-powered-direct-booking-funnel-for-hotels-banner.png",
   isShow: true,
   description:
     "An AI-powered booking funnel uses automation to accelerate decisions while keeping rates, inventory, consent and revenue controls authoritative. It should make staff more responsive without creating conflicting promises.",
@@ -18118,7 +18119,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How Eazotel Helps Hotels Manage Ads, CRM and Guest Automation",
   slug: "how-eazotel-helps-hotels-manage-ads-crm-and-guest-automation",
-  url: "",
+  url: "/blog banner/66-how-eazotel-helps-hotels-manage-ads-crm-and-guest-automation-banner.png",
   isShow: true,
   description:
     "Eazotel brings performance marketing, landing experiences, CRM visibility and AI-assisted conversations into a coordinated hotel growth workflow. The intended outcome is faster response, clearer accountability and more measurable direct demand.",
@@ -18252,7 +18253,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
 {
   title: "How to Combine ChatGPT, Google and Meta Ads for Hotels",
   slug: "how-to-combine-chatgpt-google-and-meta-ads-for-hotels",
-  url: "",
+  url: "/blog banner/67-how-to-combine-chatgpt-google-and-meta-ads-for-hotels-banner.png",
   isShow: true,
   description:
     "ChatGPT, Google and Meta should not duplicate one another blindly. Assign each platform a role in planning, active demand capture or visual discovery, then use shared offers, attribution and CRM stages to judge contribution.",
