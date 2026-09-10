@@ -32,6 +32,32 @@ export const metadata: Metadata = {
 
 const BLOGS_PER_PAGE = 9;
 
+// Builds a truncated page list like [1, "...", 4, 5, 6, "...", 9]
+function getPaginationRange(
+  current: number,
+  total: number
+): (number | "...")[] {
+  const delta = 1; // pages shown immediately around current
+  const range: (number | "...")[] = [];
+
+  const start = Math.max(2, current - delta);
+  const end = Math.min(total - 1, current + delta);
+
+  range.push(1);
+
+  if (start > 2) range.push("...");
+
+  for (let i = start; i <= end; i++) {
+    range.push(i);
+  }
+
+  if (end < total - 1) range.push("...");
+
+  if (total > 1) range.push(total);
+
+  return range;
+}
+
 export default async function Blogs({
   searchParams,
 }: {
@@ -53,6 +79,8 @@ export default async function Blogs({
     startIndex,
     startIndex + BLOGS_PER_PAGE
   );
+
+  const paginationRange = getPaginationRange(page, totalPages);
 
   return (
     <main className="md:mt-22 mt-23">
@@ -93,47 +121,81 @@ export default async function Blogs({
             <BlogCard key={index} {...card} />
           ))}
         </div>
-        {/* Pagination */}
+
+        {/* Pagination — bottom right */}
         {totalPages > 1 && (
-          <div className="flex justify-center items-center gap-3 mt-12">
+          <div className="flex justify-end items-center gap-2 mt-12">
             {/* Previous */}
-            {page > 1 && (
-              <Link
-                href={`/blogs/?page=${page - 1}`}
-                className="px-4 py-2 rounded-full border border-main-border hover:bg-color4 hover:text-white"
+            <Link
+              href={page > 1 ? `/blogs/?page=${page - 1}` : "#"}
+              aria-disabled={page === 1}
+              className={`w-10 h-10 rounded-full border border-main-border flex items-center justify-center transition ${
+                page === 1
+                  ? "opacity-40 pointer-events-none"
+                  : "hover:bg-color4 hover:text-white"
+              }`}
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                Previous
-              </Link>
-            )}
-            {/* Page Numbers */}
-            {Array.from({ length: totalPages }, (_, index) => index + 1).map(
-              (pageNumber) => (
-                <Link
-                  key={pageNumber}
-                  href={
-                    pageNumber === 1 ? "/blogs/" : `/blogs/?page=${pageNumber}`
-                  }
-                  className={`w-10 h-10 rounded-full border flex items-center justify-center transition hover:text-white $
-                       { page === pageNumber 
-                        ? "bg-secondary text-secondary border-main-border : hover:bg-color4 hover:text-white" 
-                        
-                        }`}
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </Link>
+
+            {/* Page Numbers with ellipsis */}
+            {paginationRange.map((item, idx) =>
+              item === "..." ? (
+                <span
+                  key={`dots-${idx}`}
+                  className="w-10 h-10 flex items-center justify-center text-main-border select-none"
                 >
-                  {pageNumber}
+                  ...
+                </span>
+              ) : (
+                <Link
+                  key={item}
+                  href={item === 1 ? "/blogs/" : `/blogs/?page=${item}`}
+                  className={`w-10 h-10 rounded-full border flex items-center justify-center transition ${
+                    page === item
+                      ? "bg-secondary text-white border-main-border"
+                      : "border-main-border hover:bg-color4 hover:text-white"
+                  }`}
+                >
+                  {item}
                 </Link>
               )
             )}
 
             {/* Next */}
-            {page < totalPages && (
-              <Link
-                href={`/blogs/?page=${page + 1}`}
-                className="px-4 py-2 rounded-full border border-main-border hover:bg-color4 hover:text-white"
+            <Link
+              href={page < totalPages ? `/blogs/?page=${page + 1}` : "#"}
+              aria-disabled={page === totalPages}
+              className={`w-10 h-10 rounded-full border border-main-border flex items-center justify-center transition ${
+                page === totalPages
+                  ? "opacity-40 pointer-events-none"
+                  : "hover:bg-color4 hover:text-white"
+              }`}
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                {" "}
-                Next
-              </Link>
-            )}
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </Link>
           </div>
         )}
       </SectionWithContainer>
