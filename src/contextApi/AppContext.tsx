@@ -125,13 +125,13 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         page_path: currentPath,
         whatsapp_url: whatsappUrl,
         click_text: clickText,
+        "Click Text": clickText,
         // GTM's RESERVED key names — this is what makes the
         // built-in Click Classes / Click ID / Click Target /
         // Click URL / Click Element variables populate.
         // Note: "Click Text" is an Auto-Event Variable type and
         // can never be populated this way, regardless of key name —
         // it only shows up on a real native "Click" auto-event.
-        "gtm.elementClickText": clickText,
         "gtm.elementClasses": clickClasses,
         "gtm.elementId": clickId,
         "gtm.elementTarget": clickTarget,
