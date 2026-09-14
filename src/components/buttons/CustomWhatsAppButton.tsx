@@ -23,8 +23,8 @@ const CustomWhatsAppButton: React.FC<CtaBtnProps> = ({
 }) => {
   const { WhatsAppClick } = useAppContext();
 
-  const handleClick = () => {
-    WhatsAppClick();
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    WhatsAppClick(undefined, event.currentTarget);
   };
 
   return (
@@ -43,9 +43,7 @@ const CustomWhatsAppButton: React.FC<CtaBtnProps> = ({
         </span>
       )}
 
-      <span className="pointer-events-none">
-        {label}
-      </span>
+      <span className="pointer-events-none">{label}</span>
 
       {icon === "arrow" && (
         <span

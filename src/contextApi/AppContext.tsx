@@ -18,7 +18,7 @@ type AppContextType = {
   whatsappPosition: WhatsappPosition;
   setWhatsappPosition: React.Dispatch<React.SetStateAction<WhatsappPosition>>;
 
-  WhatsAppClick: (pathname?: string) => Promise<void>;
+  WhatsAppClick: (pathname?: string, button?: HTMLButtonElement) => Promise<void>;
 };
 
 export const AppContext = createContext<AppContextType>({
@@ -47,63 +47,111 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [whatsappPosition, setWhatsappPosition] =
     useState<WhatsappPosition>("left");
 
-  const WhatsAppClick = async (pathname?: string) => {
-    try {
-      const currentPath = pathname ?? window.location.pathname;
+ const WhatsAppClick = async (
+  pathname?: string,
+  button?: HTMLButtonElement
+) => {
+  try {
+    const currentPath = pathname ?? window.location.pathname;
 
-      const ukNo = "+447438375533";
-      const indNo = "+919501868775";
+    // -----------------------------
+    // PHONE NUMBER
+    // -----------------------------
 
-      const selectedNumber = currentPath.startsWith("/UK/") ? ukNo : indNo;
+    const ukNo = "+447438375533";
+    const indNo = "+919501868775";
 
-      const payload = {
-        widget: "whatsapp",
-        ndid: "09166f89-8fb1-4a65-b016-7ebbd3418701",
-        hid: "68017653",
-        pageUrl: window.location.href,
-        websiteName: window.location.hostname,
-        phoneNumber: selectedNumber.replace(/\D/g, ""),
-        message: WhatsAppEmbeddedMessage,
-      };
+    const selectedNumber = currentPath.startsWith("/UK/")
+      ? ukNo
+      : indNo;
 
-      const response = await fetch(
-        "https://gian-1eve.onrender.com/api/v1/widget/click",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        }
-      );
+    // -----------------------------
+    // GET BUTTON CLICK INFORMATION
+    // -----------------------------
 
-      const data = await response.json();
+    const clickClasses = button?.className || "";
+    const clickId = button?.id || "";
+    const clickText = button?.innerText?.trim() || "";
+    const clickTarget = button?.getAttribute("target") || "";
+    
+    // This will initially be empty because your button
+    // does not have an href.
+    let clickUrl = button?.getAttribute("href") || "";
 
-      const whatsappUrl = data?.result?.doc?.whatsappUrl;
+    // -----------------------------
+    // API REQUEST
+    // -----------------------------
 
-      // GTM EVENT
-      window.dataLayer = window.dataLayer || [];
+    const payload = {
+      widget: "whatsapp",
+      ndid: "09166f89-8fb1-4a65-b016-7ebbd3418701",
+      hid: "68017653",
 
-      window.dataLayer.push({
-        event: "whatsapp_click",
+      pageUrl: window.location.href,
+      websiteName: window.location.hostname,
 
-        button_text: "WhatsApp",
-        phone_number: selectedNumber,
+      phoneNumber: selectedNumber.replace(/\D/g, ""),
+      message: WhatsAppEmbeddedMessage,
+    };
 
-        page_location: window.location.href,
-        page_path: currentPath,
-
-        // URL returned by your API
-        whatsapp_url: whatsappUrl || "",
-      });
-
-      if (whatsappUrl) {
-        window.open(whatsappUrl, "_blank");
+    const response = await fetch(
+      "https://gian-1eve.onrender.com/api/v1/widget/click",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
       }
-    } catch (error) {
-      console.error("WhatsApp Click Error:", error);
+    );
+
+    const data = await response.json();
+
+    const whatsappUrl =
+      data?.result?.doc?.whatsappUrl || "";
+
+    // -----------------------------
+    // IMPORTANT
+    // API GENERATED WHATSAPP URL
+    // -----------------------------
+
+    clickUrl = whatsappUrl;
+
+    // -----------------------------
+    // GTM DATA LAYER
+    // -----------------------------
+
+    window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer.push({
+      event: "whatsapp_click",
+
+      // Your existing data
+      button_text: "WhatsApp",
+      phone_number: selectedNumber,
+      page_location: window.location.href,
+      page_path: currentPath,
+
+      // Click information
+      click_classes: clickClasses,
+      click_element: button?.outerHTML || "",
+      click_id: clickId,
+      click_target: clickTarget,
+      click_text: clickText,
+      click_url: clickUrl,
+    });
+
+    // -----------------------------
+    // OPEN WHATSAPP
+    // -----------------------------
+
+    if (whatsappUrl) {
+      window.open(whatsappUrl, "_blank");
     }
-  };
+  } catch (error) {
+    console.error("WhatsApp Click Error:", error);
+  }
+};
 
   return (
     <AppContext.Provider
