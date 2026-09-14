@@ -54,7 +54,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const WhatsAppClick = async (
     pathname?: string,
     button?: HTMLButtonElement,
-    clickText?: string,
+    btnClickText?: string
   ) => {
     try {
       const currentPath = pathname ?? window.location.pathname;
@@ -74,7 +74,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
       const clickClasses = button?.className || "";
       const clickId = button?.id || "";
-      const click_Text = clickText || button?.innerText?.trim() || "";
+      const clickText = btnClickText || button?.innerText || "";
       const clickTarget = button?.getAttribute("target") || "";
       const clickElement = button?.outerHTML || "";
 
@@ -124,13 +124,14 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         page_location: window.location.href,
         page_path: currentPath,
         whatsapp_url: whatsappUrl,
-        click_text: click_Text,
+        click_text: clickText,
         // GTM's RESERVED key names — this is what makes the
         // built-in Click Classes / Click ID / Click Target /
         // Click URL / Click Element variables populate.
         // Note: "Click Text" is an Auto-Event Variable type and
         // can never be populated this way, regardless of key name —
         // it only shows up on a real native "Click" auto-event.
+        "gtm.elementClickText": clickText,
         "gtm.elementClasses": clickClasses,
         "gtm.elementId": clickId,
         "gtm.elementTarget": clickTarget,
