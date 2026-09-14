@@ -24,7 +24,7 @@ const CustomWhatsAppButton: React.FC<CtaBtnProps> = ({
   const { WhatsAppClick } = useAppContext();
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    WhatsAppClick(undefined, event.currentTarget);
+    WhatsAppClick(undefined, event.currentTarget, label);
   };
 
   return (

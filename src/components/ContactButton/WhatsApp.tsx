@@ -30,7 +30,7 @@ export default function Whatsapp() {
           ? "right-4 lg:right-10 bottom-10"
           : "left-4 lg:left-10 bottom-4"
       }`}
-      onClick={(event) => WhatsAppClick(pathname, event.currentTarget)}
+      onClick={(event) => WhatsAppClick(pathname, event.currentTarget, "WhatsApp Button Clicked")}
       aria-label="Chat on WhatsApp"
     >
       <div className="w-12 h-12 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center shadow-2xl transition-all pointer-events-none">

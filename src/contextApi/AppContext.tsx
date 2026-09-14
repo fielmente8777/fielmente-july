@@ -20,7 +20,8 @@ type AppContextType = {
 
   WhatsAppClick: (
     pathname?: string,
-    button?: HTMLButtonElement
+    button?: HTMLButtonElement,
+    clickText?: string
   ) => Promise<void>;
 };
 
@@ -52,7 +53,8 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
   const WhatsAppClick = async (
     pathname?: string,
-    button?: HTMLButtonElement
+    button?: HTMLButtonElement,
+    clickText?: string,
   ) => {
     try {
       const currentPath = pathname ?? window.location.pathname;
@@ -72,7 +74,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
       const clickClasses = button?.className || "";
       const clickId = button?.id || "";
-      const clickText = button?.innerText?.trim() || "";
+      const click_Text = clickText || button?.innerText?.trim() || "";
       const clickTarget = button?.getAttribute("target") || "";
       const clickElement = button?.outerHTML || "";
 
@@ -122,7 +124,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         page_location: window.location.href,
         page_path: currentPath,
         whatsapp_url: whatsappUrl,
-        click_text: clickText,
+        click_text: click_Text,
         // GTM's RESERVED key names — this is what makes the
         // built-in Click Classes / Click ID / Click Target /
         // Click URL / Click Element variables populate.
