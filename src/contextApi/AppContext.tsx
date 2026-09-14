@@ -135,6 +135,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         "gtm.elementTarget": clickTarget,
         "gtm.elementUrl": whatsappUrl,
         "gtm.element": clickElement,
+        "gtm.elementText": clickText, 
       });
 
       // -----------------------------
