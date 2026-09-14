@@ -9,7 +9,6 @@ type CtaBtnProps = {
   startIconClass?: string;
   [key: string]: unknown;
   icon?: "arrow" | "arrow2" | "none";
-
   startIcon?: "mail" | "whatsapp" | "call" | "download" | "none";
 };
 
@@ -23,30 +22,46 @@ const CustomWhatsAppButton: React.FC<CtaBtnProps> = ({
   ...props
 }) => {
   const { WhatsAppClick } = useAppContext();
+
+  const handleClick = () => {
+    WhatsAppClick();
+  };
+
   return (
     <button
       {...props}
-      onClick={() => WhatsAppClick()}
-      className={`transition-all text-nowrap max-md:w-full flex items-center gap-2 justify-center font-medium border duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-2xl px-6 py-3  ${className}`}
+      id="whatsapp-cta-button"
+      className={`whatsapp-cta-button transition-all text-nowrap max-md:w-full flex items-center gap-2 justify-center font-medium border duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-2xl px-6 py-3 ${className}`}
+      onClick={handleClick}
+      type="button"
     >
       {startIcon === "whatsapp" && (
         <span
-          className={`w-6 aspect-square flex items-center justify-center text-white ${startIconClass}`}
+          className={`w-6 aspect-square flex items-center justify-center text-white ${startIconClass} pointer-events-none`}
         >
           <WhatsappIcon />
         </span>
       )}
-      {label}
+
+      <span className="pointer-events-none">
+        {label}
+      </span>
+
       {icon === "arrow" && (
         <span
-          className={`w-6 aspect-square flex items-center justify-center rounded-full ${iconClass ? iconClass : "text-primary"} bg-white`}
+          className={`w-6 aspect-square flex items-center justify-center rounded-full ${
+            iconClass ? iconClass : "text-primary"
+          } bg-white pointer-events-none`}
         >
           <ArrowBtn />
         </span>
       )}
+
       {icon === "arrow2" && (
         <span
-          className={`w-6 aspect-square flex items-center justify-center rounded-full ${iconClass ? iconClass : "text-primary"} bg-white`}
+          className={`w-6 aspect-square flex items-center justify-center rounded-full ${
+            iconClass ? iconClass : "text-primary"
+          } bg-white pointer-events-none`}
         >
           <ArrowBtn2 />
         </span>

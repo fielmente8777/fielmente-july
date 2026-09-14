@@ -51,32 +51,11 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     try {
       const currentPath = pathname ?? window.location.pathname;
 
-      // UK Number
       const ukNo = "+447438375533";
+      const indNo = "+919501868775";
 
-      // India Number
-      const indNo =
-        contacts.phone.length > 1 ? contacts.phone[1] : contacts.phone[0];
-
-      // Select phone based on route
       const selectedNumber = currentPath.startsWith("/UK/") ? ukNo : indNo;
 
-      // -----------------------------
-      // GTM / GA4 EVENT
-      // -----------------------------
-      window.dataLayer = window.dataLayer || [];
-
-      window.dataLayer.push({
-        event: "whatsapp_click",
-        button_text: "WhatsApp",
-        phone_number: selectedNumber,
-        page_location: window.location.href,
-        page_path: currentPath,
-      });
-
-      // -----------------------------
-      // WhatsApp API
-      // -----------------------------
       const payload = {
         widget: "whatsapp",
         ndid: "09166f89-8fb1-4a65-b016-7ebbd3418701",
@@ -101,6 +80,22 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       const data = await response.json();
 
       const whatsappUrl = data?.result?.doc?.whatsappUrl;
+
+      // GTM EVENT
+      window.dataLayer = window.dataLayer || [];
+
+      window.dataLayer.push({
+        event: "whatsapp_click",
+
+        button_text: "WhatsApp",
+        phone_number: selectedNumber,
+
+        page_location: window.location.href,
+        page_path: currentPath,
+
+        // URL returned by your API
+        whatsapp_url: whatsappUrl || "",
+      });
 
       if (whatsappUrl) {
         window.open(whatsappUrl, "_blank");
