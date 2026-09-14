@@ -133,7 +133,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         "gtm.elementUrl": whatsappUrl,
 
         // 2. FIX: GTM needs the actual HTML DOM Object reference here, NOT an outerHTML string!
-        "gtm.element": button || this,
+        "gtm.element": clickElement || button || this,
 
         // 3. FIX: Populate the explicit text key that maps directly to the built-in Click Text
         "gtm.elementText": clickText,
