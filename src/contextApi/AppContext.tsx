@@ -47,111 +47,105 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [whatsappPosition, setWhatsappPosition] =
     useState<WhatsappPosition>("left");
 
- const WhatsAppClick = async (
-  pathname?: string,
-  button?: HTMLButtonElement
-) => {
-  try {
-    const currentPath = pathname ?? window.location.pathname;
+  const WhatsAppClick = async (
+    pathname?: string,
+    button?: HTMLButtonElement
+  ) => {
+    try {
+      const currentPath = pathname ?? window.location.pathname;
 
-    // -----------------------------
-    // PHONE NUMBER
-    // -----------------------------
+      // -----------------------------
+      // PHONE NUMBER
+      // -----------------------------
 
-    const ukNo = "+447438375533";
-    const indNo = "+919501868775";
+      const ukNo = "+447438375533";
+      const indNo = "+919501868775";
 
-    const selectedNumber = currentPath.startsWith("/UK/")
-      ? ukNo
-      : indNo;
+      const selectedNumber = currentPath.startsWith("/UK/")
+        ? ukNo
+        : indNo;
 
-    // -----------------------------
-    // GET BUTTON CLICK INFORMATION
-    // -----------------------------
+      // -----------------------------
+      // GET BUTTON CLICK INFORMATION
+      // -----------------------------
 
-    const clickClasses = button?.className || "";
-    const clickId = button?.id || "";
-    const clickText = button?.innerText?.trim() || "";
-    const clickTarget = button?.getAttribute("target") || "";
-    
-    // This will initially be empty because your button
-    // does not have an href.
-    let clickUrl = button?.getAttribute("href") || "";
+      const clickClasses = button?.className || "";
+      const clickId = button?.id || "";
+      const clickText = button?.innerText?.trim() || "";
+      const clickTarget = button?.getAttribute("target") || "";
+      const clickElement = button?.outerHTML || "";
 
-    // -----------------------------
-    // API REQUEST
-    // -----------------------------
+      // -----------------------------
+      // API REQUEST
+      // -----------------------------
 
-    const payload = {
-      widget: "whatsapp",
-      ndid: "09166f89-8fb1-4a65-b016-7ebbd3418701",
-      hid: "68017653",
+      const payload = {
+        widget: "whatsapp",
+        ndid: "09166f89-8fb1-4a65-b016-7ebbd3418701",
+        hid: "68017653",
 
-      pageUrl: window.location.href,
-      websiteName: window.location.hostname,
+        pageUrl: window.location.href,
+        websiteName: window.location.hostname,
 
-      phoneNumber: selectedNumber.replace(/\D/g, ""),
-      message: WhatsAppEmbeddedMessage,
-    };
+        phoneNumber: selectedNumber.replace(/\D/g, ""),
+        message: WhatsAppEmbeddedMessage,
+      };
 
-    const response = await fetch(
-      "https://gian-1eve.onrender.com/api/v1/widget/click",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
+      const response = await fetch(
+        "https://gian-1eve.onrender.com/api/v1/widget/click",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const data = await response.json();
+
+      const whatsappUrl = data?.result?.doc?.whatsappUrl || "";
+
+      // -----------------------------
+      // GTM DATA LAYER
+      // -----------------------------
+
+      window.dataLayer = window.dataLayer || [];
+
+      window.dataLayer.push({
+        event: "whatsapp_click",
+
+        // Your own custom keys — safe to read in GA4/GTM as-is
+        button_text: "WhatsApp",
+        phone_number: selectedNumber,
+        page_location: window.location.href,
+        page_path: currentPath,
+        whatsapp_url: whatsappUrl,
+
+        // GTM's RESERVED key names — this is what makes the
+        // built-in Click Classes / Click ID / Click Target /
+        // Click URL / Click Element variables populate.
+        // Note: "Click Text" is an Auto-Event Variable type and
+        // can never be populated this way, regardless of key name —
+        // it only shows up on a real native "Click" auto-event.
+        "gtm.elementClasses": clickClasses,
+        "gtm.elementId": clickId,
+        "gtm.elementTarget": clickTarget,
+        "gtm.elementUrl": whatsappUrl,
+        "gtm.element": clickElement,
+      });
+
+      // -----------------------------
+      // OPEN WHATSAPP
+      // -----------------------------
+
+      if (whatsappUrl) {
+        window.open(whatsappUrl, "_blank");
       }
-    );
-
-    const data = await response.json();
-
-    const whatsappUrl =
-      data?.result?.doc?.whatsappUrl || "";
-
-    // -----------------------------
-    // IMPORTANT
-    // API GENERATED WHATSAPP URL
-    // -----------------------------
-
-    clickUrl = whatsappUrl;
-
-    // -----------------------------
-    // GTM DATA LAYER
-    // -----------------------------
-
-    window.dataLayer = window.dataLayer || [];
-
-    window.dataLayer.push({
-      event: "whatsapp_click",
-
-      // Your existing data
-      button_text: "WhatsApp",
-      phone_number: selectedNumber,
-      page_location: window.location.href,
-      page_path: currentPath,
-
-      // Click information
-      click_classes: clickClasses,
-      click_element: button?.outerHTML || "",
-      click_id: clickId,
-      click_target: clickTarget,
-      click_text: clickText,
-      click_url: clickUrl,
-    });
-
-    // -----------------------------
-    // OPEN WHATSAPP
-    // -----------------------------
-
-    if (whatsappUrl) {
-      window.open(whatsappUrl, "_blank");
+    } catch (error) {
+      console.error("WhatsApp Click Error:", error);
     }
-  } catch (error) {
-    console.error("WhatsApp Click Error:", error);
-  }
-};
+  };
 
   return (
     <AppContext.Provider
