@@ -117,7 +117,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
       window.dataLayer.push({
         event: "whatsapp_click",
-        click_text: clickText,
+        // click_text: clickText,
         // Your own custom keys — safe to read in GA4/GTM as-is
         button_text: "WhatsApp",
         phone_number: selectedNumber,
