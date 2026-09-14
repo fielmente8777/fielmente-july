@@ -18,7 +18,10 @@ type AppContextType = {
   whatsappPosition: WhatsappPosition;
   setWhatsappPosition: React.Dispatch<React.SetStateAction<WhatsappPosition>>;
 
-  WhatsAppClick: (pathname?: string, button?: HTMLButtonElement) => Promise<void>;
+  WhatsAppClick: (
+    pathname?: string,
+    button?: HTMLButtonElement
+  ) => Promise<void>;
 };
 
 export const AppContext = createContext<AppContextType>({
@@ -61,9 +64,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       const ukNo = "+447438375533";
       const indNo = "+919501868775";
 
-      const selectedNumber = currentPath.startsWith("/UK/")
-        ? ukNo
-        : indNo;
+      const selectedNumber = currentPath.startsWith("/UK/") ? ukNo : indNo;
 
       // -----------------------------
       // GET BUTTON CLICK INFORMATION
@@ -121,7 +122,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         page_location: window.location.href,
         page_path: currentPath,
         whatsapp_url: whatsappUrl,
-
+        click_text: clickText,
         // GTM's RESERVED key names — this is what makes the
         // built-in Click Classes / Click ID / Click Target /
         // Click URL / Click Element variables populate.
