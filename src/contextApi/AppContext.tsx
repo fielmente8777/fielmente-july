@@ -117,15 +117,13 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
       window.dataLayer.push({
         event: "whatsapp_click",
-
+        click_text: clickText,
         // Your own custom keys — safe to read in GA4/GTM as-is
         button_text: "WhatsApp",
         phone_number: selectedNumber,
         page_location: window.location.href,
         page_path: currentPath,
         whatsapp_url: whatsappUrl,
-        click_text: clickText,
-        "Click Text": clickText,
         // GTM's RESERVED key names — this is what makes the
         // built-in Click Classes / Click ID / Click Target /
         // Click URL / Click Element variables populate.
