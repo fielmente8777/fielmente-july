@@ -49,7 +49,6 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
   const WhatsAppClick = async (pathname?: string) => {
     try {
-      // If pathname is not passed, use current browser path
       const currentPath = pathname ?? window.location.pathname;
 
       // UK Number
@@ -62,19 +61,29 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       // Select phone based on route
       const selectedNumber = currentPath.startsWith("/UK/") ? ukNo : indNo;
 
+      // -----------------------------
+      // GTM / GA4 EVENT
+      // -----------------------------
+      window.dataLayer = window.dataLayer || [];
+
+      window.dataLayer.push({
+        event: "whatsapp_click",
+        button_text: "WhatsApp",
+        phone_number: selectedNumber,
+        page_location: window.location.href,
+        page_path: currentPath,
+      });
+
+      // -----------------------------
+      // WhatsApp API
+      // -----------------------------
       const payload = {
         widget: "whatsapp",
-
         ndid: "09166f89-8fb1-4a65-b016-7ebbd3418701",
-
         hid: "68017653",
-
         pageUrl: window.location.href,
-
         websiteName: window.location.hostname,
-
         phoneNumber: selectedNumber.replace(/\D/g, ""),
-
         message: WhatsAppEmbeddedMessage,
       };
 
@@ -82,11 +91,9 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         "https://gian-1eve.onrender.com/api/v1/widget/click",
         {
           method: "POST",
-
           headers: {
             "Content-Type": "application/json",
           },
-
           body: JSON.stringify(payload),
         }
       );

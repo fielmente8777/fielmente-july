@@ -1,18 +1,21 @@
-export {};
+
+
+// interface DataLayerEvent {
+//   event: string;
+//   page?: string;
+//   button_text?: string;
+// }
 
 // declare global {
 //   interface Window {
-//     dataLayer: Record<string, any>[];
+//     dataLayer: DataLayerEvent[];
 //   }
 // }
 
-interface DataLayerEvent {
-  event: string;
-  page?: string;
-}
-
 declare global {
   interface Window {
-    dataLayer: DataLayerEvent[];
+    dataLayer: Array<Record<string, unknown>>;
   }
 }
+
+export {};
