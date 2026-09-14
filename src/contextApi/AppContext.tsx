@@ -116,27 +116,23 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       window.dataLayer = window.dataLayer || [];
 
       window.dataLayer.push({
-        // 1. FIX: Switch from custom event name to GTM's native click event
-        event: "gtm.click",
+        event: "whatsapp_click", // Keep your clean custom event
 
-        // Custom data layer keys for GA4 (Keep these safe for your tags)
+        // Custom data layer keys for GA4
         button_text: "WhatsApp",
         phone_number: selectedNumber,
         page_location: window.location.href,
         page_path: currentPath,
         whatsapp_url: whatsappUrl,
 
-        // GTM Built-in Variable Overrides
+        // GTM's built-in variables mapping
         "gtm.elementClasses": clickClasses,
         "gtm.elementId": clickId,
-        "gtm.elementTarget": clickTarget,
         "gtm.elementUrl": whatsappUrl,
+        "gtm.element": clickElement,
 
-        // 2. FIX: GTM needs the actual HTML DOM Object reference here, NOT an outerHTML string!
-        "gtm.element": clickElement || button || this,
-
-        // 3. FIX: Populate the explicit text key that maps directly to the built-in Click Text
-        "gtm.elementText": clickText,
+        // FIX: Force your dynamic text into GTM's built-in "Click Target" variable slot
+        "gtm.elementTarget": clickText,
       });
 
       // -----------------------------
