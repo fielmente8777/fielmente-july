@@ -18,7 +18,11 @@ type AppContextType = {
   whatsappPosition: WhatsappPosition;
   setWhatsappPosition: React.Dispatch<React.SetStateAction<WhatsappPosition>>;
 
-  WhatsAppClick: (pathname?: string) => Promise<void>;
+  WhatsAppClick: (
+    pathname?: string,
+    button?: HTMLButtonElement,
+    clickText?: string
+  ) => Promise<void>;
 };
 
 export const AppContext = createContext<AppContextType>({
@@ -47,34 +51,46 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [whatsappPosition, setWhatsappPosition] =
     useState<WhatsappPosition>("left");
 
-  const WhatsAppClick = async (pathname?: string) => {
+  const WhatsAppClick = async (
+    pathname?: string,
+    button?: HTMLButtonElement,
+    btnClickText?: string
+  ) => {
     try {
-      // If pathname is not passed, use current browser path
       const currentPath = pathname ?? window.location.pathname;
 
-      // UK Number
+      // -----------------------------
+      // PHONE NUMBER
+      // -----------------------------
+
       const ukNo = "+447438375533";
+      const indNo = "+919501868775";
 
-      // India Number
-      const indNo =
-        contacts.phone.length > 1 ? contacts.phone[1] : contacts.phone[0];
-
-      // Select phone based on route
       const selectedNumber = currentPath.startsWith("/UK/") ? ukNo : indNo;
+
+      // -----------------------------
+      // GET BUTTON CLICK INFORMATION
+      // -----------------------------
+
+      const clickClasses = button?.className || "";
+      const clickId = button?.id || "";
+      const clickText = btnClickText || button?.innerText || "";
+      const clickTarget = button?.getAttribute("target") || "";
+      const clickElement = button?.outerHTML || "";
+
+      // -----------------------------
+      // API REQUEST
+      // -----------------------------
 
       const payload = {
         widget: "whatsapp",
-
         ndid: "09166f89-8fb1-4a65-b016-7ebbd3418701",
-
         hid: "68017653",
 
         pageUrl: window.location.href,
-
         websiteName: window.location.hostname,
 
         phoneNumber: selectedNumber.replace(/\D/g, ""),
-
         message: WhatsAppEmbeddedMessage,
       };
 
@@ -82,18 +98,46 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         "https://gian-1eve.onrender.com/api/v1/widget/click",
         {
           method: "POST",
-
           headers: {
             "Content-Type": "application/json",
           },
-
           body: JSON.stringify(payload),
         }
       );
 
       const data = await response.json();
 
-      const whatsappUrl = data?.result?.doc?.whatsappUrl;
+      const whatsappUrl = data?.result?.doc?.whatsappUrl || "";
+
+      // -----------------------------
+      // GTM DATA LAYER
+      // -----------------------------
+
+      window.dataLayer = window.dataLayer || [];
+
+      window.dataLayer.push({
+        event: "whatsapp_click", // Keep your clean custom event
+
+        // Custom data layer keys for GA4
+        button_text: "WhatsApp",
+        phone_number: selectedNumber,
+        page_location: window.location.href,
+        page_path: currentPath,
+        whatsapp_url: whatsappUrl,
+
+        // GTM's built-in variables mapping
+        "gtm.elementClasses": clickClasses,
+        "gtm.elementId": clickId,
+        "gtm.elementUrl": whatsappUrl,
+        "gtm.element": clickElement,
+
+        // FIX: Force your dynamic text into GTM's built-in "Click Target" variable slot
+        "gtm.elementTarget": clickText,
+      });
+
+      // -----------------------------
+      // OPEN WHATSAPP
+      // -----------------------------
 
       if (whatsappUrl) {
         window.open(whatsappUrl, "_blank");

@@ -50,7 +50,9 @@ const ContactSection: React.FC<Props> = ({
                   titleWrapperClassName="max-md:mx-auto"
                   smTextCenter
                 />
-                <p className="text-white text-sm max-md:text-center">{description}</p>
+                <p className="text-white text-sm max-md:text-center">
+                  {description}
+                </p>
               </div>
               <div className="grid grid-cols-2 md:gap-5 gap-3 mt-6 w-full md:max-w-md">
                 {listOfLinks.slice(0, 3).map((item, index) =>
@@ -67,27 +69,37 @@ const ContactSection: React.FC<Props> = ({
                       </div>
                       <div className="space-y-1.5">
                         <p className="text-sm">{link.title}</p>
-                        <Link href={link.href} className="max-md:text-[10px]"
+                        <Link
+                          href={link.href}
+                          className="max-md:text-[10px]"
                           target="_blank"
-                        rel="noopener noreferrer"
-                          >{link.label}</Link>
+                          rel="noopener noreferrer"
+                        >
+                          {link.label}
+                        </Link>
                       </div>
                     </div>
                   ))
                 )}
                 {listOfLinks.slice(3).map((item, index) => (
                   <div className="space-y-4" key={index}>
-                    {item.title && <p className="text-white text-sm font-medium">{item.title}</p>}
+                    {item.title && (
+                      <p className="text-white text-sm font-medium">
+                        {item.title}
+                      </p>
+                    )}
                     <ul className="flex items-center gap-4">
                       {item.links.map((link, linkIndex) => (
                         <li key={linkIndex}>
-                          <Link href={link.href}
-                            target="_blank"
-                        rel="noopener noreferrer"
-                            className="w-10 aspect-square shadow-inner rounded-full bg-white/5 border-x border-[#333F50] flex items-center justify-center text-white">
+                          <span
+                            //   href={link.href}
+                            //     target="_blank"
+                            // rel="noopener noreferrer"
+                            className="w-10 aspect-square shadow-inner rounded-full bg-white/5 border-x border-[#333F50] flex items-center justify-center text-white"
+                          >
                             {link.icon}
                             <span className="sr-only">{link.label}</span>
-                          </Link>
+                          </span>
                         </li>
                       ))}
                     </ul>
