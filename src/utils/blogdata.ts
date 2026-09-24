@@ -8920,7 +8920,7 @@ occupancy, and increased revenue.
     title: "ChatGPT Ads for Hotels & Resorts in India: Complete 2026 Guide",
 
     slug: "chatgpt-ads-for-hotels-resorts-in-india-complete-2026-guide",
-    url:"/blog banner/01-chatgpt-ads-for-hotels-resorts-in-india-complete-2026-guide-banner.png",
+    url: "/blog banner/01-chatgpt-ads-for-hotels-resorts-in-india-complete-2026-guide-banner.png",
     description:
       "ChatGPT Ads add a paid discovery layer to conversational travel research. Hotels should approach the channel as a measurable direct-booking funnel, not as a standalone media experiment.",
 
@@ -9252,13 +9252,13 @@ Interest in chatgpt ads management services for hotels in india will create nois
   },
 
   {
-  title: "ChatGPT Ads Agency for Hotels: What to Look For",
-  slug: "chatgpt-ads-agency-for-hotels-what-to-look-for",
-  url: "/blog banner/03-chatgpt-ads-agency-for-hotels-what-to-look-for-banner.png",
-  isShow: true,
-  description:
-    "The right agency should understand room revenue, seasonality, weddings, events, direct booking and hotel operations. Platform familiarity matters, but hospitality expertise and measurement discipline matter more.",
-  data: `
+    title: "ChatGPT Ads Agency for Hotels: What to Look For",
+    slug: "chatgpt-ads-agency-for-hotels-what-to-look-for",
+    url: "/blog banner/03-chatgpt-ads-agency-for-hotels-what-to-look-for-banner.png",
+    isShow: true,
+    description:
+      "The right agency should understand room revenue, seasonality, weddings, events, direct booking and hotel operations. Platform familiarity matters, but hospitality expertise and measurement discipline matter more.",
+    data: `
     <h2>ChatGPT Ads Agency for Hotels: What to Look For</h2>
 
     <p>The right agency should understand room revenue, seasonality, weddings, events, direct booking and hotel operations. Platform familiarity matters, but hospitality expertise and measurement discipline matter more.</p>
@@ -9404,16 +9404,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p><strong>Editorial note:</strong> Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads for Resorts: A Direct-Booking Playbook",
-  slug: "chatgpt-ads-for-resorts-a-direct-booking-playbook",
-  url: "/blog banner/04-chatgpt-ads-for-resorts-a-direct-booking-playbook-banner.png",
-  isShow: true,
-  description:
-    "Resorts can use conversational advertising to meet travellers while they compare destinations, experiences and packages. Success depends on matching the ad, offer and landing experience to the exact trip being planned.",
-  data: `
+  {
+    title: "ChatGPT Ads for Resorts: A Direct-Booking Playbook",
+    slug: "chatgpt-ads-for-resorts-a-direct-booking-playbook",
+    url: "/blog banner/04-chatgpt-ads-for-resorts-a-direct-booking-playbook-banner.png",
+    isShow: true,
+    description:
+      "Resorts can use conversational advertising to meet travellers while they compare destinations, experiences and packages. Success depends on matching the ad, offer and landing experience to the exact trip being planned.",
+    data: `
     <h2>ChatGPT Ads for Resorts: A Direct-Booking Playbook</h2>
 
     <p>Resorts can use conversational advertising to meet travellers while they compare destinations, experiences and packages. Success depends on matching the ad, offer and landing experience to the exact trip being planned.</p>
@@ -9559,16 +9559,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p><strong>Editorial note:</strong> Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "AI Performance Marketing for Hotels: A Practical Guide",
-  slug: "ai-performance-marketing-for-hotels-a-practical-guide",
-  url: "/blog banner/05-ai-performance-marketing-for-hotels-a-practical-guide-banner.png",
-  isShow: true,
-  description:
-    "AI performance marketing combines media, first-party data, automation and human revenue judgement. It should improve the speed and relevance of decisions without handing strategy entirely to an algorithm.",
-  data: `
+  {
+    title: "AI Performance Marketing for Hotels: A Practical Guide",
+    slug: "ai-performance-marketing-for-hotels-a-practical-guide",
+    url: "/blog banner/05-ai-performance-marketing-for-hotels-a-practical-guide-banner.png",
+    isShow: true,
+    description:
+      "AI performance marketing combines media, first-party data, automation and human revenue judgement. It should improve the speed and relevance of decisions without handing strategy entirely to an algorithm.",
+    data: `
     <h2>AI Performance Marketing for Hotels: A Practical Guide</h2>
 
     <p>AI performance marketing combines media, first-party data, automation and human revenue judgement. It should improve the speed and relevance of decisions without handing strategy entirely to an algorithm.</p>
@@ -9714,16 +9714,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p><strong>Editorial note:</strong> Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads Setup and Conversion Tracking for Hotels",
-  slug: "chatgpt-ads-setup-and-conversion-tracking-for-hotels",
-  url: "/blog banner/06-chatgpt-ads-setup-and-conversion-tracking-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "Correct setup begins with one valuable conversion definition and a testable data path. Hotels need to distinguish clicks, enquiries, qualified enquiries, booking-engine starts and confirmed revenue.",
-  data: `
+  {
+    title: "ChatGPT Ads Setup and Conversion Tracking for Hotels",
+    slug: "chatgpt-ads-setup-and-conversion-tracking-for-hotels",
+    url: "/blog banner/06-chatgpt-ads-setup-and-conversion-tracking-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "Correct setup begins with one valuable conversion definition and a testable data path. Hotels need to distinguish clicks, enquiries, qualified enquiries, booking-engine starts and confirmed revenue.",
+    data: `
     <h2>ChatGPT Ads Setup and Conversion Tracking for Hotels</h2>
 
     <p>Correct setup begins with one valuable conversion definition and a testable data path. Hotels need to distinguish clicks, enquiries, qualified enquiries, booking-engine starts and confirmed revenue.</p>
@@ -9869,16 +9869,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p><strong>Editorial note:</strong> Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads Landing Pages: How to Convert Travel Intent",
-  slug: "chatgpt-ads-landing-pages-how-to-convert-travel-intent",
-  url: "/blog banner/07-chatgpt-ads-landing-pages-how-to-convert-travel-intent-banner.png",
-  isShow: true,
-  description:
-    "A ChatGPT Ads landing page should continue the traveller's conversation. It must answer the specific question behind the click, prove the property's fit and make the next step effortless on mobile.",
-  data: `
+  {
+    title: "ChatGPT Ads Landing Pages: How to Convert Travel Intent",
+    slug: "chatgpt-ads-landing-pages-how-to-convert-travel-intent",
+    url: "/blog banner/07-chatgpt-ads-landing-pages-how-to-convert-travel-intent-banner.png",
+    isShow: true,
+    description:
+      "A ChatGPT Ads landing page should continue the traveller's conversation. It must answer the specific question behind the click, prove the property's fit and make the next step effortless on mobile.",
+    data: `
     <h2>ChatGPT Ads Landing Pages: How to Convert Travel Intent</h2>
 
     <p>A ChatGPT Ads landing page should continue the traveller's conversation. It must answer the specific question behind the click, prove the property's fit and make the next step effortless on mobile.</p>
@@ -10024,16 +10024,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p><strong>Editorial note:</strong> Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "Hotel AI Marketing Services: From Discovery to Booking",
-  slug: "hotel-ai-marketing-services-from-discovery-to-booking",
-  url: "/blog banner/08-hotel-ai-marketing-services-from-discovery-to-booking-banner.png",
-  isShow: true,
-  description:
-    "An integrated hotel AI service connects discovery, media, website conversations, WhatsApp, voice follow-up, CRM and reporting. The value comes from coordinated handoffs rather than isolated tools.",
-  data: `
+  {
+    title: "Hotel AI Marketing Services: From Discovery to Booking",
+    slug: "hotel-ai-marketing-services-from-discovery-to-booking",
+    url: "/blog banner/08-hotel-ai-marketing-services-from-discovery-to-booking-banner.png",
+    isShow: true,
+    description:
+      "An integrated hotel AI service connects discovery, media, website conversations, WhatsApp, voice follow-up, CRM and reporting. The value comes from coordinated handoffs rather than isolated tools.",
+    data: `
     <h2>Hotel AI Marketing Services: From Discovery to Booking</h2>
 
     <p>An integrated hotel AI service connects discovery, media, website conversations, WhatsApp, voice follow-up, CRM and reporting. The value comes from coordinated handoffs rather than isolated tools.</p>
@@ -10179,16 +10179,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p><strong>Editorial note:</strong> Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "Generative Engine Optimization for Hotels: The Complete Guide",
-  slug: "generative-engine-optimization-for-hotels-the-complete-guide",
-  url: "/blog banner/09-generative-engine-optimization-for-hotels-the-complete-guide-banner.png",
-  isShow: true,
-  description:
-    "Generative Engine Optimization helps AI systems understand, verify and cite a hotel's information. It builds on sound SEO but places more emphasis on clear entities, direct answers, evidence and consistency across trusted sources.",
-  data: `
+  {
+    title: "Generative Engine Optimization for Hotels: The Complete Guide",
+    slug: "generative-engine-optimization-for-hotels-the-complete-guide",
+    url: "/blog banner/09-generative-engine-optimization-for-hotels-the-complete-guide-banner.png",
+    isShow: true,
+    description:
+      "Generative Engine Optimization helps AI systems understand, verify and cite a hotel's information. It builds on sound SEO but places more emphasis on clear entities, direct answers, evidence and consistency across trusted sources.",
+    data: `
     <h2>Generative Engine Optimization for Hotels: The Complete Guide</h2>
 
     <p>Generative Engine Optimization helps AI systems understand, verify and cite a hotel's information. It builds on sound SEO but places more emphasis on clear entities, direct answers, evidence and consistency across trusted sources.</p>
@@ -10334,16 +10334,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p><strong>Editorial note:</strong> Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "AI Search Optimization for Hotels: How to Build Visibility",
-  slug: "ai-search-optimization-for-hotels-how-to-build-visibility",
-  url: "/blog banner/10-ai-search-optimization-for-hotels-how-to-build-visibility-banner.png",
-  isShow: true,
-  description:
-    "AI search visibility comes from being easy to understand and easy to verify. Hotels need technically accessible pages, specific facts, strong local relevance and useful content for real travel decisions.",
-  data: `
+  {
+    title: "AI Search Optimization for Hotels: How to Build Visibility",
+    slug: "ai-search-optimization-for-hotels-how-to-build-visibility",
+    url: "/blog banner/10-ai-search-optimization-for-hotels-how-to-build-visibility-banner.png",
+    isShow: true,
+    description:
+      "AI search visibility comes from being easy to understand and easy to verify. Hotels need technically accessible pages, specific facts, strong local relevance and useful content for real travel decisions.",
+    data: `
     <h2>AI Search Optimization for Hotels: How to Build Visibility</h2>
 
     <p>AI search visibility comes from being easy to understand and easy to verify. Hotels need technically accessible pages, specific facts, strong local relevance and useful content for real travel decisions.</p>
@@ -10469,16 +10469,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads Launch in India: What Hotels Need to Know",
-  slug: "chatgpt-ads-launch-in-india-what-hotels-need-to-know",
-  url: "/blog banner/11-chatgpt-ads-launch-in-india-what-hotels-need-to-know-banner.png",
-  isShow: true,
-  description:
-    "The India rollout creates an early paid opportunity inside a new travel-planning interface. Hotels should test carefully, verify what is available in their own account and preserve strong measurement from the first rupee.",
-  data: `
+  {
+    title: "ChatGPT Ads Launch in India: What Hotels Need to Know",
+    slug: "chatgpt-ads-launch-in-india-what-hotels-need-to-know",
+    url: "/blog banner/11-chatgpt-ads-launch-in-india-what-hotels-need-to-know-banner.png",
+    isShow: true,
+    description:
+      "The India rollout creates an early paid opportunity inside a new travel-planning interface. Hotels should test carefully, verify what is available in their own account and preserve strong measurement from the first rupee.",
+    data: `
     <h2>ChatGPT Ads Launch in India: What Hotels Need to Know</h2>
 
     <p>The India rollout creates an early paid opportunity inside a new travel-planning interface. Hotels should test carefully, verify what is available in their own account and preserve strong measurement from the first rupee.</p>
@@ -10614,16 +10614,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "How to Run ChatGPT Ads in India: Step-by-Step Guide",
-  slug: "how-to-run-chatgpt-ads-in-india-step-by-step-guide",
-  url: "/blog banner/12-how-to-run-chatgpt-ads-in-india-step-by-step-guide-banner.png",
-  isShow: true,
-  description:
-    "A reliable first campaign starts with a business outcome, moves through account and campaign setup, and ends with a verified conversion path. The launch button is only one small part of the work.",
-  data: `
+  {
+    title: "How to Run ChatGPT Ads in India: Step-by-Step Guide",
+    slug: "how-to-run-chatgpt-ads-in-india-step-by-step-guide",
+    url: "/blog banner/12-how-to-run-chatgpt-ads-in-india-step-by-step-guide-banner.png",
+    isShow: true,
+    description:
+      "A reliable first campaign starts with a business outcome, moves through account and campaign setup, and ends with a verified conversion path. The launch button is only one small part of the work.",
+    data: `
     <h2>How to Run ChatGPT Ads in India: Step-by-Step Guide</h2>
 
     <p>A reliable first campaign starts with a business outcome, moves through account and campaign setup, and ends with a verified conversion path. The launch button is only one small part of the work.</p>
@@ -10759,16 +10759,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads Manager India: Features, Eligibility and Setup",
-  slug: "chatgpt-ads-manager-india-features-eligibility-and-setup",
-  url: "/blog banner/13-chatgpt-ads-manager-india-features-eligibility-and-setup-banner.png",
-  isShow: true,
-  description:
-    "Ads Manager access, features and reporting may vary during rollout. Teams should separate confirmed account capabilities from online speculation and document the exact options visible at setup.",
-  data: `
+  {
+    title: "ChatGPT Ads Manager India: Features, Eligibility and Setup",
+    slug: "chatgpt-ads-manager-india-features-eligibility-and-setup",
+    url: "/blog banner/13-chatgpt-ads-manager-india-features-eligibility-and-setup-banner.png",
+    isShow: true,
+    description:
+      "Ads Manager access, features and reporting may vary during rollout. Teams should separate confirmed account capabilities from online speculation and document the exact options visible at setup.",
+    data: `
     <h2>ChatGPT Ads Manager India: Features, Eligibility and Setup</h2>
 
     <p>Ads Manager access, features and reporting may vary during rollout. Teams should separate confirmed account capabilities from online speculation and document the exact options visible at setup.</p>
@@ -10904,16 +10904,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads Cost in India: Minimum Budget and Pricing",
-  slug: "chatgpt-ads-cost-in-india-minimum-budget-and-pricing",
-  url: "/blog banner/14-chatgpt-ads-cost-in-india-minimum-budget-and-pricing-banner.png",
-  isShow: true,
-  description:
-    "Reported entry budgets make testing accessible, but the minimum is not a recommended hotel budget. A useful plan must account for learning time, creative testing, landing-page conversion and the value of a confirmed booking.",
-  data: `
+  {
+    title: "ChatGPT Ads Cost in India: Minimum Budget and Pricing",
+    slug: "chatgpt-ads-cost-in-india-minimum-budget-and-pricing",
+    url: "/blog banner/14-chatgpt-ads-cost-in-india-minimum-budget-and-pricing-banner.png",
+    isShow: true,
+    description:
+      "Reported entry budgets make testing accessible, but the minimum is not a recommended hotel budget. A useful plan must account for learning time, creative testing, landing-page conversion and the value of a confirmed booking.",
+    data: `
     <h2>ChatGPT Ads Cost in India: Minimum Budget and Pricing</h2>
 
     <p>Reported entry budgets make testing accessible, but the minimum is not a recommended hotel budget. A useful plan must account for learning time, creative testing, landing-page conversion and the value of a confirmed booking.</p>
@@ -11049,16 +11049,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "How Do ChatGPT Ads Work for Hotels and Resorts?",
-  slug: "how-do-chatgpt-ads-work-for-hotels-and-resorts",
-  url: "/blog banner/15-how-do-chatgpt-ads-work-for-hotels-and-resorts-banner.png",
-  isShow: true,
-  description:
-    "ChatGPT Ads are designed to appear as clearly identified sponsored placements around relevant conversations without changing the underlying answer. For hotels, the opportunity begins when a traveller is researching a trip, stay, event or experience.",
-  data: `
+  {
+    title: "How Do ChatGPT Ads Work for Hotels and Resorts?",
+    slug: "how-do-chatgpt-ads-work-for-hotels-and-resorts",
+    url: "/blog banner/15-how-do-chatgpt-ads-work-for-hotels-and-resorts-banner.png",
+    isShow: true,
+    description:
+      "ChatGPT Ads are designed to appear as clearly identified sponsored placements around relevant conversations without changing the underlying answer. For hotels, the opportunity begins when a traveller is researching a trip, stay, event or experience.",
+    data: `
     <h2>How Do ChatGPT Ads Work for Hotels and Resorts?</h2>
 
     <p>ChatGPT Ads are designed to appear as clearly identified sponsored placements around relevant conversations without changing the underlying answer. For hotels, the opportunity begins when a traveller is researching a trip, stay, event or experience.</p>
@@ -11194,16 +11194,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "Who Can See ChatGPT Ads in India?",
-  slug: "who-can-see-chatgpt-ads-in-india",
-  url: "/blog banner/16-who-can-see-chatgpt-ads-in-india-banner.png",
-  isShow: true,
-  description:
-    "Initial reporting says ads are aimed at logged-in adults on Free and Go plans in India, while higher paid tiers remain ad-free. Actual reach will also depend on rollout, eligibility, conversation context and safety exclusions.",
-  data: `
+  {
+    title: "Who Can See ChatGPT Ads in India?",
+    slug: "who-can-see-chatgpt-ads-in-india",
+    url: "/blog banner/16-who-can-see-chatgpt-ads-in-india-banner.png",
+    isShow: true,
+    description:
+      "Initial reporting says ads are aimed at logged-in adults on Free and Go plans in India, while higher paid tiers remain ad-free. Actual reach will also depend on rollout, eligibility, conversation context and safety exclusions.",
+    data: `
     <h2>Who Can See ChatGPT Ads in India?</h2>
 
     <p>Initial reporting says ads are aimed at logged-in adults on Free and Go plans in India, while higher paid tiers remain ad-free. Actual reach will also depend on rollout, eligibility, conversation context and safety exclusions.</p>
@@ -11339,16 +11339,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Sponsored Ads Explained for Indian Businesses",
-  slug: "chatgpt-sponsored-ads-explained-for-indian-businesses",
-  url: "/blog banner/17-chatgpt-sponsored-ads-explained-for-indian-businesses-banner.png",
-  isShow: true,
-  description:
-    "Sponsored placements in a conversational product differ from banners and social interruption. Relevance to the user's current task, honest labelling and a useful post-click experience are central to performance and trust.",
-  data: `
+  {
+    title: "ChatGPT Sponsored Ads Explained for Indian Businesses",
+    slug: "chatgpt-sponsored-ads-explained-for-indian-businesses",
+    url: "/blog banner/17-chatgpt-sponsored-ads-explained-for-indian-businesses-banner.png",
+    isShow: true,
+    description:
+      "Sponsored placements in a conversational product differ from banners and social interruption. Relevance to the user's current task, honest labelling and a useful post-click experience are central to performance and trust.",
+    data: `
     <h2>ChatGPT Sponsored Ads Explained for Indian Businesses</h2>
 
     <p>Sponsored placements in a conversational product differ from banners and social interruption. Relevance to the user's current task, honest labelling and a useful post-click experience are central to performance and trust.</p>
@@ -11484,16 +11484,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "Are ChatGPT Ads Available for Small Hotels in India?",
-  slug: "are-chatgpt-ads-available-for-small-hotels-in-india",
-  url: "/blog banner/18-are-chatgpt-ads-available-for-small-hotels-in-india-banner.png",
-  isShow: true,
-  description:
-    "Small hotels can prepare for self-serve access and may be able to test with modest daily budgets, subject to account availability. Their advantage is specificity: a clear destination, authentic experience and fast owner-led follow-up.",
-  data: `
+  {
+    title: "Are ChatGPT Ads Available for Small Hotels in India?",
+    slug: "are-chatgpt-ads-available-for-small-hotels-in-india",
+    url: "/blog banner/18-are-chatgpt-ads-available-for-small-hotels-in-india-banner.png",
+    isShow: true,
+    description:
+      "Small hotels can prepare for self-serve access and may be able to test with modest daily budgets, subject to account availability. Their advantage is specificity: a clear destination, authentic experience and fast owner-led follow-up.",
+    data: `
     <h2>Are ChatGPT Ads Available for Small Hotels in India?</h2>
 
     <p>Small hotels can prepare for self-serve access and may be able to test with modest daily budgets, subject to account availability. Their advantage is specificity: a clear destination, authentic experience and fast owner-led follow-up.</p>
@@ -11629,16 +11629,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "Best ChatGPT Ads Strategy for Independent Hotels",
-  slug: "best-chatgpt-ads-strategy-for-independent-hotels",
-  url: "/blog banner/19-best-chatgpt-ads-strategy-for-independent-hotels-banner.png",
-  isShow: true,
-  description:
-    "Independent hotels should compete through specificity rather than volume. A tight campaign built around the property's strongest reason to book can outperform a broad message that tries to appeal to every traveller.",
-  data: `
+  {
+    title: "Best ChatGPT Ads Strategy for Independent Hotels",
+    slug: "best-chatgpt-ads-strategy-for-independent-hotels",
+    url: "/blog banner/19-best-chatgpt-ads-strategy-for-independent-hotels-banner.png",
+    isShow: true,
+    description:
+      "Independent hotels should compete through specificity rather than volume. A tight campaign built around the property's strongest reason to book can outperform a broad message that tries to appeal to every traveller.",
+    data: `
     <h2>Best ChatGPT Ads Strategy for Independent Hotels</h2>
 
     <p>Independent hotels should compete through specificity rather than volume. A tight campaign built around the property's strongest reason to book can outperform a broad message that tries to appeal to every traveller.</p>
@@ -11764,16 +11764,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "How Resorts Can Generate Direct Bookings Through ChatGPT Ads",
-  slug: "how-resorts-can-generate-direct-bookings-through-chatgpt-ads",
-  url: "/blog banner/20-how-resorts-can-generate-direct-bookings-through-chatgpt-ads-banner.png",
-  isShow: true,
-  description:
-    "Direct bookings become more likely when ads answer a specific planning need and the property makes rate, inclusions and next steps clear. The campaign should reduce uncertainty rather than merely promote the resort.",
-  data: `
+  {
+    title: "How Resorts Can Generate Direct Bookings Through ChatGPT Ads",
+    slug: "how-resorts-can-generate-direct-bookings-through-chatgpt-ads",
+    url: "/blog banner/20-how-resorts-can-generate-direct-bookings-through-chatgpt-ads-banner.png",
+    isShow: true,
+    description:
+      "Direct bookings become more likely when ads answer a specific planning need and the property makes rate, inclusions and next steps clear. The campaign should reduce uncertainty rather than merely promote the resort.",
+    data: `
     <h2>How Resorts Can Generate Direct Bookings Through ChatGPT Ads</h2>
 
     <p>Direct bookings become more likely when ads answer a specific planning need and the property makes rate, inclusions and next steps clear. The campaign should reduce uncertainty rather than merely promote the resort.</p>
@@ -11899,16 +11899,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads for Boutique Hotels: Campaign Structure and Budget",
-  slug: "chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget",
-  url: "/blog banner/21-chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget-banner.png",
-  isShow: true,
-  description:
-    "Boutique properties should organise campaigns around distinctive experiences, neighbourhood fit and high-value stay occasions. Budget should be concentrated enough to produce learning instead of being fragmented across too many ad groups.",
-  data: `
+  {
+    title: "ChatGPT Ads for Boutique Hotels: Campaign Structure and Budget",
+    slug: "chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget",
+    url: "/blog banner/21-chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget-banner.png",
+    isShow: true,
+    description:
+      "Boutique properties should organise campaigns around distinctive experiences, neighbourhood fit and high-value stay occasions. Budget should be concentrated enough to produce learning instead of being fragmented across too many ad groups.",
+    data: `
     <h2>ChatGPT Ads for Boutique Hotels: Campaign Structure and Budget</h2>
 
     <p>Boutique properties should organise campaigns around distinctive experiences, neighbourhood fit and high-value stay occasions. Budget should be concentrated enough to produce learning instead of being fragmented across too many ad groups.</p>
@@ -12034,15 +12034,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Advertise a Destination Wedding Resort on ChatGPT",
-  slug: "how-to-advertise-a-destination-wedding-resort-on-chatgpt",
-  url: "/blog banner/22-how-to-advertise-a-destination-wedding-resort-on-chatgpt-banner.png",
-  isShow: true,
-  description:
-    "Wedding advertising must qualify dates, guest count, room nights, venue needs and budget while still communicating emotion. ChatGPT Ads can introduce the venue, but the landing and sales process must handle the complex decision.",
-  data: `
+  },
+  {
+    title: "How to Advertise a Destination Wedding Resort on ChatGPT",
+    slug: "how-to-advertise-a-destination-wedding-resort-on-chatgpt",
+    url: "/blog banner/22-how-to-advertise-a-destination-wedding-resort-on-chatgpt-banner.png",
+    isShow: true,
+    description:
+      "Wedding advertising must qualify dates, guest count, room nights, venue needs and budget while still communicating emotion. ChatGPT Ads can introduce the venue, but the landing and sales process must handle the complex decision.",
+    data: `
     <h2>How to Advertise a Destination Wedding Resort on ChatGPT</h2>
 
     <p>Wedding advertising must qualify dates, guest count, room nights, venue needs and budget while still communicating emotion. ChatGPT Ads can introduce the venue, but the landing and sales process must handle the complex decision.</p>
@@ -12168,15 +12168,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads for Luxury Hotels: Targeting High-Intent Travellers",
-  slug: "chatgpt-ads-for-luxury-hotels-targeting-high-intent-travellers",
-  url: "/blog banner/23-chatgpt-ads-for-luxury-hotels-targeting-high-intent-travellers-banner.png",
-  isShow: true,
-  description:
-    "Luxury hotel advertising should protect brand value while making choice easier. Audience quality, service proof, distinctive experiences and a seamless assisted-booking path are more important than maximising inexpensive clicks.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads for Luxury Hotels: Targeting High-Intent Travellers",
+    slug: "chatgpt-ads-for-luxury-hotels-targeting-high-intent-travellers",
+    url: "/blog banner/23-chatgpt-ads-for-luxury-hotels-targeting-high-intent-travellers-banner.png",
+    isShow: true,
+    description:
+      "Luxury hotel advertising should protect brand value while making choice easier. Audience quality, service proof, distinctive experiences and a seamless assisted-booking path are more important than maximising inexpensive clicks.",
+    data: `
     <h2>ChatGPT Ads for Luxury Hotels: Targeting High-Intent Travellers</h2>
 
     <p>Luxury hotel advertising should protect brand value while making choice easier. Audience quality, service proof, distinctive experiences and a seamless assisted-booking path are more important than maximising inexpensive clicks.</p>
@@ -12302,16 +12302,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads for Goa Hotels and Beach Resorts",
-  slug: "chatgpt-ads-for-goa-hotels-and-beach-resorts",
-  url: "/blog banner/24-chatgpt-ads-for-goa-hotels-and-beach-resorts-banner.png",
-  isShow: true,
-  description:
-    "Goa demand varies by location, season, traveller type and occasion. Campaigns should distinguish beach access, nightlife, family stays, workations, weddings and quieter experiences instead of treating Goa as one generic audience.",
-  data: `
+  {
+    title: "ChatGPT Ads for Goa Hotels and Beach Resorts",
+    slug: "chatgpt-ads-for-goa-hotels-and-beach-resorts",
+    url: "/blog banner/24-chatgpt-ads-for-goa-hotels-and-beach-resorts-banner.png",
+    isShow: true,
+    description:
+      "Goa demand varies by location, season, traveller type and occasion. Campaigns should distinguish beach access, nightlife, family stays, workations, weddings and quieter experiences instead of treating Goa as one generic audience.",
+    data: `
     <h2>ChatGPT Ads for Goa Hotels and Beach Resorts</h2>
 
     <p>Goa demand varies by location, season, traveller type and occasion. Campaigns should distinguish beach access, nightlife, family stays, workations, weddings and quieter experiences instead of treating Goa as one generic audience.</p>
@@ -12437,15 +12437,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads for Wellness and Ayurveda Resorts",
-  slug: "chatgpt-ads-for-wellness-and-ayurveda-resorts",
-  url: "/blog banner/25-chatgpt-ads-for-wellness-and-ayurveda-resorts-banner.png",
-  isShow: true,
-  description:
-    "Wellness advertising requires trust, accurate programme descriptions and responsible claims. The campaign should help guests understand who the stay is for, what is included and when professional guidance is necessary.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads for Wellness and Ayurveda Resorts",
+    slug: "chatgpt-ads-for-wellness-and-ayurveda-resorts",
+    url: "/blog banner/25-chatgpt-ads-for-wellness-and-ayurveda-resorts-banner.png",
+    isShow: true,
+    description:
+      "Wellness advertising requires trust, accurate programme descriptions and responsible claims. The campaign should help guests understand who the stay is for, what is included and when professional guidance is necessary.",
+    data: `
     <h2>ChatGPT Ads for Wellness and Ayurveda Resorts</h2>
 
     <p>Wellness advertising requires trust, accurate programme descriptions and responsible claims. The campaign should help guests understand who the stay is for, what is included and when professional guidance is necessary.</p>
@@ -12571,15 +12571,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads for Weekend Getaway Resorts Near Delhi",
-  slug: "chatgpt-ads-for-weekend-getaway-resorts-near-delhi",
-  url: "/blog banner/26-chatgpt-ads-for-weekend-getaway-resorts-near-delhi-banner.png",
-  isShow: true,
-  description:
-    "Weekend campaigns win on immediacy: travel time, road access, check-in flexibility, activities and all-in value. Creative and landing pages should help a traveller decide quickly for a specific weekend.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads for Weekend Getaway Resorts Near Delhi",
+    slug: "chatgpt-ads-for-weekend-getaway-resorts-near-delhi",
+    url: "/blog banner/26-chatgpt-ads-for-weekend-getaway-resorts-near-delhi-banner.png",
+    isShow: true,
+    description:
+      "Weekend campaigns win on immediacy: travel time, road access, check-in flexibility, activities and all-in value. Creative and landing pages should help a traveller decide quickly for a specific weekend.",
+    data: `
     <h2>ChatGPT Ads for Weekend Getaway Resorts Near Delhi</h2>
 
     <p>Weekend campaigns win on immediacy: travel time, road access, check-in flexibility, activities and all-in value. Creative and landing pages should help a traveller decide quickly for a specific weekend.</p>
@@ -12705,15 +12705,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How Hotels Can Reduce OTA Dependency Using ChatGPT Ads",
-  slug: "how-hotels-can-reduce-ota-dependency-using-chatgpt-ads",
-  url: "/blog banner/27-how-hotels-can-reduce-ota-dependency-using-chatgpt-ads-banner.png",
-  isShow: true,
-  description:
-    "ChatGPT Ads can diversify demand but should not be framed as an instant replacement for OTAs. Hotels need rate discipline, a strong direct-booking proposition, reliable technology and lifetime-value measurement.",
-  data: `
+  },
+  {
+    title: "How Hotels Can Reduce OTA Dependency Using ChatGPT Ads",
+    slug: "how-hotels-can-reduce-ota-dependency-using-chatgpt-ads",
+    url: "/blog banner/27-how-hotels-can-reduce-ota-dependency-using-chatgpt-ads-banner.png",
+    isShow: true,
+    description:
+      "ChatGPT Ads can diversify demand but should not be framed as an instant replacement for OTAs. Hotels need rate discipline, a strong direct-booking proposition, reliable technology and lifetime-value measurement.",
+    data: `
     <h2>How Hotels Can Reduce OTA Dependency Using ChatGPT Ads</h2>
 
     <p>ChatGPT Ads can diversify demand but should not be framed as an instant replacement for OTAs. Hotels need rate discipline, a strong direct-booking proposition, reliable technology and lifetime-value measurement.</p>
@@ -12839,15 +12839,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads for Hotel Packages, Weddings and Events",
-  slug: "chatgpt-ads-for-hotel-packages-weddings-and-events",
-  url: "/blog banner/28-chatgpt-ads-for-hotel-packages-weddings-and-events-banner.png",
-  isShow: true,
-  description:
-    "Rooms, packages, weddings and events represent different buying journeys. They should not share one generic message or one unqualified form; each needs its own intent, evidence and conversion path.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads for Hotel Packages, Weddings and Events",
+    slug: "chatgpt-ads-for-hotel-packages-weddings-and-events",
+    url: "/blog banner/28-chatgpt-ads-for-hotel-packages-weddings-and-events-banner.png",
+    isShow: true,
+    description:
+      "Rooms, packages, weddings and events represent different buying journeys. They should not share one generic message or one unqualified form; each needs its own intent, evidence and conversion path.",
+    data: `
     <h2>ChatGPT Ads for Hotel Packages, Weddings and Events</h2>
 
     <p>Rooms, packages, weddings and events represent different buying journeys. They should not share one generic message or one unqualified form; each needs its own intent, evidence and conversion path.</p>
@@ -12973,15 +12973,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How Many Campaigns and Ad Groups Should a Hotel Run on ChatGPT?",
-  slug: "how-many-campaigns-and-ad-groups-should-a-hotel-run-on-chatgpt",
-  url: "/blog banner/29-how-many-campaigns-and-ad-groups-should-a-hotel-run-on-chatgpt-banner.png",
-  isShow: true,
-  description:
-    "The best structure is the smallest one that preserves meaningful intent differences. With a low daily budget, one campaign and a few well-defined ad groups usually create clearer learning than a fragmented account.",
-  data: `
+  },
+  {
+    title: "How Many Campaigns and Ad Groups Should a Hotel Run on ChatGPT?",
+    slug: "how-many-campaigns-and-ad-groups-should-a-hotel-run-on-chatgpt",
+    url: "/blog banner/29-how-many-campaigns-and-ad-groups-should-a-hotel-run-on-chatgpt-banner.png",
+    isShow: true,
+    description:
+      "The best structure is the smallest one that preserves meaningful intent differences. With a low daily budget, one campaign and a few well-defined ad groups usually create clearer learning than a fragmented account.",
+    data: `
     <h2>How Many Campaigns and Ad Groups Should a Hotel Run on ChatGPT?</h2>
 
     <p>The best structure is the smallest one that preserves meaningful intent differences. With a low daily budget, one campaign and a few well-defined ad groups usually create clearer learning than a fragmented account.</p>
@@ -13107,15 +13107,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Best ChatGPT Ad Copy and Creative Ideas for Hotels",
-  slug: "best-chatgpt-ad-copy-and-creative-ideas-for-hotels",
-  url: "/blog banner/30-best-chatgpt-ad-copy-and-creative-ideas-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "Effective hotel ads connect the traveller's current plan to a concrete property benefit. Copy should be specific, provable and easy to continue on the landing page; imagery should show the experience being promised.",
-  data: `
+  },
+  {
+    title: "Best ChatGPT Ad Copy and Creative Ideas for Hotels",
+    slug: "best-chatgpt-ad-copy-and-creative-ideas-for-hotels",
+    url: "/blog banner/30-best-chatgpt-ad-copy-and-creative-ideas-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "Effective hotel ads connect the traveller's current plan to a concrete property benefit. Copy should be specific, provable and easy to continue on the landing page; imagery should show the experience being promised.",
+    data: `
     <h2>Best ChatGPT Ad Copy and Creative Ideas for Hotels</h2>
 
     <p>Effective hotel ads connect the traveller's current plan to a concrete property benefit. Copy should be specific, provable and easy to continue on the landing page; imagery should show the experience being promised.</p>
@@ -13241,16 +13241,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
+  },
 
-{
-  title: "ChatGPT Ads vs Google Ads for Hotels",
-  slug: "chatgpt-ads-vs-google-ads-for-hotels",
-  url: "/blog banner/31-chatgpt-ads-vs-google-ads-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "Google captures explicit search demand, while ChatGPT can meet travellers during a broader planning conversation. Hotels should compare intent quality, reach, control, measurement and incremental bookings rather than declaring one universal winner.",
-  data: `
+  {
+    title: "ChatGPT Ads vs Google Ads for Hotels",
+    slug: "chatgpt-ads-vs-google-ads-for-hotels",
+    url: "/blog banner/31-chatgpt-ads-vs-google-ads-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "Google captures explicit search demand, while ChatGPT can meet travellers during a broader planning conversation. Hotels should compare intent quality, reach, control, measurement and incremental bookings rather than declaring one universal winner.",
+    data: `
     <h2>ChatGPT Ads vs Google Ads for Hotels</h2>
 
     <p>Google captures explicit search demand, while ChatGPT can meet travellers during a broader planning conversation. Hotels should compare intent quality, reach, control, measurement and incremental bookings rather than declaring one universal winner.</p>
@@ -13386,15 +13386,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads vs Meta Ads for Hotels",
-  slug: "chatgpt-ads-vs-meta-ads-for-hotels",
-  url: "/blog banner/32-chatgpt-ads-vs-meta-ads-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "Meta is strong for visual discovery and audience-led demand creation; ChatGPT is closer to active problem solving and planning. The better choice depends on the stay occasion, creative strength and follow-up funnel.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads vs Meta Ads for Hotels",
+    slug: "chatgpt-ads-vs-meta-ads-for-hotels",
+    url: "/blog banner/32-chatgpt-ads-vs-meta-ads-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "Meta is strong for visual discovery and audience-led demand creation; ChatGPT is closer to active problem solving and planning. The better choice depends on the stay occasion, creative strength and follow-up funnel.",
+    data: `
     <h2>ChatGPT Ads vs Meta Ads for Hotels</h2>
 
     <p>Meta is strong for visual discovery and audience-led demand creation; ChatGPT is closer to active problem solving and planning. The better choice depends on the stay occasion, creative strength and follow-up funnel.</p>
@@ -13530,15 +13530,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
     `,
-},
-{
-  title: "ChatGPT Ads vs Hotel Metasearch Advertising",
-  slug: "chatgpt-ads-vs-hotel-metasearch-advertising",
-  url: "/blog banner/33-chatgpt-ads-vs-hotel-metasearch-advertising-banner.png",
-  isShow: true,
-  description:
-    "Metasearch often reaches travellers comparing live rates for a known property or destination. ChatGPT Ads may enter earlier, when the traveller is shaping the trip. The channels therefore solve related but different jobs.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads vs Hotel Metasearch Advertising",
+    slug: "chatgpt-ads-vs-hotel-metasearch-advertising",
+    url: "/blog banner/33-chatgpt-ads-vs-hotel-metasearch-advertising-banner.png",
+    isShow: true,
+    description:
+      "Metasearch often reaches travellers comparing live rates for a known property or destination. ChatGPT Ads may enter earlier, when the traveller is shaping the trip. The channels therefore solve related but different jobs.",
+    data: `
     <h2>ChatGPT Ads vs Hotel Metasearch Advertising</h2>
 
     <p>Metasearch often reaches travellers comparing live rates for a known property or destination. ChatGPT Ads may enter earlier, when the traveller is shaping the trip. The channels therefore solve related but different jobs.</p>
@@ -13674,15 +13674,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Should Hotels Shift Budget from Google to ChatGPT Ads?",
-  slug: "should-hotels-shift-budget-from-google-to-chatgpt-ads",
-  url: "/blog banner/34-should-hotels-shift-budget-from-google-to-chatgpt-ads-banner.png",
-  isShow: true,
-  description:
-    "Hotels should not make a wholesale shift based on launch excitement. Protect proven demand capture, fund a controlled ChatGPT test and move budget only when incremental booking evidence supports the change.",
-  data: `
+  },
+  {
+    title: "Should Hotels Shift Budget from Google to ChatGPT Ads?",
+    slug: "should-hotels-shift-budget-from-google-to-chatgpt-ads",
+    url: "/blog banner/34-should-hotels-shift-budget-from-google-to-chatgpt-ads-banner.png",
+    isShow: true,
+    description:
+      "Hotels should not make a wholesale shift based on launch excitement. Protect proven demand capture, fund a controlled ChatGPT test and move budget only when incremental booking evidence supports the change.",
+    data: `
     <h2>Should Hotels Shift Budget from Google to ChatGPT Ads?</h2>
 
     <p>Hotels should not make a wholesale shift based on launch excitement. Protect proven demand capture, fund a controlled ChatGPT test and move budget only when incremental booking evidence supports the change.</p>
@@ -13818,15 +13818,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads or Instagram Ads: Which Generates Better Hotel Leads?",
-  slug: "chatgpt-ads-or-instagram-ads-which-generates-better-hotel-leads",
-  url: "/blog banner/35-chatgpt-ads-or-instagram-ads-which-generates-better-hotel-leads-banner.png",
-  isShow: true,
-  description:
-    "Lead volume does not determine the better channel. Hotels must compare valid contact rate, trip fit, dates, budget, response speed and confirmed revenue after giving each platform an appropriate creative treatment.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads or Instagram Ads: Which Generates Better Hotel Leads?",
+    slug: "chatgpt-ads-or-instagram-ads-which-generates-better-hotel-leads",
+    url: "/blog banner/35-chatgpt-ads-or-instagram-ads-which-generates-better-hotel-leads-banner.png",
+    isShow: true,
+    description:
+      "Lead volume does not determine the better channel. Hotels must compare valid contact rate, trip fit, dates, budget, response speed and confirmed revenue after giving each platform an appropriate creative treatment.",
+    data: `
     <h2>ChatGPT Ads or Instagram Ads: Which Generates Better Hotel Leads?</h2>
 
     <p>Lead volume does not determine the better channel. Hotels must compare valid contact rate, trip fit, dates, budget, response speed and confirmed revenue after giving each platform an appropriate creative treatment.</p>
@@ -13962,15 +13962,16 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads vs OTA Promotions: Which Produces More Direct Bookings?",
-  slug: "chatgpt-ads-vs-ota-promotions-which-produces-more-direct-bookings",
-  url: "/blog banner/36-chatgpt-ads-vs-ota-promotions-which-produces-more-direct-bookings-banner.png",
-  isShow: true,
-  description:
-    "OTA promotion spend and discounting can generate marketplace visibility, whereas ChatGPT Ads can send travellers to the hotel's own journey. Compare net revenue, commission, discount cost, media cost and repeat-customer value.",
-  data: `
+  },
+  {
+    title:
+      "ChatGPT Ads vs OTA Promotions: Which Produces More Direct Bookings?",
+    slug: "chatgpt-ads-vs-ota-promotions-which-produces-more-direct-bookings",
+    url: "/blog banner/36-chatgpt-ads-vs-ota-promotions-which-produces-more-direct-bookings-banner.png",
+    isShow: true,
+    description:
+      "OTA promotion spend and discounting can generate marketplace visibility, whereas ChatGPT Ads can send travellers to the hotel's own journey. Compare net revenue, commission, discount cost, media cost and repeat-customer value.",
+    data: `
     <h2>ChatGPT Ads vs OTA Promotions: Which Produces More Direct Bookings?</h2>
 
     <p>OTA promotion spend and discounting can generate marketplace visibility, whereas ChatGPT Ads can send travellers to the hotel's own journey. Compare net revenue, commission, discount cost, media cost and repeat-customer value.</p>
@@ -14106,15 +14107,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "SEO vs GEO vs ChatGPT Ads for Hotels",
-  slug: "seo-vs-geo-vs-chatgpt-ads-for-hotels",
-  url: "/blog banner/37-seo-vs-geo-vs-chatgpt-ads-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "SEO improves search visibility, GEO improves the chance of being understood and referenced by generative systems, and ChatGPT Ads buy sponsored exposure where available. A resilient hotel strategy uses all three with clear roles.",
-  data: `
+  },
+  {
+    title: "SEO vs GEO vs ChatGPT Ads for Hotels",
+    slug: "seo-vs-geo-vs-chatgpt-ads-for-hotels",
+    url: "/blog banner/37-seo-vs-geo-vs-chatgpt-ads-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "SEO improves search visibility, GEO improves the chance of being understood and referenced by generative systems, and ChatGPT Ads buy sponsored exposure where available. A resilient hotel strategy uses all three with clear roles.",
+    data: `
     <h2>SEO vs GEO vs ChatGPT Ads for Hotels</h2>
 
     <p>SEO improves search visibility, GEO improves the chance of being understood and referenced by generative systems, and ChatGPT Ads buy sponsored exposure where available. A resilient hotel strategy uses all three with clear roles.</p>
@@ -14250,15 +14251,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Best Advertising Platform for Hotels in India in 2026",
-  slug: "best-advertising-platform-for-hotels-in-india-in-2026",
-  url: "/blog banner/38-best-advertising-platform-for-hotels-in-india-in-2026-banner.png",
-  isShow: true,
-  description:
-    "There is no single best platform for every hotel. Google, Meta, metasearch, OTAs and conversational ads each perform different jobs; the right mix depends on demand maturity, destination, booking window and operational follow-up.",
-  data: `
+  },
+  {
+    title: "Best Advertising Platform for Hotels in India in 2026",
+    slug: "best-advertising-platform-for-hotels-in-india-in-2026",
+    url: "/blog banner/38-best-advertising-platform-for-hotels-in-india-in-2026-banner.png",
+    isShow: true,
+    description:
+      "There is no single best platform for every hotel. Google, Meta, metasearch, OTAs and conversational ads each perform different jobs; the right mix depends on demand maturity, destination, booking window and operational follow-up.",
+    data: `
     <h2>Best Advertising Platform for Hotels in India in 2026</h2>
 
     <p>There is no single best platform for every hotel. Google, Meta, metasearch, OTAs and conversational ads each perform different jobs; the right mix depends on demand maturity, destination, booking window and operational follow-up.</p>
@@ -14394,15 +14395,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Is ₹725 Per Day Enough for Hotel ChatGPT Ads?",
-  slug: "is-725-per-day-enough-for-hotel-chatgpt-ads",
-  url: "/blog banner/39-is-inr725-per-day-enough-for-hotel-chatgpt-ads-banner.png",
-  isShow: true,
-  description:
-    "₹725 per day may be enough for a narrow learning test if that amount is available in the account, but it is not automatically enough to prove profitable scale. Concentration, tracking and response discipline become essential.",
-  data: `
+  },
+  {
+    title: "Is ₹725 Per Day Enough for Hotel ChatGPT Ads?",
+    slug: "is-725-per-day-enough-for-hotel-chatgpt-ads",
+    url: "/blog banner/39-is-inr725-per-day-enough-for-hotel-chatgpt-ads-banner.png",
+    isShow: true,
+    description:
+      "₹725 per day may be enough for a narrow learning test if that amount is available in the account, but it is not automatically enough to prove profitable scale. Concentration, tracking and response discipline become essential.",
+    data: `
     <h2>Is ₹725 Per Day Enough for Hotel ChatGPT Ads?</h2>
 
     <p>₹725 per day may be enough for a narrow learning test if that amount is available in the account, but it is not automatically enough to prove profitable scale. Concentration, tracking and response discipline become essential.</p>
@@ -14538,15 +14539,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Recommended ChatGPT Ads Budget for Hotels in India",
-  slug: "recommended-chatgpt-ads-budget-for-hotels-in-india",
-  url: "/blog banner/40-recommended-chatgpt-ads-budget-for-hotels-in-india-banner.png",
-  isShow: true,
-  description:
-    "A recommended budget should come from booking value, target acquisition cost, conversion rate and the amount of data needed to make a decision. Copying another hotel's daily figure ignores commercial context.",
-  data: `
+  },
+  {
+    title: "Recommended ChatGPT Ads Budget for Hotels in India",
+    slug: "recommended-chatgpt-ads-budget-for-hotels-in-india",
+    url: "/blog banner/40-recommended-chatgpt-ads-budget-for-hotels-in-india-banner.png",
+    isShow: true,
+    description:
+      "A recommended budget should come from booking value, target acquisition cost, conversion rate and the amount of data needed to make a decision. Copying another hotel's daily figure ignores commercial context.",
+    data: `
     <h2>Recommended ChatGPT Ads Budget for Hotels in India</h2>
 
     <p>A recommended budget should come from booking value, target acquisition cost, conversion rate and the amount of data needed to make a decision. Copying another hotel's daily figure ignores commercial context.</p>
@@ -14682,15 +14683,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Calculate ROAS from ChatGPT Hotel Ads",
-  slug: "how-to-calculate-roas-from-chatgpt-hotel-ads",
-  url: "/blog banner/41-how-to-calculate-roas-from-chatgpt-hotel-ads-banner.png",
-  isShow: true,
-  description:
-    "Return on ad spend is attributed booking revenue divided by advertising spend, but hotels should also examine net revenue, cancellation, commission, fulfilment and gross profit. A clean formula is only as reliable as its attribution.",
-  data: `
+  },
+  {
+    title: "How to Calculate ROAS from ChatGPT Hotel Ads",
+    slug: "how-to-calculate-roas-from-chatgpt-hotel-ads",
+    url: "/blog banner/41-how-to-calculate-roas-from-chatgpt-hotel-ads-banner.png",
+    isShow: true,
+    description:
+      "Return on ad spend is attributed booking revenue divided by advertising spend, but hotels should also examine net revenue, cancellation, commission, fulfilment and gross profit. A clean formula is only as reliable as its attribution.",
+    data: `
     <h2>How to Calculate ROAS from ChatGPT Hotel Ads</h2>
 
     <p>Return on ad spend is attributed booking revenue divided by advertising spend, but hotels should also examine net revenue, cancellation, commission, fulfilment and gross profit. A clean formula is only as reliable as its attribution.</p>
@@ -14826,15 +14827,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads KPIs Hotels Should Track",
-  slug: "chatgpt-ads-kpis-hotels-should-track",
-  url: "/blog banner/42-chatgpt-ads-kpis-hotels-should-track-banner.png",
-  isShow: true,
-  description:
-    "Hotels need a KPI ladder from delivery to revenue: impressions, clicks, engaged visits, valid enquiries, qualified enquiries, booking starts, bookings, stayed revenue and profitability. Platform numbers alone cannot tell the whole story.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads KPIs Hotels Should Track",
+    slug: "chatgpt-ads-kpis-hotels-should-track",
+    url: "/blog banner/42-chatgpt-ads-kpis-hotels-should-track-banner.png",
+    isShow: true,
+    description:
+      "Hotels need a KPI ladder from delivery to revenue: impressions, clicks, engaged visits, valid enquiries, qualified enquiries, booking starts, bookings, stayed revenue and profitability. Platform numbers alone cannot tell the whole story.",
+    data: `
     <h2>ChatGPT Ads KPIs Hotels Should Track</h2>
 
     <p>Hotels need a KPI ladder from delivery to revenue: impressions, clicks, engaged visits, valid enquiries, qualified enquiries, booking starts, bookings, stayed revenue and profitability. Platform numbers alone cannot tell the whole story.</p>
@@ -14970,15 +14971,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Track Hotel Bookings from ChatGPT Ads",
-  slug: "how-to-track-hotel-bookings-from-chatgpt-ads",
-  url: "/blog banner/43-how-to-track-hotel-bookings-from-chatgpt-ads-banner.png",
-  isShow: true,
-  description:
-    "Booking tracking requires persistent campaign parameters, analytics events, CRM source capture and booking-engine confirmation. Assisted bookings by phone or WhatsApp need the same source discipline as online bookings.",
-  data: `
+  },
+  {
+    title: "How to Track Hotel Bookings from ChatGPT Ads",
+    slug: "how-to-track-hotel-bookings-from-chatgpt-ads",
+    url: "/blog banner/43-how-to-track-hotel-bookings-from-chatgpt-ads-banner.png",
+    isShow: true,
+    description:
+      "Booking tracking requires persistent campaign parameters, analytics events, CRM source capture and booking-engine confirmation. Assisted bookings by phone or WhatsApp need the same source discipline as online bookings.",
+    data: `
     <h2>How to Track Hotel Bookings from ChatGPT Ads</h2>
 
     <p>Booking tracking requires persistent campaign parameters, analytics events, CRM source capture and booking-engine confirmation. Assisted bookings by phone or WhatsApp need the same source discipline as online bookings.</p>
@@ -15114,15 +15115,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads Conversion Tracking with GA4",
-  slug: "chatgpt-ads-conversion-tracking-with-ga4",
-  url: "/blog banner/44-chatgpt-ads-conversion-tracking-with-ga4-banner.png",
-  isShow: true,
-  description:
-    "GA4 can show landing sessions and key events from tagged traffic, but it should be treated as one part of the evidence. Consent, cross-domain booking engines and offline sales can create gaps that require testing and reconciliation.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads Conversion Tracking with GA4",
+    slug: "chatgpt-ads-conversion-tracking-with-ga4",
+    url: "/blog banner/44-chatgpt-ads-conversion-tracking-with-ga4-banner.png",
+    isShow: true,
+    description:
+      "GA4 can show landing sessions and key events from tagged traffic, but it should be treated as one part of the evidence. Consent, cross-domain booking engines and offline sales can create gaps that require testing and reconciliation.",
+    data: `
     <h2>ChatGPT Ads Conversion Tracking with GA4</h2>
 
     <p>GA4 can show landing sessions and key events from tagged traffic, but it should be treated as one part of the evidence. Consent, cross-domain booking engines and offline sales can create gaps that require testing and reconciliation.</p>
@@ -15258,15 +15259,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "UTM Parameters for ChatGPT Ads: Complete Guide",
-  slug: "utm-parameters-for-chatgpt-ads-complete-guide",
-  url: "/blog banner/45-utm-parameters-for-chatgpt-ads-complete-guide-banner.png",
-  isShow: true,
-  description:
-    "Consistent UTM parameters let analytics and CRM systems identify ChatGPT Ads traffic. The naming convention should be documented, lowercase, stable and detailed enough for decisions without becoming unmanageable.",
-  data: `
+  },
+  {
+    title: "UTM Parameters for ChatGPT Ads: Complete Guide",
+    slug: "utm-parameters-for-chatgpt-ads-complete-guide",
+    url: "/blog banner/45-utm-parameters-for-chatgpt-ads-complete-guide-banner.png",
+    isShow: true,
+    description:
+      "Consistent UTM parameters let analytics and CRM systems identify ChatGPT Ads traffic. The naming convention should be documented, lowercase, stable and detailed enough for decisions without becoming unmanageable.",
+    data: `
     <h2>UTM Parameters for ChatGPT Ads: Complete Guide</h2>
 
     <p>Consistent UTM parameters let analytics and CRM systems identify ChatGPT Ads traffic. The naming convention should be documented, lowercase, stable and detailed enough for decisions without becoming unmanageable.</p>
@@ -15402,15 +15403,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Why ChatGPT Ads Get Clicks but No Hotel Bookings",
-  slug: "why-chatgpt-ads-get-clicks-but-no-hotel-bookings",
-  url: "/blog banner/46-why-chatgpt-ads-get-clicks-but-no-hotel-bookings-banner.png",
-  isShow: true,
-  description:
-    "Clicks without bookings usually indicate a mismatch in intent, offer, trust, price, page experience, booking flow or follow-up. The right response is a structured diagnosis, not an immediate increase in budget.",
-  data: `
+  },
+  {
+    title: "Why ChatGPT Ads Get Clicks but No Hotel Bookings",
+    slug: "why-chatgpt-ads-get-clicks-but-no-hotel-bookings",
+    url: "/blog banner/46-why-chatgpt-ads-get-clicks-but-no-hotel-bookings-banner.png",
+    isShow: true,
+    description:
+      "Clicks without bookings usually indicate a mismatch in intent, offer, trust, price, page experience, booking flow or follow-up. The right response is a structured diagnosis, not an immediate increase in budget.",
+    data: `
     <h2>Why ChatGPT Ads Get Clicks but No Hotel Bookings</h2>
 
     <p>Clicks without bookings usually indicate a mismatch in intent, offer, trust, price, page experience, booking flow or follow-up. The right response is a structured diagnosis, not an immediate increase in budget.</p>
@@ -15546,15 +15547,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads Landing Page Checklist for Hotels",
-  slug: "chatgpt-ads-landing-page-checklist-for-hotels",
-  url: "/blog banner/47-chatgpt-ads-landing-page-checklist-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "A strong landing page makes the property easy to evaluate and easy to contact. It should load quickly, answer the specific travel need, show credible proof and present a clear booking or enquiry action.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads Landing Page Checklist for Hotels",
+    slug: "chatgpt-ads-landing-page-checklist-for-hotels",
+    url: "/blog banner/47-chatgpt-ads-landing-page-checklist-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "A strong landing page makes the property easy to evaluate and easy to contact. It should load quickly, answer the specific travel need, show credible proof and present a clear booking or enquiry action.",
+    data: `
     <h2>ChatGPT Ads Landing Page Checklist for Hotels</h2>
 
     <p>A strong landing page makes the property easy to evaluate and easy to contact. It should load quickly, answer the specific travel need, show credible proof and present a clear booking or enquiry action.</p>
@@ -15690,16 +15691,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Improve ChatGPT Ads Conversion Rate for Resorts",
-  slug: 
-  "how-to-improve-chatgpt-ads-conversion-rate-for-resorts",
-  url: "/blog banner/48-how-to-improve-chatgpt-ads-conversion-rate-for-resorts-banner.png",
-  isShow: true,
-  description:
-    "Conversion improves when resorts reduce uncertainty about location, experience, package, dates, inclusions and next steps. Optimisation should cover the full journey, including sales response after the form or WhatsApp click.",
-  data: `
+  },
+  {
+    title: "How to Improve ChatGPT Ads Conversion Rate for Resorts",
+    slug: "how-to-improve-chatgpt-ads-conversion-rate-for-resorts",
+    url: "/blog banner/48-how-to-improve-chatgpt-ads-conversion-rate-for-resorts-banner.png",
+    isShow: true,
+    description:
+      "Conversion improves when resorts reduce uncertainty about location, experience, package, dates, inclusions and next steps. Optimisation should cover the full journey, including sales response after the form or WhatsApp click.",
+    data: `
     <h2>How to Improve ChatGPT Ads Conversion Rate for Resorts</h2>
 
     <p>Conversion improves when resorts reduce uncertainty about location, experience, package, dates, inclusions and next steps. Optimisation should cover the full journey, including sales response after the form or WhatsApp click.</p>
@@ -15835,15 +15835,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Get Your Hotel Recommended by ChatGPT",
-  slug: "how-to-get-your-hotel-recommended-by-chatgpt",
-  url: "/blog banner/49-how-to-get-your-hotel-recommended-by-chatgpt-banner.png",
-  isShow: true,
-  description:
-    "No hotel can guarantee a recommendation, but it can improve the quality and accessibility of information that AI systems may use. Clear facts, genuine usefulness, trusted mentions and consistent reputation signals are the foundation.",
-  data: `
+  },
+  {
+    title: "How to Get Your Hotel Recommended by ChatGPT",
+    slug: "how-to-get-your-hotel-recommended-by-chatgpt",
+    url: "/blog banner/49-how-to-get-your-hotel-recommended-by-chatgpt-banner.png",
+    isShow: true,
+    description:
+      "No hotel can guarantee a recommendation, but it can improve the quality and accessibility of information that AI systems may use. Clear facts, genuine usefulness, trusted mentions and consistent reputation signals are the foundation.",
+    data: `
     <h2>How to Get Your Hotel Recommended by ChatGPT</h2>
 
     <p>No hotel can guarantee a recommendation, but it can improve the quality and accessibility of information that AI systems may use. Clear facts, genuine usefulness, trusted mentions and consistent reputation signals are the foundation.</p>
@@ -15969,15 +15969,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "GEO for Hotels: Generative Engine Optimization Guide",
-  slug: "geo-for-hotels-generative-engine-optimization-guide",
-  url: "/blog banner/50-geo-for-hotels-generative-engine-optimization-guide-banner.png",
-  isShow: true,
-  description:
-    "GEO is the practice of making content understandable, useful and verifiable for generative answer systems. It complements SEO rather than replacing crawlability, authority, internal linking and excellent pages.",
-  data: `
+  },
+  {
+    title: "GEO for Hotels: Generative Engine Optimization Guide",
+    slug: "geo-for-hotels-generative-engine-optimization-guide",
+    url: "/blog banner/50-geo-for-hotels-generative-engine-optimization-guide-banner.png",
+    isShow: true,
+    description:
+      "GEO is the practice of making content understandable, useful and verifiable for generative answer systems. It complements SEO rather than replacing crawlability, authority, internal linking and excellent pages.",
+    data: `
     <h2>GEO for Hotels: Generative Engine Optimization Guide</h2>
 
     <p>GEO is the practice of making content understandable, useful and verifiable for generative answer systems. It complements SEO rather than replacing crawlability, authority, internal linking and excellent pages.</p>
@@ -16103,15 +16103,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How Hotels Can Rank in ChatGPT Results",
-  slug: "how-hotels-can-rank-in-chatgpt-results",
-  url: "/blog banner/51-how-hotels-can-rank-in-chatgpt-results-banner.png",
-  isShow: true,
-  description:
-    "ChatGPT does not operate like a fixed ten-blue-link ranking. Visibility can vary by prompt, location, freshness and available sources, so hotels should optimise for accurate inclusion and recommendation fit rather than a permanent rank.",
-  data: `
+  },
+  {
+    title: "How Hotels Can Rank in ChatGPT Results",
+    slug: "how-hotels-can-rank-in-chatgpt-results",
+    url: "/blog banner/51-how-hotels-can-rank-in-chatgpt-results-banner.png",
+    isShow: true,
+    description:
+      "ChatGPT does not operate like a fixed ten-blue-link ranking. Visibility can vary by prompt, location, freshness and available sources, so hotels should optimise for accurate inclusion and recommendation fit rather than a permanent rank.",
+    data: `
     <h2>How Hotels Can Rank in ChatGPT Results</h2>
 
     <p>ChatGPT does not operate like a fixed ten-blue-link ranking. Visibility can vary by prompt, location, freshness and available sources, so hotels should optimise for accurate inclusion and recommendation fit rather than a permanent rank.</p>
@@ -16237,15 +16237,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Hotel SEO vs AEO vs GEO: What Is the Difference?",
-  slug: "hotel-seo-vs-aeo-vs-geo-what-is-the-difference",
-  url: "/blog banner/52-hotel-seo-vs-aeo-vs-geo-what-is-the-difference-banner.png",
-  isShow: true,
-  description:
-    "SEO focuses on discoverability in search, AEO on direct answers and GEO on visibility within generative responses. Their execution overlaps substantially, and hotels should manage them as one coordinated information-quality programme.",
-  data: `
+  },
+  {
+    title: "Hotel SEO vs AEO vs GEO: What Is the Difference?",
+    slug: "hotel-seo-vs-aeo-vs-geo-what-is-the-difference",
+    url: "/blog banner/52-hotel-seo-vs-aeo-vs-geo-what-is-the-difference-banner.png",
+    isShow: true,
+    description:
+      "SEO focuses on discoverability in search, AEO on direct answers and GEO on visibility within generative responses. Their execution overlaps substantially, and hotels should manage them as one coordinated information-quality programme.",
+    data: `
     <h2>Hotel SEO vs AEO vs GEO: What Is the Difference?</h2>
 
     <p>SEO focuses on discoverability in search, AEO on direct answers and GEO on visibility within generative responses. Their execution overlaps substantially, and hotels should manage them as one coordinated information-quality programme.</p>
@@ -16371,15 +16371,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Make a Hotel Website AI-Search Friendly",
-  slug: "how-to-make-a-hotel-website-ai-search-friendly",
-  url: "/blog banner/53-how-to-make-a-hotel-website-ai-search-friendly-banner.png",
-  isShow: true,
-  description:
-    "An AI-search-friendly hotel website is crawlable, specific, structured and genuinely helpful. Key facts should exist as text on stable URLs instead of being trapped in images, scripts or vague marketing language.",
-  data: `
+  },
+  {
+    title: "How to Make a Hotel Website AI-Search Friendly",
+    slug: "how-to-make-a-hotel-website-ai-search-friendly",
+    url: "/blog banner/53-how-to-make-a-hotel-website-ai-search-friendly-banner.png",
+    isShow: true,
+    description:
+      "An AI-search-friendly hotel website is crawlable, specific, structured and genuinely helpful. Key facts should exist as text on stable URLs instead of being trapped in images, scripts or vague marketing language.",
+    data: `
     <h2>How to Make a Hotel Website AI-Search Friendly</h2>
 
     <p>An AI-search-friendly hotel website is crawlable, specific, structured and genuinely helpful. Key facts should exist as text on stable URLs instead of being trapped in images, scripts or vague marketing language.</p>
@@ -16505,15 +16505,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Schema Markup for Hotel and Resort Websites",
-  slug: "schema-markup-for-hotel-and-resort-websites",
-  url: "/blog banner/54-schema-markup-for-hotel-and-resort-websites-banner.png",
-  isShow: true,
-  description:
-    "Schema markup helps machines interpret a hotel's identity, location, accommodation details, offers, FAQs and organisation information. It must match visible page content and should never be used to invent ratings, prices or availability.",
-  data: `
+  },
+  {
+    title: "Schema Markup for Hotel and Resort Websites",
+    slug: "schema-markup-for-hotel-and-resort-websites",
+    url: "/blog banner/54-schema-markup-for-hotel-and-resort-websites-banner.png",
+    isShow: true,
+    description:
+      "Schema markup helps machines interpret a hotel's identity, location, accommodation details, offers, FAQs and organisation information. It must match visible page content and should never be used to invent ratings, prices or availability.",
+    data: `
     <h2>Schema Markup for Hotel and Resort Websites</h2>
 
     <p>Schema markup helps machines interpret a hotel's identity, location, accommodation details, offers, FAQs and organisation information. It must match visible page content and should never be used to invent ratings, prices or availability.</p>
@@ -16639,15 +16639,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How Reviews Influence Hotel Visibility in AI Search",
-  slug: "how-reviews-influence-hotel-visibility-in-ai-search",
-  url: "/blog banner/55-how-reviews-influence-hotel-visibility-in-ai-search-banner.png",
-  isShow: true,
-  description:
-    "Reviews help travellers and systems understand patterns in service, location and experience. Hotels should improve operational quality, request honest feedback and respond constructively rather than attempting to manipulate sentiment.",
-  data: `
+  },
+  {
+    title: "How Reviews Influence Hotel Visibility in AI Search",
+    slug: "how-reviews-influence-hotel-visibility-in-ai-search",
+    url: "/blog banner/55-how-reviews-influence-hotel-visibility-in-ai-search-banner.png",
+    isShow: true,
+    description:
+      "Reviews help travellers and systems understand patterns in service, location and experience. Hotels should improve operational quality, request honest feedback and respond constructively rather than attempting to manipulate sentiment.",
+    data: `
     <h2>How Reviews Influence Hotel Visibility in AI Search</h2>
 
     <p>Reviews help travellers and systems understand patterns in service, location and experience. Hotels should improve operational quality, request honest feedback and respond constructively rather than attempting to manipulate sentiment.</p>
@@ -16773,15 +16773,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Optimize Hotel FAQs for ChatGPT and Google",
-  slug: "how-to-optimize-hotel-faqs-for-chatgpt-and-google",
-  url: "/blog banner/56-how-to-optimize-hotel-faqs-for-chatgpt-and-google-banner.png",
-  isShow: true,
-  description:
-    "Hotel FAQs work when they answer genuine pre-booking questions in clear language. They should reduce uncertainty about policies, location, facilities and experiences, while linking travellers to deeper pages or the booking path.",
-  data: `
+  },
+  {
+    title: "How to Optimize Hotel FAQs for ChatGPT and Google",
+    slug: "how-to-optimize-hotel-faqs-for-chatgpt-and-google",
+    url: "/blog banner/56-how-to-optimize-hotel-faqs-for-chatgpt-and-google-banner.png",
+    isShow: true,
+    description:
+      "Hotel FAQs work when they answer genuine pre-booking questions in clear language. They should reduce uncertainty about policies, location, facilities and experiences, while linking travellers to deeper pages or the booking path.",
+    data: `
     <h2>How to Optimize Hotel FAQs for ChatGPT and Google</h2>
 
     <p>Hotel FAQs work when they answer genuine pre-booking questions in clear language. They should reduce uncertainty about policies, location, facilities and experiences, while linking travellers to deeper pages or the booking path.</p>
@@ -16907,15 +16907,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Track Traffic and Bookings Coming from AI Assistants",
-  slug: "how-to-track-traffic-and-bookings-coming-from-ai-assistants",
-  url: "/blog banner/57-how-to-track-traffic-and-bookings-coming-from-ai-assistants-banner.png",
-  isShow: true,
-  description:
-    "AI referral measurement is imperfect because referrers, apps and assisted journeys vary. Hotels should combine analytics source data, landing-page parameters, CRM self-reporting and booking reconciliation to build a directional view.",
-  data: `
+  },
+  {
+    title: "How to Track Traffic and Bookings Coming from AI Assistants",
+    slug: "how-to-track-traffic-and-bookings-coming-from-ai-assistants",
+    url: "/blog banner/57-how-to-track-traffic-and-bookings-coming-from-ai-assistants-banner.png",
+    isShow: true,
+    description:
+      "AI referral measurement is imperfect because referrers, apps and assisted journeys vary. Hotels should combine analytics source data, landing-page parameters, CRM self-reporting and booking reconciliation to build a directional view.",
+    data: `
     <h2>How to Track Traffic and Bookings Coming from AI Assistants</h2>
 
     <p>AI referral measurement is imperfect because referrers, apps and assisted journeys vary. Hotels should combine analytics source data, landing-page parameters, CRM self-reporting and booking reconciliation to build a directional view.</p>
@@ -17043,15 +17043,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Why Hotel Websites Need Original Destination Content for AI Search",
-  slug: "why-hotel-websites-need-original-destination-content-for-ai-search",
-  url: "/blog banner/58-why-hotel-websites-need-original-destination-content-for-ai-search-banner.png",
-  isShow: true,
-  description:
-    "Generic destination summaries add little value because the same information exists everywhere. Hotels can contribute first-hand neighbourhood knowledge, practical itineraries and property-specific context that makes planning easier.",
-  data: `
+  },
+  {
+    title: "Why Hotel Websites Need Original Destination Content for AI Search",
+    slug: "why-hotel-websites-need-original-destination-content-for-ai-search",
+    url: "/blog banner/58-why-hotel-websites-need-original-destination-content-for-ai-search-banner.png",
+    isShow: true,
+    description:
+      "Generic destination summaries add little value because the same information exists everywhere. Hotels can contribute first-hand neighbourhood knowledge, practical itineraries and property-specific context that makes planning easier.",
+    data: `
     <h2>Why Hotel Websites Need Original Destination Content for AI Search</h2>
 
     <p>Generic destination summaries add little value because the same information exists everywhere. Hotels can contribute first-hand neighbourhood knowledge, practical itineraries and property-specific context that makes planning easier.</p>
@@ -17177,15 +17177,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads with AI WhatsApp Automation for Hotels",
-  slug: "chatgpt-ads-with-ai-whatsapp-automation-for-hotels",
-  url: "/blog banner/59-chatgpt-ads-with-ai-whatsapp-automation-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "ChatGPT Ads can create discovery while WhatsApp can support consent-based qualification and assisted booking. The transition must preserve the campaign context so guests do not have to repeat their request.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads with AI WhatsApp Automation for Hotels",
+    slug: "chatgpt-ads-with-ai-whatsapp-automation-for-hotels",
+    url: "/blog banner/59-chatgpt-ads-with-ai-whatsapp-automation-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "ChatGPT Ads can create discovery while WhatsApp can support consent-based qualification and assisted booking. The transition must preserve the campaign context so guests do not have to repeat their request.",
+    data: `
     <h2>ChatGPT Ads with AI WhatsApp Automation for Hotels</h2>
 
     <p>ChatGPT Ads can create discovery while WhatsApp can support consent-based qualification and assisted booking. The transition must preserve the campaign context so guests do not have to repeat their request.</p>
@@ -17311,15 +17311,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Automatically Follow Up ChatGPT Ad Leads on WhatsApp",
-  slug: "how-to-automatically-follow-up-chatgpt-ad-leads-on-whatsapp",
-  url: "/blog banner/60-how-to-automatically-follow-up-chatgpt-ad-leads-on-whatsapp-banner.png",
-  isShow: true,
-  description:
-    "Automated follow-up should acknowledge the enquiry, confirm consent, collect stay details and route valuable opportunities to a person. It should feel useful and timely, not like an endless promotional sequence.",
-  data: `
+  },
+  {
+    title: "How to Automatically Follow Up ChatGPT Ad Leads on WhatsApp",
+    slug: "how-to-automatically-follow-up-chatgpt-ad-leads-on-whatsapp",
+    url: "/blog banner/60-how-to-automatically-follow-up-chatgpt-ad-leads-on-whatsapp-banner.png",
+    isShow: true,
+    description:
+      "Automated follow-up should acknowledge the enquiry, confirm consent, collect stay details and route valuable opportunities to a person. It should feel useful and timely, not like an endless promotional sequence.",
+    data: `
     <h2>How to Automatically Follow Up ChatGPT Ad Leads on WhatsApp</h2>
 
     <p>Automated follow-up should acknowledge the enquiry, confirm consent, collect stay details and route valuable opportunities to a person. It should feel useful and timely, not like an endless promotional sequence.</p>
@@ -17445,15 +17445,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads with Hotel CRM Integration",
-  slug: "chatgpt-ads-with-hotel-crm-integration",
-  url: "/blog banner/61-chatgpt-ads-with-hotel-crm-integration-banner.png",
-  isShow: true,
-  description:
-    "CRM integration turns anonymous media performance into a visible sales pipeline. Every lead should carry source, campaign, requested dates, value, stage, owner and final booking outcome.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads with Hotel CRM Integration",
+    slug: "chatgpt-ads-with-hotel-crm-integration",
+    url: "/blog banner/61-chatgpt-ads-with-hotel-crm-integration-banner.png",
+    isShow: true,
+    description:
+      "CRM integration turns anonymous media performance into a visible sales pipeline. Every lead should carry source, campaign, requested dates, value, stage, owner and final booking outcome.",
+    data: `
     <h2>ChatGPT Ads with Hotel CRM Integration</h2>
 
     <p>CRM integration turns anonymous media performance into a visible sales pipeline. Every lead should carry source, campaign, requested dates, value, stage, owner and final booking outcome.</p>
@@ -17579,15 +17579,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Using AI Voice Agents to Convert Hotel Advertising Leads",
-  slug: "using-ai-voice-agents-to-convert-hotel-advertising-leads",
-  url: "/blog banner/62-using-ai-voice-agents-to-convert-hotel-advertising-leads-banner.png",
-  isShow: true,
-  description:
-    "AI voice agents can handle timely qualification, reminders and routine questions when consent and escalation are designed properly. High-value, emotional or complex conversations should move smoothly to trained hotel staff.",
-  data: `
+  },
+  {
+    title: "Using AI Voice Agents to Convert Hotel Advertising Leads",
+    slug: "using-ai-voice-agents-to-convert-hotel-advertising-leads",
+    url: "/blog banner/62-using-ai-voice-agents-to-convert-hotel-advertising-leads-banner.png",
+    isShow: true,
+    description:
+      "AI voice agents can handle timely qualification, reminders and routine questions when consent and escalation are designed properly. High-value, emotional or complex conversations should move smoothly to trained hotel staff.",
+    data: `
     <h2>Using AI Voice Agents to Convert Hotel Advertising Leads</h2>
 
     <p>AI voice agents can handle timely qualification, reminders and routine questions when consent and escalation are designed properly. High-value, emotional or complex conversations should move smoothly to trained hotel staff.</p>
@@ -17713,15 +17713,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads to WhatsApp to Booking: Complete Hotel Funnel",
-  slug: "chatgpt-ads-to-whatsapp-to-booking-complete-hotel-funnel",
-  url: "/blog banner/63-chatgpt-ads-to-whatsapp-to-booking-complete-hotel-funnel-banner.png",
-  isShow: true,
-  description:
-    "The complete funnel connects conversational discovery, a relevant click, WhatsApp qualification, human assistance, payment or booking, and revenue attribution. Each handoff should preserve context and ownership.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads to WhatsApp to Booking: Complete Hotel Funnel",
+    slug: "chatgpt-ads-to-whatsapp-to-booking-complete-hotel-funnel",
+    url: "/blog banner/63-chatgpt-ads-to-whatsapp-to-booking-complete-hotel-funnel-banner.png",
+    isShow: true,
+    description:
+      "The complete funnel connects conversational discovery, a relevant click, WhatsApp qualification, human assistance, payment or booking, and revenue attribution. Each handoff should preserve context and ownership.",
+    data: `
     <h2>ChatGPT Ads to WhatsApp to Booking: Complete Hotel Funnel</h2>
 
     <p>The complete funnel connects conversational discovery, a relevant click, WhatsApp qualification, human assistance, payment or booking, and revenue attribution. Each handoff should preserve context and ownership.</p>
@@ -17847,15 +17847,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How Hotel Chatbots Convert ChatGPT Advertising Traffic",
-  slug: "how-hotel-chatbots-convert-chatgpt-advertising-traffic",
-  url: "/blog banner/64-how-hotel-chatbots-convert-chatgpt-advertising-traffic-banner.png",
-  isShow: true,
-  description:
-    "A website chatbot can convert ad traffic by answering immediate questions, collecting trip details and offering the right next step. It must use accurate hotel information and know when it cannot answer reliably.",
-  data: `
+  },
+  {
+    title: "How Hotel Chatbots Convert ChatGPT Advertising Traffic",
+    slug: "how-hotel-chatbots-convert-chatgpt-advertising-traffic",
+    url: "/blog banner/64-how-hotel-chatbots-convert-chatgpt-advertising-traffic-banner.png",
+    isShow: true,
+    description:
+      "A website chatbot can convert ad traffic by answering immediate questions, collecting trip details and offering the right next step. It must use accurate hotel information and know when it cannot answer reliably.",
+    data: `
     <h2>How Hotel Chatbots Convert ChatGPT Advertising Traffic</h2>
 
     <p>A website chatbot can convert ad traffic by answering immediate questions, collecting trip details and offering the right next step. It must use accurate hotel information and know when it cannot answer reliably.</p>
@@ -17981,15 +17981,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "Building an AI-Powered Direct Booking Funnel for Hotels",
-  slug: "building-an-ai-powered-direct-booking-funnel-for-hotels",
-  url: "/blog banner/65-building-an-ai-powered-direct-booking-funnel-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "An AI-powered booking funnel uses automation to accelerate decisions while keeping rates, inventory, consent and revenue controls authoritative. It should make staff more responsive without creating conflicting promises.",
-  data: `
+  },
+  {
+    title: "Building an AI-Powered Direct Booking Funnel for Hotels",
+    slug: "building-an-ai-powered-direct-booking-funnel-for-hotels",
+    url: "/blog banner/65-building-an-ai-powered-direct-booking-funnel-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "An AI-powered booking funnel uses automation to accelerate decisions while keeping rates, inventory, consent and revenue controls authoritative. It should make staff more responsive without creating conflicting promises.",
+    data: `
     <h2>Building an AI-Powered Direct Booking Funnel for Hotels</h2>
 
     <p>An AI-powered booking funnel uses automation to accelerate decisions while keeping rates, inventory, consent and revenue controls authoritative. It should make staff more responsive without creating conflicting promises.</p>
@@ -18115,15 +18115,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How Eazotel Helps Hotels Manage Ads, CRM and Guest Automation",
-  slug: "how-eazotel-helps-hotels-manage-ads-crm-and-guest-automation",
-  url: "/blog banner/66-how-eazotel-helps-hotels-manage-ads-crm-and-guest-automation-banner.png",
-  isShow: true,
-  description:
-    "Eazotel brings performance marketing, landing experiences, CRM visibility and AI-assisted conversations into a coordinated hotel growth workflow. The intended outcome is faster response, clearer accountability and more measurable direct demand.",
-  data: `
+  },
+  {
+    title: "How Eazotel Helps Hotels Manage Ads, CRM and Guest Automation",
+    slug: "how-eazotel-helps-hotels-manage-ads-crm-and-guest-automation",
+    url: "/blog banner/66-how-eazotel-helps-hotels-manage-ads-crm-and-guest-automation-banner.png",
+    isShow: true,
+    description:
+      "Eazotel brings performance marketing, landing experiences, CRM visibility and AI-assisted conversations into a coordinated hotel growth workflow. The intended outcome is faster response, clearer accountability and more measurable direct demand.",
+    data: `
     <h2>How Eazotel Helps Hotels Manage Ads, CRM and Guest Automation</h2>
 
     <p>Eazotel brings performance marketing, landing experiences, CRM visibility and AI-assisted conversations into a coordinated hotel growth workflow. The intended outcome is faster response, clearer accountability and more measurable direct demand.</p>
@@ -18249,15 +18249,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "How to Combine ChatGPT, Google and Meta Ads for Hotels",
-  slug: "how-to-combine-chatgpt-google-and-meta-ads-for-hotels",
-  url: "/blog banner/67-how-to-combine-chatgpt-google-and-meta-ads-for-hotels-banner.png",
-  isShow: true,
-  description:
-    "ChatGPT, Google and Meta should not duplicate one another blindly. Assign each platform a role in planning, active demand capture or visual discovery, then use shared offers, attribution and CRM stages to judge contribution.",
-  data: `
+  },
+  {
+    title: "How to Combine ChatGPT, Google and Meta Ads for Hotels",
+    slug: "how-to-combine-chatgpt-google-and-meta-ads-for-hotels",
+    url: "/blog banner/67-how-to-combine-chatgpt-google-and-meta-ads-for-hotels-banner.png",
+    isShow: true,
+    description:
+      "ChatGPT, Google and Meta should not duplicate one another blindly. Assign each platform a role in planning, active demand capture or visual discovery, then use shared offers, attribution and CRM stages to judge contribution.",
+    data: `
     <h2>How to Combine ChatGPT, Google and Meta Ads for Hotels</h2>
 
     <p>ChatGPT, Google and Meta should not duplicate one another blindly. Assign each platform a role in planning, active demand capture or visual discovery, then use shared offers, attribution and CRM stages to judge contribution.</p>
@@ -18383,15 +18383,15 @@ Interest in chatgpt ads management services for hotels in india will create nois
 
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
-},
-{
-  title: "ChatGPT Ads for Hotels & Resorts: Complete Guide 2026",
-  slug: "chatgpt-ads-for-hotels-resorts",
-  url: "",
-  isShow: true,
-  description:
-    "Learn how hotels and resorts can use ChatGPT Ads to reach high-intent travellers, promote direct bookings and build an AI-powered marketing strategy.",
-  data: `
+  },
+  {
+    title: "ChatGPT Ads for Hotels & Resorts: Complete Guide 2026",
+    slug: "chatgpt-ads-for-hotels-resorts",
+    url: "",
+    isShow: true,
+    description:
+      "Learn how hotels and resorts can use ChatGPT Ads to reach high-intent travellers, promote direct bookings and build an AI-powered marketing strategy.",
+    data: `
     <h2>ChatGPT Ads for Hotels & Resorts</h2>
 
     <p>Travellers no longer rely only on Google, online travel agencies (OTAs) and social media to plan a holiday. They are increasingly using AI assistants to research destinations, compare properties, plan itineraries and decide where to stay.</p>
@@ -18688,8 +18688,196 @@ Interest in chatgpt ads management services for hotels in india will create nois
       <li>Ads Manager Availability</li>
     </ul>
   `,
-},
+  },
+  {
+    title:
+      "WhatsApp Service Message Pricing Changes: What Businesses and Hotel Technology Platforms Need to Know",
+    slug: "whatsapp-service-message-pricing-changes",
+    url: "",
+    isShow: true,
+    description:
+      "Learn what Meta's October 1, 2026 WhatsApp service-message pricing change means for businesses, hotels and AI-powered WhatsApp systems, including message tracking, billing and usage management.",
+    data: `
+    <h2>WhatsApp Service Message Pricing Changes</h2>
 
+    <p>WhatsApp is an increasingly important communication channel for businesses, particularly for customer support, automated conversations, booking assistance and AI-powered sales.</p>
+
+    <p>From October 1, 2026, Meta is introducing a new charging model for WhatsApp service messages. For businesses using WhatsApp Business Platform, this change makes message-usage monitoring and billing management more important than ever.</p>
+
+    <p>If your business uses WhatsApp for customer support, automated conversations, booking assistance, or AI-powered sales, this change is worth understanding before the October 1 deadline.</p>
+
+    <h2>What Is Changing on October 1, 2026?</h2>
+
+    <p>According to a notification sent by WhatsApp/Meta, service messages will move to a per-message charging model from October 1, 2026. At the same time, Meta is introducing a free monthly allowance of 1,000 service messages for every business phone number.</p>
+
+    <table style="width: 100%; border-collapse: collapse; border: 1px solid #d1d5db;">
+      <thead>
+        <tr>
+          <th style="border: 1px solid #d1d5db; padding: 12px; text-align: left;">Monthly service messages</th>
+          <th style="border: 1px solid #d1d5db; padding: 12px; text-align: left;">Free messages</th>
+          <th style="border: 1px solid #d1d5db; padding: 12px; text-align: left;">Billable messages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">500</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">500</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">0</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">1,000</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">1,000</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">0</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">1,001</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">1,000</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">1</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">2,500</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">1,000</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">1,500</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">5,000</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">1,000</td>
+          <td style="border: 1px solid #d1d5db; padding: 12px;">4,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The allowance is calculated per WhatsApp business phone number, rather than as one shared allowance across an entire business or software platform. The allowance resets each month.</p>
+
+    <h2>What Are Service Messages?</h2>
+
+    <p>Service messages are messages associated with customer-initiated interactions and customer service conversations. For businesses, these can form an important part of automated WhatsApp workflows.</p>
+
+    <p>Examples include:</p>
+
+    <ul>
+      <li>Responding to customer enquiries</li>
+      <li>Providing information requested by a customer</li>
+      <li>Answering booking-related questions</li>
+      <li>Sharing availability information</li>
+      <li>Sending requested documents</li>
+      <li>Providing customer support</li>
+      <li>AI-generated responses to customer enquiries</li>
+    </ul>
+
+    <h2>Why This Matters for AI WhatsApp Systems</h2>
+
+    <p>The change is particularly relevant to businesses using AI-powered WhatsApp sales and customer-service systems.</p>
+
+    <p>A single hotel enquiry can involve several exchanges: availability, guest details, room options, tariffs and booking information. At scale, this makes message-level usage tracking essential.</p>
+
+    <h2>What Businesses Should Do Before October 1</h2>
+
+    <h3>1. Review WhatsApp Message Volume</h3>
+
+    <p>Understand how many messages each business phone number sends every month.</p>
+
+    <h3>2. Track Message Categories</h3>
+
+    <p>Keep service, marketing, utility and authentication usage separate because pricing treatment can differ.</p>
+
+    <h3>3. Review Payment Setup</h3>
+
+    <p>The Meta notification highlights the need for a payment method so paid service-message delivery can continue after the free allowance is exhausted.</p>
+
+    <h2>What This Means for Eazotel</h2>
+
+    <p>For a hospitality technology platform such as Eazotel, this change is particularly important.</p>
+
+    <p>Eazotel WhatsApp workflows can include AI WhatsApp Sales Agent conversations, hotel availability enquiries, booking conversations, customer support, automated responses, PDFs and hotel information, carousel messages and human-agent conversations.</p>
+
+    <p>As hotels increasingly use AI to manage WhatsApp enquiries, monitoring message consumption becomes an important part of the platform.</p>
+
+    <h2>A Better WhatsApp Usage Dashboard</h2>
+
+    <p>A WhatsApp usage dashboard can provide hotels with a clear view of their monthly messaging consumption.</p>
+
+    <p><strong>WhatsApp Usage — October 2026</strong></p>
+
+    <ul>
+      <li>Service messages: 743 / 1,000 free</li>
+      <li>Free messages remaining: 257</li>
+      <li>Billable service messages: 0</li>
+      <li>Estimated Meta service cost: ₹0</li>
+    </ul>
+
+    <p>The dashboard should also show marketing, utility and authentication usage separately rather than combining all WhatsApp traffic into one number.</p>
+
+    <h2>Why Message-Level Tracking Is Important</h2>
+
+    <p>A simple monthly counter is not enough.</p>
+
+    <p>A robust WhatsApp platform should maintain an auditable message ledger containing the WhatsApp message ID, business phone number, hotel/customer account, message category, status, sent and delivered timestamps, billing period, applicable rate, and whether the message consumed free or billable usage.</p>
+
+    <h2>Avoid Double Counting</h2>
+
+    <p>WhatsApp webhooks can generate status events and systems need to handle retries safely.</p>
+
+    <p>If the same delivery event is received twice, the system must count it once—not twice. Every WhatsApp message should therefore have a unique identifier and the usage system should be idempotent.</p>
+
+    <h2>Don't Hard-Code Meta's Pricing</h2>
+
+    <p>A WhatsApp platform should not hard-code one Meta message price into the application.</p>
+
+    <p>Pricing should be maintained through a configurable, versioned rate card with effective dates. This allows future Meta pricing changes without requiring a software deployment.</p>
+
+    <h2>What Hotel Businesses Should Look For</h2>
+
+    <ul>
+      <li>WhatsApp connectivity and account status</li>
+      <li>Monthly message usage</li>
+      <li>Free allowance remaining</li>
+      <li>Billable service-message usage</li>
+      <li>Separate category-level usage</li>
+      <li>Estimated messaging cost</li>
+      <li>AI-generated message usage</li>
+      <li>Meta payment/billing status</li>
+    </ul>
+
+    <h2>The Bigger Opportunity for Hotel Technology</h2>
+
+    <p>WhatsApp is becoming more than a communication channel for hotels.</p>
+
+    <p>It can function as a digital sales and service channel where a guest discovers a property, asks about availability, receives pricing and information, selects a room, completes a booking and receives assistance after booking.</p>
+
+    <p>When AI is introduced into this workflow, the number of automated interactions can increase substantially. That makes WhatsApp usage analytics an important component of hotel technology.</p>
+
+    <h2>How Eazotel Can Prepare</h2>
+
+    <ul>
+      <li>Track every WhatsApp message and its Meta message ID.</li>
+      <li>Use delivery status for usage accounting rather than simply counting API requests.</li>
+      <li>Store the applicable WhatsApp message category.</li>
+      <li>Maintain the 1,000-message allowance independently for every business phone number.</li>
+      <li>Calculate free versus billable service messages.</li>
+      <li>Show usage and estimated cost directly in the hotel dashboard.</li>
+      <li>Alert hotels as they approach their allowance.</li>
+    </ul>
+
+    <h2>A New Model for WhatsApp AI Pricing</h2>
+
+    <p>For companies providing AI WhatsApp solutions, it is useful to separate the software fee from Meta messaging costs.</p>
+
+    <p>A transparent structure can include an Eazotel platform fee, an AI service fee and WhatsApp/Meta messaging usage, or a defined usage allowance with additional usage charged separately.</p>
+
+    <h2>Final Thoughts</h2>
+
+    <p>The October 1, 2026 WhatsApp service-message pricing change is more than a billing update.</p>
+
+    <p>For businesses heavily dependent on WhatsApp, it highlights the need for better usage tracking, message categorization, billing visibility and cost management.</p>
+
+    <p>For hotel technology platforms, this creates an opportunity to bring WhatsApp usage directly into the hotel dashboard rather than leaving hotel owners to manage their WhatsApp consumption separately.</p>
+
+    <p>For Eazotel, the goal should be simple: make WhatsApp usage as transparent as room inventory, bookings and revenue — directly inside the hotel technology platform.</p>
+
+    <p><strong>Source note:</strong> The 1,000 free service-message allowance and October 1, 2026 effective date in this article are based on the Meta/WhatsApp notification provided to Eazotel. Applicable rates and implementation details should be verified against Meta's current WhatsApp Business Platform documentation and rate card before production deployment.</p>
+  `,
+  },
 ];
 export const blogData = blog;
 // export const blogData = blog.filter((item) => item.isShow === true);
@@ -18697,5 +18885,3 @@ export const blogData = blog;
 // tips-for-engagement-on-social-media-of-cloud-kitchen
 // <a class="hidden" target="_blank" rel="noreferrer" href="https://supportdigitalindia.in/business-whatsapp.php">SDI Business Whatsapp Sender| Bulk Whatsapp Marketing |
 //       Whatsapp API (supportdigitalindia.in)</a>
-
-

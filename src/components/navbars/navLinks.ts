@@ -111,7 +111,7 @@ export const navLinks: NavLinksProps[] = [
     href: "",
     subLinks: [
       {
-        label: "Blog",
+        label: "Blogs",
         href: "/blogs/",
       },
       {
