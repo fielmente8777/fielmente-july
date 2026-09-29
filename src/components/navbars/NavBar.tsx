@@ -16,7 +16,9 @@ const NavBar = () => {
     "/UK/",
     "/USA/",
   ];
-  if (pathName === "/thank-you/") {
+  // Pages that render their own header (e.g. Google Ads landing pages)
+  const noNavPaths = ["/thank-you/", "/google-ads-for-hotels/"];
+  if (noNavPaths.includes(pathName)) {
     return null;
   }
   if (paths.includes(pathName)) {

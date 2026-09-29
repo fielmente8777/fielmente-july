@@ -25,6 +25,7 @@ const Salesiq = () => {
     "/restaurant/",
     "/UK/",
     "/USA/",
+    "/google-ads-for-hotels/",
   ];
 
   const shouldHide = url.includes(pathname);

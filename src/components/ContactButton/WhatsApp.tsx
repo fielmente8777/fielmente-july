@@ -16,7 +16,8 @@ export default function Whatsapp() {
     "/landing-page/",
   ];
 
-  if (pathname === "/thank-you/") {
+  // Hidden where the page has its own call / WhatsApp bar
+  if (pathname === "/thank-you/" || pathname === "/google-ads-for-hotels/") {
     return null;
   }
 

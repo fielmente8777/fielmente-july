@@ -7,13 +7,9 @@ const Footer = () => {
   const pathName = usePathname();
   const RenderFooter = WebSiteFooter;
 
-
-
-
-
-
   switch (pathName) {
     case "/thank-you/":
+    case "/google-ads-for-hotels/":
       return null;
     case "/landing-page/":
       return <LandingFooter />;

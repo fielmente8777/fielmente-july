@@ -28,7 +28,7 @@ const CasStudyCard: React.FC<CasStudyCardProps> = ({
       </div>
       <div className="flex flex-col gap-2">
         <h2 className="text-xl font-bold text-[#363636] uppercase">
-          {slug.replace("-", " ")}
+          {slug.replaceAll("-", " ")}
         </h2>
         <p className="text-secondary text-lg"> <span className="font-semibold">Problem:</span> {description.slice(0, 50)} ...</p>
         <CtaBtn
