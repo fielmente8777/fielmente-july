@@ -9,6 +9,7 @@ import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
 import { casStudiesData } from "@/app/case-study/[story]/components/caseData";
 import { contacts } from "../../../contact";
+import { blogData } from "@/utils/blogdata";
 const Header = () => {
   const { setIsOpenPopupForm, setIsMobileNavOpen } = useAppContext();
 
@@ -37,7 +38,7 @@ const Header = () => {
     "/search-engine-marketing/",
   ];
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const isBlogDetail = blogData.some((blog) => `/${blog.slug}/` === pathName);
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50); // threshold
@@ -46,7 +47,6 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
 
   const openPopupForm = () => setIsOpenPopupForm(true);
 
@@ -58,7 +58,13 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed flex inset-x-0 items-center justify-center top-0 z-50  transition-all ease-in-out duration-300  ${paths.includes(pathName) ? (isScrolled ? "bg-white/90 backdrop-blur-sm" : "bg-transparent") : "bg-white/90 backdrop-blur-sm"}`}
+      className={`fixed flex inset-x-0 items-center justify-center top-0 z-50  transition-all ease-in-out duration-300  ${
+        isBlogDetail || paths.includes(pathName)
+          ? isScrolled
+            ? "bg-white/90 backdrop-blur-sm"
+            : "bg-transparent"
+          : "bg-white/90 backdrop-blur-sm"
+      }`}
     >
       <header className="max_screen w-full">
         <Container>
@@ -70,7 +76,7 @@ const Header = () => {
               >
                 <Image
                   src={
-                    paths.includes(pathName)
+                    isBlogDetail || paths.includes(pathName)
                       ? isScrolled
                         ? "/Logo.png"
                         : "/logo2.webp"
@@ -88,7 +94,7 @@ const Header = () => {
                     {link.type === "button" ? (
                       <button
                         onClick={() => handleNave(link.href)}
-                        className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark"}`}
+                        className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${isBlogDetail || paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark"}`}
                       >
                         {link.label}
                         <span className="span-border"></span>
@@ -101,7 +107,7 @@ const Header = () => {
                     ) : (
                       <Link
                         href={link.href ? link.href : "#"}
-                        className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark"}`}
+                        className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${isBlogDetail || paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark"}`}
                       >
                         {link.label}
                         <span className="span-border"></span>
@@ -175,7 +181,7 @@ const Header = () => {
                 <CallIcon />
               </Link>
               <button
-                className={` ${paths.includes(pathName) ? (isScrolled ? "text-[#6A7691]" : "text-white") : "text-[#6A7691]"}`}
+                className={` ${isBlogDetail || paths.includes(pathName) ? (isScrolled ? "text-[#6A7691]" : "text-white") : "text-[#6A7691]"}`}
                 onClick={() => setIsMobileNavOpen(true)}
               >
                 <span className="sr-only">Open main menu</span>
@@ -190,7 +196,7 @@ const Header = () => {
               onClick={() => openPopupForm()}
               className="inline-flex max-xl:hidden items-center text-lg backdrop-blur-md justify-center gap-2 px-8 py-3 tracking-wide text-white bg-[#1B1B1B]/95 shadow-inner rounded-full duration-300 ease-in-out active:scale-95"
             >
-              Get a Free Audit Report 
+              Get a Free Audit Report
               <span className="w-6 aspect-square flex items-center justify-center bg-white rounded-full text-primary">
                 <ICon />
               </span>
