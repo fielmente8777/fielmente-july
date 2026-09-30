@@ -68,6 +68,10 @@ export const footerData: FooterLinksPropstype = {
           href: "/industries-we-serve/",
         },
         {
+          label: "Our Products",
+          href: "/products/",
+        },
+        {
           label: "Services",
           href: "/hospitality-marketing-services/",
         },

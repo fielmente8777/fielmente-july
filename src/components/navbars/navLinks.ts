@@ -103,8 +103,17 @@ export const navLinks: NavLinksProps[] = [
   // },
   {
     label: "our Products",
-    href: "https://eazotel.com",
-    type: "button",
+    href: "/products/",
+    subLinks: [
+      { label: "Hotel CMS", href: "/products/hotel-cms/" },
+      { label: "Booking Engine", href: "/products/hotel-booking-engine/" },
+      { label: "Payment Gateway", href: "/products/hotel-payment-gateway/" },
+      { label: "Email Marketing", href: "/products/hotel-email-marketing/" },
+      { label: "WhatsApp Marketing", href: "/products/hotel-whatsapp-marketing/" },
+      { label: "Local SEO", href: "/products/hotel-local-seo/" },
+      { label: "AI Chatbot", href: "/products/hotel-ai-chatbot/" },
+      { label: "CRM", href: "/products/hotel-crm/" },
+    ],
   },
   {
     label: "Resources",

@@ -15,6 +15,18 @@ The agency's core value proposition lies in its deep understanding of the unique
 - [Google Ads Agency](https://fielmente.com/hospitality-marketing-services/google-ads-agency/): Discover Fielmente's Google Ads services for hospitality client acquisition.
 - [Hotel OTA Management](https://fielmente.com/hotel-ota-management/): Learn about Fielmente's services for managing Online Travel Agency bookings.
 
+## Products
+
+- [Hotel Software & Marketing Tools](https://fielmente.com/products/): Overview of Fielmente's eight hotel products that work from one dashboard.
+- [Hotel CMS](https://fielmente.com/products/hotel-cms/): Easily manage hotel content, offers, and promotions. Update menus, rooms, and packages in seconds, with no IT team needed.
+- [Hotel Booking Engine](https://fielmente.com/products/hotel-booking-engine/): Seamless booking engine designed for hotels. Boost direct reservations by 30%+ and reduce OTA commissions.
+- [Hotel Payment Gateway](https://fielmente.com/products/hotel-payment-gateway/): Secure, integrated payments for smooth guest checkout, supporting multi-currency and one-click payments.
+- [Hotel Email Marketing](https://fielmente.com/products/hotel-email-marketing/): Automated and personalised campaigns that deliver 4× higher open rates than traditional hotel emails.
+- [WhatsApp Marketing for Hotels](https://fielmente.com/products/hotel-whatsapp-marketing/): Engage guests where they spend most time. From booking confirmations to offers, drive faster responses and repeat stays.
+- [Local SEO for Hotels](https://fielmente.com/products/hotel-local-seo/): Rank higher on Google Maps and 'near me' searches. Hotels we optimise see 2× more calls and direct enquiries within weeks.
+- [AI Chatbot for Hotels](https://fielmente.com/products/hotel-ai-chatbot/): Automate enquiries, FAQs and booking questions, saving staff time and increasing conversions by 35%+.
+- [Hotel CRM](https://fielmente.com/products/hotel-crm/): Centralise guest data, manage loyalty and run targeted campaigns that increase repeat stays by 40%.
+
 ## Industries Served
 
 - [Industries We Serve](https://fielmente.com/industries-we-serve/): See the range of hospitality sectors Fielmente serves with marketing solutions.
@@ -107,4 +119,4 @@ The agency's core value proposition lies in its deep understanding of the unique
 
 ---
 
-This file was generated for fielmente.com using the [LLMs.txt Generator Tool](https://llmrefs.com/tools/llms-txt-generator)
+This file was generated for fielmente.com using the [LLMs.txt Generator Tool](https://llmrefs.com/tools/llms-txt-generator)

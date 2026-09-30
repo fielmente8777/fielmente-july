@@ -26,11 +26,11 @@ const OurProducts: React.FC<ProductsDataTypes> = ({
         {/* <div className="md:grid hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"> */}
         <div className="md:flex hidden flex-wrap justify-center gap-8.5 mt-10">
           {cards.map((card, index) => (
-            <ProductCardNew key={index} {...card} />
+            <ProductCardNew key={index} {...card} showLink={false} />
           ))}
         </div>
       </Container>
-      <ProductSlider cards={cards} />
+      <ProductSlider cards={cards}  />
       {cta && (
         <Container>
           <div className="md:mt-12 mt-4 flex justify-center gap-4">
