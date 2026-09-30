@@ -363,7 +363,7 @@ export default async function LandingPage({ params }: Params) {
 
         <div
           className="
-           relative
+            relative
             z-10
             mx-auto
             flex
