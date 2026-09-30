@@ -1,5 +1,6 @@
 import { ProductsDataTypes } from "@/@types/@homeType";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProductCardNew: React.FC<ProductsDataTypes["cards"][0]> = ({
   title,
@@ -7,6 +8,8 @@ const ProductCardNew: React.FC<ProductsDataTypes["cards"][0]> = ({
   icon,
   image,
   color,
+  href,
+  showLink = true,
 }) => {
   return (
     <div className="flex flex-col rounded-xl  md:max-w-104 w-full overflow-hidden hover:shadow-none duration-300 ease-in-out shadow-md border border-main-border">
@@ -28,6 +31,15 @@ const ProductCardNew: React.FC<ProductsDataTypes["cards"][0]> = ({
       </div>
       <div className="flex-1 px-5 pb-5 bg-white">
         <p className="">{description}</p>
+        {showLink && href && (
+          <Link
+            href={href}
+            className="inline-block mt-3 font-semibold"
+            style={{ color: color }}
+          >
+            Explore {title} <span aria-hidden="true">&rarr;</span>
+          </Link>
+        )}
       </div>
     </div>
   );

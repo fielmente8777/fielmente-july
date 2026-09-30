@@ -362,6 +362,7 @@ export const homePageData = {
         toColor: "to-[#1d4ed8]",
         color: "#0D54EB",
         image: "/products/cms.png",
+        href: "/products/hotel-cms/",
       },
       {
         icon: <BookingEngineIcon />,
@@ -371,6 +372,7 @@ export const homePageData = {
         toColor: "to-[#4338ca]",
         color: "#4F46E5",
         image: "/products/booking-engine.png",
+        href: "/products/hotel-booking-engine/",
       },
       // {
       //   icon: <AiReservationDeskIcon />,
@@ -389,6 +391,7 @@ export const homePageData = {
         toColor: "to-[#0e7490]",
         color: "#098EAE",
         image: "/products/payment-gateway.png",
+        href: "/products/hotel-payment-gateway/",
       },
       {
         icon: <EmailMarketingIcon />,
@@ -398,6 +401,7 @@ export const homePageData = {
         toColor: "to-[#be185d]",
         color: "#3C58E2",
         image: "/products/email-marketing.png",
+        href: "/products/hotel-email-marketing/",
       },
       // {
       //   icon: <AiFrontDeskIcon />,
@@ -416,6 +420,7 @@ export const homePageData = {
         toColor: "to-[#1f40af]",
         color: "#2EA041",
         image: "/products/whatsApp-marketing.png",
+        href: "/products/hotel-whatsapp-marketing/",
       },
       {
         icon: <LocalSEOIcon />,
@@ -425,6 +430,7 @@ export const homePageData = {
         toColor: "to-[#6d28d9]",
         color: "#773AE3",
         image: "/products/local-seo.png",
+        href: "/products/hotel-local-seo/",
       },
       // {
       //   icon: <AiConciergeDeskIcon />,
@@ -443,6 +449,7 @@ export const homePageData = {
         toColor: "to-[#5e7290]",
         color: "#627693",
         image: "/products/AI-Chatbot.png",
+        href: "/products/hotel-ai-chatbot/",
       },
       {
         icon: <CrmIcon />,
@@ -452,6 +459,7 @@ export const homePageData = {
         toColor: "to-[#6994f8]",
         color: "#55A4E8",
         image: "/products/crm.png",
+        href: "/products/hotel-crm/",
       },
       // {
       //   icon: <CmsIcon />,

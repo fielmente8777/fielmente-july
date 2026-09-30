@@ -65,6 +65,8 @@ export interface ProductsDataTypes {
     fromColor?: string;
     toColor?: string;
     color: string;
+    href?: string;
+    showLink?: boolean;
   }[];
   cta?: CtaBtnPropsType;
 }
