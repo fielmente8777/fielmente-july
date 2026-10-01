@@ -343,18 +343,19 @@ export default async function LandingPage({ params }: Params) {
         className="
           relative
           w-full
-          overflow-hidden
           rounded-b-[32px]
-          xl:aspect-[4/1.3] lg:aspect-[4/1.6] md:aspect-4/1.5 aspect-4/4
+          xl:aspect-[4/1.3] lg:aspect-[4/1.6] md:aspect-4/2.5 aspect-4/4.5
 
         "
       >
-        <Image
-          src="/Hero.png"
-          alt="hero"
-          fill
-          className="object-cover bg-background-black1 rotate-180"
-        />
+        <div className="absolute inset-0 overflow-hidden rounded-b-[32px]">
+          <Image
+            src="/Hero.png"
+            alt="hero"
+            fill
+            className="object-cover bg-background-black1 rotate-180"
+          />
+        </div>
 
         <div
           className="
@@ -403,7 +404,7 @@ export default async function LandingPage({ params }: Params) {
               font-medium
               
               text-white
-              md:text-5xl
+              md:text-[42px]
               
             "
           >
@@ -456,8 +457,9 @@ export default async function LandingPage({ params }: Params) {
     py-10
     md:gap-10
     md:py-14
-    lg:grid-cols-[760px_368px]
+    lg:grid-cols-[minmax(0,1fr)_340px]
     lg:gap-6
+    xl:grid-cols-[760px_368px]
           "
         >
           <article className="min-w-0">
@@ -488,7 +490,7 @@ export default async function LandingPage({ params }: Params) {
             </div> */}
 
             <div
-              className="blog-content"
+              className="blog-content break-words"
               dangerouslySetInnerHTML={{
                 __html: data.data,
               }}
@@ -556,7 +558,7 @@ export default async function LandingPage({ params }: Params) {
              
             "
           >
-            <div className="hidden lg:block">
+            <div className="">
               <LandingPgForm />
             </div>
 
