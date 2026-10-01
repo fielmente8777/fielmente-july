@@ -115,36 +115,36 @@ export const navLinks: NavLinksProps[] = [
       { label: "CRM", href: "/products/hotel-crm/" },
     ],
   },
-  {
-    label: "Resources",
-    href: "",
-    subLinks: [
-      {
-        label: "Blogs",
-        href: "/blogs/",
-      },
-      {
-        label: "Success Stories",
-        href: "/case-study/",
-      },
-      {
-        label: "Our Clients",
-        href: "/our-clients/",
-      },
-      {
-        label: "Testimonials",
-        href: "/testimonials/",
-      },
-      {
-        label: "Our Partners",
-        href: "/our-partners/",
-      },
-      // {
-      //   label: "Our Work",
-      //   href: "https://www.eazotel.com/our-work",
-      // },
-    ],
-  },
+  // {
+  //   label: "Resources",
+  //   href: "",
+  //   subLinks: [
+  //     {
+  //       label: "Blogs",
+  //       href: "/blogs/",
+  //     },
+  //     {
+  //       label: "Success Stories",
+  //       href: "/case-study/",
+  //     },
+  //     {
+  //       label: "Our Clients",
+  //       href: "/our-clients/",
+  //     },
+  //     {
+  //       label: "Testimonials",
+  //       href: "/testimonials/",
+  //     },
+  //     {
+  //       label: "Our Partners",
+  //       href: "/our-partners/",
+  //     },
+  //     // {
+  //     //   label: "Our Work",
+  //     //   href: "https://www.eazotel.com/our-work",
+  //     // },
+  //   ],
+  // },
   {
     label: "contact us",
     href: "/contact-us/",

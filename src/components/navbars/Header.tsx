@@ -189,18 +189,18 @@ const Header = () => {
               </button>
             </div>
 
-            <button
-              // href={contacts.WhatsAppCta}
-              // target="_blank"
-              // rel="noopener noreferrer"
-              onClick={() => openPopupForm()}
+            <a
+              href={contacts.WhatsAppCta}
+              target="_blank"
+              rel="noopener noreferrer"
+              // onClick={() => openPopupForm()}
               className="inline-flex max-xl:hidden items-center text-lg backdrop-blur-md justify-center gap-2 px-8 py-3 tracking-wide text-white bg-[#1B1B1B]/95 shadow-inner rounded-full duration-300 ease-in-out active:scale-95"
             >
               Get a Free Audit Report
               <span className="w-6 aspect-square flex items-center justify-center bg-white rounded-full text-primary">
                 <ICon />
               </span>
-            </button>
+            </a>
           </nav>
         </Container>
       </header>

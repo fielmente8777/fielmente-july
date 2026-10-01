@@ -205,19 +205,16 @@
 //   </svg>
 // );
 
-import { blogData } from "@/utils/blogdata";
-import Link from "next/link";
-import Image from "next/image";
 import { Section, SectionWithContainer } from "@/components";
-import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
-import { homePageData } from "../(home)/homePageData";
-import ExploreMoreBLogs from "./components/ExploreMoreBLogs";
-import { notFound } from "next/navigation";
-import { Metadata } from "next";
-import { Form1 } from "@/components/forms";
-import LandingPgForm from "@/components/forms/LandingPgForm";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
+import LandingPgForm from "@/components/forms/LandingPgForm";
+import { blogData } from "@/utils/blogdata";
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 import { industriesWeServePageData } from "../industries-we-serve/components/pageData";
+import ExploreMoreBLogs from "./components/ExploreMoreBLogs";
 
 interface Params {
   params: {
@@ -229,11 +226,8 @@ interface Params {
 }
 
 // get random blogs
-function getRandomBlog(currentSlug: string, count = 4) {
-  return blogData
-    .filter((post) => post.slug !== currentSlug)
-    .sort(() => Math.random() - 0.5)
-    .slice(0, count);
+function getAllBlogsExceptCurrent(currentSlug: string) {
+  return blogData.filter((post) => post.slug !== currentSlug);
 }
 
 export async function generateStaticParams() {
@@ -319,9 +313,12 @@ export default async function LandingPage({ params }: Params) {
     notFound();
   }
 
-  const tags = generateTagsFromSlug(path.slug);
+  const tags =
+    typeof data.meta?.keywords === "string"
+      ? data.meta.keywords.split(",").map((tag: string) => tag.trim())
+      : data.meta?.keywords || [];
 
-  const randomBLogs = getRandomBlog(path.slug);
+  const allBlogs = blogData.filter((post) => post.slug !== path.slug);
 
   const randomData = {
     title: "Explore More Blogs",
@@ -331,15 +328,13 @@ export default async function LandingPage({ params }: Params) {
       url: "/blogs",
     },
 
-    cards: [
-      ...randomBLogs.map((item) => ({
-        src: item.url,
-        title: item.title,
-        read: "5 min read",
-        slug: item.slug,
-        description: item.description?.slice(0, 80) + "...",
-      })),
-    ],
+    cards: allBlogs.map((item) => ({
+      src: item.url,
+      title: item.title,
+      read: "5 min read",
+      slug: item.slug,
+      description: item.description?.slice(0, 80) + "...",
+    })),
   };
 
   return (
@@ -406,10 +401,10 @@ export default async function LandingPage({ params }: Params) {
               max-w-[900px]
               text-3xl
               font-medium
-              leading-[1.12]
+              
               text-white
               md:text-5xl
-              lg:text-[48px]
+              
             "
           >
             {data.title}
@@ -538,9 +533,9 @@ export default async function LandingPage({ params }: Params) {
               />
             </div>
 
-            {/* <div className="mt-9 h-px w-full bg-[#6B7280]" /> */}
+            <div className="mt-9 h-px w-full bg-[#6B7280]" />
 
-            {/* <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap gap-3">
               {tags.map((tag) => (
                 <span
                   key={tag}
@@ -549,7 +544,7 @@ export default async function LandingPage({ params }: Params) {
                   {tag}
                 </span>
               ))}
-            </div> */}
+            </div>
           </article>
 
           <aside
@@ -558,8 +553,7 @@ export default async function LandingPage({ params }: Params) {
               w-full
               flex-col
               gap-6
-              lg:sticky
-              lg:top-28
+             
             "
           >
             <div className="hidden lg:block">
@@ -588,10 +582,6 @@ export const NextIcon = () => (
     />
   </svg>
 );
-
-/* =========================================================
-   CLOCK ICON
-========================================================= */
 
 export const ClockIcon = () => (
   <svg
