@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: "/fielmente_logo.png", width: 1200, height: 630 }],
   },
+  // Paid-traffic landing page: kept out of search so it doesn't compete with the
+  // Hotel Google Ads Agency page (/industries-we-serve/hotel-marketing-agency/hotel-google-ads/).
+  robots: { index: false, follow: true },
 };
 
 const PHONE_TEL = `tel:${contacts.phone_1.replace(/\s/g, "")}`;
@@ -58,14 +61,14 @@ export default function GoogleAdsForHotelsPage() {
           </Link>
           <div className="flex items-center gap-7">
             <span className="hidden lg:inline text-sm text-[#C9C7DD]">Hospitality marketing agency · India</span>
-            <Link
+            <a
               href={PHONE_TEL}
               aria-label={`Call ${contacts.phone_1}`}
               className="inline-flex items-center justify-center gap-2.5 min-h-11 max-md:w-11 md:px-4.5 rounded-lg border border-[#3A3566] text-white text-[15px] font-medium hover:border-skyBlue"
             >
               <FaPhoneAlt className="text-skyBlue" aria-hidden="true" />
               <span className="max-md:hidden">{contacts.phone_1}</span>
-            </Link>
+            </a>
           </div>
         </Container>
       </header>

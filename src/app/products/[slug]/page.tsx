@@ -28,6 +28,7 @@ import {
   ResultsBand,
 } from "../_components/shared";
 import s from "../products.module.css";
+import NewProductPage, { newProductMetadata, newProductSlugs } from "../components/NewProductPage";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -35,13 +36,13 @@ type Props = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return PRODUCTS.map((p) => ({ slug: p.slug }));
+  return [...PRODUCTS.map((p) => p.slug), ...newProductSlugs].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const p = getProduct(slug);
-  if (!p) return {};
+  if (!p) return newProductSlugs.includes(slug) ? newProductMetadata(slug) : {};
   const url = productUrl(p.slug);
   const image = `${SITE_URL}${p.screenshot.src}`;
   return {
@@ -71,6 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const p = getProduct(slug);
+  if (!p && newProductSlugs.includes(slug)) return <NewProductPage slug={slug} />;
   if (!p) notFound();
 
   const url = productUrl(p.slug);

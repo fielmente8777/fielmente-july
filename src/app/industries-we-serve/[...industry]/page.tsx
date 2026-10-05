@@ -22,6 +22,18 @@ import WhyYouNeedGrid from "./components/WhyYouNeedGrid";
 import { subPageData } from "./components/subPageData";
 import { industriesData } from "./pageData";
 import { notFound } from "next/navigation";
+import AgencyPage, { agencyMetadata } from "@/app/(agency)/_components/AgencyPage";
+import { getAgencyPage } from "@/app/(agency)/_data/pages";
+import IndustryServicesGrid from "../components/templates/IndustryServicesGrid";
+import IndustryTemplate from "../components/templates/IndustryTemplate";
+import ServiceTemplate from "../components/templates/ServiceTemplate";
+import {
+  findIndustry,
+  findServicePage,
+  industryMetadata,
+  newPaths,
+  serviceMetadata,
+} from "../data/pages";
 interface Params {
   params: Promise<{
     industry: string[];
@@ -37,7 +49,8 @@ export async function generateStaticParams() {
   const paths = industries.map((industry) => industry.slug);
   const subPaths = subPages.map((industry) => industry.slug);
 
-  const allPaths = [...paths, ...subPaths];
+  // New industry and service pages (Phase 3); Set removes slugs shared with the old data.
+  const allPaths = [...new Set([...paths, ...subPaths, ...newPaths])];
   return allPaths.map((path) => ({
     industry: typeof path === "string" ? path.split("/") : path,
     fallback: false,
@@ -53,6 +66,19 @@ export async function generateMetadata({ params }: Params) {
       title: "Page Not Found",
       robots: { index: false, follow: false },
     };
+  }
+
+  // Agency landing pages that live at an industries URL (resort, hotel Google Ads)
+  const agencyPage = getAgencyPage(`industries-we-serve/${slugArray.join("/")}`);
+  if (agencyPage) return agencyMetadata(agencyPage);
+
+  // New industry and service pages (Phase 3)
+  if (slugArray.length === 1) {
+    const newIndustry = findIndustry(slugArray[0]);
+    if (newIndustry) return industryMetadata(newIndustry);
+  } else {
+    const newService = findServicePage(slugArray.join("/"));
+    if (newService) return serviceMetadata(newService);
   }
 
   const fullSlug = slugArray.join("/");
@@ -157,6 +183,22 @@ export default async function IndustryPage({ params }: Params) {
   if (!slug || slug.length === 0) {
     notFound();
   }
+
+  // Agency landing pages that live at an industries URL (resort, hotel Google Ads)
+  const agencyPage = getAgencyPage(`industries-we-serve/${slug.join("/")}`);
+  if (agencyPage) {
+    return <AgencyPage data={agencyPage} afterServices={slug.length === 1 ? <IndustryServicesGrid slug={slug[0]} /> : undefined} />;
+  }
+
+  // New industry and service pages (Phase 3); everything else keeps the existing rendering.
+  if (slug.length === 1) {
+    const newIndustry = findIndustry(slug[0]);
+    if (newIndustry) return <IndustryTemplate I={newIndustry} />;
+  } else {
+    const newService = findServicePage(slug.join("/"));
+    if (newService) return <ServiceTemplate I={newService.I} serviceKey={newService.key} />;
+  }
+
   if (slug.length === 1) {
     const industry = industriesData.find((ind) => ind.slug === slug[0]);
     if (!industry) {

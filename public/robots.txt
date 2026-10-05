@@ -1,11 +1,3 @@
-# https://www.robotstxt.org/robotstxt.html
-
+# PREVIEW BRANCH ONLY: the Vercel test copy must not be crawled.
 User-agent: *
-Allow: /
-
-Disallow: /admin/
-Disallow: /login/
-Disallow: /checkout/
-Disallow: /thank-you/
-
-Sitemap: https://fielmente.com/sitemap.xml
+Disallow: /
