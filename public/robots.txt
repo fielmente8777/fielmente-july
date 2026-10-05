@@ -1,3 +1,4 @@
-# PREVIEW BRANCH ONLY: the Vercel test copy must not be crawled.
+# PREVIEW BRANCH ONLY. Crawling is allowed so search engines can see the
+# X-Robots-Tag: noindex header that every page on this test copy sends.
 User-agent: *
-Disallow: /
+Allow: /
