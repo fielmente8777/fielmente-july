@@ -1,0 +1,46 @@
+"use client";
+
+import React, { ReactNode } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperProps } from "swiper/react";
+
+// @import swiperr css
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-coverflow";
+import "swiper/css/effect-fade";
+import "swiper/css/grid";
+
+interface SwiperCaroselProps<T> extends SwiperProps {
+  data: T[];
+  className?: string;
+  swiperSlideClassName?: string;
+  renderSlide: (item: T, index?: number) => ReactNode;
+}
+
+const SwiperCarousel = <T,>({
+  data,
+  className,
+  swiperSlideClassName,
+  renderSlide,
+  ...props
+}: SwiperCaroselProps<T>) => {
+  return (
+    <Swiper
+      className={className}
+      {...props}
+    >
+      {data?.map((item, index) => (
+        <SwiperSlide
+          key={index}
+          className={`flex justify-center ${swiperSlideClassName || ""}`}
+        >
+          {renderSlide(item, index)}
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
+
+export default SwiperCarousel;

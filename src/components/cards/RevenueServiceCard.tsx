@@ -1,0 +1,16 @@
+import { RevenueManagementServicesType } from "@/@types/@landingPageType";
+
+const RevenueServiceCard: React.FC<
+  RevenueManagementServicesType["cards"][0]
+> = ({ title, icon }) => {
+    const splitTitle = title.split(" ");
+    const showTitle = splitTitle.length > 2 ? splitTitle.join(" ") : `${splitTitle[0]} <br /> ${splitTitle[1]}`;
+  return (
+    <div className="flex flex-col items-center text-center gap-4 bg-white rounded-2xl md:w-full  px-4 py-6">
+      <span className="">{icon}</span>
+      <p className="text-[1.25rem] text-primary2" dangerouslySetInnerHTML={{ __html: showTitle }}></p>
+    </div>
+  );
+};
+
+export default RevenueServiceCard;
