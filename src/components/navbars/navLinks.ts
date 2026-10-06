@@ -45,6 +45,82 @@ export const navLinks: NavLinksProps[] = [
           },
         ],
       },
+      {
+        label: "Resort Marketing",
+        href: "/industries-we-serve/resort-marketing-agency/",
+        subLinks: [
+          {
+            label: "Resort Social Media",
+            href: "/industries-we-serve/resort-marketing-agency/resort-social-media-management/",
+          },
+          {
+            label: "Resort Ads",
+            href: "/industries-we-serve/resort-marketing-agency/resort-performance-marketing/",
+          },
+          {
+            label: "Resort SEO",
+            href: "/industries-we-serve/resort-marketing-agency/resort-website-seo/",
+          },
+        ],
+      },
+      {
+        label: "Homestay & Villa Marketing",
+        href: "/industries-we-serve/homestay-villa-marketing-agency/",
+        subLinks: [
+          {
+            label: "Homestay & Villa Social Media",
+            href: "/industries-we-serve/homestay-villa-marketing-agency/homestay-villa-social-media-management/",
+          },
+          {
+            label: "Homestay & Villa Ads",
+            href: "/industries-we-serve/homestay-villa-marketing-agency/homestay-villa-performance-marketing/",
+          },
+          {
+            label: "Homestay & Villa Websites",
+            href: "/industries-we-serve/homestay-villa-marketing-agency/homestay-villa-website-development/",
+          },
+        ],
+      },
+      {
+        label: "International Hotel Marketing",
+        href: "/international-hotel-marketing-agency/",
+        subLinks: [
+          {
+            label: "Hotel Marketing Dubai",
+            href: "/hotel-marketing-agency-dubai/",
+          },
+          {
+            label: "Hotel Marketing UAE",
+            href: "/hotel-marketing-agency-uae/",
+          },
+          {
+            label: "Hotel Marketing USA",
+            href: "/hotel-marketing-agency-usa/",
+          },
+          {
+            label: "Hotel Marketing UK",
+            href: "/hotel-marketing-agency-uk/",
+          },
+        ],
+      },
+      {
+        label: "Travel & Tourism Marketing",
+        href: "/industries-we-serve/travel-tourism-marketing-agency/",
+        subLinks: [
+          {
+            label: "Travel Social Media",
+            href: "/industries-we-serve/travel-tourism-marketing-agency/travel-social-media-management/",
+          },
+          {
+            label: "Travel Ads",
+            href: "/industries-we-serve/travel-tourism-marketing-agency/travel-performance-marketing/",
+          },
+          {
+            label: "Travel SEO",
+            href: "/industries-we-serve/travel-tourism-marketing-agency/travel-website-seo/",
+          },
+        ],
+      },
       // {
       //   label: "Cloud Kitchen Marketing",
       //   href: "/industries-we-serve/cloud-kitchen-marketing-agency/",
