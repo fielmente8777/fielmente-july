@@ -1,5 +1,5 @@
-import AgencyPage, { agencyMetadata } from "../_components/AgencyPage";
-import data from "../_data/pages/hotel-marketing-agency-uae";
+import AgencyPage, { agencyMetadata } from "../components/AgencyPage";
+import data from "../data/hotel-marketing-agency-uae";
 
 export const metadata = agencyMetadata(data);
 

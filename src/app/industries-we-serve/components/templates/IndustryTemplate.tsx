@@ -1,33 +1,35 @@
 // Industry page: /industries-we-serve/<industry>-marketing-agency/
-import CaseStudyCardRich from "@/app/case-study/components/rich/CaseStudyCardRich";
-import { getCaseStudy, portfolioStats, type CaseStudy } from "@/app/case-study/data/caseStudies";
-import { productCards } from "@/app/products/components/ProductThumb";
-import { getAgencyPage } from "@/app/(agency)/_data/pages";
-import ClientLogos from "@/components/marketing/ClientLogos";
-import ConsultButton from "@/components/marketing/ConsultButton";
-import LeadFormSection from "@/components/marketing/LeadFormSection";
-import { Icon } from "@/components/marketing/icons";
-import {
-  AUDIT_URL,
-  Comparison,
-  CtaBand,
-  FaqLead,
-  FaqSection,
-  LinkCards,
-  PageHero,
-  SectionHead,
-  Split,
-  StatsBand,
-  StepsBand,
-  WhatsAppButton,
-} from "@/components/marketing/Sections";
-import { Container } from "@/components/sectionComponants";
-import type { LogoSet } from "@/app/(agency)/_lib/types";
+import type { LogoSet } from "@/@types/@agencyPageType";
+import type { IndustryProfile } from "@/@types/@industryTemplateType";
+import { getAgencyPage } from "@/app/(agency)/data";
+import HowHotelScaling from "@/app/case-study/components/HowHotelScaling";
+import PageHero from "@/components/banners/PageHero";
+import ConsultButton from "@/components/buttons/ConsultButton";
+import WhatsAppChatButton from "@/components/buttons/WhatsAppChatButton";
+import IconLinkCard from "@/components/cards/IconLinkCard";
+import ClientLogosSection from "@/components/commonSections/ClientLogosSection";
+import ComparisonSection from "@/components/commonSections/ComparisonSection";
+import CtaBandSection from "@/components/commonSections/CtaBandSection";
+import FaqListSection from "@/components/commonSections/FaqListSection";
+import LeadFormSection from "@/components/commonSections/LeadFormSection";
+import LinkCardsSection from "@/components/commonSections/LinkCardsSection";
+import SplitSection from "@/components/commonSections/SplitSection";
+import StatsSection from "@/components/commonSections/StatsSection";
+import StepsSection from "@/components/commonSections/StepsSection";
+import Container from "@/components/sectionComponants/Container";
+import SectionHead from "@/components/typography/SectionHead";
+import { PORTFOLIO_STATS } from "@/utils/agencyData";
+import { caseStudyCards } from "@/utils/caseStudyCards";
+import { productCards } from "@/utils/productCards";
+import { Icon } from "@/utils/serviceIcons";
 import Image from "next/image";
 import Link from "next/link";
 import { LuArrowRight } from "react-icons/lu";
-import { industries, legacyIndustries, lodgingIndustries, type IndustryProfile } from "../../data/industries";
+import { industries, legacyIndustries, lodgingIndustries } from "../../data/industries";
 import { serviceHref, serviceTypes } from "../../data/services";
+
+/** Free Google Ads audit (the paid-traffic landing page). */
+const AUDIT_URL = "/google-ads-for-hotels/#audit";
 
 /** Agency landing pages linked from each industry page. */
 const SPECIALIST_PAGES: Record<string, string[]> = {
@@ -65,8 +67,7 @@ export function needsFor(slug: string): string[] {
 }
 
 export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
-  const studies = I.caseStudies.map(getCaseStudy).filter((c): c is CaseStudy => Boolean(c));
-  const lead = studies[0];
+  const studies = caseStudyCards(I.caseStudies);
   const products = productCards(I.products);
   const others = [
     ...industries.filter((x) => x.slug !== I.slug).map((x) => ({ slug: x.slug, name: x.name, image: x.heroImage })),
@@ -98,37 +99,27 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
         actions={
           <>
             <ConsultButton />
-            <WhatsAppButton label="Chat on WhatsApp" />
+            <WhatsAppChatButton />
           </>
         }
         image={I.heroImage}
         imageAlt={I.heroAlt}
         floating={
-          lead ? (
-            <div className="flex items-center gap-4">
-              <span className="text-[30px] font-bold leading-none text-orange-primary">{lead.cardStat.value}</span>
-              <span className="text-[13px]/snug text-[#55536E]">
-                {lead.cardStat.label}
-                <span className="block font-semibold text-primary2">{lead.client}</span>
-              </span>
-            </div>
-          ) : (
-            <div className="flex items-center gap-4">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FDE8DF] text-orange-primary">
-                <Icon name={I.icon} />
-              </span>
-              <span className="text-[13px]/snug text-[#55536E]">
-                <span className="block text-base font-bold text-primary2">{I.services.length} services, one team</span>
-                Marketing, websites and automation for {I.plural}
-              </span>
-            </div>
-          )
+          <div className="flex items-center gap-4">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FDE8DF] text-orange-primary">
+              <Icon name={I.icon} />
+            </span>
+            <span className="text-[13px]/snug text-[#55536E]">
+              <span className="block text-base font-bold text-primary2">{I.services.length} services, one team</span>
+              Marketing, websites and automation for {I.plural}
+            </span>
+          </div>
         }
       />
 
-      <ClientLogos set={logoSet(I.slug)} />
+      <ClientLogosSection set={logoSet(I.slug)} />
 
-      <Comparison title={`What changes when your ${I.noun} works with Fielmente`} without={I.without} withList={I.withList} />
+      <ComparisonSection title={`What changes when your ${I.noun} works with Fielmente`} without={I.without} withList={I.withList} />
 
       {/* Services */}
       <section className="bg-[#F5F5F9] py-14 md:py-22">
@@ -139,33 +130,18 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
             lede={`Start with one or combine several. Every service is run by a team that works only with hospitality businesses.`}
           />
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
-            {I.services.map((key) => {
-              const st = serviceTypes[key];
-              return (
-                <li key={key}>
-                  <Link
-                    href={serviceHref(I, key)}
-                    className="group flex h-full items-start gap-4 rounded-2xl border border-transparent bg-white p-5 hover:border-primary2/30 hover:shadow-[0_20px_50px_-30px_rgba(17,13,60,0.45)] transition-all"
-                  >
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FDE8DF] text-orange-primary">
-                      <Icon name={st.icon} size={20} />
-                    </span>
-                    <span className="flex flex-1 flex-col gap-1">
-                      <span className="font-bold text-primary2">{st.label}</span>
-                      <span className="text-sm/snug text-[#55536E]">{st.card(I)}</span>
-                    </span>
-                    <LuArrowRight className="mt-1 shrink-0 text-sapphireBlue transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                  </Link>
-                </li>
-              );
-            })}
+            {I.services.map((key) => (
+              <li key={key}>
+                <IconLinkCard icon={serviceTypes[key].icon} title={serviceTypes[key].label} body={serviceTypes[key].card(I)} href={serviceHref(I, key)} />
+              </li>
+            ))}
             {I.services.length % 3 !== 0 && (
               <li className={`${I.services.length % 2 ? "sm:col-span-1" : "sm:col-span-2"} ${I.services.length % 3 === 1 ? "lg:col-span-2" : "lg:col-span-1"}`}>
                 <div className="flex h-full flex-col justify-center gap-3 rounded-2xl bg-primary2 p-5">
                   <span className="font-bold text-white">Not sure where to start?</span>
                   <span className="text-sm/snug text-[#C9C7DD]">Tell us about your {I.noun} and we&apos;ll suggest the one or two services that will make the biggest difference.</span>
                   <div className="pt-1">
-                    <ConsultButton>Get a free consultation</ConsultButton>
+                    <ConsultButton />
                   </div>
                 </div>
               </li>
@@ -182,7 +158,7 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
         </Container>
       </section>
 
-      <Split
+      <SplitSection
         eyebrow="Why Fielmente"
         title={`Marketing built around how ${I.guests} choose`}
         body={
@@ -205,35 +181,19 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
 
       {studies.length > 0 && (
         <>
-          <section className="py-14 md:py-22 border-t border-[#E4E3EC]">
-            <Container>
-              <SectionHead
-                eyebrow="Case studies"
-                title={`Results for ${I.plural} like yours`}
-                lede="Real Google Ads accounts we manage, with numbers taken straight from the ad platforms."
-              />
-              <div className={`grid gap-5 ${studies.length === 1 ? "md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3"}`}>
-                {studies.map((cs) => (
-                  <CaseStudyCardRich key={cs.slug} cs={cs} />
-                ))}
-              </div>
-              <p className="mt-6">
-                <Link href="/case-study/" className="inline-flex items-center gap-2 text-sm font-semibold text-sapphireBlue hover:underline">
-                  See all case studies <LuArrowRight aria-hidden="true" />
-                </Link>
-              </p>
-            </Container>
-          </section>
-          <StatsBand
+          <div className="border-t border-[#E4E3EC]">
+            <HowHotelScaling title={`Results for ${I.plural} like yours`} cards={studies} />
+          </div>
+          <StatsSection
             eyebrow="Across our portfolio"
             title="What we manage for hospitality brands"
-            stats={portfolioStats}
+            stats={PORTFOLIO_STATS}
             note="Across 23 client Google Ads accounts, Sep 2023 – Sep 2026."
           />
         </>
       )}
 
-      <StepsBand
+      <StepsSection
         eyebrow="How we work"
         title={`How we work with ${I.plural}`}
         steps={[
@@ -245,7 +205,7 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
       />
 
       {products.length > 0 && (
-        <LinkCards
+        <LinkCardsSection
           eyebrow="Technology"
           title="Software that works with your marketing"
           lede="Fielmente products run on Eazotel and plug straight into the campaigns we run, so every enquiry lands in one place."
@@ -254,7 +214,7 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
       )}
 
       {(SPECIALIST_PAGES[I.slug] ?? []).length > 0 && (
-        <LinkCards
+        <LinkCardsSection
           eyebrow="Specialist services"
           title={`In-depth pages for ${I.plural}`}
           lede="Each of these has its own page, with how we work, what we measure, proof and FAQs."
@@ -266,7 +226,7 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
         />
       )}
 
-      <FaqSection title={`${I.name} marketing FAQs`} faqs={I.faqs} lead={<FaqLead />} />
+      <FaqListSection title={`${I.name} marketing FAQs`} faqs={I.faqs} />
 
       {/* Other industries */}
       <section className="py-14 md:py-20">
@@ -302,13 +262,13 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
         needs={needsFor(I.slug)}
       />
 
-      <CtaBand
+      <CtaBandSection
         title={`Ready to grow your ${I.noun}?`}
         body={`Book a free consultation. We'll review your marketing and show you where more ${I.goal} can come from.`}
         actions={
           <>
             <ConsultButton />
-            <WhatsAppButton label="Chat on WhatsApp" />
+            <WhatsAppChatButton />
           </>
         }
       />

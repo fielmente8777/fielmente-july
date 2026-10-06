@@ -1,30 +1,27 @@
 // Service page: /industries-we-serve/<industry>-marketing-agency/<prefix>-<service>/
-import CaseStudyCardRich from "@/app/case-study/components/rich/CaseStudyCardRich";
-import { getCaseStudy, type CaseStudy } from "@/app/case-study/data/caseStudies";
-import { productCards } from "@/app/products/components/ProductThumb";
-import ClientLogos from "@/components/marketing/ClientLogos";
-import ConsultButton from "@/components/marketing/ConsultButton";
-import LeadFormSection from "@/components/marketing/LeadFormSection";
-import { Icon } from "@/components/marketing/icons";
-import {
-  Comparison,
-  CtaBand,
-  FaqLead,
-  FaqSection,
-  FeatureGrid,
-  LinkCards,
-  PageHero,
-  SectionHead,
-  Split,
-  StepsBand,
-  WhatsAppButton,
-} from "@/components/marketing/Sections";
-import { Container } from "@/components/sectionComponants";
+import type { IndustryProfile, ServiceKey } from "@/@types/@industryTemplateType";
+import HowHotelScaling from "@/app/case-study/components/HowHotelScaling";
+import PageHero from "@/components/banners/PageHero";
+import ConsultButton from "@/components/buttons/ConsultButton";
+import WhatsAppChatButton from "@/components/buttons/WhatsAppChatButton";
+import ClientLogosSection from "@/components/commonSections/ClientLogosSection";
+import ComparisonSection from "@/components/commonSections/ComparisonSection";
+import CtaBandSection from "@/components/commonSections/CtaBandSection";
+import FaqListSection from "@/components/commonSections/FaqListSection";
+import FeatureGridSection from "@/components/commonSections/FeatureGridSection";
+import LeadFormSection from "@/components/commonSections/LeadFormSection";
+import LinkCardsSection from "@/components/commonSections/LinkCardsSection";
+import SplitSection from "@/components/commonSections/SplitSection";
+import StepsSection from "@/components/commonSections/StepsSection";
+import Container from "@/components/sectionComponants/Container";
+import { caseStudyCards } from "@/utils/caseStudyCards";
+import { productCards } from "@/utils/productCards";
+import { Icon } from "@/utils/serviceIcons";
 import Link from "next/link";
 import { LuArrowRight } from "react-icons/lu";
-import { lodgingIndustries, type IndustryProfile } from "../../data/industries";
+import { lodgingIndustries } from "../../data/industries";
+import { serviceHref, serviceTypes } from "../../data/services";
 import { logoSet, needsFor } from "./IndustryTemplate";
-import { serviceHref, serviceTypes, type ServiceKey } from "../../data/services";
 
 export default function ServiceTemplate({ I, serviceKey }: { I: IndustryProfile; serviceKey: ServiceKey }) {
   const st = serviceTypes[serviceKey];
@@ -32,7 +29,7 @@ export default function ServiceTemplate({ I, serviceKey }: { I: IndustryProfile;
   const industryHref = `/industries-we-serve/${I.slug}/`;
   const pageUrl = `https://fielmente.com${serviceHref(I, serviceKey)}`;
 
-  const studies = I.caseStudies.map(getCaseStudy).filter((x): x is CaseStudy => Boolean(x)).slice(0, 3);
+  const studies = caseStudyCards(I.caseStudies).slice(0, 3);
   // Hotel-specific products (booking engine, CMS…) are only suggested to accommodation businesses.
   const productSlugs = lodgingIndustries.has(I.slug) ? [...new Set([...st.products, ...I.products])] : I.products;
   const products = productCards(productSlugs).slice(0, 3);
@@ -88,7 +85,7 @@ export default function ServiceTemplate({ I, serviceKey }: { I: IndustryProfile;
         actions={
           <>
             <ConsultButton />
-            <WhatsAppButton label="Chat on WhatsApp" />
+            <WhatsAppChatButton />
           </>
         }
         image={st.heroPhoto ? I.heroImage : st.image}
@@ -109,15 +106,15 @@ export default function ServiceTemplate({ I, serviceKey }: { I: IndustryProfile;
         }
       />
 
-      <ClientLogos set={logoSet(I.slug)} />
+      <ClientLogosSection set={logoSet(I.slug)} />
 
-      <Comparison title={`What changes when Fielmente handles your ${st.label}`} without={c.without} withList={c.withList} />
+      <ComparisonSection title={`What changes when Fielmente handles your ${st.label}`} without={c.without} withList={c.withList} />
 
-      <FeatureGrid eyebrow="What's included" title={`${st.label} for ${I.plural}`} lede={c.featuresLede} items={c.features} />
+      <FeatureGridSection eyebrow="What's included" title={`${st.label} for ${I.plural}`} lede={c.featuresLede} items={c.features} />
 
-      <StepsBand eyebrow="How it works" title="How we work" steps={c.steps} />
+      <StepsSection eyebrow="How it works" title="How we work" steps={c.steps} />
 
-      <Split
+      <SplitSection
         eyebrow="What we measure"
         title="Results you can see every month"
         body={
@@ -132,24 +129,13 @@ export default function ServiceTemplate({ I, serviceKey }: { I: IndustryProfile;
       />
 
       {studies.length > 0 && (
-        <section className="bg-[#F5F5F9] py-14 md:py-22">
-          <Container>
-            <SectionHead
-              eyebrow="Proof"
-              title={`Recent results for ${I.plural}`}
-              lede="Google Ads accounts we manage for properties like yours, with numbers taken straight from the ad platforms."
-            />
-            <div className={`grid gap-5 ${studies.length === 1 ? "md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3"}`}>
-              {studies.map((cs) => (
-                <CaseStudyCardRich key={cs.slug} cs={cs} />
-              ))}
-            </div>
-          </Container>
-        </section>
+        <div className="bg-[#F5F5F9]">
+          <HowHotelScaling title={`Recent results for ${I.plural}`} cards={studies} />
+        </div>
       )}
 
       {products.length > 0 && (
-        <LinkCards
+        <LinkCardsSection
           eyebrow="Technology"
           title="Tools that power this service"
           lede="Fielmente products on the Eazotel platform, set up and connected by our team."
@@ -157,9 +143,9 @@ export default function ServiceTemplate({ I, serviceKey }: { I: IndustryProfile;
         />
       )}
 
-      <FaqSection title={`${st.label} FAQs`} faqs={c.faqs} lead={<FaqLead />} />
+      <FaqListSection title={`${st.label} FAQs`} faqs={c.faqs} />
 
-      <LinkCards eyebrow={I.label} title={`More ${I.label.toLowerCase()} services`} items={more} />
+      <LinkCardsSection eyebrow={I.label} title={`More ${I.label.toLowerCase()} services`} items={more} />
       <div className="-mt-8 md:-mt-14 pb-6">
         <Container>
           <Link href={industryHref} className="inline-flex items-center gap-2 text-sm font-semibold text-sapphireBlue hover:underline">
@@ -180,13 +166,13 @@ export default function ServiceTemplate({ I, serviceKey }: { I: IndustryProfile;
         needs={[st.label, ...needsFor(I.slug).filter((n) => n !== st.label)]}
       />
 
-      <CtaBand
+      <CtaBandSection
         title={`Talk to us about ${st.label} for your ${I.noun}`}
         body="A free consultation with no obligation. We'll review what you have today and show you what to fix first."
         actions={
           <>
             <ConsultButton />
-            <WhatsAppButton label="Chat on WhatsApp" />
+            <WhatsAppChatButton />
           </>
         }
       />

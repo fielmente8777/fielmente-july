@@ -1,25 +1,24 @@
-import { AGENCY_PAGES } from "@/app/(agency)/_data/pages";
-import CaseStudyCardRich from "@/app/case-study/components/rich/CaseStudyCardRich";
-import { caseStudies, portfolioStats } from "@/app/case-study/data/caseStudies";
-import ConsultButton from "@/components/marketing/ConsultButton";
-import { Icon } from "@/components/marketing/icons";
-import {
-  CtaBand,
-  FaqLead,
-  FaqSection,
-  PageHero,
-  PartnerStrip,
-  SectionHead,
-  StatsBand,
-  WhatsAppButton,
-} from "@/components/marketing/Sections";
-import { Container } from "@/components/sectionComponants";
+import type { ServiceKey } from "@/@types/@industryTemplateType";
+import { AGENCY_PAGES } from "@/app/(agency)/data";
+import HowHotelScaling from "@/app/case-study/components/HowHotelScaling";
+import PageHero from "@/components/banners/PageHero";
+import ConsultButton from "@/components/buttons/ConsultButton";
+import WhatsAppChatButton from "@/components/buttons/WhatsAppChatButton";
+import CtaBandSection from "@/components/commonSections/CtaBandSection";
+import FaqListSection from "@/components/commonSections/FaqListSection";
+import PartnerStripSection from "@/components/commonSections/PartnerStripSection";
+import StatsSection from "@/components/commonSections/StatsSection";
+import Container from "@/components/sectionComponants/Container";
+import SectionHead from "@/components/typography/SectionHead";
+import { PORTFOLIO_STATS } from "@/utils/agencyData";
+import { caseStudyCards } from "@/utils/caseStudyCards";
+import { Icon } from "@/utils/serviceIcons";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { LuArrowRight, LuMinus } from "react-icons/lu";
 import { industries, legacyIndustries } from "./data/industries";
-import { serviceHref, serviceTypes, type ServiceKey } from "./data/services";
+import { serviceHref, serviceTypes } from "./data/services";
 
 const title = "Hospitality Marketing Agency | Industries We Serve | Fielmente";
 const description =
@@ -66,7 +65,7 @@ const faqs = [
 ];
 
 export default function IndustriesWeServe() {
-  const featured = caseStudies.slice(0, 3);
+  const featured = caseStudyCards(["naturoville-google-ads", "hotel-green-castle-google-ads", "naad-wellness-google-ads", "ebc-mussoorie-google-ads"]);
   return (
     <main className="overflow-x-clip bg-white text-primary2">
       <PageHero
@@ -77,23 +76,23 @@ export default function IndustriesWeServe() {
         actions={
           <>
             <ConsultButton />
-            <WhatsAppButton label="Chat on WhatsApp" />
+            <WhatsAppChatButton />
           </>
         }
         image="/home/im8.webp"
         imageAlt="Hotel facade lit up at dusk"
         floating={
           <div className="flex items-center gap-4">
-            <span className="text-[30px] font-bold leading-none text-orange-primary">{portfolioStats[1].value}</span>
+            <span className="text-[30px] font-bold leading-none text-orange-primary">{PORTFOLIO_STATS[1].value}</span>
             <span className="text-[13px]/snug text-[#55536E]">
-              {portfolioStats[1].label}
+              {PORTFOLIO_STATS[1].label}
               <span className="block font-semibold text-primary2">from Google Ads we manage</span>
             </span>
           </div>
         }
       />
 
-      <PartnerStrip />
+      <PartnerStripSection />
 
       {/* Industries */}
       <section className="py-14 md:py-22">
@@ -251,38 +250,24 @@ export default function IndustriesWeServe() {
         </Container>
       </section>
 
-      <StatsBand
+      <StatsSection
         eyebrow="Results"
         title="What we manage for hospitality brands"
-        stats={portfolioStats}
+        stats={PORTFOLIO_STATS}
         note="Across 23 client Google Ads accounts, Sep 2023 – Sep 2026."
       />
 
-      <section className="py-14 md:py-22">
-        <Container>
-          <SectionHead eyebrow="Case studies" title="Recent results" lede="Real accounts, real numbers, taken straight from the ad platforms." />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {featured.map((cs) => (
-              <CaseStudyCardRich key={cs.slug} cs={cs} />
-            ))}
-          </div>
-          <p className="mt-6">
-            <Link href="/case-study/" className="inline-flex items-center gap-2 text-sm font-semibold text-sapphireBlue hover:underline">
-              See all case studies <LuArrowRight aria-hidden="true" />
-            </Link>
-          </p>
-        </Container>
-      </section>
+      <HowHotelScaling title="Recent results" cards={featured} />
 
-      <FaqSection title="Working with Fielmente" faqs={faqs} lead={<FaqLead />} />
+      <FaqListSection title="Working with Fielmente" faqs={faqs} />
 
-      <CtaBand
+      <CtaBandSection
         title="Not sure where to start?"
         body="Book a free consultation. We'll look at your marketing today and suggest the one or two changes that will make the biggest difference."
         actions={
           <>
             <ConsultButton />
-            <WhatsAppButton label="Chat on WhatsApp" />
+            <WhatsAppChatButton />
           </>
         }
       />

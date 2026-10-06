@@ -1009,6 +1009,943 @@ export const PRODUCTS: Product[] = [
         "a": "Yes. Hotel groups get centralised lead management across all their properties from one dashboard."
       }
     ]
+  },
+  // ── Added October 2026: nine more products, same template and fields as above ──
+  {
+    "slug": "hotel-ai-concierge",
+    "name": "AI Concierge",
+    "seo": {
+      "title": "AI Concierge for Hotels | 24/7 Guest Assistance | Fielmente",
+      "description": "An AI concierge that answers guest questions, recommends experiences and takes in-stay requests 24/7 on WhatsApp and the web — trained on your hotel.",
+      "focusKeyword": "hotel AI concierge",
+      "secondaryKeywords": [
+        "AI concierge for hotels",
+        "hotel guest messaging",
+        "WhatsApp concierge for hotels",
+        "24/7 hotel guest assistant"
+      ]
+    },
+    "h1": "An AI concierge that looks after guests all day and all night",
+    "intro": "Guests ask about breakfast timings, the spa, the nearest ATM or tomorrow's trek at any hour. The AI Concierge answers instantly from your hotel's own information, books in-house experiences and hands anything personal to your team.",
+    "proof": "Answers guests 24/7",
+    "summary": "A 24/7 digital concierge for every in-stay question and request",
+    "photo": {
+      "src": "/images/products/hotel-ai-concierge.jpg",
+      "alt": "Illustration of the Fielmente AI Concierge answering a guest question and booking a spa slot"
+    },
+    "screenshot": {
+      "src": "/products/AI-Concierge-Desk.png",
+      "alt": "AI concierge answering hotel guest questions on a screen"
+    },
+    "without": [
+      "The front desk answers the same questions dozens of times a day",
+      "Late-night questions wait until morning, or go unanswered",
+      "Spa, dining and activity upsells depend on who is on shift"
+    ],
+    "withFielmente": [
+      "Instant answers from your hotel's own knowledge base",
+      "Guests get help at 3 am as easily as at 3 pm",
+      "Every conversation suggests the right in-house experience"
+    ],
+    "features": [
+      {
+        "title": "Trained on your property",
+        "text": "Built from your website, menus, policies and PDFs, so answers are specific to your hotel — not generic."
+      },
+      {
+        "title": "Where guests already are",
+        "text": "Works on WhatsApp and your website, and via a QR code in rooms and at reception."
+      },
+      {
+        "title": "Experiences and upsells",
+        "text": "Recommends and books spa slots, dining, transfers and activities at the right moment in the stay."
+      },
+      {
+        "title": "Local recommendations",
+        "text": "Suggests nearby sights, cafés and walks you've approved, with directions."
+      },
+      {
+        "title": "Answers in the guest's language",
+        "text": "Replies in the language the guest writes in, including Hindi and English."
+      },
+      {
+        "title": "Smooth hand-off to staff",
+        "text": "Anything personal, sensitive or unusual goes straight to your team with the full conversation."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Share your hotel's information",
+        "text": "Website, menus, room details, policies and local tips — we build the knowledge base."
+      },
+      {
+        "title": "Set the tone",
+        "text": "We match your brand voice and decide what the concierge handles and what goes to staff."
+      },
+      {
+        "title": "Go live in rooms and online",
+        "text": "WhatsApp number, website widget and in-room QR codes, tested with your team."
+      },
+      {
+        "title": "Improve every week",
+        "text": "We review unanswered questions and add them, so the concierge gets smarter over time."
+      }
+    ],
+    "related": [
+      "hotel-guest-request-management",
+      "hotel-ai-chatbot",
+      "hotel-whatsapp-marketing"
+    ],
+    "faqs": [
+      {
+        "q": "What can guests ask the AI Concierge?",
+        "a": "Anything your team would normally answer: timings, amenities, room features, policies, local recommendations, and requests like a spa booking or an airport transfer."
+      },
+      {
+        "q": "What happens when it doesn't know an answer?",
+        "a": "It says so politely and passes the conversation to your staff, with the full context, instead of guessing."
+      },
+      {
+        "q": "Does it replace my front desk team?",
+        "a": "No. It takes the repetitive questions off their plate so they can spend more time with guests in person."
+      },
+      {
+        "q": "Can it take requests like extra towels?",
+        "a": "Yes. Requests are logged in Guest Request Management and routed to the right department."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-ai-reservation-desk",
+    "name": "AI Reservation Desk",
+    "seo": {
+      "title": "AI Reservation Desk for Hotels | Fielmente",
+      "description": "An AI reservation assistant that checks availability, shares room options and sends payment links on WhatsApp and your website, turning enquiries into bookings.",
+      "focusKeyword": "AI reservation desk for hotels",
+      "secondaryKeywords": [
+        "hotel reservation chatbot",
+        "WhatsApp booking assistant for hotels",
+        "hotel enquiry automation",
+        "AI hotel booking assistant"
+      ]
+    },
+    "h1": "A reservation desk that never lets a booking enquiry go cold",
+    "intro": "Most booking enquiries arrive in the evening, on weekends and on WhatsApp. The AI Reservation Desk replies in seconds with live availability and rates, shares rooms and packages, and sends a secure payment link to confirm the stay.",
+    "proof": "Replies to booking enquiries in seconds",
+    "summary": "Turns booking enquiries into confirmed reservations, round the clock",
+    "photo": {
+      "src": "/images/products/hotel-ai-reservation-desk.jpg",
+      "alt": "Illustration of the Fielmente AI Reservation Desk sharing room rates and a payment link in chat"
+    },
+    "screenshot": {
+      "src": "/products/ai-reservation-desk.png",
+      "alt": "AI reservation desk confirming a hotel booking in chat"
+    },
+    "without": [
+      "Enquiries sit unanswered after hours and guests book an OTA instead",
+      "Staff copy rates by hand and quotes go out inconsistent",
+      "No record of which enquiries turned into bookings"
+    ],
+    "withFielmente": [
+      "Every enquiry gets an instant reply with real availability",
+      "Room options, packages and payment link in one conversation",
+      "Every enquiry tracked from first message to confirmed booking"
+    ],
+    "features": [
+      {
+        "title": "Live availability and rates",
+        "text": "Reads your booking engine in real time, so guests only see rooms you can actually sell."
+      },
+      {
+        "title": "Room and package suggestions",
+        "text": "Recommends the right room or package for the dates, guests and budget, with photos."
+      },
+      {
+        "title": "Payment links in chat",
+        "text": "Sends a secure payment link for a full payment or deposit, and confirms once paid."
+      },
+      {
+        "title": "WhatsApp, website and Instagram",
+        "text": "Handles enquiries wherever they arrive, in one consistent voice."
+      },
+      {
+        "title": "Follow-ups that recover bookings",
+        "text": "Nudges guests who went quiet with a friendly reminder or a better-fit option."
+      },
+      {
+        "title": "Enquiry-to-booking reporting",
+        "text": "See how many enquiries came in, how fast they were answered and how many booked."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Connect your rooms and rates",
+        "text": "We link the desk to your booking engine, rate plans and policies."
+      },
+      {
+        "title": "Write the playbook",
+        "text": "Greetings, upsells, deposit rules and when to hand over to your reservations team."
+      },
+      {
+        "title": "Switch on your channels",
+        "text": "WhatsApp, website chat and Instagram, tested end to end."
+      },
+      {
+        "title": "Tune for conversion",
+        "text": "We review conversations monthly and adjust offers and follow-ups."
+      }
+    ],
+    "related": [
+      "hotel-booking-engine",
+      "hotel-payment-gateway",
+      "hotel-crm"
+    ],
+    "faqs": [
+      {
+        "q": "Does the AI Reservation Desk take payments?",
+        "a": "It sends a secure payment link through our payment gateway. The guest pays on a hosted page; the desk confirms once the payment is received."
+      },
+      {
+        "q": "Will it quote the wrong rate?",
+        "a": "It reads live rates and availability from your booking engine, so it quotes exactly what you sell on your website."
+      },
+      {
+        "q": "Can my team take over a conversation?",
+        "a": "Yes, at any point. Your team sees every conversation and can step in with one click."
+      },
+      {
+        "q": "Does it work for groups and weddings?",
+        "a": "It collects the details of group and event enquiries and passes them to your sales team as a qualified lead."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-ai-front-desk",
+    "name": "AI Front Desk",
+    "seo": {
+      "title": "AI Front Desk for Hotels | Digital Check-in | Fielmente",
+      "description": "Pre-arrival check-in, digital registration, arrival messages and express check-out — an AI front desk that shortens queues and frees your team for guests.",
+      "focusKeyword": "AI front desk for hotels",
+      "secondaryKeywords": [
+        "hotel self check-in",
+        "pre-arrival check-in",
+        "digital front desk for hotels",
+        "contactless hotel check-in"
+      ]
+    },
+    "h1": "A front desk that works before guests even arrive",
+    "intro": "Collect guest details before arrival, welcome guests with everything they need, and let them check out with a tap. The AI Front Desk handles the paperwork and routine questions so your team can focus on hospitality.",
+    "proof": "Pre-arrival check-in, no queue",
+    "summary": "Faster check-in, check-out and arrival help — without the queue",
+    "photo": {
+      "src": "/images/products/hotel-ai-front-desk.jpg",
+      "alt": "Illustration of a guest completing pre-arrival check-in with the Fielmente AI Front Desk"
+    },
+    "screenshot": {
+      "src": "/products/ai-front-desk.png",
+      "alt": "Self-service AI front desk screen in a hotel lobby"
+    },
+    "without": [
+      "Guests fill the same forms at reception after a long journey",
+      "Peak check-in hours mean queues and rushed welcomes",
+      "Check-out means waiting for a printed bill"
+    ],
+    "withFielmente": [
+      "Guest details collected online before arrival",
+      "A calm lobby with a personal welcome, not paperwork",
+      "Express check-out with the bill and payment link on WhatsApp"
+    ],
+    "features": [
+      {
+        "title": "Pre-arrival check-in",
+        "text": "Guests share their details and arrival time online before they reach the hotel."
+      },
+      {
+        "title": "Digital guest registration",
+        "text": "Guest registration details and ID collected securely, ready for your records."
+      },
+      {
+        "title": "Arrival and welcome messages",
+        "text": "Directions, parking, Wi-Fi and breakfast timings sent automatically before and on arrival."
+      },
+      {
+        "title": "Lobby screen or tablet",
+        "text": "An optional self-service screen at reception for arrivals, questions and requests."
+      },
+      {
+        "title": "Express check-out",
+        "text": "Bill summary and payment link sent on WhatsApp, with a thank-you and review request."
+      },
+      {
+        "title": "Review requests at the right time",
+        "text": "Happy guests are invited to review you on Google as they leave."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Map your arrival flow",
+        "text": "Check-in times, required details, deposits and policies."
+      },
+      {
+        "title": "Brand the experience",
+        "text": "Messages, forms and screens in your hotel's look and voice."
+      },
+      {
+        "title": "Train your team",
+        "text": "A short session so reception knows exactly what arrives pre-filled."
+      },
+      {
+        "title": "Measure and refine",
+        "text": "Track pre-arrival completion and check-out times, then improve."
+      }
+    ],
+    "related": [
+      "hotel-ai-concierge",
+      "hotel-guest-request-management",
+      "hotel-payment-gateway"
+    ],
+    "faqs": [
+      {
+        "q": "Do guests need to download an app?",
+        "a": "No. Everything works through WhatsApp and a web link on the guest's phone."
+      },
+      {
+        "q": "Is guest data stored securely?",
+        "a": "Yes. Guest data is stored on Eazotel's secure cloud infrastructure and is only visible to your authorised staff."
+      },
+      {
+        "q": "Can we still check guests in the traditional way?",
+        "a": "Of course. Guests who haven't pre-checked in are welcomed as usual; the AI Front Desk simply reduces how many need to."
+      },
+      {
+        "q": "Does it work for small properties?",
+        "a": "Yes. Boutique hotels and homestays often benefit most, because there's no one at the desk all day."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-guest-request-management",
+    "name": "Guest Request Management",
+    "seo": {
+      "title": "Guest Request Management System for Hotels | Fielmente",
+      "description": "Guests raise requests by QR code or WhatsApp; your team sees them by department with timers and status updates, so nothing slips through.",
+      "focusKeyword": "hotel guest request management",
+      "secondaryKeywords": [
+        "guest request software for hotels",
+        "housekeeping request tracking",
+        "hotel service request system",
+        "in-stay guest requests"
+      ]
+    },
+    "h1": "Every guest request, logged, routed and closed on time",
+    "intro": "Extra towels, a leaking tap, a late checkout — requests arrive by phone, WhatsApp and in person, and some get lost. Guest Request Management puts every request in one place, sends it to the right department and keeps the guest updated.",
+    "proof": "One board for every guest request",
+    "summary": "Every guest request logged, routed and closed on time",
+    "photo": {
+      "src": "/images/products/hotel-guest-request-management.jpg",
+      "alt": "Illustration of the Fielmente guest request board with open requests by department"
+    },
+    "screenshot": {
+      "src": "/products/guest-requests.png",
+      "alt": "Guest request dashboard showing open requests by department"
+    },
+    "without": [
+      "Requests scribbled on paper or lost in phone calls",
+      "Guests chase the same request twice — and mention it in reviews",
+      "No way to see which department is slow"
+    ],
+    "withFielmente": [
+      "Every request logged the moment a guest raises it",
+      "Automatic routing to housekeeping, maintenance or F&B",
+      "Response times tracked, so managers can fix bottlenecks"
+    ],
+    "features": [
+      {
+        "title": "QR code and WhatsApp requests",
+        "text": "Guests scan a QR in the room or message on WhatsApp — no app, no phone call."
+      },
+      {
+        "title": "Routing by department",
+        "text": "Requests go straight to the right team, with room number and details attached."
+      },
+      {
+        "title": "Timers and escalations",
+        "text": "Each request has a target time; overdue ones escalate to a supervisor."
+      },
+      {
+        "title": "Guest status updates",
+        "text": "Guests are told when a request is accepted and when it's done."
+      },
+      {
+        "title": "Staff task view",
+        "text": "Each staff member sees their open tasks on their phone and closes them with a tap."
+      },
+      {
+        "title": "Service reports",
+        "text": "Requests by type, room and department, with average response times."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Set up departments",
+        "text": "Housekeeping, maintenance, F&B, front office — with the right people in each."
+      },
+      {
+        "title": "Agree response times",
+        "text": "Target times per request type and who gets escalations."
+      },
+      {
+        "title": "Place QR codes",
+        "text": "Branded QR cards for every room and common area."
+      },
+      {
+        "title": "Review weekly",
+        "text": "Use the reports to spot slow areas and repeat issues."
+      }
+    ],
+    "related": [
+      "hotel-ai-concierge",
+      "hotel-ai-front-desk",
+      "hotel-crm"
+    ],
+    "faqs": [
+      {
+        "q": "How do guests raise a request?",
+        "a": "By scanning the QR code in their room or sending a WhatsApp message. The AI Concierge can also log requests for them."
+      },
+      {
+        "q": "Do staff need a separate app?",
+        "a": "Staff use a simple mobile view in the browser to see and close their tasks."
+      },
+      {
+        "q": "Can we set different target times for different requests?",
+        "a": "Yes. A towel request and a maintenance issue can have different target times and escalation rules."
+      },
+      {
+        "q": "Does it help with reviews?",
+        "a": "Fast, visible service is one of the biggest drivers of good reviews, and it lets you fix problems before guests check out."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-ai-voice-agent",
+    "name": "AI Voice Agent",
+    "seo": {
+      "title": "AI Voice Agent for Hotels | 24/7 Calls | Fielmente",
+      "description": "An AI voice agent that answers hotel calls in a natural voice, handles common questions, captures booking enquiries and hands callers to your team.",
+      "focusKeyword": "hotel AI voice agent",
+      "secondaryKeywords": [
+        "AI phone answering for hotels",
+        "hotel call answering service",
+        "AI receptionist for hotels",
+        "voice bot for hotels"
+      ]
+    },
+    "h1": "Never miss a booking call again",
+    "intro": "Calls come in while reception is busy, at night and during peak season. The AI Voice Agent answers every call in a natural voice, handles common questions, captures booking details and transfers to your team when a caller needs a person.",
+    "proof": "Every call answered, even at peak hours",
+    "summary": "Answers every call in a natural voice, day and night",
+    "photo": {
+      "src": "/images/products/hotel-ai-voice-agent.jpg",
+      "alt": "Illustration of the Fielmente AI Voice Agent answering a hotel booking call"
+    },
+    "screenshot": {
+      "src": "/products/AI-Voice-Agent.png",
+      "alt": "AI voice agent handling hotel phone calls"
+    },
+    "without": [
+      "Calls ring out during check-in rush and after midnight",
+      "Callers who can't get through book somewhere else",
+      "No record of what callers asked or wanted"
+    ],
+    "withFielmente": [
+      "Every call answered on the first ring",
+      "Booking enquiries captured with dates, guests and contact details",
+      "Call summaries saved to the CRM for follow-up"
+    ],
+    "features": [
+      {
+        "title": "Natural voice conversations",
+        "text": "Speaks and understands naturally, including Hindi and English."
+      },
+      {
+        "title": "Knows your property",
+        "text": "Uses the same knowledge base as your AI Concierge and Chatbot."
+      },
+      {
+        "title": "Booking enquiries captured",
+        "text": "Takes dates, guests and preferences, then sends the caller a WhatsApp follow-up."
+      },
+      {
+        "title": "Transfer to your team",
+        "text": "Passes the call to reception or reservations when the caller asks for a person."
+      },
+      {
+        "title": "Call summaries and transcripts",
+        "text": "Every call summarised and saved to the guest's record."
+      },
+      {
+        "title": "Out-of-hours cover",
+        "text": "Answers overnight and on holidays, so no call goes to voicemail."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Build the knowledge base",
+        "text": "The same hotel information that powers your chat assistants."
+      },
+      {
+        "title": "Design the call flow",
+        "text": "Greeting, common questions, booking capture and transfer rules."
+      },
+      {
+        "title": "Connect your number",
+        "text": "Forward your existing number or use a new one for campaigns."
+      },
+      {
+        "title": "Listen and improve",
+        "text": "We review call summaries and refine answers every month."
+      }
+    ],
+    "related": [
+      "hotel-call-management-system",
+      "hotel-ai-reservation-desk",
+      "hotel-crm"
+    ],
+    "faqs": [
+      {
+        "q": "Will callers know they're speaking to an AI?",
+        "a": "The agent introduces itself as the hotel's virtual assistant. Callers can ask for a person at any time."
+      },
+      {
+        "q": "Can it take a booking over the phone?",
+        "a": "It captures the booking details and sends the caller a WhatsApp message with room options and a payment link to confirm."
+      },
+      {
+        "q": "Do I need a new phone number?",
+        "a": "No. Calls to your existing number can be forwarded to the agent, for example when reception is busy or after hours."
+      },
+      {
+        "q": "Which languages does it speak?",
+        "a": "It handles Hindi and English conversations; talk to us about other languages for your market."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-call-management-system",
+    "name": "Call Management System",
+    "seo": {
+      "title": "Hotel Call Management & Call Tracking | Fielmente",
+      "description": "Virtual numbers, smart routing, call recording, missed-call alerts and campaign call tracking, so every guest call is answered and measured.",
+      "focusKeyword": "hotel call management system",
+      "secondaryKeywords": [
+        "hotel call tracking",
+        "missed call follow-up for hotels",
+        "call recording for hotels",
+        "call analytics for hotels"
+      ]
+    },
+    "h1": "Every guest call answered, routed and measured",
+    "intro": "Phone calls are still where many bookings happen. The Call Management System gives your hotel smart numbers, routes calls to the right person, records conversations and shows which campaigns make the phone ring.",
+    "proof": "Every call tracked to its source",
+    "summary": "Route, record and track every guest call in one place",
+    "photo": {
+      "src": "/images/products/hotel-call-management-system.jpg",
+      "alt": "Illustration of the Fielmente call dashboard showing calls by source and missed-call follow-ups"
+    },
+    "screenshot": {
+      "src": "/products/call-management.png",
+      "alt": "Call dashboard showing answered and missed calls by source"
+    },
+    "without": [
+      "Calls bounce between reception and reservations",
+      "Missed calls are never called back",
+      "You can't tell which ads or pages bring in phone bookings"
+    ],
+    "withFielmente": [
+      "Calls routed straight to reservations, front desk or sales",
+      "Missed calls trigger an alert and a WhatsApp follow-up",
+      "Call tracking by campaign, so phone bookings count in your marketing"
+    ],
+    "features": [
+      {
+        "title": "Virtual numbers",
+        "text": "Local or toll-free numbers for your hotel, campaigns and website."
+      },
+      {
+        "title": "IVR and smart routing",
+        "text": "Press 1 for reservations, 2 for the front desk — or route by time of day."
+      },
+      {
+        "title": "Call recording",
+        "text": "Recordings for training and quality checks, with caller consent messaging."
+      },
+      {
+        "title": "Missed-call alerts",
+        "text": "Your team is alerted instantly and the caller gets a WhatsApp message."
+      },
+      {
+        "title": "Campaign call tracking",
+        "text": "Separate numbers per campaign show exactly which ads drive calls."
+      },
+      {
+        "title": "Call analytics",
+        "text": "Answered, missed and returned calls by hour, day, source and staff member."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Plan your numbers",
+        "text": "Main line, reservations and one number per campaign or channel."
+      },
+      {
+        "title": "Design routing",
+        "text": "Who answers what, when — and what happens after hours."
+      },
+      {
+        "title": "Connect to your marketing",
+        "text": "Tracking numbers on ads, landing pages and listings."
+      },
+      {
+        "title": "Review the numbers",
+        "text": "Monthly reports on answer rates and calls by source."
+      }
+    ],
+    "related": [
+      "hotel-ai-voice-agent",
+      "hotel-crm",
+      "hotel-whatsapp-marketing"
+    ],
+    "faqs": [
+      {
+        "q": "Can I keep my existing hotel number?",
+        "a": "Yes. You can keep your main number and add tracking numbers for campaigns."
+      },
+      {
+        "q": "How does call tracking help my marketing?",
+        "a": "Each campaign gets its own number, so you can see which ads and pages generate phone enquiries — and let Google optimise toward them."
+      },
+      {
+        "q": "What happens when a call is missed?",
+        "a": "Your team gets an alert and the caller receives a WhatsApp message offering help, so the enquiry isn't lost."
+      },
+      {
+        "q": "Can calls go to the AI Voice Agent?",
+        "a": "Yes. You can route calls to the AI Voice Agent after hours or when all lines are busy."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-channel-manager",
+    "name": "Channel Manager",
+    "seo": {
+      "title": "Hotel Channel Manager | Rates & Inventory Sync | Fielmente",
+      "description": "Keep rates and availability in sync across Booking.com, Agoda, MakeMyTrip, Goibibo, Airbnb and your booking engine — and stop overbookings for good.",
+      "focusKeyword": "hotel channel manager",
+      "secondaryKeywords": [
+        "OTA channel manager",
+        "rate and inventory sync",
+        "channel manager for small hotels",
+        "hotel channel manager India"
+      ]
+    },
+    "h1": "Sell on every channel without selling the same room twice",
+    "intro": "Update a rate or close a room once, and it changes everywhere. The Channel Manager keeps inventory and rates in sync across your OTAs and your own booking engine, so you can sell widely without overbookings.",
+    "proof": "One update for every channel",
+    "summary": "Rates and inventory in sync across every OTA and your website",
+    "photo": {
+      "src": "/images/products/hotel-channel-manager.jpg",
+      "alt": "Illustration of the Fielmente channel manager with rates in sync across OTAs and the hotel website"
+    },
+    "screenshot": {
+      "src": "/products/channel-manager.png",
+      "alt": "Channel manager showing rates synced across OTAs"
+    },
+    "without": [
+      "Rates updated one extranet at a time",
+      "Overbookings when two channels sell the last room",
+      "Your website often shows a worse rate than an OTA"
+    ],
+    "withFielmente": [
+      "One calendar for rates and inventory across every channel",
+      "Availability updates everywhere as soon as a room sells",
+      "Rate rules that keep your direct rate the best one"
+    ],
+    "features": [
+      {
+        "title": "Real-time inventory sync",
+        "text": "A booking on any channel updates availability everywhere else."
+      },
+      {
+        "title": "Major OTAs connected",
+        "text": "Booking.com, Agoda, MakeMyTrip, Goibibo, Airbnb and more, plus your booking engine."
+      },
+      {
+        "title": "Rate rules and parity",
+        "text": "Set channel-specific markups and keep your direct rate the most attractive."
+      },
+      {
+        "title": "Bulk calendar updates",
+        "text": "Change rates, restrictions and stop-sells for a date range in one go."
+      },
+      {
+        "title": "All bookings in one place",
+        "text": "OTA and direct reservations flow into one list with guest details."
+      },
+      {
+        "title": "Channel performance",
+        "text": "See which channels bring bookings, revenue and commissions."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Map rooms and rate plans",
+        "text": "We match your room types and plans to each channel."
+      },
+      {
+        "title": "Connect your channels",
+        "text": "OTA extranets and your booking engine, tested with live dates."
+      },
+      {
+        "title": "Set your rules",
+        "text": "Markups, restrictions and parity rules per channel."
+      },
+      {
+        "title": "Shift share to direct",
+        "text": "Use channel reports to grow direct bookings over time."
+      }
+    ],
+    "related": [
+      "hotel-booking-engine",
+      "hotel-payment-gateway",
+      "hotel-crm"
+    ],
+    "faqs": [
+      {
+        "q": "Which OTAs can I connect?",
+        "a": "Major OTAs used by Indian hotels, including Booking.com, Agoda, MakeMyTrip, Goibibo and Airbnb. Talk to us about any other channel you use."
+      },
+      {
+        "q": "Will it stop overbookings?",
+        "a": "It updates availability across channels when a room sells, which prevents overbookings caused by channels selling out of sync."
+      },
+      {
+        "q": "Does it work with the Fielmente Booking Engine?",
+        "a": "Yes. The booking engine and channel manager share one inventory, so your website always shows live availability."
+      },
+      {
+        "q": "Can I set different rates per channel?",
+        "a": "Yes. You can add channel-specific markups and restrictions while keeping your direct rate the best."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-social-media-management-tool",
+    "name": "Social Media Management",
+    "seo": {
+      "title": "Hotel Social Media Management Tool | Fielmente",
+      "description": "Plan a content calendar, write captions with AI, schedule posts to Instagram and Facebook and track what drives enquiries — built for hotels.",
+      "focusKeyword": "hotel social media management tool",
+      "secondaryKeywords": [
+        "social media scheduling for hotels",
+        "hotel content calendar",
+        "Instagram tool for hotels",
+        "social media dashboard for hotels"
+      ]
+    },
+    "h1": "Your hotel's social media, planned, posted and measured in one place",
+    "intro": "Keep a steady flow of posts without the scramble. Plan a month of content, draft captions with AI, get approvals, schedule to your channels and see which posts bring in enquiries.",
+    "proof": "One calendar for every post",
+    "summary": "Plan, create, schedule and measure every post from one dashboard",
+    "photo": {
+      "src": "/images/products/hotel-social-media-management-tool.jpg",
+      "alt": "Illustration of the Fielmente social media content calendar for a hotel"
+    },
+    "screenshot": {
+      "src": "/products/social-media-tool.png",
+      "alt": "Hotel social media content calendar on screen"
+    },
+    "without": [
+      "Posting whenever someone finds the time",
+      "Captions written from scratch every time",
+      "No idea which posts actually bring enquiries"
+    ],
+    "withFielmente": [
+      "A month of content planned and scheduled ahead",
+      "On-brand captions and hashtags drafted with AI",
+      "Reports that link posts to profile visits and enquiries"
+    ],
+    "features": [
+      {
+        "title": "Content calendar",
+        "text": "Plan posts, reels and stories around seasons, festivals and offers."
+      },
+      {
+        "title": "AI captions and hashtags",
+        "text": "Draft captions in your brand voice, then edit and approve."
+      },
+      {
+        "title": "Scheduling",
+        "text": "Schedule to Instagram and Facebook in advance."
+      },
+      {
+        "title": "Approval workflow",
+        "text": "Owners or managers approve posts before they go live."
+      },
+      {
+        "title": "Media library",
+        "text": "Keep approved photos and videos organised by room, venue and season."
+      },
+      {
+        "title": "Performance reports",
+        "text": "Reach, engagement and profile actions by post and by month."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Connect your accounts",
+        "text": "Instagram and Facebook pages, with the right team access."
+      },
+      {
+        "title": "Build your library",
+        "text": "Upload photos and videos, and set your brand voice."
+      },
+      {
+        "title": "Plan the month",
+        "text": "A calendar around your offers, seasons and events."
+      },
+      {
+        "title": "Measure and repeat",
+        "text": "Keep what works, drop what doesn't."
+      }
+    ],
+    "related": [
+      "hotel-conversational-tool",
+      "hotel-whatsapp-marketing",
+      "hotel-crm"
+    ],
+    "faqs": [
+      {
+        "q": "Can your team manage our social media for us?",
+        "a": "Yes. Fielmente also offers fully managed social media for hotels, restaurants, resorts and homestays, using this same tool."
+      },
+      {
+        "q": "Which platforms can I post to?",
+        "a": "Instagram and Facebook. Talk to us about other channels you use."
+      },
+      {
+        "q": "Does the AI write posts automatically?",
+        "a": "It drafts captions and hashtags for you to edit and approve. Nothing is posted without approval."
+      },
+      {
+        "q": "Can several people work on it?",
+        "a": "Yes. Your team and ours can plan, draft and approve posts together."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-conversational-tool",
+    "name": "Conversational Tool",
+    "seo": {
+      "title": "Hotel Conversational Tool | One Guest Inbox | Fielmente",
+      "description": "Bring WhatsApp, Instagram DMs, Messenger, website chat and email into one shared inbox, with AI-suggested replies, team assignment and every guest's history.",
+      "focusKeyword": "hotel conversational tool",
+      "secondaryKeywords": [
+        "shared inbox for hotels",
+        "WhatsApp inbox for hotels",
+        "omnichannel guest messaging",
+        "hotel team inbox"
+      ]
+    },
+    "h1": "One inbox for every guest conversation",
+    "intro": "Guests message on WhatsApp, Instagram, your website and email — and replies get missed between phones and logins. The Conversational Tool brings every message into one shared inbox, with AI help to reply faster.",
+    "proof": "One inbox for every channel",
+    "summary": "One inbox for WhatsApp, Instagram, web chat and email",
+    "photo": {
+      "src": "/images/products/hotel-conversational-tool.jpg",
+      "alt": "Illustration of the Fielmente shared inbox with WhatsApp, Instagram and web chat messages"
+    },
+    "screenshot": {
+      "src": "/products/conversational-tool.png",
+      "alt": "Shared hotel inbox with WhatsApp, Instagram and web chat messages"
+    },
+    "without": [
+      "Messages spread across personal phones and apps",
+      "Guests wait hours — or never hear back",
+      "No history when a returning guest writes in"
+    ],
+    "withFielmente": [
+      "Every channel in one shared inbox",
+      "AI-suggested replies and saved answers for common questions",
+      "The guest's full history beside every conversation"
+    ],
+    "features": [
+      {
+        "title": "Shared multichannel inbox",
+        "text": "WhatsApp, Instagram, Messenger, website chat and email in one place."
+      },
+      {
+        "title": "AI-suggested replies",
+        "text": "Draft replies from your knowledge base, ready to send or edit."
+      },
+      {
+        "title": "Assignment and notes",
+        "text": "Assign conversations to reservations, sales or front office, with internal notes."
+      },
+      {
+        "title": "Saved replies and templates",
+        "text": "One-click answers for rates, directions, check-in times and more."
+      },
+      {
+        "title": "Connected to the CRM",
+        "text": "Every conversation saved to the guest's profile and lead stage."
+      },
+      {
+        "title": "Response-time tracking",
+        "text": "See how fast your team replies, by channel and by person."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Connect your channels",
+        "text": "WhatsApp Business, Instagram, Facebook, website chat and email."
+      },
+      {
+        "title": "Set up your team",
+        "text": "Departments, assignment rules and working hours."
+      },
+      {
+        "title": "Load saved replies",
+        "text": "Your most common answers, written once and reused."
+      },
+      {
+        "title": "Switch on AI help",
+        "text": "AI-suggested replies and the chatbot for after-hours cover."
+      }
+    ],
+    "related": [
+      "hotel-ai-chatbot",
+      "hotel-whatsapp-marketing",
+      "hotel-crm"
+    ],
+    "faqs": [
+      {
+        "q": "Which channels can I connect?",
+        "a": "WhatsApp Business, Instagram DMs, Facebook Messenger, website live chat and email."
+      },
+      {
+        "q": "Can several staff reply from the same WhatsApp number?",
+        "a": "Yes. The whole team works from one shared inbox, so there's no need to pass a phone around."
+      },
+      {
+        "q": "Does it work with the AI Chatbot?",
+        "a": "Yes. The chatbot answers first, and hands over to your team inside the same inbox."
+      },
+      {
+        "q": "Is conversation history kept?",
+        "a": "Yes. Every conversation is saved to the guest's record in the CRM."
+      }
+    ]
   }
 ];
 

@@ -3,44 +3,7 @@
 // restaurant-google-ads, and the three service pages reused below (hotel-social-media, hotel-seo,
 // restaurant-social-media).
 
-import type { IconKey } from "@/components/marketing/icons";
-import type { ServiceKey } from "./services";
-
-export interface IndustryProfile {
-  slug: string; // industries-we-serve/<slug>/
-  prefix: string; // service slug prefix
-  name: string; // "Hotel"
-  label: string; // "Hotel Marketing"
-  noun: string; // "hotel"
-  plural: string; // "hotels"
-  guests: string; // "guests"
-  audience: string;
-  bookAction: string;
-  goal: string;
-  channels: string;
-  reviewSites: string;
-  searches: string[];
-  peaks: string;
-  showcase: string;
-  icon: IconKey;
-  heroImage: string;
-  heroAlt: string;
-  secondImage: string;
-  secondAlt: string;
-  heroTitle: string;
-  heroLede: string;
-  cardLine: string;
-  without: string[];
-  withList: string[];
-  caseStudies: string[];
-  products: string[];
-  services: ServiceKey[];
-  /** Service keys that already have a page — linked instead of rebuilt. A path under
-   * /industries-we-serve/ ("hotel-marketing-agency/hotel-seo") or a full path ("/hotel-performance-marketing-agency/"). */
-  existing?: Partial<Record<ServiceKey, string>>;
-  faqs: { q: string; a: string }[];
-  meta: { title: string; description: string };
-}
+import type { IndustryProfile } from "@/@types/@industryTemplateType";
 
 export const industries: IndustryProfile[] = [
   /* ── Hotels ───────────────────────────────────────────────── */

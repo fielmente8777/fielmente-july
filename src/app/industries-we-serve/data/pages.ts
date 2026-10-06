@@ -1,15 +1,11 @@
 // Route helpers for the new industry and service pages, used by [...industry]/page.tsx.
 import type { Metadata } from "next";
-import { getIndustry, industries, type IndustryProfile } from "./industries";
-import { serviceSlug, serviceTypes, type ServiceKey } from "./services";
+import type { IndustryProfile, ServicePageRef } from "@/@types/@industryTemplateType";
+import { getIndustry, industries } from "./industries";
+import { serviceSlug, serviceTypes } from "./services";
 
 const SITE = "https://fielmente.com";
 
-export interface ServicePageRef {
-  path: string; // "hotel-marketing-agency/hotel-local-seo"
-  I: IndustryProfile;
-  key: ServiceKey;
-}
 
 /** Every new service page. Services that already have a page (I.existing) are skipped. */
 export const newServicePages: ServicePageRef[] = industries.flatMap((I) =>

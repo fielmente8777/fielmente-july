@@ -20,11 +20,15 @@ const PopUpForm = () => {
     const [errorMessage, setErrorMessage] = useState("");
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+    // Indian numbers are 10 digits; other countries vary (e.g. UAE mobiles are 9), so allow 7-15.
+    const minDigits = countryCode === "+91" ? 10 : 7;
+    const maxDigits = countryCode === "+91" ? 10 : 15;
+
     const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-        if (value.length <= 10) {
+        if (value.length <= maxDigits) {
             setUserPhone(value);
-            setErrorMessage(value.length < 10 ? "Please enter a valid number" : "");
+            setErrorMessage(value.length < minDigits ? "Please enter a valid number" : "");
         }
     };
 
@@ -38,10 +42,9 @@ const PopUpForm = () => {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setFormRes(true);
 
-        if (userPhone.length !== 10) {
-            setErrorMessage("Phone number must be exactly 10 digits.");
+        if (userPhone.length < minDigits || userPhone.length > maxDigits) {
+            setErrorMessage(countryCode === "+91" ? "Phone number must be exactly 10 digits." : "Please enter a valid number");
             return;
         }
 
@@ -50,20 +53,18 @@ const PopUpForm = () => {
             return;
         }
 
+        setFormRes(true);
         try {
             const { data } = await axios.post(
                 `https://nexon.eazotel.com/eazotel/addcontacts`,
-                // `https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/7lHAUjtz#generic-webhook`,
                 {
                     Domain: "fielmente",
                     email: userEmail,
                     Name: userName,
                     Contact: `${countryCode}${userPhone}`,
                     Description: userMessage,
-                    // email: userEmail,
-                    // name: userName,
-                    // phone: `${countryCode}${userPhone}`,
-                    // message: userMessage,
+                    created_from: "webform",
+                    source_url: window.location.href,
                 },
                 {
                     headers: {
@@ -72,21 +73,24 @@ const PopUpForm = () => {
                 }
             );
 
-            if (data.success) {
-                setFormRes(true);
+            // The Eazotel endpoint answers { Status: true }, which is what every other form checks.
+            // `success` was the old Privyr response; it is kept as a fallback.
+            if (data?.Status || data?.success) {
+                window.oaiq?.("measure", "lead_created", { type: "customer_action" });
                 setUserName("");
                 setUserEmail("");
                 setUserMessage("");
                 setUserPhone("");
                 setCountryCode("+91"); // Reset country code
-                setFormRes(false);
                 window.open("/thank-you/", "_blank");
             } else {
-                setFormRes(false);
-                alert("Something went wrong!");
+                alert(data?.message || "Something went wrong!");
             }
         } catch (error) {
             console.log(error);
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setFormRes(false);
         }
     };
 

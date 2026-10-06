@@ -1,53 +1,7 @@
 // Service types used across industries. Each builder takes an industry profile and returns
 // page content tailored to it (guests, booking channels, searches, peak seasons, review sites).
 
-import type { IconKey } from "@/components/marketing/icons";
-import type { IndustryProfile } from "./industries";
-
-export type ServiceKey =
-  | "social-media-management"
-  | "local-seo"
-  | "website-seo"
-  | "ai-search-optimization"
-  | "preopening-marketing"
-  | "ota-management"
-  | "ota-listing"
-  | "revenue-management"
-  | "website-development"
-  | "sales-marketing-automation"
-  | "content-creation"
-  | "branding"
-  | "performance-marketing"
-  | "sales-marketing-consultation"
-  | "pr-communication"
-  | "influencer-marketing"
-  | "social-media-ai-automation"
-  | "online-reputation-management"
-  | "social-media-reservation-automation";
-
-export interface ServiceContent {
-  heroTitle: string;
-  heroLede: string;
-  without: string[];
-  withList: string[];
-  featuresLede: string;
-  features: { icon: IconKey; title: string; body: string }[];
-  steps: { title: string; body: string }[];
-  measure: string[];
-  faqs: { q: string; a: string }[];
-}
-
-export interface ServiceType {
-  key: ServiceKey;
-  label: string;
-  icon: IconKey;
-  image: string;
-  /** Artwork is portrait/low-res: hero shows the industry photo instead, with a service card. */
-  heroPhoto?: boolean;
-  card: (I: IndustryProfile) => string;
-  products: string[];
-  build: (I: IndustryProfile) => ServiceContent;
-}
+import type { IndustryProfile, ServiceKey, ServiceType } from "@/@types/@industryTemplateType";
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const q = (s: string) => `“${s}”`;

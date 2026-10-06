@@ -5,39 +5,21 @@ import {
 import Image from "next/image";
 import { casStudiesData } from "./components/caseData";
 import CtaSection from "@/components/commonSections/CtaSection";
-import { caseStudies, getCaseStudy } from "../data/caseStudies";
-import CaseStudyDetail from "../components/rich/CaseStudyDetail";
 
 interface Params {
   params: Promise<{ story: string }>;
 }
 
 export async function generateStaticParams() {
-  // New Google Ads case studies (rich layout) + existing SEO case studies (original layout)
-  return [
-    ...caseStudies.map((c) => ({ story: c.slug })),
-    ...casStudiesData.map((post) => ({ story: post.slug })),
-  ];
+  const path = casStudiesData;
+
+  return path.map((post) => ({
+    story: post.slug,
+  }));
 }
 
 export async function generateMetadata(props: Params) {
   const params = await props.params;
-  const rich = getCaseStudy(params.story);
-  if (rich) {
-    const url = `https://fielmente.com/case-study/${rich.slug}/`;
-    return {
-      title: rich.meta.title,
-      description: rich.meta.description,
-      alternates: { canonical: url, languages: { "en-US": url } },
-      openGraph: {
-        title: rich.meta.title,
-        description: rich.meta.description,
-        url,
-        type: "article",
-        images: [{ url: rich.heroImage, width: 1200, height: 630 }],
-      },
-    };
-  }
   const data = casStudiesData.find((item) => item.slug === params.story);
   return {
     title: data?.metaData?.title || `Case Study - Fielmente`,
@@ -64,9 +46,6 @@ export async function generateMetadata(props: Params) {
 
 export default async function Page(props: Params) {
   const params = await props.params;
-  const rich = getCaseStudy(params.story);
-  if (rich) return <CaseStudyDetail cs={rich} />;
-
   const data = casStudiesData.find((item) => item.slug === params.story);
 
   if (!data) {
