@@ -55,7 +55,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/hotel-booking-phone.jpg",
       fallback: "/industry/online-mobile.webp",
-      alt: "Guest booking a hotel room on a laptop and phone",
+      alt: "Guest booking a stay on a hotel's own website",
     },
     points: [
       {

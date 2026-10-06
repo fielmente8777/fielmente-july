@@ -19609,6 +19609,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
   },
+  
   {
     title: "ChatGPT Ads for Hotels & Resorts: Complete Guide 2026",
     slug: "chatgpt-ads-for-hotels-resorts",
@@ -22708,7 +22709,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
       <li><strong>Primary keyword:</strong> automate abandoned booking follow-ups on whatsapp</li>
       <li><strong>Secondary keywords:</strong> hotel WhatsApp automation, WhatsApp automation for hospitality, WhatsApp Business Platform for hotels, hotel direct booking automation, increase hotel direct bookings, hotel reservation automation</li>
       <li><strong>Search intent:</strong> Informational / solution-aware</li>
-      <li><strong>Suggested URL:</strong> <a href="https://fielmente.com/blog/how-hotels-can-automate-abandoned-booking-follow-ups-on-whatsapp/">https://fielmente.com/blog/how-hotels-can-automate-abandoned-booking-follow-ups-on-whatsapp/</a></li>
+      <li><strong>Suggested URL:</strong> <a href="https://fielmente.com/how-hotels-can-automate-abandoned-booking-follow-ups-on-whatsapp/">https://fielmente.com/how-hotels-can-automate-abandoned-booking-follow-ups-on-whatsapp/</a></li>
       <li>Add original screenshots, anonymised chat-flow examples or a simple hotel sales-flow diagram before publishing. Original visual evidence strengthens usefulness and makes the page harder to copy.</li>
       <li>Add an author bio with hospitality/marketing credentials and a last-updated date. Review technical or pricing claims whenever Meta or connected hotel systems change their policies.</li>
       <li>Link this article to one tightly related cluster article and one commercial service page. Avoid forcing the same anchor text across every article.</li>

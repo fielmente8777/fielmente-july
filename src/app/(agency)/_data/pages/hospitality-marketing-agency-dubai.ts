@@ -55,7 +55,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/dubai-marina.jpg",
       fallback: "/industry/restaurant-2.png",
-      alt: "Dubai Marina promenade with cafés and hotel towers",
+      alt: "Guests dining together at a busy restaurant",
     },
     points: [
       {

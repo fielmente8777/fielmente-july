@@ -60,7 +60,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/revenue-analytics.jpg",
       fallback: "/home/ota-management.png",
-      alt: "Hotel revenue charts on a laptop",
+      alt: "Tablet showing booking charts in a hotel lobby",
     },
     points: [
       {

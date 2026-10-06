@@ -2,8 +2,8 @@
 // All figures come from each client's Google Ads account (Sep 2023 – Sep 2026),
 // averaged per month over the stated periods. "Enquiries" = tracked calls, WhatsApp chats,
 // form submissions and Book Now clicks; map-direction taps and page views are excluded.
-// Photos are licensed Freepik stock (representative, not the property) — see
-// scripts/fetch-case-study-images.mjs. Swap in real property photos when available.
+// Photos in /public/case-studies/ are representative images from the site's own library,
+// not the properties. Replace each file (same name) with real property photos when available.
 
 export type MonthPoint = [month: string, enquiries: number, costPerEnquiry: number | null];
 
@@ -59,9 +59,9 @@ export const caseStudies: CaseStudy[] = [
     propertyType: "Ayurveda & naturopathy resort",
     service: "Google Ads",
     heroImage: "/case-studies/naturoville-hero.jpg",
-    heroAlt: "Ayurvedic shirodhara treatment (representative image)",
+    heroAlt: "Guests relaxing at a wellness retreat beside a lotus pond (representative image)",
     detailImage: "/case-studies/wellness-herbal.jpg",
-    detailAlt: "Herbal compresses and oils for an Ayurvedic treatment (representative image)",
+    detailAlt: "Calm guest room with morning tea (representative image)",
     headline: "Nearly the same budget. 9.5× the enquiries.",
     summary:
       "Naturoville was already investing over ₹2 lakh a month in Google Ads, but each enquiry cost more than ₹1,500. We rebuilt the path from search to enquiry — and the same budget now brings in over 1,400 enquiries a month.",
@@ -160,7 +160,7 @@ export const caseStudies: CaseStudy[] = [
     propertyType: "Leisure hotel",
     service: "Google Ads",
     heroImage: "/case-studies/mussoorie-valley.jpg",
-    heroAlt: "Valley view from Mussoorie (representative image)",
+    heroAlt: "Hotel building lit up at dusk (representative image)",
     headline: "From 100 enquiries a month to over 1,000.",
     summary:
       "In one of North India's most crowded hill-station markets, we scaled Hotel Green Castle's Google Ads into peak season — and the cost of each enquiry went down, not up.",
@@ -252,9 +252,9 @@ export const caseStudies: CaseStudy[] = [
     propertyType: "Ayurveda & wellness retreat",
     service: "Google Ads + CRM",
     heroImage: "/case-studies/naad-ayurveda.jpg",
-    heroAlt: "Traditional Ayurveda treatment (representative image)",
+    heroAlt: "Resort pool lined with palm trees at sunset (representative image)",
     detailImage: "/case-studies/wellness-compress.jpg",
-    detailAlt: "Herbal compress for Ayurvedic therapy (representative image)",
+    detailAlt: "Calm hotel lobby with a reception desk (representative image)",
     headline: "1 in 4 clicks now becomes an enquiry.",
     summary:
       "For over a year Naad's ads brought steady traffic but very few enquiries. A rebuilt landing page and a tighter account turned it into one of our best-converting accounts.",
@@ -343,7 +343,7 @@ export const caseStudies: CaseStudy[] = [
     propertyType: "Boutique retreat at 1,800 m",
     service: "Google Ads",
     heroImage: "/case-studies/garhwal-himalaya.jpg",
-    heroAlt: "Garhwal Himalaya range (representative image)",
+    heroAlt: "Hill cottage with a garden path (representative image)",
     headline: "A small retreat, a modest budget — and enquiries at ₹41 each.",
     summary:
       "A remote, family-run retreat with no big-brand recognition. Clean tracking and a Search-led account took it from a handful of measurable enquiries to more than 400 a month.",
@@ -432,7 +432,7 @@ export const caseStudies: CaseStudy[] = [
     propertyType: "Mountain resort & experiences",
     service: "Google Ads",
     heroImage: "/case-studies/mussoorie-hills.jpg",
-    heroAlt: "Hills around Mussoorie (representative image)",
+    heroAlt: "Glamping dome in a hillside meadow (representative image)",
     headline: "From about 11 direct enquiries a month to around 450.",
     summary:
       "EBC's early campaigns mostly bought Google Maps visibility. We rebuilt them around direct booking enquiries — the kind a resort can actually close.",

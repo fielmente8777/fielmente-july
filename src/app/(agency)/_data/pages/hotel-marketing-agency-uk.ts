@@ -60,7 +60,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/london.jpg",
       fallback: "/industry/hotel-2.png",
-      alt: "London street with period hotel buildings",
+      alt: "Front desk team checking in a hotel guest",
     },
     points: [
       {

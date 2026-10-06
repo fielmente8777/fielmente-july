@@ -55,7 +55,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/hotel-guest-tablet.jpg",
       fallback: "/home/ai-search-optimization.png",
-      alt: "Hotel guest using a tablet",
+      alt: "Laptop showing AI-assisted hotel search results",
     },
     points: [
       {

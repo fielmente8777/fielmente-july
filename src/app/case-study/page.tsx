@@ -146,7 +146,11 @@ export default function CaseStudy() {
                   href={`/case-study/${c.slug}/`}
                   className="group flex gap-5 items-center rounded-3xl border border-[#E4E3EC] p-5 md:p-6 hover:border-primary2/40 transition-colors"
                 >
-                  <div className="relative h-20 w-28 shrink-0 rounded-2xl bg-[#F5F5F9]">
+                  <div
+                    className="relative h-20 w-28 shrink-0 rounded-2xl"
+                    // White logos (e.g. Naad) need the same dark backing they get on the cards above
+                    style={{ backgroundColor: caseStudies.find((r) => r.logo === c.img)?.logoBg ?? "#F5F5F9" }}
+                  >
                     <Image src={c.img} alt={`${c.title} logo`} fill sizes="112px" className="object-contain p-3" />
                   </div>
                   <div className="flex flex-col gap-1.5">

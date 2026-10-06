@@ -55,7 +55,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/abu-dhabi.jpg",
       fallback: "/home/im7.webp",
-      alt: "Abu Dhabi waterfront with hotel towers",
+      alt: "Resort pool lined with palm trees at sunset",
     },
     points: [
       {

@@ -60,7 +60,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/new-york.jpg",
       fallback: "/industry/hotel-3.png",
-      alt: "New York street with yellow cabs and hotel buildings",
+      alt: "Hotel tower against a blue sky",
     },
     points: [
       {

@@ -60,7 +60,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/boutique-hotel.jpg",
       fallback: "/home/im6.webp",
-      alt: "Boutique hotel bedroom opening onto a deck with a view",
+      alt: "Boutique hotel bed with morning tea",
     },
     points: [
       {

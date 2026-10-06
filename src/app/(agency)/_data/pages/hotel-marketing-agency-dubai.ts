@@ -47,7 +47,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/dubai-hotel.jpg",
       fallback: "/home/im8.webp",
-      alt: "Dubai skyline with palm trees and hotel towers",
+      alt: "Grand hotel lit up at dusk",
     },
     points: [
       {

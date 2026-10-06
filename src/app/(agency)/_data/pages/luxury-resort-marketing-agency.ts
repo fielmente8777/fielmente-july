@@ -60,7 +60,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/luxury-resort.jpg",
       fallback: "/home/im4.webp",
-      alt: "Luxury beach resort villa with an infinity pool at sunset",
+      alt: "Modern villa with a private pool",
     },
     points: [
       {

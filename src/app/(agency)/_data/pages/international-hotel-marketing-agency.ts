@@ -60,7 +60,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/international-hotel.jpg",
       fallback: "/images/Contact.webp",
-      alt: "International guests checking in at a hotel",
+      alt: "Guests arriving with luggage at a hotel lobby",
     },
     points: [
       {

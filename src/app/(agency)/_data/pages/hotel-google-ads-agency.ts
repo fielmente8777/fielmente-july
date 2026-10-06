@@ -58,7 +58,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/google-ads-laptop.jpg",
       fallback: "/images/GOOGLE-ADS-10.webp",
-      alt: "Laptop showing campaign performance charts",
+      alt: "Marketing team reviewing campaign results in a hotel lounge",
     },
     points: [
       {

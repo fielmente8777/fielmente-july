@@ -55,7 +55,7 @@ const page: AgencyPageData = {
     image: {
       src: "/agency/marketing-dashboard.jpg",
       fallback: "/home/sales-marketing-automation.png",
-      alt: "Marketing dashboard with channel performance",
+      alt: "Marketing team working through campaign dashboards",
     },
     points: [
       {
