@@ -1,6 +1,5 @@
 import { casStudiesData } from "../[story]/components/caseData";
 
-
 export const caseStudyPageData = {
   bannerData: {
     title: "Case Studies",
@@ -15,6 +14,7 @@ export const caseStudyPageData = {
       title: item.title,
       description: item.description,
       slug: item.slug,
+      imgBg: item.imgBg,
     })),
   },
   ctaData: {

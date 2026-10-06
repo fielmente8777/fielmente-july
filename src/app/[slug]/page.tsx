@@ -213,7 +213,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { industriesWeServePageData } from "../industries-we-serve/components/pageData";
+import { industriesWeServePageData } from "../industries-we-serves/components/pageData";
 import ExploreMoreBLogs from "./components/ExploreMoreBLogs";
 import { blogPageData } from "../blogs/components/pageData";
 

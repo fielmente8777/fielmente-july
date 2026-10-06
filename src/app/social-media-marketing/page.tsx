@@ -4,18 +4,16 @@ import Link from "next/link";
 // import Form from "@/app/about-fielmente-best-hospitality-marketing-agency/components/Form";
 import type { Metadata } from "next";
 import ContactOldSection from "@/components/commonSections/ContactOldSection";
-import ContactBtn3 from "../hospitality-marketing-services/contactbtn/ContactBtn3";
+import ContactBtn3 from "../hospitality-marketing/contactbtn/ContactBtn3";
 
 export const metadata: Metadata = {
   title: "India's Best Hospitality Social Media Marketing Agency - Fielmente",
   description:
     "Rocket your brand's online presence with Fielmente, the top hospitality social media marketing agency. Boost success with our expert!",
   alternates: {
-    canonical:
-      "https://fielmente.com/social-media-marketing/",
+    canonical: "https://fielmente.com/social-media-marketing/",
     languages: {
-      "en-US":
-        "https://fielmente.com/social-media-marketing/",
+      "en-US": "https://fielmente.com/social-media-marketing/",
     },
   },
   openGraph: {

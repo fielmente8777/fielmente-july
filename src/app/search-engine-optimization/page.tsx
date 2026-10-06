@@ -6,7 +6,7 @@ import Container from "@/components/sectionComponants/Container";
 import Section from "@/components/sectionComponants/Section";
 
 import type { Metadata } from "next";
-import ContactBtn3 from "../hospitality-marketing-services/contactbtn/ContactBtn3";
+import ContactBtn3 from "../hospitality-marketing/contactbtn/ContactBtn3";
 import ContactOldSection from "@/components/commonSections/ContactOldSection";
 
 export const metadata: Metadata = {
@@ -14,11 +14,9 @@ export const metadata: Metadata = {
   description:
     "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
   alternates: {
-    canonical:
-      "https://fielmente.com/search-engine-optimization/",
+    canonical: "https://fielmente.com/search-engine-optimization/",
     languages: {
-      "en-US":
-        "https://fielmente.com/search-engine-optimization/",
+      "en-US": "https://fielmente.com/search-engine-optimization/",
     },
   },
   openGraph: {

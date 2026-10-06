@@ -197,6 +197,7 @@ export const casStudiesData = [
     },
     className: "object-contain",
     img: "/clientsLogo/naad-wellness.png",
+    imgBg: "#110D3C",
     // TODO(Fielmente): replace with a photo of the property
     hotelImg: "/banner.jpg",
     title: "Google Ads Case Study: Naad Wellness",

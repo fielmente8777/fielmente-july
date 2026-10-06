@@ -7,5 +7,11 @@ export function caseStudyCards(slugs: string[]) {
   return slugs
     .map((slug) => casStudiesData.find((c) => c.slug === slug))
     .filter((c): c is (typeof casStudiesData)[number] => Boolean(c))
-    .map((c) => ({ src: c.img, title: c.title, description: c.description, slug: c.slug }));
+    .map((c) => ({
+      src: c.img,
+      title: c.title,
+      description: c.description,
+      slug: c.slug,
+      imgBg: c.imgBg,
+    }));
 }

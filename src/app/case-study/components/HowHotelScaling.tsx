@@ -9,6 +9,7 @@ interface HowHotelScalingProps {
     title: string;
     description: string;
     slug: string;
+    imgBg?: string;
   }[];
 }
 

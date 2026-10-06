@@ -1,5 +1,5 @@
-import Testimonials from "@/app/industries-we-serve/[...industry]/components/Testimonials";
-import { industriesData } from "@/app/industries-we-serve/[...industry]/pageData";
+import Testimonials from "@/app/industries-we-serves/[...industry]/components/Testimonials";
+import { industriesData } from "@/app/industries-we-serves/[...industry]/pageData";
 import { Section } from "@/components";
 import ChooseUs from "./chooseUsOld";
 import ContactUsCard from "./ContactUsCard";

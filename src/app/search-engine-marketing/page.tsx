@@ -7,32 +7,30 @@ import Section from "@/components/sectionComponants/Section";
 
 import type { Metadata } from "next";
 import ContactOldSection from "@/components/commonSections/ContactOldSection";
-import ContactBtn3 from "../hospitality-marketing-services/contactbtn/ContactBtn3";
+import ContactBtn3 from "../hospitality-marketing/contactbtn/ContactBtn3";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality SEO Agency - Fielmente",
   description:
     "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
   alternates: {
-    canonical:
-      "https://fielmente.com/search-engine-marketing/",
+    canonical: "https://fielmente.com/search-engine-marketing/",
     languages: {
-      "en-US":
-        "https://fielmente.com/search-engine-marketing/",
+      "en-US": "https://fielmente.com/search-engine-marketing/",
     },
   },
   openGraph: {
     title: "India's Leading Hospitality SEO Agency - Fielmente",
     description:
       "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
-  images: [
+    images: [
       {
         url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
       },
     ],
-    },
+  },
 };
 
 const CardData1 = [

@@ -6,6 +6,7 @@ interface CasStudyCardProps {
   title: string;
   description: string;
   slug: string;
+  imgBg?: string;
 }
 
 const CasStudyCard: React.FC<CasStudyCardProps> = ({
@@ -13,12 +14,14 @@ const CasStudyCard: React.FC<CasStudyCardProps> = ({
   title,
   description,
   src,
+  imgBg,
 }) => {
   return (
-    <div
-      className="cursor-pointer flex flex-col gap-6 rounded-2xl p-6 bg-white border border-main-border"
-    >
-      <div className="w-full relative lg:aspect-[4/2.2] aspect-4/3">
+    <div className="cursor-pointer flex flex-col gap-6 rounded-2xl p-6 bg-white border border-main-border">
+      <div
+        className="w-full relative lg:aspect-[4/2.2] aspect-4/3 rounded-2xl"
+        style={imgBg ? { backgroundColor: imgBg } : undefined}
+      >
         <Image
           src={src}
           alt={title}
@@ -30,7 +33,11 @@ const CasStudyCard: React.FC<CasStudyCardProps> = ({
         <h2 className="text-xl font-bold text-[#363636] uppercase">
           {slug.replaceAll("-", " ")}
         </h2>
-        <p className="text-secondary text-lg"> <span className="font-semibold">Problem:</span> {description.slice(0, 50)} ...</p>
+        <p className="text-secondary text-lg">
+          {" "}
+          <span className="font-semibold">Problem:</span>{" "}
+          {description.slice(0, 50)} ...
+        </p>
         <CtaBtn
           type="link"
           href={`/case-study/${slug}`}

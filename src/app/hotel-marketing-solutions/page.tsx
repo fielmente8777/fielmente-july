@@ -1,15 +1,15 @@
 import { SectionWithContainer } from "@/components";
 import { Metadata } from "next";
 import { commonPageData } from "../cloud-kitchen-digital-marketing/component/commonpageData";
-import Milestone from "../industries-we-serve/[...industry]/components/Milestone";
-import GridCard from "../industries-we-serve/[...industry]/components/GridCard";
-import WhyNeed from "../industries-we-serve/[...industry]/components/WhyNeed";
-import WhyNeedSeo from "../industries-we-serve/[...industry]/components/WhyNeedSeo";
-import Need2 from "../industries-we-serve/[...industry]/components/Need2";
+import Milestone from "../industries-we-serves/[...industry]/components/Milestone";
+import GridCard from "../industries-we-serves/[...industry]/components/GridCard";
+import WhyNeed from "../industries-we-serves/[...industry]/components/WhyNeed";
+import WhyNeedSeo from "../industries-we-serves/[...industry]/components/WhyNeedSeo";
+import Need2 from "../industries-we-serves/[...industry]/components/Need2";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
-import Clients from "../industries-we-serve/[...industry]/components/Clients";
-import Testimonials from "../industries-we-serve/[...industry]/components/Testimonials";
+import Clients from "../industries-we-serves/[...industry]/components/Clients";
+import Testimonials from "../industries-we-serves/[...industry]/components/Testimonials";
 
 export const metadata: Metadata = {
   title: "Best Hotel Marketing Company in India - Fielmente",
