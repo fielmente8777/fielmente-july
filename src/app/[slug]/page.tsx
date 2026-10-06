@@ -215,6 +215,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { industriesWeServePageData } from "../industries-we-serve/components/pageData";
 import ExploreMoreBLogs from "./components/ExploreMoreBLogs";
+import { blogPageData } from "../blogs/components/pageData";
 
 interface Params {
   params: {
@@ -336,6 +337,10 @@ export default async function LandingPage({ params }: Params) {
       description: item.description?.slice(0, 80) + "...",
     })),
   };
+
+  const blogTitles = [...blogPageData.blogs.cards.map((card) => card.title)];
+
+  console.log("blogTitles", blogTitles);
 
   return (
     <main className="">

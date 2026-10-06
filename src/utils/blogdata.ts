@@ -19609,6 +19609,7 @@ Interest in chatgpt ads management services for hotels in india will create nois
     <p>Editorial note: Eazotel is an independent hospitality technology and marketing company. This article does not claim an official partnership with or endorsement by OpenAI.</p>
   `,
   },
+  
   {
     title: "ChatGPT Ads for Hotels & Resorts: Complete Guide 2026",
     slug: "chatgpt-ads-for-hotels-resorts",

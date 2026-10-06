@@ -82,6 +82,10 @@ export default async function Blogs({
 
   const paginationRange = getPaginationRange(page, totalPages);
 
+  const blogTitles = [...blogPageData.blogs.cards.map((card) => card.title)];
+
+  console.log("blogTitles", blogTitles);
+
   return (
     <main className="md:mt-22 mt-23">
       <Section
@@ -107,6 +111,7 @@ export default async function Blogs({
             icon={false}
           />
           <p className="text-black">{blogPageData.blogs.cards.length}</p>
+        
         </div>
       </Section>
       <SectionWithContainer>
