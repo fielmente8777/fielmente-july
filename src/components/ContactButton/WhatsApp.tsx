@@ -10,10 +10,10 @@ export default function Whatsapp() {
 
   const rightSidePaths = [
     "/test/",
-    "/UK/",
-    "/USA/",
-    "/dubai-restaurant/",
-    "/landing-page/",
+    // "/UK/",
+    // "/USA/",
+    // "/dubai-restaurant/",
+    // "/landing-page/",
   ];
 
   // Hidden where the page has its own call / WhatsApp bar
