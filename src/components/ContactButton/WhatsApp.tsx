@@ -32,6 +32,8 @@ export default function Whatsapp() {
     <Link
       href={selectedNumber}
       id="whatsapp-button"
+      target="_blank"
+      rel="noreferrer noopener"
       className={`whatsapp-button fixed z-20 ${
         isRightSide
           ? "right-4 lg:right-10 bottom-10"
