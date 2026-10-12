@@ -23,7 +23,7 @@ import { Icon } from "@/utils/serviceIcons";
 import Link from "next/link";
 import { LuArrowRight } from "react-icons/lu";
 import { lodgingIndustries } from "../../data/industries";
-import { serviceHref, serviceTypes } from "../../data/services";
+import { serviceContent, serviceHref, serviceTypes } from "../../data/services";
 import { logoSet, needsFor } from "./IndustryTemplate";
 
 export default function ServiceTemplate({
@@ -34,7 +34,8 @@ export default function ServiceTemplate({
   serviceKey: ServiceKey;
 }) {
   const st = serviceTypes[serviceKey];
-  const c = st.build(I);
+  const c = serviceContent(I, serviceKey);
+  const intro = I.overrides?.[serviceKey]?.intro;
   const industryHref = `/industries-we-serve/${I.slug}/`;
   const pageUrl = `https://fielmente.com${serviceHref(I, serviceKey)}`;
 
@@ -139,6 +140,18 @@ export default function ServiceTemplate({
       />
 
       <ClientLogosSection set={logoSet(I.slug)} />
+
+      {intro && intro.length > 0 && (
+        <section className="py-12 md:py-16">
+          <Container>
+            <div className="mx-auto max-w-3xl space-y-4 text-base/relaxed md:text-lg/relaxed text-[#3D3B55]">
+              {intro.map((p) => (
+                <p key={p.slice(0, 40)}>{p}</p>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
 
       <ComparisonSection
         title={`What changes when Fielmente handles your ${st.label}`}

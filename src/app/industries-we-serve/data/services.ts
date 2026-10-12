@@ -7,6 +7,50 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const q = (s: string) => `“${s}”`;
 
 export const serviceTypes: Record<ServiceKey, ServiceType> = {
+  "google-ads": {
+    key: "google-ads",
+    label: "Google Ads",
+    icon: "search",
+    image: "/images/GOOGLE-ADS-10.webp",
+    card: (I) => `Search and Maps ads that reach ${I.guests} ready to ${I.bookAction}`,
+    products: ["hotel-call-management-system", "hotel-whatsapp-marketing", "hotel-crm"],
+    build: (I) => ({
+      heroTitle: `${I.name} Google Ads that turn searches into ${I.guests}`,
+      heroLede: `Show up when people search ${q(I.searches[0])} or ${q(I.searches[1])}, then send them straight to call, WhatsApp or ${I.bookAction}. Every rupee is tracked to an enquiry.`,
+      without: [
+        `Competitors and ${I.channels.split(",")[0]} take the top ad slots for your own area`,
+        "Broad keywords waste budget on people who will never visit",
+        "Calls and WhatsApp chats from ads are not counted, so nobody knows what works",
+      ],
+      withList: [
+        `Campaigns built around high-intent searches near your ${I.noun}`,
+        "Negative keywords and location targeting that cut wasted spend every week",
+        "Calls, WhatsApp chats, forms and bookings tracked as separate conversions",
+      ],
+      featuresLede: `Google Ads set up and run by people who only work with hospitality, so the ads speak to ${I.audience}.`,
+      features: [
+        { icon: "search", title: "Search campaigns", body: `Ads for searches like ${q(I.searches[2] ?? I.searches[0])}, grouped by intent so each ad matches what was searched.` },
+        { icon: "pin", title: "Google Maps and local ads", body: `Your ${I.noun} pinned at the top of Maps for nearby searches, with directions and click-to-call.` },
+        { icon: "target", title: "Brand protection", body: `Your name searched? Your ad shows first, not an aggregator or ${I.channels.split(",")[0]}.` },
+        { icon: "phone", title: "Call and WhatsApp tracking", body: "Call extensions, WhatsApp buttons and forms each tracked, so budgets follow real enquiries." },
+        { icon: "calendar", title: "Budgets that follow demand", body: `More spend around ${I.peaks}; less on quiet days that never convert.` },
+        { icon: "bars", title: "Weekly optimisation", body: "Search terms reviewed every week, waste blocked, best ads given more budget." },
+      ],
+      steps: [
+        { title: "Account audit", body: "Current campaigns, search terms, tracking and wasted spend reviewed." },
+        { title: "Tracking first", body: "Calls, WhatsApp, forms and bookings set up as conversions before scaling." },
+        { title: "Launch", body: "Intent-based campaigns, ads and landing pages go live with a test budget." },
+        { title: "Optimise and scale", body: "Weekly search-term cleanup, bid changes and budget moved to what converts." },
+      ],
+      measure: ["Enquiries and cost per enquiry", "Calls and WhatsApp chats from ads", `${cap(I.bookAction)} actions on your website`, "Search impression share for your key terms"],
+      faqs: [
+        { q: `How much should a ${I.noun} spend on Google Ads?`, a: "Start with a test budget you are comfortable with for one to two months. We scale only the campaigns that bring enquiries at a cost you are happy with." },
+        { q: "Do you charge a percentage of ad spend?", a: "We agree a fixed monthly management fee upfront, so our advice on budget is never tied to spending more." },
+        { q: "Who owns the Google Ads account?", a: "You do. We work inside your account, and everything we build stays with you." },
+        { q: "How soon will we see enquiries?", a: "Search ads can bring enquiries within the first week. The first month is about learning which searches convert; results usually improve from month two." },
+      ],
+    }),
+  },
   /* ── Social Media Management ─────────────────────────────── */
   "social-media-management": {
     key: "social-media-management",
@@ -888,7 +932,13 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
   },
 };
 
-export const serviceSlug = (I: IndustryProfile, key: ServiceKey) => `${I.slug}/${I.prefix}-${key}`;
+export const serviceSlug = (I: IndustryProfile, key: ServiceKey) => I.paths?.[key] ?? `${I.slug}/${I.prefix}-${key}`;
+
+/** A service page's content: the template text for the industry, with any page-specific overrides on top. */
+export const serviceContent = (I: IndustryProfile, key: ServiceKey) => {
+  const { metaTitle: _t, metaDescription: _d, intro: _i, ...content } = I.overrides?.[key] ?? {};
+  return { ...serviceTypes[key].build(I), ...content };
+};
 
 /** Full href for an industry's service: its own page, or the existing/agency page that covers it. */
 export const serviceHref = (I: IndustryProfile, key: ServiceKey) => {

@@ -14,10 +14,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical:
       "https://fielmente.com/hospitality-marketing-services/social-media-marketing-agency/",
-    languages: {
-      "en-US":
-        "https://fielmente.com/hospitality-marketing-services/social-media-marketing-agency/",
-    },
   },
   openGraph: {
     title: "India's Best Hospitality Social Media Marketing Agency - Fielmente",

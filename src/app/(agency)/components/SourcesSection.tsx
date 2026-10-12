@@ -19,7 +19,13 @@ const SourcesSection: React.FC<SourcesSectionProps> = ({ sources }) => {
           {sources.map((s, i) => (
             <li key={s.id} id={`src-${s.id}`} className="scroll-mt-28">
               <span className="font-semibold text-primary2">[{i + 1}]</span>{" "}
-              <a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="underline decoration-[#C9C7DD] hover:text-primary2">
+              <a
+                href={s.url}
+                {...(s.url.startsWith("https://fielmente.com") || s.url.startsWith("/")
+                  ? {} // our own pages: a normal followed link
+                  : { target: "_blank", rel: "noopener noreferrer nofollow" })}
+                className="underline decoration-[#C9C7DD] hover:text-primary2"
+              >
                 {s.label}
               </a>
             </li>

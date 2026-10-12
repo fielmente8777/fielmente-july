@@ -9,8 +9,7 @@ import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
 import { casStudiesData } from "@/app/case-study/[story]/components/caseData";
 import { contacts } from "../../../contact";
-import { blogData } from "@/utils/blogdata";
-const Header = () => {
+const Header = ({ blogSlugs = [] }: { blogSlugs?: string[] }) => {
   const { setIsOpenPopupForm, setIsMobileNavOpen } = useAppContext();
 
   const pathName = usePathname();
@@ -38,7 +37,7 @@ const Header = () => {
     "/search-engine-marketing/",
   ];
   const [isScrolled, setIsScrolled] = useState(false);
-  const isBlogDetail = blogData.some((blog) => `/${blog.slug}/` === pathName);
+  const isBlogDetail = blogSlugs.some((slug) => `/${slug}/` === pathName);
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50); // threshold

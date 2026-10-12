@@ -9,9 +9,6 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: "https://fielmente.com/terms-and-conditions",
-    languages: {
-      "en-US": "https://fielmente.com/terms-and-conditions",
-    },
   },
   openGraph: {
     title: "Terms and Conditions - Fielmente",

@@ -18,10 +18,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical:
       "https://fielmente.com/services/seo-agency/",
-    languages: {
-      "en-US":
-        "https://fielmente.com/services/seo-agency/",
-    },
   },
   openGraph: {
     title: "India's Leading Hospitality SEO Agency - Fielmente",

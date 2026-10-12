@@ -13,9 +13,6 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: "https://fielmente.com/our-clients/",
-    languages: {
-      "en-US": "https://fielmente.com/our-clients/",
-    },
   },
   openGraph: {
     title: "Our Clients | Hospitality Brands That Trust Fielmente",

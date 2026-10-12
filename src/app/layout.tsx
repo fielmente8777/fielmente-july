@@ -9,6 +9,7 @@ import MobileNav from "@/components/navbars/MobileNav";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import Script from "next/script";
 import Salesiq from "@/components/zohochatbot/Salesiq";
+import { blogData } from "@/utils/blogdata";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -58,11 +59,6 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://fielmente.com/"),
 
-  keywords:
-    "Fielmente, Hotel Marketing Agency, Cloud Kitchen Marketing Agency, Resort Marketing Agency",
-  alternates: {
-    canonical: "https://fielmente.com/",
-  },
   authors: [{ name: "Fielmente", url: "https://fielmente.com/" }],
   openGraph: {
     title: "Fielmente - India's Leading Hospitality Marketing Agency",
@@ -288,7 +284,7 @@ export default function RootLayout({
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ5LPRNM"></iframe>
         </noscript>
         <AppProvider>
-          <NavBar />
+          <NavBar blogSlugs={blogData.map((blog) => blog.slug)} />
           <MobileNav />
 
           {children}

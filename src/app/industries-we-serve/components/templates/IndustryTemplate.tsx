@@ -67,7 +67,7 @@ const SPECIALIST_PAGES: Record<string, string[]> = {
 
 /** Which client logos to show first on each industry's pages. */
 export function logoSet(slug: string): LogoSet {
-  if (slug.startsWith("restaurant")) return "restaurants";
+  if (slug.startsWith("restaurant") || slug.startsWith("cloud-kitchen")) return "restaurants";
   if (slug.startsWith("travel")) return "travel";
   if (slug.startsWith("resort") || slug.startsWith("homestay"))
     return "resorts";
@@ -76,7 +76,7 @@ export function logoSet(slug: string): LogoSet {
 
 /** Options for "What do you need help with?" on each industry's lead form. */
 export function needsFor(slug: string): string[] {
-  if (slug.startsWith("restaurant"))
+  if (slug.startsWith("restaurant") || slug.startsWith("cloud-kitchen"))
     return [
       "More table bookings",
       "Google and local SEO",

@@ -16,9 +16,6 @@ export const metadata: Metadata = {
     "Boost your hotel, restaurant, or resort with Fielmente, the leading hospitality Google Ads agency. Campaigns for social media and business.",
   alternates: {
     canonical: "https://fielmente.com/services/google-ads-agency/",
-    languages: {
-      "en-US": "https://fielmente.com/services/google-ads-agency/",
-    },
   },
   openGraph: {
     title: "India's Leading Hospitality Google Ads Agency - Fielmente",

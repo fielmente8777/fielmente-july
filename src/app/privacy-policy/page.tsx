@@ -8,9 +8,6 @@ export const metadata: Metadata = {
     "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
   alternates: {
     canonical: "https://fielmente.com/privacy-policy",
-    languages: {
-      "en-US": "https://fielmente.com/privacy-policy",
-    },
   },
   openGraph: {
     title: "Privacy Policy - Fielmente",

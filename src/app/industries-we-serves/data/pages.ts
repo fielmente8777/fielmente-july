@@ -31,7 +31,7 @@ function meta(title: string, description: string, path: string, image: string): 
   return {
     title,
     description,
-    alternates: { canonical: url, languages: { "en-US": url } },
+    alternates: { canonical: url },
     openGraph: {
       title,
       description,

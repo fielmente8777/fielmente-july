@@ -15,9 +15,6 @@ export const metadata: Metadata = {
     "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
   alternates: {
     canonical: "https://fielmente.com/search-engine-optimization/",
-    languages: {
-      "en-US": "https://fielmente.com/search-engine-optimization/",
-    },
   },
   openGraph: {
     title: "India's Leading Hospitality SEO Agency - Fielmente",

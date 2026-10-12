@@ -14,9 +14,6 @@ export const metadata: Metadata = {
     "Fielmente is a premier cloud kitchen marketing agency in India and skyrocket your cloud kitchen success digitally with our amazing marketing services.",
   alternates: {
     canonical: "https://fielmente.com/cloud-kitchen-digital-marketing/",
-    languages: {
-      "en-US": "https://fielmente.com/cloud-kitchen-digital-marketing/",
-    },
   },
   openGraph: {
     title: "Best Cloud Kitchen Marketing Agency in India- Fielmente",
