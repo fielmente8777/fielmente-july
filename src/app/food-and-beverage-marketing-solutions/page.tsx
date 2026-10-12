@@ -12,16 +12,16 @@ import Clients from "../industries-we-serves/[...industry]/components/Clients";
 import Testimonials from "../industries-we-serves/[...industry]/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Restaurant Marketing Agency India | Restuarant Marketing Company",
+  title: "Restaurant Marketing Company in India | Fielmente",
   description:
-    "Looking for your restaurant marketing success? Fielmente is the leading restaurant marketing agency in India and boosting your restaurant's digital presence. Contact us!",
+    "Fielmente is a restaurant marketing company in India that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
   alternates: {
     canonical: "https://fielmente.com/food-and-beverage-marketing-solutions/",
   },
   openGraph: {
-    title: "Restaurant Marketing Agency India | Restuarant Marketing Company",
+    title: "Restaurant Marketing Company in India | Fielmente",
     description:
-      "Looking for your restaurant marketing success? Fielmente is the leading restaurant marketing agency in India and boosting your restaurant's digital presence. Contact us!",
+      "Fielmente is a restaurant marketing company in India that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
     images: [
       {
         url: "/fielmente_logo.png",

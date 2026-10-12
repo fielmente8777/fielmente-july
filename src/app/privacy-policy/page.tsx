@@ -3,9 +3,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "Privacy Policy | Fielmente Hospitality Marketing",
   description:
-    "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
+    "This privacy policy explains how Fielmente collects, uses and protects personal data submitted on fielmente.com. Read it before sharing your details.",
   alternates: {
     canonical: "https://fielmente.com/privacy-policy",
   },

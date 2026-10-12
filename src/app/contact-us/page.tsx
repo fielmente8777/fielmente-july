@@ -9,7 +9,7 @@ import { contactUsPageData } from "./components/pageData";
 
 export const metadata: Metadata = {
   title:
-    "Contact | Fielmente - hotel marketing, SEO, and revenue management services",
+    "Contact Fielmente | Hotel Marketing, SEO & Revenue",
   description:
     "Get in touch with Fielmente for hotel marketing, SEO, and revenue management services. Book a consultation and grow your hotel bookings with expert strategies.",
   alternates: {

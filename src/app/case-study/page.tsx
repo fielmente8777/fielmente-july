@@ -6,14 +6,14 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Hotel Marketing Case Studies | SEO & Growth Results | Fielmente",
+  title: "Hotel Marketing Case Studies | SEO & Growth | Fielmente",
   description:
     "See how hotels achieved higher rankings, bookings, and ROI with Fielmente. Real case studies from resorts using SEO and digital marketing strategies.",
     alternates: {
       canonical: "https://fielmente.com/case-study/",
     },
     openGraph: {
-      title: "Hotel Marketing Case Studies | SEO & Growth Results | Fielmente",
+      title: "Hotel Marketing Case Studies | SEO & Growth | Fielmente",
       description:
         "See how hotels achieved higher rankings, bookings, and ROI with Fielmente. Real case studies from resorts using SEO and digital marketing strategies.",
         images: [

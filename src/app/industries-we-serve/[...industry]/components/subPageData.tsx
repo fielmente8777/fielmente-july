@@ -7,7 +7,7 @@ export const subPageData = [
   {
     slug: "hotel-marketing-agency/hotel-social-media",
     metaData: {
-      title: "Best Hotel Social Media Campaign | Hotel Social Media Management",
+      title: "Hotel Social Media Marketing & Management | Fielmente",
       description:
         "Boost your Hotel Social Media Management presence with Fielmente, the leading hotel social media marketing agency in India. Drive engagement and bookings.",
     },

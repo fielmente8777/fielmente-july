@@ -22,7 +22,7 @@ export const casStudiesData: CaseStudy[] = [
     metaData: {
       title: "SEO Case Study: Anand Vardhan Resorts | Fielmente Results",
       description:
-        "Discover how Fielmente ranked Anand Vardhan Resorts #1 on Google for vegetarian and wellness resort keywords in Manali within 2 months using advanced SEO strategies.",
+        "See how Fielmente ranked Anand Vardhan Resorts #1 on Google for vegetarian and wellness resort keywords in Manali within 2 months using SEO strategies.",
     },
     className: "object-contain",
     img: "/avr-logo.png",
@@ -101,7 +101,7 @@ export const casStudiesData: CaseStudy[] = [
   {
     slug: "naturoville-google-ads",
     metaData: {
-      title: "Google Ads Case Study: Naturoville Wellness Resort | Fielmente",
+      title: "Google Ads Case Study: Naturoville Wellness Resort",
       description: "How Fielmente grew Naturoville Wellness Resort's Google Ads enquiries 9.5× on nearly the same budget and cut cost per enquiry by 89%.",
     },
     className: "object-contain",
@@ -183,7 +183,7 @@ export const casStudiesData: CaseStudy[] = [
   {
     slug: "hotel-green-castle-google-ads",
     metaData: {
-      title: "Google Ads Case Study: Hotel Green Castle, Mussoorie | Fielmente",
+      title: "Google Ads Case Study: Hotel Green Castle, Mussoorie",
       description: "How Fielmente took Hotel Green Castle from about 100 to over 1,000 Google Ads enquiries a month while cutting cost per enquiry 35%.",
     },
     className: "object-contain",
@@ -318,7 +318,7 @@ export const casStudiesData: CaseStudy[] = [
   {
     slug: "the-rudraksh-google-ads",
     metaData: {
-      title: "Google Ads Case Study: The Rudraksh, A Himalayan Retreat | Fielmente",
+      title: "Google Ads Case Study: The Rudraksh Himalayan Retreat",
       description: "How Fielmente took The Rudraksh from almost no tracked enquiries to 447 a month at ₹41 per enquiry with Google Ads.",
     },
     className: "object-contain",

@@ -20,9 +20,9 @@ import { LuArrowRight, LuMinus } from "react-icons/lu";
 import { industries, legacyIndustries } from "./data/industries";
 import { serviceHref, serviceTypes } from "./data/services";
 
-const title = "Hospitality Marketing Agency | Industries We Serve | Fielmente";
+const title = "Industries We Serve | Hospitality Marketing | Fielmente";
 const description =
-  "Marketing and technology for hotels, restaurants, resorts, homestays and villas, travel companies and cloud kitchens — Google Ads, SEO, social media, websites and automation.";
+  "Fielmente offers marketing and technology for hotels, resorts, restaurants, homestays, villas, travel companies and cloud kitchens, from Google Ads to SEO.";
 
 export const metadata: Metadata = {
   title,

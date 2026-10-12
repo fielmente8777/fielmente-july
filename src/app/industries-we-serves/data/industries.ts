@@ -123,7 +123,7 @@ export const industries: IndustryProfile[] = [
       { q: "How soon will we see results?", a: "Google profile and ads changes often show within weeks; social media and SEO build over two to three months." },
     ],
     meta: {
-      title: "Restaurant Marketing Agency India | Restaurant Marketing Company", // live title, typo fixed
+      title: "Restaurant Marketing Agency in India | Fielmente", // live title, typo fixed
       description:
         "Restaurant marketing agency: Google, Instagram, reels, ads, influencer marketing and reservation automation to fill tables every night of the week.",
     },

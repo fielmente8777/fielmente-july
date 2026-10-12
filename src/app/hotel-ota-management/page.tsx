@@ -11,9 +11,9 @@ import {
 import OurClients from "./component/OurClients";
 
 export const metadata = {
-  title: "Fielmente | Hotel Revenue Management & Hospitality Marketing Agency",
+  title: "Hotel OTA & Revenue Management Agency | Fielmente",
   description:
-    "Fielmente is a leading hospitality marketing and revenue management agency with 15+ years of expertise. We help hotels, resorts, and restaurants maximize OTA bookings, revenue, and growth with AI-driven strategies.",
+    "Fielmente is a hospitality marketing and revenue management agency with 15+ years of expertise helping hotels and resorts grow OTA bookings and revenue.",
   
   keywords: [
     "hotel revenue management company",

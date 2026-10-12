@@ -7,7 +7,7 @@ import ContactBtn3 from "../contactbtn/ContactBtn3";
 import ContactOldSection from "@/components/commonSections/ContactOldSection";
 
 export const metadata: Metadata = {
-  title: "India's Best Hospitality Social Media Marketing Agency - Fielmente",
+  title: "Hospitality Social Media Marketing Agency | Fielmente",
   description:
     "Rocket your brand's online presence with Fielmente, the top hospitality social media marketing agency. Boost success with our expert!",
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       "https://fielmente.com/services/social-media-marketing-agency/",
   },
   openGraph: {
-    title: "India's Best Hospitality Social Media Marketing Agency - Fielmente",
+    title: "Hospitality Social Media Marketing Agency | Fielmente",
     description:
       "Rocket your brand's online presence with Fielmente, the top hospitality social media marketing agency. Boost success with our expert!",
     images: [
