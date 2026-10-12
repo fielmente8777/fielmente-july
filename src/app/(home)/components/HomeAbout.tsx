@@ -46,7 +46,7 @@ const HomeAbout: React.FC<AboutCompanyDataTypes> = ({
           />
         </div>
         <div className="w-full relative aspect-4/3">
-         <Image src={src} alt={title} fill className="object-contain" />
+         <Image src={src} alt={title} fill className="object-contain" sizes="100vw" />
          </div>
       </div>
       <div className="grid xl:grid-cols-4 grid-cols-2 items-center gap-2.5 p-2.5 rounded-[15px] mt-14 bg-[#F5F6F8]">

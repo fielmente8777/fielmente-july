@@ -34,6 +34,7 @@ const OurClients: React.FC<OurClientsProps> = ({ title, bold, items }) => {
                   alt={item.alt}
                   fill
                   className={`${index === 2 || index === 4 || index === 5 ? "object-cover" : "object-contain"} px-2 py-3`}
+                  sizes="100vw"
                 />
               </div>
             ))}
@@ -72,6 +73,7 @@ const OurClients: React.FC<OurClientsProps> = ({ title, bold, items }) => {
                       alt={item.alt}
                       fill
                       className={`${index === 2 || index === 4 || index === 5 ? "object-cover" : "object-contain"} px-2 py-3`}
+                      sizes="100vw"
                     />
                   </div>
                 </SwiperSlide>

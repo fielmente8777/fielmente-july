@@ -1,5 +1,5 @@
-export const WhatsAppEmbeddedMessage = "Hello I would like to know more about Fielmente Hospitality Marketing Agency";
-
+export const WhatsAppEmbeddedMessage =
+  "Hello I would like to know more about Fielmente Hospitality Marketing Agency";
 
 export const contacts = {
   email_1: "sachin@fielmente.com",
@@ -11,6 +11,9 @@ export const contacts = {
   ],
   WhatsAppCta:
     "https://wa.me/+919501868775?text=Hello%20I%20would%20like%20to%20know%20more%20about%20Fielmente%20Hospitality%20Marketing%20Agency",
+  whatsAppCtaOutsideIndia:
+    "https://wa.me/+447438375533?text=Hello%20I%20would%20like%20to%20know%20more%20about%20Fielmente%20Hospitality%20Marketing%20Agency",
+
   addressesInIndia: [
     {
       address:

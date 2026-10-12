@@ -69,6 +69,7 @@ const PopupForm = ({
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 767px) 0px, 672px"
               />
             </div>
             {/* <PopUpFormOld /> */}

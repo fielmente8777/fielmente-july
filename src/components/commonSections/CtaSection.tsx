@@ -15,7 +15,7 @@ const CtaSection: React.FC<Props> = ({ title, description, cta }) => {
   return (
     <SectionWithContainer>
       <div className="w-full relative xl:aspect-[4/.85] lg:aspect-4/1.25 md:aspect-4/1.75 aspect-square bg-background-black1 rounded-3xl overflow-hidden">
-        <Image src="/content.png" alt="hero" fill className="object-cover" />
+        <Image src="/content.png" alt="hero" fill className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 flex items-center justify-center z-20 max-lg:px-4">
           <div className="space-y-8">
             <SectionHeading

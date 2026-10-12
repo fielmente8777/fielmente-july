@@ -430,6 +430,7 @@ export default async function LandingPage({ params }: Params) {
             priority
             sizes="100vw"
             className="object-cover bg-background-black1 rotate-180"
+            sizes="100vw"
           />
         </div>
 
@@ -561,6 +562,7 @@ export default async function LandingPage({ params }: Params) {
                   fill
                   priority
                   className="object-cover"
+                  sizes="100vw"
                 />
               </div>
             )}

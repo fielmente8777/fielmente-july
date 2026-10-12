@@ -29,6 +29,7 @@ const TextBanner: React.FC<TextBannerProps> = ({
         alt="hero"
         fill
         className="object-cover bg-background-black1"
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 flex items-center justify-center z-20">

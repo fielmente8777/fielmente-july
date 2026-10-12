@@ -29,6 +29,7 @@ const LandingHeader = () => {
               priority={true}
               fill
               className="object-contain"
+              sizes="137px"
             />
           </button>
 

@@ -30,6 +30,7 @@ const Banner2: React.FC<Banner2Props> = ({
             fill
             priority
             className="object-cover"
+            sizes="100vw"
           />
         </div>
           {description.map((desc, index) => (
@@ -50,6 +51,7 @@ const Banner2: React.FC<Banner2Props> = ({
             fill
             priority
             className="object-cover"
+            sizes="100vw"
           />
         </div>
       </div>

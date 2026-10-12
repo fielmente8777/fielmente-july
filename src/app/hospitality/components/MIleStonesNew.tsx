@@ -82,6 +82,7 @@ const MIleStonesNew = () => {
                   alt="icon"
                   fill
                   className="object-contain"
+                  sizes="100vw"
                 />
               </div>
               <div className="flex flex-col items-center gap-4 justify-center">
@@ -125,6 +126,7 @@ const MIleStonesNew = () => {
                       alt="icon"
                       fill
                       className="object-contain"
+                      sizes="100vw"
                     />
                   </div>
                   <div className="flex flex-col items-center gap-4 justify-center">

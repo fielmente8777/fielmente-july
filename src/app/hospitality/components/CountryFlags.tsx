@@ -84,6 +84,7 @@ const CountryFlags = () => {
                         alt={item.name}
                         fill
                         className="object-cove"
+                        sizes="100vw"
                       />
                     </div>
                     {/* <p className="text-white uppercase font-semibold">

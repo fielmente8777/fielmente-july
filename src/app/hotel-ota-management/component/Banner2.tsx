@@ -43,6 +43,7 @@ const Banner2: React.FC<bannerType> = ({ title, list, images }) => {
                       alt={item.alt}
                       fill
                       className="object-contain"
+                      sizes="100vw"
                     />
                   </div>
                 ))}

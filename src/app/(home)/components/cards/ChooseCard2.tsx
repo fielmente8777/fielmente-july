@@ -8,7 +8,7 @@ export const ChooseCard2: React.FC<
   return (
     <div className="p-6 space-y-8 rounded-2xl border border-main-border">
       <div className="relative w-full aspect-4/2 rounded-2xl overflow-hidden border-4 border-[#F7F7F7]">
-        <Image src={src} alt={heading} fill className="object-cover" />
+        <Image src={src} alt={heading} fill className="object-cover" sizes="100vw" />
       </div>
       <div className="space-y-4.5">
         <p className="text-xl font-semibold">{heading}</p>

@@ -71,6 +71,7 @@ const GridCard: React.FC<GridCardProps> = ({
             alt={title || subTitle || "Image"}
             fill
             className="object-cover"
+            sizes="100vw"
           />
         </div>
       </div>

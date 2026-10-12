@@ -89,6 +89,7 @@ export default async function Page(props: Params) {
           priority
           sizes="100vw"
           className={`object-cover`}
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-[#111609]/30 flex items-center justify-center">
           <Container className="md:space-y-16 space-y-5">

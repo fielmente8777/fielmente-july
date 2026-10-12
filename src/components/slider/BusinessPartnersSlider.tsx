@@ -55,6 +55,7 @@ const BusinessPartnersSlider: React.FC<Props> = ({
               priority={true}
               className="object-contain w-full h-full rounded-md px-6"
               alt={item.title}
+              sizes="100vw"
             />
           </div>
         )}

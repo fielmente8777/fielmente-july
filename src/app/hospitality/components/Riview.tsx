@@ -58,6 +58,7 @@ const Riview = () => {
                   fill
                   priority={true}
                   className="object-resize w-full h-full rounded-md p-3 bg-white"
+                  sizes="100vw"
                 />
               </div>
             </SwiperSlide>

@@ -20,6 +20,7 @@ const ImageSection: React.FC<ImageSectionProps> = ({ images }) => {
                 alt={item.alt}
                 fill
                 className="object-contain object-center"
+                sizes="100vw"
               />
             </div>
           ))}

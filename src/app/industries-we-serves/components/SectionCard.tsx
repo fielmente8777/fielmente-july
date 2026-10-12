@@ -17,7 +17,7 @@ const SectionCard: React.FC<SectionCardType & { index: number }> = ({
 
       <div className="grid md:grid-cols-6 grid-cols-1 md:gap-12 gap-4">
         <div className={`md:col-span-2 col-span-1 relative aspect-[4/6] ${index % 2 !== 0 ? "md:order-2" : ""}`}>
-          <Image src={image} alt={title} fill className="object-cover rounded-2xl" />
+          <Image src={image} alt={title} fill className="object-cover rounded-2xl" sizes="100vw" />
         </div>
         <div className="md:col-span-4 col-span-1 flex flex-col">
           <p className="md:text-lg text-secondary mb-6">{description}</p>

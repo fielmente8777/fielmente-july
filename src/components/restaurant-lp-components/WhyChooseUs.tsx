@@ -22,7 +22,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
           <div className="relative w-full aspect-[4/2.8] flex items-center justify-center">
-            <Image src={src} alt={title} fill className="object-contain" />
+            <Image src={src} alt={title} fill className="object-contain" sizes="100vw" />
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-sm text-orange-primary helv">{title}</p>

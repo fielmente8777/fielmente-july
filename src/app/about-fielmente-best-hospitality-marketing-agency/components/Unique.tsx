@@ -56,7 +56,7 @@ const Unique: React.FC<UniqueSectionTypes> = ({
               //   }`}
               >
                 <div className="relative w-full aspect-4/2.5 rounded-2xl overflow-hidden">
-                  <Image src={src} alt="Unique" fill className="object-cover" />
+                  <Image src={src} alt="Unique" fill className="object-cover" sizes="100vw" />
                 </div>
               </div>
             );

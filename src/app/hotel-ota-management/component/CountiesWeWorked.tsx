@@ -64,6 +64,7 @@ const CountiesWeWorked = ({
                       alt={item?.alt}
                       fill
                       className="rounded-lg"
+                      sizes="100vw"
                     />
                   </div>
 

@@ -26,7 +26,7 @@ const Revenue: React.FC<RevenueProps> = ({
     <SectionWithContainer sectionClassName="bg-[#FFF]">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center md:py-14 py-10">
         <div className="relative w-full aspect-[4/3.5] md:block hidden">
-          <Image src={image} alt={title} fill className="object-contain" />
+          <Image src={image} alt={title} fill className="object-contain" sizes="100vw" />
         </div>
         <div className="max-w-xl flex flex-col gap-6 w-full">
           <span className="max-md:mx-auto">{icon}</span>
@@ -34,7 +34,7 @@ const Revenue: React.FC<RevenueProps> = ({
             {title}
           </h2>
           <div className="relative w-full aspect-[4/3.5] md:hidden">
-            <Image src={image} alt={title} fill className="object-contain" />
+            <Image src={image} alt={title} fill className="object-contain" sizes="100vw" />
           </div>
           <p className="md:text-lg text-[#6F6F6F]">{description}</p>
           <button

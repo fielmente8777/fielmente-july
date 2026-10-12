@@ -18,14 +18,14 @@ const Salesiq = () => {
 
   const url = [
     "/thank-you/",
-    "/landing-page/",
-    "/resort/",
-    "/hospitality/",
-    "/dubai-restaurant/",
-    "/restaurant/",
-    "/UK/",
-    "/USA/",
-    "/google-ads-for-hotels/",
+    // "/landing-page/",
+    // "/resort/",
+    // "/hospitality/",
+    // "/dubai-restaurant/",
+    // "/restaurant/",
+    // "/UK/",
+    // "/USA/",
+    // "/google-ads-for-hotels/",
   ];
 
   const shouldHide = url.includes(pathname);

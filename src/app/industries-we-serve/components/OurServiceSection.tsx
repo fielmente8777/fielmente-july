@@ -56,6 +56,7 @@ const OurServiceSection: React.FC<OurServiceSectionProps> = ({
             alt={card.title}
             fill
             className="object-cover rounded-2xl"
+            sizes="100vw"
           />
         </div>
       </div>

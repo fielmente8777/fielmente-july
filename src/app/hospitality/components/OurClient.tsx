@@ -84,6 +84,7 @@ const OurClient = ({ title }: { title?: string }) => {
                       style={{
                         backgroundColor: item.className,
                       }}
+                      sizes="100vw"
                     />
                   </div>
                 </div>

@@ -21,6 +21,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import WorkWithIndiasHotel from "./components/WorkWithIndiasHotel";
 import { homePageData } from "./homePageData";
 import GetFreeDashboardAccess from "./components/GetFreeDashboardAccess";
+import HomeScrollReveal from "./components/HomeScrollReveal";
 import type { Metadata } from "next";
 import { contacts } from "../../../contact";
 
@@ -109,31 +110,31 @@ export default function Home() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       ))}
       <Banner {...homePageData?.bannerData} />
-      <BusinessPartners {...homePageData?.businessPartnersData} />
-      <HomeAbout {...homePageData?.aboutCompanyData} />
-      <IndustryWeServe {...homePageData?.servingHospitalityData} />
-      <ChooseFielmente {...homePageData?.chooseFielmenteData}/>
-      <OurServices {...homePageData?.servicesData} />
-      <OurProducts {...homePageData?.productsData} />
-      <GetFreeDashboardAccess {...homePageData?.getFreeDashboardAccessData} />
-      <HowItWork {...homePageData?.howItWorksData} />
-      <ProvenResults {...homePageData?.provenResults} />
-      <WhyChooseUs {...homePageData?.whyChooseUsData} />
+      <HomeScrollReveal><BusinessPartners {...homePageData?.businessPartnersData} /></HomeScrollReveal>
+      <HomeScrollReveal><HomeAbout {...homePageData?.aboutCompanyData} /></HomeScrollReveal>
+      <HomeScrollReveal><IndustryWeServe {...homePageData?.servingHospitalityData} /></HomeScrollReveal>
+      <HomeScrollReveal><ChooseFielmente {...homePageData?.chooseFielmenteData}/></HomeScrollReveal>
+      <HomeScrollReveal><OurServices {...homePageData?.servicesData} /></HomeScrollReveal>
+      <HomeScrollReveal><OurProducts {...homePageData?.productsData} /></HomeScrollReveal>
+      <HomeScrollReveal><GetFreeDashboardAccess {...homePageData?.getFreeDashboardAccessData} /></HomeScrollReveal>
+      <HomeScrollReveal><HowItWork {...homePageData?.howItWorksData} /></HomeScrollReveal>
+      <HomeScrollReveal><ProvenResults {...homePageData?.provenResults} /></HomeScrollReveal>
+      <HomeScrollReveal><WhyChooseUs {...homePageData?.whyChooseUsData} /></HomeScrollReveal>
       {/* <CountriesWeWorked {...homePageData?.countriesWeWorkedIn} /> */}
-      <ResultsSection {...landingPageData[0]?.resultsSection} />
-      <CountriesWeWorked {...landingPageData[0]?.countriesSection} />
-      <SlidingTitle titles={homePageData?.servicesTitles} />
+      <HomeScrollReveal><ResultsSection {...landingPageData[0]?.resultsSection} /></HomeScrollReveal>
+      <HomeScrollReveal><CountriesWeWorked {...landingPageData[0]?.countriesSection} /></HomeScrollReveal>
+      <HomeScrollReveal><SlidingTitle titles={homePageData?.servicesTitles} /></HomeScrollReveal>
       {/* <OurWork {...homePageData?.ourWorkData} /> */}
-      <OtaCostsWithFielmente {...homePageData?.maximizeGrowthData} />
-      <SlidingTitle titles={homePageData?.servicesTitles} />
-      <MarketingExperts {...homePageData?.marketingExpertiseData} />
+      <HomeScrollReveal><OtaCostsWithFielmente {...homePageData?.maximizeGrowthData} /></HomeScrollReveal>
+      <HomeScrollReveal><SlidingTitle titles={homePageData?.servicesTitles} /></HomeScrollReveal>
+      <HomeScrollReveal><MarketingExperts {...homePageData?.marketingExpertiseData} /></HomeScrollReveal>
       {/* <Blogs {...homePageData?.blogsData} /> */}
-      <WorkWithIndiasHotel {...homePageData?.workWithHotel} />
-      <OurValuedClient {...homePageData?.ourValuedClient} />
+      <HomeScrollReveal><WorkWithIndiasHotel {...homePageData?.workWithHotel} /></HomeScrollReveal>
+      <HomeScrollReveal><OurValuedClient {...homePageData?.ourValuedClient} /></HomeScrollReveal>
       {/* <Testimonials {...homePageData?.testimonialsData} /> */}
-      <ElevateBrand {...homePageData?.ElevateBrand} />
-      <Faq {...homePageData?.faqsData} />
-      <ContactUsSection {...homePageData?.contactUsSection}/>
+      <HomeScrollReveal><ElevateBrand {...homePageData?.ElevateBrand} /></HomeScrollReveal>
+      <HomeScrollReveal><Faq {...homePageData?.faqsData} /></HomeScrollReveal>
+      <HomeScrollReveal><ContactUsSection {...homePageData?.contactUsSection}/></HomeScrollReveal>
     </main>
   );
 }

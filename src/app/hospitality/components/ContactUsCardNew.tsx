@@ -19,6 +19,7 @@ const ContactUsCardNew = () => {
                 alt="alt"
                 fill
                 className="object-contain"
+                sizes="100vw"
               />
             </div>
           </div>

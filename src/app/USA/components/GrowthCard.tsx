@@ -22,6 +22,7 @@ const GrowthCard: React.FC<GrowthCardProps> = ({
             alt="growth-card"
             fill
             className="object-cover object-center"
+            sizes="100vw"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[#000000]/30">
             <div className="flex flex-col items-center gap-6 justify-center h-full text-white">
