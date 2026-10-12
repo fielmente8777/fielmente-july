@@ -17,6 +17,8 @@ export const metadata: Metadata = {
       "https://fielmente.com/about-fielmente-best-hospitality-marketing-agency/",
   },
   openGraph: {
+    url: "https://fielmente.com/about-fielmente-best-hospitality-marketing-agency/",
+    type: "website",
     title: "About Fielmente | Hospitality Marketing Consultants India",
     description:
       "About Fielmente, the expert F&amp;B and hospitality marketing consultant. Unveil our transformative expertise &amp; experience in your businesses",
@@ -34,6 +36,18 @@ export const metadata: Metadata = {
 export default function AboutFielmenteBestHospitalityMarketingAgency() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            name: "About Fielmente",
+            url: "https://fielmente.com/about-fielmente-best-hospitality-marketing-agency/",
+            about: { "@id": "https://fielmente.com/#organization" },
+          }),
+        }}
+      />
       <Banner {...aboutUsPageData.bannerData} />
       <AboutFounder {...aboutUsPageData.aboutSection} />
       <GridCard {...aboutUsPageData.ideasSection} />

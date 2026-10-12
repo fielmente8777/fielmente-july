@@ -59,7 +59,7 @@ export const industries: IndustryProfile[] = [
       "social-media-management": {
         metaTitle: "Hotel Social Media Marketing Agency | Fielmente",
         metaDescription:
-          "Hotel social media marketing that drives direct bookings: Instagram and Facebook strategy, reels, content shoots, ads and DMs handled by hospitality specialists.",
+          "Hotel social media marketing that drives direct bookings: Instagram and Facebook strategy, reels, shoots, ads and DMs handled by hospitality specialists.",
         heroTitle: "Hotel social media marketing that fills rooms, not just feeds",
         heroLede:
           "Instagram and Facebook run by a team that only works with hotels: a content plan built around your rooms, food and experiences, reels that get saved and shared, and DMs answered fast enough to turn into bookings.",
@@ -162,7 +162,7 @@ export const industries: IndustryProfile[] = [
       "social-media-management": {
         metaTitle: "Restaurant Social Media Marketing Agency | Fielmente",
         metaDescription:
-          "Restaurant social media marketing that fills tables: Instagram reels, food shoots, influencer collaborations, ads and DM reservations, run by a hospitality team.",
+          "Restaurant social media marketing that fills tables: Instagram reels, food shoots, influencer collaborations, ads and DM bookings, run by a hospitality team.",
         heroTitle: "Restaurant social media marketing that turns scrolls into reservations",
         heroLede:
           "Reels people save, food shots that make them hungry, and DMs answered fast enough to book a table. Instagram and Facebook run by a team that only works with restaurants, caf\u00e9s and bars.",

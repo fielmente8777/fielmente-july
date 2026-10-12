@@ -16,6 +16,8 @@ export const metadata: Metadata = {
       "https://fielmente.com/hospitality-marketing-services/social-media-marketing-agency/",
   },
   openGraph: {
+    url: "https://fielmente.com/hospitality-marketing-services/social-media-marketing-agency/",
+    type: "website",
     title: "Hospitality Social Media Marketing Agency | Fielmente",
     description:
       "Rocket your brand's online presence with Fielmente, the top hospitality social media marketing agency. Boost success with our expert!",

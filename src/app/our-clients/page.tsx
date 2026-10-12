@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     canonical: "https://fielmente.com/our-clients/",
   },
   openGraph: {
+    url: "https://fielmente.com/our-clients/",
+    type: "website",
     title: "Our Clients | Hospitality Brands That Trust Fielmente",
 
     description:

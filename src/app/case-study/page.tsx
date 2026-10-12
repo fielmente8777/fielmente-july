@@ -13,6 +13,8 @@ export const metadata: Metadata = {
       canonical: "https://fielmente.com/case-study/",
     },
     openGraph: {
+    url: "https://fielmente.com/case-study/",
+    type: "website",
       title: "Hotel Marketing Case Studies | SEO & Growth | Fielmente",
       description:
         "See how hotels achieved higher rankings, bookings, and ROI with Fielmente. Real case studies from resorts using SEO and digital marketing strategies.",

@@ -34,6 +34,19 @@ export const metadata: Metadata = {
 export default function ContactUsPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Contact Fielmente",
+            url: "https://fielmente.com/contact-us/",
+            about: { "@id": "https://fielmente.com/#organization" },
+            mainEntity: { "@id": "https://fielmente.com/#gurugram" },
+          }),
+        }}
+      />
       <Section defaultPadding={false} className="pb-36">
         <div className="w-full relative xl:aspect-[4/1.8] md:aspect-4/3.75 aspect-4/9.5">
           <Image

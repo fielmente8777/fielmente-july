@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     canonical: "https://fielmente.com/privacy-policy",
   },
   openGraph: {
+    url: "https://fielmente.com/privacy-policy/",
+    type: "website",
     title: "Privacy Policy - Fielmente",
     description:
       "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",

@@ -11,6 +11,8 @@ export const metadata: Metadata = {
     canonical: "https://fielmente.com/terms-and-conditions",
   },
   openGraph: {
+    url: "https://fielmente.com/terms-and-conditions/",
+    type: "website",
     title: "Terms and Conditions - Fielmente",
     description:
       "Review the terms and conditions for using Fielmente's services and website.",

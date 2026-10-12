@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     canonical: "https://fielmente.com/food-and-beverage-marketing-solutions/",
   },
   openGraph: {
+    url: "https://fielmente.com/food-and-beverage-marketing-solutions/",
+    type: "website",
     title: "Restaurant Marketing Company in India | Fielmente",
     description:
       "Fielmente is a restaurant marketing company in India that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
