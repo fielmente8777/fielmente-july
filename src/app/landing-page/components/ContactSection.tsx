@@ -38,6 +38,7 @@ const ContactSection: React.FC<Props> = ({
               alt="bg-img"
               fill
               className="object-cover object-top"
+              sizes="100vw"
             />
             <div className="absolute inset-0 z-10 md:px-10 px-4 flex flex-col justify-center">
               <div className="w-full max-w-xl items-center grid  md:grid-cols-[.6fr_1fr] grid-cols-1 gap-3">

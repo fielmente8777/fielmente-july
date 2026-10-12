@@ -12,7 +12,7 @@ const LandingNav = () => {
               alt="fielment logo"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 100vw"
+              sizes="(max-width: 767px) 100px, 140px"
               priority
             />
           </div>

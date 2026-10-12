@@ -55,6 +55,7 @@ export const OtaCostsCard: React.FC<MaximizeGrowthDataTypes["cards"][0] & {index
           alt={title}
           fill
           className="object-cover"
+          sizes="100vw"
         />
       </div>
       <div className=" pr-4.5 space-y-1">

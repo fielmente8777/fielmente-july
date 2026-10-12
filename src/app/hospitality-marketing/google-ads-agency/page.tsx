@@ -128,6 +128,7 @@ function page() {
                   alt="google-ads"
                   fill
                   className="object-cover rounded-lg"
+                  sizes="100vw"
                 />
               </div>
             </div>
@@ -189,6 +190,7 @@ function page() {
                     alt="circular-social"
                     fill
                     className="object-cover rounded-3xl"
+                    sizes="100vw"
                   />
                 </div>
               </div>
@@ -246,6 +248,7 @@ function page() {
                   alt="shaking-hand-img"
                   fill
                   className="object-cover rounded-xl"
+                  sizes="100vw"
                 />
               </div>
             </div>
@@ -275,6 +278,7 @@ function page() {
                   alt="girl-meet-img"
                   fill
                   className="object-cover rounded-[4rem]"
+                  sizes="100vw"
                 />
               </div>
             </div>
@@ -379,6 +383,7 @@ const CardTwo = ({
           alt="images"
           fill
           className="object-cover rounded-3xl"
+          sizes="100vw"
         />
       </div>
       <div>

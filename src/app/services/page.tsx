@@ -147,6 +147,7 @@ function page() {
                   alt="mobile"
                   fill
                   className="object-contain "
+                  sizes="100vw"
                 />
               </div>
             </div>
@@ -180,6 +181,7 @@ function page() {
               alt="man-with-documents"
               fill
               className="object-contain rounded-3xl"
+              sizes="100vw"
             />
           </div>
           <div className="">
@@ -203,6 +205,7 @@ function page() {
                       alt="man-with-documents"
                       fill
                       className="object-contain"
+                      sizes="100vw"
                     />
                   </div>
                   <p className="text-black font-bold w-max text-[1rem]">
@@ -247,6 +250,7 @@ function page() {
                   alt=""
                   fill
                   className="object-cover rounded-3xl"
+                  sizes="100vw"
                 />
               </div>
             </div>
@@ -341,6 +345,7 @@ function page() {
               alt="google-ads"
               fill
               className="object-cover"
+              sizes="100vw"
             />
           </div>
           <div className="relative w-full aspect-[4/4.5]">
@@ -349,6 +354,7 @@ function page() {
               alt="google-ads"
               fill
               className="object-cover"
+              sizes="100vw"
             />
           </div>
           <div className="relative w-full aspect-[4/4.5]">
@@ -357,6 +363,7 @@ function page() {
               alt="google-ads"
               fill
               className="object-cover"
+              sizes="100vw"
             />
           </div>
           <div className="relative w-full aspect-[4/4.5]">
@@ -365,6 +372,7 @@ function page() {
               alt="google-ads"
               fill
               className="object-cover"
+              sizes="100vw"
             />
           </div>
         </div>
@@ -429,7 +437,7 @@ const ChooseUSCard = ({
   return (
     <div className="max-w-75 mx-auto">
       <div className="relative w-full aspect-4/4">
-        <Image src={image} alt="" fill className="object-cover" />
+        <Image src={image} alt="" fill className="object-cover" sizes="100vw" />
       </div>
       <div className="flex flex-col gap-4 mt-4">
         <h2 className="text-center text-2xl font-medium text-black">{title}</h2>

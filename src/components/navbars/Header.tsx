@@ -84,6 +84,7 @@ const Header = () => {
                   }
                   alt="fielment logo"
                   fill
+                  sizes="(max-width: 767px) 100px, 144px"
                 />
               </Link>
             </div>

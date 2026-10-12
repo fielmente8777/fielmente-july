@@ -17,6 +17,7 @@ const FeaturedTestimonialCard: React.FC<
           alt={title}
           fill
           className="object-cover rounded-lg"
+          sizes="100vw"
         />
       </div>
 

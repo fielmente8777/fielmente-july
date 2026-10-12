@@ -17,7 +17,8 @@ const ContactOldSection: React.FC<ContactOldSectionProps> = ({
             alt="contact"
             fill
             className="object-contain"
-          />
+            sizes="100vw"
+        />
         </div>
         <div className="">
           <FormOption />

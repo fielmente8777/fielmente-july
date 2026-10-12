@@ -26,7 +26,7 @@ const BenefitsSection: React.FC<BenefitsSectionProps> = ({
     <SectionWithContainer>
       <div className="grid md:grid-cols-[1.2fr_2fr] grid-cols-1 items-center gap-5">
         <div className="w-full relative aspect-4/3.5">
-          <Image fill src={image} alt={title} className="object-contain" />{" "}
+          <Image fill src={image} alt={title} className="object-contain" sizes="100vw" />{" "}
         </div>
         <div className="flex flex-col gap-6">
           <SectionHeading subTitle={title} subLevel={2} />

@@ -23,7 +23,7 @@ const WhyNeedSeo: React.FC<WhyNeedSeoProps> = ({
             smTextCenter
           />
           <div className="w-full lg:hidden relative aspect-4/5 rounded-md overflow-hidden">
-            <Image src={image} alt={title} fill className="object-cover" />
+            <Image src={image} alt={title} fill className="object-cover" sizes="100vw" />
           </div>
           <p className="text-secondary text-lg">{description}</p>
           <div className="grid md:grid-cols-2 grid-cols-1 max-md:gap-6 md:gap-y-8 md:gap-x-7">
@@ -33,7 +33,7 @@ const WhyNeedSeo: React.FC<WhyNeedSeoProps> = ({
           </div>
         </div>
         <div className="w-full lg:block hidden relative aspect-4/5 rounded-md overflow-hidden">
-          <Image src={image} alt={title} fill className="object-cover" />
+          <Image src={image} alt={title} fill className="object-cover" sizes="100vw" />
         </div>
       </div>
     </SectionWithContainer>

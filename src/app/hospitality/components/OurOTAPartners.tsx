@@ -63,6 +63,7 @@ const OurOTAPartners = () => {
                   fill
                   priority={true}
                   className="object-contain w-full h-full rounded-md p-3 bg-white"
+                  sizes="100vw"
                 />
               </div>
             </SwiperSlide>

@@ -54,7 +54,7 @@ export const WhyNeedWebsiteCard: React.FC<{
   return (
     <div className="flex flex-col items-center gap-4 text-center border p-6 border-tertiary">
       <div className="w-[60px] relative aspect-square">
-        <Image src={icon} alt={title} fill className="object-contain" />
+        <Image src={icon} alt={title} fill className="object-contain" sizes="100vw" />
       </div>
       <p className="font-medium text-lg text-primary2">{title}</p>
     </div>

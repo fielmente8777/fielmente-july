@@ -97,6 +97,7 @@ export default async function Blogs({
           alt="blogs"
           fill
           className="object-cover"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-linear-to-b from-30% from-black/40 to-transparent z-10" />
         <div className="absolute inset-0 flex items-center justify-center z-20">

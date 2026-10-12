@@ -51,7 +51,7 @@ const AboutSection: React.FC<Props> = ({
             key={index}
             className="relative w-full md:aspect-square aspect-4/4.75 overflow-hidden rounded-2xl"
           >
-            <Image src={point.src} alt="about" fill className="object-cover" />
+            <Image src={point.src} alt="about" fill className="object-cover" sizes="100vw" />
             <div className="absolute inset-0 bg-linear-to-t from-black/20 to-black/10" />
             <p
               className={`text-white  absolute  z-10  ${index === 0 ? "text-xl md:text-[23px] inset-x-0 top-0 px-6 py-9" : "md:text-[23px] text-xl text-center backdrop-blur-xs bg-[#0A0C2D]/50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap px-5 py-1.5 rounded-full"} `}

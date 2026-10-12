@@ -41,7 +41,7 @@ const WhyYouNeedGrid: React.FC<WhyYouNeedGridProps> = ({
           )}
         </div>
         <div className="relative w-full aspect-[4/2.5] rounded-md overflow-hidden">
-          <Image src={image} alt={subTitle} fill className="object-contain" />
+          <Image src={image} alt={subTitle} fill className="object-contain" sizes="100vw" />
         </div>
       </div>
     </SectionWithContainer>

@@ -17,7 +17,7 @@ export const ChooseCard1: React.FC<
       <div
         className={`relative w-full xl:hidden aspect-4/3  rounded-2xl overflow-hidden border-4 border-[#F7F7F7]`}
       >
-        <Image src={src} alt={heading} fill className="object-cover" />
+        <Image src={src} alt={heading} fill className="object-cover" sizes="100vw" />
       </div>
       <div
         className={`xl:col-span-6 space-y-5 ${index % 2 === 0 ? "md:order-2" : ""}`}
@@ -54,7 +54,7 @@ export const ChooseCard1: React.FC<
       <div
         className={`relative w-full xl:block hidden aspect-auto h-auto rounded-2xl overflow-hidden border-4 border-[#F7F7F7] xl:col-span-3`}
       >
-        <Image src={src} alt="hero" fill className="object-cover" />
+        <Image src={src} alt="hero" fill className="object-cover" sizes="100vw" />
       </div>
     </SectionWithContainer>
   );

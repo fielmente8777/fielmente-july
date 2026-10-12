@@ -35,6 +35,7 @@ const MoreStories: React.FC<MoreStoriesPropsType> = ({
         alt="testimonial"
         fill
         className="object-cover"
+        sizes="100vw"
       />
       <div className="absolute inset-0 w-full h-full flex items-center justify-center z-10 bg-black/50">
         <Container className="lg:h-full my-auto max-lg:py-18">

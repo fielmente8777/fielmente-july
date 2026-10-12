@@ -32,7 +32,7 @@ const Banner: React.FC<BannerProps> = ({ title, heading, link, img }) => {
           </div>
 
           <div className="w-full relative aspect-[4/2.5] z-0">
-            <Image src={img} alt="banner" fill className="object-contain" />
+            <Image src={img} alt="banner" fill className="object-contain" sizes="100vw" />
           </div>
         </div>
       </Container>

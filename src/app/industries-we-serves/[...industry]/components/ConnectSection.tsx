@@ -69,7 +69,7 @@ export const ConnectCard: React.FC<ConnectSectionProps["cards"][0]> = ({
     >
       {src && (
         <div className=" rounded-full w-[65px] relative aspect-square">
-          <Image src={src} alt={title} fill className="object-contain" />
+          <Image src={src} alt={title} fill className="object-contain" sizes="100vw" />
         </div>
       )}
       <p className={`font-semibold ${!subtitle ? "md:text-4xl" : "text-2xl"}`}>

@@ -21,7 +21,7 @@ const ReadyToGrow: React.FC<Props> = ({
   return (
     <SectionWithContainer sectionClassName="bg-black">
       <div className="w-full relative md:aspect-4/1.75 aspect-4/4.75 max-w-3xl mx-auto overflow-hidden rounded-3xl">
-        <Image src={src} alt={title} fill className="object-cover object-top" />
+        <Image src={src} alt={title} fill className="object-cover object-top" sizes="100vw" />
         <div className="flex flex-col gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md items-center justify-center">
           <SectionHeading
             title={title}

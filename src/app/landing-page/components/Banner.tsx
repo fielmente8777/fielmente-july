@@ -35,13 +35,13 @@ const Banner: React.FC<Props> = ({ title, subtitle, description, images }) => {
             </div>
           </div>
           <div className="w-full md:block hidden relative aspect-4/1.75 md:-mt-10">
-            <Image src={images[1]} alt={title} fill className="object-cover" />
+            <Image src={images[1]} alt={title} fill className="object-cover" sizes="100vw" />
           </div>
         </div>
         <div className="md:max-w-xl w-full md:ml-auto">
           <LandingPgForm />
           <div className="w-full md:hidden relative aspect-4/1.75 mt-4">
-            <Image src={images[1]} alt={title} fill className="object-cover" />
+            <Image src={images[1]} alt={title} fill className="object-cover" sizes="100vw" />
           </div>
         </div>
       </div>

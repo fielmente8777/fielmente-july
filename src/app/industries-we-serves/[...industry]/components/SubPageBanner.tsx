@@ -24,7 +24,7 @@ const SubPageBanner: React.FC<SubPageBannerProps> = ({
           <p className="md:text-lg text-secondary">{description}</p>
         </div>
         <div className="w-full relative aspect-4/2.5">
-          <Image src={image} alt={title} fill className="object-contain" />
+          <Image src={image} alt={title} fill className="object-contain" sizes="100vw" />
         </div>
       </div>
     </SectionWithContainer>

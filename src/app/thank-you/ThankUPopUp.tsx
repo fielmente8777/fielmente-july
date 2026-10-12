@@ -35,7 +35,7 @@ const ThankUPopUp = () => {
                   href={"/"}
                   className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.5] aspect-[3/1]"
                 >
-                  <Image src="/logo2.png" alt="fielment logo" fill />
+                  <Image src="/logo2.png" alt="fielment logo" fill sizes="100vw" />
                 </Link>
               </div>
               {footerData.linksData.slice(0, 1).map((item, index) => (
@@ -96,7 +96,7 @@ const ThankUPopUp = () => {
             </span>
             <div className="grid grid-cols-3 gap-4 max-w-[338px]">
               <div className="w-full relative aspect-[1/1]">
-                <Image src="/qr-code.png" alt="QR Code" fill />
+                <Image src="/qr-code.png" alt="QR Code" fill sizes="100vw" />
               </div>
               <div className="col-span-2 flex flex-col justify-between">
                 <p className="text-white md:text-[2rem] font-semibold">

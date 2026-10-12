@@ -27,6 +27,7 @@ const CasStudyCard: React.FC<CasStudyCardProps> = ({
           alt={title}
           fill
           className={`object-fill rounded-2xl`}
+          sizes="100vw"
         />
       </div>
       <div className="flex flex-col gap-2">

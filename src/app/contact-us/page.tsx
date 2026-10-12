@@ -41,6 +41,7 @@ export default function ContactUsPage() {
             alt="Contact Us"
             fill
             className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-x-0 md:top-40 top-21 z-10">
             <Container>
