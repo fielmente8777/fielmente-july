@@ -1,9 +1,6 @@
-"use client";
-
+// Client logos as a continuously scrolling strip (CSS-only, see LogoMarquee).
 import { OurValuedClientsPropsType } from "@/@types/@types";
-import Image from "next/image";
-import { Autoplay, FreeMode } from "swiper/modules";
-import SwiperCarousel from "./SwiperCarousel";
+import LogoMarquee from "./LogoMarquee";
 
 interface Props {
   cards: OurValuedClientsPropsType["cards"];
@@ -11,53 +8,15 @@ interface Props {
   lgSlidePerView?: number;
 }
 
-const ClientsSlider: React.FC<Props> = ({
-  cards,
-  wrapperClassName,
-  lgSlidePerView = 5,
-}) => {
+const ClientsSlider: React.FC<Props> = ({ cards, wrapperClassName, lgSlidePerView = 5 }) => {
   return (
-    <div className={`w-full block overflow-hidden demo ${wrapperClassName ? wrapperClassName : ""}`}>
-      <SwiperCarousel
-        data={cards}
-        slidesPerView={2.5}
-        spaceBetween={20}
-        speed={5000}
-        loop={true}
-        modules={[Autoplay, FreeMode]}
-        freeMode={true}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: false,
-        }}
-        breakpoints={{
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: lgSlidePerView,
-          },
-        }}
-        renderSlide={(item, index) => (
-          <div
-            key={index}
-            className="relative w-full lg:aspect-3/1.5 aspect-4/4 h-5rem rounded-xl flex justify-center items-center hover:shadow-lg shadow-slate-300 transition"
-            style={{ background: item.className }}
-          >
-            <Image
-              src={item.src}
-              fill
-              priority={true}
-              className="object-contain w-full h-full p-2 rounded-md px-6 border border-[#E3E5E8]"
-              alt={item.alt}
-              sizes="(max-width: 768px) 100vw, 100vw" 
-              style={{ background: item.className }}
-            />
-          </div>
-        )}
-      />
-    </div>
+    <LogoMarquee
+      wrapperClassName={`demo ${wrapperClassName ?? ""}`}
+      perView={{ base: 2.5, md: 3, lg: lgSlidePerView, xl: lgSlidePerView }}
+      itemClassName="hover:shadow-lg shadow-slate-300 transition"
+      imageClassName="p-2 border border-[#E3E5E8]"
+      items={(cards || []).map((c) => ({ src: c.src, alt: c.alt, background: c.className }))}
+    />
   );
 };
 
