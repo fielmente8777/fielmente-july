@@ -1,6 +1,9 @@
 "use client";
 
-import { useAppContext } from "@/contextApi/AppContext";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { contacts } from "../../../contact";
+
 
 type CtaBtnProps = {
   label: string;
@@ -21,18 +24,25 @@ const CustomWhatsAppButton: React.FC<CtaBtnProps> = ({
   startIcon,
   ...props
 }) => {
-  const { WhatsAppClick } = useAppContext();
+  const pathname = usePathname();
+  // const { WhatsAppClick } = useAppContext();
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    WhatsAppClick(undefined, event.currentTarget, label);
-  };
+  // const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  //   WhatsAppClick(undefined, event.currentTarget, label);
+  // };
+
+   const selectedNumber = pathname.startsWith("/UK/")
+      ? contacts.whatsAppCtaOutsideIndia
+      : contacts.WhatsAppCta;
+  
 
   return (
-    <button
+    <Link
+      href={selectedNumber}
       {...props}
       id="whatsapp-cta-button"
       className={`whatsapp-cta-button transition-all text-nowrap max-md:w-full flex items-center gap-2 justify-center font-medium border duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-2xl px-6 py-3 ${className}`}
-      onClick={handleClick}
+      // onClick={handleClick}
       type="button"
     >
       {startIcon === "whatsapp" && (
@@ -64,7 +74,7 @@ const CustomWhatsAppButton: React.FC<CtaBtnProps> = ({
           <ArrowBtn2 />
         </span>
       )}
-    </button>
+    </Link>
   );
 };
 
