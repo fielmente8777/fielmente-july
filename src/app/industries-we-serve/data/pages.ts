@@ -1,14 +1,14 @@
 // Route helpers for the new industry and service pages, used by [...industry]/page.tsx.
 import type { Metadata } from "next";
 import type { IndustryProfile, ServicePageRef } from "@/@types/@industryTemplateType";
-import { getIndustry, industries } from "./industries";
+import { getIndustry, industries, serviceOnlyIndustries } from "./industries";
 import { serviceSlug, serviceTypes } from "./services";
 
 const SITE = "https://fielmente.com";
 
 
 /** Every new service page. Services that already have a page (I.existing) are skipped. */
-export const newServicePages: ServicePageRef[] = industries.flatMap((I) =>
+export const newServicePages: ServicePageRef[] = [...industries, ...serviceOnlyIndustries].flatMap((I) =>
   I.services.filter((key) => !I.existing?.[key]).map((key) => ({ path: serviceSlug(I, key), I, key }))
 );
 
@@ -31,7 +31,7 @@ function meta(title: string, description: string, path: string, image: string): 
   return {
     title,
     description,
-    alternates: { canonical: url, languages: { "en-US": url } },
+    alternates: { canonical: url },
     openGraph: {
       title,
       description,
@@ -51,6 +51,8 @@ export function industryMetadata(I: IndustryProfile): Metadata {
 
 export function serviceMetadata({ I, key, path }: ServicePageRef): Metadata {
   const st = serviceTypes[key];
+  const o = I.overrides?.[key];
+  if (o?.metaTitle && o?.metaDescription) return meta(o.metaTitle, o.metaDescription, path, st.heroPhoto ? I.heroImage : st.image);
   const long = `${I.name} ${st.label} Services | Fielmente`;
   const title = long.length > 60 ? `${I.name} ${st.label} | Fielmente` : long;
   const base = `${st.label} for ${I.plural}: ${lowerFirst(st.card(I))}.`;

@@ -1,7 +1,7 @@
 // Industries (Phase 3): hub, 5 industry pages and their service pages.
-// Existing pages kept as they are: cloud-kitchen-marketing-agency and its sub-pages, hotel-google-ads,
-// restaurant-google-ads, and the three service pages reused below (hotel-social-media, hotel-seo,
-// restaurant-social-media).
+// Kept on the old design: the cloud-kitchen-marketing-agency hub and its Google Ads / social media pages.
+// hotel-google-ads is an agency landing page. hotel-social-media, hotel-seo, restaurant-social-media and
+// restaurant-google-ads use this template at their original URLs (see `paths` and `overrides`).
 
 import type { IndustryProfile } from "@/@types/@industryTemplateType";
 
@@ -50,12 +50,52 @@ export const industries: IndustryProfile[] = [
       "content-creation", "branding", "performance-marketing", "sales-marketing-consultation", "pr-communication",
       "influencer-marketing", "social-media-ai-automation", "online-reputation-management",
     ],
-    existing: {
+    // Older URLs kept for these services (they rank and are linked from elsewhere).
+    paths: {
       "social-media-management": "hotel-marketing-agency/hotel-social-media",
       "website-seo": "hotel-marketing-agency/hotel-seo",
-      // Covered by the agency landing pages, so no separate hotel service page is generated.
-      "performance-marketing": "/hotel-performance-marketing-agency/",
-      "revenue-management": "/hotel-revenue-marketing-agency/",
+    },
+    overrides: {
+      "social-media-management": {
+        metaTitle: "Hotel Social Media Marketing Agency | Fielmente",
+        metaDescription:
+          "Hotel social media marketing that drives direct bookings: Instagram and Facebook strategy, reels, shoots, ads and DMs handled by hospitality specialists.",
+        heroTitle: "Hotel social media marketing that fills rooms, not just feeds",
+        heroLede:
+          "Instagram and Facebook run by a team that only works with hotels: a content plan built around your rooms, food and experiences, reels that get saved and shared, and DMs answered fast enough to turn into bookings.",
+        intro: [
+          "Guests now check a hotel's Instagram before they book, often straight after finding it on Google or an OTA. A feed that is out of date, or full of stock photos, quietly sends them back to the OTA listing where you pay commission.",
+          "We plan a monthly calendar around what makes your property worth the trip: rooms and views, the restaurant, events, local experiences and seasonal offers. We shoot or brief the content, write the captions, run the ads that put it in front of travellers planning a stay, and hand every booking enquiry from DMs and comments to your reservations team the same day.",
+          "Reporting covers what matters to a hotel: profile visits, website clicks, enquiries and bookings from social, not just likes.",
+        ],
+        faqs: [
+          { q: "Which platforms do you manage for hotels?", a: "Mainly Instagram and Facebook, with YouTube Shorts and LinkedIn where they suit the property, for example business hotels and wedding venues." },
+          { q: "Do you shoot photos and reels at our hotel?", a: "Yes. We plan shoots around rooms, food, the property and guest experiences, and can also work from content your team captures on phone using our shot lists." },
+          { q: "How many posts and reels do we get each month?", a: "It depends on the plan. Most hotels start with a mix of 12 to 20 posts, reels and stories a month, plus ads to promote the best performers." },
+          { q: "Will you reply to DMs and comments?", a: "We monitor and reply to routine questions, and pass booking enquiries to your team straight away, or into the Eazotel WhatsApp and CRM tools if you use them." },
+          { q: "How do you show that social media brings bookings?", a: "We track link clicks, enquiries and booking-engine visits from social with UTM links and report them every month alongside reach and engagement." },
+        ],
+      },
+      "website-seo": {
+        metaTitle: "Hotel SEO Agency India | Hotel SEO Services | Fielmente",
+        metaDescription:
+          "Hotel SEO services that grow direct bookings: technical fixes, local and destination keywords, content, schema and reporting, from a hospitality-only SEO team.",
+        heroTitle: "Hotel SEO that ranks your own website above the OTAs",
+        heroLede:
+          "Technical SEO, destination keywords and content built for hotels, so travellers searching for a stay in your area find your website and book direct.",
+        intro: [
+          "For most searches like \u201chotels in Nainital\u201d or \u201cboutique hotel near Jim Corbett\u201d, the first results are OTAs and travel portals. Hotel SEO is about winning the searches you can win: your destination plus the reasons people choose you, your brand name, and the questions travellers ask while planning.",
+          "We start with the technical basics that hotel websites often get wrong: slow booking pages, duplicate room pages, missing hotel schema and pages Google cannot index. Then we build pages and guides around the searches that lead to bookings, and connect your Google Business Profile, reviews and website so they support each other.",
+          "You get a monthly report showing rankings for your target searches, organic traffic, and the enquiries and bookings it produced.",
+        ],
+        faqs: [
+          { q: "Can a hotel website really outrank OTAs?", a: "For broad searches like \u201chotels in Goa\u201d, rarely. For specific searches (your name, your area plus a feature, packages, local guides) and in Google Maps, a well-optimised hotel website can and does rank above OTAs." },
+          { q: "How long does hotel SEO take?", a: "Technical fixes and Google Business Profile changes can show in weeks. New pages and content usually take three to six months to rank well." },
+          { q: "Do you add hotel schema markup?", a: "Yes. We add Hotel or LodgingBusiness schema, room and offer details, FAQ and breadcrumb markup where it fits, and check it in Google's tools." },
+          { q: "Is SEO also about AI search like ChatGPT and Google AI Overviews?", a: "Yes. Clear, factual pages, consistent business details and good reviews help your hotel get cited in AI answers too. We cover this as part of the plan." },
+          { q: "Do we need a new website for SEO?", a: "Not always. We fix what we can on your current site. If the platform is too slow or limited, we can rebuild it on a fast setup with the Eazotel booking engine built in." },
+        ],
+      },
     },
     faqs: [
       { q: "What kind of hotels do you work with?", a: "Independent and boutique hotels, business hotels, heritage properties and small groups across India, from hill stations to city centres." },
@@ -111,10 +151,54 @@ export const industries: IndustryProfile[] = [
     services: [
       "social-media-management", "local-seo", "ai-search-optimization", "website-development",
       "social-media-reservation-automation", "content-creation", "branding", "performance-marketing",
-      "sales-marketing-consultation", "pr-communication", "influencer-marketing",
+      "sales-marketing-consultation", "pr-communication", "influencer-marketing", "google-ads",
     ],
-    existing: {
+    // Older URLs kept for these services (they rank and are linked from elsewhere).
+    paths: {
       "social-media-management": "restaurant-marketing-agency/restaurant-social-media",
+      "google-ads": "restaurant-marketing-agency/restaurant-google-ads",
+    },
+    overrides: {
+      "social-media-management": {
+        metaTitle: "Restaurant Social Media Marketing Agency | Fielmente",
+        metaDescription:
+          "Restaurant social media marketing that fills tables: Instagram reels, food shoots, influencer collaborations, ads and DM bookings, run by a hospitality team.",
+        heroTitle: "Restaurant social media marketing that turns scrolls into reservations",
+        heroLede:
+          "Reels people save, food shots that make them hungry, and DMs answered fast enough to book a table. Instagram and Facebook run by a team that only works with restaurants, caf\u00e9s and bars.",
+        intro: [
+          "For most diners, Instagram is now the menu, the reviews and the booking line in one place. They find a restaurant on reels or Google, check the grid, and send a DM to ask about a table or an event.",
+          "We plan content around your menu calendar and the moments that bring people in: new dishes, chef specials, live music, match nights, festivals and weekday offers for the quiet nights. We shoot food and ambience, write captions in your voice, run local ads around your outlet, and collaborate with food creators who actually reach your neighbourhood.",
+          "Every month you see reach and engagement, and also profile visits, calls, direction requests and reservations that came from social.",
+        ],
+        faqs: [
+          { q: "Do you shoot food photos and reels?", a: "Yes. We plan shoots around your menu, interiors and events, and can work with content your team captures using our shot lists." },
+          { q: "Can social media fill our weeknights?", a: "That is usually where it helps most: weekday offers, events and local ads promoted to people near your outlet when they are deciding where to eat." },
+          { q: "Do you work with food influencers?", a: "Yes. We shortlist creators whose followers are in your area, agree the brief and deliverables, and track the visits and bookings their posts bring." },
+          { q: "Will you handle DMs and comments?", a: "We reply to routine questions and pass reservation requests to your team straight away, or into WhatsApp automation if you use it." },
+          { q: "Do you manage Zomato and Swiggy too?", a: "Our social media service covers Instagram and Facebook. Listings, offers and ads on aggregators are part of our restaurant performance marketing service." },
+        ],
+      },
+      "google-ads": {
+        metaTitle: "Restaurant Google Ads Agency | Fielmente",
+        metaDescription:
+          "Restaurant Google Ads that bring diners and orders: Search and Maps campaigns near your outlet, call and direction tracking, and weekly optimisation.",
+        heroTitle: "Restaurant Google Ads that bring diners through the door",
+        heroLede:
+          "Show up on Google and Maps when people nearby search for a place to eat, then send them to call, get directions, order or book a table. Every click is tracked to a visit or an enquiry.",
+        intro: [
+          "Searches like \u201crestaurants near me\u201d and \u201cbest North Indian food in Gurugram\u201d happen when people are about to decide. Google Ads puts your restaurant at the top of those results and on Maps, with your rating, distance and a button to call or get directions.",
+          "We build campaigns around your area, cuisine and occasions such as family dinners, parties and corporate lunches. Budgets follow your busy and quiet hours, locations are tight around your outlet, and wasted searches are blocked every week.",
+          "Tracking comes first: calls, direction requests, reservation clicks and online orders are each counted, so you see exactly what the spend brought in.",
+        ],
+        faqs: [
+          { q: "Does Google Ads work for a single restaurant?", a: "Yes, when it is tightly targeted. Local Search and Maps ads around your outlet, at the hours people decide where to eat, work well for single outlets." },
+          { q: "What budget does a restaurant need?", a: "Many restaurants start with a modest daily budget for a month to learn which searches convert, then increase spend only on what brings visits and orders." },
+          { q: "Can you track visits from ads?", a: "We track calls, direction requests, reservation and order clicks. Where Google has enough data, store visits can be reported too." },
+          { q: "Do you also run ads for party bookings and events?", a: "Yes. Separate campaigns for private dining, parties and corporate bookings usually perform well because the enquiries are larger." },
+          { q: "Who owns the Google Ads account?", a: "You do. We work inside your account and everything we build stays with you." },
+        ],
+      },
     },
     faqs: [
       { q: "Do you work with single-outlet restaurants?", a: "Yes. We work with single outlets, cafés, bars and multi-outlet brands." },
@@ -123,7 +207,7 @@ export const industries: IndustryProfile[] = [
       { q: "How soon will we see results?", a: "Google profile and ads changes often show within weeks; social media and SEO build over two to three months." },
     ],
     meta: {
-      title: "Restaurant Marketing Agency India | Restaurant Marketing Company", // live title, typo fixed
+      title: "Restaurant Marketing Agency in India | Fielmente", // live title, typo fixed
       description:
         "Restaurant marketing agency: Google, Instagram, reels, ads, influencer marketing and reservation automation to fill tables every night of the week.",
     },
@@ -309,5 +393,72 @@ export const legacyIndustries = [
     name: "Cloud Kitchen",
     cardLine: "More orders on Zomato, Swiggy and your own channels",
     image: "/industry/cloud-kitchen-1.png",
+  },
+];
+
+/**
+ * Industries used only for individual service pages (their hub page keeps the old design).
+ * Cloud Kitchen SEO was rebuilt here after its old page went missing.
+ */
+export const serviceOnlyIndustries: IndustryProfile[] = [
+  {
+    slug: "cloud-kitchen-marketing-agency",
+    prefix: "cloud-kitchen",
+    name: "Cloud Kitchen",
+    label: "Cloud Kitchen Marketing",
+    noun: "cloud kitchen",
+    plural: "cloud kitchens",
+    guests: "customers",
+    audience: "office-goers, students and families ordering in",
+    bookAction: "order",
+    goal: "more orders on your own channels as well as the delivery apps",
+    channels: "Zomato, Swiggy and Google",
+    reviewSites: "Google, Zomato and Swiggy",
+    searches: ["cloud kitchen near me", "biryani delivery near me", "healthy meal delivery in Gurugram"],
+    peaks: "weekends, match nights, festivals and rainy evenings",
+    showcase: "dishes, packaging and the kitchen",
+    icon: "utensils",
+    heroImage: "/industry/cloud-kitchen-1.png",
+    heroAlt: "Cloud kitchen team preparing delivery orders",
+    secondImage: "/industry/cloud-kitchen-2.png",
+    secondAlt: "Delivery orders packed and ready to dispatch",
+    heroTitle: "Cloud kitchen marketing that grows orders",
+    heroLede: "More orders on Zomato, Swiggy and your own channels.",
+    cardLine: "More orders on Zomato, Swiggy and your own channels",
+    without: ["Discovery left entirely to the delivery apps", "No website or Google presence of your own", "Repeat customers you cannot reach directly"],
+    withList: ["Your brands found on Google for food searches nearby", "A website and ordering link you own", "Repeat orders driven through your own channels"],
+    caseStudies: [],
+    products: ["hotel-whatsapp-marketing", "hotel-conversational-tool", "hotel-social-media-management-tool"],
+    services: ["website-seo", "google-ads", "social-media-management"],
+    paths: { "website-seo": "cloud-kitchen-marketing-agency/cloud-kitchen-seo" },
+    // Sister pages that keep the old design.
+    existing: {
+      "google-ads": "cloud-kitchen-marketing-agency/cloud-kitchen-google-ads",
+      "social-media-management": "cloud-kitchen-marketing-agency/cloud-kitchen-social-media",
+    },
+    overrides: {
+      "website-seo": {
+        metaTitle: "Cloud Kitchen SEO Services | Fielmente",
+        metaDescription:
+          "Cloud kitchen SEO that brings orders beyond the apps: Google Business Profile, local food searches, a fast ordering website and content for every brand you run.",
+        heroTitle: "Cloud kitchen SEO that brings orders beyond Zomato and Swiggy",
+        heroLede:
+          "Get each of your food brands found on Google and Maps for the dishes people search nearby, and send them to an ordering link you own, not just to the delivery apps.",
+        intro: [
+          "Delivery apps decide who sees your brand inside the app, and charge commission on every order. On Google, people search for dishes and cuisines near them, such as \u201cbiryani near me\u201d or \u201chealthy lunch delivery\u201d, and a cloud kitchen that ranks there can win orders and customers it keeps.",
+          "We set up and optimise a Google Business Profile for each brand where Google allows it, build fast menu pages around the dishes and areas you deliver to, and keep names, hours, menus and links consistent across Google, the apps and your website.",
+          "Reporting covers rankings for your dish and area searches, calls and website visits from Google, and the orders that came through your own link.",
+        ],
+        faqs: [
+          { q: "Can a cloud kitchen rank on Google Maps without a dine-in space?", a: "Yes, if Google's guidelines are followed. Delivery-only businesses can list a service area. We set this up correctly so profiles are not suspended." },
+          { q: "We run several brands from one kitchen. Can each rank?", a: "Each brand can have its own website pages and menu content. Google Business Profiles for multiple brands at one address need care, and we follow Google's rules for each." },
+          { q: "Do we need our own ordering website?", a: "It helps. A simple, fast ordering page you own lets you keep customer details and avoid commission on repeat orders." },
+          { q: "How long does cloud kitchen SEO take?", a: "Google Business Profile changes can show in weeks. Ranking new menu and area pages usually takes two to four months." },
+          { q: "Do you also run ads on Zomato and Swiggy?", a: "Yes, as part of our cloud kitchen performance marketing. SEO works alongside it to build orders you do not pay commission on." },
+        ],
+      },
+    },
+    faqs: [],
+    meta: { title: "Cloud Kitchen Marketing Agency | Fielmente", description: "Cloud kitchen marketing for delivery brands." },
   },
 ];

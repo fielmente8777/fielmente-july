@@ -40,6 +40,8 @@ const TextBanner: React.FC<TextBannerProps> = ({
             titleColor="white"
             subTitleColor="white"
             level={1}
+            // Banners with only a sub-title (e.g. /our-partners/) still need one H1.
+            subLevel={title ? undefined : 1}
             textCenter
             wrapperClassName="gap-3"
             subTitleClassName="md:text-5xl!"

@@ -33,7 +33,7 @@ export function agencyMetadata(d: AgencyPageData): Metadata {
   return {
     title: d.meta.title,
     description: d.meta.description,
-    alternates: { canonical: url, languages: { "en-US": url } },
+    alternates: { canonical: url },
     openGraph: {
       title: d.meta.title,
       description: d.meta.description,

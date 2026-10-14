@@ -6,13 +6,12 @@ import { Container, Section, SectionWithContainer } from "@/components";
 import Link from "next/link";
 import { footerData } from "@/components/footers/footerData";
 import {
-  ImageIcon,
   Mail,
   ArrowOrange,
-  ImageTwoIcon,
   WhatsAppIcon2,
   ArrowIcon2,
 } from "@/utils/icons";
+import { ImageIcon, ImageTwoIcon } from "./thankYouIcons";
 
 import { contacts } from "../../../contact";
 

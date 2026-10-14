@@ -6,7 +6,7 @@ interface SectionHeadingDescProps {
   subTitle?: string;
 
   level?: 1 | 2 | 3 | 4 | 5 | 6; // base level (title)
-  subLevel?: 2 | 3 | 4 | 5 | 6; // optional override
+  subLevel?: 1 | 2 | 3 | 4 | 5 | 6; // optional override
 
   textCenter?: boolean;
   mdTextCenter?: boolean;

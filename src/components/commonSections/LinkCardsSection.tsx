@@ -38,7 +38,7 @@ const LinkCardsSection: React.FC<LinkCardsSectionProps> = ({ eyebrow, title, led
                 <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#F5F5F9]">
                   <Image
                     src={it.image}
-                    alt=""
+                    alt={`${it.title} screenshot`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"

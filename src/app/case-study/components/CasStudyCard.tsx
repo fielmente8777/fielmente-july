@@ -43,6 +43,7 @@ const CasStudyCard: React.FC<CasStudyCardProps> = ({
           type="link"
           href={`/case-study/${slug}`}
           label="Read More"
+          srText={`: ${slug.replaceAll("-", " ")} case study`}
           icon="arrow2"
           iconClass="max-lg:w-6 text-white bg-transparent!"
           className="justify-between! border-none w-full max-w-40 rounded-lg mt-6 ml-auto max-lg:px-2! max-lg:py-2 bg-color4 text-white"

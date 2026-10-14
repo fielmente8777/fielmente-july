@@ -6,9 +6,6 @@ export const metadata: Metadata = {
   description: "Thank you for contacting us.",
   alternates: {
     canonical: "https://fielmente.com/thank-you",
-    languages: {
-      "en-US": "https://fielmente.com/thank-you",
-    },
   },
   robots: {
     index: false,

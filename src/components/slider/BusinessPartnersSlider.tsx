@@ -1,9 +1,6 @@
-"use client";
-
+// Business partner logos as a continuously scrolling strip (CSS-only, see LogoMarquee).
 import { BusinessPartnersDataTypes } from "@/@types/@homeType";
-import Image from "next/image";
-import { Autoplay, FreeMode } from "swiper/modules";
-import SwiperCarousel from "./SwiperCarousel";
+import LogoMarquee from "./LogoMarquee";
 
 interface Props {
   cards: BusinessPartnersDataTypes["cards"];
@@ -11,56 +8,14 @@ interface Props {
   xlSlidesPerView?: number;
 }
 
-const BusinessPartnersSlider: React.FC<Props> = ({
-  cards,
-  wrapperClassName,
-  xlSlidesPerView = 6,
-}) => {
+const BusinessPartnersSlider: React.FC<Props> = ({ cards, wrapperClassName, xlSlidesPerView = 6 }) => {
   return (
-    <div
-      className={`w-full block overflow-hidden demo ${wrapperClassName ? wrapperClassName : ""}`}
-    >
-      <SwiperCarousel
-        data={cards || []}
-        slidesPerView={2.5}
-        spaceBetween={20}
-        speed={5000}
-        loop={true}
-        modules={[Autoplay, FreeMode]}
-        freeMode={true}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: false,
-        }}
-        breakpoints={{
-          768: {
-            slidesPerView: 4,
-          },
-          1024: {
-            slidesPerView: 5,
-          },
-          1280: {
-            slidesPerView: xlSlidesPerView,
-          },
-        }}
-        renderSlide={(item, index) => (
-          <div
-            key={index}
-            className="relative w-full lg:aspect-3/1.5 aspect-4/4 h-5rem rounded-xl flex justify-center items-center hover:shadow-lg shadow-slate-300 transition"
-          >
-            <Image
-              src={item.imgSrc}
-              fill
-              priority={true}
-              className="object-contain w-full h-full rounded-md px-6"
-              alt={item.title}
-              sizes="100vw"
-            />
-          </div>
-        )}
-      />
-    </div>
+    <LogoMarquee
+      wrapperClassName={`demo ${wrapperClassName ?? ""}`}
+      perView={{ base: 2.5, md: 4, lg: 5, xl: xlSlidesPerView }}
+      itemClassName="hover:shadow-lg shadow-slate-300 transition"
+      items={(cards || []).map((c) => ({ src: c.imgSrc, alt: c.title }))}
+    />
   );
 };
 

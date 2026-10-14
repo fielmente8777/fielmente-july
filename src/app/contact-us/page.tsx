@@ -9,7 +9,7 @@ import { contactUsPageData } from "./components/pageData";
 
 export const metadata: Metadata = {
   title:
-    "Contact | Fielmente - hotel marketing, SEO, and revenue management services",
+    "Contact Fielmente | Hotel Marketing, SEO & Revenue",
   description:
     "Get in touch with Fielmente for hotel marketing, SEO, and revenue management services. Book a consultation and grow your hotel bookings with expert strategies.",
   alternates: {
@@ -34,6 +34,19 @@ export const metadata: Metadata = {
 export default function ContactUsPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Contact Fielmente",
+            url: "https://fielmente.com/contact-us/",
+            about: { "@id": "https://fielmente.com/#organization" },
+            mainEntity: { "@id": "https://fielmente.com/#gurugram" },
+          }),
+        }}
+      />
       <Section defaultPadding={false} className="pb-36">
         <div className="w-full relative xl:aspect-[4/1.8] md:aspect-4/3.75 aspect-4/9.5">
           <Image

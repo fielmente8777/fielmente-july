@@ -2,11 +2,14 @@
 // page content tailored to it (guests, booking channels, searches, peak seasons, review sites).
 
 import type { IndustryProfile, ServiceKey, ServiceType } from "@/@types/@industryTemplateType";
+import { serviceTypes as mainServiceTypes } from "@/app/industries-we-serve/data/services";
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const q = (s: string) => `“${s}”`;
 
 export const serviceTypes: Record<ServiceKey, ServiceType> = {
+  // Shared with the main industries data (this folder now redirects there).
+  "google-ads": mainServiceTypes["google-ads"],
   /* ── Social Media Management ─────────────────────────────── */
   "social-media-management": {
     key: "social-media-management",

@@ -4,7 +4,12 @@ import Header from "./Header";
 import LandingNav from "./LandingNav";
 import LandingHeader from "./landingHeader";
 
-const NavBar = () => {
+interface NavBarProps {
+  /** Blog post slugs, passed from the server layout so the client bundle never loads the blog content. */
+  blogSlugs?: string[];
+}
+
+const NavBar = ({ blogSlugs = [] }: NavBarProps) => {
   const pathName = usePathname();
   const RenderNavBar = Header;
 
@@ -26,7 +31,7 @@ const NavBar = () => {
   } else if (pathName === "/landing-page/") {
     return <LandingNav />;
   } else {
-    return <Header />;
+    return <Header blogSlugs={blogSlugs} />;
   }
 };
 

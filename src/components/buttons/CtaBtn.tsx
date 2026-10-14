@@ -6,6 +6,8 @@ import Link from "next/link";
 
 type CtaBtnProps = {
   label: string;
+  /** Extra words read by screen readers and search engines only, e.g. the page a "Read More" link goes to. */
+  srText?: string;
   href?: string;
   className?: string;
   iconClass?: string;
@@ -21,6 +23,7 @@ type CtaBtnProps = {
 
 export const CtaBtn: React.FC<CtaBtnProps> = ({
   label,
+  srText,
   href,
   className = "",
   onClick,
@@ -50,6 +53,7 @@ export const CtaBtn: React.FC<CtaBtnProps> = ({
         </span>
       )}
       {label}
+      {srText && <span className="sr-only">{srText}</span>}
       {icon === "arrow" && (
         <span
           className={`w-6 aspect-square flex items-center justify-center rounded-full ${iconClass ? iconClass : "text-primary"} bg-white`}
@@ -81,6 +85,7 @@ export const CtaBtn: React.FC<CtaBtnProps> = ({
         </span>
       )}
       {label}
+      {srText && <span className="sr-only">{srText}</span>}
       {icon === "arrow" && (
         <span
           className={`w-6 aspect-square flex items-center justify-center rounded-full ${iconClass ? iconClass : "text-primary"} bg-white`}

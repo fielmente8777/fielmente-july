@@ -1,10 +1,28 @@
-export const casStudiesData = [
+import type { MonthlyPoint } from "./CaseStudyChart";
+
+export interface CaseStudy {
+  slug: string;
+  title: string;
+  description: string;
+  img: string;
+  hotelImg?: string;
+  imgBg?: string;
+  className?: string;
+  metaData?: { title: string; description: string };
+  data?: { title: string; description?: string[]; lists?: string[] }[];
+  /** Monthly tracked enquiries from the client's Google Ads account, for the results chart. */
+  monthly?: MonthlyPoint[];
+  monthlyHighlightFrom?: string;
+  monthlyNote?: string;
+}
+
+export const casStudiesData: CaseStudy[] = [
   {
     slug: "anand-vardhan-resort",
     metaData: {
       title: "SEO Case Study: Anand Vardhan Resorts | Fielmente Results",
       description:
-        "Discover how Fielmente ranked Anand Vardhan Resorts #1 on Google for vegetarian and wellness resort keywords in Manali within 2 months using advanced SEO strategies.",
+        "See how Fielmente ranked Anand Vardhan Resorts #1 on Google for vegetarian and wellness resort keywords in Manali within 2 months using SEO strategies.",
     },
     className: "object-contain",
     img: "/avr-logo.png",
@@ -31,7 +49,6 @@ export const casStudiesData = [
         title: "Challenges",
         lists: [
           "• Low visibility for target keywords",
-          "• Strong competition from established hospitality brands",
           "• Strong competition from established hospitality brands",
         ],
       },
@@ -84,7 +101,7 @@ export const casStudiesData = [
   {
     slug: "naturoville-google-ads",
     metaData: {
-      title: "Google Ads Case Study: Naturoville Wellness Resort | Fielmente",
+      title: "Google Ads Case Study: Naturoville Wellness Resort",
       description: "How Fielmente grew Naturoville Wellness Resort's Google Ads enquiries 9.5× on nearly the same budget and cut cost per enquiry by 89%.",
     },
     className: "object-contain",
@@ -92,6 +109,34 @@ export const casStudiesData = [
     // TODO(Fielmente): replace with a photo of the property
     hotelImg: "/banner.jpg",
     title: "Google Ads Case Study: Naturoville Wellness Resort",
+    monthly: [
+      { month: "2024-10", enquiries: 157, cpe: 1451 },
+      { month: "2024-11", enquiries: 126, cpe: 1809 },
+      { month: "2024-12", enquiries: 93, cpe: 2430 },
+      { month: "2025-01", enquiries: 189, cpe: 1206 },
+      { month: "2025-02", enquiries: 428, cpe: 533 },
+      { month: "2025-03", enquiries: 543, cpe: 420 },
+      { month: "2025-04", enquiries: 500, cpe: 455 },
+      { month: "2025-05", enquiries: 496, cpe: 466 },
+      { month: "2025-06", enquiries: 443, cpe: 461 },
+      { month: "2025-07", enquiries: 2, cpe: 13415 },
+      { month: "2025-08", enquiries: 956, cpe: 208 },
+      { month: "2025-09", enquiries: 1349, cpe: 209 },
+      { month: "2025-10", enquiries: 989, cpe: 232 },
+      { month: "2025-11", enquiries: 832, cpe: 257 },
+      { month: "2025-12", enquiries: 719, cpe: 338 },
+      { month: "2026-01", enquiries: 899, cpe: 386 },
+      { month: "2026-02", enquiries: 707, cpe: 357 },
+      { month: "2026-03", enquiries: 913, cpe: 361 },
+      { month: "2026-04", enquiries: 1768, cpe: 174 },
+      { month: "2026-05", enquiries: 1012, cpe: 240 },
+      { month: "2026-06", enquiries: 1208, cpe: 219 },
+      { month: "2026-07", enquiries: 882, cpe: 282 },
+      { month: "2026-08", enquiries: 929, cpe: 287 },
+      { month: "2026-09", enquiries: 2678, cpe: 77 },
+    ],
+    monthlyHighlightFrom: "2026-04",
+    monthlyNote: "Source: Naturoville Google Ads account, Oct 2024 to Sep 2026. July 2025 shows almost no tracked enquiries. Highlighted months are the period compared in this case study (Apr–Sep 2026).",
     description: "Naturoville was already spending over ₹2 lakh a month on Google Ads, but each enquiry cost more than ₹1,500 and fewer than 2 in 100 clicks became a conversation.",
     data: [
       {
@@ -138,7 +183,7 @@ export const casStudiesData = [
   {
     slug: "hotel-green-castle-google-ads",
     metaData: {
-      title: "Google Ads Case Study: Hotel Green Castle, Mussoorie | Fielmente",
+      title: "Google Ads Case Study: Hotel Green Castle, Mussoorie",
       description: "How Fielmente took Hotel Green Castle from about 100 to over 1,000 Google Ads enquiries a month while cutting cost per enquiry 35%.",
     },
     className: "object-contain",
@@ -201,6 +246,32 @@ export const casStudiesData = [
     // TODO(Fielmente): replace with a photo of the property
     hotelImg: "/banner.jpg",
     title: "Google Ads Case Study: Naad Wellness",
+    monthly: [
+      { month: "2024-11", enquiries: 14, cpe: 781 },
+      { month: "2024-12", enquiries: 38, cpe: 716 },
+      { month: "2025-01", enquiries: 59, cpe: 748 },
+      { month: "2025-02", enquiries: 30, cpe: 1140 },
+      { month: "2025-03", enquiries: 16, cpe: 2134 },
+      { month: "2025-04", enquiries: 8, cpe: 1187 },
+      { month: "2025-05", enquiries: 36, cpe: 681 },
+      { month: "2025-07", enquiries: 14, cpe: 1511 },
+      { month: "2025-08", enquiries: 27, cpe: 467 },
+      { month: "2025-09", enquiries: 6, cpe: 1367 },
+      { month: "2025-10", enquiries: 21, cpe: 572 },
+      { month: "2025-11", enquiries: 22, cpe: 677 },
+      { month: "2025-12", enquiries: 12, cpe: 1338 },
+      { month: "2026-01", enquiries: 16, cpe: 1221 },
+      { month: "2026-02", enquiries: 85, cpe: 513 },
+      { month: "2026-03", enquiries: 691, cpe: 166 },
+      { month: "2026-04", enquiries: 760, cpe: 184 },
+      { month: "2026-05", enquiries: 486, cpe: 104 },
+      { month: "2026-06", enquiries: 284, cpe: 113 },
+      { month: "2026-07", enquiries: 445, cpe: 184 },
+      { month: "2026-08", enquiries: 892, cpe: 153 },
+      { month: "2026-09", enquiries: 332, cpe: 153 },
+    ],
+    monthlyHighlightFrom: "2026-03",
+    monthlyNote: "Source: Naad Wellness Google Ads account, Nov 2024 to Sep 2026. No data for Jun 2025. Highlighted months are the period compared in this case study (Mar–Sep 2026).",
     description: "Steady ad traffic but very few enquiries — often under 30 a month at ₹700–2,000 each.",
     data: [
       {
@@ -247,7 +318,7 @@ export const casStudiesData = [
   {
     slug: "the-rudraksh-google-ads",
     metaData: {
-      title: "Google Ads Case Study: The Rudraksh, A Himalayan Retreat | Fielmente",
+      title: "Google Ads Case Study: The Rudraksh Himalayan Retreat",
       description: "How Fielmente took The Rudraksh from almost no tracked enquiries to 447 a month at ₹41 per enquiry with Google Ads.",
     },
     className: "object-contain",
@@ -255,6 +326,23 @@ export const casStudiesData = [
     // TODO(Fielmente): replace with a photo of the property
     hotelImg: "/banner.jpg",
     title: "Google Ads Case Study: The Rudraksh, A Himalayan Retreat",
+    monthly: [
+      { month: "2024-12", enquiries: 2, cpe: 4241 },
+      { month: "2025-01", enquiries: 6, cpe: 1265 },
+      { month: "2025-03", enquiries: 4, cpe: 692 },
+      { month: "2025-04", enquiries: 164, cpe: 48 },
+      { month: "2025-05", enquiries: 253, cpe: 59 },
+      { month: "2025-06", enquiries: 285, cpe: 28 },
+      { month: "2025-07", enquiries: 564, cpe: 31 },
+      { month: "2025-08", enquiries: 279, cpe: 41 },
+      { month: "2025-09", enquiries: 262, cpe: 51 },
+      { month: "2025-10", enquiries: 541, cpe: 54 },
+      { month: "2025-11", enquiries: 635, cpe: 39 },
+      { month: "2025-12", enquiries: 741, cpe: 38 },
+      { month: "2026-01", enquiries: 743, cpe: 35 },
+    ],
+    monthlyHighlightFrom: "2025-04",
+    monthlyNote: "Source: The Rudraksh Google Ads account, Dec 2024 to Jan 2026 (the period this case study covers). No data for Feb 2025.",
     description: "Plenty of cheap clicks but almost no measurable enquiries — nothing for Google's bidding to learn from.",
     data: [
       {

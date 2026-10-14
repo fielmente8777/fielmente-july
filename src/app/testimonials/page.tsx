@@ -9,7 +9,7 @@ export const metadata = {
   title: "Fielmente Reviews & Testimonials | Hotel Success Stories",
   
   description:
-    "Read real testimonials from 500+ hotels and hospitality brands using Fielmente. Discover how our OTA management, SEO, and revenue strategies drive growth and bookings.",
+    "Read testimonials from 500+ hotels and hospitality brands on how Fielmente's OTA management, SEO and revenue strategies drive growth and bookings.",
   
   keywords: [
     "Fielmente reviews",

@@ -34,11 +34,16 @@ export interface IndustryProfile {
   /** Service keys that already have a page — linked instead of rebuilt. A path under
    * /industries-we-serve/ ("hotel-marketing-agency/hotel-seo") or a full path ("/hotel-performance-marketing-agency/"). */
   existing?: Partial<Record<ServiceKey, string>>;
+  /** Service pages that keep an older URL: key -> path under /industries-we-serve/ ("hotel-marketing-agency/hotel-seo"). */
+  paths?: Partial<Record<ServiceKey, string>>;
+  /** Page-specific copy and SEO that replaces the generic template text for one service. */
+  overrides?: Partial<Record<ServiceKey, ServiceOverride>>;
   faqs: { q: string; a: string }[];
   meta: { title: string; description: string };
 }
 
 export type ServiceKey =
+  | "google-ads"
   | "social-media-management"
   | "local-seo"
   | "website-seo"
@@ -69,6 +74,13 @@ export interface ServiceContent {
   steps: { title: string; body: string }[];
   measure: string[];
   faqs: { q: string; a: string }[];
+}
+
+export interface ServiceOverride extends Partial<ServiceContent> {
+  metaTitle?: string;
+  metaDescription?: string;
+  /** Short paragraphs shown under the hero: the page's own detail beyond the template. */
+  intro?: string[];
 }
 
 export interface ServiceType {

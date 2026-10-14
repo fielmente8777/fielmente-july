@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     "Google Ads for hotels, hotel PPC agency, resort Google Ads, hotel Google Ads management, hospitality PPC India",
   alternates: {
     canonical: PAGE_URL,
-    languages: { "en-US": PAGE_URL },
   },
   openGraph: {
     title: TITLE,

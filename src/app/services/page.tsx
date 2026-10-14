@@ -18,9 +18,6 @@ export const metadata: Metadata = {
     "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
   alternates: {
     canonical: "https://fielmente.com/services/",
-    languages: {
-      "en-US": "https://fielmente.com/services/",
-    },
   },
   openGraph: {
     title: "India's Leading Hospitality Marketing Services - Fielmente",

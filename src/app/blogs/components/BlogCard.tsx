@@ -39,8 +39,8 @@ export const BlogCard: React.FC<BlogCardProps> = ({
             href={"/" + slug}
             className="text-secondary text-lg font-medium flex items-center gap-3"
           >
-            Read More
-            <span>
+            Read More<span className="sr-only">: {title}</span>
+            <span aria-hidden="true">
               <span className="bg-color4 flex items-center justify-center text-white rounded-full">
                 <ArrowBtn />
               </span>

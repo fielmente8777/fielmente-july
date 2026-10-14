@@ -215,7 +215,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { industriesWeServePageData } from "../industries-we-serves/components/pageData";
 import ExploreMoreBLogs from "./components/ExploreMoreBLogs";
-import { blogPageData } from "../blogs/components/pageData";
 
 interface Params {
   params: {
@@ -224,6 +223,41 @@ interface Params {
   searchParams: {
     [key: string]: string | string[] | undefined;
   };
+}
+
+const SITE = "https://fielmente.com";
+
+/** Image src as a string, whether the post image is a URL or an imported StaticImageData. */
+function imageSrc(img: unknown): string | undefined {
+  if (!img) return undefined;
+  if (typeof img === "string") return img;
+  return (img as { src?: string }).src;
+}
+
+/** Absolute URL for an image path. */
+function absolute(src?: string) {
+  if (!src) return undefined;
+  return src.startsWith("http") ? src : `${SITE}${src.startsWith("/") ? "" : "/"}${src}`;
+}
+
+/** A post's own date, as ISO (YYYY-MM-DD), when it has a real one. Posts without a date get none. */
+function isoDate(date?: string) {
+  if (!date) return undefined;
+  const d = new Date(date);
+  return Number.isNaN(d.getTime()) ? undefined : d.toISOString().slice(0, 10);
+}
+
+/** Up to `count` posts most related to the current one, scored by shared title words. */
+function relatedPosts(current: { slug: string; title: string }, count = 12) {
+  const stop = new Set(["the", "a", "an", "for", "and", "of", "to", "in", "on", "how", "your", "with", "what", "why", "is", "are", "can", "hotel", "hotels", "guide", "complete"]);
+  const words = (t: string) => new Set(t.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !stop.has(w)));
+  const mine = words(current.title);
+  return blogData
+    .filter((post) => post.slug !== current.slug)
+    .map((post) => ({ post, score: [...words(post.title)].filter((w) => mine.has(w)).length }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, count)
+    .map((x) => x.post);
 }
 
 // get random blogs
@@ -279,24 +313,30 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       locale: "en_IN",
       type: "article",
 
+      ...(isoDate(post.date) ? { publishedTime: isoDate(post.date) } : {}),
       images: [
         {
-          url: "/fielmente_logo.png",
+          url: imageSrc(post.url) || "/fielmente_logo.png",
           width: 1200,
           height: 630,
+          alt: post.title,
         },
       ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [imageSrc(post.url) || "/fielmente_logo.png"],
     },
 
     robots: {
       index: true,
       follow: true,
-      nocache: true,
-
       googleBot: {
         index: true,
         follow: true,
-        noimageindex: true,
         "max-video-preview": -1,
         "max-image-preview": "large",
         "max-snippet": -1,
@@ -319,7 +359,38 @@ export default async function LandingPage({ params }: Params) {
       ? data.meta.keywords.split(",").map((tag: string) => tag.trim())
       : data.meta?.keywords || [];
 
-  const allBlogs = blogData.filter((post) => post.slug !== path.slug);
+  const allBlogs = relatedPosts(data);
+  const postUrl = `${SITE}/${data.slug}/`;
+  const published = isoDate(data.date);
+  const heroImage = absolute(imageSrc(data.url));
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: data.title,
+    description: data.meta?.description || data.description,
+    mainEntityOfPage: postUrl,
+    url: postUrl,
+    ...(heroImage ? { image: heroImage } : {}),
+    ...(published ? { datePublished: published, dateModified: published } : {}),
+    inLanguage: "en-IN",
+    author: { "@type": "Organization", name: "Fielmente", url: `${SITE}/` },
+    publisher: {
+      "@type": "Organization",
+      name: "Fielmente",
+      url: `${SITE}/`,
+      logo: { "@type": "ImageObject", url: `${SITE}/fielmente_logo.png` },
+    },
+    ...(tags.length ? { keywords: tags.join(", ") } : {}),
+  };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Blogs", item: `${SITE}/blogs/` },
+      { "@type": "ListItem", position: 3, name: data.title, item: postUrl },
+    ],
+  };
 
   const randomData = {
     title: "Explore More Blogs",
@@ -338,12 +409,10 @@ export default async function LandingPage({ params }: Params) {
     })),
   };
 
-  const blogTitles = [...blogPageData.blogs.cards.map((card) => card.title)];
-
-  console.log("blogTitles", blogTitles);
-
   return (
     <main className="">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <Section
         className="
           relative
@@ -356,10 +425,11 @@ export default async function LandingPage({ params }: Params) {
         <div className="absolute inset-0 overflow-hidden rounded-b-[32px]">
           <Image
             src="/Hero.png"
-            alt="hero"
+            alt=""
             fill
-            className="object-cover bg-background-black1 rotate-180"
+            priority
             sizes="100vw"
+            className="object-cover bg-background-black1 rotate-180"
           />
         </div>
 
@@ -394,13 +464,13 @@ export default async function LandingPage({ params }: Params) {
               md:text-base
             "
           >
-            <Link href="/blogs" className="text-[#6B7280]">
+            <Link href="/blogs/" className="text-[#6B7280]">
               Blogs
             </Link>
 
             <NextIcon />
 
-            <span className="text-white">Blog Details</span>
+            <span className="text-white line-clamp-1">{data.title}</span>
           </div>
 
           <h1
@@ -437,11 +507,15 @@ export default async function LandingPage({ params }: Params) {
               md:text-base
             "
           >
-            <span>{data.date ?? "May 26, 2026"}</span>
+            {data.date && (
+              <>
+                <time dateTime={published}>{data.date}</time>
 
-            <span>•</span>
+                <span>•</span>
+              </>
+            )}
 
-            <span>5 min read</span>
+            <span>{Math.max(2, Math.round(data.data.replace(/<[^>]+>/g, " ").split(/\s+/).length / 220))} min read</span>
 
             <span>•</span>
 

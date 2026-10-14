@@ -94,7 +94,6 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: "https://fielmente.com/industries-we-serve/",
-    languages: { "en-US": "https://fielmente.com/industries-we-serve/" },
   },
   openGraph: {
     title,

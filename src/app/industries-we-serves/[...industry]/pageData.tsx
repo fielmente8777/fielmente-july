@@ -180,9 +180,9 @@ export const industriesData = [
   {
     slug: "restaurant-marketing-agency",
     metaData: {
-      title: "Restaurant Marketing Agency India | Restuarant Marketing Company",
+      title: "Restaurant Marketing Company in India | Fielmente",
       description:
-        "Looking for your restaurant marketing success? Fielmente is the leading restaurant marketing agency in India and boosting your restaurant's digital presence. Contact us!",
+        "Fielmente is a restaurant marketing company in India that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
     },
     banner: {
       title: "Leading Restaurant Marketing Company.",

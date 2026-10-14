@@ -4,31 +4,44 @@ import Image from "next/image";
 import { blogPageData } from "./components/pageData";
 import BlogCard from "./components/BlogCard";
 import { Metadata } from "next";
-import Link from "next/dist/client/link";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Blogs - Fielmente",
-  description:
-    "Another milestone in Fielmente’s journey 8 Marketing Strategies for Food &amp; Beverage Industry to Plan in 2022 How SEO helps to boost restaurant business Top 3 Food &amp; Beverage Business Pitches on Shark Tank India Restaurant Marketing in the MetaVerse – Web 3.0 Facebook Twitter LinkedIn Blogs Fielmente",
-  alternates: {
-    canonical: "https://fielmente.com/blogs/",
-    languages: {
-      "en-US": "https://fielmente.com/blogs/",
+const BLOG_TITLE = "Hotel & Restaurant Marketing Blog | Fielmente";
+const BLOG_DESCRIPTION =
+  "Hospitality marketing guides for hotels, resorts and restaurants, covering SEO, Google Ads, social media, WhatsApp and AI search. Read the Fielmente blog.";
+
+type BlogsSearchParams = Promise<{ page?: string }>;
+
+/** Page 1 lives at /blogs/; later pages at /blogs/?page=N, each canonical to itself. */
+function pageUrl(page: number) {
+  return page <= 1 ? "https://fielmente.com/blogs/" : `https://fielmente.com/blogs/?page=${page}`;
+}
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: BlogsSearchParams;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const page = Math.max(1, Number(params.page) || 1);
+  const title = page > 1 ? `Hospitality Marketing Blog, Page ${page} | Fielmente` : BLOG_TITLE;
+  const description = page > 1 ? `${BLOG_DESCRIPTION.replace(" Read the Fielmente blog.", "")} Page ${page}.` : BLOG_DESCRIPTION;
+  return {
+    title,
+    description,
+    alternates: { canonical: pageUrl(page) },
+    openGraph: {
+      title,
+      description,
+      url: pageUrl(page),
+      siteName: "Fielmente",
+      locale: "en_IN",
+      type: "website",
+      images: [{ url: "/images/blog/bnr.png", width: 1200, height: 630 }],
     },
-  },
-  openGraph: {
-    title: "Blogs - Fielmente",
-    description:
-      "Another milestone in Fielmente’s journey 8 Marketing Strategies for Food &amp; Beverage Industry to Plan in 2022 How SEO helps to boost restaurant business Top 3 Food &amp; Beverage Business Pitches on Shark Tank India Restaurant Marketing in the MetaVerse – Web 3.0 Facebook Twitter LinkedIn Blogs Fielmente",
-    images: [
-      {
-        url: "/fielmente_logo.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
-};
+  };
+}
 
 const BLOGS_PER_PAGE = 9;
 
@@ -61,7 +74,7 @@ function getPaginationRange(
 export default async function Blogs({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string }>;
+  searchParams: BlogsSearchParams;
 }) {
   const params = await searchParams;
 
@@ -71,7 +84,11 @@ export default async function Blogs({
 
   const totalPages = Math.ceil(totalBlogs / BLOGS_PER_PAGE);
 
-  const page = Math.min(currentPage, totalPages);
+  // A page number past the last page is a real 404, not a copy of the last page.
+  if (currentPage > totalPages || (params.page !== undefined && !/^\d+$/.test(params.page))) {
+    notFound();
+  }
+  const page = currentPage;
 
   const startIndex = (page - 1) * BLOGS_PER_PAGE;
 
@@ -82,10 +99,6 @@ export default async function Blogs({
 
   const paginationRange = getPaginationRange(page, totalPages);
 
-  const blogTitles = [...blogPageData.blogs.cards.map((card) => card.title)];
-
-  console.log("blogTitles", blogTitles);
-
   return (
     <main className="md:mt-22 mt-23">
       <Section
@@ -94,10 +107,11 @@ export default async function Blogs({
       >
         <Image
           src="/images/blog/bnr.png"
-          alt="blogs"
+          alt=""
           fill
-          className="object-cover"
+          priority
           sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-linear-to-b from-30% from-black/40 to-transparent z-10" />
         <div className="absolute inset-0 flex items-center justify-center z-20">
@@ -107,12 +121,11 @@ export default async function Blogs({
             titleColor="white"
             subTitleColor="white"
             subTitleClassName="span-color-2"
+            level={1}
             textCenter
             wrapperClassName="gap-4 max-w-md"
             icon={false}
           />
-          <p className="text-black">{blogPageData.blogs.cards.length}</p>
-        
         </div>
       </Section>
       <SectionWithContainer>
@@ -133,8 +146,10 @@ export default async function Blogs({
           <div className="flex justify-end items-center gap-2 mt-12">
             {/* Previous */}
             <Link
-              href={page > 1 ? `/blogs/?page=${page - 1}` : "#"}
+              href={page > 2 ? `/blogs/?page=${page - 1}` : page === 2 ? "/blogs/" : "#"}
               aria-disabled={page === 1}
+              aria-label="Previous page of blog posts"
+              rel="prev"
               className={`w-10 h-10 rounded-full border border-main-border flex items-center justify-center transition ${
                 page === 1
                   ? "opacity-40 pointer-events-none"
@@ -183,6 +198,8 @@ export default async function Blogs({
             <Link
               href={page < totalPages ? `/blogs/?page=${page + 1}` : "#"}
               aria-disabled={page === totalPages}
+              aria-label="Next page of blog posts"
+              rel="next"
               className={`w-10 h-10 rounded-full border border-main-border flex items-center justify-center transition ${
                 page === totalPages
                   ? "opacity-40 pointer-events-none"

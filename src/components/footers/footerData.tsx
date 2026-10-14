@@ -92,6 +92,18 @@ export const footerData: FooterLinksPropstype = {
           href: "/case-study/",
         },
         {
+          label: "Testimonials",
+          href: "/testimonials/",
+        },
+        {
+          label: "Our Clients",
+          href: "/our-clients/",
+        },
+        {
+          label: "Our Partners",
+          href: "/our-partners/",
+        },
+        {
           label: "Contact Us",
           href: "/contact-us/",
         },
@@ -139,6 +151,10 @@ export const footerData: FooterLinksPropstype = {
         {
           label: "Cloud Kitchen Marketing",
           href: "/industries-we-serve/cloud-kitchen-marketing-agency/",
+        },
+        {
+          label: "Cloud Kitchen SEO",
+          href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-seo/",
         },
         {
           label: "Cloud Kitchen Social Media",
@@ -218,6 +234,6 @@ export const policyLinks = [
   },
   {
     label: "Terms of Use",
-    href: "/terms-of-use/",
+    href: "/terms-and-conditions/",
   },
 ];

@@ -12,17 +12,14 @@ import ContactBtn3 from "../hospitality-marketing/contactbtn/ContactBtn3";
 export const metadata: Metadata = {
   title: "India's Leading Hospitality SEO Agency - Fielmente",
   description:
-    "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
+    "This privacy policy explains how Fielmente collects, uses and protects personal data submitted on fielmente.com. Read it before sharing your details.",
   alternates: {
     canonical: "https://fielmente.com/search-engine-marketing/",
-    languages: {
-      "en-US": "https://fielmente.com/search-engine-marketing/",
-    },
   },
   openGraph: {
     title: "India's Leading Hospitality SEO Agency - Fielmente",
     description:
-      "Fielmente: Your trusted hospitality SEO agency, providing targeted marketing services for hotels, restaurants, cloud kitchens, and resorts.",
+      "This privacy policy explains how Fielmente collects, uses and protects personal data submitted on fielmente.com. Read it before sharing your details.",
     images: [
       {
         url: "/fielmente_logo.png",

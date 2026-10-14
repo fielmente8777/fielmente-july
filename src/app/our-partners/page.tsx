@@ -5,10 +5,10 @@ import BusinessPartnersSlider from "@/components/slider/BusinessPartnersSlider";
 import { ourPartnersPageData } from "./components/pageData";
 
 export const metadata = {
-  title: "Partner with Fielmente | Hotel Growth Platform & OTA Integrations",
+  title: "Partner with Fielmente | Hotel Growth & OTA Integrations",
   
   description:
-    "Partner with Fielmente to scale your hotel business using powerful tools, seamless OTA integrations, and trusted platforms like Google, AWS, Booking.com, and Airbnb.",
+    "Partner with Fielmente to scale your hotel business with growth tools, OTA integrations and trusted platforms like Google, AWS, Booking.com and Airbnb.",
   
   keywords: [
     "hotel growth platform",

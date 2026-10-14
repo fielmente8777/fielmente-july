@@ -1946,6 +1946,419 @@ export const PRODUCTS: Product[] = [
         "a": "Yes. Every conversation is saved to the guest's record in the CRM."
       }
     ]
+  },
+  // ── Added October 2026 (REVIEW: confirm features with the Eazotel team) ──
+  {
+    "slug": "hotel-insights-analytics",
+    "name": "Insights & Analytics",
+    "seo": {
+      "title": "Hotel Analytics Dashboard: Leads & Bookings | Fielmente",
+      "description": "One hotel analytics dashboard for website traffic, Google Analytics, leads by channel, campaign results and bookings. See what brings guests and what to fix.",
+      "focusKeyword": "hotel analytics dashboard",
+      "secondaryKeywords": [
+        "hotel marketing analytics",
+        "hotel lead reports",
+        "hotel Google Analytics dashboard"
+      ]
+    },
+    "h1": "Hotel analytics that show which marketing brings bookings",
+    "intro": "Website traffic, Google Analytics, enquiries from every channel and campaign results in one dashboard, so owners and managers can see what is working without opening five tools.",
+    "proof": "Every lead traced to its source",
+    "summary": "Website, campaign and lead data in one dashboard, with every enquiry traced to the channel that brought it.",
+    "photo": {
+      "src": "/images/products/hotel-insights-analytics.jpg",
+      "alt": "Illustration of a hotel analytics dashboard with visits, enquiries and cost per enquiry"
+    },
+    "screenshot": {
+      "src": "/products/insights-analytics.png",
+      "alt": "Fielmente Insights & Analytics dashboard for hotels"
+    },
+    "without": [
+      "Website, ads and WhatsApp numbers in separate tools",
+      "No clear answer to which channel brings bookings",
+      "Monthly reports put together by hand from screenshots"
+    ],
+    "withFielmente": [
+      "Traffic, leads and campaigns in one dashboard",
+      "Every enquiry tagged with the channel and campaign that brought it",
+      "Trends and month-on-month changes visible at a glance"
+    ],
+    "features": [
+      {
+        "title": "Google Analytics view",
+        "text": "Visitors, top pages, traffic sources and devices from your GA4 property, shown in plain language."
+      },
+      {
+        "title": "Leads by channel",
+        "text": "Enquiries from the website, WhatsApp, calls, Meta and Google ads counted by source."
+      },
+      {
+        "title": "Campaign results",
+        "text": "Spend, enquiries and cost per enquiry for each campaign side by side."
+      },
+      {
+        "title": "Trend graphs",
+        "text": "Daily, weekly and monthly charts to spot slow periods early."
+      },
+      {
+        "title": "Booking-engine data",
+        "text": "Bookings and revenue from the Eazotel booking engine alongside the marketing that drove them."
+      },
+      {
+        "title": "Shareable reports",
+        "text": "A clean monthly summary for owners and partners, without manual work."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Connect your accounts",
+        "text": "We link Google Analytics, your ad accounts and Eazotel tools."
+      },
+      {
+        "title": "Set up tracking",
+        "text": "Calls, WhatsApp, forms and booking clicks tagged by source."
+      },
+      {
+        "title": "Review together",
+        "text": "We walk you through the dashboard and the numbers that matter."
+      },
+      {
+        "title": "Act on it",
+        "text": "Monthly reviews turn the data into next month's plan."
+      }
+    ],
+    "related": [
+      "hotel-crm",
+      "hotel-booking-engine",
+      "hotel-campaigns-management"
+    ],
+    "faqs": [
+      {
+        "q": "Which data sources can it show?",
+        "a": "Google Analytics 4, leads captured through Eazotel (website forms, WhatsApp and chat), and campaign data from connected ad accounts. Ask us about a specific source during setup."
+      },
+      {
+        "q": "Do I need Google Analytics already set up?",
+        "a": "It helps, but it is not required. We can set up GA4 and conversion tracking as part of onboarding."
+      },
+      {
+        "q": "Can I see results for more than one property?",
+        "a": "Yes. Groups can view each property separately or together."
+      },
+      {
+        "q": "Is the dashboard included with other Fielmente services?",
+        "a": "It is available on its own and comes with our marketing retainers. Talk to us for current plans."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-website-builder",
+    "name": "Website Builder",
+    "seo": {
+      "title": "Hotel Website Builder with Booking Engine | Fielmente",
+      "description": "Build a fast, mobile-first hotel website with the booking engine built in. Edit rooms, offers and photos yourself, with SEO basics set up for you.",
+      "focusKeyword": "hotel website builder",
+      "secondaryKeywords": [
+        "hotel website design",
+        "resort website builder",
+        "hotel website with booking engine"
+      ]
+    },
+    "h1": "A hotel website builder with direct booking built in",
+    "intro": "Launch a fast, mobile-first website for your hotel or resort, with the Eazotel booking engine, WhatsApp and enquiry forms already connected. Update rooms, offers and photos yourself, without a developer.",
+    "proof": "Booking engine built in",
+    "summary": "Fast, mobile-first hotel websites with the booking engine, WhatsApp and SEO basics built in.",
+    "photo": {
+      "src": "/images/products/hotel-website-builder.jpg",
+      "alt": "Illustration of a hotel website being built with a Book now button"
+    },
+    "screenshot": {
+      "src": "/products/Website-Builder.png",
+      "alt": "Fielmente website builder for hotels"
+    },
+    "without": [
+      "A slow website that loses guests on mobile",
+      "Every change waiting on a developer",
+      "Booking button that sends guests to a third-party page"
+    ],
+    "withFielmente": [
+      "Hotel-ready templates that load fast on phones",
+      "Rooms, offers and photos edited from one dashboard",
+      "Booking, WhatsApp and enquiries on your own domain"
+    ],
+    "features": [
+      {
+        "title": "Hospitality templates",
+        "text": "Layouts for hotels, resorts, homestays and villas, ready for your photos and story."
+      },
+      {
+        "title": "Booking engine built in",
+        "text": "Guests check rates and book on your site, connected to the Eazotel booking engine."
+      },
+      {
+        "title": "Edit without code",
+        "text": "Change rooms, prices shown, offers, galleries and pages yourself."
+      },
+      {
+        "title": "SEO basics included",
+        "text": "Page titles, descriptions, clean URLs, sitemap and fast loading set up from day one."
+      },
+      {
+        "title": "Lead capture",
+        "text": "Enquiry forms and WhatsApp buttons that send leads straight to your team and CRM."
+      },
+      {
+        "title": "Your own domain",
+        "text": "Hosted on your domain with SSL, so the traffic and the brand stay yours."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Pick a design",
+        "text": "Choose a template that fits your property."
+      },
+      {
+        "title": "Add your content",
+        "text": "We load rooms, photos and policies with you."
+      },
+      {
+        "title": "Connect booking",
+        "text": "Booking engine, WhatsApp and forms linked and tested."
+      },
+      {
+        "title": "Go live",
+        "text": "Launch on your domain, then edit any time."
+      }
+    ],
+    "related": [
+      "hotel-booking-engine",
+      "hotel-cms",
+      "hotel-local-seo"
+    ],
+    "faqs": [
+      {
+        "q": "Can I move my existing website?",
+        "a": "Yes. We move your content, set up redirects from old URLs and keep your domain."
+      },
+      {
+        "q": "Do I need technical skills?",
+        "a": "No. Content is edited from a simple dashboard, and our team helps with anything larger."
+      },
+      {
+        "q": "Is the booking engine included?",
+        "a": "The website is built to work with the Eazotel booking engine so guests can book direct on your site."
+      },
+      {
+        "q": "Will the website be good for SEO?",
+        "a": "It is set up with the technical basics. For ranking growth, pair it with our hotel SEO service."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-campaigns-management",
+    "name": "Campaigns Management",
+    "seo": {
+      "title": "Hotel Campaign Management: Email, WhatsApp, Ads | Fielmente",
+      "description": "Plan, run and track hotel marketing campaigns across email, WhatsApp, social and ads from one place, with results traced to enquiries and bookings.",
+      "focusKeyword": "hotel campaign management",
+      "secondaryKeywords": [
+        "hotel marketing campaigns",
+        "hotel promotion campaigns",
+        "hotel offer campaigns"
+      ]
+    },
+    "h1": "Run every hotel campaign from one place",
+    "intro": "Festive offers, weekend packages and past-guest promotions planned once and sent across email, WhatsApp, social and ads, with every enquiry tracked back to the campaign.",
+    "proof": "Every channel, one calendar",
+    "summary": "Plan and run offers across email, WhatsApp, social and ads from one calendar, with results tracked to bookings.",
+    "photo": {
+      "src": "/images/products/hotel-campaigns-management.jpg",
+      "alt": "Illustration of a hotel campaign list across WhatsApp, email and ads"
+    },
+    "screenshot": {
+      "src": "/products/campaigns-management.png",
+      "alt": "Fielmente campaigns management for hotels"
+    },
+    "without": [
+      "Offers sent on one channel and forgotten on others",
+      "No record of which promotion filled which dates",
+      "Guest lists rebuilt by hand for every campaign"
+    ],
+    "withFielmente": [
+      "One calendar for every campaign and channel",
+      "Audiences built from your CRM in a few clicks",
+      "Enquiries and bookings tracked to each campaign"
+    ],
+    "features": [
+      {
+        "title": "Campaign calendar",
+        "text": "See every live, scheduled and draft campaign across channels."
+      },
+      {
+        "title": "Multi-channel sending",
+        "text": "Email, WhatsApp broadcasts and social posts from the same campaign plan."
+      },
+      {
+        "title": "Audience segments",
+        "text": "Past guests, leads and members picked from the CRM by stay, spend or source."
+      },
+      {
+        "title": "Offer landing pages",
+        "text": "A page per offer with booking and WhatsApp buttons."
+      },
+      {
+        "title": "Templates",
+        "text": "Ready-made formats for festivals, packages and seasonal offers."
+      },
+      {
+        "title": "Results tracking",
+        "text": "Opens, clicks, enquiries and bookings for each campaign."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Plan the offer",
+        "text": "Dates, audience and channels agreed."
+      },
+      {
+        "title": "Build the content",
+        "text": "Messages, creatives and landing page prepared."
+      },
+      {
+        "title": "Launch",
+        "text": "Sent across channels on schedule."
+      },
+      {
+        "title": "Measure",
+        "text": "Enquiries and bookings reported per campaign."
+      }
+    ],
+    "related": [
+      "hotel-email-marketing",
+      "hotel-whatsapp-marketing",
+      "hotel-insights-analytics"
+    ],
+    "faqs": [
+      {
+        "q": "Which channels can a campaign use?",
+        "a": "Email and WhatsApp through Eazotel, plus social posts and paid ads managed by our team."
+      },
+      {
+        "q": "Can I use my existing guest list?",
+        "a": "Yes. We import it into the CRM and keep consent and opt-outs in order."
+      },
+      {
+        "q": "Do you create the campaign content?",
+        "a": "We can, or your team can use our templates."
+      },
+      {
+        "q": "How are results measured?",
+        "a": "Each campaign gets its own links and tracking, so enquiries and bookings are counted against it."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-communication-suite",
+    "name": "Communication Suite",
+    "seo": {
+      "title": "Hotel Communication Suite: WhatsApp, AI, Email | Fielmente",
+      "description": "The Eazotel communication suite for hotels: WhatsApp, email, AI chatbot, voice agent, calls and guest requests in one place, so no guest message is missed.",
+      "focusKeyword": "hotel communication software",
+      "secondaryKeywords": [
+        "hotel guest communication",
+        "hotel WhatsApp and email platform",
+        "hotel unified inbox"
+      ]
+    },
+    "h1": "Every guest conversation, in one hotel communication suite",
+    "intro": "WhatsApp, email, website chat, AI voice, calls and guest requests working together, so your team answers faster and every enquiry lands in the same CRM.",
+    "proof": "No guest message missed",
+    "summary": "WhatsApp, email, chatbot, voice, calls and guest requests in one connected suite.",
+    "photo": {
+      "src": "/images/products/hotel-communication-suite.jpg",
+      "alt": "Illustration of a hotel unified inbox with WhatsApp, email, voice and chat"
+    },
+    "screenshot": {
+      "src": "/products/communication-suite.png",
+      "alt": "Fielmente communication suite for hotels"
+    },
+    "without": [
+      "Messages scattered across phones, inboxes and DMs",
+      "Late-night enquiries answered the next morning",
+      "No record of what each guest asked before"
+    ],
+    "withFielmente": [
+      "One place for WhatsApp, email, chat, calls and requests",
+      "AI that answers routine questions around the clock",
+      "Every conversation saved to the guest's profile"
+    ],
+    "features": [
+      {
+        "title": "WhatsApp marketing and chat",
+        "text": "Two-way chat, broadcasts and templates on your WhatsApp Business number."
+      },
+      {
+        "title": "AI chatbot",
+        "text": "Answers questions and captures enquiries on your website, day and night."
+      },
+      {
+        "title": "AI voice agent",
+        "text": "Answers calls, shares details and books callbacks when lines are busy."
+      },
+      {
+        "title": "Email marketing",
+        "text": "Campaigns and automated emails to guests and leads."
+      },
+      {
+        "title": "Call management",
+        "text": "Track calls and missed calls, and follow up on every one."
+      },
+      {
+        "title": "Guest requests",
+        "text": "In-stay requests routed to the right team and tracked to completion."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Connect channels",
+        "text": "WhatsApp, website, phone and email linked."
+      },
+      {
+        "title": "Train the AI",
+        "text": "Your rooms, rates, policies and FAQs loaded."
+      },
+      {
+        "title": "Set routing",
+        "text": "Who handles what, and when the AI hands over."
+      },
+      {
+        "title": "Go live",
+        "text": "Monitor, review transcripts and improve each month."
+      }
+    ],
+    "related": [
+      "hotel-whatsapp-marketing",
+      "hotel-ai-chatbot",
+      "hotel-ai-voice-agent"
+    ],
+    "faqs": [
+      {
+        "q": "Can I use only part of the suite?",
+        "a": "Yes. Start with one tool, such as WhatsApp or the chatbot, and add others later."
+      },
+      {
+        "q": "Does it replace my phone system?",
+        "a": "No. It works alongside your existing numbers and adds tracking, AI answers and follow-ups."
+      },
+      {
+        "q": "Where do conversations go?",
+        "a": "Into the Eazotel CRM, attached to the guest or lead profile."
+      },
+      {
+        "q": "Is it suitable for restaurants too?",
+        "a": "Yes. WhatsApp, chatbot and campaigns work for restaurants and cafés as well."
+      }
+    ]
   }
 ];
 

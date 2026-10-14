@@ -56,3 +56,13 @@
     clipPath: path(
       "M 0 40 A 40,40 0,0,1 40 0 L 1280 0 A 40,40 0,0,1 1320 40 L 1320 540 A 40,40 0,0,1 1280 580 L 690 580 A 25,25 0,0,0 680 583 L 6 700 ");
 } */
+/* Logo marquee (src/components/slider/LogoMarquee.tsx): CSS-only continuous scroll. */
+.logo-marquee { --n: var(--n-base); }
+@media (min-width: 768px) { .logo-marquee { --n: var(--n-md); } }
+@media (min-width: 1024px) { .logo-marquee { --n: var(--n-lg); } }
+@media (min-width: 1280px) { .logo-marquee { --n: var(--n-xl); } }
+.logo-marquee-item { width: calc(100vw / var(--n)); max-width: calc(1440px / var(--n)); }
+.logo-marquee-track { animation: logo-marquee var(--marquee-duration, 40s) linear infinite; will-change: transform; }
+.logo-marquee:hover .logo-marquee-track { animation-play-state: paused; }
+@keyframes logo-marquee { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .logo-marquee-track { animation: none; } }
