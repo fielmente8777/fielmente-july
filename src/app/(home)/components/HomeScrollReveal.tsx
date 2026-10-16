@@ -28,7 +28,10 @@ const HomeScrollReveal = ({
           observer.unobserve(section);
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -48px 0px" }
+      // Reveal as soon as the section's top edge is 10% up from the bottom of the screen.
+      // A ratio threshold (e.g. 0.12) never fires for sections taller than the screen on
+      // phones ("Why Choose Us" is ~5,700px on mobile), which left them permanently blank.
+      { threshold: 0, rootMargin: "0px 0px -10% 0px" }
     );
 
     observer.observe(section);
