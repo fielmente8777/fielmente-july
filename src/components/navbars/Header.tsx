@@ -9,7 +9,9 @@ import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
 import { casStudiesData } from "@/app/case-study/[story]/components/caseData";
 import { contacts } from "../../../contact";
-const Header = ({ blogSlugs = [] }: { blogSlugs?: string[] }) => {
+import { IndustriesPanel, ProductsPanel } from "./MegaMenu";
+import type { SiteMenu } from "./menuData";
+const Header = ({ blogSlugs = [], menu }: { blogSlugs?: string[]; menu?: SiteMenu }) => {
   const { setIsOpenPopupForm, setIsMobileNavOpen } = useAppContext();
 
   const pathName = usePathname();
@@ -67,7 +69,7 @@ const Header = ({ blogSlugs = [] }: { blogSlugs?: string[] }) => {
     >
       <header className="max_screen w-full">
         <Container>
-          <nav className="flex items-center justify-between py-3">
+          <nav className="relative flex items-center justify-between py-3">
             <div className="">
               <Link
                 href={"/"}
@@ -89,6 +91,36 @@ const Header = ({ blogSlugs = [] }: { blogSlugs?: string[] }) => {
             </div>
             <ul className="xl:flex hidden item-center gap-10">
               {navLinks.map((link, index) => {
+                const textColor = isBlogDetail || paths.includes(pathName) ? (isScrolled ? "text-dark" : "text-white") : "text-dark";
+                if (link.mega && menu) {
+                  // Mega menu: the panel spans the header width (positioned against <nav>, so this <li> is not relative).
+                  return (
+                    <li key={index} className="nav group/mega">
+                      <Link
+                        href={link.href}
+                        aria-haspopup="true"
+                        className={`relative text-nowrap py-2 font-semibold capitalize flex items-center gap-1 ${textColor}`}
+                      >
+                        {link.label}
+                        <span className="span-border"></span>
+                        <span className="icon duration-300 transition-all ease-in-out">
+                          <OutlineDrpopdown />
+                        </span>
+                      </Link>
+                      <div className="invisible absolute inset-x-0 top-full z-[99999] translate-y-1 opacity-0 transition-[opacity,transform,visibility] delay-100 duration-150 group-hover/mega:visible group-hover/mega:translate-y-0 group-hover/mega:opacity-100 group-hover/mega:delay-0 group-focus-within/mega:visible group-focus-within/mega:translate-y-0 group-focus-within/mega:opacity-100">
+                        {/* Hover bridge over the gap between the menu item and the panel */}
+                        <span aria-hidden="true" className="absolute inset-x-0 -top-4 h-4" />
+                        <div className="overflow-hidden rounded-2xl border border-[#ECEBF2] bg-white text-dark shadow-[0_18px_50px_rgba(17,13,60,0.16)]">
+                          {link.mega === "industries" ? (
+                            <IndustriesPanel sections={menu.industries} pathName={pathName} />
+                          ) : (
+                            <ProductsPanel groups={menu.products} pathName={pathName} />
+                          )}
+                        </div>
+                      </div>
+                    </li>
+                  );
+                }
                 return (
                   <li key={index} className="relative nav">
                     {link.type === "button" ? (

@@ -3,13 +3,16 @@ import { usePathname } from "next/navigation";
 import Header from "./Header";
 import LandingNav from "./LandingNav";
 import LandingHeader from "./landingHeader";
+import type { SiteMenu } from "./menuData";
 
 interface NavBarProps {
   /** Blog post slugs, passed from the server layout so the client bundle never loads the blog content. */
   blogSlugs?: string[];
+  /** Mega menu content, built on the server (menuData.ts). */
+  menu?: SiteMenu;
 }
 
-const NavBar = ({ blogSlugs = [] }: NavBarProps) => {
+const NavBar = ({ blogSlugs = [], menu }: NavBarProps) => {
   const pathName = usePathname();
   const RenderNavBar = Header;
 
@@ -31,7 +34,7 @@ const NavBar = ({ blogSlugs = [] }: NavBarProps) => {
   } else if (pathName === "/landing-page/") {
     return <LandingNav />;
   } else {
-    return <Header blogSlugs={blogSlugs} />;
+    return <Header blogSlugs={blogSlugs} menu={menu} />;
   }
 };
 

@@ -58,6 +58,16 @@ const SPECIALIST_PAGES: Record<string, string[]> = {
     "boutique-hotel-marketing-agency",
     "luxury-resort-marketing-agency",
   ],
+  "wellness-retreat-marketing-agency": [
+    "hotel-direct-booking-marketing-agency",
+    "luxury-resort-marketing-agency",
+    "international-hotel-marketing-agency",
+  ],
+  "wedding-venue-marketing-agency": [
+    "luxury-resort-marketing-agency",
+    "hotel-direct-booking-marketing-agency",
+    "hotel-ai-marketing-agency",
+  ],
   "travel-tourism-marketing-agency": [
     "international-hotel-marketing-agency",
     "hospitality-marketing-services/seo-agency",
@@ -69,7 +79,7 @@ const SPECIALIST_PAGES: Record<string, string[]> = {
 export function logoSet(slug: string): LogoSet {
   if (slug.startsWith("restaurant") || slug.startsWith("cloud-kitchen")) return "restaurants";
   if (slug.startsWith("travel")) return "travel";
-  if (slug.startsWith("resort") || slug.startsWith("homestay"))
+  if (slug.startsWith("resort") || slug.startsWith("homestay") || slug.startsWith("wellness"))
     return "resorts";
   return "hotels";
 }
