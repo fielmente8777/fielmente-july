@@ -37,7 +37,6 @@ export function IndustriesPanel({ sections, pathName }: { sections: MenuSection[
     (s) => (s.href && s.href !== "/industries-we-serve/" && pathName.startsWith(s.href)) || s.groups.some((g) => g.links.some((l) => l.href === pathName))
   );
   const [active, setActive] = useState(current >= 0 ? current : 0);
-  const s = sections[active];
 
   return (
     <div className="grid grid-cols-[280px_1fr]">
@@ -64,20 +63,23 @@ export function IndustriesPanel({ sections, pathName }: { sections: MenuSection[
           </li>
         ))}
       </ul>
-      <div className="p-6 pl-8">
-        <div className="mb-5 flex items-end justify-between gap-6 border-b border-[#ECEBF2] pb-4">
-          <div>
-            <p className="text-lg font-bold text-primary">{s.label}</p>
-            {s.cardLine && <p className="text-sm text-[#55536E]">{s.cardLine}</p>}
+      {/* Every industry's links are in the HTML (so search engines can follow them); only the active one is shown. */}
+      {sections.map((s, i) => (
+        <div key={s.label} hidden={i !== active} className="p-6 pl-8">
+          <div className="mb-5 flex items-end justify-between gap-6 border-b border-[#ECEBF2] pb-4">
+            <div>
+              <p className="text-lg font-bold text-primary">{s.label}</p>
+              {s.cardLine && <p className="text-sm text-[#55536E]">{s.cardLine}</p>}
+            </div>
+            {s.href && (
+              <Link href={s.href} className="shrink-0 text-sm font-semibold text-sapphireBlue hover:underline">
+                {s.href === "/industries-we-serve/" ? "All industries" : `${s.label} overview`}
+              </Link>
+            )}
           </div>
-          {s.href && (
-            <Link href={s.href} className="shrink-0 text-sm font-semibold text-sapphireBlue hover:underline">
-              {s.href === "/industries-we-serve/" ? "All industries" : `${s.label} overview`}
-            </Link>
-          )}
+          <Groups groups={s.groups} pathName={pathName} />
         </div>
-        <Groups groups={s.groups} pathName={pathName} />
-      </div>
+      ))}
     </div>
   );
 }
