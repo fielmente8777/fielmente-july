@@ -3,9 +3,15 @@
 
 export interface Kpi {
   label: string;
-  before: string;
+  before?: string;
   after: string;
   change?: string;
+}
+
+interface Metric {
+  label: string;
+  value: string;
+  note?: string;
 }
 
 /** Pull before/after figures out of result lines; lines without an arrow are skipped. */
@@ -17,18 +23,32 @@ export function kpisFromResults(lines: string[] = []): Kpi[] {
     .map((m) => ({ label: m[1], before: m[2], after: m[3], change: m[4] }));
 }
 
-const CaseStudyKpis: React.FC<{ kpis: Kpi[] }> = ({ kpis }) => {
-  if (kpis.length === 0) return null;
+const CaseStudyKpis: React.FC<{ kpis: Kpi[]; metrics?: Metric[] }> = ({
+  kpis,
+  metrics = [],
+}) => {
+  const cards: Kpi[] = metrics.length
+    ? metrics.map((metric) => ({
+        label: metric.label,
+        after: metric.value,
+        before: metric.note,
+      }))
+    : kpis;
+
+  if (cards.length === 0) return null;
+
   return (
     <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      {kpis.map((k) => (
+      {cards.map((k) => (
         <li key={k.label} className="flex flex-col gap-2 rounded-2xl bg-primary2 p-5 text-white">
           <span className="text-sm text-[#C9C7DD]">{k.label}</span>
           <span className="text-3xl font-bold leading-none text-orange-primary">{k.after}</span>
-          <span className="text-sm text-[#C9C7DD]">
-            from {k.before}
-            {k.change && <span className="ml-1 font-semibold text-white">({k.change})</span>}
-          </span>
+          {k.before && (
+            <span className="text-sm text-[#C9C7DD]">
+              {k.change ? `from ${k.before}` : k.before}
+              {k.change && <span className="ml-1 font-semibold text-white">({k.change})</span>}
+            </span>
+          )}
         </li>
       ))}
     </ul>

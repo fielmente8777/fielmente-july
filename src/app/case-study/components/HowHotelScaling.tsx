@@ -18,7 +18,7 @@ const HowHotelScaling: React.FC<HowHotelScalingProps> = ({ title, cards }) => {
     <SectionWithContainer>
       <div className="">
         <SectionHeading subTitle={title} subLevel={2} textCenter />
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 md:gap-8 md:mt-12 mt-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6 md:gap-8 md:mt-12 mt-10">
           {cards.map((card, index) => (
             <CasStudyCard key={index} {...card} />
           ))}

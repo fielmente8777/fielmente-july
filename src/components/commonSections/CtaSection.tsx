@@ -4,6 +4,7 @@ import { SectionWithContainer } from "../sectionComponants";
 import { CtaBtn } from "../buttons/CtaBtn";
 
 interface Props {
+  eyebrow?: string;
   title: string;
   description: string;
   cta: {
@@ -11,13 +12,18 @@ interface Props {
     href: string;
   };
 }
-const CtaSection: React.FC<Props> = ({ title, description, cta }) => {
+const CtaSection: React.FC<Props> = ({ eyebrow, title, description, cta }) => {
   return (
     <SectionWithContainer>
       <div className="w-full relative xl:aspect-[4/.85] lg:aspect-4/1.25 md:aspect-4/1.75 aspect-square bg-background-black1 rounded-3xl overflow-hidden">
         <Image src="/content.png" alt="hero" fill className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 flex items-center justify-center z-20 max-lg:px-4">
           <div className="space-y-8">
+            {eyebrow && (
+              <p className="mb-0 text-center text-sm font-semibold uppercase tracking-[0.14em] text-orange-primary">
+                {eyebrow}
+              </p>
+            )}
             <SectionHeading
               subTitle={title}
               subTitleColor="white"

@@ -54,6 +54,7 @@ export default async function Page(props: Params) {
   const url = `${SITE}/case-study/${data.slug}/`;
   const results = data.data?.find((d) => /^results/i.test(d.title));
   const kpis = kpisFromResults(results?.lists);
+  const hasKpis = kpis.length > 0 || (data.metrics?.length ?? 0) > 0;
   const others = casStudiesData.filter((c) => c.slug !== data.slug && c.data?.length).slice(0, 3);
   const articleLd = {
     "@context": "https://schema.org",
@@ -107,10 +108,13 @@ export default async function Page(props: Params) {
         </div>
       </div>
 
-      {kpis.length > 0 && (
+      {hasKpis && (
         <SectionWithContainer sectionClassName="">
           <h2 className="mb-5 text-[1.75rem]/[2.5rem] text-primary2 font-semibold">Results at a glance</h2>
-          <CaseStudyKpis kpis={kpis} />
+          <CaseStudyKpis kpis={kpis} metrics={data.metrics} />
+          {data.metricsNote && (
+            <p className="mt-4 text-sm/relaxed text-[#55536E]">{data.metricsNote}</p>
+          )}
           {data.monthly && data.monthly.length > 0 && (
             <div className="mt-8">
               <CaseStudyChart
@@ -133,7 +137,7 @@ export default async function Page(props: Params) {
               </h2>
               {item?.description?.map((subItem, subIndex) => (
                 <p className="text-[1.25rem]/[1.75rem]" key={subIndex}>
-                  {subItem}
+                  <span dangerouslySetInnerHTML={{ __html: subItem }} />
                 </p>
               ))}
               {item?.lists && (
@@ -169,9 +173,13 @@ export default async function Page(props: Params) {
       )}
 
       <CtaSection
-        title="Want results like these for your property?"
-        description="Talk to Fielmente about Google Ads, SEO and direct bookings for your hotel, resort or restaurant."
-        cta={{ label: "Get a Free Consultation", href: "" }}
+        eyebrow={data.cta?.eyebrow}
+        title={data.cta?.title ?? "Want results like these for your property?"}
+        description={
+          data.cta?.description ??
+          "Talk to Fielmente about Google Ads, SEO and direct bookings for your hotel, resort or restaurant."
+        }
+        cta={{ label: data.cta?.label ?? "Get a Free Consultation", href: "" }}
       />
     </main>
   );
