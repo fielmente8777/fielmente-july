@@ -62,7 +62,9 @@ export type ServiceKey =
   | "influencer-marketing"
   | "social-media-ai-automation"
   | "online-reputation-management"
-  | "social-media-reservation-automation";
+  | "social-media-reservation-automation"
+  | "zomato-swiggy-management"
+  | "weddings-events-marketing";
 
 export interface ServiceContent {
   heroTitle: string;

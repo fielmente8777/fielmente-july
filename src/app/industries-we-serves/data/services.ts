@@ -7,7 +7,9 @@ import { serviceTypes as mainServiceTypes } from "@/app/industries-we-serve/data
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const q = (s: string) => `“${s}”`;
 
-export const serviceTypes: Record<ServiceKey, ServiceType> = {
+// Old copy (route redirects to /industries-we-serve/); newer service types only exist in the live data.
+type OldServiceKey = Exclude<ServiceKey, "zomato-swiggy-management" | "weddings-events-marketing">;
+const oldServiceTypes: Record<OldServiceKey, ServiceType> = {
   // Shared with the main industries data (this folder now redirects there).
   "google-ads": mainServiceTypes["google-ads"],
   /* ── Social Media Management ─────────────────────────────── */
@@ -890,6 +892,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     }),
   },
 };
+export const serviceTypes = oldServiceTypes as Record<ServiceKey, ServiceType>;
 
 export const serviceSlug = (I: IndustryProfile, key: ServiceKey) => `${I.slug}/${I.prefix}-${key}`;
 

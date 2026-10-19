@@ -9251,6 +9251,7 @@ occupancy, and increased revenue.
     title: "AI Hotel WhatsApp Sales Agent",
 
     slug: "ai-hotel-whatsapp-sales-agent-the-future-of-direct-hotel-sales",
+    url: "/images/blog/banners/ai-hotel-whatsapp-sales-agent-the-future-of-direct-hotel-sales.webp",
 
     description:
       "Hotels receive hundreds of guest questions every month—about room types, prices, amenities, availability, check-in times, dining, directions, offers, and more. The problem? Guests expect instant answers, but hotel teams cannot be available 24/7. <br/> That is where an AI Hotel WhatsApp Sales Agent can make a major difference.",
@@ -19613,7 +19614,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "ChatGPT Ads for Hotels & Resorts: Complete Guide 2026",
     slug: "chatgpt-ads-for-hotels-resorts",
-    url: "",
+    url: "/images/blog/banners/chatgpt-ads-for-hotels-resorts.webp",
     isShow: true,
     meta: {
       title: "ChatGPT Ads for Hotels & Resorts | Complete Guide 2026",
@@ -19929,7 +19930,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Service Message Pricing Changes Coming October 1, 2026",
     slug: "whatsapp-service-message-pricing-changes",
-    url: "",
+    url: "/images/blog/banners/whatsapp-service-message-pricing-changes.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Service Message Pricing Changes | October 2026",
@@ -20111,7 +20112,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Automation for Hotels: The Complete Guide",
     slug: "whatsapp-automation-for-hotels-the-complete-guide",
-    url: "",
+    url: "/images/blog/banners/whatsapp-automation-for-hotels-the-complete-guide.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Automation for Hotels | Complete Guide",
@@ -20248,7 +20249,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Hotels Can Automate Guest Communication on WhatsApp",
     slug: "how-hotels-can-automate-guest-communication-on-whatsapp",
-    url: "",
+    url: "/images/blog/banners/how-hotels-can-automate-guest-communication-on-whatsapp.webp",
     isShow: true,
     meta: {
       title: "Automate Guest Communication on WhatsApp | Hotel Guide",
@@ -20373,7 +20374,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "AI WhatsApp Chatbot for Hotels: Everything Hoteliers Need to Know",
     slug: "ai-whatsapp-chatbot-for-hotels-everything-hoteliers-need-to-know",
-    url: "",
+    url: "/images/blog/banners/ai-whatsapp-chatbot-for-hotels-everything-hoteliers-need-to-know.webp",
     isShow: true,
     meta: {
       title: "AI WhatsApp Chatbot for Hotels | Complete Guide",
@@ -20611,7 +20612,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "WhatsApp Booking Automation: How Hotels Can Convert More Enquiries Into Reservations",
     slug: "whatsapp-booking-automation-how-hotels-can-convert-more-enquiries-into-reservations",
-    url: "",
+    url: "/images/blog/banners/whatsapp-booking-automation-how-hotels-can-convert-more-enquiries-into-reservations.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Booking Automation for Hotels | Reservation Guide",
@@ -20851,7 +20852,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "WhatsApp Automation vs Traditional Hotel Sales: What’s the Difference?",
     slug: "whatsapp-automation-vs-traditional-hotel-sales-whats-the-difference",
-    url: "",
+    url: "/images/blog/banners/whatsapp-automation-vs-traditional-hotel-sales-whats-the-difference.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Automation vs Traditional Hotel Sales | Comparison",
@@ -21101,6 +21102,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     isShow: true,
     title: "24/7 AI Sales Agent for Hotels: How It Works",
     slug: "24-7-ai-sales-agent-for-hotels-how-it-works",
+    url: "/images/blog/banners/24-7-ai-sales-agent-for-hotels-how-it-works.webp",
     // primary_keyword: "24/7 ai sales agent for hotels",
     // secondary_keywords: [
     //   "AI hotel chatbot",
@@ -21359,7 +21361,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How WhatsApp Can Help Hotels Reduce OTA Dependency",
     slug: "how-whatsapp-can-help-hotels-reduce-ota-dependency",
-    url: "",
+    url: "/images/blog/banners/how-whatsapp-can-help-hotels-reduce-ota-dependency.webp",
     isShow: true,
     meta: {
       title:
@@ -21481,7 +21483,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Hotels Can Generate More Direct Bookings Through WhatsApp",
     slug: "how-hotels-can-generate-more-direct-bookings-through-whatsapp",
-    url: "",
+    url: "/images/blog/banners/how-hotels-can-generate-more-direct-bookings-through-whatsapp.webp",
     isShow: true,
     meta: {
       title: "WhatsApp for Hotels | Generate More Direct Bookings",
@@ -21599,7 +21601,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "WhatsApp vs OTAs: Why Hotels Should Build a Direct Booking Strategy",
     slug: "whatsapp-vs-otas-why-hotels-should-build-a-direct-booking-strategy",
-    url: "",
+    url: "/images/blog/banners/whatsapp-vs-otas-why-hotels-should-build-a-direct-booking-strategy.webp",
     isShow: true,
     meta: {
       title: "WhatsApp vs OTAs | Hotel Direct Booking Strategy",
@@ -22195,7 +22197,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Hotels Can Automate Abandoned Booking Follow-Ups on WhatsApp",
     slug: "how-hotels-can-automate-abandoned-booking-follow-ups-on-whatsapp",
-    url: "",
+    url: "/images/blog/banners/how-hotels-can-automate-abandoned-booking-follow-ups-on-whatsapp.webp",
     isShow: true,
     meta: {
       title: "Abandoned Booking Follow-Ups on WhatsApp | Hotel Guide",
@@ -22316,7 +22318,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Resorts Can Convert Website Visitors Into WhatsApp Leads",
     slug: "how-resorts-can-convert-website-visitors-into-whatsapp-leads",
-    url: "",
+    url: "/images/blog/banners/how-resorts-can-convert-website-visitors-into-whatsapp-leads.webp",
     isShow: true,
     meta: {
       title: "Convert Resort Website Visitors into WhatsApp Leads | Guide",
@@ -22692,7 +22694,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "Using WhatsApp AI to Turn Hotel Enquiries Into Revenue",
     slug: "using-whatsapp-ai-to-turn-hotel-enquiries-into-revenue",
-    url: "",
+    url: "/images/blog/banners/using-whatsapp-ai-to-turn-hotel-enquiries-into-revenue.webp",
     isShow: true,
     meta: {
       title: "WhatsApp AI for Hotels | Turn Enquiries Into Revenue",
@@ -22864,7 +22866,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "What Is an AI WhatsApp Sales Agent for Hotels?",
     slug: "what-is-an-ai-whatsapp-sales-agent-for-hotels",
-    url: "",
+    url: "/images/blog/banners/what-is-an-ai-whatsapp-sales-agent-for-hotels.webp",
     isShow: true,
     meta: {
       title: "AI WhatsApp Sales Agent for Hotels | How It Works",
@@ -23056,7 +23058,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "AI Chatbot vs AI Sales Agent: What Hotels Actually Need",
     slug: "ai-chatbot-vs-ai-sales-agent-what-hotels-actually-need",
-    url: "",
+    url: "/images/blog/banners/ai-chatbot-vs-ai-sales-agent-what-hotels-actually-need.webp",
     isShow: true,
     meta: {
       title: "AI Chatbot vs AI Sales Agent for Hotels | Key Differences",
@@ -23533,7 +23535,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "How AI Can Qualify Hotel Leads Before Sending Them to the Sales Team",
     slug: "how-ai-can-qualify-hotel-leads-before-sending-them-to-the-sales-team",
-    url: "",
+    url: "/images/blog/banners/how-ai-can-qualify-hotel-leads-before-sending-them-to-the-sales-team.webp",
     isShow: true,
     meta: {
       title: "AI Hotel Lead Qualification | Qualify Leads Before Sales",
@@ -23900,7 +23902,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "AI WhatsApp for Hotel Wedding Leads: From Enquiry to Site Visit",
     slug: "ai-whatsapp-for-hotel-wedding-leads-from-enquiry-to-site-visit",
-    url: "",
+    url: "/images/blog/banners/ai-whatsapp-for-hotel-wedding-leads-from-enquiry-to-site-visit.webp",
     isShow: true,
     meta: {
       title: "AI WhatsApp for Hotel Wedding Leads | Enquiry to Site Visit",
@@ -24626,7 +24628,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Resorts Can Automate Wedding Enquiries on WhatsApp",
     slug: "how-resorts-can-automate-wedding-enquiries-on-whatsapp",
-    url: "",
+    url: "/images/blog/banners/how-resorts-can-automate-wedding-enquiries-on-whatsapp.webp",
     isShow: true,
     meta: {
       title: "Automate Wedding Enquiries on WhatsApp | Resort Guide",
@@ -25153,7 +25155,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Automation for Hotel Chains: Managing Multiple Properties",
     slug: "whatsapp-automation-for-hotel-chains-managing-multiple-properties",
-    url: "",
+    url: "/images/blog/banners/whatsapp-automation-for-hotel-chains-managing-multiple-properties.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Automation for Hotel Chains & Multiple Properties",
@@ -25395,7 +25397,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Marketing for Hotels: The Complete Guide",
     slug: "whatsapp-marketing-for-hotels-the-complete-guide",
-    url: "",
+    url: "/images/blog/banners/whatsapp-marketing-for-hotels-the-complete-guide.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Marketing for Hotels | Complete Guide",
@@ -25512,7 +25514,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Broadcast Marketing for Hotels: Best Practices",
     slug: "whatsapp-broadcast-marketing-for-hotels-best-practices",
-    url: "",
+    url: "/images/blog/banners/whatsapp-broadcast-marketing-for-hotels-best-practices.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Broadcast Marketing for Hotels | Best Practices",
@@ -26231,7 +26233,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Hotels Can Use WhatsApp for Review & Feedback Collection",
     slug: "how-hotels-can-use-whatsapp-for-review-feedback-collection",
-    url: "",
+    url: "/images/blog/banners/how-hotels-can-use-whatsapp-for-review-feedback-collection.webp",
     isShow: true,
     meta: {
       title: "WhatsApp for Hotel Review & Feedback Collection | Guide",
@@ -26351,7 +26353,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Upselling for Hotels: Rooms, Food, Spa & Experiences",
     slug: "whatsapp-upselling-for-hotels-rooms-food-spa-experiences",
-    url: "",
+    url: "/images/blog/banners/whatsapp-upselling-for-hotels-rooms-food-spa-experiences.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Upselling for Hotels: Food, Spa & Experiences",
@@ -26592,7 +26594,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Business API for Hotels: Complete Guide",
     slug: "whatsapp-business-api-for-hotels-complete-guide",
-    url: "",
+    url: "/images/blog/banners/whatsapp-business-api-for-hotels-complete-guide.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Business API for Hotels | Complete Guide",
@@ -26707,7 +26709,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp API vs WhatsApp Business App for Hotels",
     slug: "whatsapp-api-vs-whatsapp-business-app-for-hotels",
-    url: "",
+    url: "/images/blog/banners/whatsapp-api-vs-whatsapp-business-app-for-hotels.webp",
     isShow: true,
     meta: {
       title: "WhatsApp API vs WhatsApp Business App for Hotels",
@@ -26819,7 +26821,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How to Integrate WhatsApp With a Hotel Booking Engine",
     slug: "how-to-integrate-whatsapp-with-a-hotel-booking-engine",
-    url: "",
+    url: "/images/blog/banners/how-to-integrate-whatsapp-with-a-hotel-booking-engine.webp",
     isShow: true,
     meta: {
       title: "How to Integrate WhatsApp With a Hotel Booking Engine",
@@ -26935,7 +26937,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp + PMS Integration: What Hotels Should Know",
     slug: "whatsapp-pms-integration-what-hotels-should-know",
-    url: "",
+    url: "/images/blog/banners/whatsapp-pms-integration-what-hotels-should-know.webp",
     isShow: true,
     meta: {
       title: "WhatsApp + PMS Integration: What Hotels Should Know",
@@ -27163,7 +27165,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp + Channel Manager: The Future of Hotel Sales",
     slug: "whatsapp-channel-manager-the-future-of-hotel-sales",
-    url: "",
+    url: "/images/blog/banners/whatsapp-channel-manager-the-future-of-hotel-sales.webp",
     isShow: true,
     meta: {
       title: "WhatsApp + Channel Manager: The Future of Hotel Sales",
@@ -27391,7 +27393,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp API Pricing for Hotels: What You Need to Know",
     slug: "whatsapp-api-pricing-for-hotels-what-you-need-to-know",
-    url: "",
+    url: "/images/blog/banners/whatsapp-api-pricing-for-hotels-what-you-need-to-know.webp",
     isShow: true,
     meta: {
       title: "WhatsApp API Pricing for Hotels: What You Need to Know",
@@ -27509,7 +27511,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Message Templates for Hotels: Examples & Best Practices",
     slug: "whatsapp-message-templates-for-hotels-examples-best-practices",
-    url: "",
+    url: "/images/blog/banners/whatsapp-message-templates-for-hotels-examples-best-practices.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Message Templates for Hotels | Examples & Tips",
@@ -27697,7 +27699,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Hotels Can Automate WhatsApp Without Losing the Human Touch",
     slug: "how-hotels-can-automate-whatsapp-without-losing-the-human-touch",
-    url: "",
+    url: "/images/blog/banners/how-hotels-can-automate-whatsapp-without-losing-the-human-touch.webp",
     isShow: true,
     meta: {
       title: "Automate Hotel WhatsApp Without Losing the Human Touch",
@@ -27842,7 +27844,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How to Stop Losing Hotel Enquiries on WhatsApp",
     slug: "how-to-stop-losing-hotel-enquiries-on-whatsapp",
-    url: "",
+    url: "/images/blog/banners/how-to-stop-losing-hotel-enquiries-on-whatsapp.webp",
     isShow: true,
     meta: {
       title: "How to Stop Losing Hotel Enquiries on WhatsApp",
@@ -28422,7 +28424,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "How to Handle 100+ Hotel Enquiries Without Increasing Your Sales Team",
     slug: "how-to-handle-100-hotel-enquiries-without-increasing-your-sales-team",
-    url: "",
+    url: "/images/blog/banners/how-to-handle-100-hotel-enquiries-without-increasing-your-sales-team.webp",
     isShow: true,
     meta: {
       title: "Handle 100+ Hotel Enquiries Without a Bigger Sales Team",
@@ -28662,7 +28664,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How to Follow Up With Every Hotel Lead Automatically",
     slug: "how-to-follow-up-with-every-hotel-lead-automatically",
-    url: "",
+    url: "/images/blog/banners/how-to-follow-up-with-every-hotel-lead-automatically.webp",
     isShow: true,
     meta: {
       title: "How to Follow Up With Every Hotel Lead Automatically",
@@ -29009,7 +29011,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "Best WhatsApp Automation Software for Hotels",
     slug: "best-whatsapp-automation-software-for-hotels",
-    url: "",
+    url: "/images/blog/banners/best-whatsapp-automation-software-for-hotels.webp",
     isShow: true,
     meta: {
       title: "Best WhatsApp Automation Software for Hotels | Buyer Tips",
@@ -29249,7 +29251,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "Best WhatsApp CRM for Hotels",
     slug: "best-whatsapp-crm-for-hotels",
-    url: "",
+    url: "/images/blog/banners/best-whatsapp-crm-for-hotels.webp",
     isShow: true,
     meta: {
       title: "Best WhatsApp CRM for Hotels | Features & Integrations",
@@ -29363,7 +29365,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp Automation Software vs Hotel CRM",
     slug: "whatsapp-automation-software-vs-hotel-crm",
-    url: "",
+    url: "/images/blog/banners/whatsapp-automation-software-vs-hotel-crm.webp",
     isShow: true,
     meta: {
       title: "WhatsApp Automation Software vs Hotel CRM | Comparison",
@@ -29475,7 +29477,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "AI WhatsApp Agent vs Human Hotel Sales Executive",
     slug: "ai-whatsapp-agent-vs-human-hotel-sales-executive",
-    url: "",
+    url: "/images/blog/banners/ai-whatsapp-agent-vs-human-hotel-sales-executive.webp",
     isShow: true,
     meta: {
       title: "AI WhatsApp Agent vs Human Hotel Sales Executive",
@@ -29656,7 +29658,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp API Providers for Hotels: What to Compare",
     slug: "whatsapp-api-providers-for-hotels-what-to-compare",
-    url: "",
+    url: "/images/blog/banners/whatsapp-api-providers-for-hotels-what-to-compare.webp",
     isShow: true,
     meta: {
       title: "WhatsApp API Providers for Hotels: What to Compare",
@@ -29808,7 +29810,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "WhatsApp API Providers for Hotels: What to Compare",
     slug: "whatsapp-api-providers-for-hotels-what-to-compare",
-    url: "",
+    url: "/images/blog/banners/whatsapp-api-providers-for-hotels-what-to-compare.webp",
     isShow: true,
     meta: {
       title: "Choosing a WhatsApp API Provider for Your Hotel | Checklist",
@@ -30155,7 +30157,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "AI Hotel Sales Software: Complete Buyer’s Guide",
     slug: "ai-hotel-sales-software-complete-buyers-guide",
-    url: "",
+    url: "/images/blog/banners/ai-hotel-sales-software-complete-buyers-guide.webp",
     isShow: true,
     meta: {
       title: "AI Hotel Sales Software: Complete Buyer's Guide",
@@ -30617,7 +30619,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "Eazotel AI WhatsApp Agent: How It Works for Hotels",
     slug: "eazotel-ai-whatsapp-agent-how-it-works-for-hotels",
-    url: "",
+    url: "/images/blog/banners/eazotel-ai-whatsapp-agent-how-it-works-for-hotels.webp",
     isShow: true,
     meta: {
       title: "Eazotel AI WhatsApp Agent: How It Works for Hotels",
@@ -31186,7 +31188,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Eazotel Helps Resorts Manage Wedding Enquiries on WhatsApp",
     slug: "how-eazotel-helps-resorts-manage-wedding-enquiries-on-whatsapp",
-    url: "",
+    url: "/images/blog/banners/how-eazotel-helps-resorts-manage-wedding-enquiries-on-whatsapp.webp",
     isShow: true,
     meta: {
       title: "Eazotel for Resort Wedding Enquiries on WhatsApp",
@@ -31303,7 +31305,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   {
     title: "How Eazotel AI Can Answer Hotel Availability & Pricing Queries",
     slug: "how-eazotel-ai-can-answer-hotel-availability-pricing-queries",
-    url: "",
+    url: "/images/blog/banners/how-eazotel-ai-can-answer-hotel-availability-pricing-queries.webp",
     isShow: true,
     meta: {
       title: "Eazotel AI for Hotel Availability & Pricing Queries",
@@ -31536,7 +31538,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "Digital Marketing for Restaurants in India: A Complete Guide for 2026",
     slug: "digital-marketing-for-restaurants-india",
-    url: "",
+    url: "/images/blog/banners/digital-marketing-for-restaurants-india.webp",
     isShow: true,
     meta: {
       title: "Digital Marketing for Restaurants in India | 2026 Guide",
@@ -31832,7 +31834,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "Restaurant Marketing Plan: How to Build a Strategy That Actually Drives Customers",
     slug: "restaurant-marketing-plan",
-    url: "",
+    url: "/images/blog/banners/restaurant-marketing-plan.webp",
     isShow: true,
     meta: {
       title: "Restaurant Marketing Plan: Step-by-Step Guide | Fielmente",
@@ -32042,7 +32044,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "How to Increase Restaurant Sales Without Depending Only on Discounts",
     slug: "how-to-increase-restaurant-sales",
-    url: "",
+    url: "/images/blog/banners/how-to-increase-restaurant-sales.webp",
     isShow: true,
     meta: {
       title: "How to Increase Restaurant Sales: 15 Ways | Fielmente",
@@ -32156,7 +32158,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "Restaurant SEO: How to Improve Your Restaurant's Visibility on Google",
     slug: "restaurant-seo-guide",
-    url: "",
+    url: "/images/blog/banners/restaurant-seo-guide.webp",
     isShow: true,
     meta: {
       title: "Restaurant SEO Guide: Rank Higher on Google | Fielmente",
@@ -32259,7 +32261,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "Google Maps SEO for Restaurants: How to Get Discovered by Nearby Diners",
     slug: "google-maps-seo-restaurants",
-    url: "",
+    url: "/images/blog/banners/google-maps-seo-restaurants.webp",
     isShow: true,
     meta: {
       title: "Google Maps SEO for Restaurants: Local Guide | Fielmente",
@@ -32353,7 +32355,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "Social Media Marketing for Restaurants: A Practical Instagram & Facebook Strategy",
     slug: "social-media-marketing-for-restaurants",
-    url: "",
+    url: "/images/blog/banners/social-media-marketing-for-restaurants.webp",
     isShow: true,
     meta: {
       title: "Social Media Marketing for Restaurants | Fielmente",
@@ -32455,7 +32457,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "Google Ads for Restaurants: How to Generate More Reservations and Enquiries",
     slug: "google-ads-for-restaurants",
-    url: "",
+    url: "/images/blog/banners/google-ads-for-restaurants.webp",
     isShow: true,
     meta: {
       title: "Google Ads for Restaurants: PPC Guide | Fielmente",
@@ -32547,7 +32549,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "How to Increase Restaurant Footfall: 15 Strategies for Dine-In Growth",
     slug: "how-to-increase-restaurant-footfall",
-    url: "",
+    url: "/images/blog/banners/how-to-increase-restaurant-footfall.webp",
     isShow: true,
     meta: {
       title: "How to Increase Restaurant Footfall: 15 Ideas | Fielmente",
@@ -32657,7 +32659,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "Zomato and Swiggy Marketing: How Restaurants Can Grow Orders Without Losing Their Brand",
     slug: "zomato-swiggy-marketing-restaurants",
-    url: "",
+    url: "/images/blog/banners/zomato-swiggy-marketing-restaurants.webp",
     isShow: true,
     meta: {
       title: "Zomato & Swiggy Marketing for Restaurants | Fielmente",
@@ -32745,7 +32747,7 @@ Interest in ChatGPT ads management services for hotels in india will create nois
     title:
       "Restaurant Marketing Agency vs In-House Team: Which Model Makes Sense?",
     slug: "restaurant-marketing-agency-vs-in-house",
-    url: "",
+    url: "/images/blog/banners/restaurant-marketing-agency-vs-in-house.webp",
     isShow: true,
     meta: {
       title: "Restaurant Marketing Agency vs In-House Team | Fielmente",
@@ -32937,7 +32939,10 @@ export const mergedBlogSlugs = new Set<string>([
   "why-your-hotel-sales-team-is-spending-too-much-time-answering-whatsapp",
 ]);
 
-export const blogData = blog.filter((post) => !mergedBlogSlugs.has(post.slug));
+// One card per post: skip merged posts and any later entry that repeats a slug (the post page shows the first).
+export const blogData = blog.filter(
+  (post, i, all) => !mergedBlogSlugs.has(post.slug) && all.findIndex((p) => p.slug === post.slug) === i
+);
 // export const blogData = blog.filter((item) => item.isShow === true);
 
 // tips-for-engagement-on-social-media-of-cloud-kitchen

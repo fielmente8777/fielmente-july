@@ -79,6 +79,9 @@ const nextConfig: NextConfig = {
       to("/hotel-marketing-solutions/", "/industries-we-serve/hotel-marketing-agency/"),
       to("/cloud-kitchen-digital-marketing/", "/industries-we-serve/cloud-kitchen-marketing-agency/"),
       to("/about-us/", "/about-fielmente-best-hospitality-marketing-agency/"),
+      // Template copies of topics that already have an established page (Oct 2026): keep the older page.
+      to("/industries-we-serve/hotel-marketing-agency/hotel-ota-management/", "/hotel-ota-management/"),
+      to("/industries-we-serve/hotel-marketing-agency/hotel-performance-marketing/", "/hotel-performance-marketing-agency/"),
 
       // Near-duplicate blog posts merged into the main post on the same topic (Oct 2026).
       to("/5-reasons-hotels-lose-direct-bookings-on-whatsapp/", "/how-to-stop-losing-hotel-enquiries-on-whatsapp/"),

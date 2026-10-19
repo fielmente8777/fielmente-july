@@ -6,6 +6,16 @@ import type { IndustryProfile, ServiceKey, ServiceType } from "@/@types/@industr
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const q = (s: string) => `“${s}”`;
 
+/** Wording that differs between places guests stay overnight and places they visit (restaurants, venues, tours). */
+const STAY_PREFIXES = ["hotel", "resort", "homestay-villa", "wellness-retreat"];
+const isStay = (I: IndustryProfile) => STAY_PREFIXES.includes(I.prefix);
+const isFood = (I: IndustryProfile) => I.prefix === "restaurant" || I.prefix === "cloud-kitchen";
+/** When to ask for a review: "check-out", "the meal", "the event", "the trip". */
+const afterVisit = (I: IndustryProfile) =>
+  isStay(I) ? "check-out" : isFood(I) ? "the meal" : I.prefix === "wedding-venue" ? "the event" : "the trip";
+const duringVisit = (I: IndustryProfile) =>
+  isStay(I) ? "during the stay" : isFood(I) ? "during service" : I.prefix === "wedding-venue" ? "during the event" : "during the trip";
+
 export const serviceTypes: Record<ServiceKey, ServiceType> = {
   "google-ads": {
     key: "google-ads",
@@ -448,7 +458,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
         { icon: "devices", title: "Mobile-first and fast", body: "Built for phones, where most people browse and book." },
         { icon: "calendarCheck", title: "Booking and enquiries", body: `Booking engine, WhatsApp and enquiry forms so people can ${I.bookAction} easily.` },
         { icon: "search", title: "SEO built in", body: "Clean structure, schema markup and on-page SEO from day one." },
-        { icon: "file", title: "Easy content management", body: "Update rooms, menus, offers and photos without code." },
+        { icon: "file", title: "Easy content management", body: `Update ${isStay(I) ? "rooms, menus, offers" : isFood(I) ? "menus, offers, events" : "packages, offers, pages"} and photos without code.` },
         { icon: "target", title: "Tracking set up", body: "Analytics and conversion tracking for every enquiry and booking." },
       ],
       steps: [
@@ -523,7 +533,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     products: ["hotel-social-media-management-tool", "hotel-cms"],
     build: (I) => ({
       heroTitle: `${I.name} content that makes people want to ${I.bookAction}`,
-      heroLede: `Photography, reels and copy that capture your ${I.showcase} — made for Instagram, your website, ads and OTA listings.`,
+      heroLede: `Photography, reels and copy that capture your ${I.showcase} — made for Instagram, your website, ads and ${isStay(I) ? "OTA listings" : "listings"}.`,
       without: [
         "Old or phone-shot photos across every channel",
         "No reels, while competitors post every week",
@@ -536,7 +546,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
       ],
       featuresLede: `Planned for how ${I.audience} discover and choose.`,
       features: [
-        { icon: "camera", title: "Photography", body: `Rooms, spaces, food and people — shot to sell your ${I.showcase}.` },
+        { icon: "camera", title: "Photography", body: `${isStay(I) ? "Rooms, spaces, food" : "Spaces, food"} and people — shot to sell your ${I.showcase}.` },
         { icon: "sparkles", title: "Reels and short video", body: "Scroll-stopping short videos for Instagram and ads." },
         { icon: "pen", title: "Copywriting", body: "Website, listing, ad and social copy in your brand voice." },
         { icon: "palette", title: "Design", body: "Social creatives, offer banners and brochures." },
@@ -758,7 +768,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
       heroTitle: `${I.name} influencer marketing that brings real ${I.guests}`,
       heroLede: `The right creators can fill dates faster than any ad. We find creators whose audience matches your ${I.guests}, manage the collaboration and measure the enquiries it brings.`,
       without: [
-        "Free stays given to anyone with followers",
+        `Free ${isStay(I) ? "stays" : isFood(I) ? "meals" : "visits"} given to anyone with followers`,
         "No brief, so content misses what makes you special",
         "No way to know if a collaboration brought bookings",
       ],
@@ -862,17 +872,17 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
       ],
       featuresLede: "Reviews, responses and the operations behind them.",
       features: [
-        { icon: "star", title: "Review generation", body: "Well-timed review requests by WhatsApp and email after check-out." },
+        { icon: "star", title: "Review generation", body: `Well-timed review requests by WhatsApp and email after ${afterVisit(I)}.` },
         { icon: "chat", title: "Review responses", body: `Personal, on-brand replies on ${I.reviewSites}.` },
         { icon: "bell", title: "Alerts", body: "Instant alerts for new negative reviews." },
         { icon: "brain", title: "Sentiment insights", body: "Themes in what guests praise and complain about." },
-        { icon: "shield", title: "Issue recovery", body: "Catch problems in-stay, before they become reviews." },
+        { icon: "shield", title: "Issue recovery", body: `Catch problems ${duringVisit(I)}, before they become reviews.` },
         { icon: "bars", title: "Reputation reports", body: "Ratings, volumes and response rates across platforms." },
       ],
       steps: [
         { title: "Reputation audit", body: "Ratings, reviews and responses on every platform." },
         { title: "Set up the system", body: "Review requests, alerts and response guidelines." },
-        { title: "Respond and recover", body: "Replies every week, and in-stay issue recovery." },
+        { title: "Respond and recover", body: `Replies every week, and issues fixed ${duringVisit(I)}.` },
         { title: "Improve operations", body: "Monthly insights shared with your team." },
       ],
       measure: ["Average rating on each platform", "New reviews per month", "Response rate and time", "Recurring complaint themes"],
@@ -881,6 +891,100 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
         { q: "Do you write fake reviews?", a: "Never. We only help you invite real guests to share their experience." },
         { q: "Which platforms do you cover?", a: `${I.reviewSites}, plus any others that matter for your market.` },
         { q: "How fast do you respond to reviews?", a: "We agree a response time with you — typically within a day or two, faster for negative reviews." },
+      ],
+    }),
+  },
+
+  /* ── Zomato & Swiggy Management (restaurants, cloud kitchens) ── */
+  "zomato-swiggy-management": {
+    key: "zomato-swiggy-management",
+    label: "Zomato & Swiggy Management",
+    icon: "utensils",
+    image: "/industry/cloud-kitchen-2.png",
+    heroPhoto: true,
+    card: () => `More orders and better ratings on Zomato and Swiggy`,
+    products: ["hotel-whatsapp-marketing", "hotel-insights-analytics", "hotel-social-media-management-tool"],
+    build: (I) => ({
+      heroTitle: `Zomato and Swiggy management that grows ${I.noun} orders`,
+      heroLede: `We run your listings on Zomato and Swiggy — menu, photos, offers, in-app ads and ratings — so your ${I.noun} ranks higher in the apps and turns more menu views into orders, while we build repeat customers you can reach directly.`,
+      without: [
+        "Menus with missing photos and unclear dish descriptions",
+        "Discounts and in-app ads that eat margin without clear returns",
+        "Ratings that slip because complaints go unanswered",
+      ],
+      withList: [
+        "Complete listings with photos, descriptions and the right categories",
+        "Offers and in-app ads judged on orders and margin, not just views",
+        "Ratings and reviews watched and answered every week",
+      ],
+      featuresLede: `Everything that decides how your ${I.noun} ranks and converts inside the delivery apps.`,
+      features: [
+        { icon: "list", title: "Menu set-up", body: "Menu structure, dish names, descriptions and add-ons that make your best sellers easy to order." },
+        { icon: "camera", title: "Dish photography", body: "Food photos shot or briefed for the apps, so every top dish has a picture." },
+        { icon: "percent", title: "Offers and discounts", body: "Promotions planned around your margins and the hours you need to fill." },
+        { icon: "target", title: "In-app ads", body: "Zomato and Swiggy ads tested on small budgets and scaled only when orders follow." },
+        { icon: "star", title: "Ratings and reviews", body: "Replies to reviews, and the kitchen issues behind low ratings flagged to your team." },
+        { icon: "bars", title: "Weekly reports", body: "Orders, conversion from menu views, average order value and ad returns, week by week." },
+      ],
+      steps: [
+        { title: "Listing audit", body: "Menu, photos, offers, ads, ratings and how you rank for your cuisines." },
+        { title: "Fix the basics", body: "Menu, photos, descriptions, categories and timings brought up to standard." },
+        { title: "Offers and ads", body: `Promotions and in-app ads tested around ${I.peaks}.` },
+        { title: "Review and grow", body: "Weekly numbers, more of what works, and repeat customers moved to your own channels." },
+      ],
+      measure: ["Orders per week on each app", "Conversion from menu views to orders", "Average order value", "Rating on Zomato and Swiggy", "Return on in-app ad spend"],
+      faqs: [
+        { q: "Do you also manage dine-out and table-booking listings?", a: `Yes. For ${I.plural} that take reservations, we keep dine-out and table-booking listings up to date alongside delivery.` },
+        { q: "Can you lower our commission?", a: "Commission is set in your contract with each app. We work on what you control: ranking, conversion, order value and how much you spend on discounts and ads." },
+        { q: "What access do you need?", a: "Manager access to your Zomato and Swiggy partner dashboards, so we can update menus, run offers and read the reports." },
+        { q: "Can you help us get orders outside the apps?", a: "Yes. Alongside the apps we can set up Google, WhatsApp and a direct ordering link, so repeat customers can order from you directly." },
+      ],
+    }),
+  },
+
+  /* ── Weddings & Events Marketing (hotels, resorts) ───────── */
+  "weddings-events-marketing": {
+    key: "weddings-events-marketing",
+    label: "Weddings & Events Marketing",
+    icon: "calendarCheck",
+    image: "/home/im8.webp",
+    heroPhoto: true,
+    card: () => `Wedding, event and MICE enquiries that turn into site visits`,
+    products: ["hotel-crm", "hotel-whatsapp-marketing", "hotel-call-management-system"],
+    build: (I) => ({
+      heroTitle: `${I.name} wedding and event marketing that fills your calendar`,
+      heroLede: `Couples, families, planners and companies look months ahead for the right venue. We put your ${I.noun} in front of them, show what an event with you looks like, and move every enquiry to a site visit fast.`,
+      without: [
+        "Wedding and event enquiries mixed in with room bookings, and answered late",
+        "No page with capacities, spaces, menus or photos of real events",
+        "Wedding portals and planners deciding who sees your venue",
+      ],
+      withList: [
+        "A weddings and events page with spaces, capacities, menus and packages",
+        "Search, Instagram and portal campaigns timed to when couples and planners start looking",
+        "Every enquiry answered on WhatsApp within minutes and moved to a site visit",
+      ],
+      featuresLede: `Marketing for the events that can fill your ${I.noun} in a single booking.`,
+      features: [
+        { icon: "calendarCheck", title: "Weddings and events page", body: "Spaces, capacities, décor options, menus and real event photos, with an enquiry form that asks the right questions." },
+        { icon: "search", title: "Search campaigns", body: "Ads for wedding, party and corporate-event searches in the cities your guests come from." },
+        { icon: "camera", title: "Real-event content", body: "Reels and galleries from events you have hosted, always with the hosts' permission." },
+        { icon: "handshake", title: "Planner and MICE outreach", body: "Pitch material and outreach to wedding planners and corporate event teams in your source cities." },
+        { icon: "star", title: "Portal listings and reviews", body: "Complete profiles on the wedding portals that matter in your market, with reviews from past hosts." },
+        { icon: "chat", title: "Enquiry to site visit", body: "WhatsApp replies, follow-ups and site-visit booking, tracked in a CRM so no lead goes cold." },
+      ],
+      steps: [
+        { title: "Venue audit", body: "Spaces, capacities, packages, past events and how enquiries are handled today." },
+        { title: "Build the offer", body: "Wedding and event packages, a dedicated page and an enquiry flow." },
+        { title: "Launch campaigns", body: `Search, social and portal campaigns that start well before ${I.peaks}.` },
+        { title: "Convert and report", body: "Enquiries, site visits and confirmed events reported every month." },
+      ],
+      measure: ["Wedding and event enquiries", "Site visits booked", "Confirmed events and their value", "Cost per enquiry by channel"],
+      faqs: [
+        { q: "Do you market corporate events and offsites too?", a: "Yes. MICE (meetings, incentives, conferences and exhibitions) gets its own pages and campaigns aimed at company admin and HR teams and event agencies." },
+        { q: "Which wedding portals do you work with?", a: "We choose portals by your market and budget, and judge each one on the enquiries and bookings it brings, not on listing views." },
+        { q: "Can you photograph events at our property?", a: "Yes. We shoot or brief real-event photos and reels, always with the hosts' permission." },
+        { q: "How far ahead should we start?", a: "Many couples book a venue six months or more before the wedding, so campaigns should run well ahead of the season." },
       ],
     }),
   },

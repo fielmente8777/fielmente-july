@@ -48,12 +48,20 @@ export const industries: IndustryProfile[] = [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "preopening-marketing",
       "ota-management", "ota-listing", "revenue-management", "website-development", "sales-marketing-automation",
       "content-creation", "branding", "performance-marketing", "sales-marketing-consultation", "pr-communication",
-      "influencer-marketing", "social-media-ai-automation", "online-reputation-management",
+      "influencer-marketing", "social-media-ai-automation", "online-reputation-management", "google-ads",
+      "weddings-events-marketing",
     ],
     // Older URLs kept for these services (they rank and are linked from elsewhere).
     paths: {
       "social-media-management": "hotel-marketing-agency/hotel-social-media",
       "website-seo": "hotel-marketing-agency/hotel-seo",
+    },
+    // One page per topic: these services link to the older, established pages instead of a template copy
+    // (the template URLs redirect there, see next.config.ts).
+    existing: {
+      "google-ads": "hotel-marketing-agency/hotel-google-ads",
+      "ota-management": "/hotel-ota-management/",
+      "performance-marketing": "/hotel-performance-marketing-agency/",
     },
     overrides: {
       "social-media-management": {
@@ -152,6 +160,7 @@ export const industries: IndustryProfile[] = [
       "social-media-management", "local-seo", "ai-search-optimization", "website-development",
       "social-media-reservation-automation", "content-creation", "branding", "performance-marketing",
       "sales-marketing-consultation", "pr-communication", "influencer-marketing", "google-ads",
+      "online-reputation-management", "zomato-swiggy-management",
     ],
     // Older URLs kept for these services (they rank and are linked from elsewhere).
     paths: {
@@ -197,6 +206,26 @@ export const industries: IndustryProfile[] = [
           { q: "Can you track visits from ads?", a: "We track calls, direction requests, reservation and order clicks. Where Google has enough data, store visits can be reported too." },
           { q: "Do you also run ads for party bookings and events?", a: "Yes. Separate campaigns for private dining, parties and corporate bookings usually perform well because the enquiries are larger." },
           { q: "Who owns the Google Ads account?", a: "You do. We work inside your account and everything we build stays with you." },
+        ],
+      },
+      "online-reputation-management": {
+        metaTitle: "Restaurant Reputation Management Agency | Fielmente",
+        metaDescription:
+          "Restaurant reputation management: more five-star reviews on Google, Zomato and TripAdvisor, every review answered, and monthly insights on what diners love and what to fix.",
+        heroLede:
+          "Diners check your rating on Google, Zomato and TripAdvisor before they reserve a table or order. We help you earn more five-star reviews, answer every review well and fix the issues behind the bad ones.",
+        withList: [
+          "Review requests at the right moment, by QR code and WhatsApp",
+          "Every review answered professionally, fast",
+          "Monthly insights on what diners love and what to fix",
+        ],
+        features: [
+          { icon: "star", title: "Review generation", body: "QR codes on the table and the bill, and a WhatsApp message after the visit, asking happy diners to share it." },
+          { icon: "chat", title: "Review responses", body: "Personal, on-brand replies on Google, Zomato and TripAdvisor." },
+          { icon: "bell", title: "Alerts", body: "Instant alerts for new negative reviews, so the manager can reply the same day." },
+          { icon: "brain", title: "Sentiment insights", body: "Themes in what diners praise and complain about: food, wait times, service and value." },
+          { icon: "shield", title: "Issue recovery", body: "Problems caught during service, before they turn into a one-star review." },
+          { icon: "bars", title: "Reputation reports", body: "Ratings, review volumes and response rates for every outlet." },
         ],
       },
     },
@@ -255,6 +284,7 @@ export const industries: IndustryProfile[] = [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "preopening-marketing",
       "ota-management", "website-development", "sales-marketing-automation", "content-creation", "branding",
       "performance-marketing", "sales-marketing-consultation", "pr-communication", "influencer-marketing",
+      "online-reputation-management", "revenue-management", "weddings-events-marketing",
     ],
     faqs: [
       { q: "Do you have experience with wellness and adventure resorts?", a: "Yes. Our case studies include Ayurveda and wellness resorts near Rishikesh and Delhi, and Himalayan retreats in Uttarakhand." },
@@ -285,7 +315,7 @@ export const industries: IndustryProfile[] = [
     reviewSites: "Google, Airbnb and Booking.com",
     searches: ["homestay in Nainital", "private pool villa in Goa", "cottage in Manali for a family"],
     peaks: "long weekends, summer holidays and year-end breaks",
-    showcase: "the space, the views, the host and the neighbourhood",
+    showcase: "space, views, hosting and neighbourhood",
     icon: "house",
     heroImage: "/home/im4.webp",
     heroAlt: "Private holiday villa with a swimming pool",
@@ -310,8 +340,22 @@ export const industries: IndustryProfile[] = [
     services: [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "preopening-marketing",
       "website-development", "sales-marketing-automation", "content-creation", "branding", "performance-marketing",
-      "sales-marketing-consultation", "influencer-marketing",
+      "sales-marketing-consultation", "influencer-marketing", "ota-management", "ota-listing", "online-reputation-management",
     ],
+    overrides: {
+      "ota-listing": {
+        metaTitle: "Airbnb & OTA Listing for Homestays and Villas | Fielmente",
+        metaDescription:
+          "Get your homestay or villa listed properly on Airbnb, Booking.com, MakeMyTrip and Agoda: photos, rooms, rates, house rules and calendar sync, set up for you.",
+        heroTitle: "Get your homestay or villa listed on Airbnb and every OTA that matters — properly",
+      },
+      "ota-management": {
+        metaTitle: "Airbnb & OTA Management for Homestays and Villas | Fielmente",
+        metaDescription:
+          "Airbnb and OTA management for homestays and villas: listings, photos, pricing, reviews and calendar sync that win more bookings while you grow direct stays.",
+        heroTitle: "Airbnb and OTA management that ranks your homestay or villa higher",
+      },
+    },
     faqs: [
       { q: "Is this worth it for a single homestay or villa?", a: "Yes. Small properties often gain the most from direct bookings, because platform fees take a big share of every stay." },
       { q: "Will we have to leave Airbnb?", a: "No. Keep your listings — we help you grow direct bookings alongside them and keep calendars in sync." },
@@ -322,6 +366,121 @@ export const industries: IndustryProfile[] = [
       title: "Homestay & Villa Marketing Agency in India | Fielmente",
       description:
         "Marketing for homestays, villas and cottages: website and booking engine, local SEO, Instagram, ads and guest automation to win bookings without platform fees.",
+    },
+  },
+
+  /* ── Wellness & Ayurveda Retreats ─────────────────────────── */
+  {
+    slug: "wellness-retreat-marketing-agency",
+    prefix: "wellness-retreat",
+    name: "Wellness Retreat",
+    label: "Wellness Retreat Marketing",
+    noun: "wellness retreat",
+    plural: "wellness retreats and Ayurveda centres",
+    guests: "guests",
+    audience: "people looking for rest, detox, Ayurveda, yoga and longer wellness programmes",
+    bookAction: "book a programme",
+    goal: "direct bookings for stays and programmes",
+    channels: "Booking.com, MakeMyTrip, Agoda and BookRetreats",
+    reviewSites: "Google, TripAdvisor and BookRetreats",
+    searches: ["ayurveda retreat in Kerala", "wellness retreat near Delhi", "yoga retreat in Rishikesh"],
+    peaks: "winter, the new year, the monsoon Ayurveda season and long weekends",
+    showcase: "programmes, therapies, food, the setting and the people who guide guests",
+    icon: "sparkles",
+    // REVIEW: swap in photos from a client shoot (spa, yoga, therapy room) when available.
+    heroImage: "/home/im6.webp",
+    heroAlt: "Calm guest room with linen bedding and a morning cup of tea",
+    secondImage: "/home/im3.webp",
+    secondAlt: "Glamping dome in tall grass at a nature retreat",
+    heroTitle: "Wellness retreat marketing that fills programmes, not just rooms",
+    heroLede:
+      "Guests choose a retreat for its programme, its people and how it will make them feel. We tell that story on Google, Instagram and your own website, and turn interest into direct bookings for stays and programmes.",
+    cardLine: "Direct bookings for retreats and wellness programmes",
+    without: [
+      "Programmes described like room types, with no daily schedule or clear outcomes",
+      "Ads that break Google's and Meta's health rules and get rejected",
+      "Long, considered enquiries that go cold before anyone follows up",
+    ],
+    withList: [
+      "Programme pages that show the schedule, therapies, food and who it is for",
+      "Search and social campaigns written within the platforms' health-ad rules",
+      "Enquiries answered and followed up on WhatsApp until the programme is booked",
+    ],
+    caseStudies: ["naad-wellness-google-ads", "the-rudraksh-google-ads"],
+    products: ["hotel-booking-engine", "hotel-crm", "hotel-whatsapp-marketing"],
+    services: [
+      "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "preopening-marketing",
+      "ota-management", "website-development", "sales-marketing-automation", "content-creation", "branding",
+      "performance-marketing", "sales-marketing-consultation", "pr-communication", "influencer-marketing",
+      "online-reputation-management",
+    ],
+    faqs: [
+      { q: "Can you advertise Ayurveda and detox programmes on Google and Meta?", a: "Yes, within each platform's rules on health and medical claims. We write ads and landing pages about the experience and the programme, not cures, so they get approved and stay live." },
+      { q: "Do you work with yoga and meditation retreats too?", a: "Yes. We work with Ayurveda centres, yoga and meditation retreats, and resorts that run spa and wellness programmes." },
+      { q: "Can you reach guests from other countries?", a: "Yes. Campaigns can target travellers in specific countries, with pages and follow-ups timed to their travel seasons." },
+      { q: "How do you sell longer programmes, like 7 or 14 nights?", a: "Longer stays need more trust before booking, so we build detailed programme pages, guest stories and a follow-up sequence that answers questions until the guest is ready." },
+    ],
+    meta: {
+      title: "Wellness Retreat & Ayurveda Marketing Agency | Fielmente",
+      description:
+        "Marketing for wellness retreats, Ayurveda centres and yoga retreats: programme pages, Google and Meta ads within health-ad rules, SEO and WhatsApp follow-ups.",
+    },
+  },
+
+  /* ── Wedding Venues & Banquets ────────────────────────────── */
+  {
+    slug: "wedding-venue-marketing-agency",
+    prefix: "wedding-venue",
+    name: "Wedding Venue",
+    label: "Wedding Venue Marketing",
+    noun: "wedding venue",
+    plural: "wedding venues and banquet halls",
+    guests: "couples",
+    audience: "couples, families, wedding planners and corporate event teams",
+    bookAction: "book a site visit",
+    goal: "qualified wedding enquiries and site visits",
+    channels: "WedMeGood, WeddingWire, VenueMonk and Google",
+    reviewSites: "Google, WedMeGood and WeddingWire",
+    searches: ["banquet hall in Gurugram", "destination wedding venue in Udaipur", "wedding resort near Delhi"],
+    peaks: "the winter wedding season and its most popular dates",
+    showcase: "lawns, halls, décor, food and real weddings",
+    icon: "calendarCheck",
+    // REVIEW: swap in photos of a real wedding set-up from a client venue when available.
+    heroImage: "/home/im8.webp",
+    heroAlt: "Grand venue building lit up at dusk",
+    secondImage: "/images/Twowomenmeet.webp",
+    secondAlt: "Venue sales manager meeting a client",
+    heroTitle: "Wedding venue marketing that turns enquiries into booked dates",
+    heroLede:
+      "Couples and planners shortlist venues months ahead, then decide after a site visit. We put your venue on their shortlist and get every enquiry to a visit fast.",
+    cardLine: "Qualified wedding enquiries and more site visits",
+    without: [
+      "Portal enquiries that never turn into site visits",
+      "Lawns, halls and capacities hard to understand from your website",
+      "Peak dates sell out while off-season weekdays sit empty",
+    ],
+    withList: [
+      "Venue pages with spaces, capacities, menus, packages and real weddings",
+      "Search, Instagram and portal campaigns timed to the wedding season",
+      "Fast WhatsApp replies and follow-ups that turn enquiries into site visits",
+    ],
+    caseStudies: [],
+    products: ["hotel-crm", "hotel-whatsapp-marketing", "hotel-call-management-system"],
+    services: [
+      "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "google-ads",
+      "performance-marketing", "website-development", "sales-marketing-automation", "content-creation", "branding",
+      "influencer-marketing", "online-reputation-management", "sales-marketing-consultation",
+    ],
+    faqs: [
+      { q: "Do you market corporate events and conferences as well as weddings?", a: "Yes. Corporate events, conferences and social events get their own pages and campaigns, so off-season weekdays fill as well as wedding dates." },
+      { q: "Are wedding portals worth paying for?", a: "Some are, in some cities. We track the enquiries and bookings each portal brings and move budget to the ones that pay for themselves." },
+      { q: "Can you photograph weddings at our venue?", a: "Yes. We shoot or brief real-event photos and reels, always with the hosts' permission." },
+      { q: "Do you work with banquet halls inside hotels and resorts?", a: "Yes. We market banquet and event spaces in hotels and resorts as well as standalone venues." },
+    ],
+    meta: {
+      title: "Wedding Venue & Banquet Hall Marketing Agency | Fielmente",
+      description:
+        "Marketing for wedding venues and banquet halls: Google Ads, Instagram, venue pages, wedding portals and WhatsApp follow-ups that turn enquiries into site visits.",
     },
   },
 
@@ -365,7 +524,8 @@ export const industries: IndustryProfile[] = [
     products: ["hotel-conversational-tool", "hotel-crm", "hotel-whatsapp-marketing"],
     services: [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "website-development",
-      "sales-marketing-automation", "performance-marketing", "sales-marketing-consultation",
+      "sales-marketing-automation", "performance-marketing", "sales-marketing-consultation", "branding",
+      "content-creation", "influencer-marketing",
     ],
     faqs: [
       { q: "Do you work with pilgrimage and yatra operators?", a: "Yes. Pilgrimage and yatra packages are a good fit for search campaigns, because travellers search for them by name and season." }, // REVIEW: add a client example if you have one
@@ -384,7 +544,12 @@ export const industries: IndustryProfile[] = [
 export const getIndustry = (slug: string) => industries.find((i) => i.slug === slug);
 
 /** Accommodation businesses: hotel products (booking engine, channel manager…) apply to them. */
-export const lodgingIndustries = new Set(["hotel-marketing-agency", "resort-marketing-agency", "homestay-villa-marketing-agency"]);
+export const lodgingIndustries = new Set([
+  "hotel-marketing-agency",
+  "resort-marketing-agency",
+  "homestay-villa-marketing-agency",
+  "wellness-retreat-marketing-agency",
+]);
 
 /** Existing industry page not rebuilt, shown on the hub. */
 export const legacyIndustries = [
@@ -429,7 +594,7 @@ export const serviceOnlyIndustries: IndustryProfile[] = [
     withList: ["Your brands found on Google for food searches nearby", "A website and ordering link you own", "Repeat orders driven through your own channels"],
     caseStudies: [],
     products: ["hotel-whatsapp-marketing", "hotel-conversational-tool", "hotel-social-media-management-tool"],
-    services: ["website-seo", "google-ads", "social-media-management"],
+    services: ["website-seo", "google-ads", "social-media-management", "zomato-swiggy-management"],
     paths: { "website-seo": "cloud-kitchen-marketing-agency/cloud-kitchen-seo" },
     // Sister pages that keep the old design.
     existing: {

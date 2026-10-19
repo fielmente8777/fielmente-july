@@ -14,6 +14,8 @@ export interface NavLinksProps {
   label: string;
   type?: string;
   subLinks?: NavLinksProps[];
+  /** Opens a mega menu built from menuData.ts instead of a plain dropdown. */
+  mega?: "industries" | "products";
 }
 
 export interface BannerPropsType {
