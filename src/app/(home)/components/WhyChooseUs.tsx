@@ -1,3 +1,7 @@
+"use client";
+// A client component so the page data carries this section's text once, not its full markup again
+// (Next.js puts that data in the HTML; it was a large part of the home page size).
+import SvgIcon from "@/components/SvgIcon";
 import { WhyChooseUsDataTypes } from "@/@types/@homeType";
 import { Container, SectionWithContainer } from "@/components";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
@@ -38,21 +42,5 @@ const WhyChooseUs: React.FC<WhyChooseUsDataTypes> = ({
 
 export default WhyChooseUs;
 
-
-
-
-
-export const TickIcon = () => (
-  <svg
-    width={24}
-    height={24}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7.77645 16.0383C10.5857 11.3786 18.1391 5.98979 22.3111 3.03392C22.5438 2.86907 22.8527 2.86496 23.0904 3.02237C23.4744 3.27656 23.5071 3.82806 23.1553 4.1252C18.1501 8.3531 12.1943 13.4112 10.3956 18.983C10.3304 19.1851 10.1801 19.3458 9.98231 19.4228C9.06973 19.7781 7.6775 20.4938 6.85384 20.9919C6.5077 21.2012 6.06013 21.0728 5.87665 20.7123C4.60064 18.2052 2.54924 15.1117 0.847399 13.7104C0.533626 13.452 0.51546 12.9714 0.809247 12.6905C4.20987 9.43925 6.71795 13.8917 7.77611 16.0381L7.77645 16.0383Z"
-      fill="#0D54EB"
-    />
-  </svg>
-);
+// Blue tick before list items. A static file (used ~20 times on the home page) instead of inline SVG.
+export const TickIcon = () => <SvgIcon src="/icons/tick.svg" width={24} height={24} />;

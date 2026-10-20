@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { TickIcon } from "../WhyChooseUs";
 import { SectionWithContainer } from "@/components";
@@ -14,10 +13,11 @@ export const ChooseCard1: React.FC<
     `}
       containerClassName="grid xl:grid-cols-9 grid-cols-1 gap-6 xl:gap-16"
     >
+      {/* One picture for all screens: above the text on phones/tablets, beside it from xl up. */}
       <div
-        className={`relative w-full xl:hidden aspect-4/3  rounded-2xl overflow-hidden border-4 border-[#F7F7F7]`}
+        className={`relative w-full aspect-4/3 xl:aspect-auto xl:h-auto xl:col-span-3 rounded-2xl overflow-hidden border-4 border-[#F7F7F7] ${index % 2 === 0 ? "" : "xl:order-1"}`}
       >
-        <Image src={src} alt={heading} fill className="object-cover" sizes="100vw" />
+        <Image src={src} alt={heading} fill className="object-cover" sizes="(max-width: 1280px) 100vw, 33vw" />
       </div>
       <div
         className={`xl:col-span-6 space-y-5 ${index % 2 === 0 ? "md:order-2" : ""}`}
@@ -50,11 +50,6 @@ export const ChooseCard1: React.FC<
             dangerouslySetInnerHTML={{ __html: description }}
           />
         )}
-      </div>
-      <div
-        className={`relative w-full xl:block hidden aspect-auto h-auto rounded-2xl overflow-hidden border-4 border-[#F7F7F7] xl:col-span-3`}
-      >
-        <Image src={src} alt="hero" fill className="object-cover" sizes="100vw" />
       </div>
     </SectionWithContainer>
   );

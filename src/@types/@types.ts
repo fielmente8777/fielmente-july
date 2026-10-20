@@ -124,7 +124,7 @@ export interface MaximizeGrowthPropsType {
 
 export interface OurValuedClientsPropsType {
   title: string;
-  cards: ClientData[];
+  cards: Pick<ClientData, "src" | "alt" | "className">[];
 }
 
 export interface TestimonialsPropsType {

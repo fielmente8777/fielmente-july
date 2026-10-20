@@ -26,7 +26,7 @@ export const casStudiesData: CaseStudy[] = [
     metaData: {
       title: "TripAdvisor Ads Case Study: Syah Udaipur | Fielmente",
       description:
-        "See how Fielmente and Eazotel launched TripAdvisor advertising for Syah Udaipur, connecting sponsored visibility, a reservation landing page, analytics and centralized lead management.",
+        "How Fielmente and Eazotel launched TripAdvisor ads for Syah Udaipur, with a reservation landing page, analytics and central lead management.",
     },
     // TODO(Fielmente): replace these temporary placeholders with Syah's logo and restaurant photography.
     img: "/fielmente_logo.png",

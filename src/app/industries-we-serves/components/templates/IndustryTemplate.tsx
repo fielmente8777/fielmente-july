@@ -336,7 +336,7 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
                   <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#F5F5F9]">
                     <Image
                       src={o.image}
-                      alt=""
+                      alt={`${o.name} marketing`}
                       fill
                       sizes="(max-width: 1024px) 50vw, 20vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"

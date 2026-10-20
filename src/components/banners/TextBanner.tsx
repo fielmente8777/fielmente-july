@@ -26,7 +26,7 @@ const TextBanner: React.FC<TextBannerProps> = ({
     >
       <Image
         src="/Hero.png"
-        alt="hero"
+        alt="Dark blue abstract background"
         fill
         className="object-cover bg-background-black1"
         sizes="100vw"

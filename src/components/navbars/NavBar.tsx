@@ -6,13 +6,11 @@ import LandingHeader from "./landingHeader";
 import type { SiteMenu } from "./menuData";
 
 interface NavBarProps {
-  /** Blog post slugs, passed from the server layout so the client bundle never loads the blog content. */
-  blogSlugs?: string[];
   /** Mega menu content, built on the server (menuData.ts). */
   menu?: SiteMenu;
 }
 
-const NavBar = ({ blogSlugs = [], menu }: NavBarProps) => {
+const NavBar = ({ menu }: NavBarProps) => {
   const pathName = usePathname();
   const RenderNavBar = Header;
 
@@ -34,7 +32,7 @@ const NavBar = ({ blogSlugs = [], menu }: NavBarProps) => {
   } else if (pathName === "/landing-page/") {
     return <LandingNav />;
   } else {
-    return <Header blogSlugs={blogSlugs} menu={menu} />;
+    return <Header menu={menu} />;
   }
 };
 

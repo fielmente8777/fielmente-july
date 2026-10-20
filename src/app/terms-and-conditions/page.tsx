@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms and Conditions - Fielmente",
   description:
-    "Review the terms and conditions for using Fielmente's services and website.",
+    "Read the terms and conditions for using the Fielmente website and our hospitality marketing services, including payments, intellectual property and liability.",
 
   alternates: {
     canonical: "https://fielmente.com/terms-and-conditions",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Terms and Conditions - Fielmente",
     description:
-      "Review the terms and conditions for using Fielmente's services and website.",
+      "Read the terms and conditions for using the Fielmente website and our hospitality marketing services, including payments, intellectual property and liability.",
 
     images: [
       {

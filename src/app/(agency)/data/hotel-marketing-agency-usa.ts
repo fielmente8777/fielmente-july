@@ -130,7 +130,7 @@ const page: AgencyPageData = {
         icon: "layers",
         title: "OTA management",
         body: "Expedia and Booking.com content, photos, rate plans and promotions managed so OTAs bring new guests at a cost you control.",
-        href: "/industries-we-serve/hotel-marketing-agency/hotel-ota-management/",
+        href: "/hotel-ota-management/",
       },
       {
         icon: "trend",

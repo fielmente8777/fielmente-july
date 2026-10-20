@@ -1,11 +1,20 @@
+"use client";
+// Client component: the page data then carries only this section's content, not a second copy of its
+// markup (Next.js inlines that data in the HTML, which made the home page HTML very large).
 import { BannerPropsType } from "@/@types/@types";
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import Link from "next/link";
 import Form from "../forms/Form";
 import { Container, SectionWithContainer } from "../sectionComponants";
 import AnimatedWord from "./ui/AnimatedWord";
 
+const BANNER_ALT = "Hotel courtyard with a pool at night, lit by wall lanterns";
+
 const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
+  const {
+    props: { srcSet: desktopSrcSet },
+  } = getImageProps({ src: imgSrc, alt: BANNER_ALT, fill: true, sizes: "100vw", priority: true });
+  const { props: mobileImg } = getImageProps({ src: "/home/bnr-sm.webp", alt: BANNER_ALT, fill: true, sizes: "100vw", priority: true });
   return (
     <SectionWithContainer
       defaultPadding={false}
@@ -13,25 +22,13 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
       containerClassName=""
     >
       <div className="relative overflow-hidden w-full md:aspect-[4/1.9255] aspect-[4/6.2]">
-        <Image
-          src={imgSrc}
-          alt={title}
-          fill
-          className="object-contain md:block hidden"
-          sizes="(max-width: 768px) 100vw, 100vw"
-          priority={true}
-          loading="eager"
-        />
-
-        <Image
-          src="/home/bnr-sm.webp"
-          alt={title}
-          fill
-          className="object-cover md:hidden block"
-          priority={true}
-          loading="eager"
-          sizes="(max-width: 768px) 100vw, 100vw"
-        />
+        {/* One <picture> instead of two <Image>s: phones get the tall crop, larger screens the wide one.
+            Before, both images were in the page (and both preloaded on every device). */}
+        <picture>
+          <source media="(min-width: 768px)" srcSet={desktopSrcSet} sizes="100vw" />
+          {/* eslint-disable-next-line @next/next/no-img-element -- art direction needs a plain <img> inside <picture> (Next.js docs pattern) */}
+          <img {...mobileImg} alt={BANNER_ALT} className="object-cover md:object-contain" />
+        </picture>
 
         <div className="absolute inset-0  z-20">
           <Container className="xl:mt-20 mt-4">
@@ -40,7 +37,7 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
               <div className="flex justify-center items-center gap-2 px-2.5 py-1.5 text-white rounded-full w-fit mx-auto glassy-card">
                 <Image
                   src="/home/Frame-3.png"
-                  alt="hotels"
+                  alt="Hotels and resorts that work with Fielmente"
                   width={40}
                   height={20}
                 />

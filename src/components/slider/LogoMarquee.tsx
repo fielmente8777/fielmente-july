@@ -1,17 +1,17 @@
+"use client";
 // Continuously scrolling logo strip, animated with CSS only.
 // Replaces Swiper's free-mode autoplay for logo rows: same look, but no JavaScript running every frame
 // (the Swiper version kept the main thread busy and preloaded every logo at full screen width).
-import Image from "next/image";
-import type { CSSProperties } from "react";
+//
+// A client component on purpose: Next.js then sends only the list of logos (src + name) with the page,
+// instead of the full markup of 100+ logo tiles a second time (the page data is part of the HTML).
+import { useEffect, useState, type CSSProperties } from "react";
+import LogoMarqueeItem, { type LogoMarqueeItemData } from "./LogoMarqueeItem";
 
-export interface LogoMarqueeItem {
-  src: string;
-  alt: string;
-  background?: string;
-}
+export type { LogoMarqueeItemData };
 
 interface LogoMarqueeProps {
-  items: LogoMarqueeItem[];
+  items: LogoMarqueeItemData[];
   /** Logos visible at once: phone, ≥768px, ≥1024px, ≥1280px. */
   perView?: { base: number; md: number; lg: number; xl: number };
   itemClassName?: string;
@@ -26,8 +26,12 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({
   imageClassName = "",
   wrapperClassName = "",
 }) => {
+  // The loop's second half (translateX(-50%) needs it) is added in the browser, so the page's HTML
+  // lists every logo once: no duplicate images or images without alt text for SEO checks.
+  const [looped, setLooped] = useState(false);
+  useEffect(() => setLooped(true), []);
+
   if (!items?.length) return null;
-  const loop = [...items, ...items];
   const vars = {
     "--n-base": perView.base,
     "--n-md": perView.md,
@@ -39,27 +43,19 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({
   return (
     <div className={`logo-marquee w-full overflow-hidden ${wrapperClassName}`} style={vars}>
       <ul className="logo-marquee-track flex w-max">
-        {loop.map((item, i) => (
-          <li
-            key={`${item.src}-${i}`}
-            aria-hidden={i >= items.length ? true : undefined}
-            className="logo-marquee-item shrink-0 px-2.5"
-          >
-            <div
-              className={`relative w-full lg:aspect-3/1.5 aspect-4/4 rounded-xl flex justify-center items-center ${itemClassName}`}
-              style={item.background ? { background: item.background } : undefined}
-            >
-              <Image
-                src={item.src}
-                fill
-                loading="lazy"
-                className={`object-contain w-full h-full rounded-md px-6 ${imageClassName}`}
-                alt={i >= items.length ? "" : item.alt}
-                sizes="(max-width: 768px) 40vw, (max-width: 1280px) 20vw, 16vw"
-              />
-            </div>
-          </li>
+        {items.map((item, i) => (
+          <LogoMarqueeItem key={`${item.src}-${i}`} item={item} itemClassName={itemClassName} imageClassName={imageClassName} />
         ))}
+        {looped &&
+          items.map((item, i) => (
+            <LogoMarqueeItem
+              key={`${item.src}-copy-${i}`}
+              item={item}
+              itemClassName={itemClassName}
+              imageClassName={imageClassName}
+              decorative
+            />
+          ))}
       </ul>
     </div>
   );

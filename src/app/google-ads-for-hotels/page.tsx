@@ -73,7 +73,7 @@ export default function GoogleAdsForHotelsPage() {
       <section className="relative overflow-hidden bg-primary2 pt-9 pb-10 md:pt-16 md:pb-22">
         <Image
           src="/landing-pages/google-ads/fielmente-symbol-white.png"
-          alt=""
+          alt="Fielmente symbol"
           aria-hidden="true"
           width={390}
           height={820}

@@ -85,7 +85,7 @@ export default async function Page(props: Params) {
       <div className="w-full mx-auto relative lg:aspect-[4/1.8] md:aspect-4/2 aspect-4/3.5">
         <Image
           src={data?.hotelImg || data.img}
-          alt=""
+          alt={data.title}
           fill
           priority
           sizes="100vw"

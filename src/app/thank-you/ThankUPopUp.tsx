@@ -34,7 +34,7 @@ const ThankUPopUp = () => {
                   href={"/"}
                   className="flex relative md:h-[3.5rem] h-[2.5rem]  md:aspect-[4/1.5] aspect-[3/1]"
                 >
-                  <Image src="/logo2.png" alt="fielment logo" fill sizes="100vw" />
+                  <Image src="/logo2.png" alt="Fielmente logo" fill sizes="100vw" />
                 </Link>
               </div>
               {footerData.linksData.slice(0, 1).map((item, index) => (

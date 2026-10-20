@@ -12,7 +12,7 @@ const LandingFooter = () => {
             <div className="relative w-full max-w-45.75  aspect-[4/1.46]">
               <Image
                 src={landingFooterData.logo}
-                alt="fielment logo"
+                alt="Fielmente logo"
                 fill
                 className="object-cover"
                 priority

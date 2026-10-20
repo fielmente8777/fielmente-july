@@ -3,7 +3,7 @@ import { useAppContext } from "@/contextApi/AppContext";
 import { CallIcon, OutlineDrpopdown } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
 import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
@@ -11,7 +11,7 @@ import { casStudiesData } from "@/app/case-study/[story]/components/caseData";
 import { contacts } from "../../../contact";
 import { IndustriesPanel, ProductsPanel } from "./MegaMenu";
 import type { SiteMenu } from "./menuData";
-const Header = ({ blogSlugs = [], menu }: { blogSlugs?: string[]; menu?: SiteMenu }) => {
+const Header = ({ menu }: { menu?: SiteMenu }) => {
   const { setIsOpenPopupForm, setIsMobileNavOpen } = useAppContext();
 
   const pathName = usePathname();
@@ -39,7 +39,10 @@ const Header = ({ blogSlugs = [], menu }: { blogSlugs?: string[]; menu?: SiteMen
     "/search-engine-marketing/",
   ];
   const [isScrolled, setIsScrolled] = useState(false);
-  const isBlogDetail = blogSlugs.some((slug) => `/${slug}/` === pathName);
+  // Blog posts are the only pages on the top-level /[slug]/ route. Reading the route's own param
+  // replaces a list of every blog slug that was sent with every page (~10 kB).
+  const params = useParams();
+  const isBlogDetail = typeof params?.slug === "string" && pathName === `/${params.slug}/`;
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50); // threshold
@@ -83,7 +86,7 @@ const Header = ({ blogSlugs = [], menu }: { blogSlugs?: string[]; menu?: SiteMen
                         : "/logo2.webp"
                       : "/Logo.png"
                   }
-                  alt="fielment logo"
+                  alt="Fielmente logo"
                   fill
                   sizes="(max-width: 767px) 100px, 144px"
                 />

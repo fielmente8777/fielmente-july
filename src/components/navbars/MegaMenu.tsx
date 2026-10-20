@@ -4,11 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import type { MenuGroup, MenuSection } from "./menuData";
 
-const linkClass = (active: boolean) =>
-  `block rounded-md px-2 py-1.5 -mx-2 text-[15px]/snug transition-colors ${
-    active ? "font-semibold text-orange-primary" : "text-[#3D3B55] hover:bg-[#F3F3F8] hover:text-primary"
-  }`;
-
 function Groups({ groups, pathName }: { groups: MenuGroup[]; pathName: string }) {
   const cols = groups.length >= 4 ? "grid-cols-4" : groups.length === 3 ? "grid-cols-3" : groups.length === 2 ? "grid-cols-2" : "grid-cols-1";
   return (
@@ -19,7 +14,8 @@ function Groups({ groups, pathName }: { groups: MenuGroup[]; pathName: string })
           <ul className="flex flex-col">
             {g.links.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className={linkClass(pathName === l.href)} aria-current={pathName === l.href ? "page" : undefined}>
+                <Link href={l.href} className="mega-link" aria-current={pathName === l.href ? "page" : undefined}>
+                  {l.context && <span className="sr-only">{l.context} </span>}
                   {l.label}
                 </Link>
               </li>

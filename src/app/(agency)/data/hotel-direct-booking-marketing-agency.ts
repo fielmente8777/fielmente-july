@@ -219,7 +219,7 @@ const page: AgencyPageData = {
   extraLinks: [
     { title: "How to increase direct bookings in 2026", body: "Our guide to the changes that move bookings from OTAs to your website.", href: "/hotel-marketing-agency-how-to-increase-direct-bookings-by-300-percent-in-2026/" },
     { title: "An AI-powered direct booking funnel", body: "How AI chat, WhatsApp and automation fit into a direct booking path.", href: "/building-an-ai-powered-direct-booking-funnel-for-hotels/" },
-    { title: "Hotel OTA management", body: "Keep your OTA listings sharp while your direct share grows.", href: "/industries-we-serve/hotel-marketing-agency/hotel-ota-management/" },
+    { title: "Hotel OTA management", body: "Keep your OTA listings sharp while your direct share grows.", href: "/hotel-ota-management/" },
     { title: "Homestay and villa marketing", body: "Direct booking marketing for smaller properties and private villas.", href: "/industries-we-serve/homestay-villa-marketing-agency/" },
   ],
   cta: {

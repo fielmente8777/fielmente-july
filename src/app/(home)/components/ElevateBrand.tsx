@@ -1,9 +1,14 @@
+"use client";
+// Client component: the page data then carries only this section's content, not a second copy of its
+// markup (Next.js inlines that data in the HTML, which made the home page HTML very large).
 import { SectionWithContainer } from "@/components";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import Image from "next/image";
 
 interface Props {
   src: string;
+  /** Describes the picture; falls back to the title. */
+  alt?: string;
   title: string;
   description: string;
   button: {
@@ -12,7 +17,7 @@ interface Props {
   };
 }
 
-const ElevateBrand: React.FC<Props> = ({ title, description, button, src }) => {
+const ElevateBrand: React.FC<Props> = ({ title, description, button, src, alt }) => {
   return (
     <SectionWithContainer>
       <div className="elevate-brand">
@@ -37,10 +42,10 @@ const ElevateBrand: React.FC<Props> = ({ title, description, button, src }) => {
           <div className="w-full md:w-[410px]  ml-auto relative aspect-[4/3.6]">
             <Image
               src={src}
-              alt={title}
+              alt={alt || title}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 100vw" 
+              sizes="(max-width: 768px) 100vw, 410px"
             />
           </div>
         </div>

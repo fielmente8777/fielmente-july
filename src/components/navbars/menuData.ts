@@ -7,7 +7,12 @@ import { industries, serviceOnlyIndustries } from "@/app/industries-we-serve/dat
 import { serviceHref, serviceTypes } from "@/app/industries-we-serve/data/services";
 import { PRODUCTS, productPath } from "@/lib/products";
 
-export type MenuLink = { label: string; href: string };
+/**
+ * `context` is read by screen readers and search engines but not shown (the panel heading already says
+ * it). Every industry has links like "Website SEO", so without it the header repeated the same link text
+ * up to eight times on every page; with it each link is unique ("Resort Website SEO").
+ */
+export type MenuLink = { label: string; href: string; context?: string };
 export type MenuGroup = { title: string; links: MenuLink[] };
 export type MenuSection = { label: string; href?: string; cardLine?: string; groups: MenuGroup[] };
 export type SiteMenu = { industries: MenuSection[]; products: MenuGroup[] };
@@ -57,7 +62,9 @@ function serviceLabel(I: IndustryProfile, key: ServiceKey) {
 function industrySection(I: IndustryProfile): MenuSection {
   const groups = SERVICE_GROUPS.map((g) => ({
     title: g.title,
-    links: g.keys.filter((k) => I.services.includes(k)).map((k) => ({ label: serviceLabel(I, k), href: serviceHref(I, k) })),
+    links: g.keys
+      .filter((k) => I.services.includes(k))
+      .map((k) => ({ label: serviceLabel(I, k), href: serviceHref(I, k), context: I.label.replace(/ Marketing$/, "") })),
   })).filter((g) => g.links.length > 0);
   return { label: I.label, href: `/industries-we-serve/${I.slug}/`, cardLine: I.cardLine, groups };
 }
@@ -151,7 +158,7 @@ export function buildSiteMenu(): SiteMenu {
       links: slugs
         .map((s) => PRODUCTS.find((p) => p.slug === s))
         .filter((p): p is (typeof PRODUCTS)[number] => Boolean(p))
-        .map((p) => ({ label: PRODUCT_LABEL[p.slug] ?? p.name, href: productPath(p.slug) })),
+        .map((p) => ({ label: PRODUCT_LABEL[p.slug] ?? p.name, href: productPath(p.slug), context: "Eazotel" })),
     };
   });
 

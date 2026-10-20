@@ -34,7 +34,7 @@ const PageHero: React.FC<PageHeroProps> = ({
     <section className="relative overflow-hidden bg-primary2 pt-24 pb-14 md:pt-32 md:pb-22">
       <Image
         src="/landing-pages/google-ads/fielmente-symbol-white.png"
-        alt=""
+        alt="Fielmente symbol"
         aria-hidden="true"
         width={390}
         height={820}

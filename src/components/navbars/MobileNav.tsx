@@ -6,7 +6,7 @@ import { navLinks } from "./navLinks";
 import Link from "next/link";
 import { OutlineDrpopdown } from "@/utils/icons";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { MenuGroup, MenuSection, SiteMenu } from "./menuData";
 
 /** A small disclosure button for one level of the menu. */
@@ -34,6 +34,7 @@ function GroupList({ groups, pathName, close }: { groups: MenuGroup[]; pathName:
                   aria-current={pathName === l.href ? "page" : undefined}
                   className={`text-[15px] ${pathName === l.href ? "font-semibold text-secondary" : "text-primary"}`}
                 >
+                  {l.context && <span className="sr-only">{l.context} </span>}
                   {l.label}
                 </Link>
               </li>
@@ -79,6 +80,14 @@ const MobileNav = ({ menu }: { menu?: SiteMenu }) => {
 
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
 
+  // The menu links are only put in the page once the menu has been opened. The desktop header
+  // already has every link, so a second hidden copy here repeated each menu link in the HTML.
+  const [hasOpened, setHasOpened] = useState(false);
+  useEffect(() => {
+    if (isMobileNavOpen) setHasOpened(true);
+  }, [isMobileNavOpen]);
+  const showMenu = hasOpened || isMobileNavOpen;
+
   const handleDropdown = (index: number) => {
     setOpenDropdown((prev) => (prev === index ? null : index));
   };
@@ -93,6 +102,7 @@ const MobileNav = ({ menu }: { menu?: SiteMenu }) => {
 
   return (
     <div
+      aria-hidden={!isMobileNavOpen}
       className={`fixed top-0 h-dvh overflow-y-auto overscroll-contain bg-white/95 backdrop-blur-md w-80 max-w-[90vw] z-50 ${
         isMobileNavOpen ? "right-0" : "-right-full"
       } transition-all duration-300`}
@@ -103,6 +113,7 @@ const MobileNav = ({ menu }: { menu?: SiteMenu }) => {
           <IoClose size={24} />
         </button>
 
+        {showMenu && (
         <nav className="flex flex-col gap-4 mt-10 pb-10">
           {navLinks.map((link, index) => {
             const isActive = openDropdown === index;
@@ -159,6 +170,7 @@ const MobileNav = ({ menu }: { menu?: SiteMenu }) => {
             );
           })}
         </nav>
+        )}
       </div>
     </div>
   );

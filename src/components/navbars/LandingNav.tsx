@@ -9,7 +9,7 @@ const LandingNav = () => {
           <div className="md:w-35 w-25 aspect-[4/1.59] relative">
             <Image
               src="/Logo.png"
-              alt="fielment logo"
+              alt="Fielmente logo"
               fill
               className="object-cover"
               sizes="(max-width: 767px) 100px, 140px"

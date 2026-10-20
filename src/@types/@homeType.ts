@@ -13,6 +13,8 @@ export interface BusinessPartnersDataTypes {
 
 export interface AboutCompanyDataTypes {
   src: string;
+  /** Describes the picture (for search engines and screen readers). */
+  alt?: string;
   title: string;
   subTitle: string;
   description: string[];
@@ -130,7 +132,8 @@ export interface MarketingExpertiseDataTypes {
 
 export interface ClientsDataTypes {
   title: string;
-  clients: ClientData[];
+  /** Only the fields the logo strip shows. */
+  clients: Pick<ClientData, "src" | "alt" | "className">[];
 }
 
 export interface FaqsDataTypes {

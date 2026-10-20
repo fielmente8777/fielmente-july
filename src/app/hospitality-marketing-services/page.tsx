@@ -245,7 +245,7 @@ function page() {
               <div className="relative max-w-[340px] mx-auto aspect-[4/5]">
                 <Image
                   src={"/images/pizaparty.webp"}
-                  alt=""
+                  alt="Group of friends taking a selfie while eating pizza"
                   fill
                   className="object-cover rounded-3xl"
                   sizes="100vw"
@@ -435,7 +435,7 @@ const ChooseUSCard = ({
   return (
     <div className="max-w-75 mx-auto">
       <div className="relative w-full aspect-4/4">
-        <Image src={image} alt="" fill className="object-cover" sizes="100vw" />
+        <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 300px" />
       </div>
       <div className="flex flex-col gap-4 mt-4">
         <h2 className="text-center text-2xl font-medium text-black">{title}</h2>

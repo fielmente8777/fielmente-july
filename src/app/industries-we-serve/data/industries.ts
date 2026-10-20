@@ -211,7 +211,7 @@ export const industries: IndustryProfile[] = [
       "online-reputation-management": {
         metaTitle: "Restaurant Reputation Management Agency | Fielmente",
         metaDescription:
-          "Restaurant reputation management: more five-star reviews on Google, Zomato and TripAdvisor, every review answered, and monthly insights on what diners love and what to fix.",
+          "Restaurant reputation management: more five-star reviews on Google, Zomato and TripAdvisor, every review answered, and monthly insights on what to fix.",
         heroLede:
           "Diners check your rating on Google, Zomato and TripAdvisor before they reserve a table or order. We help you earn more five-star reviews, answer every review well and fix the issues behind the bad ones.",
         withList: [
@@ -480,7 +480,7 @@ export const industries: IndustryProfile[] = [
     meta: {
       title: "Wedding Venue & Banquet Hall Marketing Agency | Fielmente",
       description:
-        "Marketing for wedding venues and banquet halls: Google Ads, Instagram, venue pages, wedding portals and WhatsApp follow-ups that turn enquiries into site visits.",
+        "Marketing for wedding venues and banquet halls: Google Ads, Instagram, venue pages, wedding portals and WhatsApp follow-ups that turn enquiries into visits.",
     },
   },
 

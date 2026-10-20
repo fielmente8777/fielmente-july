@@ -93,7 +93,7 @@ const page: AgencyPageData = {
     items: [
       { icon: "search", title: "Google Ads and Hotel Ads", body: "Search, Performance Max and hotel price ads by source market, plus Google's free booking links.", href: "/industries-we-serve/hotel-marketing-agency/hotel-google-ads/" },
       { icon: "pin", title: "Local SEO", body: "A complete Google Business Profile, local citations and steady reviews, so you appear when guests search your emirate.", href: "/industries-we-serve/hotel-marketing-agency/hotel-local-seo/" },
-      { icon: "layers", title: "OTA management", body: "Content, rate plans, promotions and review replies on Booking.com, Expedia and Agoda, run alongside your direct channels.", href: "/industries-we-serve/hotel-marketing-agency/hotel-ota-management/" },
+      { icon: "layers", title: "OTA management", body: "Content, rate plans, promotions and review replies on Booking.com, Expedia and Agoda, run alongside your direct channels.", href: "/hotel-ota-management/" },
       { icon: "palm", title: "Beach and mountain resort marketing", body: "Campaigns for resorts in Ras Al Khaimah, Fujairah and Abu Dhabi, built around stays and experiences.", href: "/industries-we-serve/resort-marketing-agency/" },
       { icon: "rocket", title: "Pre-opening marketing", body: "Brand, website, listings and first-season campaigns for hotels joining the UAE's development pipeline.", href: "/industries-we-serve/hotel-marketing-agency/hotel-preopening-marketing/" },
       { icon: "handshake", title: "Sales and MICE support", body: "Enquiry routes for groups, weddings and corporate events, plus sales strategy for your events team.", href: "/industries-we-serve/hotel-marketing-agency/hotel-sales-marketing-consultation/" },

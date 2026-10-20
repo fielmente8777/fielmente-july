@@ -96,7 +96,7 @@ const page: AgencyPageData = {
     title: "Revenue marketing services for hotels",
     lede: "Each service works from the same need-date calendar, so your OTA, ads and CRM teams pull in one direction. Open any card for the full service page.",
     items: [
-      { icon: "layers", title: "OTA management", body: "Content, rates, promotions, reviews and ranking on the major OTAs, managed against your revenue goals.", href: "/industries-we-serve/hotel-marketing-agency/hotel-ota-management/" },
+      { icon: "layers", title: "OTA management", body: "Content, rates, promotions, reviews and ranking on the major OTAs, managed against your revenue goals.", href: "/hotel-ota-management/" },
       { icon: "rocket", title: "OTA listing", body: "New or relaunched properties set up correctly on the OTAs that suit your guest mix.", href: "/industries-we-serve/hotel-marketing-agency/hotel-ota-listing/" },
       { icon: "search", title: "Google Ads and metasearch", body: "Search and hotel campaigns switched on for the dates that need volume, with free booking links connected.", href: "/industries-we-serve/hotel-marketing-agency/hotel-google-ads/" },
       { icon: "wallet", title: "Direct booking strategy", body: "Shift share from OTAs to your own channels with member rates, parity checks and a faster booking path.", href: "/hotel-direct-booking-marketing-agency/" },

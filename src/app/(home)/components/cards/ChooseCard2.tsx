@@ -1,4 +1,3 @@
-"use client";
 import { WhyChooseUsDataTypes } from "@/@types/@homeType";
 import Image from "next/image";
 

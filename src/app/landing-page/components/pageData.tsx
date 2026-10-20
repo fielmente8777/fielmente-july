@@ -30,52 +30,52 @@ export const landingPageData = [
       cards: [
         {
           imgSrc: "/partners/google-partner.png",
-          title: "google-partner",
+          title: "Google Partner",
         },
         // {
         //   imgSrc: "/trello.png",
-        //   title: "trello",
+        //   title: "Trello",
         // },
         {
           imgSrc: "/partners/meta-business-partner.png",
-          title: "meta-business-partner",
+          title: "Meta Business Partner",
         },
         {
           imgSrc: "/partners/zoho-corporation.png",
-          title: "zoho-corporation",
+          title: "Zoho",
         },
         {
           imgSrc: "/partners/aws.png",
-          title: "aws",
+          title: "AWS (Amazon Web Services)",
         },
         {
           imgSrc: "/partners/Booking.Com.png",
-          title: "Booking.Com",
+          title: "Booking.com",
         },
         {
           imgSrc: "/partners/razorpay.png",
-          title: "razorpay",
+          title: "Razorpay",
         },
 
         {
           imgSrc: "/partners/agoda-logo.png",
-          title: "agoda-logo",
+          title: "Agoda",
         },
         {
           imgSrc: "/partners/airbnb-logo.png",
-          title: "airbnb-logo",
+          title: "Airbnb",
         },
         {
           imgSrc: "/partners/goibibo-logo.png",
-          title: "goibibo-logo",
+          title: "Goibibo",
         },
         {
           imgSrc: "/partners/makemytrip-logo.png",
-          title: "makemytrip-logo",
+          title: "MakeMyTrip",
         },
         {
           imgSrc: "/partners/cleartrip-logo.png",
-          title: "cleartrip-logo",
+          title: "Cleartrip",
         },
       ],
     },

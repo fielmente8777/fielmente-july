@@ -1,3 +1,6 @@
+"use client";
+// Client component: the page data then carries only this section's content, not a second copy of its
+// markup (Next.js inlines that data in the HTML, which made the home page HTML very large).
 import { FaqsDataTypes } from "@/@types/@homeType";
 import { SectionWithContainer } from "@/components";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
@@ -20,7 +23,7 @@ const Faq: React.FC<FaqsDataTypes> = ({ title, subTitle, faqs, card }) => {
             <div>
               <Image
                 src={card.src}
-                alt={card.title}
+                alt="Fielmente hospitality marketing expert"
                 width={64}
                 height={64}
                 className="object-contain rounded-full border"

@@ -43,7 +43,11 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   iconClassName = "",
 }) => {
   const titleLevel = level ?? 2;
-  const subTitleLevel = subLevel ?? Math.min(titleLevel + 1, 6);
+  // A short label above a section heading ("OUR SERVICES", "FAQS") is not a heading of its own:
+  // it is shown as plain text and the main line (subTitle) takes the heading level. This keeps one
+  // heading per section instead of two. Page banners (level 1) keep their H1 + H2 as they are.
+  const labelAsText = Boolean(title && subTitle && titleLevel !== 1);
+  const subTitleLevel = subLevel ?? (labelAsText ? titleLevel : Math.min(titleLevel + 1, 6));
 
   return (
     <div className={`flex flex-col gap-1 icon ${wrapperClassName}`}>
@@ -63,6 +67,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
           )}
           <Headings
             level={titleLevel}
+            as={labelAsText ? "p" : undefined}
             heading={title}
             className={`${titleClassName} ${
               mdTextCenter ? "md:text-center" : ""

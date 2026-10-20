@@ -16,8 +16,10 @@ export const metadata: Metadata = {
     canonical: "https://fielmente.com/contact-us/",
   },
   openGraph: {
-    title:
-      "Contact | Fielmente - hotel Marketing, SEO, and Revenue Management Services",
+    title: "Contact Fielmente | Hotel Marketing, SEO & Revenue",
+    type: "website",
+    siteName: "Fielmente",
+    locale: "en_IN",
     description:
       "Get in touch with Fielmente for hotel marketing, SEO, and revenue management services. Book a consultation and grow your hotel bookings with expert strategies.",
     url: "https://fielmente.com/contact-us/",
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
         url: "/fielmente_logo.png",
         width: 1200,
         height: 630,
+        alt: "Fielmente",
       },
     ],
   },

@@ -106,7 +106,7 @@ const page: AgencyPageData = {
         icon: "layers",
         title: "OTA management",
         body: "Booking.com and Expedia listings, photos and rate plans managed so each channel earns its commission.",
-        href: "/industries-we-serve/hotel-marketing-agency/hotel-ota-management/",
+        href: "/hotel-ota-management/",
       },
       {
         icon: "globe",

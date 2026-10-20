@@ -11,6 +11,13 @@ const PopupForm = () => {
   const { isOpenPopupForm, setIsOpenPopupForm } = useContext(AppContext);
   const pathName = usePathname();
   const [hasShown, setHasShown] = useState(false);
+  // The form is only put in the page once the popup is first opened. Before, every page carried the
+  // whole hidden form (an extra "CONTACT US" heading and duplicate text for search engines) and
+  // preloaded the popup photo.
+  const [hasOpened, setHasOpened] = useState(false);
+  useEffect(() => {
+    if (isOpenPopupForm) setHasOpened(true);
+  }, [isOpenPopupForm]);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -66,6 +73,7 @@ const PopupForm = () => {
         className={`fixed inset-0 z-99999 bg-black/50 duration-700 ease-in-out transition-all ${isOpenPopupForm ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-95"}`}
         onClick={closeModal}
       >
+        {(hasOpened || isOpenPopupForm) && (
         <article
           className={`flex justify-center items-center h-full max-md:px-4`}
           onClick={(e) => e.stopPropagation()}
@@ -84,13 +92,13 @@ const PopupForm = () => {
                 alt="Hospitality Marketing"
                 fill
                 className="object-cover"
-                priority
                 sizes="(max-width: 767px) 0px, 384px"
               />
             </div>
             <PopUpForm />
           </div>
         </article>
+        )}
       </section>
     </>
   );

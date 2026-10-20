@@ -16,7 +16,7 @@ const GridCtaSection: React.FC<Props> = ({ title, description, ctas }) => {
   return (
     <SectionWithContainer>
       <div className="w-full relative xl:aspect-[4/.85] md:aspect-4/1.75 aspect-square bg-background-black1 rounded-3xl overflow-hidden">
-        <Image src="/content.png" alt="hero" fill className="object-cover" sizes="100vw" />
+        <Image src="/content.png" alt="Dark blue abstract background" fill className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="grid grid-cols-1 xl:grid-cols-[1fr_1.8fr] gap-24 max-w-308 w-full max-xl:px-4">
             <div className="space-y-8">

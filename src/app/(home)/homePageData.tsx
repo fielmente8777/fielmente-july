@@ -71,61 +71,62 @@ export const homePageData = {
     cards: [
       {
         imgSrc: "/partners/google-partner.png",
-        title: "google-partner",
+        title: "Google Partner",
       },
       // {
       //   imgSrc: "/trello.png",
-      //   title: "trello",
+      //   title: "Trello",
       // },
       {
         imgSrc: "/partners/meta-business-partner.png",
-        title: "meta-business-partner",
+        title: "Meta Business Partner",
       },
       {
         imgSrc: "/partners/zoho-corporation.png",
-        title: "zoho-corporation",
+        title: "Zoho",
       },
       {
         imgSrc: "/partners/aws.png",
-        title: "aws",
+        title: "AWS (Amazon Web Services)",
       },
       {
         imgSrc: "/partners/Booking.Com.png",
-        title: "Booking.Com",
+        title: "Booking.com",
       },
       {
         imgSrc: "/partners/razorpay.png",
-        title: "razorpay",
+        title: "Razorpay",
       },
       // {
       //   imgSrc: "/slack.webp",
-      //   title: "slack",
+      //   title: "Slack",
       // },
       {
         imgSrc: "/partners/agoda-logo.png",
-        title: "agoda-logo",
+        title: "Agoda",
       },
       {
         imgSrc: "/partners/airbnb-logo.png",
-        title: "airbnb-logo",
+        title: "Airbnb",
       },
       {
         imgSrc: "/partners/goibibo-logo.png",
-        title: "goibibo-logo",
+        title: "Goibibo",
       },
       {
         imgSrc: "/partners/makemytrip-logo.png",
-        title: "makemytrip-logo",
+        title: "MakeMyTrip",
       },
       {
         imgSrc: "/partners/cleartrip-logo.png",
-        title: "cleartrip-logo",
+        title: "Cleartrip",
       },
     ],
   },
 
   aboutCompanyData: {
     src: "/home/about.png",
+    alt: "Resort pool with palm trees at sunset, and a hotel lobby",
     title: "ABOUT COMPANY",
     subTitle: `Revenue Driven Hotel Marketing Agency, We help you to achieve revenue by <span>2-5X</span>`,
     // subTitle: `Grow Your Hotel’s Direct and OTA Bookings by <span>30 - 50%</span>`,
@@ -662,6 +663,13 @@ export const homePageData = {
     "WEBSITE DESIGN & DEVELOPMENT",
     "SOCIAL MEDIA MANAGEMENT",
   ],
+  // Second strip on the home page: different services, so the page does not repeat the same text.
+  moreServicesTitles: [
+    "LOCAL SEO",
+    "OTA MANAGEMENT",
+    "AI SEARCH OPTIMIZATION",
+    "CONTENT CREATION",
+  ],
   marketingExpertiseData: {
     title: "Force of 50+ Hospitality Marketing Experts",
     cards: [
@@ -721,8 +729,7 @@ export const homePageData = {
   },
 
   workWithHotel: {
-    title:
-      "Work with India’s Leading <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency</a>",
+    title: "Work with India’s Leading Hotel Marketing Agency",
     description: [
       "Choose Fielmente – a leading Hospitality Marketing Agency, <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency</a>, and <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Agency</a> as your growth partner. We help hotels, resorts, and restaurants elevate their presence in the digital world with strategies designed specifically for the hospitality industry.",
       "At Fielmente, your stories are worth telling, and we craft campaigns that make your brand stand out from the rest. From hotel social media marketing and search engine optimization for hotels to paid advertising, website optimization, and complete digital strategy, our services cover every aspect of hospitality marketing. Our team brings experience from diverse domains to ensure maximum brand visibility, higher direct bookings, and measurable return on investment.",
@@ -734,7 +741,8 @@ export const homePageData = {
 
   ourValuedClient: {
     title: "Our Valued Hospitality Clients",
-    clients: ClientImages,
+    // Only what the logo strip shows (the full records carry fields used by the clients page).
+    clients: ClientImages.map(({ src, alt, className }) => ({ src, alt, className })),
   },
 
   testimonialsData: {
@@ -745,9 +753,10 @@ export const homePageData = {
 
   ElevateBrand: {
     src: "/home/add.png",
+    alt: "Luxury hotel bedroom with a city-view balcony",
     title: "Elevate your Hospitality Brand Today!",
     description:
-      "Ready to transform your digital presence? Let's create magic together. Book our <a href='/'>Hospitality Marketing Services</a> now!",
+      "Ready to transform your digital presence? Let's create magic together. Book a call with our hospitality marketing team now!",
     button: {
       label: "Schedule Call",
       href: "",
@@ -759,8 +768,8 @@ export const homePageData = {
     subTitle: "Frequently <span>Asked</span> Questions!",
     card: {
       src: "/home/img.png",
-      title: "Get A FREE Consultation!",
-      description: "Let's work on boosting your hotel's profitability!",
+      title: "Still Have Questions?",
+      description: "Talk to a hospitality marketing expert, free of charge.",
       links: {
         label: "Book a Free  Call",
         href: "",
@@ -769,7 +778,7 @@ export const homePageData = {
     faqs: [
       {
         question:
-          "What makes Fielmente the best <a class='inter-link' href='/'>hospitality marketing agency</a> in India?",
+          "What makes Fielmente the best hospitality marketing agency in India?",
         answer:
           "At Fielmente, we specialize in delivering tailored marketing solutions for hotels, resorts, and restaurants. Our expertise as a <a class='inter-link' href='/'>hospitality marketing agency</a> in India comes from years of working with top properties and helping them grow through digital marketing, social media, <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/'>SEO</a>, and performance campaigns.",
       },
@@ -787,7 +796,7 @@ export const homePageData = {
       },
       {
         question:
-          "Do you offer <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-social-media/'>hotel social media marketing</a> services?",
+          "Do you offer hotel social media marketing services?",
         answer:
           "Yes! Fielmente is also a <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-social-media/'>hotel social media agency</a> helping brands build strong engagement across Instagram, Facebook, and LinkedIn. From creative content calendars to ad campaigns, our <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-social-media/'>hotel social media marketing</a> strategies are designed to boost visibility and increase direct bookings.",
       },
@@ -802,16 +811,16 @@ export const homePageData = {
       },
       {
         question:
-          "How do your <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/'>hotel SEO services</a> work?",
+          "How do your hotel SEO services work?",
         answer: `Our SEO services for hotels include keyword optimization, local SEO (Google Maps, GMB), content creation, and link building. By working with a hotel digital marketing company in India like Fielmente, you ensure higher visibility on Google, more direct bookings, and reduced OTA costs.`,
       },
       {
-        question: `Do you provide customized <a class="inter-link" href='/industries-we-serve/hotel-marketing-agency/'>hotel marketing consultancy</a>?`,
+        question: `Do you provide customized hotel marketing consultancy?`,
         answer:
           "Yes, apart from being a hospitality marketing company, we also act as a hospitality marketing consultant. We audit your current marketing strategy and design customized solutions to improve your hotel’s online presence, sales funnel, and guest acquisition.",
       },
       {
-        question: `What makes Fielmente different from other <a class="inter-link" href='/industries-we-serve/hotel-marketing-agency/'>hotel marketing agencies</a>?`,
+        question: `What makes Fielmente different from other hotel marketing agencies?`,
         answer: `Unlike generic marketing agencies for hotels, Fielmente works only in the hospitality sector. This niche focus makes us one of the top <a class="inter-link" href='/industries-we-serve/hotel-marketing-agency/'>hotel marketing agencies</a> in India, offering tailored strategies for hotels, resorts, and hospitality brands to maximize revenue.`,
       },
       {
@@ -846,22 +855,22 @@ export const homePageData = {
       title: "Follow Fielmente:",
       Link: [
         {
-          label: Object.keys(contacts.socialContacts)[2],
+          label: "Fielmente on LinkedIn",
           href: contacts.socialContacts.linkedin,
           icon: <FillLinkedinIcon />,
         },
         {
-          label: Object.keys(contacts.socialContacts)[0],
+          label: "Fielmente on Facebook",
           href: contacts.socialContacts.facebook,
           icon: <FillFaceBookIcon />,
         },
         {
-          label: Object.keys(contacts.socialContacts)[1],
+          label: "Fielmente on Instagram",
           href: contacts.socialContacts.instagram,
           icon: <AiFillInstagram />,
         },
         {
-          label: Object.keys(contacts.socialContacts)[2],
+          label: "Fielmente on X (Twitter)",
           href: contacts.socialContacts.twitter,
           icon: <OutLineXIcon />,
         },

@@ -393,11 +393,11 @@ export default async function LandingPage({ params }: Params) {
   };
 
   const randomData = {
-    title: "Explore More Blogs",
+    title: "More from Fielmente",
 
     cta: {
-      title: "View all Blogs",
-      url: "/blogs",
+      title: "View all posts",
+      url: "/blogs/",
     },
 
     cards: allBlogs.map((item) => ({
@@ -425,7 +425,7 @@ export default async function LandingPage({ params }: Params) {
         <div className="absolute inset-0 overflow-hidden rounded-b-[32px]">
           <Image
             src="/Hero.png"
-            alt=""
+            alt="Dark blue abstract background"
             fill
             priority
             sizes="100vw"

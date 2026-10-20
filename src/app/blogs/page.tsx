@@ -107,7 +107,7 @@ export default async function Blogs({
       >
         <Image
           src="/images/blog/bnr.png"
-          alt=""
+          alt="Laptop showing a hotel website next to a coffee cup"
           fill
           priority
           sizes="100vw"

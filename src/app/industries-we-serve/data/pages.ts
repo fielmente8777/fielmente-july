@@ -56,7 +56,12 @@ export function serviceMetadata({ I, key, path }: ServicePageRef): Metadata {
   const long = `${I.name} ${st.label} Services | Fielmente`;
   const title = long.length > 60 ? `${I.name} ${st.label} | Fielmente` : long;
   const base = `${st.label} for ${I.plural}: ${lowerFirst(st.card(I))}.`;
-  const withCta = `${base} Hospitality specialists — free consultation.`;
-  const description = withCta.length <= 158 ? withCta : base;
+  // Longest version that fits in 160 characters (shorter than ~110 is reported as too short by SEO tools).
+  const options = [
+    `${base} Marketing by hospitality specialists, with a free consultation.`,
+    `${base} Hospitality specialists — free consultation.`,
+    base,
+  ];
+  const description = options.find((d) => d.length <= 158) ?? base;
   return meta(title, description, path, st.heroPhoto ? I.heroImage : st.image);
 }

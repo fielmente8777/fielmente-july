@@ -23,17 +23,20 @@ import { homePageData } from "./homePageData";
 import GetFreeDashboardAccess from "./components/GetFreeDashboardAccess";
 import HomeScrollReveal from "./components/HomeScrollReveal";
 import type { Metadata } from "next";
+import { COUNTRY_HREFLANG } from "@/lib/hreflang";
 import { contacts } from "../../../contact";
 
 const SITE = "https://fielmente.com";
 const TITLE = "Hotel & Hospitality Marketing Agency in India | Fielmente";
+// Kept under ~150 characters so Google (and SEO checkers, max ~1000px) show it in full.
 const DESCRIPTION =
-  "Fielmente is a hotel and hospitality marketing agency for hotels, resorts and restaurants: Google Ads, SEO, social media and OTA management for direct bookings.";
+  "Fielmente is a hotel marketing agency in India for hotels, resorts & restaurants: Google Ads, SEO, social media and OTA management for direct bookings.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: `${SITE}/` },
+  // The country sites name fielmente.com as their x-default, so the home page must return the set.
+  alternates: { canonical: `${SITE}/`, languages: COUNTRY_HREFLANG },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
@@ -121,12 +124,21 @@ export default function Home() {
       <HomeScrollReveal><ProvenResults {...homePageData?.provenResults} /></HomeScrollReveal>
       <HomeScrollReveal><WhyChooseUs {...homePageData?.whyChooseUsData} /></HomeScrollReveal>
       {/* <CountriesWeWorked {...homePageData?.countriesWeWorkedIn} /> */}
-      <HomeScrollReveal><ResultsSection {...landingPageData[0]?.resultsSection} /></HomeScrollReveal>
+      {/* Same block as the landing page, with its own heading and button text here: the home page already
+          has a "Proven Results" section and a "Contact Us" link, and SEO checks flag repeated headings and link text. */}
+      <HomeScrollReveal>
+        <ResultsSection
+          {...landingPageData[0]?.resultsSection}
+          title="Our Track Record"
+          heading="The Numbers Behind Our Hospitality Clients"
+          cta={{ ...landingPageData[0]?.resultsSection?.cta, label: "Talk to Our Team on WhatsApp" }}
+        />
+      </HomeScrollReveal>
       <HomeScrollReveal><CountriesWeWorked {...landingPageData[0]?.countriesSection} /></HomeScrollReveal>
       <HomeScrollReveal><SlidingTitle titles={homePageData?.servicesTitles} /></HomeScrollReveal>
       {/* <OurWork {...homePageData?.ourWorkData} /> */}
       <HomeScrollReveal><OtaCostsWithFielmente {...homePageData?.maximizeGrowthData} /></HomeScrollReveal>
-      <HomeScrollReveal><SlidingTitle titles={homePageData?.servicesTitles} /></HomeScrollReveal>
+      <HomeScrollReveal><SlidingTitle titles={homePageData?.moreServicesTitles} /></HomeScrollReveal>
       <HomeScrollReveal><MarketingExperts {...homePageData?.marketingExpertiseData} /></HomeScrollReveal>
       {/* <Blogs {...homePageData?.blogsData} /> */}
       <HomeScrollReveal><WorkWithIndiasHotel {...homePageData?.workWithHotel} /></HomeScrollReveal>

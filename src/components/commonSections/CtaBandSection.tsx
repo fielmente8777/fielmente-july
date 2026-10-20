@@ -18,7 +18,7 @@ const CtaBandSection: React.FC<CtaBandSectionProps> = ({ title, body, note, acti
         <div className="relative overflow-hidden rounded-3xl bg-primary2 px-6 py-12 md:px-14 md:py-16">
           <Image
             src="/landing-pages/google-ads/fielmente-symbol-white.png"
-            alt=""
+            alt="Fielmente symbol"
             aria-hidden="true"
             width={390}
             height={820}

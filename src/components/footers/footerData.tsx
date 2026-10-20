@@ -25,24 +25,25 @@ interface FooterLinksPropstype {
   }[];
 }
 
+// Labels are read by screen readers and count as link text for search engines, so name each network.
 export const SocialLinks: Link[] = [
   {
-    label: Object.keys(contacts.socialContacts)[2],
+    label: "LinkedIn",
     href: contacts.socialContacts.linkedin,
     icon: <FillLinkedinIcon />,
   },
   {
-    label: Object.keys(contacts.socialContacts)[0],
+    label: "Facebook",
     href: contacts.socialContacts.facebook,
     icon: <FillFaceBookIcon />,
   },
   {
-    label: Object.keys(contacts.socialContacts)[1],
+    label: "Instagram",
     href: contacts.socialContacts.instagram,
     icon: <AiFillInstagram />,
   },
   {
-    label: Object.keys(contacts.socialContacts)[2],
+    label: "X (Twitter)",
     href: contacts.socialContacts.twitter,
     icon: <OutLineXIcon />,
   },
@@ -84,7 +85,8 @@ export const footerData: FooterLinksPropstype = {
         //   href: "",
         // },
         {
-          label: "Blogs",
+          // Blog posts link to /blogs/ as "Blogs" in their breadcrumb.
+          label: "Hotel Marketing Blog",
           href: "/blogs/",
         },
         {
@@ -117,11 +119,11 @@ export const footerData: FooterLinksPropstype = {
       title: "Top Services",
       listOfLinks: [
         {
-          label: "Hotel Marketing ",
+          label: "Hotel Marketing",
           href: "/industries-we-serve/hotel-marketing-agency/",
         },
         {
-          label: "Hotel Social Media",
+          label: "Hotel Social Media Marketing",
           href: "/industries-we-serve/hotel-marketing-agency/hotel-social-media/",
         },
         {
@@ -137,11 +139,12 @@ export const footerData: FooterLinksPropstype = {
           href: "/hospitality-marketing-services/seo-agency/",
         },
         {
-          label: "Performance Marketing",
+          // The header menu already has a "Performance Marketing" link (to another page).
+          label: "Google Ads Management",
           href: "/hospitality-marketing-services/google-ads-agency/",
         },
         {
-          label: "Restaurant Social Media",
+          label: "Restaurant Social Media Marketing",
           href: "/industries-we-serve/restaurant-marketing-agency/restaurant-social-media/",
         },
         {
@@ -157,7 +160,7 @@ export const footerData: FooterLinksPropstype = {
           href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-seo/",
         },
         {
-          label: "Cloud Kitchen Social Media",
+          label: "Cloud Kitchen Social Media Marketing",
           href: "/industries-we-serve/cloud-kitchen-marketing-agency/cloud-kitchen-social-media/",
         },
         {
@@ -170,7 +173,7 @@ export const footerData: FooterLinksPropstype = {
       title: "Offices",
       listOfLinks: [
         ...contacts.addressesInIndia.map((address) => ({
-          label: address.address,
+          label: `Gurugram office: ${address.address}`,
           href: address.mapUrl,
           icon: <FillLocationIcon />,
         })),
@@ -178,14 +181,16 @@ export const footerData: FooterLinksPropstype = {
     },
     {
       title: "Contact",
+      // "Call …" / "Email …": many pages also list the bare number and address in their content,
+      // and the same link text twice on a page is flagged by SEO checkers.
       listOfLinks: [
         ...contacts.phone.map((phone) => ({
-          label: phone,
-          href: `tel:${phone}`,
+          label: `Call ${phone}`,
+          href: `tel:${phone.replace(/\s+/g, "")}`,
           icon: <FillPhoneIcon />,
         })),
         ...contacts.email.map((email) => ({
-          label: email,
+          label: `Email ${email}`,
           href: `mailto:${email}`,
           icon: <FillMailIcon />,
         })),

@@ -9,7 +9,6 @@ import MobileNav from "@/components/navbars/MobileNav";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import Script from "next/script";
 import Salesiq from "@/components/zohochatbot/Salesiq";
-import { blogData } from "@/utils/blogdata";
 import { buildSiteMenu } from "@/components/navbars/menuData";
 
 // Header and mobile menu content, built once at build time from the industry, service and product data.
@@ -288,7 +287,7 @@ export default function RootLayout({
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ5LPRNM"></iframe>
         </noscript>
         <AppProvider>
-          <NavBar blogSlugs={blogData.map((blog) => blog.slug)} menu={siteMenu} />
+          <NavBar menu={siteMenu} />
           <MobileNav menu={siteMenu} />
 
           {children}
