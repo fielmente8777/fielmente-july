@@ -47,7 +47,7 @@ export const newPagedata = {
   revenue: {
     title: "Let’s Supercharge Your Hotel Revenue",
     description:
-      "Fielmente Hospitality brings decades of experience and groundbreaking technology to help hoteliers worldwide Go Beyond. We are the only Revenue Management Company with a team of Industry Experts with more product solutions than any of our competitors, Fielmente ensures you have the tools you need to succeed.",
+      "Fielmente Hospitality brings 15+ years of experience and groundbreaking technology to help hoteliers worldwide Go Beyond. We are the only Revenue Management Company with a team of Industry Experts with more product solutions than any of our competitors, Fielmente ensures you have the tools you need to succeed.",
     image: "/Supercharge.png",
     icon: <RevenueIcon />,
     links: [

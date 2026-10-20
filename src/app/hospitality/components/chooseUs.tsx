@@ -38,7 +38,7 @@ function ChooseUs() {
               ? "Hotel"
               : "Hospitality"
       } `,
-      subtitle: `With a decade of experience in the ${
+      subtitle: `With 15+ years of experience in the ${
         pathName === "/resort/"
           ? "Resort"
           : pathName === "/hospitality/"

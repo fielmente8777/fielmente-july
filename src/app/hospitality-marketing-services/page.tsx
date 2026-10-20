@@ -303,10 +303,10 @@ function page() {
           <div className="grid lg:grid-cols-4 grid-cols-2 gap-8 py-6 mt-20">
             <div className="flex flex-col gap-2">
               <h2 className="lg:text-5xl text-2xl font-bold text-black text-center">
-                3K+
+                500+
               </h2>
               <p className="lg:text-lg text-base font-medium text-gray-primary text-center">
-                COMPLETED PROJECTS
+                HOTELS SERVED
               </p>
             </div>
             <div className="flex flex-col gap-2">

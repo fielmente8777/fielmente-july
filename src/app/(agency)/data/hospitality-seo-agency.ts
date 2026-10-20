@@ -21,7 +21,7 @@ const page: AgencyPageData = {
     lede: "Google's research with Ipsos across 10 countries found that just over half of travellers (53%) turn to Google Search regularly for travel content[[GL13]]. We fix what stops hotel, resort and restaurant websites ranking, build the local and destination pages guests look for, and report the results as enquiries and bookings.",
     chips: [
       "Led by a WGSHA Manipal hotelier, formerly in sales and marketing at Marriott and Hyatt",
-      "120+ hotel marketing projects since 2020",
+      "500+ hotels served across 10+ countries since 2020",
       "Certified Google Partner and Meta Business Partner",
     ],
   },

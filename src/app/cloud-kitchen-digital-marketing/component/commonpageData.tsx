@@ -30,12 +30,12 @@ export const commonPageData = [
     },
     stats: [
       {
-        value: "70+",
-        label: "Hoteliers Trust Us",
+        value: "50+",
+        label: "Restaurants Served",
       },
       {
-        value: "90+",
-        label: "Projects Completed",
+        value: "10+",
+        label: "Countries Served",
       },
       {
         value: "89%",
@@ -130,8 +130,8 @@ export const commonPageData = [
       image: "/industry/restaurant-2.png",
     },
     stats: [
-      { value: "70+", label: "Hoteliers Trust Us" },
-      { value: "90+", label: "Projects Completed" },
+      { value: "50+", label: "Restaurants Served" },
+      { value: "10+", label: "Countries Served" },
       { value: "89%", label: "Satisfaction Rate" },
       { value: "15+", label: "Years of Experience" },
     ],
@@ -308,8 +308,8 @@ export const commonPageData = [
       },
     },
     stats: [
-      { value: "70+", label: "Hoteliers Trust Us" },
-      { value: "90+", label: "Projects Completed" },
+      { value: "50+", label: "Restaurants Served" },
+      { value: "10+", label: "Countries Served" },
       { value: "89%", label: "Satisfaction Rate" },
       { value: "15+", label: "Years of Experience" },
     ],

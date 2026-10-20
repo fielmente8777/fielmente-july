@@ -13,13 +13,13 @@ export const landingPageData = [
     metaData: {
       title: "India's Leading Hotel Marketing Agency | Fielmente",
       description:
-        "Trusted by 120+ hotels across India, UAE & UK. Increase direct bookings by 30-50% with Fielmente’s hotel marketing strategies and AI tools.",
+        "Trusted by 500+ hotels across 10+ countries. Increase direct bookings by 30-50% with Fielmente’s hotel marketing strategies and AI tools.",
     },
 
     heroSection: {
       title:
         "Grow Your Hotel’s Direct and OTA Bookings by <span>30 - 50%</span>",
-      subtitle: "Trusted by 120+ Hotels & Resorts Across India, UAE & UK",
+      subtitle: "Trusted by 500+ Hotels & Resorts Across 10+ Countries",
       description:
         "Worked with more than 500+ brands since 2020 across the globe we help to increase revenue through our marketing strategies and Eazotel product",
       cta: "Get A FREE Consultation!",
@@ -105,7 +105,7 @@ export const landingPageData = [
         no: "500+",
         list: [
           "Hotels & Resorts Served",
-          "Hospitality brands across India, UAE & UK trust <span class='text-color4'>Fielmente</span> to grow their direct bookings.",
+          "Hospitality brands across 10+ countries trust <span class='text-color4'>Fielmente</span> to grow their direct bookings.",
         ],
         growthPercentage: [
           {
@@ -187,7 +187,7 @@ export const landingPageData = [
       // subTitle: "Ready to Grow Your Hospitality Business?",
       subTitle: "Grow Your Hotel Resort Business?",
       description:
-        "Join 120+ hospitality brands already growing their direct revenue. Let's build a strategy tailored to your property.",
+        "Join 500+ hotels already growing their direct revenue. Let's build a strategy tailored to your property.",
       src: "/landing-pages/grow-Card.jpg",
       ctaS: [
         // {
@@ -209,7 +209,7 @@ export const landingPageData = [
       title: "Our Services",
       subTitle: "Everything Your Hotel Needs to <span>Book Direct</span>",
       points: [
-        "<span class='text-primary! font-medium' >120+ hotels</span> served",
+        "<span class='text-primary! font-medium' >500+ hotels</span> served",
         "<span class='text-primary! font-medium' >+38%</span> avg. direct revenue lift",
         "⭐ <span class='text-primary! font-medium' >4.8</span> client satisfaction",
       ],
@@ -307,7 +307,7 @@ export const landingPageData = [
       title: "OUR PRODUCTS",
       subTitle: "AI Tools That Grow Bookings & Enhance Guest Experience",
       description:
-        "Our AI-powered hotel tools are built to increase direct bookings, cut OTA costs, and enhance guest experiences — helping you grow revenue while streamlining operations.<br/>Trusted by 120+ hotels & resorts worldwide",
+        "Our AI-powered hotel tools are built to increase direct bookings, cut OTA costs, and enhance guest experiences — helping you grow revenue while streamlining operations.<br/>Trusted by 500+ hotels & resorts worldwide",
       cta: {
         label: "Get a Demo",
         type: btnType,

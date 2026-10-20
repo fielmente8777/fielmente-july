@@ -30,15 +30,15 @@ export const subPageData = [
       },
       stats: [
         {
-          value: "3K+",
-          label: "COMPLETED PROJECTS",
+          value: "500+",
+          label: "HOTELS SERVED",
         },
         {
           value: "89%",
           label: "SATISFACTION RATE",
         },
         {
-          value: "15",
+          value: "15+",
           label: "YEARS OF EXPERIENCE",
         },
       ],
@@ -223,15 +223,15 @@ export const subPageData = [
       },
       stats: [
         {
-          value: "3K+",
-          label: "COMPLETED PROJECTS",
+          value: "500+",
+          label: "HOTELS SERVED",
         },
         {
           value: "89%",
           label: "SATISFACTION RATE",
         },
         {
-          value: "15",
+          value: "15+",
           label: "YEARS OF EXPERIENCE",
         },
       ],
@@ -398,15 +398,15 @@ export const subPageData = [
       },
       stats: [
         {
-          value: "3K+",
-          label: "COMPLETED PROJECTS",
+          value: "50+",
+          label: "RESTAURANTS SERVED",
         },
         {
           value: "89%",
           label: "SATISFACTION RATE",
         },
         {
-          value: "15",
+          value: "15+",
           label: "YEARS OF EXPERIENCE",
         },
       ],
@@ -571,15 +571,15 @@ export const subPageData = [
       },
       stats: [
         {
-          value: "3K+",
-          label: "COMPLETED PROJECTS",
+          value: "50+",
+          label: "RESTAURANTS SERVED",
         },
         {
           value: "89%",
           label: "SATISFACTION RATE",
         },
         {
-          value: "15",
+          value: "15+",
           label: "YEARS OF EXPERIENCE",
         },
       ],
@@ -745,15 +745,15 @@ export const subPageData = [
       },
       stats: [
         {
-          value: "3K+",
-          label: "COMPLETED PROJECTS",
+          value: "500+",
+          label: "HOTELS SERVED",
         },
         {
           value: "89%",
           label: "SATISFACTION RATE",
         },
         {
-          value: "15",
+          value: "15+",
           label: "YEARS OF EXPERIENCE",
         },
       ],
@@ -939,15 +939,15 @@ export const subPageData = [
       },
       stats: [
         {
-          value: "3K+",
-          label: "COMPLETED PROJECTS",
+          value: "50+",
+          label: "RESTAURANTS SERVED",
         },
         {
           value: "89%",
           label: "SATISFACTION RATE",
         },
         {
-          value: "15",
+          value: "15+",
           label: "YEARS OF EXPERIENCE",
         },
       ],
@@ -1121,15 +1121,15 @@ export const subPageData = [
       },
       stats: [
         {
-          value: "3K+",
-          label: "COMPLETED PROJECTS",
+          value: "50+",
+          label: "RESTAURANTS SERVED",
         },
         {
           value: "89%",
           label: "SATISFACTION RATE",
         },
         {
-          value: "15",
+          value: "15+",
           label: "YEARS OF EXPERIENCE",
         },
       ],

@@ -17,12 +17,12 @@ function MileStones() {
       <div className='lg:block hidden'>
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
           <div className="flex flex-col items-center gap-5">
-            <h2 className="text-primary2 text-4xl font-bold">170+</h2>
-            <p className="text-lg text-primary2">Hoteliers Trust Us</p>
+            <h2 className="text-primary2 text-4xl font-bold">500+</h2>
+            <p className="text-lg text-primary2">Hotels Served</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <h2 className="text-primary2 text-4xl font-bold">90+</h2>
-            <p className="text-lg text-primary2">Projects Completed</p>
+            <h2 className="text-primary2 text-4xl font-bold">10+</h2>
+            <p className="text-lg text-primary2">Countries Served</p>
           </div>
           <div className="flex flex-col items-center gap-5">
             <h2 className="text-primary2 text-4xl font-bold">89%</h2>
@@ -61,14 +61,14 @@ function MileStones() {
 
             <SwiperSlide>
               <div className="flex flex-col items-center gap-5">
-                <h2 className="text-primary2 text-4xl font-bold">170+</h2>
-                <p className="text-lg text-primary2">Hoteliers Trust Us</p>
+                <h2 className="text-primary2 text-4xl font-bold">500+</h2>
+                <p className="text-lg text-primary2">Hotels Served</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex flex-col items-center gap-5">
-                <h2 className="text-primary2 text-4xl font-bold">90+</h2>
-                <p className="text-lg text-primary2">Projects Completed</p>
+                <h2 className="text-primary2 text-4xl font-bold">10+</h2>
+                <p className="text-lg text-primary2">Countries Served</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>

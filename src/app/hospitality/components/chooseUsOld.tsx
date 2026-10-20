@@ -249,7 +249,7 @@ const ChooseUsData = [
   {
     title: `Expertise in Hospitality`,
     subtitle:
-      "With a decade of experience in the hospitality industry, we are the perfect partner to market your hotel, resort, villa & restaurant.",
+      "With 15+ years of experience in the hospitality industry, we are the perfect partner to market your hotel, resort, villa & restaurant.",
     Icon: <ExpertiseIcon />,
   },
   {

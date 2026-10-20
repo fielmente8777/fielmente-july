@@ -25,7 +25,7 @@ const page: AgencyPageData = {
     lede: "US online travel agencies took $100.3 billion in gross bookings in 2025, and hotels made up 63% of that total[[US5]]. We help independent and franchised hotels win back more of that demand through Google, AI search and their own guest lists, with a hotelier-led team that plans its day around yours.",
     chips: [
       "Google Partner and Meta Business Partner",
-      "120+ hotel marketing projects since 2020",
+      "500+ hotels served across 10+ countries since 2020",
       "Founded by a hotelier with sales and marketing experience at Marriott and Hyatt",
     ],
   },

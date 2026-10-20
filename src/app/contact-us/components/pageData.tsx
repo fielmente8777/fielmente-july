@@ -3,7 +3,7 @@ import { ClientImages } from "@/utils/client";
 
 export const contactUsPageData = {
   clients: {
-    title: "Trusted by <span>120+ hotels</span> worldwide",
+    title: "Trusted by <span>500+ hotels</span> worldwide",
     clients: ClientImages,
   },
   businessPartners: homePageData.businessPartnersData.cards,

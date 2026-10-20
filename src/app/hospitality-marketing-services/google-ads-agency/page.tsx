@@ -154,18 +154,18 @@ function page() {
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="lg:text-3xl text-2xl font-bold text-white text-center">
-                70+
+                500+
               </h2>
               <p className="lg:text-lg text-base font-medium text-white text-center">
-                HOTELIERS TRUST US
+                HOTELS SERVED
               </p>
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="lg:text-3xl text-2xl font-bold text-white text-center">
-                90+
+                10+
               </h2>
               <p className="lg:text-lg text-base font-medium text-white text-center">
-                PROJECTS COMPLETED
+                COUNTRIES SERVED
               </p>
             </div>
           </div>

@@ -60,7 +60,7 @@ export const homePageData = {
       href: "",
     },
     milestone: [
-      { number: "120+", description: "Hotels Served" },
+      { number: "500+", description: "Hotels Served" },
       { number: "95%", description: "Client Retention" },
       { number: "4X", description: "Avg. Campaign ROI" },
     ],
@@ -136,11 +136,11 @@ export const homePageData = {
     listData: [
       "95% client retention rate from satisfied partners",
       "Average 40% increase in direct bookings within 3 months",
-      "120+ hotels & resorts served across India, UAE, UK & beyond",
+      "500+ hotels & resorts and 50+ restaurants served across 10+ countries",
     ],
     stats: [
-      { number: "120+", label: "Hotels & Resorts Served" },
-      { number: "5+ Years", label: "Years of Hospitality Expertise" },
+      { number: "500+", label: "Hotels & Resorts Served" },
+      { number: "15+", label: "Years of Hospitality Expertise" },
       { number: "95%", label: "Client Satisfaction" },
       { number: "30-40%", label: "Increase in Direct Bookings" },
     ],
@@ -677,7 +677,7 @@ export const homePageData = {
         icon: <ExecuteIcon />,
         title: `Expertise in hotel`,
         subtitle:
-          "With a decade of experience in the hotel industry, we are the perfect partner to market your hotel, resort, villa & restaurant.",
+          "With 15+ years of experience in the hotel industry, we are the perfect partner to market your hotel, resort, villa & restaurant.",
       },
       {
         icon: <StrategicSocialMediaMarketingForHotel />,
@@ -733,7 +733,7 @@ export const homePageData = {
     description: [
       "Choose Fielmente – a leading Hospitality Marketing Agency, <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency</a>, and <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Agency</a> as your growth partner. We help hotels, resorts, and restaurants elevate their presence in the digital world with strategies designed specifically for the hospitality industry.",
       "At Fielmente, your stories are worth telling, and we craft campaigns that make your brand stand out from the rest. From hotel social media marketing and search engine optimization for hotels to paid advertising, website optimization, and complete digital strategy, our services cover every aspect of hospitality marketing. Our team brings experience from diverse domains to ensure maximum brand visibility, higher direct bookings, and measurable return on investment.",
-      "Since 2020, we have completed 120+ hotel marketing projects across India, consistently achieving a 95% satisfaction rate. What began as a focused initiative has grown into one of the best restaurant and hotel marketing agencies in India, known for personalized strategies, strong brand positioning, and performance-driven results.",
+      "Since 2020, we have worked with 500+ hotels and 50+ restaurants across 10+ countries, consistently achieving a 95% satisfaction rate. What began as a focused initiative has grown into one of the best restaurant and hotel marketing agencies in India, known for personalized strategies, strong brand positioning, and performance-driven results.",
       "As a specialized hospitality marketing company for hotels and restaurants, we design and execute impactful campaigns that attract guests, increase online visibility, and drive revenue. Our expertise in social media marketing, search engine optimization, performance marketing, and content strategy ensures sustainable growth through cutting-edge digital techniques.",
       "If you’re looking for a trusted <a href='/industries-we-serve/hotel-marketing-agency/'>hotel marketing agency in India</a>, partner with Fielmente to transform your hospitality business with proven strategies and innovative marketing solutions.",
     ],
