@@ -80,9 +80,9 @@ const Form1 = () => {
       noValidate
     >
       <FormShield />
-      <h2 className="text-xl md:text-2xl font-normal text-white">
+      <p className="text-xl md:text-2xl font-normal text-white">
         Get A FREE Consultation!
-      </h2>
+      </p>
       <p className="text-white max-md:text-sm">
         Let&apos;s work on boosting your hotel&apos;s profitability!
       </p>

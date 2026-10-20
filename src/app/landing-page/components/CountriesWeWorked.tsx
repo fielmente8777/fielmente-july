@@ -29,6 +29,7 @@ const CountriesWeWorked: React.FC<CountriesWeWorkedDataTypes> = ({
         subTitleColor="white"
         subTitleClassName="span-color"
         wrapperClassName="max-w-4xl mx-auto gap-4"
+        asText
       />
       <div className="w-full aspect-4/1.5 relative">
         <Image

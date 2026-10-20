@@ -97,9 +97,9 @@ export const GetFreeDashboardAccessCard: React.FC<
         </div>
 
         {/* Title */}
-        <h3 className="text-2xl leading-none font-semibold text-white">
+        <p className="text-2xl leading-none font-semibold text-white">
           {title}
-        </h3>
+        </p>
 
         {/* Description */}
         <p className=" text-[#B8B8B8]">

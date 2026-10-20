@@ -98,9 +98,10 @@ const LandingPgForm = ({
       className={`flex flex-col gap-4 justify-between md:h-full p-4 md:p-6  text-base rounded-2xl w-full  ${bgColor ? bgColor : "bg-[#010101]"} ${textColor ? textColor : "text-white"}`}
     >
       <FormShield />
-      <h2 className="text-xl md:text-2xl text-center font-semibold ">
+      {/* Form title as text, not a heading: it is not a section of the page's content. */}
+      <p className="text-xl md:text-2xl text-center font-semibold ">
         Get A FREE Consultation!
-      </h2>
+      </p>
       <p className={`font-medium text-center ${subTextColor && subTextColor}`}>
         Let&apos;s work on boosting your hotel&apos;s profitability!
       </p>

@@ -8,7 +8,7 @@ import ClientsSlider from "@/components/slider/ClientsSlider";
 const OurValuedClient: React.FC<ClientsDataTypes> = ({ title, clients }) => {
   return (
     <SectionWithContainer containerClassName="grid lg:grid-cols-5 items-center gap-10">
-      <h2
+      <p
         className="md:text-2xl text-xl font-semibold text-primary lg:col-span-1 span-color-2"
         dangerouslySetInnerHTML={{ __html: title || "" }}
       />

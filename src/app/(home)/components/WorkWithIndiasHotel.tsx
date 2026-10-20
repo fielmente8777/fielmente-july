@@ -14,7 +14,7 @@ const WorkWithIndiasHotel: React.FC<Props> = ({ title, description }) => {
     <SectionWithContainer sectionClassName="relative after:absolute md:after:inset-x-4 after:inset-x-1 md:after:inset-y-0 after:inset-y-2 md:after:rounded-2xl after:rounded-xl after:bg-black after:z-[-1]"
     containerClassName="space-y-7"
     >
-      <SectionHeading subTitle={title} subLevel={2} subTitleColor="white" wrapperClassName="max-w-2xl"  />
+      <SectionHeading subTitle={title} subLevel={2} subTitleColor="white" wrapperClassName="max-w-2xl" asText />
       <div className="space-y-6 inter-link-2">
         {description.map((item, index) => (
           <p

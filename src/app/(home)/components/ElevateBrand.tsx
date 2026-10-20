@@ -23,9 +23,9 @@ const ElevateBrand: React.FC<Props> = ({ title, description, button, src, alt })
       <div className="elevate-brand">
         <div className="grid lg:grid-cols-[1.3fr_1fr] grid-cols-1 items-center max-w-304 max-md:gap-6 md:ml-auto py-8">
           <div className="text-white space-y-4 max-w-lg max-md:px-4">
-            <h2 className="md:text-[2.1rem] text-2xl font-semibold max-w-md">
+            <p className="md:text-[2.1rem] text-2xl font-semibold max-w-md">
               {title}
-            </h2>
+            </p>
             <p
               className="inter-link-2"
               dangerouslySetInnerHTML={{ __html: description || "" }}

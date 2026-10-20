@@ -24,7 +24,7 @@ export const ChooseCard1: React.FC<
       >
         <SectionHeading
           subTitle={heading}
-          subLevel={2}
+          subLevel={3}
           subTitleClassName="lg:text-[36px]"
         />
         <p

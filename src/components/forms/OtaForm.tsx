@@ -184,9 +184,9 @@ const OtaForm = () => {
       className="flex flex-col gap-2 max-md:p-4 px-4 py-6  rounded-xl w-full bg-[#FFFFFF]"
       noValidate
     >
-      <h2 className="text-2xl  font-semibold text-primary2">
+      <p className="text-2xl  font-semibold text-primary2">
         Get A FREE Consultation!
-      </h2>
+      </p>
 
       {formFields.map((field) => (
         <div key={field.id} className="flex flex-col gap-1">

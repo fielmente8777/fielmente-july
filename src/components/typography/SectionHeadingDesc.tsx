@@ -22,6 +22,8 @@ interface SectionHeadingDescProps {
   fontPrimary?: boolean;
   titleWrapperClassName?: string;
   iconClassName?: string;
+  /** Show the label and main line as styled text, not headings (call-to-action bands, logo strips). */
+  asText?: boolean;
 }
 
 const SectionHeading: React.FC<SectionHeadingDescProps> = ({
@@ -41,6 +43,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   subLevel,
   titleWrapperClassName = "",
   iconClassName = "",
+  asText = false,
 }) => {
   const titleLevel = level ?? 2;
   // A short label above a section heading ("OUR SERVICES", "FAQS") is not a heading of its own:
@@ -67,7 +70,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
           )}
           <Headings
             level={titleLevel}
-            as={labelAsText ? "p" : undefined}
+            as={labelAsText || asText ? "p" : undefined}
             heading={title}
             className={`${titleClassName} ${
               mdTextCenter ? "md:text-center" : ""
@@ -82,6 +85,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
       {subTitle && (
         <Headings
           level={subTitleLevel}
+          as={asText ? "p" : undefined}
           className={`md:text-[2.5rem]/[3rem] text-xl font-semibold ${subTitleClassName} ${subTitleColor ? `text-${subTitleColor}` : "text-primary"} ${
             mdTextCenter ? "md:text-center" : ""
           } ${textCenter ? "text-center mx-auto" : ""} ${
