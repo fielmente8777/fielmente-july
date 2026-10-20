@@ -144,16 +144,17 @@ export const casStudiesData: CaseStudy[] = [
   {
     slug: "anand-vardhan-resort",
     metaData: {
-      title: "SEO Case Study: Anand Vardhan Resorts | Fielmente Results",
+      title: "Hotel SEO Case Study: Anand Vardhan Resorts | Fielmente",
       description:
-        "See how Fielmente ranked Anand Vardhan Resorts #1 on Google for vegetarian and wellness resort keywords in Manali within 2 months using SEO strategies.",
+        "See the keyword strategy and SEO improvements behind Anand Vardhan Resorts' visibility gains, including methodology and search outcomes.",
     },
     className: "object-contain",
     img: "/avr-logo.png",
     hotelImg: "/abt2.webp",
     title: "SEO Success Story for Anand Vardhan Resorts",
+    // Short summary for the banner and case-study cards; the full objective is in the "Objective" section.
     description:
-      "Anand Vardhan Resorts aimed to improve its organic visibility for niche, high-intent keywords related to vegetarian resorts in Naggar and Manali, wellness resorts in Himachal Pradesh, and pure vegetarian resort options. The goal was to attract targeted traffic from travelers searching for vegetarian-friendly and wellness-oriented stays in the region.",
+      "How Fielmente's SEO took Anand Vardhan Resorts to the first page of Google for vegetarian and wellness resort searches in Naggar and Manali within two months.",
     data: [
       {
         title: "Overview",
@@ -361,8 +362,8 @@ export const casStudiesData: CaseStudy[] = [
   {
     slug: "naad-wellness-google-ads",
     metaData: {
-      title: "Google Ads Case Study: Naad Wellness | Fielmente",
-      description: "How Fielmente grew Naad Wellness's Google Ads enquiries 24× and cut cost per enquiry by 83% — 1 in 4 clicks now becomes an enquiry.",
+      title: "Naad Wellness Google Ads Case Study | Fielmente",
+      description: "Discover the Google Ads tracking, landing-page and campaign changes Fielmente used for Naad Wellness, with documented results.",
     },
     className: "object-contain",
     img: "/clientsLogo/naad-wellness.png",

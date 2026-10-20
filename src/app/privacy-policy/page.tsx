@@ -1,6 +1,7 @@
 import { Section, Container } from "@/components";
 import { Metadata } from "next";
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Fielmente Hospitality Marketing",
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <main className="page_date">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Privacy Policy", path: "/privacy-policy/" }]} />
       <Section>
         <Container>
           <h1>Privacy Policy</h1>

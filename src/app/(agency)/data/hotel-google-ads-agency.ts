@@ -14,9 +14,9 @@ const page: AgencyPageData = {
   cardLine: "Search, Performance Max and Hotel Ads, measured on calls, chats and bookings",
   areaServed: "Worldwide",
   meta: {
-    title: "Hotel Google Ads Agency: Search, PMax & Hotel Ads",
+    title: "Hotel Google Ads Agency | Fielmente",
     description:
-      "Google Ads for hotels and resorts: Search, Performance Max, Hotel Ads, Demand Gen and YouTube, tracked to calls, WhatsApp and bookings. Free account audit.",
+      "Reach guests ready to book using hotel Search ads, Performance Max and conversion tracking linked to calls, WhatsApp and enquiries.",
   },
   hero: {
     eyebrow: "Hotel Google Ads agency",

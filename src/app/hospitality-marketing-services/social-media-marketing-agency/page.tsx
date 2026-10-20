@@ -6,6 +6,7 @@ import ContactSection from "@/app/landing-page/components/ContactSection";
 import { landingPageData } from "@/app/landing-page/components/pageData";
 import type { Metadata } from "next";
 import ContactBtn3 from "../contactbtn/ContactBtn3";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Hospitality Social Media Marketing Agency | Fielmente",
@@ -81,6 +82,7 @@ const CardData2 = [
 function page() {
   return (
     <section className="bg-[#1E1928] pt-10">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Services", path: "/hospitality-marketing-services/" }, { name: "Social Media Marketing Agency", path: "/hospitality-marketing-services/social-media-marketing-agency/" }]} />
       <div className="bg-[#1E1928] text-white py-20">
         <div className="max_width">
           {/* Hospitality Social Media Marketing:***** */}

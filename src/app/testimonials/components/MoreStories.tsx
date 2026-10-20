@@ -65,8 +65,8 @@ const MoreStories: React.FC<MoreStoriesPropsType> = ({
                 dangerouslySetInnerHTML={{ __html: description }}
               ></p>
               <p className="text-white text-lg lg:hidden">
-                Hotels across India use Eazotel to build better websites,
-                increase direct bookings, and reduce OTA dependency.
+                Hotels across India work with Fielmente and Eazotel to build better
+                websites, increase direct bookings and reduce OTA dependency.
               </p>
               <CtaBtn
                 type="button"

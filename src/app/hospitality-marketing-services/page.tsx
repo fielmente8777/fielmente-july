@@ -10,6 +10,7 @@ import Contactbtn1 from "./contactbtn/Contactbtn1";
 import Contactbtn2 from "./contactbtn/Contactbtn2";
 import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
 import { homePageData } from "../(home)/homePageData";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality Marketing Services - Fielmente",
@@ -114,6 +115,7 @@ const chooseUsData = [
 function page() {
   return (
     <section className="bg-gradient">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Services", path: "/hospitality-marketing-services/" }]} />
       {/* Boost Your Business with Fielmente, India's top Hospitality Marketing Services! */}
       <div className="lg:py-20 py-9  max_width">
         <div className="max_width">

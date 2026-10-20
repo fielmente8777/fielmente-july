@@ -4,6 +4,7 @@ import { clientPageData } from "./components/pageData";
 import ClientSection from "./components/ClientSection";
 import CommonTowColGridLayoutSection from "@/components/commonSections/CommonTowColGridLayoutSection";
 import { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Our Clients | Hospitality Brands That Trust Fielmente",
@@ -35,6 +36,7 @@ export const metadata: Metadata = {
 export default function OurClientsPage() {
   return (
     <main>
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Our Clients", path: "/our-clients/" }]} />
       <TextBanner {...clientPageData.bannerData} />
 
       <CommonTowColGridLayoutSection

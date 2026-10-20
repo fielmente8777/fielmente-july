@@ -9,6 +9,7 @@ import {
   RevenueManagementServices,
 } from "./component";
 import OurClients from "./component/OurClients";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata = {
   title: "Hotel OTA & Revenue Management Agency | Fielmente",
@@ -62,6 +63,7 @@ export const metadata = {
 const page = () => {
   return (
     <main className="overflow-x-clip mt-22 border-t border-main-border">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Hotel OTA Management", path: "/hotel-ota-management/" }]} />
       <Banner2 {...newPagedata.bannerData} />
       <Revenue {...newPagedata.revenue} />
       <RevenueManagementServices {...newPagedata.revenueManagementServices} />

@@ -225,7 +225,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
         { icon: "brain", title: "AI visibility audit", body: `How ChatGPT, Gemini and Perplexity answer questions like ${q(I.searches[1])}.` },
         { icon: "file", title: "Answer-ready content", body: "FAQ and guide content written the way people ask questions." },
         { icon: "layers", title: "Structured data", body: "Schema markup so machines understand your offering, location and prices." },
-        { icon: "badge", title: "Entity consistency", body: `The same facts across your website, Google profile and ${I.reviewSites}.` },
+        { icon: "badge", title: "Entity consistency", body: `The same facts across your website and your listings on ${I.reviewSites}.` },
         { icon: "star", title: "Reviews and mentions", body: "Signals AI tools rely on: reviews, press and trusted mentions." },
         { icon: "bars", title: "AI answer tracking", body: "Monthly checks on where and how you're recommended." },
       ],

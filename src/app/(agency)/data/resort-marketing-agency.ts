@@ -18,7 +18,7 @@ const page: AgencyPageData = {
   meta: {
     title: "Resort Marketing Agency in India | Fielmente",
     description:
-      "Resort marketing for India's hill, beach and wellness resorts: Google Ads, SEO, OTAs, WhatsApp and packages that fill weekdays and the off-season. Free plan.",
+      "Reach high-value resort guests through SEO, performance marketing and campaigns built around occupancy, seasonality and booking demand.",
   },
   hero: {
     eyebrow: "Resort marketing agency · India",

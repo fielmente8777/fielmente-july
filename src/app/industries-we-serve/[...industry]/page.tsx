@@ -22,6 +22,7 @@ import WhyYouNeedGrid from "./components/WhyYouNeedGrid";
 import { subPageData } from "./components/subPageData";
 import { industriesData } from "./pageData";
 import { notFound } from "next/navigation";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import AgencyPage, { agencyMetadata } from "@/app/(agency)/components/AgencyPage";
 import { getAgencyPage } from "@/app/(agency)/data";
 import IndustryServicesGrid from "../components/templates/IndustryServicesGrid";
@@ -173,6 +174,14 @@ export async function generateMetadata({ params }: Params) {
   };
 }
 
+// Breadcrumb trail for the older industry pages (e.g. cloud kitchen): Home > Industries > page.
+const titleCase = (s: string) => s.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+const legacyCrumbs = (slug: string[]) => [
+  { name: "Home", path: "/" },
+  { name: "Industries We Serve", path: "/industries-we-serve/" },
+  ...slug.map((s, i) => ({ name: titleCase(s), path: `/industries-we-serve/${slug.slice(0, i + 1).join("/")}/` })),
+];
+
 export default async function IndustryPage({ params }: Params) {
   const data = await params;
   const slug = await data.industry;
@@ -202,6 +211,7 @@ export default async function IndustryPage({ params }: Params) {
     }
     return (
       <main className="mt-10">
+        <BreadcrumbJsonLd items={legacyCrumbs(slug)} />
         {industry?.banner && <GridCard {...industry.banner} />}
         {industry?.banner2 && <Banner2 {...industry.banner2} />}
         {industry?.MarketingStrategy && (
@@ -262,6 +272,7 @@ export default async function IndustryPage({ params }: Params) {
     }
     return (
       <main className="mt-10">
+        <BreadcrumbJsonLd items={legacyCrumbs(slug)} />
         {subPageSlug?.banner && <SubPageBanner {...subPageSlug?.banner} />}
         <div className="max_width h-px bg-[#D1D5DB] my-4" />
         {subPageSlug?.benefitsSection && (

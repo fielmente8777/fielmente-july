@@ -15,9 +15,9 @@ const page: AgencyPageData = {
   cardLine: "More direct bookings for independent and franchised US hotels, with calls in your hours",
   areaServed: "United States",
   meta: {
-    title: "Hotel Marketing Agency USA | Direct Bookings | Fielmente",
+    title: "Hotel Marketing Agency USA | Fielmente",
     description:
-      "Hotel marketing for independent and franchised US hotels: Google Hotel Ads, SEO, AI search, email and SMS that win direct bookings. Get a free growth plan.",
+      "Build qualified hotel demand through paid search, SEO, metasearch and direct booking campaigns with clear performance reporting.",
   },
   hero: {
     eyebrow: "Hotel marketing agency · USA",

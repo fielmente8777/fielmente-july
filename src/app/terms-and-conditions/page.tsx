@@ -1,6 +1,7 @@
 import React from "react";
 
 import type { Metadata } from "next";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions - Fielmente",
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
 function page() {
   return (
     <section>
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Terms and Conditions", path: "/terms-and-conditions/" }]} />
       <div className="max-width mx-auto py-20 flex flex-col gap-8">
         <h1 className="text-4xl font-bold text-black">TERMS OF USE</h1>
         <div>

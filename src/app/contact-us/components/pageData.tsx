@@ -10,14 +10,14 @@ export const contactUsPageData = {
   ctaSection: {
     title: "Start growing with Fielmente",
     description:
-      "Run your hotel operations effortlessly with our free plan. Upgrade anytime to unlock advanced automation, integrations, and revenue tools.",
+      "Tell us about your property and get a free marketing audit with a plan to grow your direct bookings.",
     ctas: [
       {
-        label: "Try Fielmente",
+        label: "Get a Free Audit",
         href: "/contact-us",
       },
       {
-        label: "Book a Demo",
+        label: "Book a Free Consultation",
         href: "/contact-us",
       },
     ],

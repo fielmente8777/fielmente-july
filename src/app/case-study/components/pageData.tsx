@@ -19,9 +19,9 @@ export const caseStudyPageData = {
   },
   ctaData: {
     title: "Want Results Like These?",
-    description: "Let's discuss how Eazotel can transform your property.",
+    description: "Let's discuss what Fielmente can do for your property's direct bookings.",
     cta: {
-      label: "Book a Demo",
+      label: "Book a Free Consultation",
       href: "",
     },
   },

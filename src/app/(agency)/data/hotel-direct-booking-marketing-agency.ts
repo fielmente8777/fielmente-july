@@ -13,7 +13,7 @@ const page: AgencyPageData = {
   meta: {
     title: "Hotel Direct Booking Marketing Agency | Fielmente",
     description:
-      "Win bookings back from OTAs with a booking engine, rate parity, member rates, brand search, free booking links, WhatsApp and CRM, run as one direct plan.",
+      "Reduce OTA dependence with a direct-booking strategy combining SEO, hotel ads, booking-page improvements and fast WhatsApp follow-up.",
   },
   hero: {
     eyebrow: "Direct booking marketing agency",

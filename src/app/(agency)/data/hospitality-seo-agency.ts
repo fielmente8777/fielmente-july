@@ -13,7 +13,7 @@ const page: AgencyPageData = {
   meta: {
     title: "Hospitality SEO Agency for Hotels & Resorts | Fielmente",
     description:
-      "SEO for hotels, resorts and restaurants: technical fixes, local SEO, schema, destination content and AI search visibility, measured in enquiries and bookings.",
+      "Find SEO opportunities across technical, local and content search with measurable strategies for hotels, resorts and other hospitality brands.",
   },
   hero: {
     eyebrow: "Hospitality SEO agency",

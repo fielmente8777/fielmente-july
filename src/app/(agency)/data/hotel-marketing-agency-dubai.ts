@@ -11,9 +11,9 @@ const page: AgencyPageData = {
   cardLine: "Direct bookings for Dubai hotels as demand recovers through 2026",
   areaServed: "Dubai, United Arab Emirates",
   meta: {
-    title: "Hotel Marketing Agency in Dubai | Fielmente",
+    title: "Hotel Marketing Agency Dubai | Fielmente",
     description:
-      "Hotel marketing for Dubai: Google Ads, metasearch, SEO, WhatsApp and revenue-led campaigns that win direct bookings from every source market. Free growth plan",
+      "Grow direct demand with hotel SEO, advertising, metasearch, social content and WhatsApp campaigns tailored to Dubai travellers.",
   },
   hero: {
     eyebrow: "Hotel marketing agency · Dubai",

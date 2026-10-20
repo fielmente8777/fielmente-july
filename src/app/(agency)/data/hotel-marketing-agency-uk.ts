@@ -15,9 +15,9 @@ const page: AgencyPageData = {
   cardLine: "Direct bookings for London and regional UK hotels, planned around UK rules and seasons",
   areaServed: "United Kingdom",
   meta: {
-    title: "Hotel Marketing Agency UK | London & Regional | Fielmente",
+    title: "Hotel Marketing Agency UK | Fielmente",
     description:
-      "Hotel marketing for London and regional UK hotels: Google, SEO, AI search, OTA management and consent-led email that win more direct bookings. Free plan.",
+      "Reach leisure and business travellers with hotel SEO, performance advertising, OTA strategy and booking journey improvements.",
   },
   hero: {
     eyebrow: "Hotel marketing agency · United Kingdom",

@@ -18,7 +18,7 @@ const page: AgencyPageData = {
   meta: {
     title: "Boutique Hotel Marketing Agency | Fielmente",
     description:
-      "Marketing for independent boutique hotels: brand story, Instagram and creators, local and AI search, reviews and direct bookings a small team can run.",
+      "Help independent hotels attract the right guests with distinctive content, organic search, paid campaigns and direct booking strategy.",
   },
   hero: {
     eyebrow: "Boutique hotel marketing agency",

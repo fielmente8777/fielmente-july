@@ -27,10 +27,10 @@ import { COUNTRY_HREFLANG } from "@/lib/hreflang";
 import { contacts } from "../../../contact";
 
 const SITE = "https://fielmente.com";
-const TITLE = "Hotel & Hospitality Marketing Agency in India | Fielmente";
+const TITLE = "Hospitality Marketing Agency in India | Fielmente";
 // Kept under ~150 characters so Google (and SEO checkers, max ~1000px) show it in full.
 const DESCRIPTION =
-  "Fielmente is a hotel marketing agency in India for hotels, resorts & restaurants: Google Ads, SEO, social media and OTA management for direct bookings.";
+  "Grow direct bookings with a hospitality marketing agency for hotels, resorts and restaurants. Explore SEO, Google Ads, AI and measurable client results.";
 
 export const metadata: Metadata = {
   title: TITLE,

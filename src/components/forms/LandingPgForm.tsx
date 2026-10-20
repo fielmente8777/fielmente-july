@@ -3,7 +3,7 @@
 import useConsultationForm, {
   ConsultationFormData,
 } from "@/hooks/useConsultationForm";
-import React from "react";
+import React, { useId } from "react";
 import CountryCodeOptions from "./CountryCodeOptions";
 import FormShield from "@/components/forms/FormShield";
 
@@ -35,6 +35,8 @@ const LandingPgForm = ({
   placeholderColor?: string;
   inputBgColor?: string;
 }) => {
+  // Ties each visible label to its field (several of these forms can be on one page).
+  const uid = useId();
   // const pathName = usePathname();
   const {
     formData,
@@ -106,13 +108,14 @@ const LandingPgForm = ({
       <div className="flex flex-col justify-between gap-4">
         {formFields.map((field, index) => (
           <div key={index} className={`flex flex-col gap-2 `}>
-            <label className={`font-medium ${subTextColor && subTextColor}`}>
+            <label htmlFor={`${uid}-${field.name}`} className={`font-medium ${subTextColor && subTextColor}`}>
               {field.label}
             </label>
 
             {field.tag === "input" && (
               <input
                 type={field.type}
+                id={`${uid}-${field.name}`}
                 name={field.name}
                 placeholder={field.placeholder}
                 required={field.required}
@@ -125,6 +128,7 @@ const LandingPgForm = ({
             {field.tag === "textarea" && (
               <textarea
                 name={field.name}
+                id={`${uid}-${field.name}`}
                 placeholder={field.placeholder}
                 required={field.required}
                 value={field.value}
@@ -148,6 +152,7 @@ const LandingPgForm = ({
                 </select>
                 <input
                   type="tel"
+                  id={`${uid}-${field.name}`}
                   name={field.name}
                   placeholder={field.placeholder}
                   required={field.required}

@@ -31,19 +31,14 @@ const CasStudyCard: React.FC<CasStudyCardProps> = ({
         />
       </div>
       <div className="flex flex-col gap-2">
-        <h2 className="text-xl font-bold text-[#363636] uppercase">
-          {slug.replaceAll("-", " ")}
-        </h2>
-        <p className="text-secondary text-lg">
-          {" "}
-          <span className="font-semibold">Problem:</span>{" "}
-          {description.slice(0, 50)} ...
-        </p>
+        {/* The case study's own title (the URL slug was shown before: "naturoville google ads"). */}
+        <h2 className="text-xl font-bold text-[#363636]">{title}</h2>
+        <p className="text-secondary text-lg line-clamp-3">{description}</p>
         <CtaBtn
           type="link"
-          href={`/case-study/${slug}`}
+          href={`/case-study/${slug}/`}
           label="Read More"
-          srText={`: ${slug.replaceAll("-", " ")} case study`}
+          srText={`: ${title}`}
           icon="arrow2"
           iconClass="max-lg:w-6 text-white bg-transparent!"
           className="justify-between! border-none w-full max-w-40 rounded-lg mt-6 ml-auto max-lg:px-2! max-lg:py-2 bg-color4 text-white"

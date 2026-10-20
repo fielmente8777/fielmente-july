@@ -10,6 +10,7 @@ import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import Clients from "../industries-we-serves/[...industry]/components/Clients";
 import Testimonials from "../industries-we-serves/[...industry]/components/Testimonials";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Restaurant Marketing Company in India | Fielmente",
@@ -38,6 +39,7 @@ function page() {
   const industry = commonPageData[1];
   return (
     <main className="bg-white pt-10">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Food & Beverage Marketing", path: "/food-and-beverage-marketing-solutions/" }]} />
       {industry?.banner && <GridCard {...industry.banner} />}
       {industry?.section2 && <GridCard {...industry.section2} index={1} />}
       {industry?.stats && <Milestone stats={industry.stats} />}

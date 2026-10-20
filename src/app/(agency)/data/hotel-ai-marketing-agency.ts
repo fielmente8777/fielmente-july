@@ -10,9 +10,9 @@ const page: AgencyPageData = {
   cardLine: "Get described accurately in AI answers, and answer every enquiry with AI agents",
   areaServed: "Worldwide",
   meta: {
-    title: "Hotel AI Marketing Agency | AI Search & Agents | Fielmente",
+    title: "Hotel AI Marketing Agency | Fielmente",
     description:
-      "AI marketing for hotels: visibility in AI Overviews, AI Mode and ChatGPT, AI chat and voice agents answering enquiries, and tracking of AI-referred bookings.",
+      "Explore hospitality AI search consulting and guest communication agents that connect enquiries, WhatsApp, calls and hotel CRM.",
   },
   hero: {
     eyebrow: "Hotel AI marketing agency",

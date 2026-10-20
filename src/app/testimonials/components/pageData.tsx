@@ -5,11 +5,11 @@ export const testimonialsData = {
     title: "TESTIMONIALS",
     subTitle: "What Our Customers Say",
     description:
-      "Hear directly from hoteliers who transformed their business with Fielmente.",
+      "Hear directly from hoteliers who work with Fielmente on marketing and Eazotel on hotel software.",
   },
   testimonialSection: {
     title: "Testimonials",
-    subtle: "Join <span>500+ Hospitality</span> Brands Using Eazotel",
+    subtle: "What Hoteliers Say About <span>Fielmente</span> and Eazotel",
     description:
       "Supporting hotels and restaurants with smarter operations and better booking growth.",
     testimonials: data,
@@ -27,9 +27,9 @@ export const testimonialsData = {
   ctaData: {
     title: "Ready to grow your hotel business?",
     description:
-      "Join 500+ hotels already using Eazotel to drive direct bookings and streamline operations.",
+      "Talk to Fielmente about growing your direct bookings and reducing OTA dependency.",
     cta: {
-      label: "Book a Demo",
+      label: "Book a Free Consultation",
       href: "",
     },
   },

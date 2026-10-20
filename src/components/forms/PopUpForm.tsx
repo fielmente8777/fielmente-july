@@ -204,6 +204,7 @@ const PopUpForm = () => {
                         name="phone"
                         max={"9999999999"}
                         placeholder="Your Phone Number*"
+                        aria-label="Phone number"
                         value={userPhone}
                         onChange={handlePhoneChange}
                         className="w-full bg-transparent rounded-md placeholder:text-black-primary text-black no-spinner focus:outline-none"
@@ -272,6 +273,7 @@ const PopUpForm = () => {
                                 value: data.value,
                                 onChange: data.onChange,
                                 placeholder: data.placeholder,
+                                "aria-label": String(data.placeholder ?? "").replace(/\*$/, ""),
                                 required: data.required,
                                 autoComplete: "off",
                                 spellCheck: "false",

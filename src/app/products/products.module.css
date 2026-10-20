@@ -829,3 +829,12 @@
     transition: none !important;
   }
 }
+
+/* Who makes the software (Fielmente is the marketing agency; the products are Eazotel's). */
+.disclosure {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+}
+.disclosure strong { color: inherit; font-weight: 600; }

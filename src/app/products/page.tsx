@@ -76,6 +76,10 @@ export default function ProductsIndexPage() {
             Eight tools that work from one dashboard and one guest record: take bookings and
             payments, answer every enquiry, and bring guests back without paying OTA commission.
           </p>
+          {/* Fielmente is the agency; the software is Eazotel's (SEO audit, Oct 2026: say so on every product page). */}
+          <p className={s.disclosure}>
+            <strong>Hotel software by Eazotel.</strong> Marketing services, set-up and support by Fielmente.
+          </p>
           <div className={s.ctaRow}>
             <a
               className={`${s.btn} ${s.btnPrimary}`}

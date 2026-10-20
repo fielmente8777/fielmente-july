@@ -3,6 +3,7 @@ import CommonTowColGridLayoutSection from "@/components/commonSections/CommonTow
 import GridCtaSection from "@/components/commonSections/GridCtaSection";
 import BusinessPartnersSlider from "@/components/slider/BusinessPartnersSlider";
 import { ourPartnersPageData } from "./components/pageData";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata = {
   title: "Partner with Fielmente | Hotel Growth & OTA Integrations",
@@ -57,6 +58,7 @@ export const metadata = {
 export default function OurPartners() {
   return (
     <main>
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Our Partners", path: "/our-partners/" }]} />
       <TextBanner {...ourPartnersPageData.banner} />
       <CommonTowColGridLayoutSection
         {...ourPartnersPageData.builtPowerfulPartners}

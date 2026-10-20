@@ -29,15 +29,15 @@ export const clientPageData = {
   brandsScaledWithUs: {
     title: "Brands That Scaled With Us",
     description:
-      "From independent hotels to multi-location chains, our clients rely on Eazotel to simplify operations and maximize revenue.",
+      "From independent hotels to multi-location chains, our clients rely on Fielmente to grow direct bookings and revenue.",
     client: ClientImages,
   },
   ctaSection: {
     title: "Ready to grow your hotel business?",
     description:
-      "Join 120+ hotels already using Eazotel to drive direct bookings and streamline operations.",
+      "Join the hotels and resorts growing their direct bookings with Fielmente.",
     cta: {
-      label: "Book a Demo",
+      label: "Book a Free Consultation",
       href: "",
       type: btnType,
     },

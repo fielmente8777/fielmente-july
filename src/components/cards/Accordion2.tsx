@@ -78,8 +78,10 @@ const Accordion2: React.FC<AccordionProps> = ({ item }) => {
       <div
         className="flex justify-between items-center pb-4"
         onClick={() => {
-          setIsPinned((prev) => !prev);
-          setIsOpen(true);
+          // Click (or Enter/Space on the button) opens and pins the answer; a second press closes it.
+          const pin = !isPinned;
+          setIsPinned(pin);
+          setIsOpen(pin);
         }}
         onMouseEnter={() => {
           if (!isPinned) setIsOpen(true);
@@ -94,6 +96,8 @@ const Accordion2: React.FC<AccordionProps> = ({ item }) => {
         />
 
         <button
+          type="button"
+          aria-expanded={isOpen}
           className={`duration-300 ease-in-out transition-all ${
             isOpen ? "rotate-180" : ""
           }`}

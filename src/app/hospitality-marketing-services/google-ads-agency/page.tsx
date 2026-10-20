@@ -9,6 +9,7 @@ import ContactBtn3 from "../contactbtn/ContactBtn3";
 import ContactOldSection from "@/components/commonSections/ContactOldSection";
 import { landingPageData } from "@/app/landing-page/components/pageData";
 import ContactSection from "@/app/landing-page/components/ContactSection";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality Google Ads Agency - Fielmente",
@@ -82,6 +83,7 @@ const CardData2 = [
 function page() {
   return (
     <section className="bg-[#1E1928] pt-10">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Services", path: "/hospitality-marketing-services/" }, { name: "Google Ads Agency", path: "/hospitality-marketing-services/google-ads-agency/" }]} />
       <div className="bg-[#1E1928] text-white py-20">
         <div className="max_width">
           {/* Ignite Your Hospitality Growth with Leading Hospitality Google Ads Agency:***** */}

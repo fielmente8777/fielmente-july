@@ -64,6 +64,7 @@ const Form = () => {
             name="phone"
             max={"9999999999"}
             placeholder="Phone Number*"
+            aria-label="Phone number"
             value={formData.phone}
             onChange={handlePhoneChange}
             className="w-full bg-transparent rounded-md placeholder:text-black-primary text-white no-spinner focus:outline-none py-2"
@@ -112,6 +113,7 @@ const Form = () => {
                       value: data.value,
                       onChange: data.onChange,
                       placeholder: data.placeholder,
+                      "aria-label": String(data.placeholder ?? "").replace(/\*$/, ""),
                       required: data.required,
                       autoComplete: "off",
                       spellCheck: "false",

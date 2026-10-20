@@ -12,7 +12,7 @@ const page: AgencyPageData = {
   meta: {
     title: "Hotel Performance Marketing Agency | Fielmente",
     description:
-      "Paid media for hotels across Google, Meta, metasearch, retargeting and ChatGPT ads, with one budget plan and reports on cost per enquiry, booking and ROAS.",
+      "Run trackable Google, Meta, retargeting and hotel ad campaigns designed around qualified enquiries and profitable direct bookings.",
   },
   hero: {
     eyebrow: "Hotel performance marketing agency",

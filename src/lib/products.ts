@@ -282,8 +282,8 @@ export const PRODUCTS: Product[] = [
     "slug": "hotel-booking-engine",
     "name": "Booking Engine",
     "seo": {
-      "title": "Hotel Booking Engine for Direct Bookings | Fielmente",
-      "description": "Mobile-first hotel booking engine that lifts direct reservations by 30%+ and cuts OTA commission. Live rates, packages and secure payments.",
+      "title": "Hotel Booking Engine for Direct Reservations | Fielmente",
+      "description": "Let guests check rooms and book directly with a hotel booking engine, secure payments, offers and connected lead tracking.",
       "focusKeyword": "hotel booking engine",
       "secondaryKeywords": [
         "direct booking engine for hotels",
@@ -906,8 +906,8 @@ export const PRODUCTS: Product[] = [
     "slug": "hotel-crm",
     "name": "CRM",
     "seo": {
-      "title": "Hotel CRM for Guest Data & Repeat Stays | Fielmente",
-      "description": "Hotel CRM that unifies guest data, tracks every lead and runs loyalty campaigns that increase repeat stays by 40%. Built for hotels and resorts.",
+      "title": "Hotel CRM & Guest Lead Management | Fielmente",
+      "description": "Manage guest enquiries from WhatsApp, calls, your website and ads in a shared hospitality CRM with lead tracking and follow-up workflows.",
       "focusKeyword": "hotel CRM",
       "secondaryKeywords": [
         "hotel CRM software India",

@@ -3,13 +3,14 @@ import { testimonialsData } from "./components/pageData";
 import CtaSection from "@/components/commonSections/CtaSection";
 import MoreStories from "./components/MoreStories";
 import FeaturedTestimonials from "./components/FeaturedTestimonials";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 
 export const metadata = {
   title: "Fielmente Reviews & Testimonials | Hotel Success Stories",
   
   description:
-    "Read testimonials from 500+ hotels and hospitality brands on how Fielmente's OTA management, SEO and revenue strategies drive growth and bookings.",
+    "Read what hoteliers say about Fielmente's hotel marketing and Eazotel's hotel software: OTA management, SEO, revenue strategy and direct bookings.",
   
   keywords: [
     "Fielmente reviews",
@@ -56,6 +57,7 @@ export default function TestimonialPage() {
   // const { testimonialsData } = homePageData;
   return (
     <main>
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Testimonials", path: "/testimonials/" }]} />
       <TextBanner {...testimonialsData.bannerData} />
       <FeaturedTestimonials {...testimonialsData.testimonialSection} />
       <MoreStories {...testimonialsData.testimonialSection2} />  

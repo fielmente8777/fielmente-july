@@ -64,6 +64,22 @@ export const industries: IndustryProfile[] = [
       "performance-marketing": "/hotel-performance-marketing-agency/",
     },
     overrides: {
+      // Titles and descriptions from the SEO implementation audit (20 Oct 2026); the rest of each page uses the template.
+      "local-seo": {
+        metaTitle: "Hotel Local SEO & Google Maps Agency | Fielmente",
+        metaDescription:
+          "Improve hotel visibility in Google Maps through Business Profile optimization, local content, listing consistency and review management.",
+      },
+      "ai-search-optimization": {
+        metaTitle: "AI Search Optimization for Hotels | Fielmente",
+        metaDescription:
+          "Improve hotel discoverability in AI search with an AI visibility audit, consistent property facts, accurate schema and answer-ready content.",
+      },
+      "website-development": {
+        metaTitle: "Hotel Website Development Agency | Fielmente",
+        metaDescription:
+          "Create fast, mobile-first hotel websites with SEO, booking engine integration, lead tracking and a direct reservation journey.",
+      },
       "social-media-management": {
         metaTitle: "Hotel Social Media Marketing Agency | Fielmente",
         metaDescription:
@@ -85,9 +101,9 @@ export const industries: IndustryProfile[] = [
         ],
       },
       "website-seo": {
-        metaTitle: "Hotel SEO Agency India | Hotel SEO Services | Fielmente",
+        metaTitle: "Hotel SEO Services for Direct Bookings | Fielmente",
         metaDescription:
-          "Hotel SEO services that grow direct bookings: technical fixes, local and destination keywords, content, schema and reporting, from a hospitality-only SEO team.",
+          "Improve hotel search visibility with technical SEO, local optimization, helpful content and conversion tracking backed by hospitality specialists.",
         heroTitle: "Hotel SEO that ranks your own website above the OTAs",
         heroLede:
           "Technical SEO, destination keywords and content built for hotels, so travellers searching for a stay in your area find your website and book direct.",
@@ -112,9 +128,9 @@ export const industries: IndustryProfile[] = [
       { q: "How do you report results?", a: "Monthly, in plain language: enquiries, direct bookings, cost per enquiry and what we'll do next month." },
     ],
     meta: {
-      title: "Best Hotel Marketing Company in India - Fielmente", // same as the current live title
+      title: "Hotel Marketing Agency in India | Fielmente", // same as the current live title
       description:
-        "Hotel marketing agency for Indian hotels: Google Ads, SEO, social media, OTA management, revenue management and booking engine — built to grow direct bookings.",
+        "Fielmente helps Indian hotels grow direct bookings with SEO, Google Ads, OTA strategy, social media and measurable hospitality campaigns.",
     },
   },
 
@@ -238,7 +254,7 @@ export const industries: IndustryProfile[] = [
     meta: {
       title: "Restaurant Marketing Agency in India | Fielmente", // live title, typo fixed
       description:
-        "Restaurant marketing agency: Google, Instagram, reels, ads, influencer marketing and reservation automation to fill tables every night of the week.",
+        "Grow restaurant discovery and direct reservations with TripAdvisor advertising, Google, Meta, social media and measurable campaigns.",
     },
   },
 
@@ -421,9 +437,9 @@ export const industries: IndustryProfile[] = [
       { q: "How do you sell longer programmes, like 7 or 14 nights?", a: "Longer stays need more trust before booking, so we build detailed programme pages, guest stories and a follow-up sequence that answers questions until the guest is ready." },
     ],
     meta: {
-      title: "Wellness Retreat & Ayurveda Marketing Agency | Fielmente",
+      title: "Wellness Retreat Marketing Agency | Fielmente",
       description:
-        "Marketing for wellness retreats, Ayurveda centres and yoga retreats: programme pages, Google and Meta ads within health-ad rules, SEO and WhatsApp follow-ups.",
+        "Attract qualified retreat guests with measurable SEO, Google and Meta campaigns built around wellness programmes, enquiries and bookings.",
     },
   },
 

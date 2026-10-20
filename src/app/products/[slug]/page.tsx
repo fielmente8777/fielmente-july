@@ -124,6 +124,10 @@ export default async function ProductPage({ params }: Props) {
             <h1>{p.h1}</h1>
             <p className={s.intro}>{p.intro}</p>
             <div className={s.proof}>{p.proof}</div>
+            {/* Fielmente is the agency; the software is Eazotel's (SEO audit, Oct 2026: say so on every product page). */}
+            <p className={s.disclosure}>
+              <strong>Hotel software by Eazotel.</strong> Marketing services, set-up and support by Fielmente.
+            </p>
             <div className={s.ctaRow}>
               <a
                 className={`${s.btn} ${s.btnPrimary}`}
