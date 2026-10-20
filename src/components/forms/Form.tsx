@@ -1,10 +1,11 @@
 "use client";
 
 import useConsultationForm from "@/hooks/useConsultationForm";
-import { countries } from "@/utils/countryCode";
 import { CallIcon, MailIcon, UserIcon } from "@/utils/icons";
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
+import CountryCodeOptions from "./CountryCodeOptions";
+import FormShield from "@/components/forms/FormShield";
 
 const Form = () => {
   const {
@@ -55,11 +56,7 @@ const Form = () => {
             style={{ inlineSize: `${formData.countryCode.length + 2}ch` }}
             aria-label="Country Code"
           >
-            {countries.map((country, index) => (
-              <option key={index} value={country.code} className="text-black">
-                {`${country.code}`}
-              </option>
-            ))}
+            <CountryCodeOptions value={formData.countryCode} optionClassName="text-black" />
           </select>
           <input
             type="tel"
@@ -92,6 +89,7 @@ const Form = () => {
       className={`grid md:grid-cols-4 md:rounded-full rounded-[20px] overflow-hidden glassy-card xl:p-2 max-md:p-2`}
       noValidate
     >
+      <FormShield />
       <div className="md:col-span-3 grid md:grid-cols-3 md:py-2 py-1">
         {formDataFields.map((data, index) => (
           <div

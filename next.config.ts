@@ -57,7 +57,8 @@ const nextConfig: NextConfig = {
     scrollRestoration: true,
   },
 
-  compiler: { removeConsole: { exclude: ["error"] } },
+  // "warn" kept so /api/lead can log dropped spam submissions in the Vercel logs.
+  compiler: { removeConsole: { exclude: ["error", "warn"] } },
 
   async redirects() {
     const to = (source: string, destination: string) => ({ source, destination, permanent: true });

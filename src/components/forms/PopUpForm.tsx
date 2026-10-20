@@ -4,9 +4,11 @@ import { usePathname } from "next/navigation";
 import useClickOutside from '@/hooks/useClickOutside';
 import { countries } from "@/utils/countryCode";
 import { OutlineCallIcon, OutlineDrpopdown, OutlineMail, OutlineMessageIcon, OutlineUserIcon, WhatsAppIcon } from "@/utils/icons";
-import axios from "axios";
+import { nameError, phoneError } from "@/lib/leadGuard";
+import { submitLead } from "@/lib/submitLead";
+import FormShield from "./FormShield";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { contacts } from "../../../contact";
 
 const PopUpForm = () => {
@@ -18,6 +20,11 @@ const PopUpForm = () => {
     const [formRes, setFormRes] = useState(false);
     const [emailErrorMessage, setEmailErrorMessage] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
+    // When the popup form appeared: bots send forms within a few seconds (checked by /api/lead).
+    const startedAt = useRef(0);
+    useEffect(() => {
+        startedAt.current = Date.now();
+    }, []);
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Indian numbers are 10 digits; other countries vary (e.g. UAE mobiles are 9), so allow 7-15.
@@ -53,29 +60,27 @@ const PopUpForm = () => {
             return;
         }
 
+        const problem = nameError(userName) || phoneError(countryCode, userPhone);
+        if (problem) {
+            setErrorMessage(problem);
+            return;
+        }
+
+        const form = e.currentTarget;
         setFormRes(true);
         try {
-            const { data } = await axios.post(
-                `https://nexon.eazotel.com/eazotel/addcontacts`,
-                {
-                    Domain: "fielmente",
-                    email: userEmail,
-                    Name: userName,
-                    Contact: `${countryCode}${userPhone}`,
-                    Description: userMessage,
-                    created_from: "webform",
-                    source_url: window.location.href,
-                },
-                {
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                }
-            );
+            // Goes through /api/lead, which drops bot submissions before they reach the CRM.
+            const result = await submitLead({
+                form,
+                startedAt: startedAt.current,
+                name: userName,
+                email: userEmail,
+                countryCode,
+                phone: userPhone,
+                description: userMessage,
+            });
 
-            // The Eazotel endpoint answers { Status: true }, which is what every other form checks.
-            // `success` was the old Privyr response; it is kept as a fallback.
-            if (data?.Status || data?.success) {
+            if (result.ok) {
                 window.oaiq?.("measure", "lead_created", { type: "customer_action" });
                 setUserName("");
                 setUserEmail("");
@@ -84,7 +89,7 @@ const PopUpForm = () => {
                 setCountryCode("+91"); // Reset country code
                 window.open("/thank-you/", "_blank");
             } else {
-                alert(data?.message || "Something went wrong!");
+                alert(result.message || "Something went wrong!");
             }
         } catch (error) {
             console.log(error);
@@ -239,6 +244,7 @@ const PopUpForm = () => {
             onSubmit={handleSubmit}
             className="flex flex-col gap-4 max-md:px-4 p-6 text-base w-full"
         >
+            <FormShield />
             <div className="flex flex-col gap-px items-center justify-center">
                 <h2 className="text-xl lg:text-[1.8rem]/[2.5rem] font-normal text-primary">
                     CONTACT US

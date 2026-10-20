@@ -3,8 +3,9 @@
 import useConsultationForm, {
   ConsultationFormData,
 } from "@/hooks/useConsultationForm";
-import { countries } from "@/utils/countryCode";
 import React from "react";
+import CountryCodeOptions from "./CountryCodeOptions";
+import FormShield from "@/components/forms/FormShield";
 
 interface FormField {
   label: string;
@@ -94,6 +95,7 @@ const LandingPgForm = ({
       onSubmit={handleSubmit}
       className={`flex flex-col gap-4 justify-between md:h-full p-4 md:p-6  text-base rounded-2xl w-full  ${bgColor ? bgColor : "bg-[#010101]"} ${textColor ? textColor : "text-white"}`}
     >
+      <FormShield />
       <h2 className="text-xl md:text-2xl text-center font-semibold ">
         Get A FREE Consultation!
       </h2>
@@ -142,11 +144,7 @@ const LandingPgForm = ({
                   className={`outline-none ${textColor || "text-white"}`}
                   aria-label="Country Code"
                 >
-                  {countries.map((country, index) => (
-                    <option key={index} value={country.code} aria-label="Country Code">
-                      {country.code}
-                    </option>
-                  ))}
+                  <CountryCodeOptions value={formData.countryCode} />
                 </select>
                 <input
                   type="tel"

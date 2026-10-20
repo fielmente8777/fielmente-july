@@ -1,7 +1,7 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useDebounce } from "./useDebounce";
-import axios from "axios";
-import { contacts } from "../../contact";
+import { emailError, nameError, phoneError } from "@/lib/leadGuard";
+import { submitLead } from "@/lib/submitLead";
 
 declare global {
   interface Window {
@@ -51,13 +51,15 @@ const useConsultationForm = ({
   const debouncedPhone = useDebounce(formData.phone, 500);
   const debouncedName = useDebounce(formData.name, 500);
 
-  const validateEmail = (email: string): boolean =>
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  // When the form appeared: forms sent within a few seconds are bots (checked by /api/lead).
+  const startedAt = useRef(0);
+  useEffect(() => {
+    startedAt.current = Date.now();
+  }, []);
 
-  const validatePhone = (phone: string): boolean => {
-    const re = /^[0-9]{10,15}$/;
-    return re.test(phone);
-  };
+  // Same rules as /api/lead (src/lib/leadGuard.ts), so visitors see the problem before sending.
+  const validateEmail = (email: string): boolean => !emailError(email);
+  const validatePhone = (phone: string, countryCode = formData.countryCode): boolean => !phoneError(countryCode, phone);
 
   // Debounced Email Validation
   useEffect(() => {
@@ -79,7 +81,7 @@ const useConsultationForm = ({
     if (debouncedPhone && !validatePhone(debouncedPhone)) {
       setErrors((prev) => ({
         ...prev,
-        phone: "Phone must be 10-15 digits",
+        phone: phoneError(formData.countryCode, debouncedPhone) ?? undefined,
       }));
     } else if (debouncedPhone && validatePhone(debouncedPhone)) {
       setErrors((prev) => ({
@@ -87,16 +89,17 @@ const useConsultationForm = ({
         phone: undefined,
       }));
     }
-  }, [debouncedPhone]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [debouncedPhone, formData.countryCode]);
 
   // Debounced Name Validation
   useEffect(() => {
-    if (debouncedName && !debouncedName.trim()) {
+    if (debouncedName && nameError(debouncedName)) {
       setErrors((prev) => ({
         ...prev,
-        name: "Name cannot be empty",
+        name: nameError(debouncedName) ?? undefined,
       }));
-    } else if (debouncedName && debouncedName.trim()) {
+    } else if (debouncedName) {
       setErrors((prev) => ({
         ...prev,
         name: undefined,
@@ -108,18 +111,21 @@ const useConsultationForm = ({
     const newErrors: FormErrors = {};
     let isValid = true;
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Name cannot be empty";
+    const nameProblem = nameError(formData.name);
+    if (nameProblem) {
+      newErrors.name = nameProblem;
       isValid = false;
     }
 
-    if (!validatePhone(formData.phone)) {
-      newErrors.phone = "Phone must be 10-15 digits";
+    const phoneProblem = phoneError(formData.countryCode, formData.phone);
+    if (phoneProblem) {
+      newErrors.phone = phoneProblem;
       isValid = false;
     }
 
-    if (!validateEmail(formData.email)) {
-      newErrors.email = "Invalid email format";
+    const emailProblem = emailError(formData.email);
+    if (emailProblem) {
+      newErrors.email = emailProblem;
       isValid = false;
     }
 
@@ -182,55 +188,43 @@ const useConsultationForm = ({
   // handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
 
     if (!validateForm()) return;
 
     setIsSubmitting(true);
     try {
-      const descriptionPart = [];
+      const description = includeMessage ? `Message: ${formData.message}` : "";
 
-      if (includeMessage) {
-        descriptionPart.push(`Message: ${formData.message}`);
-      }
-      const description = descriptionPart.join("\n");
+      // Goes through /api/lead, which drops bot submissions before they reach the CRM.
+      const result = await submitLead({
+        form,
+        startedAt: startedAt.current,
+        name: formData.name,
+        email: formData.email,
+        countryCode: formData.countryCode,
+        phone: formData.phone,
+        description,
+      });
 
-      const { data } = await axios.post(
-        "https://nexon.eazotel.com/eazotel/addcontacts",
-        {
-          Domain: contacts.formDomain,
-          Name: formData.name,
-          email: formData.email,
-          Contact: formData.countryCode + formData.phone,
-          Description: description,
-          created_from: "webform",
-          source_url: window.location.href,
+      if (result.ok) {
+        // OpenAI conversion event
+        window.oaiq?.("measure", "lead_created", { type: "customer_action" });
+
+        setSubmitSuccess(true);
+        resetForm();
+
+        if (onSubmitSuccess) {
+          onSubmitSuccess();
         }
-      );
 
-      if (data.Status) {
-  // OpenAI conversion event
-  window.oaiq?.(
-    "measure",
-    "lead_created",
-    { type: "customer_action" }
-  );
+        setTimeout(() => {
+          setSubmitSuccess(false);
+        }, 3000);
 
-  setSubmitSuccess(true);
-  resetForm();
-
-  if (onSubmitSuccess) {
-    onSubmitSuccess();
-  }
-
-  setTimeout(() => {
-    setSubmitSuccess(false);
-  }, 3000);
-
-  window.open("/thank-you/", "_blank");
-}
-      
-      else {
-        alert(data.message || "Something went wrong. Please try again.");
+        window.open("/thank-you/", "_blank");
+      } else {
+        alert(result.message || "Something went wrong. Please try again.");
       }
     } catch (e) {
       console.error(e);

@@ -1,8 +1,9 @@
 "use client";
 
 import useConsultationForm, { ConsultationFormData } from "@/hooks/useConsultationForm";
-import { countries } from "@/utils/countryCode";
 import React from "react";
+import CountryCodeOptions from "./CountryCodeOptions";
+import FormShield from "@/components/forms/FormShield";
 
 interface FormField {
   label: string;
@@ -78,6 +79,7 @@ const Form1 = () => {
       className="flex flex-col gap-4 max-md:px-4 p-6 text-base rounded-2xl w-full bg-[#010101]"
       noValidate
     >
+      <FormShield />
       <h2 className="text-xl md:text-2xl font-normal text-white">
         Get A FREE Consultation!
       </h2>
@@ -129,11 +131,7 @@ const Form1 = () => {
                   className="outline-none text-white"
                   aria-label="Country Code"
                 >
-                  {countries.map((country, index) => (
-                    <option key={index} value={country.code} aria-label="Country Code">
-                      {country.code}
-                    </option>
-                  ))}
+                  <CountryCodeOptions value={formData.countryCode} />
                 </select>
                 <input
                   type={field.type}

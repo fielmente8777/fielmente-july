@@ -7,6 +7,7 @@ import useConsultationForm from "@/hooks/useConsultationForm";
 import { countries } from "@/utils/countryCode";
 import { useEffect, useState } from "react";
 import { LuArrowRight } from "react-icons/lu";
+import FormShield from "@/components/forms/FormShield";
 
 const TRACKING_PARAMS = ["gclid", "gbraid", "wbraid", "fbclid", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
 
@@ -102,6 +103,7 @@ export default function LeadForm({
 
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
+      <FormShield />
       <div className="flex flex-col gap-1.5">
         <h2 className="text-[22px]/[1.2] md:text-2xl/[1.2] font-bold text-primary2">
           {title}

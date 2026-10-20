@@ -5,6 +5,7 @@ import { countries } from "@/utils/countryCode";
 import { useEffect, useState } from "react";
 import { contacts } from "../../../../contact";
 import { budgetOptions } from "./pageData";
+import FormShield from "@/components/forms/FormShield";
 
 // Submits through the same useConsultationForm hook as the site's other working forms
 // (same Eazotel endpoint, validation, OpenAI lead event and /thank-you/ page).
@@ -83,6 +84,7 @@ export default function AuditForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4.5">
+      <FormShield />
       <div className="flex flex-col gap-2">
         <h2 className="text-[26px]/[1.2] md:text-[28px]/[1.2] font-bold text-primary2">
           Get a free Google Ads audit<span className="text-orange-primary">.</span>
