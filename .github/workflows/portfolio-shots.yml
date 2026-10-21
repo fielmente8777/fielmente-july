@@ -1,0 +1,31 @@
+# Temporary: screenshots for the portfolio page. Lives only on the portfolio-shots branch.
+name: portfolio-shots
+on:
+  push:
+    branches: [portfolio-shots]
+    paths: ["portfolio-shots/urls.json", "portfolio-shots/shoot.mjs", ".github/workflows/portfolio-shots.yml"]
+permissions:
+  contents: write
+jobs:
+  shoot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: portfolio-shots
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-audit --no-fund playwright@1.48.2 sharp@0.33.5
+      - run: npx playwright install --with-deps chromium
+      - run: node shoot.mjs
+      - name: Commit screenshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add out
+          git commit -m "Portfolio screenshots" || exit 0
+          git pull --rebase origin portfolio-shots
+          git push origin HEAD:portfolio-shots
