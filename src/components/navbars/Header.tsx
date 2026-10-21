@@ -26,7 +26,7 @@ const Header = ({ menu }: { menu?: SiteMenu }) => {
     "/contact-us/",
     "/testimonials/",
     "/case-study/",
-    "/portfolio/",
+    "/our-work/",
     ...CaseStudySlug,
     "/our-clients/",
     "/our-partners/",

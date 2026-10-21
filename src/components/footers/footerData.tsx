@@ -78,7 +78,7 @@ export const footerData: FooterLinksPropstype = {
         },
         {
           label: "Our Work",
-          href: "/portfolio/",
+          href: "/our-work/",
         },
         // {
         //   label: "Career",
