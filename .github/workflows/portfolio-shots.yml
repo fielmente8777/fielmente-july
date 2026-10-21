@@ -15,17 +15,26 @@ jobs:
         working-directory: portfolio-shots
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm install --no-audit --no-fund playwright@1.48.2 sharp@0.33.5
       - run: npx playwright install --with-deps chromium
       - run: node shoot.mjs
+      - name: Report results
+        if: always()
+        run: |
+          n=$(ls out 2>/dev/null | wc -l)
+          echo "::notice title=files::$n files in out/"
+          node -e 'const m=require("./out/meta.json");const bad=m.filter(x=>!x.ok);console.log("::notice title=summary::"+(m.length-bad.length)+" ok, "+bad.length+" failed: "+bad.map(x=>x.slug).join(" "))' || true
       - name: Commit screenshots
         run: |
+          set +e
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add out
-          git commit -m "Portfolio screenshots" || exit 0
-          git pull --rebase origin portfolio-shots
-          git push origin HEAD:portfolio-shots
+          log=$( { git add -A out && git commit -qm "Portfolio screenshots" && git fetch -q origin portfolio-shots && git rebase -q origin/portfolio-shots && git push -q origin HEAD:portfolio-shots; } 2>&1 )
+          rc=$?
+          echo "$log"
+          if [ $rc -ne 0 ]; then echo "::error title=commit failed::$(echo "$log" | tail -6 | tr '\n' ' ')"; exit 1; fi
