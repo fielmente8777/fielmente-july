@@ -1,3 +1,4 @@
+import { NOINDEX_ROBOTS } from "@/lib/noindex";
 import {
   Banner,
   ImageSection,
@@ -61,6 +62,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://fielmente.com/restaurant/",
   },
+  robots: NOINDEX_ROBOTS,
 
 };
 const page = () => {

@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { NOINDEX_PATHS } from "./src/lib/noindex";
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
@@ -153,8 +154,8 @@ const nextConfig: NextConfig = {
   async headers() {
     const noindex = [{ key: "X-Robots-Tag", value: "noindex, follow" }];
     return [
-      // Paid-ads landing pages: kept live for campaigns, kept out of Google's index (near-duplicates of each other).
-      ...["/landing-page/", "/resort/", "/restaurant/", "/hospitality/", "/dubai-restaurant/", "/UK/", "/USA/"].map(
+      // Paid-ads landing pages: kept live for campaigns, kept out of Google's index. The pages set the same in their metadata.
+      ...NOINDEX_PATHS.map(
         (source) => ({ source, headers: noindex })
       ),
       // Vercel's own *.vercel.app addresses serve the same site: keep them out of search results.

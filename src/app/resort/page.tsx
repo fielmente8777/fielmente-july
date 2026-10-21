@@ -1,3 +1,4 @@
+import { NOINDEX_ROBOTS } from "@/lib/noindex";
 import { Metadata } from "next";
 import PageComponents from "../hospitality/components/PageComponents";
 
@@ -10,17 +11,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://fielmente.com/resort/",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  robots: NOINDEX_ROBOTS,
   authors: [{ name: "Fielmente", url: "https://fielmente.com/resort/" }],
   openGraph: {
     title: "Fielmente : Resort Marketing Agency in India",

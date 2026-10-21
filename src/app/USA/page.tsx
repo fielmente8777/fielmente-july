@@ -1,3 +1,4 @@
+import { NOINDEX_ROBOTS } from "@/lib/noindex";
 import {
   AboutUs,
   Banner,
@@ -24,14 +25,15 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "https://fielmente.com/USA",
+    canonical: "https://fielmente.com/USA/",
   },
+  robots: NOINDEX_ROBOTS,
 
   openGraph: {
     title: "Hotel Marketing Company in the USA",
     description:
       "Grow your hotel bookings with expert marketing and revenue management services.",
-    url: "https://fielmente.com/USA",
+    url: "https://fielmente.com/USA/",
     siteName: "Fielmente",
     images: [
       {

@@ -1,3 +1,4 @@
+import { NOINDEX_ROBOTS } from "@/lib/noindex";
 import SlidingTitle from "@/components/slider/SlidingTitle";
 import { Metadata } from "next";
 import Banner from "./components/Banner";
@@ -21,18 +22,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://fielmente.com/landing-page/",
   },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  robots: NOINDEX_ROBOTS,
   authors: [{ name: "Fielmente", url: "https://fielmente.com/landing-page/" }],
   openGraph: {
     title: "Fielmente : Hotel Marketing Agency in India",

@@ -1,3 +1,4 @@
+import { NOINDEX_ROBOTS } from "@/lib/noindex";
 import {
   Banner,
   ImageSection,
@@ -24,14 +25,15 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "https://fielmente.com/UK",
+    canonical: "https://fielmente.com/UK/",
   },
+  robots: NOINDEX_ROBOTS,
 
   openGraph: {
     title: "Restaurant Marketing Agency in United Kingdom",
     description:
       "Boost restaurant sales with SEO, ads, and digital marketing services across the UK.",
-    url: "https://fielmente.com/UK",
+    url: "https://fielmente.com/UK/",
     siteName: "Fielmente",
     images: [
       {
