@@ -3,7 +3,7 @@ name: portfolio-shots
 on:
   push:
     branches: [portfolio-shots]
-    paths: ["portfolio-shots/urls.json", "portfolio-shots/shoot.mjs", ".github/workflows/portfolio-shots.yml"]
+    paths: ["portfolio-shots/urls.json", "portfolio-shots/shoot.mjs", "portfolio-shots/logos.mjs", ".github/workflows/portfolio-shots.yml"]
 permissions:
   contents: write
 concurrency:
@@ -25,19 +25,20 @@ jobs:
           node-version: 20
       - run: npm install --no-save --no-package-lock --no-audit --no-fund playwright@1.48.2 sharp@0.33.5
       - run: npx playwright install --with-deps chromium
-      - run: node shoot.mjs
+      # Screenshots are already saved on the branch; this run only collects logos.
+      - run: node logos.mjs
       - name: Report results
         if: always()
         run: |
           n=$(ls out 2>/dev/null | wc -l)
           echo "::notice title=files::$n files in out/"
-          node -e 'const m=require("./out/meta.json");const bad=m.filter(x=>!x.ok);console.log("::notice title=summary::"+(m.length-bad.length)+" ok, "+bad.length+" failed: "+bad.map(x=>x.slug).join(" "))' || true
+          node -e 'const m=require("./out/logos.json");const bad=m.filter(x=>!x.ok);console.log("::notice title=logos::"+(m.length-bad.length)+" ok, "+bad.length+" failed: "+bad.map(x=>x.slug).join(" "))' || true
       - name: Commit screenshots
         run: |
           set +e
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          log=$( { cp -r out /tmp/shots-out && git fetch -q origin portfolio-shots && git reset -q --hard origin/portfolio-shots && rm -rf out && cp -r /tmp/shots-out out && git add -A out && git commit -qm "Portfolio screenshots" && git push -q origin HEAD:portfolio-shots; } 2>&1 )
+          log=$( { cp -r out /tmp/shots-out && git fetch -q origin portfolio-shots && git reset -q --hard origin/portfolio-shots && rm -rf out && cp -r /tmp/shots-out out && git add -A out && git commit -qm "Client logos from each site" && git push -q origin HEAD:portfolio-shots; } 2>&1 )
           rc=$?
           echo "$log"
           if [ $rc -ne 0 ]; then echo "::error title=commit failed::$(echo "$log" | tail -6 | tr '\n' ' ')"; exit 1; fi
