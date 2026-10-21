@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "../sectionComponants";
-import { footerData } from "./footerData";
+import { footerData, policyLinks } from "./footerData";
 
 // Every link is rendered once and the layout changes with CSS. The footer used to contain a desktop
 // copy and a phone copy of all its links, so each page repeated ~35 links (and the office address),
@@ -80,6 +80,19 @@ const WebSiteFooter = () => {
             </div>
           )}
         </div>
+
+        <ul className="mt-10 pt-6 border-t border-white/10 flex flex-wrap gap-x-6 gap-y-2">
+          {policyLinks.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className="text-[#FFFFFFB2] text-xs md:text-sm hover:text-secondary transition-all duration-300 ease-in-out"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </Container>
     </footer>
   );
