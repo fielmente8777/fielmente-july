@@ -51,7 +51,7 @@
   "project": "altbysyah",
   "projectId": "prj_QRfDAuAmqBVRFDYcINfJZyoWtZqC",
   "slug": "alt-syahudaipur-com",
-  "url": "https://alt.syahudaipur.com/"
+  "url": "https://altbysyah.vercel.app/"
  },
  {
   "project": "alt-asset-transfer",
@@ -453,7 +453,7 @@
   "project": "mongo-grove",
   "projectId": "prj_b0aPgLhFJYKEJ1bbZTbNBTmxgAAJ",
   "slug": "landing-mangogrovehotel-com",
-  "url": "https://landing.mangogrovehotel.com/"
+  "url": "https://mongo-grove.vercel.app/"
  },
  {
   "project": "corbett-website-nextjs",
@@ -483,7 +483,7 @@
   "project": "hotelads",
   "projectId": "prj_sJA1Cu2FihLxyVjdvtloTp1RRaBl",
   "slug": "hotelads-io",
-  "url": "https://hotelads.io/"
+  "url": "https://hotelads.vercel.app/"
  },
  {
   "project": "zenevents",
@@ -495,7 +495,7 @@
   "project": "sparv",
   "projectId": "prj_RXKp6kYPQHkZ2lScOf1sfvyiAI0n",
   "slug": "sparvhospitality-com",
-  "url": "https://www.sparvhospitality.com/"
+  "url": "https://sparv-omega.vercel.app/"
  },
  {
   "project": "whatsapp-widget",
