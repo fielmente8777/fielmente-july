@@ -78,7 +78,7 @@ export const footerData: FooterLinksPropstype = {
         },
         {
           label: "Our Work",
-          href: "https://www.eazotel.com/our-work/",
+          href: "/portfolio/",
         },
         // {
         //   label: "Career",

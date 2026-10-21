@@ -20,6 +20,7 @@ const STATIC_PAGES = [
   "/contact-us/",
   "/blogs/",
   "/case-study/",
+  "/portfolio/",
   "/our-clients/",
   "/our-partners/",
   "/testimonials/",
