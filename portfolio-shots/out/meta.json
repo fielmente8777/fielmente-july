@@ -12,9 +12,10 @@
   "h1": "Aaoji:",
   "internalPages": 0,
   "forms": 2,
-  "words": 841,
+  "words": 821,
   "height": 7814,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "alhathaifa-new",
@@ -31,7 +32,8 @@
   "forms": 1,
   "words": 776,
   "height": 4995,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "alhathaifalp",
@@ -45,10 +47,11 @@
   "ogImage": "",
   "h1": "",
   "internalPages": 0,
-  "forms": 1,
+  "forms": 2,
   "words": 642,
   "height": 4644,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "alhathaifalp-kc1c",
@@ -62,10 +65,11 @@
   "ogImage": "",
   "h1": "",
   "internalPages": 0,
-  "forms": 1,
+  "forms": 2,
   "words": 642,
   "height": 4644,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "alt-asset-transfer",
@@ -82,15 +86,26 @@
   "forms": 0,
   "words": 1,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "altbysyah",
   "projectId": "prj_QRfDAuAmqBVRFDYcINfJZyoWtZqC",
   "slug": "alt-syahudaipur-com",
-  "url": "https://alt.syahudaipur.com/",
-  "ok": false,
-  "error": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://alt.syahudaipur.com/\nCall log:\n  - navigating to \"https://alt.syahudaipur.com/\", waiting until \"commit\"\n"
+  "url": "https://altbysyah.vercel.app/",
+  "status": 200,
+  "finalUrl": "https://altbysyah.vercel.app/",
+  "title": "ALT by Syah · À la carte restaurant & cocktail bar in Udaipur",
+  "description": "A different expression of Syah. Seasonal à la carte plates and in-house cocktails at Manuscript Jhilwara Haveli, Udaipur. Lunch 12.30–3.30 pm, dinner 7–10.30 pm. Reserve a table.",
+  "ogImage": "https://alt.syahudaipur.com/images/alt-1.webp",
+  "h1": "A different expression of Syah",
+  "internalPages": 0,
+  "forms": 1,
+  "words": 1022,
+  "height": 11248,
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "altin-stays",
@@ -107,7 +122,8 @@
   "forms": 2,
   "words": 1044,
   "height": 4875,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "amaltas",
@@ -124,7 +140,8 @@
   "forms": 3,
   "words": 1229,
   "height": 10574,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "amhospitality",
@@ -141,7 +158,8 @@
   "forms": 2,
   "words": 742,
   "height": 5192,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "aqua-dunhinda",
@@ -158,7 +176,8 @@
   "forms": 3,
   "words": 1013,
   "height": 7178,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "aravat-lp",
@@ -174,8 +193,9 @@
   "internalPages": 0,
   "forms": 2,
   "words": 1323,
-  "height": 6180,
-  "ok": true
+  "height": 6006,
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "arkaya",
@@ -192,7 +212,8 @@
   "forms": 2,
   "words": 1017,
   "height": 5853,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "arohapalms",
@@ -209,7 +230,8 @@
   "forms": 1,
   "words": 811,
   "height": 6806,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "aspalp",
@@ -226,7 +248,8 @@
   "forms": 3,
   "words": 1899,
   "height": 9625,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "baliyacotournew",
@@ -243,7 +266,8 @@
   "forms": 0,
   "words": 367,
   "height": 6682,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "baliye-cotour-fe",
@@ -260,7 +284,8 @@
   "forms": 0,
   "words": 258,
   "height": 4805,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "bijliwala-ca",
@@ -277,7 +302,8 @@
   "forms": 1,
   "words": 658,
   "height": 5978,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "booking-engine-react",
@@ -294,7 +320,8 @@
   "forms": 0,
   "words": 21,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "burger-gully",
@@ -311,7 +338,8 @@
   "forms": 1,
   "words": 619,
   "height": 4632,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "chef-kenzo",
@@ -328,7 +356,8 @@
   "forms": 2,
   "words": 702,
   "height": 5909,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "colonel-resort",
@@ -345,7 +374,8 @@
   "forms": 1,
   "words": 956,
   "height": 4092,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "corbett-website-nextjs",
@@ -362,7 +392,8 @@
   "forms": 0,
   "words": 799,
   "height": 5072,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "dashboard-new",
@@ -379,7 +410,8 @@
   "forms": 1,
   "words": 23,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "destin-dhela",
@@ -396,7 +428,8 @@
   "forms": 3,
   "words": 1268,
   "height": 7379,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "dlms",
@@ -413,7 +446,8 @@
   "forms": 1,
   "words": 702,
   "height": 5286,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "dubairestaurant",
@@ -430,7 +464,8 @@
   "forms": 1,
   "words": 254,
   "height": 3797,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "eazotel-website-2026",
@@ -447,7 +482,8 @@
   "forms": 0,
   "words": 1472,
   "height": 11709,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "eazotel-website",
@@ -462,9 +498,10 @@
   "h1": "Every enquiry. One inbox. More bookings direct.",
   "internalPages": 0,
   "forms": 0,
-  "words": 1005,
+  "words": 1003,
   "height": 9726,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "eazotel-website-oct",
@@ -479,9 +516,10 @@
   "h1": "One Dashboard for All Your Hotel Enquiries",
   "internalPages": 5,
   "forms": 0,
-  "words": 1948,
+  "words": 1946,
   "height": 13051,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "eazotel-website-test",
@@ -498,7 +536,8 @@
   "forms": 0,
   "words": 614,
   "height": 5345,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "ebcmussoorienew",
@@ -515,7 +554,8 @@
   "forms": 0,
   "words": 1261,
   "height": 8528,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "eracamps",
@@ -532,7 +572,8 @@
   "forms": 3,
   "words": 1197,
   "height": 10100,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "fielmente-europe",
@@ -549,7 +590,8 @@
   "forms": 1,
   "words": 407,
   "height": 3423,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "fielmente-july-fn9y",
@@ -566,7 +608,8 @@
   "forms": 2,
   "words": 3223,
   "height": 17477,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "fielmente-company-profile",
@@ -583,7 +626,8 @@
   "forms": 0,
   "words": 2602,
   "height": 43200,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "fielmente-landing-pages",
@@ -600,7 +644,8 @@
   "forms": 0,
   "words": 87,
   "height": 1071,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "fielmente-preview",
@@ -612,12 +657,13 @@
   "title": "Fielmente - India's Leading Hospitality Marketing Agency",
   "description": "We're the best hospitality marketing agency in India serving hotels, resorts restaurants, and cloud kitchens for more than 5+ years.",
   "ogImage": "https://fielmente.com/fielmente_logo.png",
-  "h1": "Fielmente - India’s Leading\nResort Marketing Agency",
+  "h1": "Fielmente - India’s Leading\nRestaurant Marketing Agency",
   "internalPages": 46,
   "forms": 3,
   "words": 3281,
   "height": 17260,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "grandursanchi-9j4w",
@@ -634,7 +680,8 @@
   "forms": 0,
   "words": 558,
   "height": 6776,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "grm",
@@ -651,7 +698,8 @@
   "forms": 0,
   "words": 21,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "hms-frontend",
@@ -668,15 +716,26 @@
   "forms": 0,
   "words": 21,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "hotelads",
   "projectId": "prj_sJA1Cu2FihLxyVjdvtloTp1RRaBl",
   "slug": "hotelads-io",
-  "url": "https://hotelads.io/",
-  "ok": false,
-  "error": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://hotelads.io/\nCall log:\n  - navigating to \"https://hotelads.io/\", waiting until \"commit\"\n"
+  "url": "https://hotelads.vercel.app/",
+  "status": 200,
+  "finalUrl": "https://hotelads.vercel.app/",
+  "title": "Meta & Google Ads for Hotels & Resorts",
+  "description": "Boost direct bookings with high-intent Meta & Google Ads. We specialize in performance ads for hotels, resorts, villas, and Airbnb listings.",
+  "ogImage": "",
+  "h1": "Fill your rooms with high‑intent direct bookings",
+  "internalPages": 0,
+  "forms": 1,
+  "words": 761,
+  "height": 4165,
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "house-connect",
@@ -693,7 +752,8 @@
   "forms": 2,
   "words": 600,
   "height": 4249,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "humrahi-travels",
@@ -710,7 +770,8 @@
   "forms": 0,
   "words": 902,
   "height": 7387,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "humrahi-travels-test",
@@ -727,7 +788,8 @@
   "forms": 0,
   "words": 2788,
   "height": 12902,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "infinity-hotels-sky6",
@@ -744,7 +806,8 @@
   "forms": 1,
   "words": 1082,
   "height": 7672,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "ivararesorts",
@@ -757,11 +820,12 @@
   "description": "",
   "ogImage": "",
   "h1": "Luxury Resort in\nKhajuraho, Anchored in Heritage",
-  "internalPages": 9,
+  "internalPages": 8,
   "forms": 2,
-  "words": 659,
+  "words": 658,
   "height": 4951,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "jahez-oman",
@@ -778,7 +842,8 @@
   "forms": 1,
   "words": 828,
   "height": 4467,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "jaiaanjaney",
@@ -793,9 +858,10 @@
   "h1": "Where Spirituality Meets Luxury",
   "internalPages": 12,
   "forms": 0,
-  "words": 802,
+  "words": 819,
   "height": 7343,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "kamalfarms",
@@ -812,7 +878,8 @@
   "forms": 0,
   "words": 1158,
   "height": 4670,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "kumaon-bliss",
@@ -829,7 +896,8 @@
   "forms": 1,
   "words": 656,
   "height": 7202,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "lamount-laddakh",
@@ -846,7 +914,8 @@
   "forms": 2,
   "words": 730,
   "height": 4209,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "alphawellness",
@@ -863,7 +932,8 @@
   "forms": 4,
   "words": 1892,
   "height": 11686,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "corbatt-the-grand",
@@ -880,7 +950,8 @@
   "forms": 1,
   "words": 1150,
   "height": 6349,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "ebc-landing",
@@ -897,15 +968,26 @@
   "forms": 2,
   "words": 1194,
   "height": 7615,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "mongo-grove",
   "projectId": "prj_b0aPgLhFJYKEJ1bbZTbNBTmxgAAJ",
   "slug": "landing-mangogrovehotel-com",
-  "url": "https://landing.mangogrovehotel.com/",
-  "ok": false,
-  "error": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://landing.mangogrovehotel.com/\nCall log:\n  - navigating to \"https://landing.mangogrovehotel.com/\", waiting until \"commit\"\n"
+  "url": "https://mongo-grove.vercel.app/",
+  "status": 200,
+  "finalUrl": "https://mongo-grove.vercel.app/",
+  "title": "Mango Grove Hotel, Chandigarh - Book Top &amp; Best Hotels in Chandigarh",
+  "description": "",
+  "ogImage": "",
+  "h1": "",
+  "internalPages": 0,
+  "forms": 1,
+  "words": 865,
+  "height": 7597,
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "bunker-house-landing-page",
@@ -920,9 +1002,10 @@
   "h1": "YAMUNOTRI TEMPLE",
   "internalPages": 0,
   "forms": 1,
-  "words": 549,
+  "words": 526,
   "height": 4354,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "rudraksh-retreat",
@@ -939,7 +1022,8 @@
   "forms": 1,
   "words": 1006,
   "height": 6578,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "fielmente-landing-pages-y6lb",
@@ -956,7 +1040,8 @@
   "forms": 0,
   "words": 88,
   "height": 1071,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "anantharaa",
@@ -973,7 +1058,8 @@
   "forms": 5,
   "words": 1432,
   "height": 6767,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "ivararesorts",
@@ -990,7 +1076,8 @@
   "forms": 2,
   "words": 659,
   "height": 4951,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "trikonelp",
@@ -1007,7 +1094,8 @@
   "forms": 3,
   "words": 1690,
   "height": 7974,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "lumi-bir",
@@ -1024,7 +1112,8 @@
   "forms": 0,
   "words": 404,
   "height": 4379,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "luxury-vibe-stay",
@@ -1041,7 +1130,8 @@
   "forms": 3,
   "words": 1546,
   "height": 5876,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "makland-crs-calculator",
@@ -1058,7 +1148,8 @@
   "forms": 3,
   "words": 82,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "makland-client",
@@ -1075,7 +1166,8 @@
   "forms": 0,
   "words": 883,
   "height": 6497,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "manali-se",
@@ -1092,7 +1184,8 @@
   "forms": 1,
   "words": 674,
   "height": 5772,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "manratan",
@@ -1109,7 +1202,8 @@
   "forms": 2,
   "words": 434,
   "height": 5886,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "minimalisthotel",
@@ -1126,7 +1220,8 @@
   "forms": 2,
   "words": 584,
   "height": 4602,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "moets",
@@ -1143,7 +1238,8 @@
   "forms": 1,
   "words": 884,
   "height": 7927,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "muktkeshii",
@@ -1158,9 +1254,10 @@
   "h1": "",
   "internalPages": 0,
   "forms": 9,
-  "words": 2119,
+  "words": 2096,
   "height": 5553,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "muktkeshii-client",
@@ -1177,7 +1274,8 @@
   "forms": 0,
   "words": 21,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "naadwellness",
@@ -1194,7 +1292,8 @@
   "forms": 1,
   "words": 1157,
   "height": 8126,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "nature-on-the-rocks",
@@ -1211,7 +1310,8 @@
   "forms": 1,
   "words": 855,
   "height": 6153,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "naturoville-lp",
@@ -1228,7 +1328,8 @@
   "forms": 3,
   "words": 1481,
   "height": 6376,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "norther-nawab",
@@ -1245,7 +1346,8 @@
   "forms": 2,
   "words": 1256,
   "height": 5559,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "northwind",
@@ -1262,7 +1364,8 @@
   "forms": 1,
   "words": 1073,
   "height": 6445,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "oakclimbing",
@@ -1279,7 +1382,8 @@
   "forms": 0,
   "words": 726,
   "height": 5178,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "on-boarding",
@@ -1296,7 +1400,8 @@
   "forms": 0,
   "words": 103,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "one-earth-lp",
@@ -1313,7 +1418,8 @@
   "forms": 2,
   "words": 1085,
   "height": 4858,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "oneoff-hotel",
@@ -1330,7 +1436,8 @@
   "forms": 0,
   "words": 511,
   "height": 5261,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "one-shot-marketing-website",
@@ -1344,10 +1451,11 @@
   "ogImage": "",
   "h1": "BOOST YOUR BUSINESS WITH",
   "internalPages": 34,
-  "forms": 4,
+  "forms": 5,
   "words": 1402,
-  "height": 4926,
-  "ok": true
+  "height": 4925,
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "opera-house",
@@ -1364,7 +1472,8 @@
   "forms": 1,
   "words": 476,
   "height": 3515,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "oralakeview",
@@ -1381,7 +1490,8 @@
   "forms": 1,
   "words": 1218,
   "height": 8967,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "ota-website-eazotel",
@@ -1398,7 +1508,8 @@
   "forms": 2,
   "words": 1212,
   "height": 5274,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "ota-fielmente-lp",
@@ -1415,7 +1526,8 @@
   "forms": 3,
   "words": 1190,
   "height": 5214,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "petals-and-paniyaram",
@@ -1432,7 +1544,8 @@
   "forms": 2,
   "words": 1214,
   "height": 5118,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "syahudaipur",
@@ -1447,9 +1560,10 @@
   "h1": "A farm-to-table tasting menu, rated 5.0 by travellers",
   "internalPages": 0,
   "forms": 1,
-  "words": 805,
+  "words": 799,
   "height": 9408,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "riviera-resort-client",
@@ -1466,7 +1580,8 @@
   "forms": 0,
   "words": 752,
   "height": 5221,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "royalistiq",
@@ -1483,7 +1598,8 @@
   "forms": 4,
   "words": 786,
   "height": 7280,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "sachin-kapoor-hospitality",
@@ -1500,7 +1616,8 @@
   "forms": 1,
   "words": 1293,
   "height": 8341,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "saraayanew",
@@ -1517,7 +1634,8 @@
   "forms": 1,
   "words": 1032,
   "height": 7503,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "shree-iyengarfoods",
@@ -1534,7 +1652,8 @@
   "forms": 1,
   "words": 871,
   "height": 6214,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "soni-arena",
@@ -1551,7 +1670,8 @@
   "forms": 0,
   "words": 771,
   "height": 8641,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "soul-stories-website",
@@ -1568,15 +1688,26 @@
   "forms": 1,
   "words": 894,
   "height": 6922,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "sparv",
   "projectId": "prj_RXKp6kYPQHkZ2lScOf1sfvyiAI0n",
   "slug": "sparvhospitality-com",
-  "url": "https://www.sparvhospitality.com/",
-  "ok": false,
-  "error": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.sparvhospitality.com/\nCall log:\n  - navigating to \"https://www.sparvhospitality.com/\", waiting until \"commit\"\n"
+  "url": "https://sparv-omega.vercel.app/",
+  "status": 200,
+  "finalUrl": "https://sparv-omega.vercel.app/",
+  "title": "SPARV Aulakhs Resort - 4-Star Beachfront stay in Mandrem",
+  "description": "Book your perfect Mandrem retreat beach resort at SPARV Aulakhs Resort, your 4-star getaway in Goa with sea views and top amenities.",
+  "ogImage": "",
+  "h1": "Where Bliss Meets the Beach",
+  "internalPages": 10,
+  "forms": 0,
+  "words": 446,
+  "height": 7517,
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "spice-haven-website",
@@ -1593,7 +1724,8 @@
   "forms": 1,
   "words": 1160,
   "height": 5850,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "stay-in-kumbh",
@@ -1607,10 +1739,11 @@
   "ogImage": "https://tentinkumbh.com/og.png",
   "h1": "For The First Time Ever, Experience Such Low Prices For The MahaKhumb Mela!",
   "internalPages": 0,
-  "forms": 2,
+  "forms": 3,
   "words": 338,
   "height": 5169,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "stuccodecor",
@@ -1627,7 +1760,8 @@
   "forms": 0,
   "words": 538,
   "height": 3713,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "suryabagh",
@@ -1644,7 +1778,8 @@
   "forms": 1,
   "words": 1186,
   "height": 5955,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "swansuites",
@@ -1661,7 +1796,8 @@
   "forms": 1,
   "words": 794,
   "height": 4436,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "the-jamun-tree",
@@ -1678,7 +1814,8 @@
   "forms": 0,
   "words": 620,
   "height": 6651,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "theacaciahotels",
@@ -1695,7 +1832,8 @@
   "forms": 1,
   "words": 938,
   "height": 7107,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "bluelake",
@@ -1712,7 +1850,8 @@
   "forms": 2,
   "words": 343,
   "height": 3677,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "the-bunker-house",
@@ -1729,7 +1868,8 @@
   "forms": 2,
   "words": 379,
   "height": 4401,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "jungle-diaries",
@@ -1746,7 +1886,8 @@
   "forms": 0,
   "words": 588,
   "height": 5487,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "rudraksh-retreat",
@@ -1763,7 +1904,8 @@
   "forms": 1,
   "words": 1006,
   "height": 6578,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "tncwebsite",
@@ -1780,7 +1922,8 @@
   "forms": 1,
   "words": 635,
   "height": 5459,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "usafielmente",
@@ -1797,7 +1940,8 @@
   "forms": 1,
   "words": 273,
   "height": 3725,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "wabi-sabi-resort",
@@ -1814,7 +1958,8 @@
   "forms": 0,
   "words": 691,
   "height": 7065,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "waterfrontestatebymoets",
@@ -1831,7 +1976,8 @@
   "forms": 1,
   "words": 730,
   "height": 5005,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "whatsapp-widget",
@@ -1848,7 +1994,8 @@
   "forms": 0,
   "words": 1,
   "height": 900,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "white-ridge-client",
@@ -1865,7 +2012,8 @@
   "forms": 1,
   "words": 1176,
   "height": 8255,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "yakumi",
@@ -1882,7 +2030,8 @@
   "forms": 1,
   "words": 686,
   "height": 4662,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "yuzi-sushi",
@@ -1899,7 +2048,8 @@
   "forms": 3,
   "words": 715,
   "height": 4394,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "zenevents",
@@ -1916,7 +2066,8 @@
   "forms": 2,
   "words": 665,
   "height": 6259,
-  "ok": true
+  "ok": true,
+  "mobile": true
  },
  {
   "project": "zion",
@@ -1933,6 +2084,7 @@
   "forms": 2,
   "words": 1149,
   "height": 5112,
-  "ok": true
+  "ok": true,
+  "mobile": true
  }
 ]
