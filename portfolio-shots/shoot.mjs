@@ -9,12 +9,12 @@ await fs.mkdir("out", { recursive: true });
 const browser = await chromium.launch();
 const results = [];
 
-async function shoot(site) {
+async function shoot(site, slow = false) {
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, ignoreHTTPSErrors: true });
   const page = await ctx.newPage();
   const r = { ...site };
   try {
-    const res = await page.goto(site.url, { waitUntil: "domcontentloaded", timeout: 45000 });
+    const res = await page.goto(site.url, { waitUntil: slow ? "commit" : "domcontentloaded", timeout: slow ? 90000 : 45000 });
     r.status = res ? res.status() : null;
     await page.waitForLoadState("load", { timeout: 20000 }).catch(() => {});
     await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
@@ -66,6 +66,11 @@ async function shoot(site) {
 
 const queue = [...sites];
 await Promise.all(Array.from({ length: 4 }, async () => { while (queue.length) await shoot(queue.shift()); }));
+// Second try, one at a time and with more patience, for sites that failed.
+for (const failed of results.filter((r) => !r.ok)) {
+  results.splice(results.indexOf(failed), 1);
+  await shoot(sites.find((s) => s.slug === failed.slug), true);
+}
 await browser.close();
 results.sort((a, b) => a.slug.localeCompare(b.slug));
 await fs.writeFile("out/meta.json", JSON.stringify(results, null, 1));
