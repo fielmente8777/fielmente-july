@@ -6,6 +6,9 @@ on:
     paths: ["portfolio-shots/urls.json", "portfolio-shots/shoot.mjs", ".github/workflows/portfolio-shots.yml"]
 permissions:
   contents: write
+concurrency:
+  group: portfolio-shots
+  cancel-in-progress: true
 jobs:
   shoot:
     runs-on: ubuntu-latest
@@ -34,7 +37,7 @@ jobs:
           set +e
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          log=$( { git checkout -- . && git add -A out && git commit -qm "Portfolio screenshots" && git fetch -q origin portfolio-shots && git rebase -q origin/portfolio-shots && git push -q origin HEAD:portfolio-shots; } 2>&1 )
+          log=$( { cp -r out /tmp/shots-out && git fetch -q origin portfolio-shots && git reset -q --hard origin/portfolio-shots && rm -rf out && cp -r /tmp/shots-out out && git add -A out && git commit -qm "Portfolio screenshots" && git push -q origin HEAD:portfolio-shots; } 2>&1 )
           rc=$?
           echo "$log"
           if [ $rc -ne 0 ]; then echo "::error title=commit failed::$(echo "$log" | tail -6 | tr '\n' ' ')"; exit 1; fi
