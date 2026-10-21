@@ -1,5 +1,6 @@
 // XML sitemap, built from the site's own data on every deploy so it never goes stale.
 // Only indexable, self-canonical pages belong here: no redirects, noindex ad landing pages or /thank-you/.
+// Blog list pages 2+ live at /blogs/?page=N (each self-canonical), so they are listed too.
 import type { MetadataRoute } from "next";
 import { AGENCY_PAGES } from "./(agency)/data";
 import { casStudiesData } from "./case-study/[story]/components/caseData";
@@ -9,6 +10,7 @@ import { subPageData } from "./industries-we-serve/[...industry]/components/subP
 import { industriesData } from "./industries-we-serve/[...industry]/pageData";
 import { PRODUCTS, productPath } from "@/lib/products";
 import { blogData } from "@/utils/blogdata";
+import { BLOGS_PER_PAGE } from "./blogs/components/pageData";
 
 const SITE = "https://fielmente.com";
 
@@ -29,6 +31,7 @@ const STATIC_PAGES = [
   "/hospitality-marketing-services/social-media-marketing-agency/",
   "/hotel-ota-management/",
   "/food-and-beverage-marketing-solutions/",
+  "/google-ads-for-hotels/",
   "/privacy-policy/",
   "/terms-and-conditions/",
 ];
@@ -53,8 +56,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   casStudiesData.filter((c) => c.data?.length).forEach((c) => add(`/case-study/${c.slug}/`));
   blogData.forEach((b) => add(`/${b.slug}/`, isoDate(b.date)));
 
-  return [...paths].map(([p, lastModified]) => ({
-    url: `${SITE}${p}`,
-    ...(lastModified ? { lastModified } : {}),
+  const blogListPages = Array.from({ length: Math.ceil(blogData.length / BLOGS_PER_PAGE) - 1 }, (_, i) => ({
+    url: `${SITE}/blogs/?page=${i + 2}`,
   }));
+
+  return [
+    ...[...paths].map(([p, lastModified]) => ({
+      url: `${SITE}${p}`,
+      ...(lastModified ? { lastModified } : {}),
+    })),
+    ...blogListPages,
+  ];
 }

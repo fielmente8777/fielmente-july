@@ -9,7 +9,7 @@ export const caseStudyPageData = {
   },
   casStudyClientSection: {
     title: "How Hotels Are Scaling with Fielmente",
-    cards: casStudiesData.map((item) => ({
+    cards: casStudiesData.filter((item) => item.data?.length).map((item) => ({
       src: item.img,
       title: item.title,
       description: item.description,

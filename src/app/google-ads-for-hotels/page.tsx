@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: PAGE_URL,
   },
+  robots: { index: true, follow: true },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

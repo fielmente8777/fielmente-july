@@ -37,7 +37,7 @@ const page = () => {
             &quot;our&quot;) is committed to protecting your privacy. This
             Privacy Policy explains how we collect, use, disclose, and safeguard
             your information when you visit our website [
-            <Link target="_blank" href="https://www.fielmente.com">
+            <Link target="_blank" href="https://fielmente.com/">
               www.fielmente.com
             </Link>
             ], or engage with our services.

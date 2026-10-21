@@ -5,8 +5,9 @@
 // (100+ logos per page made those a large part of the page size).
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = path.dirname(path.dirname(new URL(import.meta.url).pathname));
+const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const FOLDERS = ["clientsLogo", "partners"];
 const MAX_W = 480; // 2x the largest tile the logo is shown in
 const MAX_H = 320;

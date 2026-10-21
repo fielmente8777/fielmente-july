@@ -154,7 +154,7 @@ const nextConfig: NextConfig = {
     const noindex = [{ key: "X-Robots-Tag", value: "noindex, follow" }];
     return [
       // Paid-ads landing pages: kept live for campaigns, kept out of Google's index (near-duplicates of each other).
-      ...["/landing-page/", "/resort/", "/restaurant/", "/hospitality/", "/dubai-restaurant/", "/UK/", "/USA/", "/google-ads-for-hotels/"].map(
+      ...["/landing-page/", "/resort/", "/restaurant/", "/hospitality/", "/dubai-restaurant/", "/UK/", "/USA/"].map(
         (source) => ({ source, headers: noindex })
       ),
       // Vercel's own *.vercel.app addresses serve the same site: keep them out of search results.

@@ -1,5 +1,7 @@
 import { blogData } from "@/utils/blogdata";
 
+export const BLOGS_PER_PAGE = 9;
+
 export const blogPageData = {
   bannerData: {
     title: "EXPLORE OUR BLOGS",

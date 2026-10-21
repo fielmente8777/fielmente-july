@@ -1,7 +1,7 @@
 import { Section, SectionWithContainer } from "@/components";
 import SectionHeading from "@/components/typography/SectionHeadingDesc";
 import Image from "next/image";
-import { blogPageData } from "./components/pageData";
+import { blogPageData, BLOGS_PER_PAGE } from "./components/pageData";
 import BlogCard from "./components/BlogCard";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -42,8 +42,6 @@ export async function generateMetadata({
     },
   };
 }
-
-const BLOGS_PER_PAGE = 9;
 
 // Builds a truncated page list like [1, "...", 4, 5, 6, "...", 9]
 function getPaginationRange(
