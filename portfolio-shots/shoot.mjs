@@ -18,16 +18,33 @@ async function shoot(site, slow = false) {
     r.status = res ? res.status() : null;
     await page.waitForLoadState("load", { timeout: 20000 }).catch(() => {});
     await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
-    await page.waitForTimeout(3500);
-    // Hide pop-ups, cookie bars and full-screen loaders so the screenshot shows the page itself.
+    // Load lazy images and trigger scroll animations, then come back to the top.
+    await page.evaluate(() => document.querySelectorAll("img[loading=lazy]").forEach((i) => (i.loading = "eager")));
+    for (const y of [600, 1200, 1800, 0]) {
+      await page.evaluate((v) => window.scrollTo(0, v), y);
+      await page.waitForTimeout(700);
+    }
+    await page
+      .waitForFunction(
+        () => [...document.images].filter((i) => i.getBoundingClientRect().top < innerHeight).every((i) => i.complete),
+        null,
+        { timeout: 10000 }
+      )
+      .catch(() => {});
+    await page.waitForTimeout(4500);
+    // Hide pop-ups, chat windows, cookie bars and full-screen loaders so the screenshot shows the page itself.
     await page.evaluate(() => {
       const vw = innerWidth, vh = innerHeight;
+      const kill = (el) => el.style.setProperty("display", "none", "important");
+      document.querySelectorAll('[id^="zsiq"], .zsiq_floatmain, .siqembed, #siqiframe, [class*="tawk"], iframe[title*="chat" i], [id*="chat" i][class*="widget" i]').forEach(kill);
       for (const el of document.querySelectorAll("body *")) {
         const cs = getComputedStyle(el);
-        if (cs.position !== "fixed" && cs.position !== "sticky") continue;
+        if (cs.position !== "fixed") continue;
         const b = el.getBoundingClientRect();
-        const area = Math.max(0, Math.min(b.right, vw) - Math.max(b.left, 0)) * Math.max(0, Math.min(b.bottom, vh) - Math.max(b.top, 0));
-        if (cs.position === "fixed" && area > vw * vh * 0.3) el.style.setProperty("display", "none", "important");
+        const w = Math.max(0, Math.min(b.right, vw) - Math.max(b.left, 0));
+        const h = Math.max(0, Math.min(b.bottom, vh) - Math.max(b.top, 0));
+        if (w * h > vw * vh * 0.3) kill(el); // modal or loader covering the page
+        else if (b.top > vh * 0.15 && w < vw * 0.6 && w * h > vw * vh * 0.02) kill(el); // chat window or pop-up card
       }
       document.documentElement.style.overflow = "auto";
       document.body.style.overflow = "auto";
