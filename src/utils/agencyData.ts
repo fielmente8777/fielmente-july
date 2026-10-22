@@ -1,6 +1,7 @@
 // Company facts, results, testimonials and client logos used by the agency, industry and service pages.
 // Everything here is already published on fielmente.com (home page, About page, client list,
 // testimonials) or comes from the Google Ads case studies. Edit claims in one place here.
+import { ClientImages } from "@/utils/client";
 import type { LogoSet, TestimonialKey } from "@/@types/@agencyPageType";
 
 /* ── Company facts (from the About page and home page) ─────────────────── */
@@ -154,6 +155,23 @@ const ORDER: Record<LogoSet, Logo[][]> = {
   travel: [TRAVEL, RESORTS, INTERNATIONAL, HOTELS],
   all: [HOTELS, RESORTS, INTERNATIONAL],
 };
+
+// Chain brands on /our-clients/ that may be the founders' past employers rather than Fielmente clients
+// (see the REVIEW note above): left out of the strips until confirmed.
+const CHAIN_BRANDS = new Set(["Park Plaza", "Marriott", "Golden Tulip", "Hyatt Regency", "JW Marriott", "Novotel Hotels & Resorts", "Radisson", "Ramada by Wyndham", "Taj Hotels", "Hilton"]);
+
+/** Every client logo: the page's own group first, then all other clients in src/utils/client.ts. */
+export function allClientLogos(set: LogoSet) {
+  const out = logosFor(set, 1000).map((l) => ({ ...l, src: decodeURI(l.src) }));
+  const seen = new Set(out.map((l) => l.src));
+  for (const c of ClientImages) {
+    if (seen.has(c.src) || CHAIN_BRANDS.has(c.alt)) continue;
+    seen.add(c.src);
+    const bg = c.className && /^#[0-9a-f]{3,8}$/i.test(c.className) ? c.className : undefined;
+    out.push({ name: c.alt, src: c.src, bg });
+  }
+  return out;
+}
 
 export function logosFor(set: LogoSet, count = 16) {
   const seen = new Set<string>();

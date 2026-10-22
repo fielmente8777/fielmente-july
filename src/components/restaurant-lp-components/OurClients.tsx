@@ -1,87 +1,31 @@
-"use client";
+// "Trusted by" logo strip on the restaurant, Dubai restaurant and UK landing pages.
+// Shows every client logo (src/utils/client.ts) in two scrolling rows, restaurants first.
 import { Container, Section } from "@/components";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
+import LogoMarquee from "@/components/slider/LogoMarquee";
+import { allClientLogos } from "@/utils/agencyData";
 
 interface OurClientsProps {
   title: string;
   bold: string;
-  items: { src: string; alt: string }[];
+  /** Kept for the page data that still passes a short list; the strip now shows every client. */
+  items?: { src: string; alt: string }[];
 }
 
-const OurClients: React.FC<OurClientsProps> = ({ title, bold, items }) => {
+const OurClients: React.FC<OurClientsProps> = ({ title, bold }) => {
+  const logos = allClientLogos("restaurants").map((l) => ({ src: l.src, alt: l.name, background: l.bg ?? "#FFFFFF" }));
+  const half = Math.ceil(logos.length / 2);
+  const perView = { base: 2.5, md: 4, lg: 6, xl: 7 };
   return (
     <Section>
       <Container>
-        <div className="flex flex-col gap-8">
-          <h2 className="lg:text-3xl text-lg tracking-wider text-center text-primary2 helv">
-            {title} <b className="text-orange-primary">{bold}</b>
-          </h2>
-          <div className="lg:grid hidden grid-cols-6 gap-4">
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className="flex justify-center items-center relative aspect-[4/2.5] w-full rounded-md"
-                style={{
-                  boxShadow: "0px 7px 29px 0px rgba(100, 100, 111, 0.20)",
-                }}
-              >
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  className={`${index === 2 || index === 4 || index === 5 ? "object-cover" : "object-contain"} px-2 py-3`}
-                  sizes="100vw"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="lg:hidden block mt-8">
-            <Swiper
-              modules={[Autoplay]}
-              autoplay={{ delay: 3000 }}
-              slidesPerView={1}
-              spaceBetween={10}
-              loop={true}
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-                1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 40,
-                },
-              }}
-              className=""
-            >
-              {items.map((item, index) => (
-                <SwiperSlide key={index} className="p-2">
-                  <div
-                    key={index}
-                    className="flex justify-center items-center relative lg:aspect-[4/2.5] aspect-[4/2] w-full shadow-xl p-2"
-                  >
-                    <Image
-                      src={item.src}
-                      alt={item.alt}
-                      fill
-                      className={`${index === 2 || index === 4 || index === 5 ? "object-cover" : "object-contain"} px-2 py-3`}
-                      sizes="100vw"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
+        <h2 className="lg:text-3xl text-lg tracking-wider text-center text-primary2 helv">
+          {title} <b className="text-orange-primary">{bold}</b>
+        </h2>
       </Container>
+      <div className="mt-8 space-y-3">
+        <LogoMarquee items={logos.slice(0, half)} perView={perView} itemClassName="border border-[#EDECF3]" />
+        <LogoMarquee items={logos.slice(half)} perView={perView} itemClassName="border border-[#EDECF3]" wrapperClassName="logo-marquee-reverse" />
+      </div>
     </Section>
   );
 };
