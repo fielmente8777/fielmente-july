@@ -7,6 +7,9 @@ import WorkGrid from "./WorkGrid";
 import AdsResults, { AdsTotals } from "./AdsResults";
 import SocialGrids from "./SocialGrids";
 import { EarlierBrands, MetaAdsFeature, PrCoverage, SeoResults } from "./MoreWork";
+import { BrandProjects, LogoDesigns, MenuDesigns } from "./BrandingWork";
+import { OtaWork, ServicesWork } from "./ServicesWork";
+import LogoWall, { CLIENT_LOGOS } from "./LogoWall";
 import { SITES } from "./sites";
 import { ADS_RESULTS, ADS_TOTALS } from "./ads";
 import { SOCIAL_BRANDS } from "./social";
@@ -16,8 +19,8 @@ const URL = `${SITE}/our-work/`;
 const websites = SITES.filter((s) => s.type === "Website").length;
 const landingPages = SITES.length - websites;
 
-const TITLE = "Our Work: Hotel Websites, Google Ads & Social Media | Fielmente";
-const DESCRIPTION = `${websites} websites and ${landingPages} landing pages, Google Ads results from ${ADS_TOTALS.accounts} accounts, and social media, SEO and PR work for hotels, resorts and restaurants.`;
+const TITLE = "Our Work: Hotel Websites, Ads, Branding & Social | Fielmente";
+const DESCRIPTION = `${websites} websites, ${landingPages} landing pages, Google Ads results from ${ADS_TOTALS.accounts} accounts, branding, social media, SEO, OTA and PR work for ${CLIENT_LOGOS.length}+ hospitality brands.`;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -52,12 +55,16 @@ const itemListLd = {
 };
 
 const SECTIONS = [
+  { id: "services", label: "All services" },
   { id: "websites", label: "Websites & landing pages" },
   { id: "google-ads", label: "Google Ads" },
   { id: "social-media", label: "Social media" },
+  { id: "meta-ads", label: "Meta ads" },
+  { id: "branding", label: "Branding & print" },
   { id: "seo", label: "SEO" },
+  { id: "ota", label: "OTA listings" },
   { id: "pr", label: "PR" },
-  { id: "more-brands", label: "More brands" },
+  { id: "clients", label: "All clients" },
 ];
 
 /** Section intro: a small label, the section heading and one line of context. */
@@ -80,7 +87,7 @@ export default function OurWorkPage() {
       <TextBanner
         title="Our Work"
         subTitle="Websites, Ads & Content That Bring Bookings"
-        description="Every website and landing page we have built, the Google Ads results behind them, and the social media, SEO and PR work for hotels, resorts and restaurants."
+        description="Every website and landing page we have built, the Google Ads results behind them, and our branding, social media, SEO, OTA and PR work for hotels, resorts and restaurants."
       />
 
       {/* Headline numbers and jump links */}
@@ -111,6 +118,15 @@ export default function OurWorkPage() {
         </nav>
       </SectionWithContainer>
 
+      <SectionWithContainer sectionId="services" sectionClassName="scroll-mt-24 bg-[#F5F7FB]">
+        <Intro
+          label="Services"
+          title="Every Service, and the Clients We Did It For"
+          text="From the logo on the gate to the ad that fills the rooms: each service we offer, with the hotels, resorts and restaurants we have delivered it for."
+        />
+        <ServicesWork />
+      </SectionWithContainer>
+
       <SectionWithContainer sectionId="websites" sectionClassName="scroll-mt-24">
         <Intro
           label="Websites & landing pages"
@@ -139,12 +155,25 @@ export default function OurWorkPage() {
           text="Monthly content for resorts, retreats, villas, events and travel brands: planned as a grid, designed in-house and posted for the client."
         />
         <SocialGrids brands={SOCIAL_BRANDS} />
-        <div className="mt-14">
+        <div id="meta-ads" className="mt-14 scroll-mt-24">
           <MetaAdsFeature />
         </div>
       </SectionWithContainer>
 
-      <SectionWithContainer sectionId="seo" sectionClassName="scroll-mt-24 bg-[#F5F7FB]">
+      <SectionWithContainer sectionId="branding" sectionClassName="scroll-mt-24 bg-[#F5F7FB]">
+        <Intro
+          label="Branding, menus & print"
+          title="Brand Identities We Have Designed"
+          text="Logos, brand books and every guest touchpoint: signage, key tags, stationery, amenities, vehicles, menus and billboards, designed in-house."
+        />
+        <BrandProjects />
+        <div className="mt-16 space-y-16">
+          <LogoDesigns />
+          <MenuDesigns />
+        </div>
+      </SectionWithContainer>
+
+      <SectionWithContainer sectionId="seo" sectionClassName="scroll-mt-24">
         <Intro
           label="SEO"
           title="Rankings That Bring Direct Bookings"
@@ -153,17 +182,30 @@ export default function OurWorkPage() {
         <SeoResults />
       </SectionWithContainer>
 
+      <SectionWithContainer sectionId="ota" sectionClassName="scroll-mt-24 bg-[#F5F7FB]">
+        <Intro
+          label="OTA listing & management"
+          title="Listed and Managed on the Major OTAs"
+          text="Our OTA team sets up, optimises and manages listings so properties sell on the booking sites guests already use."
+        />
+        <OtaWork />
+      </SectionWithContainer>
+
       <SectionWithContainer sectionId="pr" sectionClassName="scroll-mt-24">
         <Intro label="PR & media" title="Coverage in Travel and Business Media" text="Press placements that build trust before a guest ever reaches the booking page." />
         <PrCoverage />
       </SectionWithContainer>
 
-      <SectionWithContainer sectionId="more-brands" sectionClassName="scroll-mt-24 bg-[#F5F7FB]">
+      <SectionWithContainer sectionId="clients" sectionClassName="scroll-mt-24 bg-[#F5F7FB]">
         <Intro
-          label="Branding, menus & more"
-          title="More Brands We Have Worked With"
-          text="Hotels, restaurants and caterers in India, Canada and Nepal, from brand identity and menu design to social media and websites."
+          label="Our clients"
+          title={`${CLIENT_LOGOS.length}+ Brands We Have Worked With`}
+          text="Hotels, resorts, palaces, glamps, restaurants, cloud kitchens and travel brands in India, the UAE, Oman, the UK, the USA, Canada, Nepal, Sri Lanka, Australia and Switzerland."
         />
+        <LogoWall />
+        <p id="more-brands" className="mb-5 mt-14 scroll-mt-24 text-sm font-semibold uppercase tracking-[0.14em] text-secondary">
+          More of what we did for them
+        </p>
         <EarlierBrands />
       </SectionWithContainer>
 

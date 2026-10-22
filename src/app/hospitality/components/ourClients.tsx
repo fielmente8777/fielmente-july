@@ -1,20 +1,10 @@
-"use client";
-
-import Image from "next/image";
-import Link from "next/link";
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-
-// import required modules
-import { Autoplay } from "swiper/modules";
-import SectionHeading from "./SectionHeading";
+// "Our Clients" logo strip on the hospitality, restaurant, UK, USA and Dubai landing pages.
+// Shows every client logo (src/utils/client.ts) as a scrolling strip; restaurant pages list restaurants first.
 import React from "react";
-import { ClientImages } from "@/utils/client";
+import type { LogoSet } from "@/@types/@agencyPageType";
+import LogoMarquee from "@/components/slider/LogoMarquee";
+import { allClientLogos } from "@/utils/agencyData";
+import SectionHeading from "./SectionHeading";
 
 const SectionHeadingDetails = {
   title: "Our ",
@@ -24,116 +14,41 @@ const SectionHeadingDetails = {
 function OurClients({
   SHeading,
   heading,
+  title,
+  bold,
+  set = "hotels",
 }: {
   SHeading?: boolean;
   heading?: string;
+  /** Plain and highlighted parts of the heading, e.g. "Trusted by" + "Leading Restaurants". */
+  title?: string;
+  bold?: string;
+  set?: LogoSet;
 }) {
+  const restaurantFirst = /restaurant|cloud kitchen|caf/i.test(`${title ?? ""} ${bold ?? ""} ${heading ?? ""}`);
+  const logos = allClientLogos(restaurantFirst ? "restaurants" : set).map((l) => ({
+    src: l.src,
+    alt: l.name,
+    background: l.bg ?? "#FFFFFF",
+  }));
+  const half = Math.ceil(logos.length / 2);
+  const perView = { base: 2.5, md: 4, lg: 7, xl: 8 };
   return (
     <div>
       {SHeading ? (
         <SectionHeading {...SectionHeadingDetails} />
       ) : (
         <h2 className="text-[#14113D] text-center md:text-4xl text-3xl font-bold">
-          {heading}
+          {heading ?? (
+            <>
+              {title} {bold && <span className="text-orange-primary">{bold}</span>}
+            </>
+          )}
         </h2>
       )}
-      {/* desktop view */}
-      {/* <div className='lg:block hidden'>
-        <div className="mt-16 grid lg:grid-cols-7 gap-y-8 md:grid-cols-4">
-          {ClientImages.map((item, index) => (
-            <Link
-              href={"/"}
-              className="relative w-full aspect-[4/3.7] bg-white"
-              key={index}
-            >
-              <Image
-                src={item.src}
-                alt={`${item.alt}`}
-                width={100}
-                height={100}
-                className="object-contain w-full h-full rounded-md"
-              />
-            </Link>
-          ))}
-        </div>
-      </div> */}
-      {/* small screen view */}
-      <div className="mt-16">
-        <div>
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={15}
-            slidesPerView={2}
-            loop={true}
-            speed={900}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-              
-            }}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-              },
-
-              1024: {
-                slidesPerView: 7,
-                spaceBetween: 10,
-              },
-            }}
-            className="mySwiper"
-          >
-            {ClientImages.map((item, index) => (
-              <SwiperSlide key={index} className="py-3">
-                <Link
-                  href={"/"}
-                  className="relative w-full lg:aspect-[4/3.4] aspect-[4/4] h-[8rem] rounded-md flex justify-center items-center hover:-translate-y-2 duration-300 cursor-pointer hover:shadow-lg hover:shadow-white/35 hover:scale-[1.04]"
-                >
-                   
-                  <Image
-                    src={item.src}
-                    alt={`${item.alt}`}
-                    width={100}
-                    height={100}
-                    className={`${index == 4 || index == 5 || index == 9 || index == 11 || index == 19 || index == 27 || index == 29 || index == 35 ? "object-cover" : "object-contain"} w-full h-full p-3 `}
-                    style={{
-                      backgroundColor: `${
-                        index == 23
-                          ? "#22413f"
-                          : index == 22 ||
-                              index == 16 ||
-                              index == 18 ||
-                              index == 20
-                            ? "#F7F7F7"
-                            // : index == 9
-                            //   ? "#FF6C26"
-                              : index == 21 || index == 0
-                                ? "#1e1e1e"
-                                : index == 25
-                                  ? "#e6e6e6"
-                                  : index == 26
-                                    ? "#f3f3f3"
-                                    : index == 34 || index == 35 || index == 28
-                                      ? "#000000"
-                                      : index == 31
-                                        ? "#a7d062"
-                                        : "white"
-                      }`,
-                    }}
-                  />
-
-                  <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black z-30 text-2xl font-bold">{index}</p>
-                </Link>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+      <div className="mt-12 space-y-3">
+        <LogoMarquee items={logos.slice(0, half)} perView={perView} itemClassName="border border-[#EDECF3]" />
+        <LogoMarquee items={logos.slice(half)} perView={perView} itemClassName="border border-[#EDECF3]" wrapperClassName="logo-marquee-reverse" />
       </div>
     </div>
   );
