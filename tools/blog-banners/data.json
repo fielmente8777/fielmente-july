@@ -1,0 +1,1014 @@
+[
+ {
+  "slug": "ai-hotel-whatsapp-sales-agent-the-future-of-direct-hotel-sales",
+  "eyebrow": "AI sales agent",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "Hi, do you have a deluxe room for 2 on 14 Feb?"
+   ],
+   [
+    "a",
+    "Yes! The Valley View Deluxe is ₹6,800 a night with breakfast. Shall I hold it for you?"
+   ],
+   [
+    "g",
+    "Yes please"
+   ]
+  ],
+  "chip": [
+   "Booked direct",
+   "11:42 pm, no staff online"
+  ],
+  "times": [
+   "23:40",
+   "23:41",
+   "23:42"
+  ],
+  "heading": "AI Hotel WhatsApp Sales Agent"
+ },
+ {
+  "slug": "chatgpt-ads-for-hotels-resorts",
+  "eyebrow": "AI search ads",
+  "type": "ai",
+  "prompt": "Best resort near Jaipur for a family weekend?",
+  "answer": "Here are a few family-friendly resorts within two hours of Jaipur, with pools, kids' activities and large family rooms.",
+  "sponsor": [
+   "Your resort here",
+   "Sponsored · Family suites, pool, kids' club"
+  ],
+  "heading": "ChatGPT Ads for Hotels & Resorts: Complete Guide 2026"
+ },
+ {
+  "slug": "whatsapp-service-message-pricing-changes",
+  "eyebrow": "WhatsApp Business API",
+  "type": "notice",
+  "date": [
+   "OCT",
+   "1",
+   "2026"
+  ],
+  "rows": [
+   "Service conversations",
+   "Marketing templates",
+   "Utility templates",
+   "What hotels should check now"
+  ],
+  "heading": "WhatsApp Service Message Pricing Changes Coming October 1, 2026"
+ },
+ {
+  "slug": "whatsapp-automation-for-hotels-the-complete-guide",
+  "eyebrow": "WhatsApp automation",
+  "type": "flow",
+  "nodes": [
+   "Guest sends an enquiry",
+   "Instant reply with rooms and rates",
+   "Automatic follow-up",
+   "Booking confirmed"
+  ],
+  "heading": "WhatsApp Automation for Hotels: The Complete Guide"
+ },
+ {
+  "slug": "how-hotels-can-automate-guest-communication-on-whatsapp",
+  "eyebrow": "Guest communication",
+  "type": "chat",
+  "msgs": [
+   [
+    "a",
+    "Hi Priya, your room is ready! Check-in is from 2 pm. Would you like an airport pickup?"
+   ],
+   [
+    "g",
+    "Yes, we land at 1:15"
+   ],
+   [
+    "a",
+    "Done. Your driver's details are on the way."
+   ]
+  ],
+  "chip": [
+   "Pre-arrival message sent",
+   "Automatically, 24 hours before check-in"
+  ],
+  "heading": "How Hotels Can Automate Guest Communication on WhatsApp"
+ },
+ {
+  "slug": "ai-whatsapp-chatbot-for-hotels-everything-hoteliers-need-to-know",
+  "eyebrow": "AI chatbot",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "Is breakfast included? And do you allow pets?"
+   ],
+   [
+    "a",
+    "Breakfast is included with every room, and small pets are welcome in our garden cottages."
+   ],
+   [
+    "g",
+    "Perfect, thank you!"
+   ]
+  ],
+  "chip": [
+   "Answered in 4 seconds",
+   "Any time of day or night"
+  ],
+  "heading": "AI WhatsApp Chatbot for Hotels: Everything Hoteliers Need to Know"
+ },
+ {
+  "slug": "whatsapp-booking-automation-how-hotels-can-convert-more-enquiries-into-reservations",
+  "eyebrow": "Booking automation",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "Rates for 2 nights, 20 to 22 Dec?"
+   ],
+   [
+    "a",
+    "The Garden Suite is ₹14,200 for both nights. Here's a secure link to confirm."
+   ],
+   [
+    "g",
+    "Paid!"
+   ]
+  ],
+  "chip": [
+   "Payment received",
+   "Enquiry to booking in one chat"
+  ],
+  "heading": "WhatsApp Booking Automation: How Hotels Can Convert More Enquiries Into Reservations"
+ },
+ {
+  "slug": "whatsapp-automation-vs-traditional-hotel-sales-whats-the-difference",
+  "eyebrow": "Hotel sales",
+  "type": "compare",
+  "left": [
+   "Traditional sales",
+   [
+    "Replies in office hours",
+    "Leads on personal phones",
+    "Follow-ups forgotten"
+   ]
+  ],
+  "right": [
+   "WhatsApp automation",
+   [
+    "Replies in seconds, 24/7",
+    "Every lead in one inbox",
+    "Follow-ups on schedule"
+   ]
+  ],
+  "heading": "WhatsApp Automation vs Traditional Hotel Sales: What’s the Difference?"
+ },
+ {
+  "slug": "24-7-ai-sales-agent-for-hotels-how-it-works",
+  "eyebrow": "AI sales agent",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "Any rooms tonight? We just landed."
+   ],
+   [
+    "a",
+    "Yes, one Executive room is left at ₹5,400 with breakfast. Want me to book it?"
+   ],
+   [
+    "g",
+    "Book it, thanks"
+   ]
+  ],
+  "chip": [
+   "Booked at 2:16 am",
+   "While the sales team slept"
+  ],
+  "times": [
+   "02:14",
+   "02:15",
+   "02:16"
+  ],
+  "heading": "24/7 AI Sales Agent for Hotels: How It Works"
+ },
+ {
+  "slug": "how-whatsapp-can-help-hotels-reduce-ota-dependency",
+  "eyebrow": "Direct bookings",
+  "type": "compare",
+  "left": [
+   "OTA booking",
+   [
+    "Commission on every stay",
+    "Guest details stay with the OTA",
+    "Price set against rivals"
+   ]
+  ],
+  "right": [
+   "Direct on WhatsApp",
+   [
+    "No commission",
+    "The guest relationship is yours",
+    "Offers you control"
+   ]
+  ],
+  "heading": "How WhatsApp Can Help Hotels Reduce OTA Dependency"
+ },
+ {
+  "slug": "how-hotels-can-generate-more-direct-bookings-through-whatsapp",
+  "eyebrow": "Direct bookings",
+  "type": "chat",
+  "msgs": [
+   [
+    "a",
+    "Book directly on WhatsApp and get free breakfast and a late check-out."
+   ],
+   [
+    "g",
+    "Great, 2 nights from Friday then"
+   ],
+   [
+    "a",
+    "Confirmed! Your booking reference is FM2193."
+   ]
+  ],
+  "chip": [
+   "Direct booking",
+   "No OTA commission"
+  ],
+  "heading": "How Hotels Can Generate More Direct Bookings Through WhatsApp"
+ },
+ {
+  "slug": "whatsapp-vs-otas-why-hotels-should-build-a-direct-booking-strategy",
+  "eyebrow": "Direct bookings",
+  "type": "compare",
+  "left": [
+   "OTAs",
+   [
+    "Commission on every stay",
+    "Guest contact hidden",
+    "One listing among hundreds"
+   ]
+  ],
+  "right": [
+   "Direct + WhatsApp",
+   [
+    "Keep the full room rate",
+    "Own the guest relationship",
+    "Personal offers, repeat stays"
+   ]
+  ],
+  "heading": "WhatsApp vs OTAs: Why Hotels Should Build a Direct Booking Strategy"
+ },
+ {
+  "slug": "how-hotels-can-automate-abandoned-booking-follow-ups-on-whatsapp",
+  "eyebrow": "Booking recovery",
+  "type": "chat",
+  "msgs": [
+   [
+    "a",
+    "Hi Rahul, you left a Lake View room for 9 to 11 Jan. It's held for you for 30 more minutes."
+   ],
+   [
+    "g",
+    "Thanks for the reminder, booking now"
+   ]
+  ],
+  "chip": [
+   "Abandoned booking recovered",
+   "Follow-up sent automatically"
+  ],
+  "heading": "How Hotels Can Automate Abandoned Booking Follow-Ups on WhatsApp"
+ },
+ {
+  "slug": "how-resorts-can-convert-website-visitors-into-whatsapp-leads",
+  "eyebrow": "Resort lead generation",
+  "type": "flow",
+  "nodes": [
+   "Visitor browses your website",
+   "Taps \"Chat on WhatsApp\"",
+   "Lead captured with dates and guests",
+   "Stay booked"
+  ],
+  "heading": "How Resorts Can Convert Website Visitors Into WhatsApp Leads"
+ },
+ {
+  "slug": "using-whatsapp-ai-to-turn-hotel-enquiries-into-revenue",
+  "eyebrow": "WhatsApp AI",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "Do you have rooms for 4 adults next weekend?"
+   ],
+   [
+    "a",
+    "Two Family Suites are free. With the dinner package it's ₹22,000 for 2 nights. Shall I reserve?"
+   ],
+   [
+    "g",
+    "Yes, go ahead"
+   ]
+  ],
+  "chip": [
+   "Enquiry became ₹22,000",
+   "Package upsold by the AI"
+  ],
+  "heading": "Using WhatsApp AI to Turn Hotel Enquiries Into Revenue"
+ },
+ {
+  "slug": "what-is-an-ai-whatsapp-sales-agent-for-hotels",
+  "eyebrow": "AI sales agent",
+  "type": "flow",
+  "nodes": [
+   "Understands the guest's question",
+   "Checks live rooms and rates",
+   "Recommends, quotes and books",
+   "Hands over to your team when needed"
+  ],
+  "heading": "What Is an AI WhatsApp Sales Agent for Hotels?"
+ },
+ {
+  "slug": "ai-chatbot-vs-ai-sales-agent-what-hotels-actually-need",
+  "eyebrow": "AI for hotels",
+  "type": "compare",
+  "left": [
+   "AI chatbot",
+   [
+    "Answers FAQs",
+    "Follows a fixed script",
+    "Stops at information"
+   ]
+  ],
+  "right": [
+   "AI sales agent",
+   [
+    "Checks availability and rates",
+    "Suggests rooms and packages",
+    "Closes the booking"
+   ]
+  ],
+  "heading": "AI Chatbot vs AI Sales Agent: What Hotels Actually Need"
+ },
+ {
+  "slug": "how-ai-can-qualify-hotel-leads-before-sending-them-to-the-sales-team",
+  "eyebrow": "Lead qualification",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "We need rooms for a company offsite in March"
+   ],
+   [
+    "a",
+    "Happy to help! How many guests, and which dates?"
+   ],
+   [
+    "g",
+    "40 people, 12 to 14 March"
+   ]
+  ],
+  "chip": [
+   "Qualified lead sent to sales",
+   "40 guests · 12–14 Mar · offsite"
+  ],
+  "heading": "How AI Can Qualify Hotel Leads Before Sending Them to the Sales Team"
+ },
+ {
+  "slug": "ai-whatsapp-for-hotel-wedding-leads-from-enquiry-to-site-visit",
+  "eyebrow": "Weddings & events",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "Looking for a wedding venue for 300 guests in February"
+   ],
+   [
+    "a",
+    "Our lawn hosts up to 400. Would you like to visit this Saturday at 11 am?"
+   ],
+   [
+    "g",
+    "Saturday works"
+   ]
+  ],
+  "chip": [
+   "Site visit booked",
+   "Saturday, 11:00 am"
+  ],
+  "heading": "AI WhatsApp for Hotel Wedding Leads: From Enquiry to Site Visit"
+ },
+ {
+  "slug": "how-resorts-can-automate-wedding-enquiries-on-whatsapp",
+  "eyebrow": "Weddings & events",
+  "type": "chat",
+  "msgs": [
+   [
+    "a",
+    "Congratulations! Here's our wedding brochure with packages for 150 to 400 guests."
+   ],
+   [
+    "g",
+    "Can we see photos of the mandap set-up?"
+   ],
+   [
+    "a",
+    "Of course, sending them now."
+   ]
+  ],
+  "chip": [
+   "Brochure sent",
+   "Follow-up scheduled in 2 days"
+  ],
+  "heading": "How Resorts Can Automate Wedding Enquiries on WhatsApp"
+ },
+ {
+  "slug": "whatsapp-automation-for-hotel-chains-managing-multiple-properties",
+  "eyebrow": "Hotel groups",
+  "type": "flow",
+  "nodes": [
+   "One WhatsApp number for the group",
+   "Enquiry routed to the right property",
+   "Each team replies from one inbox",
+   "Group-wide reports"
+  ],
+  "heading": "WhatsApp Automation for Hotel Chains: Managing Multiple Properties"
+ },
+ {
+  "slug": "whatsapp-marketing-for-hotels-the-complete-guide",
+  "eyebrow": "WhatsApp marketing",
+  "type": "chat",
+  "msgs": [
+   [
+    "a",
+    "Monsoon offer for our past guests: stay 3 nights, pay for 2. Valid till 30 September."
+   ],
+   [
+    "g",
+    "Is it valid on weekends?"
+   ],
+   [
+    "a",
+    "Yes, every day of the week!"
+   ]
+  ],
+  "chip": [
+   "Campaign to past guests",
+   "Replies go straight to sales"
+  ],
+  "heading": "WhatsApp Marketing for Hotels: The Complete Guide"
+ },
+ {
+  "slug": "whatsapp-broadcast-marketing-for-hotels-best-practices",
+  "eyebrow": "WhatsApp marketing",
+  "type": "list",
+  "title": "Broadcast best practices",
+  "rows": [
+   "Send only to guests who opted in",
+   "Segment by past stays and interests",
+   "One clear offer per message",
+   "Make it easy to reply and book"
+  ],
+  "heading": "WhatsApp Broadcast Marketing for Hotels: Best Practices"
+ },
+ {
+  "slug": "how-hotels-can-use-whatsapp-for-review-feedback-collection",
+  "eyebrow": "Reviews & feedback",
+  "type": "chat",
+  "msgs": [
+   [
+    "a",
+    "Thanks for staying with us, Anita! How was your stay?"
+   ],
+   [
+    "g",
+    "Loved it, the staff were amazing"
+   ],
+   [
+    "a",
+    "So glad! Would you share that on Google? It takes 30 seconds."
+   ]
+  ],
+  "chip": [
+   "5-star review posted",
+   "Asked at the right moment"
+  ],
+  "heading": "How Hotels Can Use WhatsApp for Review & Feedback Collection"
+ },
+ {
+  "slug": "whatsapp-upselling-for-hotels-rooms-food-spa-experiences",
+  "eyebrow": "Upselling",
+  "type": "chat",
+  "msgs": [
+   [
+    "a",
+    "Welcome! Tonight only: a 60-minute couple's spa at 20% off. Shall I book a slot?"
+   ],
+   [
+    "g",
+    "7 pm please"
+   ],
+   [
+    "a",
+    "Booked for 7 pm. Enjoy!"
+   ]
+  ],
+  "chip": [
+   "Spa upsell booked",
+   "Sent on arrival day"
+  ],
+  "heading": "WhatsApp Upselling for Hotels: Rooms, Food, Spa & Experiences"
+ },
+ {
+  "slug": "whatsapp-business-api-for-hotels-complete-guide",
+  "eyebrow": "WhatsApp Business API",
+  "type": "flow",
+  "nodes": [
+   "Verified business profile",
+   "Approved message templates",
+   "Automation and AI replies",
+   "Many agents, one number"
+  ],
+  "heading": "WhatsApp Business API for Hotels: Complete Guide"
+ },
+ {
+  "slug": "whatsapp-api-vs-whatsapp-business-app-for-hotels",
+  "eyebrow": "WhatsApp Business API",
+  "type": "compare",
+  "left": [
+   "Business App",
+   [
+    "One phone, a few users",
+    "Manual replies",
+    "Basic labels"
+   ]
+  ],
+  "right": [
+   "Business API",
+   [
+    "Many agents, one number",
+    "Automation and AI",
+    "Connects to CRM and PMS"
+   ]
+  ],
+  "heading": "WhatsApp API vs WhatsApp Business App for Hotels"
+ },
+ {
+  "slug": "how-to-integrate-whatsapp-with-a-hotel-booking-engine",
+  "eyebrow": "Hotel tech integrations",
+  "type": "flow",
+  "nodes": [
+   "Guest asks on WhatsApp",
+   "Live availability from the booking engine",
+   "Secure payment link in the chat",
+   "Booking saved in your engine"
+  ],
+  "heading": "How to Integrate WhatsApp With a Hotel Booking Engine"
+ },
+ {
+  "slug": "whatsapp-pms-integration-what-hotels-should-know",
+  "eyebrow": "Hotel tech integrations",
+  "type": "flow",
+  "nodes": [
+   "Booking created in the PMS",
+   "Pre-arrival message on WhatsApp",
+   "Check-in details and requests",
+   "Post-stay feedback"
+  ],
+  "heading": "WhatsApp + PMS Integration: What Hotels Should Know"
+ },
+ {
+  "slug": "whatsapp-channel-manager-the-future-of-hotel-sales",
+  "eyebrow": "Hotel tech integrations",
+  "type": "flow",
+  "nodes": [
+   "Guest books on WhatsApp",
+   "Channel manager updates inventory",
+   "Rates and rooms in sync",
+   "No overbookings on any channel"
+  ],
+  "heading": "WhatsApp + Channel Manager: The Future of Hotel Sales"
+ },
+ {
+  "slug": "whatsapp-api-pricing-for-hotels-what-you-need-to-know",
+  "eyebrow": "WhatsApp Business API",
+  "type": "list",
+  "title": "What hotels pay for",
+  "rows": [
+   "Marketing messages",
+   "Utility messages",
+   "Authentication messages",
+   "Replies to guests who message you"
+  ],
+  "heading": "WhatsApp API Pricing for Hotels: What You Need to Know"
+ },
+ {
+  "slug": "whatsapp-message-templates-for-hotels-examples-best-practices",
+  "eyebrow": "Message templates",
+  "type": "chat",
+  "msgs": [
+   [
+    "a",
+    "Hi {{1}}, your stay at {{2}} is confirmed for {{3}}. Reply HELP if you need anything."
+   ],
+   [
+    "g",
+    "HELP: can we check in early?"
+   ],
+   [
+    "a",
+    "Early check-in from 11 am is available. Shall I add it?"
+   ]
+  ],
+  "chip": [
+   "Template approved",
+   "Booking confirmation"
+  ],
+  "heading": "WhatsApp Message Templates for Hotels: Examples & Best Practices"
+ },
+ {
+  "slug": "how-hotels-can-automate-whatsapp-without-losing-the-human-touch",
+  "eyebrow": "Human + AI",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "It's our anniversary. Can you arrange something special?"
+   ],
+   [
+    "a",
+    "How lovely! Let me connect you with Neha from our guest team."
+   ],
+   [
+    "h",
+    "Hi! I'm Neha. Let's plan a surprise for you both."
+   ]
+  ],
+  "chip": [
+   "Handed to a person",
+   "In under a minute"
+  ],
+  "heading": "How Hotels Can Automate WhatsApp Without Losing the Human Touch"
+ },
+ {
+  "slug": "how-to-stop-losing-hotel-enquiries-on-whatsapp",
+  "eyebrow": "Enquiry management",
+  "type": "inbox",
+  "rows": [
+   [
+    "AK",
+    "Arjun K.",
+    "Rooms for 2 on Friday?",
+    "Replied"
+   ],
+   [
+    "SM",
+    "Sneha M.",
+    "Is the pool open in winter?",
+    "Replied"
+   ],
+   [
+    "RV",
+    "Rohit V.",
+    "Group booking for 12",
+    "With sales"
+   ],
+   [
+    "PS",
+    "Pooja S.",
+    "Price for 3 nights?",
+    "Booked"
+   ]
+  ],
+  "chip": [
+   "0 unanswered enquiries",
+   "Every chat replied and tracked"
+  ],
+  "heading": "How to Stop Losing Hotel Enquiries on WhatsApp"
+ },
+ {
+  "slug": "how-to-handle-100-hotel-enquiries-without-increasing-your-sales-team",
+  "eyebrow": "Sales productivity",
+  "type": "inbox",
+  "rows": [
+   [
+    "NJ",
+    "Neha J.",
+    "Weekend rates?",
+    "AI replied"
+   ],
+   [
+    "VG",
+    "Vikram G.",
+    "Corporate rate for 20 rooms",
+    "With sales"
+   ],
+   [
+    "AR",
+    "Aditi R.",
+    "Do you have a pool?",
+    "AI replied"
+   ],
+   [
+    "KS",
+    "Karan S.",
+    "Book 2 nights",
+    "Booked"
+   ]
+  ],
+  "chip": [
+   "100+ enquiries a day",
+   "AI handles routine questions"
+  ],
+  "heading": "How to Handle 100+ Hotel Enquiries Without Increasing Your Sales Team"
+ },
+ {
+  "slug": "how-to-follow-up-with-every-hotel-lead-automatically",
+  "eyebrow": "Lead follow-up",
+  "type": "flow",
+  "nodes": [
+   "Day 0: quote sent",
+   "Day 1: friendly reminder",
+   "Day 3: a reason to book now",
+   "Booked, or handed to sales"
+  ],
+  "heading": "How to Follow Up With Every Hotel Lead Automatically"
+ },
+ {
+  "slug": "best-whatsapp-automation-software-for-hotels",
+  "eyebrow": "Buyer's guide",
+  "type": "list",
+  "title": "What to look for",
+  "rows": [
+   "AI that understands hotel questions",
+   "Live rates from your booking engine",
+   "Follow-ups and a hotel CRM",
+   "One inbox for your whole team"
+  ],
+  "heading": "Best WhatsApp Automation Software for Hotels"
+ },
+ {
+  "slug": "best-whatsapp-crm-for-hotels",
+  "eyebrow": "Buyer's guide",
+  "type": "list",
+  "title": "A good WhatsApp CRM",
+  "rows": [
+   "Every lead and chat in one place",
+   "Stages from enquiry to booking",
+   "Automatic follow-ups",
+   "Revenue by source and agent"
+  ],
+  "heading": "Best WhatsApp CRM for Hotels"
+ },
+ {
+  "slug": "whatsapp-automation-software-vs-hotel-crm",
+  "eyebrow": "Hotel tech",
+  "type": "compare",
+  "left": [
+   "WhatsApp automation",
+   [
+    "Talks to guests",
+    "Answers and books",
+    "Runs follow-ups"
+   ]
+  ],
+  "right": [
+   "Hotel CRM",
+   [
+    "Stores guest history",
+    "Tracks the sales pipeline",
+    "Plans repeat-stay campaigns"
+   ]
+  ],
+  "heading": "WhatsApp Automation Software vs Hotel CRM"
+ },
+ {
+  "slug": "ai-whatsapp-agent-vs-human-hotel-sales-executive",
+  "eyebrow": "AI for hotels",
+  "type": "compare",
+  "left": [
+   "AI WhatsApp agent",
+   [
+    "Replies in seconds, 24/7",
+    "Handles hundreds of chats",
+    "Never misses a follow-up"
+   ]
+  ],
+  "right": [
+   "Sales executive",
+   [
+    "Builds relationships",
+    "Negotiates group deals",
+    "Handles special requests"
+   ]
+  ],
+  "heading": "AI WhatsApp Agent vs Human Hotel Sales Executive"
+ },
+ {
+  "slug": "whatsapp-api-providers-for-hotels-what-to-compare",
+  "eyebrow": "Buyer's guide",
+  "type": "list",
+  "title": "Compare providers on",
+  "rows": [
+   "Message pricing and markups",
+   "Hotel software integrations",
+   "Inbox, automation and AI",
+   "Support and reliability"
+  ],
+  "heading": "WhatsApp API Providers for Hotels: What to Compare"
+ },
+ {
+  "slug": "ai-hotel-sales-software-complete-buyers-guide",
+  "eyebrow": "Buyer's guide",
+  "type": "list",
+  "title": "AI sales software checklist",
+  "rows": [
+   "Answers and books 24/7",
+   "Works on WhatsApp and your website",
+   "Connects to your PMS and engine",
+   "Shows the revenue it brings"
+  ],
+  "heading": "AI Hotel Sales Software: Complete Buyer’s Guide"
+ },
+ {
+  "slug": "eazotel-ai-whatsapp-agent-how-it-works-for-hotels",
+  "eyebrow": "Eazotel AI",
+  "type": "flow",
+  "nodes": [
+   "Guest asks a question",
+   "Eazotel AI reads live rates",
+   "Quotes and sends a payment link",
+   "Booking lands in your system"
+  ],
+  "heading": "Eazotel AI WhatsApp Agent: How It Works for Hotels"
+ },
+ {
+  "slug": "how-eazotel-helps-resorts-manage-wedding-enquiries-on-whatsapp",
+  "eyebrow": "Eazotel AI",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "Wedding for 250 guests in November 2027?"
+   ],
+   [
+    "a",
+    "We have two dates free in November 2027. Sharing our packages and a site-visit slot now."
+   ],
+   [
+    "g",
+    "Please send them"
+   ]
+  ],
+  "chip": [
+   "Wedding lead saved to CRM",
+   "Sales team notified"
+  ],
+  "heading": "How Eazotel Helps Resorts Manage Wedding Enquiries on WhatsApp"
+ },
+ {
+  "slug": "how-eazotel-ai-can-answer-hotel-availability-pricing-queries",
+  "eyebrow": "Eazotel AI",
+  "type": "chat",
+  "msgs": [
+   [
+    "g",
+    "What's the price for a suite on 3 January?"
+   ],
+   [
+    "a",
+    "A suite on 3 Jan is ₹9,200 with breakfast. Only 2 are left."
+   ],
+   [
+    "g",
+    "I'll take one"
+   ]
+  ],
+  "chip": [
+   "Live rate from your engine",
+   "Always up to date"
+  ],
+  "heading": "How Eazotel AI Can Answer Hotel Availability & Pricing Queries"
+ },
+ {
+  "slug": "digital-marketing-for-restaurants-india",
+  "eyebrow": "Restaurant marketing",
+  "type": "photo",
+  "photo": "public/industry/restaurant-1.png",
+  "card": [
+   "More diners, every night",
+   "Google · Instagram · Ads · Delivery apps"
+  ],
+  "heading": "Digital Marketing for Restaurants in India: A Complete Guide for 2026"
+ },
+ {
+  "slug": "restaurant-marketing-plan",
+  "eyebrow": "Restaurant marketing",
+  "type": "photo",
+  "photo": "public/home/im2.webp",
+  "card": [
+   "Your 90-day plan",
+   "Month 1: Google · Month 2: Reels · Month 3: Ads"
+  ],
+  "heading": "Restaurant Marketing Plan: How to Build a Strategy That Actually Drives Customers"
+ },
+ {
+  "slug": "how-to-increase-restaurant-sales",
+  "eyebrow": "Restaurant growth",
+  "type": "photo",
+  "photo": "public/images/confident-manager-restaurant-1.webp",
+  "card": [
+   "Bigger bills, more visits",
+   "Combos · upsells · repeat diners"
+  ],
+  "heading": "How to Increase Restaurant Sales Without Depending Only on Discounts"
+ },
+ {
+  "slug": "restaurant-seo-guide",
+  "eyebrow": "Restaurant SEO",
+  "type": "photo",
+  "photo": "public/industry/three-chefs-are-restaurant-kitchen-one-them-is-wearing-white-apron-1.webp",
+  "search": [
+   "best biryani near me",
+   "Your Restaurant",
+   "4.6 · Open now · 1.2 km"
+  ],
+  "heading": "Restaurant SEO: How to Improve Your Restaurant's Visibility on Google"
+ },
+ {
+  "slug": "google-maps-seo-restaurants",
+  "eyebrow": "Google Maps SEO",
+  "type": "photo",
+  "photo": "public/industry/popular-val-s-restaurant-freret-street-shade-palm-tree-during-summer-day-1.webp",
+  "card": [
+   "Top 3 on Google Maps",
+   "Directions · Call · Menu · Reserve"
+  ],
+  "icon": "pin",
+  "heading": "Google Maps SEO for Restaurants: How to Get Discovered by Nearby Diners"
+ },
+ {
+  "slug": "social-media-marketing-for-restaurants",
+  "eyebrow": "Restaurant social media",
+  "type": "photo",
+  "photo": "public/images/pizaparty.webp",
+  "card": [
+   "New menu reel",
+   "Saved, shared and booked from DMs"
+  ],
+  "icon": "play",
+  "heading": "Social Media Marketing for Restaurants: A Practical Instagram & Facebook Strategy"
+ },
+ {
+  "slug": "google-ads-for-restaurants",
+  "eyebrow": "Restaurant Google Ads",
+  "type": "photo",
+  "photo": "public/home/im1.webp",
+  "ad": [
+   "Sponsored",
+   "Rooftop dinner in Gurugram",
+   "Live music Fri & Sat · Reserve a table"
+  ],
+  "heading": "Google Ads for Restaurants: How to Generate More Reservations and Enquiries"
+ },
+ {
+  "slug": "how-to-increase-restaurant-footfall",
+  "eyebrow": "Restaurant growth",
+  "type": "photo",
+  "photo": "public/industry/restaurant-2.png",
+  "card": [
+   "15 ways to fill tables",
+   "Weeknights · events · local search"
+  ],
+  "heading": "How to Increase Restaurant Footfall: 15 Strategies for Dine-In Growth"
+ },
+ {
+  "slug": "zomato-swiggy-marketing-restaurants",
+  "eyebrow": "Delivery apps",
+  "type": "photo",
+  "photo": "public/industry/restaurant-3.png",
+  "card": [
+   "More delivery orders",
+   "Menu · photos · ratings · offers"
+  ],
+  "icon": "bag",
+  "heading": "Zomato and Swiggy Marketing: How Restaurants Can Grow Orders Without Losing Their Brand"
+ },
+ {
+  "slug": "restaurant-marketing-agency-vs-in-house",
+  "eyebrow": "Restaurant marketing",
+  "type": "photo",
+  "photo": "public/images/briefing-staff-hotel-restaurant-1.png",
+  "vs": [
+   [
+    "Agency",
+    "A full team for one fee"
+   ],
+   [
+    "In-house",
+    "Daily focus on your brand"
+   ]
+  ],
+  "heading": "Restaurant Marketing Agency vs In-House Team: Which Model Makes Sense?"
+ }
+]

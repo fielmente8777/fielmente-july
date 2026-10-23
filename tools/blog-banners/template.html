@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Jakarta"; src: url("jakarta.woff2") format("woff2"); font-weight: 200 800; }
+:root {
+  --navy: #110D3C; --ink: #1B2231; --orange: #FF824F; --orange-deep: #F26633; --blue: #0D54EB;
+  --lav: #B9B6D3; --paper: #FFFFFF; --mist: #F4F3F9; --line: #E6E4EF; --bubble: #DCF7D5; --chatbg: #EFEAE2;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1600px; height: 900px; overflow: hidden; }
+body { font-family: "Jakarta", sans-serif; background: var(--navy); color: #fff; position: relative; }
+/* quiet depth: one large ring in the brand orange, low contrast */
+.ring { position: absolute; width: 980px; height: 980px; border-radius: 50%; right: -330px; top: -40px; border: 2px solid rgba(255,130,79,0.16); }
+.ring2 { position: absolute; width: 700px; height: 700px; border-radius: 50%; right: -190px; top: 100px; background: rgba(13,84,235,0.14); filter: blur(10px); }
+.left { position: absolute; left: 96px; top: 84px; bottom: 84px; width: 730px; display: flex; flex-direction: column; }
+.logo { height: 76px; width: auto; align-self: flex-start; }
+.copy { margin-top: auto; margin-bottom: auto; }
+.eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 26px; font-weight: 650; color: var(--orange); }
+.eyebrow i { width: 12px; height: 12px; border-radius: 3px; background: var(--orange); display: inline-block; }
+h1 { margin-top: 22px; font-weight: 750; letter-spacing: -0.015em; line-height: 1.1; color: #fff; text-wrap: balance; }
+.foot { font-size: 21px; color: var(--lav); font-weight: 500; }
+.right { position: absolute; left: 900px; top: 0; width: 640px; height: 900px; }
+
+/* phone */
+.phone { position: absolute; left: 110px; top: 96px; width: 420px; height: 880px; border-radius: 58px; background: #0A0820; padding: 14px; box-shadow: 0 40px 90px rgba(0,0,0,0.45); }
+.screen { width: 100%; height: 100%; border-radius: 46px; background: var(--chatbg); overflow: hidden; display: flex; flex-direction: column; }
+.bar { background: var(--ink); padding: 34px 22px 18px; display: flex; align-items: center; gap: 14px; }
+.av { width: 46px; height: 46px; border-radius: 50%; background: var(--orange); display: grid; place-items: center; font-weight: 800; font-size: 20px; color: #fff; }
+.bar b { display: block; font-size: 19px; font-weight: 700; color: #fff; }
+.bar span { display: block; font-size: 15px; color: #A9E5B5; margin-top: 2px; }
+.msgs { padding: 22px 18px; display: flex; flex-direction: column; gap: 14px; }
+.m { max-width: 82%; padding: 13px 16px 22px; border-radius: 18px; font-size: 19px; line-height: 1.36; color: #1B1B1B; position: relative; box-shadow: 0 1px 1px rgba(0,0,0,0.08); }
+.m small { position: absolute; right: 12px; bottom: 5px; font-size: 12px; color: #7A7A7A; }
+.m.g { background: #fff; align-self: flex-start; border-top-left-radius: 6px; }
+.m.a { background: var(--bubble); align-self: flex-end; border-top-right-radius: 6px; }
+.m.h { background: #FFF1E9; align-self: flex-end; border-top-right-radius: 6px; }
+.m .who { display: block; font-size: 13px; font-weight: 700; color: var(--orange-deep); margin-bottom: 3px; }
+.chip { position: absolute; left: -40px; bottom: 120px; background: #fff; color: var(--ink); border-radius: 22px; padding: 22px 26px; display: flex; gap: 18px; align-items: center; box-shadow: 0 24px 60px rgba(8,6,30,0.45); max-width: 470px; }
+.chip .ic { width: 56px; height: 56px; border-radius: 16px; background: var(--orange); display: grid; place-items: center; flex: none; }
+.chip b { display: block; font-size: 24px; font-weight: 750; line-height: 1.2; }
+.chip span { display: block; font-size: 18px; color: #5B5975; margin-top: 4px; }
+
+/* flow */
+.flow { position: absolute; left: 40px; top: 175px; width: 560px; display: flex; flex-direction: column; gap: 30px; }
+.node { position: relative; background: #fff; color: var(--ink); border-radius: 22px; padding: 26px 28px 26px 96px; font-size: 25px; font-weight: 650; line-height: 1.25; box-shadow: 0 18px 40px rgba(8,6,30,0.35); }
+.node .n { position: absolute; left: 26px; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; background: var(--mist); color: var(--navy); display: grid; place-items: center; font-size: 21px; font-weight: 800; }
+.node.last { background: var(--orange); color: #fff; }
+.node.last .n { background: rgba(255,255,255,0.25); color: #fff; }
+.flow::before { content: ""; position: absolute; left: 50px; top: 40px; bottom: 40px; border-left: 3px dashed rgba(255,255,255,0.35); }
+
+/* compare */
+.cmp { position: absolute; left: 10px; top: 150px; width: 620px; display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.col { border-radius: 26px; padding: 30px 28px; min-height: 560px; }
+.col h3 { font-size: 26px; font-weight: 750; line-height: 1.2; margin-bottom: 26px; }
+.col.l { background: rgba(255,255,255,0.07); border: 2px solid rgba(255,255,255,0.14); color: var(--lav); }
+.col.r { background: #fff; color: var(--ink); box-shadow: 0 24px 60px rgba(8,6,30,0.45); }
+.col.r h3 { color: var(--navy); }
+.pt { display: flex; gap: 14px; align-items: flex-start; font-size: 21px; line-height: 1.35; margin-bottom: 22px; font-weight: 550; }
+.pt svg { flex: none; margin-top: 3px; }
+.vs { position: absolute; left: 50%; top: 290px; transform: translateX(-50%); width: 64px; height: 64px; border-radius: 50%; background: var(--orange); color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 21px; box-shadow: 0 10px 24px rgba(0,0,0,0.3); }
+
+/* list */
+.card { position: absolute; left: 40px; top: 150px; width: 560px; background: #fff; color: var(--ink); border-radius: 28px; padding: 38px 38px 20px; box-shadow: 0 30px 70px rgba(8,6,30,0.45); }
+.card h3 { font-size: 28px; font-weight: 750; color: var(--navy); margin-bottom: 18px; }
+.row { display: flex; gap: 18px; align-items: center; padding: 20px 0; border-top: 1px solid var(--line); font-size: 23px; font-weight: 600; line-height: 1.3; }
+.row .tick { width: 40px; height: 40px; border-radius: 12px; background: #FFEDE4; display: grid; place-items: center; flex: none; }
+
+/* notice */
+.cal { position: absolute; left: 60px; top: 120px; width: 250px; background: #fff; border-radius: 28px; overflow: hidden; text-align: center; color: var(--navy); box-shadow: 0 30px 70px rgba(8,6,30,0.45); }
+.cal .mo { background: var(--orange); color: #fff; font-weight: 800; font-size: 30px; letter-spacing: 0.08em; padding: 14px 0; }
+.cal .d { font-size: 130px; font-weight: 800; line-height: 1.05; padding-top: 10px; }
+.cal .y { font-size: 28px; font-weight: 650; color: #6B6886; padding-bottom: 22px; }
+.notice { position: absolute; left: 60px; top: 470px; width: 540px; }
+.notice .row { border-top: 1px solid rgba(255,255,255,0.16); color: #fff; }
+.notice .row .tick { background: rgba(255,130,79,0.18); }
+
+/* inbox */
+.inbox { position: absolute; left: 40px; top: 120px; width: 560px; background: #fff; color: var(--ink); border-radius: 28px; overflow: hidden; box-shadow: 0 30px 70px rgba(8,6,30,0.45); }
+.inbox .hd { background: var(--ink); color: #fff; padding: 22px 28px; font-size: 22px; font-weight: 700; display: flex; justify-content: space-between; }
+.inbox .hd span { color: #A9E5B5; font-weight: 600; font-size: 18px; }
+.conv { display: flex; gap: 16px; align-items: center; padding: 22px 28px; border-top: 1px solid var(--line); }
+.conv .av { background: #E9E7F4; color: var(--navy); width: 52px; height: 52px; font-size: 18px; }
+.conv b { display: block; font-size: 20px; }
+.conv span { display: block; font-size: 17px; color: #6B6886; margin-top: 2px; }
+.conv .st { margin-left: auto; font-size: 15px; font-weight: 700; padding: 7px 12px; border-radius: 999px; background: #E3F6E6; color: #1E7B34; white-space: nowrap; }
+.conv .st.o { background: #FFEDE4; color: #C2410C; }
+.inbox + .chip { left: 0; bottom: 70px; }
+
+/* ai answer */
+.ai { position: absolute; left: 30px; top: 110px; width: 580px; background: #fff; color: var(--ink); border-radius: 28px; padding: 30px; box-shadow: 0 30px 70px rgba(8,6,30,0.45); }
+.ai .q { background: var(--mist); border-radius: 18px; padding: 18px 22px; font-size: 21px; font-weight: 600; margin-left: 60px; }
+.ai .ans { display: flex; gap: 16px; margin-top: 24px; }
+.ai .spark { width: 44px; height: 44px; border-radius: 50%; background: var(--navy); display: grid; place-items: center; flex: none; }
+.ai .ans p { font-size: 20px; line-height: 1.45; color: #3D3B55; }
+.ai .bars i { display: block; height: 14px; border-radius: 7px; background: #ECEBF3; margin-top: 14px; }
+.ai .sp { margin-top: 26px; border: 2px solid var(--orange); border-radius: 20px; padding: 20px 22px; display: flex; gap: 18px; align-items: center; background: #FFF8F4; }
+.ai .sp .ph { width: 92px; height: 70px; border-radius: 12px; background: linear-gradient(135deg, #2BB3A8, #0D54EB); flex: none; }
+.ai .sp b { display: block; font-size: 22px; }
+.ai .sp span { display: block; font-size: 16px; color: #8A5A3C; margin-top: 4px; font-weight: 600; }
+
+/* photo */
+.photo { position: absolute; left: 70px; top: 90px; width: 560px; height: 720px; border-radius: 34px; overflow: hidden; box-shadow: 0 30px 70px rgba(8,6,30,0.45); }
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.ov { position: absolute; left: 0; bottom: 120px; background: #fff; color: var(--ink); border-radius: 22px; padding: 24px 28px; box-shadow: 0 24px 60px rgba(8,6,30,0.5); max-width: 500px; display: flex; gap: 18px; align-items: center; }
+.ov .ic { width: 56px; height: 56px; border-radius: 16px; background: var(--orange); display: grid; place-items: center; flex: none; }
+.ov b { display: block; font-size: 25px; font-weight: 750; line-height: 1.2; }
+.ov span { display: block; font-size: 18px; color: #5B5975; margin-top: 4px; }
+.serp { position: absolute; left: 0; bottom: 110px; width: 500px; background: #fff; color: var(--ink); border-radius: 22px; padding: 22px 26px; box-shadow: 0 24px 60px rgba(8,6,30,0.5); }
+.serp .qbox { border: 2px solid var(--line); border-radius: 999px; padding: 12px 20px; font-size: 19px; color: #3D3B55; display: flex; gap: 12px; align-items: center; }
+.serp .res { margin-top: 18px; display: flex; gap: 16px; align-items: center; }
+.serp .res .pin { width: 48px; height: 48px; border-radius: 50%; background: #FFEDE4; display: grid; place-items: center; flex: none; }
+.serp b { display: block; font-size: 23px; color: var(--blue); }
+.serp span { display: flex; align-items: center; gap: 6px; font-size: 17px; color: #4B4A63; margin-top: 2px; }
+.ad { position: absolute; left: 0; bottom: 110px; width: 510px; background: #fff; color: var(--ink); border-radius: 22px; padding: 22px 26px; box-shadow: 0 24px 60px rgba(8,6,30,0.5); }
+.ad .tag { font-size: 15px; font-weight: 800; color: #1B1B1B; }
+.ad b { display: block; font-size: 25px; color: var(--blue); margin-top: 6px; line-height: 1.2; }
+.ad span { display: block; font-size: 18px; color: #4B4A63; margin-top: 6px; }
+.ad .btn { display: inline-block; margin-top: 14px; background: var(--orange); color: #fff; font-weight: 700; font-size: 17px; padding: 9px 16px; border-radius: 999px; }
+.vsc { position: absolute; left: 0; bottom: 100px; display: flex; gap: 14px; }
+.vsc div { background: #fff; color: var(--ink); border-radius: 20px; padding: 20px 22px; width: 250px; box-shadow: 0 24px 60px rgba(8,6,30,0.5); }
+.vsc div:last-child { background: var(--orange); color: #fff; }
+.vsc b { display: block; font-size: 24px; font-weight: 750; }
+.vsc span { display: block; font-size: 17px; margin-top: 4px; opacity: 0.85; }
+</style>
+</head>
+<body>
+<div class="ring2"></div><div class="ring"></div>
+<div class="left">
+  <img class="logo" src="logo.webp" alt="">
+  <div class="copy">
+    <div class="eyebrow"><i></i><span id="eyebrow"></span></div>
+    <h1 id="title"></h1>
+  </div>
+  <div class="foot">fielmente.com/blogs</div>
+</div>
+<div class="right" id="right"></div>
+<script>
+const ICON = {
+  check: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F26633" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  checkW: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  dash: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A88A3" stroke-width="3" stroke-linecap="round"><path d="M6 12h12"/></svg>',
+  pin: '<svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>',
+  pinO: '<svg width="26" height="26" viewBox="0 0 24 24" fill="#F26633"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>',
+  play: '<svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M8 5.5v13l11-6.5z"/></svg>',
+  bag: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
+  trend: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6 4 4 6-7"/><path d="M15 8h5v5"/></svg>',
+  search: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B6886" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg>',
+  star: '<svg width="17" height="17" viewBox="0 0 24 24" fill="#F5A524"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z"/></svg>',
+  spark: '<svg width="22" height="22" viewBox="0 0 24 24" fill="#FF824F"><path d="M12 2l2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/></svg>',
+};
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const times = ["10:41", "10:41", "10:42", "10:42"];
+
+function render(d, title) {
+  document.getElementById("eyebrow").textContent = d.eyebrow;
+  const h = document.getElementById("title");
+  h.textContent = title;
+  const n = title.length;
+  h.style.fontSize = (n > 80 ? 52 : n > 62 ? 58 : n > 44 ? 64 : 72) + "px";
+  const R = document.getElementById("right");
+  let html = "";
+  if (d.type === "chat") {
+    const msgs = d.msgs.map((m, i) => `<div class="m ${m[0]}">${m[0] === "h" ? '<span class="who">Neha · Guest team</span>' : ""}${esc(m[1])}<small>${(d.times || times)[i] || "10:43"}</small></div>`).join("");
+    html = `<div class="phone"><div class="screen"><div class="bar"><div class="av">R</div><div><b>Reservations</b><span>AI agent · online</span></div></div><div class="msgs">${msgs}</div></div></div>
+      <div class="chip"><div class="ic">${ICON.checkW}</div><div><b>${esc(d.chip[0])}</b><span>${esc(d.chip[1])}</span></div></div>`;
+  } else if (d.type === "flow") {
+    html = `<div class="flow">${d.nodes.map((t, i) => `<div class="node ${i === d.nodes.length - 1 ? "last" : ""}"><span class="n">${i + 1}</span>${esc(t)}</div>`).join("")}</div>`;
+  } else if (d.type === "compare") {
+    const col = (c, cls, ic) => `<div class="col ${cls}"><h3>${esc(c[0])}</h3>${c[1].map((p) => `<div class="pt">${ic}<span>${esc(p)}</span></div>`).join("")}</div>`;
+    html = `<div class="cmp">${col(d.left, "l", ICON.dash)}${col(d.right, "r", ICON.check)}<div class="vs">vs</div></div>`;
+  } else if (d.type === "list") {
+    html = `<div class="card"><h3>${esc(d.title)}</h3>${d.rows.map((r) => `<div class="row"><span class="tick">${ICON.check}</span>${esc(r)}</div>`).join("")}</div>`;
+  } else if (d.type === "notice") {
+    html = `<div class="cal"><div class="mo">${d.date[0]}</div><div class="d">${d.date[1]}</div><div class="y">${d.date[2]}</div></div>
+      <div class="notice">${d.rows.map((r) => `<div class="row"><span class="tick">${ICON.check}</span>${esc(r)}</div>`).join("")}</div>`;
+  } else if (d.type === "inbox") {
+    html = `<div class="inbox"><div class="hd">WhatsApp enquiries<span>All replied</span></div>${d.rows.map((r) => `<div class="conv"><div class="av">${r[0]}</div><div><b>${esc(r[1])}</b><span>${esc(r[2])}</span></div><div class="st ${r[3] === "With sales" ? "o" : ""}">${esc(r[3])}</div></div>`).join("")}</div>
+      <div class="chip" style="left:-30px;bottom:60px"><div class="ic">${ICON.checkW}</div><div><b>${esc(d.chip[0])}</b><span>${esc(d.chip[1])}</span></div></div>`;
+  } else if (d.type === "ai") {
+    html = `<div class="ai"><div class="q">${esc(d.prompt)}</div><div class="ans"><div class="spark">${ICON.spark}</div><div><p>${esc(d.answer)}</p><div class="bars"><i style="width:92%"></i><i style="width:70%"></i></div></div></div>
+      <div class="sp"><div class="ph"></div><div><b>${esc(d.sponsor[0])}</b><span>${esc(d.sponsor[1])}</span></div></div></div>`;
+  } else if (d.type === "photo") {
+    let over = "";
+    if (d.search) {
+      over = `<div class="serp"><div class="qbox">${ICON.search}${esc(d.search[0])}</div><div class="res"><div class="pin">${ICON.pinO}</div><div><b>${esc(d.search[1])}</b><span>${ICON.star}${esc(d.search[2])}</span></div></div></div>`;
+    } else if (d.ad) {
+      over = `<div class="ad"><div class="tag">${esc(d.ad[0])}</div><b>${esc(d.ad[1])}</b><span>${esc(d.ad[2])}</span><div class="btn">Reserve a table</div></div>`;
+    } else if (d.vs) {
+      over = `<div class="vsc">${d.vs.map((v) => `<div><b>${esc(v[0])}</b><span>${esc(v[1])}</span></div>`).join("")}</div>`;
+    } else {
+      over = `<div class="ov"><div class="ic">${ICON[d.icon || "trend"]}</div><div><b>${esc(d.card[0])}</b><span>${esc(d.card[1])}</span></div></div>`;
+    }
+    html = `<div class="photo"><img src="${d.photoUrl}"></div>${over}`;
+  }
+  R.innerHTML = html;
+}
+window.render = render;
+</script>
+</body>
+</html>
