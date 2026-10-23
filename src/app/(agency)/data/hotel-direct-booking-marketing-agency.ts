@@ -210,6 +210,8 @@ const page: AgencyPageData = {
   ],
   related: [
     "industries-we-serve/hotel-marketing-agency/hotel-google-ads",
+    "google-hotel-center",
+    "hotel-metasearch-marketing-agency",
     "hotel-performance-marketing-agency",
     "hotel-revenue-marketing-agency",
     "boutique-hotel-marketing-agency",

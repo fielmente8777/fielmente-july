@@ -97,7 +97,7 @@ const page: AgencyPageData = {
       { icon: "calendarCheck", title: "AI Reservation Desk", body: "Replies to booking enquiries with live availability and rates, then sends a secure payment link.", href: "/products/hotel-ai-reservation-desk/" },
       { icon: "mic", title: "AI Voice Agent", body: "Answers calls in a natural voice, captures booking details and transfers callers to your team.", href: "/products/hotel-ai-voice-agent/" },
       { icon: "bot", title: "AI Chatbot", body: "Handles FAQs and booking questions on your website, day and night.", href: "/products/hotel-ai-chatbot/" },
-      { icon: "megaphone", title: "ChatGPT ads", body: "Sponsored placements in ChatGPT where they're open to your market, tested against your other paid channels.", href: "/hotel-performance-marketing-agency/" },
+      { icon: "megaphone", title: "ChatGPT ads", body: "Sponsored placements in ChatGPT where they're open to your market, tested against your other paid channels.", href: "/chatgpt-ads-agency/" },
       { icon: "workflow", title: "AI social media automation", body: "AI-assisted post ideas, captions and scheduling, edited and approved by our content team.", href: "/industries-we-serve/hotel-marketing-agency/hotel-social-media-ai-automation/" },
       { icon: "users", title: "Hotel CRM", body: "One record for every AI chat, call and booking, so no follow-up slips through.", href: "/products/hotel-crm/" },
     ],
@@ -208,6 +208,7 @@ const page: AgencyPageData = {
     },
   ],
   related: [
+    "chatgpt-ads-agency",
     "hospitality-marketing-services/seo-agency",
     "hotel-performance-marketing-agency",
     "hotel-direct-booking-marketing-agency",

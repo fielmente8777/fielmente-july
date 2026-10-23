@@ -17,6 +17,15 @@ import hotelRevenueMarketingAgency from "./hotel-revenue-marketing-agency";
 import internationalHotelMarketingAgency from "./international-hotel-marketing-agency";
 import luxuryResortMarketingAgency from "./luxury-resort-marketing-agency";
 import resortMarketingAgency from "./resort-marketing-agency";
+// Advertising platforms
+import chatgptAdsAgency from "./chatgpt-ads-agency";
+import zomatoSwiggyAdsAgency from "./zomato-swiggy-ads-agency";
+import tripadvisorAdsAgency from "./tripadvisor-ads-agency";
+import googleHotelAdsAgency from "./google-hotel-ads-agency";
+import googleHotelCenter from "./google-hotel-center";
+import hotelMetasearchMarketingAgency from "./hotel-metasearch-marketing-agency";
+import otaAdsManagement from "./ota-ads-management";
+import hospitalityMetaAdsAgency from "./hospitality-meta-ads-agency";
 
 export const AGENCY_PAGES: AgencyPageData[] = [
   hotelMarketingAgencyDubai,
@@ -34,6 +43,14 @@ export const AGENCY_PAGES: AgencyPageData[] = [
   boutiqueHotelMarketingAgency,
   hotelDirectBookingMarketingAgency,
   hotelAiMarketingAgency,
+  chatgptAdsAgency,
+  zomatoSwiggyAdsAgency,
+  tripadvisorAdsAgency,
+  googleHotelAdsAgency,
+  googleHotelCenter,
+  hotelMetasearchMarketingAgency,
+  otaAdsManagement,
+  hospitalityMetaAdsAgency,
 ];
 
 export const getAgencyPage = (slug: string) => AGENCY_PAGES.find((p) => p.slug === slug);

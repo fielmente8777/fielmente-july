@@ -49,7 +49,7 @@ export const industries: IndustryProfile[] = [
       "ota-management", "ota-listing", "revenue-management", "website-development", "sales-marketing-automation",
       "content-creation", "branding", "performance-marketing", "sales-marketing-consultation", "pr-communication",
       "influencer-marketing", "social-media-ai-automation", "online-reputation-management", "google-ads",
-      "weddings-events-marketing",
+      "weddings-events-marketing", "chatgpt-ads", "tripadvisor-ads",
     ],
     // Older URLs kept for these services (they rank and are linked from elsewhere).
     paths: {
@@ -176,7 +176,7 @@ export const industries: IndustryProfile[] = [
       "social-media-management", "local-seo", "ai-search-optimization", "website-development",
       "social-media-reservation-automation", "content-creation", "branding", "performance-marketing",
       "sales-marketing-consultation", "pr-communication", "influencer-marketing", "google-ads",
-      "online-reputation-management", "zomato-swiggy-management",
+      "online-reputation-management", "zomato-swiggy-management", "chatgpt-ads", "tripadvisor-ads",
     ],
     // Older URLs kept for these services (they rank and are linked from elsewhere).
     paths: {
@@ -300,7 +300,7 @@ export const industries: IndustryProfile[] = [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "preopening-marketing",
       "ota-management", "website-development", "sales-marketing-automation", "content-creation", "branding",
       "performance-marketing", "sales-marketing-consultation", "pr-communication", "influencer-marketing",
-      "online-reputation-management", "revenue-management", "weddings-events-marketing",
+      "online-reputation-management", "revenue-management", "weddings-events-marketing", "chatgpt-ads", "tripadvisor-ads",
     ],
     faqs: [
       { q: "Do you have experience with wellness and adventure resorts?", a: "Yes. Our case studies include Ayurveda and wellness resorts near Rishikesh and Delhi, and Himalayan retreats in Uttarakhand." },
@@ -356,7 +356,7 @@ export const industries: IndustryProfile[] = [
     services: [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "preopening-marketing",
       "website-development", "sales-marketing-automation", "content-creation", "branding", "performance-marketing",
-      "sales-marketing-consultation", "influencer-marketing", "ota-management", "ota-listing", "online-reputation-management",
+      "sales-marketing-consultation", "influencer-marketing", "ota-management", "ota-listing", "online-reputation-management", "chatgpt-ads",
     ],
     overrides: {
       "ota-listing": {
@@ -428,7 +428,7 @@ export const industries: IndustryProfile[] = [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "preopening-marketing",
       "ota-management", "website-development", "sales-marketing-automation", "content-creation", "branding",
       "performance-marketing", "sales-marketing-consultation", "pr-communication", "influencer-marketing",
-      "online-reputation-management",
+      "online-reputation-management", "chatgpt-ads",
     ],
     faqs: [
       { q: "Can you advertise Ayurveda and detox programmes on Google and Meta?", a: "Yes, within each platform's rules on health and medical claims. We write ads and landing pages about the experience and the programme, not cures, so they get approved and stay live." },
@@ -485,7 +485,7 @@ export const industries: IndustryProfile[] = [
     services: [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "google-ads",
       "performance-marketing", "website-development", "sales-marketing-automation", "content-creation", "branding",
-      "influencer-marketing", "online-reputation-management", "sales-marketing-consultation",
+      "influencer-marketing", "online-reputation-management", "sales-marketing-consultation", "chatgpt-ads",
     ],
     faqs: [
       { q: "Do you market corporate events and conferences as well as weddings?", a: "Yes. Corporate events, conferences and social events get their own pages and campaigns, so off-season weekdays fill as well as wedding dates." },
@@ -541,7 +541,7 @@ export const industries: IndustryProfile[] = [
     services: [
       "social-media-management", "local-seo", "website-seo", "ai-search-optimization", "website-development",
       "sales-marketing-automation", "performance-marketing", "sales-marketing-consultation", "branding",
-      "content-creation", "influencer-marketing",
+      "content-creation", "influencer-marketing", "chatgpt-ads",
     ],
     faqs: [
       { q: "Do you work with pilgrimage and yatra operators?", a: "Yes. Pilgrimage and yatra packages are a good fit for search campaigns, because travellers search for them by name and season." }, // REVIEW: add a client example if you have one
@@ -610,7 +610,7 @@ export const serviceOnlyIndustries: IndustryProfile[] = [
     withList: ["Your brands found on Google for food searches nearby", "A website and ordering link you own", "Repeat orders driven through your own channels"],
     caseStudies: [],
     products: ["hotel-whatsapp-marketing", "hotel-conversational-tool", "hotel-social-media-management-tool"],
-    services: ["website-seo", "google-ads", "social-media-management", "zomato-swiggy-management"],
+    services: ["website-seo", "google-ads", "social-media-management", "zomato-swiggy-management", "chatgpt-ads"],
     paths: { "website-seo": "cloud-kitchen-marketing-agency/cloud-kitchen-seo" },
     // Sister pages that keep the old design.
     existing: {

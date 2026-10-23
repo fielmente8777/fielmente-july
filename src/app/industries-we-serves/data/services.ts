@@ -8,7 +8,7 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const q = (s: string) => `“${s}”`;
 
 // Old copy (route redirects to /industries-we-serve/); newer service types only exist in the live data.
-type OldServiceKey = Exclude<ServiceKey, "zomato-swiggy-management" | "weddings-events-marketing">;
+type OldServiceKey = Exclude<ServiceKey, "zomato-swiggy-management" | "weddings-events-marketing" | "chatgpt-ads" | "tripadvisor-ads">;
 const oldServiceTypes: Record<OldServiceKey, ServiceType> = {
   // Shared with the main industries data (this folder now redirects there).
   "google-ads": mainServiceTypes["google-ads"],

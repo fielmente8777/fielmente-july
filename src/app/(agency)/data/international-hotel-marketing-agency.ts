@@ -243,6 +243,7 @@ const page: AgencyPageData = {
     "hotel-marketing-agency-usa",
     "hotel-marketing-agency-uk",
     "luxury-resort-marketing-agency",
+    "tripadvisor-ads-agency",
   ],
   extraLinks: [
     { title: "Why US hotels work with us from India", body: "What an India-based hospitality marketing team looks like day to day.", href: "/why-hotels-in-the-usa-hire-fielmente-hospitality-marketing-agency-in-india/" },

@@ -16,6 +16,58 @@ const afterVisit = (I: IndustryProfile) =>
 const duringVisit = (I: IndustryProfile) =>
   isStay(I) ? "during the stay" : isFood(I) ? "during service" : I.prefix === "wedding-venue" ? "during the event" : "during the trip";
 
+/** Short plural used in titles, e.g. "ChatGPT Ads for Homestays & Villas". */
+const SHORT_PLURAL: Record<string, string> = {
+  hotel: "Hotels",
+  resort: "Resorts",
+  restaurant: "Restaurants",
+  "homestay-villa": "Homestays & Villas",
+  "wellness-retreat": "Wellness Retreats",
+  "wedding-venue": "Wedding Venues",
+  travel: "Travel Companies",
+  "cloud-kitchen": "Cloud Kitchens",
+};
+const shortPlural = (I: IndustryProfile) => SHORT_PLURAL[I.prefix] ?? cap(I.plural);
+
+/** ChatGPT Ads: what a guest in each industry might ask, and what to promote in reply. */
+const CHATGPT_ANGLE: Record<string, { ask: string; offer: string; note?: string; faq?: string }> = {
+  hotel: { ask: "a quiet business hotel near Cyber City with airport pickup", offer: "corporate rates, long-stay deals and weekend packages" },
+  resort: { ask: "a family resort within four hours of Delhi with a pool and activities for kids", offer: "weekend packages, meal plans and school-holiday offers" },
+  restaurant: { ask: "a rooftop restaurant in Udaipur for an anniversary dinner", offer: "set menus, chef's tables, festive dinners and private dining" },
+  "homestay-villa": { ask: "a pet-friendly villa in Goa with a private pool for six friends", offer: "whole-villa stays, long-weekend packages and workations" },
+  "wellness-retreat": {
+    ask: "a beginner-friendly yoga retreat in Rishikesh for a week",
+    offer: "programme dates, retreat packages and early-bird prices",
+    faq: "Yes, with care. Campaigns avoid health claims and medical topics, and promote what ChatGPT ads can show: yoga holidays, programme dates and retreat packages.",
+    note: "OpenAI keeps ads away from health and mental-health conversations, so retreat campaigns are built around travel, yoga and holiday-planning questions rather than medical ones, and claims stay within ad policy.",
+  },
+  "wedding-venue": { ask: "a destination wedding venue near Jaipur for 250 guests", offer: "wedding packages, venue tours and planner offers" },
+  travel: { ask: "a six-day Ladakh trip with a bike rental in July", offer: "fixed departures, custom itineraries and group tours" },
+  "cloud-kitchen": {
+    ask: "healthy weekday lunch delivery in Gurugram under ₹300",
+    offer: "meal subscriptions, office lunches and party orders",
+    faq: "Usually as a small test. Subscriptions, office lunches and catering suit ChatGPT better than single delivery orders, which people still place in the apps.",
+    note: "Few people order tonight's dinner through an AI assistant, so for most cloud kitchens ChatGPT ads are a small test for subscriptions, office lunches and catering rather than a daily-order channel.",
+  },
+};
+const chatgptAngle = (I: IndustryProfile) => CHATGPT_ANGLE[I.prefix] ?? { ask: I.searches[0], offer: "your best offers" };
+
+/** Blog guides linked from each industry's ChatGPT Ads page. */
+const chatgptGuides = (I: IndustryProfile) => {
+  const g = (title: string, slug: string, body: string) => ({ title, body, href: `/${slug}/` });
+  const byPrefix: Record<string, ReturnType<typeof g>> = {
+    hotel: g("ChatGPT Ads for hotels in India", "chatgpt-ads-for-hotels-resorts-in-india-complete-2026-guide", "The complete 2026 guide for hotels and resorts."),
+    resort: g("ChatGPT Ads for resorts", "chatgpt-ads-for-resorts-a-direct-booking-playbook", "A direct-booking playbook for resorts."),
+    "wellness-retreat": g("ChatGPT Ads for wellness resorts", "chatgpt-ads-for-wellness-and-ayurveda-resorts", "Campaign ideas for wellness and Ayurveda retreats."),
+    "wedding-venue": g("Advertising a wedding venue on ChatGPT", "how-to-advertise-a-destination-wedding-resort-on-chatgpt", "How destination wedding venues can use ChatGPT Ads."),
+    "homestay-villa": g("ChatGPT Ads for boutique stays", "chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget", "Campaign structure and budget for smaller properties."),
+  };
+  return [
+    byPrefix[I.prefix] ?? g("ChatGPT sponsored ads explained", "chatgpt-sponsored-ads-explained-for-indian-businesses", "What ChatGPT ads are and how Indian businesses can use them."),
+    g("ChatGPT Ads cost in India", "chatgpt-ads-cost-in-india-minimum-budget-and-pricing", "Minimum budgets, pricing and what a fair test costs."),
+  ];
+};
+
 export const serviceTypes: Record<ServiceKey, ServiceType> = {
   "google-ads": {
     key: "google-ads",
@@ -24,6 +76,17 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/images/GOOGLE-ADS-10.webp",
     card: (I) => `Search and Maps ads that reach ${I.guests} ready to ${I.bookAction}`,
     products: ["hotel-call-management-system", "hotel-whatsapp-marketing", "hotel-crm"],
+    guides: (I) =>
+      isStay(I)
+        ? [
+            { title: "Google Hotel Ads", body: "Your direct rate in Google's hotel price results, bid for profit.", href: "/google-hotel-ads-agency/" },
+            { title: "Google Hotel Center", body: "Free booking links and accurate rates on Search and Maps.", href: "/google-hotel-center/" },
+            { title: "ChatGPT Ads", body: "Sponsored placements for guests who plan trips with AI.", href: "/chatgpt-ads-agency/" },
+          ]
+        : [
+            { title: "ChatGPT Ads", body: "Sponsored placements for people who plan with AI.", href: "/chatgpt-ads-agency/" },
+            { title: "Meta ads for hospitality", body: "Facebook and Instagram ads judged on enquiries and bookings.", href: "/hospitality-meta-ads-agency/" },
+          ],
     build: (I) => ({
       heroTitle: `${I.name} Google Ads that turn searches into ${I.guests}`,
       heroLede: `Show up when people search ${q(I.searches[0])} or ${q(I.searches[1])}, then send them straight to call, WhatsApp or ${I.bookAction}. Every rupee is tracked to an enquiry.`,
@@ -299,6 +362,11 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/ota-management.png",
     card: (I) => `Better rankings and conversion on ${I.channels.split(",")[0]} and other OTAs`,
     products: ["hotel-channel-manager", "hotel-booking-engine"],
+    guides: () => [
+      { title: "OTA ads", body: "Booking.com, Agoda and Expedia sponsored listings, for need dates only.", href: "/ota-ads-management/" },
+      { title: "Hotel metasearch", body: "Your direct rate on Google, Tripadvisor, trivago and Kayak.", href: "/hotel-metasearch-marketing-agency/" },
+      { title: "Google Hotel Center", body: "Free booking links that put your direct rate beside the OTAs.", href: "/google-hotel-center/" },
+    ],
     build: (I) => ({
       heroTitle: `${I.name} OTA management that ranks higher and sells smarter`,
       heroLede: `We manage your listings on ${I.channels} — content, rates, promotions and reviews — so you win more OTA bookings while building your direct share.`,
@@ -624,6 +692,13 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/images/GOOGLE-ADS-10.webp",
     card: () => `Google and Meta ads that bring enquiries at a lower cost`,
     products: ["hotel-booking-engine", "hotel-call-management-system", "hotel-crm"],
+    guides: (I) => [
+      { title: "ChatGPT Ads", body: "Sponsored placements in ChatGPT, tested against your other channels.", href: "/chatgpt-ads-agency/" },
+      { title: "Meta ads for hospitality", body: "Facebook and Instagram ads judged on enquiries and bookings.", href: "/hospitality-meta-ads-agency/" },
+      isFood(I)
+        ? { title: "Zomato and Swiggy ads", body: "In-app ads on the delivery apps, judged on cost per order.", href: "/zomato-swiggy-ads-agency/" }
+        : { title: "Hotel metasearch", body: "Google, Tripadvisor, trivago and Kayak run as one plan.", href: "/hotel-metasearch-marketing-agency/" },
+    ],
     build: (I) => ({
       heroTitle: `${I.name} performance marketing that pays for itself`,
       heroLede: `Google Ads and Meta ads built around people ready to ${I.bookAction} — with landing pages and tracking that turn clicks into enquiries. Across our hospitality accounts, cost per enquiry fell from ₹650 in 2024 to ₹192 in 2026.`,
@@ -904,6 +979,11 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: () => `More orders and better ratings on Zomato and Swiggy`,
     products: ["hotel-whatsapp-marketing", "hotel-insights-analytics", "hotel-social-media-management-tool"],
+    guides: () => [
+      { title: "Zomato and Swiggy ads", body: "How we run in-app ads for orders and margin, with what each app charges.", href: "/zomato-swiggy-ads-agency/" },
+      { title: "ChatGPT Ads", body: "Sponsored placements in ChatGPT, and when they make sense for food businesses.", href: "/chatgpt-ads-agency/" },
+      { title: "Meta ads for restaurants", body: "Local Facebook and Instagram ads that fill tables and drive orders.", href: "/hospitality-meta-ads-agency/" },
+    ],
     build: (I) => ({
       heroTitle: `Zomato and Swiggy management that grows ${I.noun} orders`,
       heroLede: `We run your listings on Zomato and Swiggy — menu, photos, offers, in-app ads and ratings — so your ${I.noun} ranks higher in the apps and turns more menu views into orders, while we build repeat customers you can reach directly.`,
@@ -1033,6 +1113,190 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
         { q: "Can it handle large party or event enquiries?", a: "It collects the details and passes them to your team to confirm." },
       ],
     }),
+  },
+
+  /* ── ChatGPT Ads (every industry) ─────────────────────────── */
+  "chatgpt-ads": {
+    key: "chatgpt-ads",
+    label: "ChatGPT Ads",
+    icon: "bot",
+    image: "/agency/hotel-booking-phone.jpg",
+    heroPhoto: true,
+    card: (I) => `Sponsored placements in ChatGPT for ${I.guests} planning with AI`,
+    products: ["hotel-crm", "hotel-whatsapp-marketing", "hotel-ai-reservation-desk"],
+    meta: (I) => ({
+      title: `ChatGPT Ads for ${shortPlural(I)} | Fielmente`,
+      description: `ChatGPT Ads for ${shortPlural(I).toLowerCase()}: Ads Manager set-up, offers built around guests' questions, landing pages and tracking from ad to booking.`,
+    }),
+    intro: (I) => {
+      const a = chatgptAngle(I);
+      return [
+        `ChatGPT now shows ads to adults on its Free and Go plans. Since 31 August 2026, businesses in India can buy them directly in OpenAI's Ads Manager, and by 21 October 2026 ChatGPT ads ran in 89 countries, including the UK, much of Europe, the Middle East and Southeast Asia. The ads are labelled as sponsored and sit apart from ChatGPT's answer, and OpenAI says they don't change what ChatGPT recommends.`,
+        `That makes them a new way to reach ${I.audience} at the moment they're planning. Someone might ask ChatGPT for ${a.ask}. Instead of keywords, ChatGPT ads use the context of the conversation, so we build campaigns around the questions your ${I.guests} actually ask and the ${a.offer} that answer them.`,
+        ...(a.note ? [a.note] : []),
+      ];
+    },
+    guides: (I) => [
+      { title: "ChatGPT Ads agency", body: "How we run ChatGPT Ads across hospitality, with availability by market and what to measure.", href: "/chatgpt-ads-agency/" },
+      ...chatgptGuides(I),
+    ],
+    build: (I) => {
+      const a = chatgptAngle(I);
+      const result = isFood(I) && I.prefix === "cloud-kitchen" ? "orders" : isStay(I) ? "bookings" : I.prefix === "restaurant" ? "reservations" : "confirmed bookings";
+      return {
+        heroTitle: `ChatGPT Ads for ${shortPlural(I).toLowerCase()} that reach ${I.guests} while they plan`,
+        heroLede: `When someone asks ChatGPT for ${a.ask}, a clearly labelled ad can appear next to the answer. We set up and run ChatGPT Ads for your ${I.noun}, write offers that fit the question, send clicks to a page built to convert, and track every enquiry back to the ad.`,
+        without: [
+          "No presence where more travellers and diners now plan, compare and decide",
+          "Clicks from AI tools landing on a home page with no clear next step",
+          "No way to tell whether ChatGPT traffic turned into enquiries or just visits",
+        ],
+        withList: [
+          `Campaigns built around the questions your ${I.guests} ask ChatGPT, not just keywords`,
+          `Ads for ${a.offer}, each sent to a page that answers the same question`,
+          `Enquiries and ${result} tracked from the ad, and compared with Google and Meta`,
+        ],
+        featuresLede: `Everything a ChatGPT Ads campaign for a ${I.noun} needs, from the account to the report.`,
+        features: [
+          { icon: "badge", title: "Ads Manager set-up", body: "Your ChatGPT Ads account, billing, brand details and policy checks, set up in your business's name so you own the data." },
+          { icon: "chats", title: "Context and audiences", body: `ChatGPT ads match the context of a conversation rather than single keywords. We map the planning questions behind ${a.ask} and group them into ad sets.` },
+          { icon: "pen", title: "Ad copy and offers", body: `Short, specific ads for ${a.offer}, with the price, dates or proof a planner wants to see before clicking.` },
+          { icon: "devices", title: "Landing pages", body: "A focused page for each offer, with the answer in the first screen and WhatsApp, call and booking buttons that track." },
+          { icon: "target", title: "Conversion tracking", body: "OpenAI's pixel and Conversions API where available, plus tagged links, so enquiries and bookings are counted once." },
+          { icon: "bars", title: "Comparison reporting", body: "Cost per click, cost per enquiry and cost per booking from ChatGPT, set against your Google, Meta and OTA costs." },
+        ],
+        steps: [
+          { title: "Check fit and eligibility", body: "We confirm ChatGPT Ads are open in the markets you target and that your offers meet OpenAI's ad policies." },
+          { title: "Tracking and page first", body: "Pixel, tagged links, WhatsApp and call tracking, and a landing page for the first offer." },
+          { title: "Small, time-boxed test", body: "Four to six weeks on a fixed budget, with two or three ad sets built around different planning questions." },
+          { title: "Scale or stop", body: "We scale what beats your other channels on cost per enquiry and cost per booking, and stop what doesn't." },
+        ],
+        measure: [
+          "Impressions, clicks and cost per click",
+          "Enquiries by WhatsApp, call and form, and cost per enquiry",
+          `${cap(result)} traced back to ChatGPT ads`,
+          "Cost per booking compared with Google, Meta and OTA commission",
+          "Which conversation contexts and offers convert best",
+        ],
+        faqs: [
+          { q: "Are ChatGPT ads available in India?", a: "Yes. OpenAI opened self-serve buying in Ads Manager to businesses in India, Europe, the Middle East and North Africa on 31 August 2026, and by 21 October 2026 ChatGPT ads were running in 89 countries. Availability still changes, so we confirm your target markets before planning spend." },
+          { q: "Who sees ChatGPT ads?", a: "Adults using ChatGPT's Free and Go plans. Plus, Pro and Enterprise users see no ads. OpenAI says it doesn't show ads to users under 18 and keeps them away from sensitive topics such as health, mental health and politics." },
+          { q: `Will advertising make ChatGPT recommend our ${I.noun}?`, a: "No. Ads are labelled as sponsored and shown separately from the answer, and OpenAI says advertising doesn't influence what ChatGPT recommends. Getting mentioned in the answers themselves is a separate job, covered by our AI search optimisation service." },
+          { q: "How much budget do we need?", a: "Enough for a meaningful test, not a big launch. We usually run four to six weeks on a fixed daily budget, measure cost per enquiry against your other channels, and only then decide whether to scale." },
+          a.faq
+            ? { q: `Is ChatGPT advertising right for every ${I.noun}?`, a: a.faq }
+            : { q: "What should we promote on ChatGPT?", a: `Offers that answer a planning question clearly: ${a.offer}. Vague brand ads rarely work, because the person has just asked something specific.` },
+        ],
+      };
+    },
+  },
+
+  /* ── Tripadvisor Ads (hotels, resorts, restaurants) ───────── */
+  "tripadvisor-ads": {
+    key: "tripadvisor-ads",
+    label: "Tripadvisor Ads",
+    icon: "globe",
+    image: "/agency/dubai-marina.jpg",
+    heroPhoto: true,
+    card: (I) => `Sponsored Tripadvisor placements for travellers choosing ${I.plural}`,
+    products: ["hotel-crm", "hotel-whatsapp-marketing", "hotel-insights-analytics"],
+    meta: (I) => ({
+      title: `Tripadvisor Ads for ${shortPlural(I)} | Fielmente`,
+      description: isFood(I)
+        ? `Tripadvisor Ads for restaurants: top placements on your city's restaurant pages, listing fixes, review replies and tracked reservations.`
+        : `Tripadvisor Ads for ${shortPlural(I).toLowerCase()}: Sponsored Placements by traveller country and dates, listing fixes, review replies and direct bookings.`,
+    }),
+    intro: (I) =>
+      isFood(I)
+        ? [
+            `Visitors deciding where to eat in a new city still open Tripadvisor, read the reviews and pick from the top of the list. Tripadvisor Ads put your ${I.noun} at the top of your city's restaurant pages and next to ${I.plural} nearby, for diners looking in your area, filtered by cuisine, price range and meal.`,
+            "You pay only for clicks to your listing, within a daily budget you set, billed monthly with no long contract. We make sure the listing those clicks land on is worth visiting, then turn the visit into a reservation on WhatsApp or your own booking page.",
+          ]
+        : [
+            `International guests often compare ${I.plural} on Tripadvisor before they book, especially for a first trip to a destination. Tripadvisor Sponsored Placements lift your ${I.noun} above competitors in those searches, and you choose who sees them: travellers from particular countries, families, couples or solo travellers, by booking window, check-in day and length of stay.`,
+            "We pair the ads with a complete listing, quick replies to reviews and direct links to your own website, so the travellers you pay to reach can book with you rather than through an OTA.",
+          ],
+    guides: (I) => [
+      { title: "Tripadvisor Ads agency", body: "How we run Tripadvisor ads for hotels and restaurants, with targeting, budgets and results.", href: "/tripadvisor-ads-agency/" },
+      { title: "Case study: Syah Udaipur", body: "Tripadvisor ads, a reservation landing page and lead tracking for a six-seat fine-dining restaurant.", href: "/case-study/syah-udaipur-tripadvisor-ads/" },
+      isFood(I)
+        ? { title: "Restaurant reputation management", body: "More reviews on Google, Zomato and Tripadvisor, every review answered.", href: serviceHref(I, "online-reputation-management") }
+        : { title: "Hotel metasearch marketing", body: "Google, Tripadvisor, trivago and Kayak price comparison, run as one plan.", href: "/hotel-metasearch-marketing-agency/" },
+    ],
+    build: (I) =>
+      isFood(I)
+        ? {
+            heroTitle: `Tripadvisor Ads that fill your ${I.noun} with visitors to your city`,
+            heroLede: `Travellers choose where to eat on Tripadvisor. We run Tripadvisor Ads for your ${I.noun}, keep the listing they land on sharp, and turn the click into a confirmed table.`,
+            without: [
+              "Visitors to your city never scroll far enough to find you on Tripadvisor",
+              "A listing with old photos, missing menu and unanswered reviews",
+              "No idea whether Tripadvisor sends real reservations",
+            ],
+            withList: [
+              "Ads at the top of your city's restaurant pages for diners looking nearby",
+              "A complete listing with photos, menu, hours and replies to every review",
+              "Reservations from Tripadvisor tracked on WhatsApp and your booking page",
+            ],
+            featuresLede: "What we set up and run for a restaurant on Tripadvisor.",
+            features: [
+              { icon: "list", title: "Listing clean-up", body: "Cuisine, price range, hours, menu, photos and booking link brought up to date before any spend." },
+              { icon: "target", title: "Ad targeting", body: "Diners looking for a place to eat in your area, matched on your cuisine, price range and meal type." },
+              { icon: "wallet", title: "Daily budget control", body: "A daily budget within Tripadvisor's limits, paid per click to your listing, adjusted for tourist seasons." },
+              { icon: "calendarCheck", title: "Reservation path", body: "A booking page or WhatsApp link that asks for date, time and guests, so a click becomes a table." },
+              { icon: "star", title: "Reviews and replies", body: `Replies to new reviews within days, and a plan to ask happy diners for reviews after ${afterVisit(I)}.` },
+              { icon: "bars", title: "Reporting", body: "Ad views, page visits, click-through rate and spend from Tripadvisor, joined with the reservations they produced." },
+            ],
+            steps: [
+              { title: "Listing audit", body: "Photos, menu, details, reviews and where you rank among restaurants in your city." },
+              { title: "Fix and connect", body: "Listing updates, a reservation page and tracking before the first ad runs." },
+              { title: "Launch", body: "A daily budget timed to tourist peaks, with targeting by cuisine, price and meal." },
+              { title: "Review monthly", body: "Clicks, cost and reservations each month, with budget moved to the seasons that pay." },
+            ],
+            measure: ["Ad views and page visits from ads", "Click-through rate and cost per click", "Reservations from Tripadvisor", "Review count and rating", "Cost per reservation"],
+            faqs: [
+              { q: "How are Tripadvisor Ads for restaurants charged?", a: "Per click to your Tripadvisor page, within a daily budget you set inside Tripadvisor's minimum and maximum. Billing is monthly, there's no long-term commitment and you can cancel at any time." },
+              { q: "Where do the ads appear?", a: "Across Tripadvisor's website and app, for example at the top of your city's restaurant pages, on the category page for your area and among restaurants near the diner." },
+              { q: "Do ads improve our Tripadvisor ranking?", a: "No. Ads are labelled as sponsored and sit apart from your organic position, which depends mainly on your reviews. That's why we work on reviews and replies alongside the ads." },
+              { q: "Is it worth it in India?", a: "In cities with many international and domestic tourists, such as Udaipur, Jaipur, Goa, Kochi or Rishikesh, it can be. We start small and judge it on reservations, not clicks." },
+            ],
+          }
+        : {
+            heroTitle: `Tripadvisor Ads that bring international guests to your ${I.noun}`,
+            heroLede: `Travellers from abroad compare ${I.plural} on Tripadvisor before they book. We run Tripadvisor Sponsored Placements for your ${I.noun}, targeted by the countries your guests come from, and send them to book with you directly.`,
+            without: [
+              `Your ${I.noun} buried below competitors when overseas travellers search your destination`,
+              "Tripadvisor clicks sent to an OTA instead of your own website",
+              "A listing with dated photos and reviews left without a reply",
+            ],
+            withList: [
+              "Sponsored Placements targeted by country, traveller type, trip dates and length of stay",
+              "Direct links to your own website and booking engine where your plan allows",
+              "A listing with fresh photos, offers and a reply to every review",
+            ],
+            featuresLede: `What we set up and run for a ${I.noun} on Tripadvisor.`,
+            features: [
+              { icon: "list", title: "Listing and profile", body: "Photos, amenities, room details, offers and contact details brought up to date before any spend." },
+              { icon: "globe", title: "Country targeting", body: "Campaigns for the countries your guests travel from, timed to their holidays and booking windows." },
+              { icon: "users", title: "Traveller targeting", body: "Families, couples or solo travellers, by check-in day, length of stay and how far ahead they book." },
+              { icon: "link", title: "Direct booking links", body: "Clicks routed to your own website and booking engine wherever Tripadvisor allows, instead of an OTA." },
+              { icon: "star", title: "Reviews and replies", body: `Replies to new reviews, and a plan to ask happy guests for reviews after ${afterVisit(I)}.` },
+              { icon: "bars", title: "Reporting", body: "Impressions, clicks, click-through rate, average cost per click and spend, joined with the enquiries and bookings that followed." },
+            ],
+            steps: [
+              { title: "Market check", body: "Which countries your guests come from, when they book and how you rank on Tripadvisor today." },
+              { title: "Listing and links", body: "Profile updates, review replies and direct booking links set up first." },
+              { title: "Launch by market", body: "Sponsored Placements for your main source countries, with budgets set per market." },
+              { title: "Review monthly", body: "Cost per click and bookings by market, with budget moved toward the countries that book." },
+            ],
+            measure: ["Impressions and clicks by country", "Click-through rate and average cost per click", "Visits to your website from Tripadvisor", "Enquiries and direct bookings from Tripadvisor", "Review count, rating and reply rate"],
+            faqs: [
+              { q: "What are Tripadvisor Sponsored Placements?", a: `Paid placements that lift your ${I.noun} in Tripadvisor searches. You set a daily budget and Tripadvisor reports impressions, clicks, click-through rate and average cost per click.` },
+              { q: "Can we target travellers from specific countries?", a: "Yes. Campaigns can target travellers in chosen countries, as well as traveller type, booking window, check-in days, length of stay and people searching nearby destinations." },
+              { q: "Do ads improve our Tripadvisor ranking?", a: "No. Sponsored Placements are labelled and separate from your organic position, which depends mainly on reviews. We work on reviews alongside the ads." },
+              { q: "Is Tripadvisor worth it for Indian properties?", a: "For destinations with many international visitors, such as Rajasthan, Goa, Kerala and the Himalayas, often yes. We start with your main source markets and judge the spend on enquiries and bookings." },
+            ],
+          },
   },
 };
 

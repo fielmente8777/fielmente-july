@@ -8,7 +8,7 @@ const page: AgencyPageData = {
     { label: "Hotel marketing", href: "/industries-we-serve/hotel-marketing-agency/" },
   ],
   keyword: "Hotel Google Ads Agency",
-  secondaryKeywords: ["Google Ads for hotels", "hotel PPC agency", "Google Hotel Ads management", "Performance Max for hotels", "hotel brand bidding"],
+  secondaryKeywords: ["Google Ads for hotels", "hotel PPC agency", "hotel search ads", "Performance Max for hotels", "hotel brand bidding"],
   group: "specialty",
   navLabel: "Hotel Google Ads",
   cardLine: "Search, Performance Max and Hotel Ads, measured on calls, chats and bookings",
@@ -97,7 +97,7 @@ const page: AgencyPageData = {
     items: [
       { icon: "search", title: "Search campaigns", body: "Brand, destination, stay-type and offer campaigns, each with its own budget, ad copy and negative keyword list.", href: "/hospitality-marketing-services/google-ads-agency/" },
       { icon: "layers", title: "Performance Max", body: "Added once Search converts, fed with your own photos and offers, and set with brand exclusions so it doesn't claim guests who already searched your name.", href: "/case-study/hotel-green-castle-google-ads/" },
-      { icon: "hotel", title: "Hotel Ads and free booking links", body: "Your live direct rate in Google's hotel results and Maps, through a Hotel Center connection from your booking engine or channel partner.", href: "/products/hotel-booking-engine/" },
+      { icon: "hotel", title: "Hotel Ads and free booking links", body: "Your live direct rate in Google's hotel results and Maps, through a Hotel Center connection from your booking engine or channel partner.", href: "/google-hotel-ads-agency/" },
       { icon: "camera", title: "Demand Gen and YouTube", body: "Image and video ads that show your rooms, views and experiences to guests still choosing where to go, plus remarketing to recent visitors.", href: "/industries-we-serve/hotel-marketing-agency/hotel-content-creation/" },
       { icon: "phoneCall", title: "Call and conversion tracking", body: "Calls from ads and pages, WhatsApp clicks, forms and booking engine sales, each counted once and fed back to Google.", href: "/products/hotel-call-management-system/" },
       { icon: "devices", title: "Landing pages", body: "Fast pages for each campaign, with Book Now, call and WhatsApp visible on the first screen of a phone.", href: "/industries-we-serve/hotel-marketing-agency/hotel-website-development/" },
@@ -212,6 +212,8 @@ const page: AgencyPageData = {
     },
   ],
   related: [
+    "google-hotel-ads-agency",
+    "google-hotel-center",
     "hotel-performance-marketing-agency",
     "hotel-direct-booking-marketing-agency",
     "hotel-revenue-marketing-agency",

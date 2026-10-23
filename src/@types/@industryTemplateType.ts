@@ -64,7 +64,9 @@ export type ServiceKey =
   | "online-reputation-management"
   | "social-media-reservation-automation"
   | "zomato-swiggy-management"
-  | "weddings-events-marketing";
+  | "weddings-events-marketing"
+  | "chatgpt-ads"
+  | "tripadvisor-ads";
 
 export interface ServiceContent {
   heroTitle: string;
@@ -95,6 +97,12 @@ export interface ServiceType {
   card: (I: IndustryProfile) => string;
   products: string[];
   build: (I: IndustryProfile) => ServiceContent;
+  /** Opening paragraphs written for each industry (used when the industry has no `intro` override). */
+  intro?: (I: IndustryProfile) => string[];
+  /** Search title and description for each industry's page (used when the industry has no override). */
+  meta?: (I: IndustryProfile) => { title: string; description: string };
+  /** Hub page and guides linked from every page of this service. */
+  guides?: (I: IndustryProfile) => { title: string; body: string; href: string }[];
 }
 
 export interface ServicePageRef {

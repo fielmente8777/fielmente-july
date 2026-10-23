@@ -53,6 +53,8 @@ export function serviceMetadata({ I, key, path }: ServicePageRef): Metadata {
   const st = serviceTypes[key];
   const o = I.overrides?.[key];
   if (o?.metaTitle && o?.metaDescription) return meta(o.metaTitle, o.metaDescription, path, st.heroPhoto ? I.heroImage : st.image);
+  const own = st.meta?.(I);
+  if (own) return meta(own.title, own.description, path, st.heroPhoto ? I.heroImage : st.image);
   const long = `${I.name} ${st.label} Services | Fielmente`;
   const title = long.length > 60 ? `${I.name} ${st.label} | Fielmente` : long;
   const base = `${st.label} for ${I.plural}: ${lowerFirst(st.card(I))}.`;

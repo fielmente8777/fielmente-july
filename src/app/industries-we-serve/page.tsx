@@ -212,6 +212,10 @@ export default function IndustriesWeServe() {
                 title: "By speciality",
                 pages: AGENCY_PAGES.filter((p) => p.group === "specialty"),
               },
+              {
+                title: "By advertising platform",
+                pages: AGENCY_PAGES.filter((p) => p.group === "ads"),
+              },
             ].map((col) => (
               <div key={col.title}>
                 <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.12em] text-[#6B6886]">

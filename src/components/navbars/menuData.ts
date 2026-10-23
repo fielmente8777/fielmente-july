@@ -24,6 +24,8 @@ const SERVICE_GROUPS: { title: string; keys: ServiceKey[] }[] = [
     title: "Get bookings",
     keys: [
       "google-ads",
+      "chatgpt-ads",
+      "tripadvisor-ads",
       "performance-marketing",
       "ota-management",
       "ota-listing",
@@ -50,6 +52,8 @@ const SHORT_LABEL: Partial<Record<ServiceKey, string>> = {
   "online-reputation-management": "Reputation Management",
   "zomato-swiggy-management": "Zomato & Swiggy",
   "weddings-events-marketing": "Weddings & Events",
+  "chatgpt-ads": "ChatGPT Ads",
+  "tripadvisor-ads": "Tripadvisor Ads",
   "social-media-management": "Social Media",
 };
 
@@ -120,7 +124,7 @@ export function buildSiteMenu(): SiteMenu {
   // Any industry added later but not in INDUSTRY_ORDER still appears.
   all.filter((I) => !INDUSTRY_ORDER.includes(I.slug)).forEach((I) => industrySections.push(industrySection(I)));
 
-  const agency = (group: "location" | "specialty") =>
+  const agency = (group: "location" | "specialty" | "ads") =>
     AGENCY_PAGES.filter((p) => p.group === group && !p.slug.startsWith("industries-we-serve/")).map((p) => ({ label: p.navLabel, href: `/${p.slug}/` }));
 
   industrySections.push({
@@ -138,6 +142,7 @@ export function buildSiteMenu(): SiteMenu {
     cardLine: "Focused pages for the questions hotels ask most",
     groups: [
       { title: "Specialist pages", links: agency("specialty") },
+      { title: "Advertising platforms", links: agency("ads") },
       {
         title: "Across hospitality",
         links: [

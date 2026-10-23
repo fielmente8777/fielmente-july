@@ -35,7 +35,8 @@ export default function ServiceTemplate({
 }) {
   const st = serviceTypes[serviceKey];
   const c = serviceContent(I, serviceKey);
-  const intro = I.overrides?.[serviceKey]?.intro;
+  const intro = I.overrides?.[serviceKey]?.intro ?? st.intro?.(I);
+  const guides = st.guides?.(I) ?? [];
   const industryHref = `/industries-we-serve/${I.slug}/`;
   const pageUrl = `https://fielmente.com${serviceHref(I, serviceKey)}`;
 
@@ -207,6 +208,10 @@ export default function ServiceTemplate({
 
       <FaqListSection title={`${st.label} FAQs`} faqs={c.faqs} />
 
+      {guides.length > 0 && (
+        <LinkCardsSection eyebrow="Go deeper" title={`More on ${st.label}`} items={guides} tint />
+      )}
+
       <LinkCardsSection
         eyebrow={I.label}
         title={`More ${I.label.toLowerCase()} services`}
@@ -229,7 +234,7 @@ export default function ServiceTemplate({
         title={`Get a free ${st.label} plan for your ${I.noun}`}
         body={`Tell us where you are today. We'll review what you have and send a written plan with priorities and what to measure.`}
         points={[
-          `What's working and what isn't in your ${st.label.toLowerCase()} today`,
+          `What's working and what isn't in your ${/Google|ChatGPT|Tripadvisor|Zomato|OTA|SEO|AI|PR/.test(st.label) ? st.label : st.label.toLowerCase()} today`,
           "The first three things we'd fix, and why",
           "No cost and no obligation",
         ]}

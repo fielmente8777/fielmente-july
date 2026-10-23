@@ -65,7 +65,8 @@ export interface AgencyPageData {
   /** The search phrase this page owns. No other page should target it. */
   keyword: string;
   secondaryKeywords: string[];
-  group: "location" | "specialty";
+  /** location = a market, specialty = a hotel speciality, ads = an advertising platform we run. */
+  group: "location" | "specialty" | "ads";
   /** Short name used in links between pages, e.g. "Hotel marketing in Dubai". */
   navLabel: string;
   /** One line used on cards that link to this page. */
