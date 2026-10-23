@@ -10,6 +10,7 @@ import ContactOldSection from "@/components/commonSections/ContactOldSection";
 import { landingPageData } from "@/app/landing-page/components/pageData";
 import ContactSection from "@/app/landing-page/components/ContactSection";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import PlatformLogos from "@/components/brand/PlatformLogos";
 
 export const metadata: Metadata = {
   title: "India's Leading Hospitality Google Ads Agency - Fielmente",
@@ -89,6 +90,9 @@ function page() {
           {/* Ignite Your Hospitality Growth with Leading Hospitality Google Ads Agency:***** */}
           <div className="md:grid md:grid-cols-2 gap-4 items-center flex flex-col-reverse ">
             <div className="flex flex-col gap-8 lg:mt-0 mt-6">
+              <div className="flex lg:justify-start justify-center">
+                <PlatformLogos keys={["google-ads", "google-hotels", "google-maps"]} />
+              </div>
               <h1 className="lg:text-4xl text-2xl lg:text-start text-center">
                 Ignite Your Hospitality Growth with Leading Hospitality Google
                 Ads Agency

@@ -21,6 +21,9 @@ import { caseStudyCards } from "@/utils/caseStudyCards";
 import { productCards } from "@/utils/productCards";
 import { Icon } from "@/utils/serviceIcons";
 import Link from "next/link";
+import PlatformLogos from "@/components/brand/PlatformLogos";
+import ReadMore, { splitLead } from "@/components/typography/ReadMore";
+import AdJourneySection from "@/components/commonSections/AdJourneySection";
 import { LuArrowRight } from "react-icons/lu";
 import { lodgingIndustries } from "../../data/industries";
 import { serviceContent, serviceHref, serviceTypes } from "../../data/services";
@@ -111,6 +114,7 @@ export default function ServiceTemplate({
           { label: I.label, href: industryHref },
           { label: st.label },
         ]}
+        badges={st.platforms ? <PlatformLogos keys={st.platforms(I)} /> : undefined}
         eyebrow={`${I.label} · ${st.label}`}
         title={c.heroTitle}
         lede={c.heroLede}
@@ -146,9 +150,15 @@ export default function ServiceTemplate({
         <section className="py-12 md:py-16">
           <Container>
             <div className="mx-auto max-w-3xl space-y-4 text-base/relaxed md:text-lg/relaxed text-[#3D3B55]">
-              {intro.map((p) => (
-                <p key={p.slice(0, 40)}>{p}</p>
-              ))}
+              {/* Opening sentence visible; the rest folds behind "Read more" (still in the page for search engines). */}
+              <p className="text-lg/relaxed md:text-xl/relaxed font-medium text-primary2">{splitLead(intro[0])[0]}</p>
+              {[splitLead(intro[0])[1], ...intro.slice(1)].filter(Boolean).length > 0 && (
+                <ReadMore>
+                  {[splitLead(intro[0])[1], ...intro.slice(1)].filter(Boolean).map((p) => (
+                    <p key={p.slice(0, 40)}>{p}</p>
+                  ))}
+                </ReadMore>
+              )}
             </div>
           </Container>
         </section>
@@ -159,6 +169,13 @@ export default function ServiceTemplate({
         without={c.without}
         withList={c.withList}
       />
+
+      {["chatgpt-ads", "tripadvisor-ads", "google-ads", "zomato-swiggy-management"].includes(serviceKey) && st.platforms && (
+        <AdJourneySection
+          platforms={st.platforms(I).slice(0, serviceKey === "zomato-swiggy-management" ? 2 : 1)}
+          outcome={serviceKey === "zomato-swiggy-management" || I.prefix === "cloud-kitchen" ? "order" : I.prefix === "restaurant" ? "reservation" : "booking"}
+        />
+      )}
 
       <FeatureGridSection
         eyebrow="What's included"

@@ -101,6 +101,8 @@ export interface ServiceType {
   intro?: (I: IndustryProfile) => string[];
   /** Search title and description for each industry's page (used when the industry has no override). */
   meta?: (I: IndustryProfile) => { title: string; description: string };
+  /** Official logos of the platforms the service runs on, shown in the hero. */
+  platforms?: (I: IndustryProfile) => import("@/utils/platforms").PlatformKey[];
   /** Hub page and guides linked from every page of this service. */
   guides?: (I: IndustryProfile) => { title: string; body: string; href: string }[];
 }

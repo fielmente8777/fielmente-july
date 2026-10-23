@@ -1,6 +1,8 @@
 // Industry page: /industries-we-serve/<industry>-marketing-agency/
+import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
+import { PLATFORMS, type PlatformKey } from "@/utils/platforms";
 import type { LogoSet } from "@/@types/@agencyPageType";
-import type { IndustryProfile } from "@/@types/@industryTemplateType";
+import type { IndustryProfile, ServiceKey } from "@/@types/@industryTemplateType";
 import { getAgencyPage } from "@/app/(agency)/data";
 import HowHotelScaling from "@/app/case-study/components/HowHotelScaling";
 import PageHero from "@/components/banners/PageHero";
@@ -85,6 +87,45 @@ export function logoSet(slug: string): LogoSet {
 }
 
 /** Options for "What do you need help with?" on each industry's lead form. */
+/** Official logo for services that run on one platform (Google Ads, ChatGPT Ads, Tripadvisor Ads, Zomato & Swiggy...). */
+const LOGO_SERVICES: ServiceKey[] = ["google-ads", "chatgpt-ads", "tripadvisor-ads", "zomato-swiggy-management", "social-media-management", "local-seo", "website-seo", "ota-management", "ota-listing", "online-reputation-management", "social-media-reservation-automation", "influencer-marketing", "ai-search-optimization"];
+export function serviceLogo(I: IndustryProfile, key: ServiceKey): string | undefined {
+  if (!LOGO_SERVICES.includes(key)) return undefined;
+  const first = serviceTypes[key].platforms?.(I)[0];
+  return first ? PLATFORMS[first].logo : undefined;
+}
+
+/** Platforms shown on each industry page, in order. */
+const INDUSTRY_PLATFORMS: Record<string, PlatformKey[]> = {
+  hotel: ["google-ads", "google-hotels", "chatgpt", "meta", "instagram", "tripadvisor", "google-maps", "booking", "makemytrip", "agoda", "expedia", "whatsapp"],
+  resort: ["google-ads", "google-hotels", "chatgpt", "meta", "instagram", "tripadvisor", "google-maps", "booking", "makemytrip", "agoda", "expedia", "whatsapp"],
+  restaurant: ["google-ads", "google-maps", "instagram", "meta", "zomato", "swiggy", "tripadvisor", "chatgpt", "whatsapp"],
+  "homestay-villa": ["airbnb", "booking", "makemytrip", "agoda", "google-ads", "google-maps", "instagram", "meta", "chatgpt", "tripadvisor", "whatsapp", "google-hotel-center"],
+  "wellness-retreat": ["google-ads", "meta", "instagram", "chatgpt", "google-maps", "tripadvisor", "booking", "whatsapp"],
+  "wedding-venue": ["google-ads", "instagram", "meta", "chatgpt", "google-maps", "whatsapp"],
+  travel: ["google-ads", "meta", "instagram", "chatgpt", "tripadvisor", "google-maps", "whatsapp", "youtube"],
+};
+
+/** Each platform links to this industry's own service page where there is one. */
+function industryPlatformHrefs(I: IndustryProfile): Partial<Record<PlatformKey, string>> {
+  const has = (k: ServiceKey) => I.services.includes(k);
+  const to = (k: ServiceKey) => (has(k) ? serviceHref(I, k) : undefined);
+  const ota = to("ota-management");
+  return {
+    "google-ads": to("google-ads"),
+    "google-maps": to("local-seo"),
+    instagram: to("social-media-management"),
+    meta: to("performance-marketing"),
+    chatgpt: to("chatgpt-ads"),
+    tripadvisor: to("tripadvisor-ads") ?? to("online-reputation-management"),
+    zomato: to("zomato-swiggy-management"),
+    swiggy: to("zomato-swiggy-management"),
+    booking: ota, makemytrip: ota, agoda: ota, expedia: ota, airbnb: ota,
+    whatsapp: to("social-media-reservation-automation") ?? to("sales-marketing-automation"),
+    youtube: to("content-creation"),
+  };
+}
+
 export function needsFor(slug: string): string[] {
   if (slug.startsWith("restaurant") || slug.startsWith("cloud-kitchen"))
     return [
@@ -201,6 +242,7 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
               <li key={key}>
                 <IconLinkCard
                   icon={serviceTypes[key].icon}
+                  logo={serviceLogo(I, key)}
                   title={serviceTypes[key].label}
                   body={serviceTypes[key].card(I)}
                   href={serviceHref(I, key)}
@@ -216,7 +258,7 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
                     Not sure where to start?
                   </span>
                   <span className="text-sm/snug text-[#C9C7DD]">
-                    Tell us about your {I.noun} and we&apos;ll suggest the one
+                    Tell us about your {I.noun}{" "}and we&apos;ll suggest the one
                     or two services that will make the biggest difference.
                   </span>
                   <div className="pt-1">
@@ -239,6 +281,15 @@ export default function IndustryTemplate({ I }: { I: IndustryProfile }) {
           )}
         </Container>
       </section>
+
+      {INDUSTRY_PLATFORMS[I.prefix] && (
+        <PlatformStripSection
+          title={`The platforms we run for ${I.plural}`}
+          lede={`Official partner programmes and the apps your ${I.guests} use, run by one team and measured on ${I.goal}.`}
+          keys={INDUSTRY_PLATFORMS[I.prefix]}
+          hrefs={industryPlatformHrefs(I)}
+        />
+      )}
 
       <SplitSection
         eyebrow="Why Fielmente"

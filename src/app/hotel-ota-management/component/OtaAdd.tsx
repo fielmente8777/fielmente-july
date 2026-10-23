@@ -12,7 +12,7 @@ const OtaAdd: React.FC<OtaAddType> = ({ title, subTitle, links }) => {
           {title}
         </h2>
         <p className="text-lg text-[#6F6F6F]">{subTitle}</p>
-        <div className="flex w-full items-center justify-center gap-4 relative after:absolute md:after:w-[55px] after:w-[40px] md:after:h-[72px] after:h-[60px] after:bg-[url('/bg.png')] after:bg-contain after:bg-no-repeat  md:after:top-[-55%] after:top-[-65%] md:after:left-[13.5%] after:-left-1">
+        <div className="flex w-full items-center justify-center gap-4">
           {links.map((item, index) => (
             <button
               onClick={() => setIsOpenPopupForm(true)}

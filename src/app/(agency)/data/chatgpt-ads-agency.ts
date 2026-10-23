@@ -6,6 +6,7 @@ const page: AgencyPageData = {
   keyword: "ChatGPT Ads Agency",
   secondaryKeywords: ["ChatGPT ads for hotels", "ChatGPT ads for restaurants", "ChatGPT ads management India", "advertise on ChatGPT", "ChatGPT Ads Manager"],
   group: "ads",
+  platforms: ["chatgpt"],
   navLabel: "ChatGPT Ads",
   cardLine: "Sponsored placements in ChatGPT for hotels, resorts, restaurants and travel brands, tracked to bookings",
   areaServed: "Worldwide",

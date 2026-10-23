@@ -1,3 +1,4 @@
+import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
 import type { ServiceKey } from "@/@types/@industryTemplateType";
 import { AGENCY_PAGES } from "@/app/(agency)/data";
 import HowHotelScaling from "@/app/case-study/components/HowHotelScaling";
@@ -193,6 +194,8 @@ export default function IndustriesWeServe() {
           </ul>
         </Container>
       </section>
+
+      <PlatformStripSection tint />
 
       {/* Markets and specialties (agency landing pages) */}
       <section className="py-14 md:py-22 border-t border-[#E4E3EC]">

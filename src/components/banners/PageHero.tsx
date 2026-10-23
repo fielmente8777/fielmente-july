@@ -16,6 +16,8 @@ interface PageHeroProps {
   imageMode?: "photo" | "illustration";
   /** Small white card overlapping the bottom of the image. */
   floating?: ReactNode;
+  /** Row above the eyebrow, e.g. the official logos of the platforms a service runs on. */
+  badges?: ReactNode;
 }
 
 // Dark hero used on the industries hub, industry pages and service pages.
@@ -29,6 +31,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   imageAlt,
   imageMode = "photo",
   floating,
+  badges,
 }) => {
   return (
     <section className="relative overflow-hidden bg-primary2 pt-24 pb-14 md:pt-32 md:pb-22">
@@ -43,6 +46,7 @@ const PageHero: React.FC<PageHeroProps> = ({
       <Container className="relative grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
         <div className="flex flex-col gap-5 md:gap-6">
           <Breadcrumbs items={crumbs} />
+          {badges}
           <Eyebrow>{eyebrow}</Eyebrow>
           <h1 className="text-[34px]/[1.08] md:text-[50px]/[1.05] font-bold tracking-tight text-white">{title}</h1>
           <p className="text-base/relaxed md:text-lg/relaxed text-[#C9C7DD] max-w-150">{lede}</p>

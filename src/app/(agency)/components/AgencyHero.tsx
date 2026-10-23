@@ -8,6 +8,7 @@ import LeadForm from "@/components/forms/LeadForm";
 import WhatsAppChatButton from "@/components/buttons/WhatsAppChatButton";
 import { AgencyPageData } from "@/@types/@agencyPageType";
 import Breadcrumbs, { BreadcrumbItem } from "@/components/banners/Breadcrumbs";
+import PlatformLogos from "@/components/brand/PlatformLogos";
 
 interface AgencyHeroProps {
   data: AgencyPageData;
@@ -29,6 +30,7 @@ const AgencyHero: React.FC<AgencyHeroProps> = ({ data: d, crumbs }) => {
       <Container className="relative grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-start">
         <div className="flex flex-col gap-5 md:gap-6 lg:pt-4">
           <Breadcrumbs items={crumbs} />
+          {d.platforms && d.platforms.length > 0 && <PlatformLogos keys={d.platforms} />}
           <Eyebrow>{d.hero.eyebrow}</Eyebrow>
           <h1 className="text-[34px]/[1.08] md:text-[50px]/[1.05] font-bold tracking-tight text-white">{d.hero.h1}</h1>
           <p className="text-base/relaxed md:text-lg/relaxed text-[#C9C7DD] max-w-150">

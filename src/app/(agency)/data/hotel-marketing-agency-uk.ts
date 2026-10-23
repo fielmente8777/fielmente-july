@@ -11,6 +11,7 @@ const page: AgencyPageData = {
     "UK hotel direct bookings",
   ],
   group: "location",
+  platforms: ["google-ads", "google-hotels", "meta", "tripadvisor", "booking"],
   navLabel: "Hotel marketing in the UK",
   cardLine: "Direct bookings for London and regional UK hotels, planned around UK rules and seasons",
   areaServed: "United Kingdom",

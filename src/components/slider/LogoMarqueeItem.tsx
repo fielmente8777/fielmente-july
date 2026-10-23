@@ -16,10 +16,12 @@ interface Props {
   imageClassName?: string;
   /** The second, looping copy of the strip: hidden from screen readers and search engines. */
   decorative?: boolean;
+  /** Load straight away: the tiles visible when the strip first appears (lazy tiles showed as empty boxes). */
+  eager?: boolean;
 }
 
 /** One logo tile of LogoMarquee. Shared by the server-rendered strip and its client-side copy. */
-const LogoMarqueeItem: React.FC<Props> = ({ item, itemClassName = "", imageClassName = "", decorative = false }) => (
+const LogoMarqueeItem: React.FC<Props> = ({ item, itemClassName = "", imageClassName = "", decorative = false, eager = false }) => (
   <li aria-hidden={decorative || undefined} className="logo-marquee-item">
     <div
       className={`logo-tile ${itemClassName}`}
@@ -29,9 +31,9 @@ const LogoMarqueeItem: React.FC<Props> = ({ item, itemClassName = "", imageClass
           large with 100+ logos per page). Logos without a copy fall back to the optimiser. */}
       {thumbs[item.src] ? (
         // eslint-disable-next-line @next/next/no-img-element -- pre-sized static file, no optimiser needed
-        <img src={thumbs[item.src]} width={240} height={160} loading="lazy" decoding="async" className={`logo-tile-img ${imageClassName}`} alt={decorative ? "" : item.alt} />
+        <img src={thumbs[item.src]} width={240} height={160} loading={eager ? "eager" : "lazy"} decoding="async" className={`logo-tile-img ${imageClassName}`} alt={decorative ? "" : item.alt} />
       ) : (
-        <Image src={item.src} width={240} height={160} loading="lazy" className={`logo-tile-img ${imageClassName}`} alt={decorative ? "" : item.alt} />
+        <Image src={item.src} width={240} height={160} loading={eager ? "eager" : "lazy"} className={`logo-tile-img ${imageClassName}`} alt={decorative ? "" : item.alt} />
       )}
     </div>
   </li>

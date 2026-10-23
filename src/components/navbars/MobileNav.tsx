@@ -32,8 +32,10 @@ function GroupList({ groups, pathName, close }: { groups: MenuGroup[]; pathName:
                   href={l.href}
                   onClick={close}
                   aria-current={pathName === l.href ? "page" : undefined}
-                  className={`text-[15px] ${pathName === l.href ? "font-semibold text-secondary" : "text-primary"}`}
+                  className={`text-[15px] ${l.icon ? "inline-flex items-center gap-2" : ""} ${pathName === l.href ? "font-semibold text-secondary" : "text-primary"}`}
                 >
+                  {/* eslint-disable-next-line @next/next/no-img-element -- small static logo file */}
+                  {l.icon && <img src={l.icon} alt="" width={16} height={16} className="h-4 w-4 object-contain" />}
                   {l.context && <span className="sr-only">{l.context} </span>}
                   {l.label}
                 </Link>

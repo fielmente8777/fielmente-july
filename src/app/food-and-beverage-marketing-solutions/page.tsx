@@ -11,6 +11,7 @@ import { CtaBtn } from "@/components/buttons/CtaBtn";
 import Clients from "../industries-we-serves/[...industry]/components/Clients";
 import Testimonials from "../industries-we-serves/[...industry]/components/Testimonials";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
 
 export const metadata: Metadata = {
   title: "Restaurant Marketing Company in India | Fielmente",
@@ -41,6 +42,18 @@ function page() {
     <main className="bg-white pt-10">
       <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Food & Beverage Marketing", path: "/food-and-beverage-marketing-solutions/" }]} />
       {industry?.banner && <GridCard {...industry.banner} />}
+      <PlatformStripSection
+        title="The platforms we run for restaurants"
+        lede="Delivery apps, Google, Instagram and travel review sites, run by one team and measured on orders and covers."
+        keys={["zomato", "swiggy", "google-maps", "instagram", "meta", "tripadvisor", "google-ads", "chatgpt"]}
+        hrefs={{
+          "google-maps": "/industries-we-serve/restaurant-marketing-agency/restaurant-local-seo/",
+          instagram: "/industries-we-serve/restaurant-marketing-agency/restaurant-social-media/",
+          "google-ads": "/industries-we-serve/restaurant-marketing-agency/restaurant-google-ads/",
+          chatgpt: "/industries-we-serve/restaurant-marketing-agency/restaurant-chatgpt-ads/",
+          tripadvisor: "/industries-we-serve/restaurant-marketing-agency/restaurant-tripadvisor-ads/",
+        }}
+      />
       {industry?.section2 && <GridCard {...industry.section2} index={1} />}
       {industry?.stats && <Milestone stats={industry.stats} />}
       {industry?.whyNeed && <WhyNeed {...industry.whyNeed} />}

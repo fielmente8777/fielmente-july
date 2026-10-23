@@ -44,7 +44,7 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({
     <div className={`logo-marquee w-full overflow-hidden ${wrapperClassName}`} style={vars}>
       <ul className="logo-marquee-track flex w-max">
         {items.map((item, i) => (
-          <LogoMarqueeItem key={`${item.src}-${i}`} item={item} itemClassName={itemClassName} imageClassName={imageClassName} />
+          <LogoMarqueeItem key={`${item.src}-${i}`} item={item} itemClassName={itemClassName} imageClassName={imageClassName} eager={i < 12} />
         ))}
         {looped &&
           items.map((item, i) => (

@@ -1,4 +1,5 @@
 
+import ReadMore, { splitLead } from "@/components/typography/ReadMore";
 import IconCard from "@/components/cards/IconCard";
 import SplitSection from "@/components/commonSections/SplitSection";
 import Container from "@/components/sectionComponants/Container";
@@ -22,11 +23,27 @@ const DeepDiveBlock: React.FC<DeepDiveBlockProps> = ({ block: b, data: d, index 
       <SplitSection
         eyebrow={b.eyebrow}
         title={b.title}
-        body={b.paragraphs.map((p, k) => (
-          <p key={k}>
-            <RichText text={p} sources={d.sources} />
-          </p>
-        ))}
+        body={(() => {
+          // Opening sentence visible; the rest of the paragraphs fold behind "Read more".
+          const [first, rest] = splitLead(b.paragraphs[0] ?? "");
+          const more = [rest, ...b.paragraphs.slice(1)].filter(Boolean);
+          return (
+            <>
+              <p>
+                <RichText text={first} sources={d.sources} />
+              </p>
+              {more.length > 0 && (
+                <ReadMore>
+                  {more.map((p, k) => (
+                    <p key={k}>
+                      <RichText text={p} sources={d.sources} />
+                    </p>
+                  ))}
+                </ReadMore>
+              )}
+            </>
+          );
+        })()}
         bullets={b.bullets?.map((t) => <RichText key={t} text={t} sources={d.sources} />)}
         image={b.image.src}
         imageAlt={b.image.alt}

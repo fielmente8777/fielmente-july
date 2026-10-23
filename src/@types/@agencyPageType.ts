@@ -1,6 +1,7 @@
 // Content model for the agency landing pages (location and specialty pages).
 // Each page is one data file in src/app/(agency)/data/. The template is src/app/(agency)/components/AgencyPage.tsx.
 import type { IconKey } from "@/utils/serviceIcons";
+import type { PlatformKey } from "@/utils/platforms";
 
 /** A market or industry fact with its source. Cite it in any text with [[ID]]. */
 export interface SourceRef {
@@ -67,6 +68,8 @@ export interface AgencyPageData {
   secondaryKeywords: string[];
   /** location = a market, specialty = a hotel speciality, ads = an advertising platform we run. */
   group: "location" | "specialty" | "ads";
+  /** Official logos of the platforms this page is about, shown in the hero. */
+  platforms?: PlatformKey[];
   /** Short name used in links between pages, e.g. "Hotel marketing in Dubai". */
   navLabel: string;
   /** One line used on cards that link to this page. */
@@ -102,7 +105,8 @@ export interface AgencyPageData {
   services: {
     title: string;
     lede: string;
-    items: { icon: IconKey; title: string; body: string; href: string }[];
+    /** `platform`: show that platform's official logo instead of the icon. */
+    items: { icon: IconKey; title: string; body: string; href: string; platform?: PlatformKey }[];
   };
   proof: {
     title: string;

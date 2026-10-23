@@ -6,6 +6,7 @@ const page: AgencyPageData = {
   keyword: "Google Hotel Center Setup",
   secondaryKeywords: ["Google Hotel Center management", "Google free booking links for hotels", "hotel price feed Google", "Hotel Center connectivity partner", "official site link Google hotels"],
   group: "ads",
+  platforms: ["google-hotel-center", "google-maps"],
   navLabel: "Google Hotel Center",
   cardLine: "Your direct rate and free booking link on Google Search and Maps, set up and kept accurate",
   areaServed: "Worldwide",
@@ -90,12 +91,12 @@ const page: AgencyPageData = {
     title: "What our Hotel Center service covers",
     lede: "Everything between your Business Profile and a live, accurate price on Google.",
     items: [
-      { icon: "pin", title: "Business Profile", body: "A complete, verified Google Business Profile with current photos, amenities and details, so Google can match your property.", href: "/industries-we-serve/hotel-marketing-agency/hotel-local-seo/" },
-      { icon: "badge", title: "Hotel Center account", body: "Applied for or claimed in your name, with the property list and details checked against your Business Profile.", href: "/industries-we-serve/hotel-marketing-agency/hotel-google-ads/" },
+      { icon: "pin", title: "Business Profile", body: "A complete, verified Google Business Profile with current photos, amenities and details, so Google can match your property.", href: "/industries-we-serve/hotel-marketing-agency/hotel-local-seo/", platform: "google-maps" },
+      { icon: "badge", title: "Hotel Center account", body: "Applied for or claimed in your name, with the property list and details checked against your Business Profile.", href: "/industries-we-serve/hotel-marketing-agency/hotel-google-ads/", platform: "google-hotel-center" },
       { icon: "workflow", title: "Connectivity partner", body: "Your booking engine or channel manager connected to Google, or help choosing one that is.", href: "/products/hotel-channel-manager/" },
       { icon: "refresh", title: "Price accuracy", body: "Rates, taxes, currencies and availability checked against your booking page, with errors traced and fixed.", href: "/products/hotel-booking-engine/" },
       { icon: "link", title: "Free booking links", body: "Your direct rate in the free listings beside the ads, at no cost per click.", href: "/hotel-direct-booking-marketing-agency/" },
-      { icon: "search", title: "Hotel Ads when ready", body: "Hotel Center linked to Google Ads, with paid Hotel Ads or Performance Max for travel goals added once the free links work.", href: "/google-hotel-ads-agency/" },
+      { icon: "search", title: "Hotel Ads when ready", body: "Hotel Center linked to Google Ads, with paid Hotel Ads or Performance Max for travel goals added once the free links work.", href: "/google-hotel-ads-agency/", platform: "google-ads" },
     ],
   },
   proof: {

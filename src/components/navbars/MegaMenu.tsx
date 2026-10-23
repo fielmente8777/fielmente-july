@@ -14,7 +14,9 @@ function Groups({ groups, pathName }: { groups: MenuGroup[]; pathName: string })
           <ul className="flex flex-col">
             {g.links.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="mega-link" aria-current={pathName === l.href ? "page" : undefined}>
+                <Link href={l.href} className={`mega-link ${l.icon ? "flex items-center gap-2" : ""}`} aria-current={pathName === l.href ? "page" : undefined}>
+                  {/* eslint-disable-next-line @next/next/no-img-element -- small static logo file */}
+                  {l.icon && <img src={l.icon} alt="" width={16} height={16} className="h-4 w-4 object-contain" />}
                   {l.context && <span className="sr-only">{l.context} </span>}
                   {l.label}
                 </Link>

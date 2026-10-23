@@ -6,6 +6,7 @@ const page: AgencyPageData = {
   keyword: "Tripadvisor Ads Agency",
   secondaryKeywords: ["Tripadvisor Sponsored Placements", "Tripadvisor ads for hotels", "Tripadvisor ads for restaurants", "Tripadvisor advertising management", "Tripadvisor Business Advantage"],
   group: "ads",
+  platforms: ["tripadvisor"],
   navLabel: "Tripadvisor Ads",
   cardLine: "Sponsored placements on Tripadvisor for hotels and restaurants that sell to international travellers",
   areaServed: "Worldwide",
@@ -90,10 +91,10 @@ const page: AgencyPageData = {
     title: "Tripadvisor ads by business",
     lede: "Hotels and restaurants buy different Tripadvisor products, so each has its own page with the details.",
     items: [
-      { icon: "hotel", title: "Tripadvisor Ads for hotels", body: "Sponsored Placements by country, traveller type and trip dates, with direct booking links.", href: "/industries-we-serve/hotel-marketing-agency/hotel-tripadvisor-ads/" },
-      { icon: "palm", title: "Tripadvisor Ads for resorts", body: "Seasonal campaigns for the source markets that book longer leisure stays.", href: "/industries-we-serve/resort-marketing-agency/resort-tripadvisor-ads/" },
-      { icon: "utensils", title: "Tripadvisor Ads for restaurants", body: "Top placements on your city's restaurant pages for visitors deciding where to eat.", href: "/industries-we-serve/restaurant-marketing-agency/restaurant-tripadvisor-ads/" },
-      { icon: "star", title: "Reviews and reputation", body: "More reviews after each stay or meal, and a reply to every review on Tripadvisor and Google.", href: "/industries-we-serve/hotel-marketing-agency/hotel-online-reputation-management/" },
+      { icon: "hotel", title: "Tripadvisor Ads for hotels", body: "Sponsored Placements by country, traveller type and trip dates, with direct booking links.", href: "/industries-we-serve/hotel-marketing-agency/hotel-tripadvisor-ads/", platform: "tripadvisor" },
+      { icon: "palm", title: "Tripadvisor Ads for resorts", body: "Seasonal campaigns for the source markets that book longer leisure stays.", href: "/industries-we-serve/resort-marketing-agency/resort-tripadvisor-ads/", platform: "tripadvisor" },
+      { icon: "utensils", title: "Tripadvisor Ads for restaurants", body: "Top placements on your city's restaurant pages for visitors deciding where to eat.", href: "/industries-we-serve/restaurant-marketing-agency/restaurant-tripadvisor-ads/", platform: "tripadvisor" },
+      { icon: "star", title: "Reviews and reputation", body: "More reviews after each stay or meal, and a reply to every review on Tripadvisor and Google.", href: "/industries-we-serve/hotel-marketing-agency/hotel-online-reputation-management/", platform: "google-maps" },
     ],
   },
   proof: {

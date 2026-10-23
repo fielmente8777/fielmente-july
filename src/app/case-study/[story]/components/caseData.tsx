@@ -28,9 +28,9 @@ export const casStudiesData: CaseStudy[] = [
       description:
         "How Fielmente and Eazotel launched TripAdvisor ads for Syah Udaipur, with a reservation landing page, analytics and central lead management.",
     },
-    // TODO(Fielmente): replace these temporary placeholders with Syah's logo and restaurant photography.
-    img: "/fielmente_logo.png",
-    hotelImg: "/hotel.png",
+    // Syah's logo and its reservation site (built by us). Swap the second for restaurant photography when available.
+    img: "/clientsLogo/syah-udaipur.png",
+    hotelImg: "/our-work/sites/reserve-syahudaipur-com.webp",
     title: "TripAdvisor Ads Case Study: Syah Udaipur",
     description:
       "How Fielmente and Eazotel helped a six-seat fine-dining restaurant launch TripAdvisor advertising and connect sponsored discovery with a dedicated reservation page, analytics and centralized lead management.",
@@ -231,8 +231,8 @@ export const casStudiesData: CaseStudy[] = [
     },
     className: "object-contain",
     img: "/clientsLogo/naturoville.png",
-    // TODO(Fielmente): replace with a photo of the property
-    hotelImg: "/banner.jpg",
+    // The client's website, built by us (from /our-work/). Swap for a property photo when available.
+    hotelImg: "/our-work/sites/naturovillewellnessresort-com.webp",
     title: "Google Ads Case Study: Naturoville Wellness Resort",
     monthly: [
       { month: "2024-10", enquiries: 157, cpe: 1451 },
@@ -368,8 +368,8 @@ export const casStudiesData: CaseStudy[] = [
     className: "object-contain",
     img: "/clientsLogo/naad-wellness.png",
     imgBg: "#110D3C",
-    // TODO(Fielmente): replace with a photo of the property
-    hotelImg: "/banner.jpg",
+    // The client's website, built by us (from /our-work/). Swap for a property photo when available.
+    hotelImg: "/our-work/sites/naadwellness-in.webp",
     title: "Google Ads Case Study: Naad Wellness",
     monthly: [
       { month: "2024-11", enquiries: 14, cpe: 781 },
@@ -448,8 +448,8 @@ export const casStudiesData: CaseStudy[] = [
     },
     className: "object-contain",
     img: "/clientsLogo/rudraksh.png",
-    // TODO(Fielmente): replace with a photo of the property
-    hotelImg: "/banner.jpg",
+    // The client's website, built by us (from /our-work/). Swap for a property photo when available.
+    hotelImg: "/our-work/sites/therudrakshretreat-com.webp",
     title: "Google Ads Case Study: The Rudraksh, A Himalayan Retreat",
     monthly: [
       { month: "2024-12", enquiries: 2, cpe: 4241 },
@@ -519,8 +519,8 @@ export const casStudiesData: CaseStudy[] = [
     },
     className: "object-contain",
     img: "/clientsLogo/ebc.jpg",
-    // TODO(Fielmente): replace with a photo of the property
-    hotelImg: "/banner.jpg",
+    // The client's website, built by us (from /our-work/). Swap for a property photo when available.
+    hotelImg: "/our-work/sites/ebcmussoorie-com.webp",
     title: "Google Ads Case Study: EBC Mussoorie",
     description: "Most of what Google counted as conversions were map taps — visibility, but few direct booking conversations.",
     data: [

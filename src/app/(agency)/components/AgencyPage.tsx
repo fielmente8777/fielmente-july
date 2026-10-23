@@ -7,11 +7,13 @@ import IconLinkCard from "@/components/cards/IconLinkCard";
 import ClientLogosSection from "@/components/commonSections/ClientLogosSection";
 import ComparisonSection from "@/components/commonSections/ComparisonSection";
 import CtaBandSection from "@/components/commonSections/CtaBandSection";
+import AdJourneySection from "@/components/commonSections/AdJourneySection";
 import FaqListSection from "@/components/commonSections/FaqListSection";
 import StepsSection from "@/components/commonSections/StepsSection";
 import Container from "@/components/sectionComponants/Container";
 import SectionHead from "@/components/typography/SectionHead";
 import { COMPANY } from "@/utils/agencyData";
+import { PLATFORMS } from "@/utils/platforms";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { LuArrowRight } from "react-icons/lu";
@@ -106,6 +108,13 @@ const AgencyPage: React.FC<AgencyPageProps> = ({ data: d, afterServices }) => {
 
       <MarketContextSection data={d} />
 
+      {d.group === "ads" && d.platforms && d.platforms.length > 0 && (
+        <AdJourneySection
+          platforms={d.platforms}
+          outcome={d.slug.startsWith("zomato") ? "order" : "booking"}
+        />
+      )}
+
       <ComparisonSection title={d.comparison.title} without={d.comparison.without} withList={d.comparison.withList} />
 
       {/* Services */}
@@ -115,7 +124,7 @@ const AgencyPage: React.FC<AgencyPageProps> = ({ data: d, afterServices }) => {
           <ul className={`grid sm:grid-cols-2 ${d.services.items.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-2"} gap-3 md:gap-4`}>
             {d.services.items.map((s) => (
               <li key={s.title}>
-                <IconLinkCard icon={s.icon} title={s.title} body={s.body} href={s.href} />
+                <IconLinkCard icon={s.icon} logo={s.platform ? PLATFORMS[s.platform].logo : undefined} title={s.title} body={s.body} href={s.href} />
               </li>
             ))}
           </ul>

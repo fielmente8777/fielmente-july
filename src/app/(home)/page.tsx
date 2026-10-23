@@ -5,6 +5,7 @@ import CountriesWeWorked from "../landing-page/components/CountriesWeWorked";
 import { landingPageData } from "../landing-page/components/pageData";
 import ResultsSection from "../landing-page/components/ResultsSection";
 import BusinessPartners from "./components/BusinessPartners";
+import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
 import ChooseFielmente from "./components/ChooseFielmente";
 import ElevateBrand from "./components/ElevateBrand";
 import Faq from "./components/Faq";
@@ -114,6 +115,7 @@ export default function Home() {
       ))}
       <Banner {...homePageData?.bannerData} />
       <HomeScrollReveal><BusinessPartners {...homePageData?.businessPartnersData} /></HomeScrollReveal>
+      <HomeScrollReveal><PlatformStripSection /></HomeScrollReveal>
       <HomeScrollReveal><HomeAbout {...homePageData?.aboutCompanyData} /></HomeScrollReveal>
       <HomeScrollReveal><IndustryWeServe {...homePageData?.servingHospitalityData} /></HomeScrollReveal>
       <HomeScrollReveal><ChooseFielmente {...homePageData?.chooseFielmenteData}/></HomeScrollReveal>

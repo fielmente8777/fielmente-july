@@ -76,6 +76,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/images/GOOGLE-ADS-10.webp",
     card: (I) => `Search and Maps ads that reach ${I.guests} ready to ${I.bookAction}`,
     products: ["hotel-call-management-system", "hotel-whatsapp-marketing", "hotel-crm"],
+    platforms: (I) => (isStay(I) ? ["google-ads", "google-hotels"] : ["google-ads", "google-maps"]),
     guides: (I) =>
       isStay(I)
         ? [
@@ -132,6 +133,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/social-media-management.png",
     card: (I) => `Instagram and Facebook that make ${I.guests} want to ${I.bookAction}`,
     products: ["hotel-social-media-management-tool", "hotel-conversational-tool"],
+    platforms: () => ["instagram", "facebook"],
     build: (I) => ({
       heroTitle: `${I.name} social media that turns followers into ${I.guests}`,
       heroLede: `We plan, create and manage your ${I.noun}'s Instagram and Facebook — showing off your ${I.showcase} — and make it easy for people to ${I.bookAction} straight from a post or DM.`,
@@ -178,6 +180,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/local-seo.png",
     card: (I) => `Show up on Google Maps when ${I.guests} search nearby`,
     products: ["hotel-local-seo", "hotel-call-management-system"],
+    platforms: (I) => (isFood(I) ? ["google-business-profile", "zomato", "swiggy"] : ["google-business-profile", "google"]),
     build: (I) => ({
       heroTitle: `${I.name} local SEO that puts you on the map — literally`,
       heroLede: `When ${I.guests} search ${q(I.searches[0])} or ${q(I.searches[1])}, Google Maps decides who they call. We optimise your Google Business Profile and local presence so it's you.`,
@@ -224,6 +227,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/website-seo.png",
     card: (I) => `Rank your website for the searches ${I.guests} actually make`,
     products: ["hotel-cms", "hotel-booking-engine"],
+    platforms: () => ["google", "google-search-console", "google-analytics"],
     build: (I) => ({
       heroTitle: `${I.name} SEO that brings ${I.guests} to your own website`,
       heroLede: `Rank for the searches that lead to bookings — like ${q(I.searches[1])} — so ${I.guests} land on your site, not on ${I.channels.split(",")[0]}.`,
@@ -270,6 +274,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/ai-search-optimization.png",
     card: () => `Get recommended by ChatGPT, Gemini and Google AI Overviews`,
     products: ["hotel-cms", "hotel-local-seo"],
+    platforms: () => ["chatgpt", "gemini", "perplexity", "google"],
     build: (I) => ({
       heroTitle: `Get your ${I.noun} recommended by AI search`,
       heroLede: `More ${I.guests} now ask ChatGPT, Gemini or Google's AI Overviews where to go. We make sure your ${I.noun} is understood, trusted and recommended when they do.`,
@@ -316,6 +321,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/preopening-marketing.png",
     card: (I) => `Open your ${I.noun} with bookings already on the calendar`,
     products: ["hotel-booking-engine", "hotel-cms", "hotel-channel-manager"],
+    platforms: () => ["google-ads", "instagram", "google-business-profile"],
     build: (I) => ({
       heroTitle: `Preopening marketing that opens your ${I.noun} with bookings in hand`,
       heroLede: `The months before opening decide your first year. We build your brand, website, listings and launch campaigns so ${I.guests} are booking before the doors open.`,
@@ -362,6 +368,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/ota-management.png",
     card: (I) => `Better rankings and conversion on ${I.channels.split(",")[0]} and other OTAs`,
     products: ["hotel-channel-manager", "hotel-booking-engine"],
+    platforms: (I) => (I.prefix === "homestay-villa" ? ["airbnb", "booking", "makemytrip", "agoda"] : ["booking", "makemytrip", "agoda", "expedia"]),
     guides: () => [
       { title: "OTA ads", body: "Booking.com, Agoda and Expedia sponsored listings, for need dates only.", href: "/ota-ads-management/" },
       { title: "Hotel metasearch", body: "Your direct rate on Google, Tripadvisor, trivago and Kayak.", href: "/hotel-metasearch-marketing-agency/" },
@@ -414,6 +421,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: () => `Get listed correctly on every major OTA`,
     products: ["hotel-channel-manager"],
+    platforms: (I) => (I.prefix === "homestay-villa" ? ["airbnb", "booking", "makemytrip", "agoda"] : ["booking", "makemytrip", "agoda", "goibibo"]),
     build: (I) => ({
       heroTitle: `Get your ${I.noun} listed on every OTA that matters — properly`,
       heroLede: `We set up your property on ${I.channels}, with the right room mapping, photos, policies and rates, so you're bookable everywhere from day one.`,
@@ -461,6 +469,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: () => `The right rate, on the right channel, every night`,
     products: ["hotel-channel-manager", "hotel-booking-engine"],
+    platforms: () => ["booking", "expedia", "agoda", "makemytrip"],
     build: (I) => ({
       heroTitle: `${I.name} revenue management that earns more from every room`,
       heroLede: `We set and adjust your rates by demand, day and channel — around ${I.peaks} — so you stop leaving money on the table on busy nights and sitting empty on quiet ones.`,
@@ -553,6 +562,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/sales-marketing-automation.png",
     card: (I) => `Every enquiry followed up automatically, every ${I.guests.replace(/s$/, "")} remembered`,
     products: ["hotel-crm", "hotel-whatsapp-marketing", "hotel-email-marketing"],
+    platforms: () => ["whatsapp", "instagram"],
     build: (I) => ({
       heroTitle: `${I.name} sales and marketing automation that never drops a lead`,
       heroLede: `Enquiries arrive from Google, Instagram, WhatsApp and calls. We set up the CRM and automations that reply instantly, follow up on time and bring past ${I.guests} back.`,
@@ -599,6 +609,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/home/content-creation.png",
     card: (I) => `Photos, reels and copy that make people want to ${I.bookAction}`,
     products: ["hotel-social-media-management-tool", "hotel-cms"],
+    platforms: () => ["instagram", "youtube"],
     build: (I) => ({
       heroTitle: `${I.name} content that makes people want to ${I.bookAction}`,
       heroLede: `Photography, reels and copy that capture your ${I.showcase} — made for Instagram, your website, ads and ${isStay(I) ? "OTA listings" : "listings"}.`,
@@ -692,6 +703,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/images/GOOGLE-ADS-10.webp",
     card: () => `Google and Meta ads that bring enquiries at a lower cost`,
     products: ["hotel-booking-engine", "hotel-call-management-system", "hotel-crm"],
+    platforms: (I) => (isFood(I) ? ["google-ads", "meta", "zomato", "swiggy"] : ["google-ads", "meta", "chatgpt", "tripadvisor"]),
     guides: (I) => [
       { title: "ChatGPT Ads", body: "Sponsored placements in ChatGPT, tested against your other channels.", href: "/chatgpt-ads-agency/" },
       { title: "Meta ads for hospitality", body: "Facebook and Instagram ads judged on enquiries and bookings.", href: "/hospitality-meta-ads-agency/" },
@@ -839,6 +851,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: (I) => `Creators your ${I.guests} trust, showing why you're worth it`,
     products: ["hotel-social-media-management-tool"],
+    platforms: () => ["instagram", "youtube"],
     build: (I) => ({
       heroTitle: `${I.name} influencer marketing that brings real ${I.guests}`,
       heroLede: `The right creators can fill dates faster than any ad. We find creators whose audience matches your ${I.guests}, manage the collaboration and measure the enquiries it brings.`,
@@ -886,6 +899,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: () => `AI that answers comments and DMs and captures leads 24/7`,
     products: ["hotel-conversational-tool", "hotel-ai-chatbot", "hotel-ai-reservation-desk"],
+    platforms: () => ["instagram", "whatsapp", "facebook"],
     build: (I) => ({
       heroTitle: `Social media AI automation that answers every DM, day and night`,
       heroLede: `Instagram and Facebook DMs are where many ${I.guests} ask about rates and availability. AI automation replies instantly, answers common questions, shares offers and captures the lead for your team.`,
@@ -932,6 +946,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/industry/cloud-kitchen-1.png",
     card: () => `More great reviews, and every review answered well`,
     products: ["hotel-local-seo", "hotel-ai-front-desk", "hotel-guest-request-management"],
+    platforms: (I) => (isFood(I) ? ["google-business-profile", "zomato", "swiggy", "tripadvisor"] : ["google-business-profile", "tripadvisor", "booking"]),
     build: (I) => ({
       heroTitle: `${I.name} reputation management that turns reviews into bookings`,
       heroLede: `Guests read reviews on ${I.reviewSites} before they ${I.bookAction}. We help you earn more five-star reviews, answer every review well and fix the issues behind the bad ones.`,
@@ -979,6 +994,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: () => `More orders and better ratings on Zomato and Swiggy`,
     products: ["hotel-whatsapp-marketing", "hotel-insights-analytics", "hotel-social-media-management-tool"],
+    platforms: () => ["zomato", "swiggy"],
     guides: () => [
       { title: "Zomato and Swiggy ads", body: "How we run in-app ads for orders and margin, with what each app charges.", href: "/zomato-swiggy-ads-agency/" },
       { title: "ChatGPT Ads", body: "Sponsored placements in ChatGPT, and when they make sense for food businesses.", href: "/chatgpt-ads-agency/" },
@@ -1031,6 +1047,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: () => `Wedding, event and MICE enquiries that turn into site visits`,
     products: ["hotel-crm", "hotel-whatsapp-marketing", "hotel-call-management-system"],
+    platforms: () => ["instagram", "google-ads", "meta"],
     build: (I) => ({
       heroTitle: `${I.name} wedding and event marketing that fills your calendar`,
       heroLede: `Couples, families, planners and companies look months ahead for the right venue. We put your ${I.noun} in front of them, show what an event with you looks like, and move every enquiry to a site visit fast.`,
@@ -1077,6 +1094,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     image: "/industry/online-mobile.webp",
     card: () => `Take table bookings straight from Instagram and WhatsApp`,
     products: ["hotel-conversational-tool", "hotel-whatsapp-marketing", "hotel-ai-chatbot"],
+    platforms: () => ["instagram", "whatsapp"],
     build: (I) => ({
       heroTitle: `Table reservations straight from Instagram and WhatsApp`,
       heroLede: `People discover your ${I.noun} on Instagram and want to book there and then. Automation replies to DMs, offers slots, confirms the table and sends a reminder — without anyone picking up the phone.`,
@@ -1124,6 +1142,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: (I) => `Sponsored placements in ChatGPT for ${I.guests} planning with AI`,
     products: ["hotel-crm", "hotel-whatsapp-marketing", "hotel-ai-reservation-desk"],
+    platforms: () => ["chatgpt"],
     meta: (I) => ({
       title: `ChatGPT Ads for ${shortPlural(I)} | Fielmente`,
       description: `ChatGPT Ads for ${shortPlural(I).toLowerCase()}: Ads Manager set-up, offers built around guests' questions, landing pages and tracking from ad to booking.`,
@@ -1200,6 +1219,7 @@ export const serviceTypes: Record<ServiceKey, ServiceType> = {
     heroPhoto: true,
     card: (I) => `Sponsored Tripadvisor placements for travellers choosing ${I.plural}`,
     products: ["hotel-crm", "hotel-whatsapp-marketing", "hotel-insights-analytics"],
+    platforms: () => ["tripadvisor"],
     meta: (I) => ({
       title: `Tripadvisor Ads for ${shortPlural(I)} | Fielmente`,
       description: isFood(I)

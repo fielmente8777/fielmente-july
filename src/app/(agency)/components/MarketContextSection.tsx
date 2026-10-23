@@ -4,6 +4,7 @@ import Eyebrow from "@/components/typography/Eyebrow";
 import SectionTitle from "@/components/typography/SectionTitle";
 import Image from "next/image";
 import RichText, { citeNumber } from "./RichText";
+import ReadMore, { splitLead } from "@/components/typography/ReadMore";
 import { AgencyPageData } from "@/@types/@agencyPageType";
 
 interface MarketContextSectionProps {
@@ -13,17 +14,27 @@ interface MarketContextSectionProps {
 // Market or segment context: intro, four cited numbers, a photo and key points.
 const MarketContextSection: React.FC<MarketContextSectionProps> = ({ data: d }) => {
   const { context, sources } = d;
+  // Only the opening sentence shows; the rest of the intro folds behind "Read more".
+  const [lead, leadRest] = splitLead(context.intro[0] ?? "");
+  const moreIntro = [leadRest, ...context.intro.slice(1)].filter(Boolean);
   return (
     <section className="py-14 md:py-22">
       <Container>
         <div className="flex flex-col gap-3 max-w-190 mb-8 md:mb-10">
           <Eyebrow>{context.eyebrow}</Eyebrow>
           <SectionTitle>{context.title}</SectionTitle>
-          {context.intro.map((p, i) => (
-            <p key={i} className="text-[15px]/relaxed md:text-base/relaxed text-[#55536E]">
-              <RichText text={p} sources={sources} />
-            </p>
-          ))}
+          <p className="text-base/relaxed md:text-lg/relaxed text-[#55536E]">
+            <RichText text={lead} sources={sources} />
+          </p>
+          {moreIntro.length > 0 && (
+            <ReadMore>
+              {moreIntro.map((p, i) => (
+                <p key={i} className="text-[15px]/relaxed md:text-base/relaxed text-[#55536E]">
+                  <RichText text={p} sources={sources} />
+                </p>
+              ))}
+            </ReadMore>
+          )}
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {context.stats.map((s, i) => {
@@ -50,14 +61,29 @@ const MarketContextSection: React.FC<MarketContextSectionProps> = ({ data: d }) 
             <Image src={context.image.src} alt={context.image.alt} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="flex flex-col gap-6">
-            {context.points.map((pt) => (
-              <div key={pt.title} className="flex flex-col gap-1.5">
-                <h3 className="text-lg md:text-xl font-bold">{pt.title}</h3>
-                <p className="text-[15px]/relaxed md:text-base/relaxed text-[#55536E]">
-                  <RichText text={pt.body} sources={sources} />
-                </p>
-              </div>
-            ))}
+            {context.points.map((pt, i) => {
+              const [first, rest] = splitLead(pt.body);
+              return (
+                <div key={pt.title} className="flex gap-4">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FDE8DF] text-sm font-bold text-orange-primary" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <div className="flex flex-col gap-1.5">
+                    <h3 className="text-lg md:text-xl font-bold">{pt.title}</h3>
+                    <p className="text-[15px]/relaxed md:text-base/relaxed text-[#55536E]">
+                      <RichText text={first} sources={sources} />
+                    </p>
+                    {rest && (
+                      <ReadMore>
+                        <p className="text-[15px]/relaxed md:text-base/relaxed text-[#55536E]">
+                          <RichText text={rest} sources={sources} />
+                        </p>
+                      </ReadMore>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </Container>

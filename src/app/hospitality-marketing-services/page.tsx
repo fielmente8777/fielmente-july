@@ -1,4 +1,5 @@
 // import Form from "@/app/about-fielmente-best-hospitality-marketing-agency/components/Form";
+import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
 import Image from "next/image";
 
 import AccordinContent from "./components/AccordinContent";
@@ -400,6 +401,8 @@ function page() {
           </div>
         </div>
       </div>
+
+      <PlatformStripSection />
 
       {/* Brand We Work With  */}
       <BrandWeWork />

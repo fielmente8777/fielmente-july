@@ -28,6 +28,7 @@ import { getAgencyPage } from "@/app/(agency)/data";
 import IndustryServicesGrid from "../components/templates/IndustryServicesGrid";
 import IndustryTemplate from "../components/templates/IndustryTemplate";
 import ServiceTemplate from "../components/templates/ServiceTemplate";
+import { legacyIndustries } from "../data/industries";
 import {
   findIndustry,
   findServicePage,
@@ -110,7 +111,8 @@ export async function generateMetadata({ params }: Params) {
         type: "website",
         images: [
           {
-            url: `https://fielmente.com/industries-we-serve/${industry.slug}-og.png`,
+            // Sharing image: the industry's own photo (the old "<slug>-og.png" files were never created).
+            url: `https://fielmente.com${legacyIndustries.find((l) => l.slug === industry.slug)?.image ?? "/fielmente_logo.png"}`,
             width: 1200,
           },
         ],

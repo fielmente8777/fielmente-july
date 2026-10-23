@@ -11,6 +11,7 @@ const page: AgencyPageData = {
     "outsourced hotel marketing team",
   ],
   group: "location",
+  platforms: ["google-ads", "google-hotels", "meta", "tripadvisor", "expedia"],
   navLabel: "Hotel marketing in the USA",
   cardLine: "More direct bookings for independent and franchised US hotels, with calls in your hours",
   areaServed: "United States",

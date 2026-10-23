@@ -7,6 +7,7 @@ import { landingPageData } from "@/app/landing-page/components/pageData";
 import type { Metadata } from "next";
 import ContactBtn3 from "../contactbtn/ContactBtn3";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import PlatformLogos from "@/components/brand/PlatformLogos";
 
 export const metadata: Metadata = {
   title: "Hospitality Social Media Marketing Agency | Fielmente",
@@ -88,6 +89,9 @@ function page() {
           {/* Hospitality Social Media Marketing:***** */}
           <div className="lg:grid grid-cols-2 gap-4 flex flex-col-reverse">
             <div className="flex flex-col gap-8">
+              <div className="flex lg:justify-start justify-center">
+                <PlatformLogos keys={["instagram", "facebook", "meta", "whatsapp"]} />
+              </div>
               <h1 className="lg:text-4xl/[3rem] text-2xl/[1.9rem] lg:text-start text-center">
                 Hospitality Social Media Marketing: Forge lasting bonds with
                 customers, fueling exponential business growth!

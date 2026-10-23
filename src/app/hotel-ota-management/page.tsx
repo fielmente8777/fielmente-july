@@ -10,6 +10,7 @@ import {
 } from "./component";
 import OurClients from "./component/OurClients";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
 
 export const metadata = {
   title: "Hotel OTA & Revenue Management Agency | Fielmente",
@@ -65,6 +66,11 @@ const page = () => {
     <main className="overflow-x-clip mt-22 border-t border-main-border">
       <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Hotel OTA Management", path: "/hotel-ota-management/" }]} />
       <Banner2 {...newPagedata.bannerData} />
+      <PlatformStripSection
+        title="The OTAs we manage for hotels"
+        lede="Listings, rates, promotions, reviews and paid visibility on every major OTA, kept in sync through one channel manager."
+        keys={["booking", "makemytrip", "agoda", "goibibo", "expedia", "airbnb"]}
+      />
       <Revenue {...newPagedata.revenue} />
       <RevenueManagementServices {...newPagedata.revenueManagementServices} />
       <ChooseUs {...newPagedata.chooseUs} />

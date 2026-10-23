@@ -9,18 +9,27 @@ interface IconLinkCardProps {
   href: string;
   /** Visible border, for cards on a white background. */
   bordered?: boolean;
+  /** Official platform logo (file in /public) shown instead of the icon, e.g. for Google Ads or Tripadvisor services. */
+  logo?: string;
 }
 
 // Linked service card: icon, title, one line and an arrow. Used in service lists on white or grey sections.
-const IconLinkCard: React.FC<IconLinkCardProps> = ({ icon, title, body, href, bordered = false }) => {
+const IconLinkCard: React.FC<IconLinkCardProps> = ({ icon, title, body, href, bordered = false, logo }) => {
   return (
     <Link
       href={href}
       className={`group flex h-full items-start gap-4 rounded-2xl border ${bordered ? "border-[#E4E3EC]" : "border-transparent"} bg-white p-5 md:p-6 hover:border-primary2/30 hover:shadow-[0_20px_50px_-30px_rgba(17,13,60,0.45)] transition-all`}
     >
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FDE8DF] text-orange-primary">
-        <Icon name={icon} size={20} />
-      </span>
+      {logo ? (
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#ECEBF2] bg-white">
+          {/* eslint-disable-next-line @next/next/no-img-element -- small static logo file */}
+          <img src={logo} alt="" width={26} height={26} className="h-6.5 w-6.5 object-contain" />
+        </span>
+      ) : (
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FDE8DF] text-orange-primary">
+          <Icon name={icon} size={20} />
+        </span>
+      )}
       <span className="flex flex-1 flex-col gap-1.5">
         <span className="text-[17px] font-bold text-primary2">{title}</span>
         <span className="text-sm/relaxed text-[#55536E]">{body}</span>

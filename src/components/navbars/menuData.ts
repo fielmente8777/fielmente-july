@@ -6,13 +6,15 @@ import { AGENCY_PAGES } from "@/app/(agency)/data";
 import { industries, serviceOnlyIndustries } from "@/app/industries-we-serve/data/industries";
 import { serviceHref, serviceTypes } from "@/app/industries-we-serve/data/services";
 import { PRODUCTS, productPath } from "@/lib/products";
+import { PLATFORMS } from "@/utils/platforms";
 
 /**
  * `context` is read by screen readers and search engines but not shown (the panel heading already says
  * it). Every industry has links like "Website SEO", so without it the header repeated the same link text
  * up to eight times on every page; with it each link is unique ("Resort Website SEO").
  */
-export type MenuLink = { label: string; href: string; context?: string };
+/** `icon`: an official platform logo shown before the label (advertising platform pages). */
+export type MenuLink = { label: string; href: string; context?: string; icon?: string };
 export type MenuGroup = { title: string; links: MenuLink[] };
 export type MenuSection = { label: string; href?: string; cardLine?: string; groups: MenuGroup[] };
 export type SiteMenu = { industries: MenuSection[]; products: MenuGroup[] };
@@ -125,7 +127,11 @@ export function buildSiteMenu(): SiteMenu {
   all.filter((I) => !INDUSTRY_ORDER.includes(I.slug)).forEach((I) => industrySections.push(industrySection(I)));
 
   const agency = (group: "location" | "specialty" | "ads") =>
-    AGENCY_PAGES.filter((p) => p.group === group && !p.slug.startsWith("industries-we-serve/")).map((p) => ({ label: p.navLabel, href: `/${p.slug}/` }));
+    AGENCY_PAGES.filter((p) => p.group === group && !p.slug.startsWith("industries-we-serve/")).map((p) => ({
+      label: p.navLabel,
+      href: `/${p.slug}/`,
+      ...(group === "ads" && p.platforms?.[0] ? { icon: PLATFORMS[p.platforms[0]].logo } : {}),
+    }));
 
   industrySections.push({
     label: "International Hotel Marketing",
