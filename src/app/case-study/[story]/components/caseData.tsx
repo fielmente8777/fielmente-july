@@ -49,18 +49,18 @@ export const casStudiesData: CaseStudy[] = [
     metrics: [
       {
         label: "TripAdvisor impressions",
-        value: "1,156",
-        note: "Opening campaign snapshot",
+        value: "4,567",
+        note: "Latest supplied campaign snapshot",
       },
-      { label: "Ad clicks", value: "5", note: "Initial engagement recorded" },
+      { label: "Ad clicks", value: "31", note: "Latest supplied dashboard" },
       {
         label: "Click-through rate",
-        value: "0.43%",
-        note: "258% above reported benchmark",
+        value: "0.68%",
+        note: "31 clicks from 4,567 delivered impressions",
       },
     ],
     metricsNote:
-      "Early signal: Sponsored visibility and clicks confirmed. These metrics do not represent verified enquiries or confirmed reservations.",
+      "Campaign dashboard snapshot: 42,252 booked impressions, 4,567 delivered impressions, 31 clicks and 0.68% CTR. Delivery indicator: Awaiting Data. These metrics do not represent verified enquiries or confirmed reservations.",
     data: [
       {
         title: "From restaurant discovery to a direct reservation journey",
@@ -73,7 +73,7 @@ export const casStudiesData: CaseStudy[] = [
           "<b>Category:</b> Premium fine dining · Six-seat experience",
           "<b>Service:</b> TripAdvisor Ads, landing page, analytics, lead tracking and SEO infrastructure",
           "<b>Launch:</b> 13 October 2026",
-          "<b>Initial results captured:</b> 16 October 2026",
+          "<b>Latest dashboard snapshot:</b> October 2026",
           "<b>Technology:</b> TripAdvisor · Eazotel · Google Analytics · Google Search Console",
         ],
       },
@@ -104,9 +104,11 @@ export const casStudiesData: CaseStudy[] = [
           "A direct route from sponsored restaurant discovery to a team-managed enquiry, with measurable checkpoints at each stage.",
         ],
         lists: [
-          "<b>TripAdvisor Ad:</b> Relevant diners encounter Syah in a sponsored placement.",
+          "<b>TripAdvisor Ad:</b> Relevant diners encounter Syah in a sponsored placement above the Udaipur restaurant results or while browsing other restaurant pages.",
           "<b>Reservation Page:</b> Interested guests reach Syah's branded landing experience.",
-          "<b>Enquiry Action:</b> Guests can take a reservation or enquiry action.",
+          "<b>Website experience:</b> Guests explore the tasting menu, culinary imagery, guest reviews and restaurant information.",
+          "<b>Eazotel assistant:</b> Guests can open a chatbot conversation or use WhatsApp and telephone contact options.",
+          "<b>Reservation request:</b> The form asks for name, WhatsApp number, date, party size, arrival time and menu preference; the restaurant confirms availability separately.",
           "<b>Eazotel Dashboard:</b> Enquiry records can be organised for tracking and follow-up.",
           "<b>Note:</b> Process illustration only. End-to-end conversion attribution and booking outcomes require matching campaign, analytics and CRM records.",
         ],
@@ -114,11 +116,11 @@ export const casStudiesData: CaseStudy[] = [
       {
         title: "Real screenshots from the launch",
         description: [
-          "The campaign was shown live on TripAdvisor, and the advertising dashboard recorded early reach and click-through performance.",
+          "The screenshots show Syah in a sponsored placement above the Udaipur restaurant listings and while a traveller browses another restaurant page. The advertising dashboard records delivery and clicks; these are not confirmed reservations.",
         ],
         lists: [
           "<b>Sponsored placement on TripAdvisor:</b> Syah's sponsored placement shown above another restaurant's listing. This illustrates paid advertising visibility, not organic #1 ranking.",
-          "<b>Initial advertising performance:</b> 1,156 impressions, 5 clicks and 0.43% CTR. Dashboard note: 258% higher CTR than benchmark.",
+          "<b>Initial advertising performance:</b> 4,567 delivered impressions, 31 clicks and 0.68% CTR, from 42,252 booked impressions. Delivery indicator: Awaiting Data.",
           "<b>Screenshot source:</b> Supplied by the campaign team on 16 October 2026 and cropped for readability.",
         ],
       },
@@ -129,8 +131,8 @@ export const casStudiesData: CaseStudy[] = [
         ],
         lists: [
           "<b>Sponsored presence established:</b> Syah's paid placement appeared during TripAdvisor restaurant browsing.",
-          "<b>1,156 impressions delivered:</b> Initial campaign visibility recorded in the dashboard.",
-          "<b>5 clicks generated:</b> Early platform engagement; clicks are not leads or bookings.",
+          "<b>4,567 impressions delivered:</b> Initial campaign visibility recorded in the dashboard.",
+          "<b>31 clicks generated:</b> Early platform engagement; clicks are not leads or bookings.",
           "<b>Connected operational setup:</b> Landing page, Eazotel, GA and Search Console in place for measurement and follow-up.",
           "<b>What happens next:</b> As the campaign runs, evaluate landing-page engagement, verified enquiries, qualified leads, cost per enquiry, confirmed reservations and booking revenue. Add those metrics only when cross-checked against Eazotel and reservation records.",
         ],
@@ -138,7 +140,7 @@ export const casStudiesData: CaseStudy[] = [
       {
         title: "Clear attribution matters",
         description: [
-          "<b>Advertising metrics:</b> Impressions, clicks and CTR are taken from the supplied TripAdvisor advertising dashboard screenshot dated 16 October 2026. <b>Platform comparison:</b> The dashboard itself describes the CTR as 258% above its benchmark; its benchmark methodology was not independently verified. <b>Website/CRM:</b> Google Analytics, Search Console and the Eazotel dashboard are included in the implementation, but conversion totals and direct booking revenue were not included in the supplied evidence. <b>Ranking:</b> The placement screenshot is paid promotion, not proof of organic SEO ranking.",
+          "<b>Advertising metrics:</b> Impressions, clicks and CTR are taken from the supplied TripAdvisor advertising dashboard screenshot shared in October 2026. <b>Delivery:</b> The screenshot shows 42,252 booked impressions, of which 4,567 were delivered at the time captured. <b>Website/CRM:</b> Google Analytics, Search Console and the Eazotel dashboard are included in the implementation, but conversion totals and direct booking revenue were not included in the supplied evidence. <b>Ranking:</b> The placement screenshot is paid promotion, not proof of organic SEO ranking.",
         ],
         lists: [
           "<b>Publishing checklist — complete when data is available:</b> Add the actual campaign spend, outbound clicks verified in Analytics, enquiry totals verified in Eazotel, confirmed reservations, revenue and screenshots of the reservation page/dashboard. Use these to update the case study's results section over time.",
