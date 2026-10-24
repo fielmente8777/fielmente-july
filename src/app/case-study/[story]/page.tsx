@@ -87,31 +87,41 @@ export default async function Page(props: Params) {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <div className="w-full mx-auto relative lg:aspect-[4/1.8] md:aspect-4/2 aspect-4/3.5">
-        <Image
-          src={data?.hotelImg || data.img}
-          alt={data.hotelImgAlt ?? data.title}
-          fill
-          priority
-          sizes="100vw"
-          className={`object-cover`}
-        />
-        <div className="absolute inset-0 bg-[#111609]/30 flex items-center justify-center">
-          <Container className="md:space-y-16 space-y-5">
-            <nav aria-label="Breadcrumb" className="text-sm text-white/80">
-              <Link href="/case-study/" className="underline-offset-2 hover:underline">
-                Case studies
-              </Link>
-            </nav>
-            <h1 className="lg:text-[2.5rem]/[3.5rem] lg:max-w-2xl text-white font-semibold text-[1.5rem]/[2.2rem]">
-              {data?.title}
-            </h1>
-            {data.description && (
-              <p className="max-w-2xl text-white/90 text-base md:text-lg">{data.description}</p>
-            )}
+      {data.slug === "syah-udaipur-tripadvisor-ads" ? (
+        <section className="relative overflow-hidden bg-[#102b25] text-white">
+          <div className="pointer-events-none absolute -right-24 -top-28 h-96 w-96 rounded-full border border-[#d7bd88]/25" />
+          <div className="pointer-events-none absolute -right-8 -top-12 h-80 w-80 rounded-full border border-[#d7bd88]/15" />
+          <Container className="relative grid min-h-[540px] items-center gap-10 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
+            <div className="max-w-2xl">
+              <Link href="/case-study/" className="text-sm text-[#d7bd88] underline-offset-4 hover:underline">← All case studies</Link>
+              <p className="mt-12 text-xs font-bold uppercase tracking-[0.25em] text-[#d7bd88]">Fielmente × Eazotel · Restaurant growth story</p>
+              <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight md:text-6xl">From Tripadvisor discovery to Syah Udaipur</h1>
+              <p className="mt-6 max-w-xl text-lg leading-8 text-white/80">How a six-seat fine-dining restaurant connected sponsored discovery with its own reservation experience, analytics and guest engagement.</p>
+              <div className="mt-9 flex flex-wrap gap-3 text-sm"><span className="rounded-full border border-white/30 px-4 py-2">Tripadvisor Ads</span><span className="rounded-full border border-white/30 px-4 py-2">Direct Enquiries</span><span className="rounded-full border border-white/30 px-4 py-2">Eazotel</span></div>
+            </div>
+            <figure className="relative">
+              <div className="absolute -inset-3 rotate-2 rounded-3xl border border-[#d7bd88]/40" />
+              <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-[#f4f0e7] p-3 shadow-2xl">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-white">
+                  <Image src="/our-work/sites/reserve-syahudaipur-com.webp" alt="Real Syah Udaipur reservation website" fill priority sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover object-top" />
+                </div>
+              </div>
+              <figcaption className="mt-4 text-center text-xs tracking-wide text-white/65">Actual Syah Udaipur reservation website</figcaption>
+            </figure>
           </Container>
+        </section>
+      ) : (
+        <div className="w-full mx-auto relative lg:aspect-[4/1.8] md:aspect-4/2 aspect-4/3.5">
+          <Image src={data?.hotelImg || data.img} alt={data.hotelImgAlt ?? data.title} fill priority sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-[#111609]/30 flex items-center justify-center">
+            <Container className="md:space-y-16 space-y-5">
+              <nav aria-label="Breadcrumb" className="text-sm text-white/80"><Link href="/case-study/" className="underline-offset-2 hover:underline">Case studies</Link></nav>
+              <h1 className="lg:text-[2.5rem]/[3.5rem] lg:max-w-2xl text-white font-semibold text-[1.5rem]/[2.2rem]">{data?.title}</h1>
+              {data.description && <p className="max-w-2xl text-white/90 text-base md:text-lg">{data.description}</p>}
+            </Container>
+          </div>
         </div>
-      </div>
+      )}
 
       {hasKpis && (
         <SectionWithContainer sectionClassName="">
