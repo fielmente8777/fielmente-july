@@ -26,6 +26,7 @@ const nextConfig: NextConfig = {
     contentDispositionType: "attachment",
 
     remotePatterns: [
+      { protocol: "https", hostname: "syahudaipur.com" },
       {
         protocol: "https",
         hostname: "eazotel-client-webp-image.s3.ap-south-1.amazonaws.com",
