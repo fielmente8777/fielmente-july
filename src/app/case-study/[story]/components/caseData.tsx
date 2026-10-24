@@ -6,6 +6,8 @@ export interface CaseStudy {
   description: string;
   img: string;
   hotelImg?: string;
+  /** Describe what the banner photo shows. Required when it is a stock photo of the place, not the client's property. */
+  hotelImgAlt?: string;
   imgBg?: string;
   className?: string;
   metaData?: { title: string; description: string };
@@ -19,6 +21,16 @@ export interface CaseStudy {
   monthlyHighlightFrom?: string;
   monthlyNote?: string;
 }
+
+/** A free Unsplash photo (unsplash.com/license) for a banner, served through next/image. */
+const unsplash = (id: string) => `https://images.unsplash.com/${id}?w=1920&q=80&fm=jpg&fit=max`;
+
+const FNB_CTA = {
+  eyebrow: "Restaurants and cloud kitchens",
+  title: "Want results like these for your restaurant?",
+  description: "Talk to Fielmente about social media, Google listings, Swiggy and Zomato, and ads that bring diners in.",
+  label: "Get a Free Consultation",
+};
 
 export const casStudiesData: CaseStudy[] = [
   {
@@ -565,6 +577,311 @@ export const casStudiesData: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "mahabir-palace-social-media",
+    metaData: {
+      title: "Mahabir Palace Social Media Case Study, Kathmandu | Fielmente",
+      description: "How Fielmente's Meta ads and a Nepali travel creator took Kathmandu hotel Mahabir Palace from about 50 to 44,600 accounts reached in two weeks.",
+    },
+    className: "object-contain",
+    img: "/clientsLogo/mahabir-palace.png",
+    hotelImg: unsplash("photo-1605640840605-14ac1855827b"),
+    hotelImgAlt: "Boudhanath Stupa and the rooftops of Kathmandu",
+    title: "Social Media Case Study: Mahabir Palace, Kathmandu",
+    description: "A Kathmandu hotel that Instagram showed to about 50 people a fortnight, until the ads and a creator partnership went live.",
+    metrics: [
+      { label: "Accounts reached in two weeks", value: "44,600", note: "18–31 July 2022, up from about 50" },
+      { label: "Accounts engaged", value: "224", note: "Same fortnight, up from 1" },
+      { label: "Followers in July 2022", value: "+36%", note: "To 116 followers" },
+      { label: "Meta ads running", value: "6", note: "With 25 stories and 5 posts" },
+    ],
+    metricsNote: "Source: Mahabir Palace Instagram Insights for 18–31 July 2022, compared with 4–17 July. Reach counts unique accounts that saw the content, not bookings.",
+    data: [
+      {
+        title: "Overview",
+        lists: [
+          "<b>Brand:</b> Mahabir Palace",
+          "<b>Location:</b> Kathmandu, Nepal",
+          "<b>Category:</b> Hotel with a restaurant and bar, conference hall and health club",
+          "<b>Service:</b> Instagram and Facebook management, Meta ads, influencer marketing",
+          "<b>Started:</b> July 2022",
+        ],
+      },
+      {
+        title: "The Challenge",
+        description: [
+          "Mahabir Palace has rooms, a restaurant and bar, a conference hall, a health club and a jacuzzi, but on social media it was close to invisible. In early July 2022 Instagram showed the hotel to about 50 accounts a fortnight, and almost nobody engaged. The budget was small, so every rupee had to reach people planning a stay in Kathmandu.",
+        ],
+      },
+      {
+        title: "What We Did",
+        lists: [
+          "<b>1. Meta ads -</b> Six ads running at once on Instagram and Facebook, aimed at travellers planning a Kathmandu trip.",
+          "<b>2. A creator partnership -</b> A collaboration with the Nepal travel page Roaming Around Nepal, which publishes on TikTok, YouTube and Instagram.",
+          "<b>3. Daily stories -</b> 25 stories and 5 posts in the launch fortnight, showing the rooms, food and facilities.",
+          "<b>4. One look and voice -</b> Every post and ad in the same style, so the hotel is recognisable from one scroll to the next.",
+        ],
+      },
+      {
+        title: "Results",
+        lists: [
+          "• Accounts reached in a fortnight: about 50 → 44,600",
+          "• Accounts engaged: 1 → 224",
+          "• Followers up 36% across July 2022",
+        ],
+      },
+      {
+        title: "How We Measured",
+        description: [
+          "All figures come from the hotel's Instagram Insights for 4–31 July 2022, saved in our records at the time. Reach counts unique accounts that saw the content; it measures awareness, not bookings. We do not have booking figures from this period to publish.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "hotel-platinum-shravasti-social-media",
+    metaData: {
+      title: "Hotel Platinum Shravasti Social Media Case Study | Fielmente",
+      description: "How Fielmente took Hotel Platinum Shravasti's Instagram from about 60 to 56,100 accounts reached in 90 days, and tripled its followers.",
+    },
+    className: "object-contain",
+    img: "/clientsLogo/hotel-platinum-shravasti.png",
+    hotelImg: unsplash("photo-1667883643074-31b942669d08"),
+    hotelImgAlt: "Buddha statue at a Buddhist pilgrimage site",
+    title: "Social Media Case Study: Hotel Platinum, Shravasti",
+    description: "A hotel in a Buddhist pilgrimage town whose Instagram reached about 60 people in three months.",
+    metrics: [
+      { label: "Accounts reached in 90 days", value: "56,100", note: "May–July 2022, up from about 60" },
+      { label: "Accounts engaged", value: "939", note: "Up from 2 in the previous 90 days" },
+      { label: "Followers", value: "226", note: "+222% in 90 days" },
+      { label: "Content published", value: "103", note: "39 posts, 52 stories, 12 reels" },
+    ],
+    metricsNote: "Source: Hotel Platinum Shravasti Instagram Insights for 3 May – 31 July 2022, compared with 2 February – 2 May. Reach counts unique accounts, not bookings.",
+    data: [
+      {
+        title: "Overview",
+        lists: [
+          "<b>Brand:</b> Hotel Platinum Shravasti",
+          "<b>Location:</b> Shravasti, Uttar Pradesh, India",
+          "<b>Category:</b> Hotel with a restaurant, in a Buddhist pilgrimage town",
+          "<b>Service:</b> Instagram management and content",
+          "<b>Period:</b> May – July 2022",
+        ],
+      },
+      {
+        title: "The Challenge",
+        description: [
+          "Shravasti draws Buddhist pilgrims and tour groups from across Asia, but Hotel Platinum's Instagram was dormant. Between February and early May 2022 it reached about 60 accounts and had around 70 followers, so the hotel was missing from the place many travellers now check before they book.",
+        ],
+      },
+      {
+        title: "What We Did",
+        lists: [
+          "<b>1. Profile and content plan -</b> A clear profile and a calendar built around the rooms, the restaurant and the town's pilgrimage sites.",
+          "<b>2. A steady rhythm -</b> 39 posts, 52 stories and 12 reels in 90 days.",
+          "<b>3. Reels first -</b> Short videos to reach people who did not follow the account yet.",
+        ],
+      },
+      {
+        title: "Results",
+        lists: [
+          "• Accounts reached in 90 days: about 60 → 56,100",
+          "• Accounts engaged: 2 → 939",
+          "• Followers: about 70 → 226 (+222%)",
+        ],
+      },
+      {
+        title: "How We Measured",
+        description: [
+          "All figures come from the hotel's Instagram Insights for 3 May – 31 July 2022, compared with the 90 days before, saved in our records at the time. Reach peaked in May and June; July alone reached 3,612 accounts. Reach measures awareness, not bookings.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "zar-e-biryani-social-media",
+    metaData: {
+      title: "Zar-e-Biryani Social Media Case Study, Gandhinagar | Fielmente",
+      description: "How Fielmente's content, offers and festive campaigns reached 119,000 accounts in 90 days for Gandhinagar biryani house Zar-e-Biryani.",
+    },
+    className: "object-contain",
+    img: "/clientsLogo/zar-e-biryani.png",
+    imgBg: "#000000",
+    hotelImg: unsplash("photo-1697155406055-2db32d47ca07"),
+    hotelImgAlt: "A pot of biryani",
+    title: "Social Media Case Study: Zar-e-Biryani, Gandhinagar",
+    description: "A biryani house up against every other biryani on Swiggy and Zomato, needing people to order it by name.",
+    metrics: [
+      { label: "Accounts reached in 90 days", value: "119,000", note: "May–July 2022" },
+      { label: "Accounts engaged", value: "931", note: "Same 90 days" },
+      { label: "New followers", value: "+120", note: "More than the 90 days before" },
+      { label: "Content published", value: "88", note: "53 posts, 29 stories, 6 reels" },
+    ],
+    metricsNote: "Source: Zar-e-Biryani Instagram Insights for 3 May – 31 July 2022. Two paid ads ran in the period. Reach is awareness, not orders.",
+    data: [
+      {
+        title: "Overview",
+        lists: [
+          "<b>Brand:</b> Zar-e-Biryani",
+          "<b>Location:</b> Gandhinagar, Gujarat, India",
+          "<b>Category:</b> Lucknowi and Hyderabadi biryani: dine-in, takeaway, and delivery on Swiggy and Zomato",
+          "<b>Service:</b> Social media, ads, festive campaigns, menu design",
+          "<b>Working together:</b> 2022 – 2025",
+        ],
+      },
+      {
+        title: "The Challenge",
+        description: [
+          "On Swiggy and Zomato, every biryani looks alike in a list. Zar-e-Biryani needed people in Gandhinagar and Ahmedabad to know its Lucknowi and Hyderabadi biryanis by name, then order them or come to the outlet.",
+        ],
+      },
+      {
+        title: "What We Did",
+        lists: [
+          "<b>1. A content plan -</b> Biryani-first posts and reels, every caption pointing to Swiggy, Zomato or a direct phone order.",
+          "<b>2. Offers people could act on -</b> 15% off dine-in and takeaway, and gift vouchers at the Gandhinagar outlet.",
+          "<b>3. Festive campaigns -</b> Diwali, Gujarati New Year and Christmas creatives.",
+          "<b>4. Menu design -</b> A redesigned menu in 2025.",
+        ],
+      },
+      {
+        title: "Results",
+        lists: [
+          "• 119,000 accounts reached in 90 days",
+          "• 931 accounts engaged",
+          "• 120 more new followers than the 90 days before",
+          "• A three-year working relationship, 2022 to 2025",
+        ],
+      },
+      {
+        title: "How We Measured",
+        description: [
+          "Reach, engagement and follower figures come from the restaurant's Instagram Insights for 3 May – 31 July 2022, saved in our records at the time. Reach measures awareness, not orders; Swiggy and Zomato order data was not part of this report.",
+        ],
+      },
+    ],
+    cta: FNB_CTA,
+  },
+  {
+    slug: "desi-bar-grill-social-media",
+    metaData: {
+      title: "Desi Bar & Grill Case Study, Mississauga | Fielmente",
+      description: "How Fielmente rebuilt Desi Bar & Grill's social media and Google listing in Mississauga: reach up 258% to about 158,000 accounts.",
+    },
+    className: "object-contain",
+    img: "/clientsLogo/desi-bar-grill.png",
+    hotelImg: unsplash("photo-1785369608209-caeed2ba78bb"),
+    hotelImgAlt: "The Mississauga skyline",
+    title: "Social Media & Local SEO Case Study: Desi Bar & Grill, Mississauga",
+    description: "An Indian restaurant in one of Canada's most crowded Indian-food markets, with low footfall and almost no online presence.",
+    metrics: [
+      { label: "Account reach", value: "158K", note: "+258% on the period before" },
+      { label: "Impressions", value: "+190%" },
+      { label: "Profile visits", value: "+110%" },
+      { label: "Followers", value: "+30%" },
+    ],
+    metricsNote: "Source: Instagram insights in our results report to Desi Bar & Grill, compared with the period before Fielmente started. Reach counts accounts, not covers or orders.",
+    data: [
+      {
+        title: "Overview",
+        lists: [
+          "<b>Brand:</b> Desi Bar & Grill",
+          "<b>Location:</b> Mississauga, Ontario, Canada",
+          "<b>Category:</b> North Indian restaurant and bar",
+          "<b>Service:</b> Social media, Google listing, local SEO, review management",
+        ],
+      },
+      {
+        title: "The Challenge",
+        description: [
+          "Mississauga, next to Toronto, has dozens of Indian restaurants. Desi Bar & Grill's food was good, but footfall was low and it had almost no online presence: no social pages, no photos on Google, few reviews and none of them answered.",
+        ],
+      },
+      {
+        title: "What We Did",
+        lists: [
+          "<b>1. Social pages from scratch -</b> New profiles and monthly campaigns, planned from market research to reach the Indian community and non-Indian diners.",
+          "<b>2. Google listing rebuild -</b> Photos, details and review replies, and the listing checked on Canadian delivery apps.",
+          "<b>3. Local SEO -</b> Link building and listing work to rank for Indian food searches nearby.",
+          "<b>4. A Punjabi identity -</b> Bollywood and Punjabi music and visual cues in the content and the dining room, to match the North Indian menu.",
+        ],
+      },
+      {
+        title: "Results",
+        lists: [
+          "• Account reach up 258%, to about 158,000",
+          "• Impressions up 190%",
+          "• Profile visits up 110%",
+          "• Followers up 30%",
+          "• The restaurant has since opened a second branch",
+        ],
+      },
+      {
+        title: "How We Measured",
+        description: [
+          "Figures come from the Instagram insights in our results report to the restaurant, comparing the campaign period with the period before we started. Reach and impressions measure awareness, not covers or revenue; we do not hold the restaurant's sales data.",
+        ],
+      },
+    ],
+    cta: FNB_CTA,
+  },
+  {
+    slug: "doner-gyros-chandkheda-branding",
+    metaData: {
+      title: "Döner & Gyros Chandkheda Case Study | Fielmente",
+      description: "Menu design, Google Business Profile, influencers and a reels campaign that reached 497,000 accounts for Döner & Gyros in Chandkheda, Ahmedabad.",
+    },
+    className: "object-contain",
+    img: "/clientsLogo/D&G-logo-03-1.png",
+    hotelImg: unsplash("photo-1633321702518-7feccafb94d5"),
+    hotelImgAlt: "A doner wrap",
+    title: "Branding & Social Media Case Study: Döner & Gyros, Chandkheda",
+    description: "A franchise outlet in a crowded fast-food market, building local awareness from the menu board up.",
+    metrics: [
+      { label: "Reach of one reels campaign", value: "497K", note: "Targeted Instagram reels, early 2023" },
+    ],
+    metricsNote: "Source: Instagram ad results for the reels campaign. Reach is awareness, not orders.",
+    data: [
+      {
+        title: "Overview",
+        lists: [
+          "<b>Brand:</b> Döner & Gyros (franchise outlet)",
+          "<b>Location:</b> Chandkheda, Ahmedabad, Gujarat, India",
+          "<b>Category:</b> Quick-service doner and gyros",
+          "<b>Service:</b> Menu design, Google Business Profile, social media, influencer marketing, paid reels",
+        ],
+      },
+      {
+        title: "The Challenge",
+        description: [
+          "Chandkheda has no shortage of fast food. The outlet needed local people to know it was there, recognise the brand and choose it, with an online presence to match.",
+        ],
+      },
+      {
+        title: "What We Did",
+        lists: [
+          "<b>1. Display menu -</b> A menu board designed around the brand's position: quality ingredients, freshly prepared.",
+          "<b>2. Google Business Profile -</b> Profile optimisation and local listings, so the outlet shows up in nearby searches.",
+          "<b>3. Content and influencers -</b> A content plan and collaborations with local creators.",
+          "<b>4. Paid reels -</b> A targeted reels campaign for the area around the outlet.",
+        ],
+      },
+      {
+        title: "Results",
+        lists: [
+          "• One reels campaign reached 497,000 targeted accounts",
+          "• Followers and engagement grew with the content and influencer work",
+        ],
+      },
+      {
+        title: "How We Measured",
+        description: [
+          "Reach comes from the Instagram ad results for the reels campaign in early 2023. It measures how many accounts saw the reels, not orders; we do not hold the outlet's sales data.",
+        ],
+      },
+    ],
+    cta: FNB_CTA,
+  },
   // {
   //   slug: "north-wind-57",
   //   // img: "/home/client.png",
@@ -575,14 +892,66 @@ export const casStudiesData: CaseStudy[] = [
   // },
   {
     slug: "wabi-sabi-resort",
-    img: "/clientsLogo/wabi-sabi.png",
-    title: "Wabi Sabi Resort",
     metaData: {
-      title: "Wabi Sabi Resort Case Study | Hotel Marketing & SEO Results",
-      description:
-        "Explore how Fielmente helped Wabi Sabi Resort improve visibility, increase bookings, and grow revenue using SEO and hotel marketing strategies.",
+      title: "Wabi Sabi Resort Case Study: Branding & SEO | Fielmente",
+      description: "How Fielmente built Wabi Sabi Resort's brand identity in Igatpuri and grew its website from 38 to 1,500+ backlinks, with 19 of 21 target keywords ranking.",
     },
-    description:
-      "Wabi Sabi Resort is a luxurious retreat nestled amidst the serene landscapes of Igatpuri. The resort boasts stunning vistas, an infinity pool, and a harmonious blend of modern amenities and nature's embrace. With its 45",
+    className: "object-contain",
+    img: "/clientsLogo/wabi-sabi.png",
+    hotelImg: unsplash("photo-1593202233212-6d7e5398bc69"),
+    hotelImgAlt: "Green hills of Igatpuri in the monsoon",
+    title: "Branding & SEO Case Study: Wabi Sabi Resort, Igatpuri",
+    description: "A new nature resort in Igatpuri that needed a brand guests remember and a website Google could find.",
+    metrics: [
+      { label: "Target keywords ranking", value: "19 of 21", note: "July 2024" },
+      { label: "Organic visits a month", value: "1,000", note: "Up from 750 the month before" },
+      { label: "Domain authority", value: "11", note: "From 1 at the start" },
+      { label: "Backlinks", value: "1,500+", note: "From 38 at the start" },
+    ],
+    metricsNote: "Source: Fielmente's SEO report for Wabi Sabi Resort, 26 July 2024. Organic visits are website sessions from Google, not bookings.",
+    data: [
+      {
+        title: "Overview",
+        lists: [
+          "<b>Brand:</b> Wabi Sabi Resort",
+          "<b>Location:</b> Igatpuri, Maharashtra, India",
+          "<b>Category:</b> Nature resort in the Western Ghats",
+          "<b>Service:</b> Brand identity, on-property collateral, SEO, social media content, menu design",
+          "<b>Working together:</b> since 2024",
+        ],
+      },
+      {
+        title: "The Challenge",
+        description: [
+          "Wabi Sabi is named after the Japanese idea of finding beauty in simplicity and imperfection. The resort sits among hills with more than 500 species of plants and trees, but it had no visual identity to carry that idea, and its new website had almost no search presence: a domain authority of 1 and 38 backlinks.",
+        ],
+      },
+      {
+        title: "What We Did",
+        lists: [
+          "<b>1. Brand identity -</b> Logo, a deep teal and sand palette, typefaces and a brand pattern, set out in brand guidelines.",
+          "<b>2. On-property collateral -</b> Room-number signs, key cards, water bottles, toiletries, the menu and a guest feedback form, all in the same system.",
+          "<b>3. SEO -</b> Keyword research for Igatpuri stays, on-page fixes, site speed and backlink building, reported every month.",
+          "<b>4. Social content -</b> Seasonal reels, from monsoon getaways to corporate retreats.",
+        ],
+      },
+      {
+        title: "Results",
+        lists: [
+          "• 19 of 21 target keywords ranking on Google",
+          "• Organic visits a month: 750 → 1,000",
+          "• Domain authority: 1 → 11; page authority: 10 → 27",
+          "• Backlinks: 38 → 1,500+",
+          "• SEO score 100 and a mobile speed score of 78",
+          "• All organic traffic from non-brand searches, now including the Igatpuri region",
+        ],
+      },
+      {
+        title: "How We Measured",
+        description: [
+          "Figures come from Fielmente's SEO report dated 26 July 2024, which tracks keyword rankings, Google Analytics traffic and backlinks from the start of the project. Domain and page authority are third-party scores, not Google's. Organic visits are not bookings.",
+        ],
+      },
+    ],
   },
 ];

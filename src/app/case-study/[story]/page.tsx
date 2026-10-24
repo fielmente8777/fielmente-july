@@ -24,6 +24,11 @@ export async function generateStaticParams() {
 }
 
 const SITE = "https://fielmente.com";
+/** Site paths get the domain; full URLs (e.g. Unsplash photos) are used as they are. */
+const abs = (src: string) => (/^https?:\/\//.test(src) ? src : `${SITE}${src}`);
+/** Social preview size for Unsplash photos; other images as they are. */
+const ogSrc = (src: string) =>
+  src.startsWith("https://images.unsplash.com/") ? `${src.split("?")[0]}?w=1200&h=630&fit=crop&q=80&fm=jpg` : src;
 
 export async function generateMetadata(props: Params): Promise<Metadata> {
   const params = await props.params;
@@ -37,7 +42,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, siteName: "Fielmente", locale: "en_IN", type: "article", images: [{ url: image, width: 1200, height: 630, alt: data.title }] },
+    openGraph: { title, description, url, siteName: "Fielmente", locale: "en_IN", type: "article", images: [{ url: ogSrc(image), width: 1200, height: 630, alt: data.title }] },
     // A case study with no write-up yet stays out of Google until it has one.
     robots: data.data?.length ? { index: true, follow: true } : { index: false, follow: true },
   };
@@ -63,7 +68,7 @@ export default async function Page(props: Params) {
     description: data.metaData?.description || data.description,
     url,
     mainEntityOfPage: url,
-    image: `${SITE}${data.hotelImg && data.hotelImg !== "/banner.jpg" ? data.hotelImg : data.img}`,
+    image: abs(data.hotelImg && data.hotelImg !== "/banner.jpg" ? data.hotelImg : data.img),
     author: { "@type": "Organization", name: "Fielmente", url: `${SITE}/` },
     publisher: { "@type": "Organization", name: "Fielmente", logo: { "@type": "ImageObject", url: `${SITE}/fielmente_logo.png` } },
     about: { "@type": "Organization", name: data.title.replace(/^.*?:\s*/, "") },
@@ -85,7 +90,7 @@ export default async function Page(props: Params) {
       <div className="w-full mx-auto relative lg:aspect-[4/1.8] md:aspect-4/2 aspect-4/3.5">
         <Image
           src={data?.hotelImg || data.img}
-          alt={data.title}
+          alt={data.hotelImgAlt ?? data.title}
           fill
           priority
           sizes="100vw"

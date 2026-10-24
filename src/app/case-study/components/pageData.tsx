@@ -3,9 +3,9 @@ import { casStudiesData } from "../[story]/components/caseData";
 export const caseStudyPageData = {
   bannerData: {
     title: "Case Studies",
-    subTitle: "Real Results from Real Hotels",
+    subTitle: "Real Results from Real Hotels, Resorts and Restaurants",
     description:
-      "See how properties like yours achieved measurable growth with Fielmente",
+      "See how hotels, resorts and restaurants like yours grew with Fielmente, with the numbers and where they came from",
   },
   casStudyClientSection: {
     title: "How Hotels Are Scaling with Fielmente",
