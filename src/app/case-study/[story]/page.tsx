@@ -88,26 +88,27 @@ export default async function Page(props: Params) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {data.slug === "syah-udaipur-tripadvisor-ads" ? (
-        <section className="relative overflow-hidden bg-[#102b25] text-white">
-          <div className="pointer-events-none absolute -right-24 -top-28 h-96 w-96 rounded-full border border-[#d7bd88]/25" />
-          <div className="pointer-events-none absolute -right-8 -top-12 h-80 w-80 rounded-full border border-[#d7bd88]/15" />
-          <Container className="relative grid min-h-[540px] items-center gap-10 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
-            <div className="max-w-2xl">
-              <Link href="/case-study/" className="text-sm text-[#d7bd88] underline-offset-4 hover:underline">← All case studies</Link>
-              <p className="mt-12 text-xs font-bold uppercase tracking-[0.25em] text-[#d7bd88]">Fielmente × Eazotel · Restaurant growth story</p>
-              <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight md:text-6xl">From Tripadvisor discovery to Syah Udaipur</h1>
-              <p className="mt-6 max-w-xl text-lg leading-8 text-white/80">How a six-seat fine-dining restaurant connected sponsored discovery with its own reservation experience, analytics and guest engagement.</p>
-              <div className="mt-9 flex flex-wrap gap-3 text-sm"><span className="rounded-full border border-white/30 px-4 py-2">Tripadvisor Ads</span><span className="rounded-full border border-white/30 px-4 py-2">Direct Enquiries</span><span className="rounded-full border border-white/30 px-4 py-2">Eazotel</span></div>
+        <section className="relative overflow-hidden bg-[#102720] text-white">
+          <div className="absolute inset-0 opacity-20" style={{backgroundImage:"radial-gradient(circle at 75% 20%, #c6a66b 0, transparent 40%)"}} />
+          <Container className="relative grid min-h-[480px] items-center gap-12 py-16 lg:grid-cols-[1.2fr_0.8fr] lg:py-24">
+            <div className="max-w-3xl">
+              <Link href="/case-study/" className="text-sm text-[#e3c997] hover:underline">← Case studies</Link>
+              <p className="mt-12 text-xs font-semibold uppercase tracking-[0.22em] text-[#e3c997]">Fielmente × Eazotel / Tripadvisor advertising</p>
+              <h1 className="mt-5 text-4xl font-semibold leading-tight md:text-6xl">How Syah Udaipur turned Tripadvisor visibility into a direct guest journey</h1>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">A premium six-seat restaurant. A sponsored discovery strategy. A dedicated reservation experience built to connect interested diners directly with Syah.</p>
+              <div className="mt-9 flex flex-wrap gap-3 text-sm"><span className="rounded-full border border-[#e3c997]/50 px-4 py-2">Tripadvisor Ads</span><span className="rounded-full border border-[#e3c997]/50 px-4 py-2">Landing Page</span><span className="rounded-full border border-[#e3c997]/50 px-4 py-2">Eazotel</span></div>
             </div>
-            <figure className="relative">
-              <div className="absolute -inset-3 rotate-2 rounded-3xl border border-[#d7bd88]/40" />
-              <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-[#f4f0e7] p-3 shadow-2xl">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-white">
-                  <Image src="/our-work/sites/reserve-syahudaipur-com.webp" alt="Real Syah Udaipur reservation website" fill priority sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover object-top" />
+            <div className="flex items-center justify-center">
+              <div className="w-full max-w-sm rounded-3xl border border-[#e3c997]/40 bg-white/10 p-9 text-center shadow-2xl backdrop-blur-sm">
+                <div className="mx-auto flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-[#f8f4e9] p-5">
+                  <Image src="/clientsLogo/syah-udaipur.png" alt="Syah Udaipur official logo" width={110} height={110} className="h-full w-full object-contain" />
                 </div>
+                <p className="mt-8 text-xs uppercase tracking-[0.24em] text-[#e3c997]">Restaurant case study</p>
+                <p className="mt-3 text-3xl font-semibold">SYAH UDAIPUR</p>
+                <div className="mx-auto my-6 h-px w-20 bg-[#e3c997]/60"/>
+                <p className="text-sm leading-7 text-white/75">Sponsored discovery → reservation landing page → direct guest enquiry</p>
               </div>
-              <figcaption className="mt-4 text-center text-xs tracking-wide text-white/65">Actual Syah Udaipur reservation website</figcaption>
-            </figure>
+            </div>
           </Container>
         </section>
       ) : (
