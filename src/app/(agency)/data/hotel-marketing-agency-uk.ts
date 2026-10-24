@@ -59,9 +59,8 @@ const page: AgencyPageData = {
       { value: "44.2M", label: "inbound visits forecast for 2026", source: "UK2" },
     ],
     image: {
-      src: "/agency/london.jpg",
-      fallback: "/industry/hotel-2.png",
-      alt: "Front desk team checking in a hotel guest",
+      src: "https://images.unsplash.com/photo-1547473078-cbab237054c0?w=1920&q=80&fm=jpg&fit=max",
+      alt: "London hotel room looking out at the Tower of London",
     },
     points: [
       {
@@ -272,7 +271,7 @@ const page: AgencyPageData = {
         "Soft opt-in used only for past guests, with an unsubscribe link in every email",
         "Cookie banners reviewed against the new low-risk exemptions",
       ],
-      image: { src: "/images/Contact3.webp", fallback: "/images/Contact3.webp", alt: "Marketing team reviewing a hotel campaign on a laptop" },
+      image: { src: "https://images.unsplash.com/photo-1535448033526-c0e85c9e6968?w=1920&q=80&fm=jpg&fit=max", alt: "Edinburgh Castle above the city" },
       reverse: true,
     },
   ],

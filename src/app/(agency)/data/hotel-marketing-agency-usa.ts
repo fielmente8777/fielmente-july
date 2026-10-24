@@ -59,9 +59,8 @@ const page: AgencyPageData = {
       { value: "39%", label: "of active US travelers used AI to plan trips, H2 2025", source: "US9" },
     ],
     image: {
-      src: "/agency/new-york.jpg",
-      fallback: "/industry/hotel-3.png",
-      alt: "Hotel tower against a blue sky",
+      src: "https://images.unsplash.com/photo-1479502806991-251c94be6b15?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Guest photographing the Manhattan skyline from a New York hotel",
     },
     points: [
       {
@@ -272,7 +271,7 @@ const page: AgencyPageData = {
         "Resort and destination fees included in advertised rates across ads, metasearch and email",
         "Privacy notices and cookie settings reviewed for the states your guests come from",
       ],
-      image: { src: "/industry/hotel-2.png", fallback: "/industry/hotel-2.png", alt: "Guest checking in at a hotel front desk" },
+      image: { src: "https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=1920&q=80&fm=jpg&fit=max", alt: "Grand hotel lobby with a gold chandelier" },
       reverse: true,
     },
   ],

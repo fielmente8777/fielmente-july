@@ -195,7 +195,7 @@ const page: AgencyPageData = {
         "Consent for email and WhatsApp collected to the rules of each market you sell to",
         "Monthly checks of how AI assistants describe your hotel in your main languages",
       ],
-      image: { src: "/images/Contact3.webp", fallback: "/images/Contact3.webp", alt: "Hotel marketing team planning campaigns on a laptop" },
+      image: { src: "https://images.unsplash.com/photo-1687992176093-6417a93fa3d0?w=1920&q=80&fm=jpg&fit=max", alt: "Travellers walking through an international airport" },
       reverse: true,
     },
   ],

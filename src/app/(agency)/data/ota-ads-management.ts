@@ -54,8 +54,8 @@ const page: AgencyPageData = {
       { value: "200+", label: "Expedia Group travel sites and apps where TravelAds can run", source: "OT2" },
     ],
     image: {
-      src: "/agency/revenue-analytics.jpg",
-      alt: "Hotel occupancy and revenue report on a tablet",
+      src: "https://images.unsplash.com/photo-1729860646477-c0f603c0300b?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Booking.com app open on a phone",
     },
     points: [
       {

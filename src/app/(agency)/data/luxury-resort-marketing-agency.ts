@@ -195,7 +195,7 @@ const page: AgencyPageData = {
         "Monthly checks of the questions your guests are likely to ask, with changes logged over time",
         "Tracking that shows the visits and enquiries AI assistants send you",
       ],
-      image: { src: "/home/im8.webp", fallback: "/home/im8.webp", alt: "Grand hotel building lit up at dusk" },
+      image: { src: "https://images.unsplash.com/photo-1561501900-3701fa6a0864?w=1920&q=80&fm=jpg&fit=max", alt: "Luxury seaside resort with an infinity pool at sunset" },
       reverse: true,
     },
   ],

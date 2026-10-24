@@ -34,6 +34,12 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "cdn.builder.io",
       },
+      // Free stock photos (unsplash.com/license). next/image fetches, resizes and caches them.
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/photo-**",
+      },
     ],
   },
 

@@ -55,9 +55,8 @@ const page: AgencyPageData = {
       { value: "85%", label: "of UAE residents would like businesses to be on WhatsApp", source: "AE21" },
     ],
     image: {
-      src: "/agency/dubai-marina.jpg",
-      fallback: "/industry/restaurant-2.png",
-      alt: "Guests dining together at a busy restaurant",
+      src: "https://images.unsplash.com/photo-1726796065385-dd7020944274?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Guests at an outdoor waterfront restaurant in Dubai",
     },
     points: [
       {
@@ -197,7 +196,7 @@ const page: AgencyPageData = {
         "Opt-in wording on every form and WhatsApp flow, with consent kept on record",
         "Holiday-home ads only for units with a current DET permit",
       ],
-      image: { src: "/industry/restaurant-1.png", fallback: "/industry/restaurant-1.png", alt: "Restaurant dining room set for service" },
+      image: { src: "https://images.unsplash.com/photo-1765801122549-2c11dc9cbd78?w=1920&q=80&fm=jpg&fit=max", alt: "Dubai Marina towers and boats lit up at night" },
       reverse: true,
     },
   ],

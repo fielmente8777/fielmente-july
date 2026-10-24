@@ -10,7 +10,8 @@ export interface SourceRef {
   url: string;
 }
 
-/** An image in /public. */
+/** An image in /public, or a free Unsplash photo:
+ * "https://images.unsplash.com/photo-<id>?w=1920&q=80&fm=jpg&fit=max" (unsplash.com/license, no credit required). */
 export interface ImageRef {
   src: string;
   /** Kept from earlier drafts; not used for rendering. */

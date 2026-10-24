@@ -167,7 +167,7 @@ const page: AgencyPageData = {
         "Separate landing pages for rooms, packages, weddings and retreats",
         "A/B tests on headlines, offers and photos once traffic allows",
       ],
-      image: { src: "/images/Contact3.webp", fallback: "/images/Contact3.webp", alt: "Marketing team reviewing a hotel website on a laptop" },
+      image: { src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80&fm=jpg&fit=max", alt: "Website analytics dashboard on a laptop" },
       reverse: true,
     },
   ],

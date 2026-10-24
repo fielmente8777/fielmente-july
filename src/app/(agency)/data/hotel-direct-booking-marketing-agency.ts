@@ -167,7 +167,7 @@ const page: AgencyPageData = {
         "Pre-arrival, post-stay and return-visit journeys on email and WhatsApp",
         "A monthly report on repeat bookings and the commission they saved",
       ],
-      image: { src: "/home/im5.webp", fallback: "/home/im5.webp", alt: "Guest cottage at a boutique retreat" },
+      image: { src: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=1920&q=80&fm=jpg&fit=max", alt: "Email inbox open on a laptop" },
       reverse: true,
     },
   ],

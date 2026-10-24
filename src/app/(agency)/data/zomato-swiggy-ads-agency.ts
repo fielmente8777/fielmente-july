@@ -54,8 +54,8 @@ const page: AgencyPageData = {
       { value: "₹5–15", label: "reported cost per click for Zomato sponsored listings in 2026", source: "ZS3" },
     ],
     image: {
-      src: "/industry/cloud-kitchen-1.png",
-      alt: "Restaurant owner checking delivery app ratings on a tablet",
+      src: "https://images.unsplash.com/photo-1601972602288-3be527b4f18a?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Food delivery app open on a phone at a dinner table",
     },
     points: [
       {
@@ -161,7 +161,7 @@ const page: AgencyPageData = {
         "WhatsApp broadcasts to customers who opted in",
         "Instagram content and ads for new dishes and launches",
       ],
-      image: { src: "/industry/online-mobile.webp", alt: "Food brand's Instagram feed on a phone" },
+      image: { src: "https://images.unsplash.com/photo-1648587456176-4969b0124b12?w=1920&q=80&fm=jpg&fit=max", alt: "Branded takeaway box, cup and cutlery" },
       reverse: true,
     },
   ],

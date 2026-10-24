@@ -54,8 +54,8 @@ const page: AgencyPageData = {
       { value: "100M+", label: "weekly ChatGPT users in India", source: "GL35" },
     ],
     image: {
-      src: "/agency/hotel-booking-phone.jpg",
-      alt: "Traveller planning a hotel booking on a laptop",
+      src: "https://images.unsplash.com/photo-1676272682018-b1435bad1cf0?w=1920&q=80&fm=jpg&fit=max",
+      alt: "ChatGPT open on a laptop screen",
     },
     points: [
       {
@@ -164,7 +164,7 @@ const page: AgencyPageData = {
         "Bought per click or by impression, with conversion tracking",
         "No effect on what ChatGPT recommends organically",
       ],
-      image: { src: "/agency/hotel-guest-tablet.jpg", alt: "Guest browsing hotel options on a tablet" },
+      image: { src: "https://images.unsplash.com/photo-1751448582395-27fc57293f1a?w=1920&q=80&fm=jpg&fit=max", alt: "ChatGPT app on a smartphone" },
       reverse: true,
     },
   ],

@@ -54,8 +54,8 @@ const page: AgencyPageData = {
       { value: "39%", label: "of active US travellers used AI to plan trips in H2 2025, so discovery is spreading across channels", source: "GL10" },
     ],
     image: {
-      src: "/industry/online-mobile.webp",
-      alt: "Restaurant's Instagram feed open on a phone",
+      src: "https://images.unsplash.com/photo-1690883793939-f8cca2f28ee0?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Facebook, Instagram and WhatsApp apps on a phone",
     },
     points: [
       {

@@ -54,9 +54,8 @@ const page: AgencyPageData = {
       { value: "100M+", label: "weekly ChatGPT users in India (OpenAI, Feb 2026)", source: "GL35" },
     ],
     image: {
-      src: "/agency/hotel-guest-tablet.jpg",
-      fallback: "/home/ai-search-optimization.png",
-      alt: "Laptop showing AI-assisted hotel search results",
+      src: "https://images.unsplash.com/photo-1588058365548-9efe5acb8077?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Traveller browsing destination photos on a phone",
     },
     points: [
       {

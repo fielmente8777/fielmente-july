@@ -158,7 +158,7 @@ const page: AgencyPageData = {
         "Booking pages that load fast on a phone",
         "Booking confirmations tracked as conversions",
       ],
-      image: { src: "/agency/revenue-analytics.jpg", alt: "Hotel rate and occupancy report on a tablet" },
+      image: { src: "https://images.unsplash.com/photo-1677129666186-d29eba893fe3?w=1920&q=80&fm=jpg&fit=max", alt: "Hotel reception desk with a receptionist at work" },
       reverse: true,
     },
   ],

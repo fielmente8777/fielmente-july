@@ -54,8 +54,8 @@ const page: AgencyPageData = {
       { value: "0.43%", label: "click-through rate in the first days of Syah Udaipur's Tripadvisor campaign", source: "FM3" },
     ],
     image: {
-      src: "/agency/dubai-marina.jpg",
-      alt: "International diners at a busy waterfront restaurant",
+      src: "https://images.unsplash.com/photo-1558473399-6773c890474c?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Travellers dining on a restaurant terrace",
     },
     points: [
       {
@@ -157,7 +157,7 @@ const page: AgencyPageData = {
         "Google Hotel Ads and free booking links in the same plan",
         "One report across Tripadvisor, Google and your booking engine",
       ],
-      image: { src: "/industry/travel-planning.jpg", alt: "Traveller comparing hotels on a laptop before a trip" },
+      image: { src: "https://images.unsplash.com/photo-1538061879026-7703d25d483c?w=1920&q=80&fm=jpg&fit=max", alt: "Traveller planning a trip on a world map" },
       reverse: true,
     },
   ],

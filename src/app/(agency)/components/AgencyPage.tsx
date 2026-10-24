@@ -28,6 +28,10 @@ import RelatedLinksSection from "./RelatedLinksSection";
 import SourcesSection from "./SourcesSection";
 import { AgencyPageData } from "@/@types/@agencyPageType";
 
+/** Social preview: a 1200x630 crop for Unsplash photos, the /public file as it is otherwise. */
+const ogImage = (src: string) =>
+  src.startsWith("https://images.unsplash.com/") ? `${src.split("?")[0]}?w=1200&h=630&fit=crop&q=80&fm=jpg` : src;
+
 const SITE = "https://fielmente.com";
 
 export function agencyMetadata(d: AgencyPageData): Metadata {
@@ -43,7 +47,7 @@ export function agencyMetadata(d: AgencyPageData): Metadata {
       siteName: "Fielmente",
       locale: "en_IN",
       type: "website",
-      images: [{ url: d.context.image.src, width: 1200, height: 630 }],
+      images: [{ url: ogImage(d.context.image.src), width: 1200, height: 630 }],
     },
     robots: { index: true, follow: true },
   };

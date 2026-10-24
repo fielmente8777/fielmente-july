@@ -187,7 +187,7 @@ const page: AgencyPageData = {
         "Past-guest emails with return-visit offers that carry no commission",
         "Review requests and replies on Google, TripAdvisor and the OTAs",
       ],
-      image: { src: "/home/im5.webp", fallback: "/home/im5.webp", alt: "A-frame cottage with flower boxes and a stone garden path" },
+      image: { src: "https://images.unsplash.com/photo-1765611368472-68c35ea7fe55?w=1920&q=80&fm=jpg&fit=max", alt: "Boutique hotel reception with armchairs and fresh flowers" },
       reverse: true,
     },
   ],

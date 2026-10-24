@@ -191,7 +191,7 @@ const page: AgencyPageData = {
         "Weekday-only offers shown only to audiences who can use them",
         "Lead-to-stay reporting in the Eazotel CRM, as we set up for Naad Wellness",
       ],
-      image: { src: "/home/im5.webp", fallback: "/home/im5.webp", alt: "Cottage at a hill resort surrounded by trees" },
+      image: { src: "https://images.unsplash.com/photo-1587271636175-90d58cdad458?w=1920&q=80&fm=jpg&fit=max", alt: "Couple under a floral mandap at an Indian wedding" },
       reverse: true,
     },
   ],

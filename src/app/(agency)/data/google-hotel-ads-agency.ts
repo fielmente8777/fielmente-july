@@ -54,8 +54,8 @@ const page: AgencyPageData = {
       { value: "15–30%", label: "typical OTA commission on each booking's value", source: "GL11" },
     ],
     image: {
-      src: "/agency/international-hotel.jpg",
-      alt: "Guests arriving at a hotel lobby",
+      src: "https://images.unsplash.com/photo-1787724778848-f2b76772af45?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Traveller paying for a hotel booking on a laptop",
     },
     points: [
       {
@@ -159,7 +159,7 @@ const page: AgencyPageData = {
         "Free booking links switched on",
         "A booking engine that converts well on mobile",
       ],
-      image: { src: "/agency/hotel-guest-tablet.jpg", alt: "Guest comparing hotel prices on a tablet" },
+      image: { src: "https://images.unsplash.com/photo-1675352161828-c07170f1b114?w=1920&q=80&fm=jpg&fit=max", alt: "Google search open on a smartphone" },
       reverse: true,
     },
   ],

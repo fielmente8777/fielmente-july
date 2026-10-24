@@ -170,7 +170,7 @@ const page: AgencyPageData = {
         "Bids and ad copy changed ahead of long weekends and school holidays",
         "Spend reduced when you're close to full, so you don't pay for guests you can't host",
       ],
-      image: { src: "/industry/hotel-2.png", fallback: "/industry/hotel-2.png", alt: "Front desk team checking in a hotel guest" },
+      image: { src: "https://images.unsplash.com/photo-1654277041042-8927699fcfd2?w=1920&q=80&fm=jpg&fit=max", alt: "Google Ads app icon" },
       reverse: true,
     },
   ],

@@ -54,9 +54,8 @@ const page: AgencyPageData = {
       { value: "1.35M", label: "overnight visitors to Ras Al Khaimah in 2025, up 6%", source: "AE9" },
     ],
     image: {
-      src: "/agency/abu-dhabi.jpg",
-      fallback: "/home/im7.webp",
-      alt: "Resort pool lined with palm trees at sunset",
+      src: "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Sheikh Zayed Grand Mosque in Abu Dhabi at dusk",
     },
     points: [
       {
@@ -176,7 +175,7 @@ const page: AgencyPageData = {
         "Group, wedding and family enquiries routed to your sales team the same day",
         "Travel-agent and corporate contacts kept in your CRM for repeat business",
       ],
-      image: { src: "/home/im8.webp", fallback: "/home/im8.webp", alt: "Grand hotel lit up at dusk" },
+      image: { src: "https://images.unsplash.com/photo-1639979511572-ff346bc5b3b7?w=1920&q=80&fm=jpg&fit=max", alt: "Indian family on holiday together" },
     },
     {
       kind: "cards",

@@ -55,9 +55,8 @@ const page: AgencyPageData = {
       { value: "15–30%", label: "commission OTAs typically charge per booking", source: "GL11" },
     ],
     image: {
-      src: "/home/website-seo.png",
-      fallback: "/home/website-seo.png",
-      alt: "Hotel website ranking in Google search results",
+      src: "https://images.unsplash.com/photo-1726066012699-1c843dad5fd8?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Google search open on a laptop",
     },
     points: [
       {
@@ -167,7 +166,7 @@ const page: AgencyPageData = {
         "Review requests timed for after checkout or the meal, with replies in your brand voice",
         "Monthly photo and post updates for offers, events and seasonal menus",
       ],
-      image: { src: "/industry/restaurant-1.png", fallback: "/industry/restaurant-1.png", alt: "Restaurant dining room set for evening service" },
+      image: { src: "https://images.unsplash.com/photo-1548345680-f5475ea5df84?w=1920&q=80&fm=jpg&fit=max", alt: "Google Maps open on a phone" },
       reverse: true,
     },
   ],

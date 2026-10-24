@@ -47,9 +47,8 @@ const page: AgencyPageData = {
       { value: "66%", label: "occupancy in August 2026, up from 36% in March", source: "AE5" },
     ],
     image: {
-      src: "/agency/dubai-hotel.jpg",
-      fallback: "/home/im8.webp",
-      alt: "Grand hotel lit up at dusk",
+      src: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80&fm=jpg&fit=max",
+      alt: "Burj Khalifa and the Dubai skyline at sunset",
     },
     points: [
       {
@@ -156,7 +155,7 @@ const page: AgencyPageData = {
         "Sales calls kept within the permitted 9am–6pm window and checked against the Do Not Call Registry[[AE18]]",
         "Advertised prices that match what guests see on your booking engine",
       ],
-      image: { src: "/home/im6.webp", fallback: "/home/im6.webp", alt: "Hotel room with morning coffee" },
+      image: { src: "https://images.unsplash.com/photo-1559841771-599b6eeaca62?w=1920&q=80&fm=jpg&fit=max", alt: "Hotel bedroom with an Arabic-style lantern" },
       reverse: true,
     },
   ],
