@@ -34,124 +34,169 @@ const FNB_CTA = {
 
 export const casStudiesData: CaseStudy[] = [
   {
-    slug: "syah-udaipur-tripadvisor-ads",
-    metaData: {
-      title: "TripAdvisor Ads Case Study: Syah Udaipur | Fielmente",
-      description:
-        "How Fielmente and Eazotel launched TripAdvisor ads for Syah Udaipur, with a reservation landing page, analytics and central lead management.",
+    "slug": "syah-udaipur-tripadvisor-ads",
+    "metaData": {
+      "title": "Syah Udaipur TripAdvisor Ads: Guest Journey Case Study | Fielmente",
+      "description": "How Fielmente connected TripAdvisor sponsored discovery, a Syah Udaipur reservation landing page and Eazotel guest engagement. 4,567 impressions, 31 clicks and 0.68% CTR."
     },
-    // Syah's logo and its reservation site (built by us). Swap the second for restaurant photography when available.
-    img: "/clientsLogo/syah-udaipur.png",
-    hotelImg: "/our-work/sites/reserve-syahudaipur-com.webp",
-    title: "TripAdvisor Ads Case Study: Syah Udaipur",
-    description:
-      "How Fielmente and Eazotel helped a six-seat fine-dining restaurant launch TripAdvisor advertising and connect sponsored discovery with a dedicated reservation page, analytics and centralized lead management.",
-    metrics: [
+    "img": "/clientsLogo/syah-udaipur.png",
+    "hotelImg": "/our-work/sites/reserve-syahudaipur-com.webp",
+    "hotelImgAlt": "Screenshot of Syah Udaipur's dedicated restaurant reservation landing page",
+    "title": "Syah Udaipur: From TripAdvisor Discovery to Direct Reservation Enquiries",
+    "description": "How Fielmente and Eazotel connected high-intent TripAdvisor sponsored visibility with restaurant storytelling, social proof, AI-assisted guest engagement and direct table-reservation requests.",
+    "metrics": [
       {
-        label: "TripAdvisor impressions",
-        value: "1,156",
-        note: "Opening campaign snapshot",
+        "label": "Delivered impressions",
+        "value": "4,567",
+        "note": "TripAdvisor campaign dashboard snapshot"
       },
-      { label: "Ad clicks", value: "5", note: "Initial engagement recorded" },
       {
-        label: "Click-through rate",
-        value: "0.43%",
-        note: "258% above reported benchmark",
+        "label": "Ad clicks",
+        "value": "31",
+        "note": "Recorded paid-ad clicks"
       },
+      {
+        "label": "Click-through rate",
+        "value": "0.68%",
+        "note": "31 clicks / 4,567 impressions"
+      },
+      {
+        "label": "Booked impressions",
+        "value": "42,252",
+        "note": "Contracted media inventory, not impressions delivered"
+      }
     ],
-    metricsNote:
-      "Early signal: Sponsored visibility and clicks confirmed. These metrics do not represent verified enquiries or confirmed reservations.",
-    data: [
+    "metricsNote": "Source: TripAdvisor advertising dashboard screenshot supplied on 24 October 2026. Status: Delivering; delivery indicator: Awaiting Data. These are platform delivery metrics, not confirmed bookings or revenue. Approximately 10.8% of booked impressions had been delivered at this snapshot.",
+    "data": [
       {
-        title: "From restaurant discovery to a direct reservation journey",
-        description: [
-          "Syah Udaipur is a premium, intimate restaurant designed around a limited six-seat dining experience. For a business with this level of exclusivity, the objective is not maximum footfall — it is reaching travellers who are actively looking for a distinctive dining experience and making it easy for them to take the next step.",
+        "title": "The objective: bring the right diners into a six-seat experience",
+        "description": [
+          "Syah Udaipur offers an intimate fine-dining experience centred on thoughtfully curated tasting menus and regional ingredients. With seating intentionally limited, a qualified reservation enquiry matters more than generic website traffic.",
+          "The challenge for Fielmente was to meet travellers while they researched where to eat in Udaipur, communicate what makes Syah distinctive, and guide interested guests toward a direct enquiry."
         ],
-        lists: [
-          "<b>Brand:</b> Syah Udaipur",
-          "<b>Location:</b> Udaipur, Rajasthan, India",
-          "<b>Category:</b> Premium fine dining · Six-seat experience",
-          "<b>Service:</b> TripAdvisor Ads, landing page, analytics, lead tracking and SEO infrastructure",
-          "<b>Launch:</b> 13 October 2026",
-          "<b>Initial results captured:</b> 16 October 2026",
-          "<b>Technology:</b> TripAdvisor · Eazotel · Google Analytics · Google Search Console",
-        ],
+        "lists": [
+          "<b>Brand:</b> Syah Udaipur · Udaipur, Rajasthan",
+          "<b>Approach:</b> TripAdvisor advertising, an owned reservation landing page, Eazotel chat and enquiry management, and analytics infrastructure",
+          "<b>Campaign launch:</b> 13 October 2026"
+        ]
       },
       {
-        title: "Make a highly exclusive restaurant visible to the right guests",
-        description: [
-          "Syah wanted to advertise on TripAdvisor — a platform where visitors to Udaipur compare restaurants and decide where to dine. The challenge was to secure relevant visibility while connecting that discovery to a branded website and an organised lead-handling process.",
+        "title": "Step 1: appear at the moment of restaurant discovery",
+        "description": [
+          "The customer journey starts with a traveller researching restaurants in Udaipur on TripAdvisor. The supplied screenshots show a sponsored Syah advertisement at the top of the main restaurants discovery view, as well as on individual competitor restaurant pages.",
+          "This matters because guests are already actively comparing places to dine. A premium tasting-menu concept can be introduced while the traveller is forming a shortlist."
         ],
-        lists: [
-          "<b>Key principle:</b> For a six-seat dining experience, quality of interest matters more than raw traffic volume.",
-        ],
+        "lists": [
+          "<b>Sponsored discovery:</b> The Syah creative appears above restaurant results with the label ‘Ad’.",
+          "<b>Competitor-page visibility:</b> A screenshot shows the same Syah placement when a traveller is exploring Nav idya Restaurant.",
+          "<b>Accuracy:</b> This is paid placement; it is not evidence that Syah ranks organically #1 on TripAdvisor."
+        ]
       },
       {
-        title: "One connected advertising and measurement setup",
-        description: [
-          "Rather than running an isolated media placement, the team linked campaign discovery, on-site engagement and lead management.",
+        "title": "Step 2: translate discovery into trust",
+        "description": [
+          "Guests researching an unfamiliar premium restaurant look for social proof, images, reviews and clear descriptions. Syah's sponsored creative describes an exclusive tasting-menu journey that celebrates local and seasonal ingredients.",
+          "In the captured listings, Syah is presented with a five-bubble review display and approximately 300 reviews. Those figures reflect the screenshots and may change as new reviews arrive."
         ],
-        lists: [
-          "<b>1. Launched TripAdvisor advertising -</b> Activated a TripAdvisor advertising campaign for Syah beginning 13 October 2026. The supplied screenshot shows a prominent sponsored Syah placement displayed above another restaurant's listing.",
-          "<b>2. Built a branded landing page -</b> Created <a class=\"text-primary2 underline\" href=\"https://reserve.syahudaipur.com/\">reserve.syahudaipur.com</a> as a focused destination for visitors arriving from marketing activity and looking to explore the dining experience or enquire.",
-          "<b>3. Connected Eazotel lead management -</b> Integrated the landing-page enquiry journey with the Eazotel dashboard to bring incoming guest enquiries and follow-up workflows into a central system.",
-          "<b>4. Set up Google Analytics and Search Console -</b> Connected analytics and search tools to monitor website traffic, user activity, organic search discovery and future conversion optimisation. The tools alone do not establish an organic ranking position.",
-        ],
+        "lists": [
+          "<b>Trust signal:</b> TripAdvisor review reputation and restaurant profile.",
+          "<b>Positioning:</b> Intimate, limited-seating, regionally inspired fine dining.",
+          "<b>Guest decision:</b> Move from ‘Is this restaurant worth considering?’ to ‘What will my experience look like?’"
+        ]
       },
       {
-        title: "How the connected funnel works",
-        description: [
-          "A direct route from sponsored restaurant discovery to a team-managed enquiry, with measurable checkpoints at each stage.",
+        "title": "Step 3: own the experience on a branded landing page",
+        "description": [
+          "From third-party discovery, the planned conversion journey continues to <a class=\"text-primary2 underline\" href=\"https://reserve.syahudaipur.com/\">reserve.syahudaipur.com</a>, the dedicated landing page built to tell Syah's story and encourage direct reservation enquiries.",
+          "Instead of competing with dozens of listings on one page, Syah can use its own photography, tasting-menu descriptions, information and a visible ‘Reserve a Table’ call to action."
         ],
-        lists: [
-          "<b>TripAdvisor Ad:</b> Relevant diners encounter Syah in a sponsored placement.",
-          "<b>Reservation Page:</b> Interested guests reach Syah's branded landing experience.",
-          "<b>Enquiry Action:</b> Guests can take a reservation or enquiry action.",
-          "<b>Eazotel Dashboard:</b> Enquiry records can be organised for tracking and follow-up.",
-          "<b>Note:</b> Process illustration only. End-to-end conversion attribution and booking outcomes require matching campaign, analytics and CRM records.",
-        ],
+        "lists": [
+          "<b>Design role:</b> Communicate the culinary experience through photography and restrained premium design.",
+          "<b>Conversion role:</b> Keep the reservation call to action easy to find, especially on mobile.",
+          "<b>Commercial role:</b> Give interested diners a clear direct-enquiry path instead of ending their journey at an advertisement click."
+        ]
       },
       {
-        title: "Real screenshots from the launch",
-        description: [
-          "The campaign was shown live on TripAdvisor, and the advertising dashboard recorded early reach and click-through performance.",
+        "title": "Step 4: reinforce confidence before asking for a reservation",
+        "description": [
+          "The landing-page journey reinforces the experience with details about the menu and the restaurant's guest reviews. It addresses the practical questions that can hold back a booking decision.",
+          "By communicating choices and expectations before the reservation form, the page gives guests context for a more qualified enquiry."
         ],
-        lists: [
-          "<b>Sponsored placement on TripAdvisor:</b> Syah's sponsored placement shown above another restaurant's listing. This illustrates paid advertising visibility, not organic #1 ranking.",
-          "<b>Initial advertising performance:</b> 1,156 impressions, 5 clicks and 0.43% CTR. Dashboard note: 258% higher CTR than benchmark.",
-          "<b>Screenshot source:</b> Supplied by the campaign team on 16 October 2026 and cropped for readability.",
-        ],
+        "lists": [
+          "<b>Social proof:</b> Reviews and Tripadvisor recognition displayed on the landing page.",
+          "<b>Menu clarity:</b> Plant-based and meat-based tasting-menu preferences.",
+          "<b>Guest reassurance:</b> Information about location, dining policies and how a reservation is confirmed."
+        ]
       },
       {
-        title: "Early traction, with the foundation to measure bookings",
-        description: [
-          "The launch confirms delivery of paid visibility and visitor clicks. The larger business opportunity lies in linking these clicks to qualified enquiries and eventually confirmed reservations.",
+        "title": "Step 5: create another conversation route with Eazotel",
+        "description": [
+          "The screen recording shows an Eazotel-powered chat assistant welcoming a visitor and beginning an enquiry by asking for their name.",
+          "This conversational route complements the reservation form, telephone and WhatsApp. It is useful for someone who has questions but is not yet ready to select a date and time."
         ],
-        lists: [
-          "<b>Sponsored presence established:</b> Syah's paid placement appeared during TripAdvisor restaurant browsing.",
-          "<b>1,156 impressions delivered:</b> Initial campaign visibility recorded in the dashboard.",
-          "<b>5 clicks generated:</b> Early platform engagement; clicks are not leads or bookings.",
-          "<b>Connected operational setup:</b> Landing page, Eazotel, GA and Search Console in place for measurement and follow-up.",
-          "<b>What happens next:</b> As the campaign runs, evaluate landing-page engagement, verified enquiries, qualified leads, cost per enquiry, confirmed reservations and booking revenue. Add those metrics only when cross-checked against Eazotel and reservation records.",
-        ],
+        "lists": [
+          "<b>Observed:</b> Chatbot opens and starts collecting visitor information.",
+          "<b>Not claimed:</b> The recording does not demonstrate an autonomous, confirmed table reservation."
+        ]
       },
       {
-        title: "Clear attribution matters",
-        description: [
-          "<b>Advertising metrics:</b> Impressions, clicks and CTR are taken from the supplied TripAdvisor advertising dashboard screenshot dated 16 October 2026. <b>Platform comparison:</b> The dashboard itself describes the CTR as 258% above its benchmark; its benchmark methodology was not independently verified. <b>Website/CRM:</b> Google Analytics, Search Console and the Eazotel dashboard are included in the implementation, but conversion totals and direct booking revenue were not included in the supplied evidence. <b>Ranking:</b> The placement screenshot is paid promotion, not proof of organic SEO ranking.",
+        "title": "Step 6: convert interest into a direct reservation request",
+        "description": [
+          "At the point of strongest intent, guests can use a structured reservation form. The recorded interface asks for their name, WhatsApp number, preferred date, number of guests, arrival time and menu preference.",
+          "The form makes it possible for the restaurant to review the request and contact the guest to confirm availability. Submitting a request should not be described as a confirmed booking."
         ],
-        lists: [
-          "<b>Publishing checklist — complete when data is available:</b> Add the actual campaign spend, outbound clicks verified in Analytics, enquiry totals verified in Eazotel, confirmed reservations, revenue and screenshots of the reservation page/dashboard. Use these to update the case study's results section over time.",
-        ],
+        "lists": [
+          "<b>Guest details:</b> Name and WhatsApp number.",
+          "<b>Dining preferences:</b> Date, number of guests, arrival time and menu choice.",
+          "<b>Operational follow-up:</b> Restaurant team checks availability and confirms directly."
+        ]
       },
+      {
+        "title": "TripAdvisor Ads performance: what the supplied data actually proves",
+        "description": [
+          "The 24 October 2026 advertising snapshot shows 42,252 booked impressions, of which 4,567 had been delivered, generating 31 clicks and a click-through rate of 0.68%. The campaign was marked ‘Delivering’.",
+          "These are early delivery and engagement indicators. They do not tell us how many users submitted the reservation form, chatted with the restaurant, booked a table or visited in person."
+        ],
+        "lists": [
+          "<b>Booked impressions:</b> 42,252.",
+          "<b>Delivered impressions:</b> 4,567 (approximately 10.8% of booked impressions).",
+          "<b>Clicks:</b> 31.",
+          "<b>CTR:</b> 0.68%.",
+          "<b>Delivery indicator:</b> ‘Awaiting Data’ in the supplied dashboard."
+        ]
+      },
+      {
+        "title": "How the wider marketing and measurement system fits together",
+        "description": [
+          "The connected solution combines TripAdvisor advertising, the owned Syah reservation experience, Eazotel guest enquiries and Google measurement tools. Each plays a different role, from discovery and communication to reporting.",
+          "To measure the complete journey reliably, campaign source tags, onsite conversion events and CRM enquiry outcomes must be reconciled with confirmed reservation records."
+        ],
+        "lists": [
+          "<b>TripAdvisor:</b> Paid discovery and click activity.",
+          "<b>Landing page:</b> Brand storytelling and reservation-request interface.",
+          "<b>Eazotel:</b> Conversational enquiry and centralised follow-up workflows.",
+          "<b>Google Analytics and Search Console:</b> Website activity and organic search measurement.",
+          "<b>Next measurement priority:</b> Verified enquiries, confirmed covers, revenue and cost per booked table—not just ad clicks."
+        ]
+      },
+      {
+        "title": "The lesson for premium restaurants: a click is only the beginning",
+        "description": [
+          "For a luxury restaurant with a limited number of seats, success is not simply appearing high on a list or accumulating impressions. The opportunity is to connect qualified discovery with trust, an immersive owned experience, and a clear guest-enquiry path.",
+          "Fielmente's role was to link media strategy and a conversion-oriented website. Eazotel added conversational technology and a lead-management layer. Together they provide a foundation for tracing the guest journey from research to reservation intent."
+        ],
+        "lists": [
+          "<b>Explore the dining experience:</b> <a class=\"text-primary2 underline\" href=\"https://reserve.syahudaipur.com/\">Syah Udaipur reservation website</a>.",
+          "<b>Grow your restaurant:</b> <a class=\"text-primary2 underline\" href=\"https://fielmente.com/\">Fielmente hospitality marketing</a>."
+        ]
+      }
     ],
-    cta: {
-      eyebrow: "Turn Visibility Into Measurable Demand",
-      title: "Want results like these for your hotel or restaurant?",
-      description:
-        "Connect restaurant advertising, high-converting landing pages, analytics and guest enquiry management with Fielmente and Eazotel.",
-      label: "Get a Free Consultation",
-    },
+    "cta": {
+      "eyebrow": "Restaurant marketing that goes beyond impressions",
+      "title": "Turn restaurant discovery into direct guest enquiries",
+      "description": "Talk to Fielmente about TripAdvisor advertising, conversion-focused restaurant websites, analytics, and Eazotel-supported guest engagement.",
+      "label": "Discuss Your Restaurant Marketing"
+    }
   },
   {
     slug: "anand-vardhan-resort",
