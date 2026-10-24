@@ -42,8 +42,8 @@ export const casStudiesData: CaseStudy[] = [
     },
     // Syah's logo and its reservation site (built by us). Swap the second for restaurant photography when available.
     img: "/clientsLogo/syah-udaipur.png",
-    hotelImg: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=85&fit=crop",
-    hotelImgAlt: "Atmospheric fine-dining restaurant interior, illustrative photograph",
+    hotelImg: "/clientsLogo/syah-udaipur.png",
+    hotelImgAlt: "Syah Udaipur official client logo",
     title: "TripAdvisor Ads Case Study: Syah Udaipur",
     description:
       "How Fielmente and Eazotel helped a six-seat fine-dining restaurant launch TripAdvisor advertising and connect sponsored discovery with a dedicated reservation page, analytics and centralized lead management.",
