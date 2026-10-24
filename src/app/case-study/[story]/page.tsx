@@ -133,6 +133,46 @@ export default async function Page(props: Params) {
         </SectionWithContainer>
       )}
 
+      {data.slug === "syah-udaipur-tripadvisor-ads" && (
+        <SectionWithContainer sectionClassName="">
+          <div className="mx-auto max-w-6xl space-y-8">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-primary">Campaign visual story</p>
+              <h2 className="mt-2 text-3xl font-semibold text-primary2">From Tripadvisor discovery to a direct reservation request</h2>
+              <p className="mt-3 max-w-3xl text-[#55536E]">A connected guest journey designed for Syah Udaipur. This is a process infographic, not a report of confirmed reservations.</p>
+            </div>
+            <div className="grid gap-3 md:grid-cols-4">
+              {[
+                { step: "01", title: "Tripadvisor sponsored ad", body: "Diners discover Syah while comparing Udaipur restaurants.", icon: "↗" },
+                { step: "02", title: "Syah reservation website", body: "The branded page introduces the tasting-menu experience.", icon: "⌂" },
+                { step: "03", title: "Eazotel guest engagement", body: "Chatbot and WhatsApp help guests start a conversation.", icon: "◉" },
+                { step: "04", title: "Reservation request", body: "Guests submit preferences; the restaurant confirms availability.", icon: "✓" },
+              ].map((item) => (
+                <div key={item.step} className="relative rounded-2xl border border-[#e8e2d6] bg-[#fcfaf6] p-6 shadow-sm">
+                  <div className="mb-5 flex items-center justify-between"><span className="text-sm font-semibold tracking-widest text-orange-primary">{item.step}</span><span className="text-3xl text-primary2" aria-hidden="true">{item.icon}</span></div>
+                  <h3 className="text-xl font-semibold text-primary2">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-[#55536E]">{item.body}</p>
+                </div>
+              ))}
+            </div>
+            <div className="grid gap-6 lg:grid-cols-2">
+              <figure className="overflow-hidden rounded-2xl border border-[#e8e2d6] bg-white shadow-sm">
+                <div className="relative aspect-[16/10]"><Image src="/our-work/sites/reserve-syahudaipur-com.webp" alt="Actual Syah Udaipur reservation website screenshot" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover object-top" /></div>
+                <figcaption className="p-5 text-sm text-[#55536E]"><strong className="text-primary2">Syah's real reservation website</strong> — the branded destination used to explain the dining experience and invite reservation enquiries.</figcaption>
+              </figure>
+              <div className="rounded-2xl bg-[#12352e] p-7 text-white shadow-sm">
+                <p className="text-sm uppercase tracking-widest text-[#d7c49a]">Tripadvisor campaign snapshot</p>
+                <h3 className="mt-2 text-2xl font-semibold">Paid discovery, measured</h3>
+                <div className="mt-7 grid grid-cols-2 gap-4">
+                  {[{label:"Booked impressions",value:"42,252"},{label:"Delivered impressions",value:"4,567"},{label:"Ad clicks",value:"31"},{label:"Click-through rate",value:"0.68%"}].map((metric)=><div key={metric.label} className="rounded-xl border border-white/20 bg-white/10 p-4"><div className="text-3xl font-bold">{metric.value}</div><div className="mt-2 text-sm text-white/80">{metric.label}</div></div>)}
+                </div>
+                <p className="mt-6 text-sm leading-6 text-white/75">Figures from the supplied advertising dashboard. Clicks do not represent verified enquiries or confirmed bookings.</p>
+              </div>
+            </div>
+          </div>
+        </SectionWithContainer>
+      )}
+
       <SectionWithContainer sectionClassName="">
         <div className="flex flex-col gap-10 w-full max-w-4xl">
           {data?.data?.map((item, index) => (
