@@ -42,7 +42,7 @@ const HomeScrollReveal = ({
     <div
       ref={sectionRef}
       className="home-scroll-reveal"
-      style={{ transitionDelay: `${delay}ms` }}
+      style={{ transitionDelay: `${delay}ms`, contentVisibility: "auto", containIntrinsicSize: "auto 750px" }}
     >
       {children}
     </div>
