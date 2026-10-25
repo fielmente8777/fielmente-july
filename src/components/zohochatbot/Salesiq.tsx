@@ -41,7 +41,7 @@ const Salesiq = () => {
     return () => window.clearTimeout(timer);
   }, []);
 
-  return <link rel="preconnect" href="https://salesiq.zohopublic.in" />;
+  return null; // Avoid early preconnect for delayed chat widget.
 };
 
 export default Salesiq;
