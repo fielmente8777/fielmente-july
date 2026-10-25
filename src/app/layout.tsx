@@ -145,7 +145,7 @@ export default function RootLayout({
           }}
         />
 
-        <Script id="openai-pixel" strategy="afterInteractive">
+        <Script id="openai-pixel" strategy="lazyOnload">
           {`
             (function (w, d, s, u) {
               if (w.oaiq) return;
@@ -165,7 +165,7 @@ export default function RootLayout({
 
             oaiq("init", {
               pixelId: "YC5yCXHuJoMj9wYFBgWuTC",
-              debug: true
+              debug: false
             });
                         oaiq(
       "measure",
@@ -227,7 +227,7 @@ export default function RootLayout({
 
         <Script
           src="https://cdn-in.pagesense.io/js/60034673689/951315c77e9d4021b7f24a6ebc690257.js"
-          defer
+          strategy="lazyOnload"
         />
 
         {/* <Script
