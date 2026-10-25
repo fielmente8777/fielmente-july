@@ -11,6 +11,13 @@ export const blogPageData = {
     title: "BLOGS",
     subTitle: "Popular <span>Blogs</span>",
     cards: [
+      {
+        src: "/images/blog/bnr.png",
+        title: "Why Website Speed Matters for Hotels",
+        read: "10 min read",
+        slug: "why-website-speed-matters-for-hotels",
+        description: "How faster hotel websites support direct bookings and better guest experiences...",
+      },
       ...blogData.map((item) => ({
         src: item.url,
         title: item.title,
