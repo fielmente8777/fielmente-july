@@ -13,16 +13,14 @@ import { landingPageData } from "../landing-page/components/pageData";
 import ContactSection from "../landing-page/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Global Hospitality Marketing Services - Fielmente",
-  description:
-    "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
+  title: "Hospitality Marketing Services | Fielmente",
+  description: "Explore SEO, Google Ads, social media, branding, websites and revenue management for hotels, resorts and restaurants worldwide.",
   alternates: {
     canonical: "https://fielmente.com/services/",
   },
   openGraph: {
-    title: "Global Hospitality Marketing Services - Fielmente",
-    description:
-      "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
+    title: "Hospitality Marketing Services | Fielmente",
+    description: "Explore SEO, Google Ads, social media, branding, websites and revenue management for hotels, resorts and restaurants worldwide.",
     images: [
       {
         url: "/fielmente_logo.png",

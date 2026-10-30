@@ -14,9 +14,8 @@ import ResultsSection from "./components/ResultsSection";
 import ServicesSection from "./components/ServicesSection";
 
 export const metadata: Metadata = {
-  title: "Fielmente : Hospitality Marketing Agency worldwide",
-  description:
-    "Best marketing agency worldwide for Hospitality, resorts and Hospitality",
+  title: "Hospitality Marketing for Hotels & Restaurants | Fielmente",
+  description: "Grow your hotel, resort or restaurant with SEO, Google Ads, social media and revenue management. Fielmente supports hospitality businesses worldwide.",
   keywords:
     "Hospitality Marketing Agency, Hospitality marketing service, Hospitality marketing consultant ,Hospitality solutions,Hospitality business services,Hospitality support, hospitality growth,Hospitality marketing strategy,Hospitality marketing planning,Hospitality marketing plan,Hospitality marketing services,Hospitality marketing consultant,Hospitality marketing agency",
   alternates: {
@@ -25,9 +24,8 @@ export const metadata: Metadata = {
   robots: NOINDEX_ROBOTS,
   authors: [{ name: "Fielmente", url: "https://fielmente.com/landing-page/" }],
   openGraph: {
-    title: "Fielmente : Hotel Marketing Agency worldwide",
-    description:
-      "Best marketing agency worldwide for hotels, resorts and restaurant",
+    title: "Hospitality Marketing for Hotels & Restaurants | Fielmente",
+    description: "Grow your hotel, resort or restaurant with SEO, Google Ads, social media and revenue management. Fielmente supports hospitality businesses worldwide.",
     url: "https://fielmente.com/landing-page/",
     siteName: "Fielmente",
     locale: "en_IN",

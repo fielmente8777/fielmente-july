@@ -3,9 +3,8 @@ import { Metadata } from "next";
 import PageComponents from "../hospitality/components/PageComponents";
 
 export const metadata: Metadata = {
-  title: "Fielmente : Resort Marketing Agency worldwide",
-  description:
-    "Best marketing agency worldwide for Resorts, resorts and restaurant",
+  title: "Resort Marketing Agency | Fielmente",
+  description: "Grow resort visibility, direct bookings and revenue with SEO, Google Ads, social media and OTA management. Marketing for resort brands worldwide.",
   keywords:
     "Resort Marketing Agency, Resort marketing service, Resort marketing consultant ,Resort solutions,Resort business services,Resort support, Resort growth,Resort marketing strategy,Resort marketing planning,Resort marketing plan,Resort marketing services,Resort marketing consultant,Resort marketing agency",
   alternates: {
@@ -14,9 +13,8 @@ export const metadata: Metadata = {
   robots: NOINDEX_ROBOTS,
   authors: [{ name: "Fielmente", url: "https://fielmente.com/resort/" }],
   openGraph: {
-    title: "Fielmente : Resort Marketing Agency worldwide",
-    description:
-      "Best marketing agency worldwide for Resorts, resorts and restaurant",
+    title: "Resort Marketing Agency | Fielmente",
+    description: "Grow resort visibility, direct bookings and revenue with SEO, Google Ads, social media and OTA management. Marketing for resort brands worldwide.",
     url: "https://fielmente.com/resort/",
     siteName: "Fielmente",
     locale: "en_IN",
