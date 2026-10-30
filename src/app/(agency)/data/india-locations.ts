@@ -24,7 +24,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel Marketing Agency in Gurgaon | Fielmente",
     description: "Hotel and restaurant marketing in Gurgaon and Gurugram. Explore local SEO, Google Ads, corporate enquiry funnels and direct booking support with Fielmente.",
     intro: "A corporate room night, a restaurant reservation and a weekend celebration need different campaigns. We help Gurgaon hotels and restaurants connect local search, relevant offers and a clear enquiry process.",
-    context: "Gurugram combines business districts with dining, leisure and resort experiences[[LOCAL]]. A property near Cyber City should explain a different stay from a retreat around Manesar. We use your actual location, facilities and guest mix to decide which searches and audiences to prioritise.",
+    context: "Gurugram combines business districts with dining, leisure and resort experiences[[IN1]]. A property near Cyber City should explain a different stay from a retreat around Manesar. We use your actual location, facilities and guest mix to decide which searches and audiences to prioritise.",
     segments: [
       { title: "Corporate stays and meeting enquiries", body: "Explain the business locations you genuinely serve, your workspaces, meeting capacity and billing process. Separate individual room enquiries from negotiated corporate and group requests so your team can follow up appropriately." },
       { title: "Restaurants and neighbourhood discovery", body: "Build accurate Google Business Profile information, current menus and reservation links. Content for Golf Course Road, Cyber City or your own neighbourhood should describe the actual venue and access, rather than promise that every guest is nearby." },
@@ -41,7 +41,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel Marketing Agency in Hyderabad | Fielmente",
     description: "Hospitality marketing for Hyderabad hotels and restaurants. Build local search visibility, corporate enquiries and direct booking campaigns with Fielmente.",
     intro: "Help the right guest find your Hyderabad property, understand the stay and take the next step. We plan SEO, paid campaigns, restaurant discovery and enquiry follow-up around your actual business.",
-    context: "Hyderabad brings heritage, food and modern city experiences together, with accommodation serving different budgets and travel purposes[[LOCAL]]. We distinguish a business stay around the technology districts from a leisure itinerary or a restaurant visit, then give each a relevant landing page and enquiry route.",
+    context: "Hyderabad brings heritage, food and modern city experiences together, with accommodation serving different budgets and travel purposes[[IN1]]. We distinguish a business stay around the technology districts from a leisure itinerary or a restaurant visit, then give each a relevant landing page and enquiry route.",
     segments: [
       { title: "Business and extended stays", body: "For properties serving HITEC City, Gachibowli or other business areas, show the real location, work facilities and longer-stay terms. Campaigns should qualify travel dates and stay duration rather than optimise for undifferentiated traffic." },
       { title: "Heritage and leisure trips", body: "Use your own photography, room details and practical arrival information to help guests compare a stay. Connect relevant destination content to available room types and the booking engine, without presenting an unrelated attraction as a hotel facility." },
@@ -58,7 +58,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Resort Marketing Agency in Uttarakhand | Fielmente",
     description: "From Mussoorie to Rishikesh to Nainital, Uttarakhand is a hub for destination travel and luxury stays. How resorts there can fill rooms directly.",
     intro: "A hill-station weekend, a wellness retreat and a family holiday ask different things of a resort. We help Uttarakhand properties explain their experience and convert destination interest into qualified enquiries.",
-    context: "Uttarakhand spans hill destinations, nature stays and spiritual and wellness travel. Rishikesh is both a tourism and pilgrimage hub beside the Ganga[[LOCAL]]. Our state-wide approach groups properties by the stay they offer; a focused Rishikesh page handles that city's specific service needs.",
+    context: "Uttarakhand spans hill destinations, nature stays and spiritual and wellness travel. Rishikesh is both a tourism and pilgrimage hub beside the Ganga[[IN1]]. Our state-wide approach groups properties by the stay they offer; a focused Rishikesh page handles that city's specific service needs.",
     segments: [
       { title: "Hill-station and family stays", body: "For Mussoorie and Nainital properties, make room configurations, access, parking and family facilities clear. Build campaigns around the dates you need to fill and answer practical questions before a guest contacts your team." },
       { title: "Nature and activity-led resorts", body: "Show what is included, what is arranged separately and how guests reach the property. Present current activity information with appropriate sources, rather than advertising guaranteed wildlife sightings or experiences outside your control." },
@@ -75,7 +75,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Resort Marketing Agency in Himachal Pradesh | Fielmente",
     description: "Himachal Pradesh is one of India’s top travel destinations, with heavy competition among hotels and resorts. How to stand out and win direct bookings.",
     intro: "Turn interest in a mountain holiday into enquiries your reservations team can convert. We connect search, property content, paid campaigns and follow-up for hotels and resorts across Himachal Pradesh.",
-    context: "Himachal's destinations offer different experiences: a Manali holiday is not the same purchase as a retreat near Dharamshala or a stay in Shimla. Official tourism information highlights Manali's mix of nature, adventure and hospitality[[LOCAL]]. Your marketing needs the same specificity about the experience and the journey.",
+    context: "Himachal's destinations offer different experiences: a Manali holiday is not the same purchase as a retreat near Dharamshala or a stay in Shimla. Official tourism information highlights Manali's mix of nature, adventure and hospitality[[IN1]]. Your marketing needs the same specificity about the experience and the journey.",
     segments: [
       { title: "Show the stay beyond the view", body: "Use original room and property content to explain heating, meals, parking, accessibility and the activities actually available. Distinctive details help guests compare your resort without relying on generic mountain imagery." },
       { title: "Respond to seasonal demand responsibly", body: "Use booking pace and your property's history to choose campaign timing. Review travel and access information before promotions, and update offers when conditions or operating arrangements change." },
@@ -109,7 +109,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel & Resort Marketing Agency in Kerala | Fielmente",
     description: "Marketing for Kerala hotels, resorts and retreats. Connect destination content, SEO, paid campaigns and enquiry follow-up to support direct bookings.",
     intro: "Help a guest understand the experience before asking for the booking. We market Kerala hotels, resorts and retreats with clear property stories, useful search content and a practical enquiry journey.",
-    context: "Kerala Tourism distinguishes backwater, coastal, hill and other destination experiences[[LOCAL]]. A Kumarakom stay, a Kochi city break and a Munnar holiday need different explanations. We connect your property's actual experience to the audience most likely to value it.",
+    context: "Kerala Tourism distinguishes backwater, coastal, hill and other destination experiences[[IN1]]. A Kumarakom stay, a Kochi city break and a Munnar holiday need different explanations. We connect your property's actual experience to the audience most likely to value it.",
     segments: [
       { title: "Backwater and coastal stays", body: "Make the room or accommodation type, setting, meal plan and transfer arrangements easy to compare. Show the experience with your own images and answer what is included before a guest asks for a package price." },
       { title: "Wellness and longer-stay enquiries", body: "Present the programme, accommodation, duration and consultation process clearly. Avoid medical promises in promotional copy and separate a wellness-programme enquiry from a standard leisure reservation." },
@@ -126,7 +126,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel Marketing Agency in Bengaluru | Fielmente",
     description: "Bengaluru’s hospitality market is driven by corporate travel, tech professionals and long-stay guests. How hotels there can win more direct bookings.",
     intro: "Connect the right Bengaluru guest with the right stay. We help hotels and hospitality venues organise search visibility, corporate enquiries, paid campaigns and direct booking follow-up.",
-    context: "Bengaluru combines technology and business activity with heritage, dining and city experiences[[LOCAL]]. Your hotel's location and guest purpose matter more than a broad claim to serve the whole city. We build the message around the areas and stay requirements your property genuinely suits.",
+    context: "Bengaluru combines technology and business activity with heritage, dining and city experiences[[IN1]]. Your hotel's location and guest purpose matter more than a broad claim to serve the whole city. We build the message around the areas and stay requirements your property genuinely suits.",
     segments: [
       { title: "Business-district relevance", body: "For a property serving Whitefield, Electronic City, the Outer Ring Road or another business area, explain the actual address, facilities and access. Avoid unsupported commute times and keep location information consistent with the map listing." },
       { title: "Extended stays and corporate enquiries", body: "Show work facilities, longer-stay arrangements, room categories and the corporate enquiry process. Capture dates, length of stay and billing needs so the sales team can send a relevant proposal." },
@@ -143,7 +143,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel & Resort Marketing Agency in Goa | Fielmente",
     description: "Boost bookings for your hotel or resort in Goa with Fielmente. Experts in SEO, ads, and luxury hospitality marketing.",
     intro: "Give guests a clear reason to choose your Goa property and a straightforward way to book. We connect destination content, search, social campaigns and enquiry follow-up for hotels, resorts and villas.",
-    context: "Goa properties sell different experiences: a lively neighbourhood stay, a quiet resort break, a villa gathering or a celebration. Seasonality also changes what can be promoted; Goa Tourism describes a distinct monsoon period[[LOCAL]]. Your campaign calendar should reflect your property's real experience and operating arrangements.",
+    context: "Goa properties sell different experiences: a lively neighbourhood stay, a quiet resort break, a villa gathering or a celebration. Seasonality also changes what can be promoted; Goa Tourism describes a distinct monsoon period[[IN1]]. Your campaign calendar should reflect your property's real experience and operating arrangements.",
     segments: [
       { title: "Explain the location and experience", body: "Show the actual property setting, room layout, access and nearby experiences. Avoid implying beach access, a private pool or other facilities that a particular room or property does not provide." },
       { title: "Make wedding and group enquiries useful", body: "Capture event dates, accommodation needs, guest count and venue requirements separately from individual room requests. Link content and campaigns to a clear enquiry path that the sales team can follow up." },
@@ -160,7 +160,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel & Resort Marketing Agency in Assam | Fielmente",
     description: "Hospitality marketing for Assam hotels, lodges and resorts. Build destination-specific search content, campaigns and direct enquiry journeys with Fielmente.",
     intro: "Help travellers understand where your property fits into their Assam journey. We connect destination discovery with useful property information and a direct enquiry process for hotels, lodges and resorts.",
-    context: "Assam Tourism presents different travel circuits, including routes connecting Guwahati, Kaziranga and other destinations[[LOCAL]]. A state-wide hospitality plan should explain how a property fits an itinerary, rather than treat a city hotel, wildlife lodge and tea-country stay as the same purchase.",
+    context: "Assam Tourism presents different travel circuits, including routes connecting Guwahati, Kaziranga and other destinations[[IN1]]. A state-wide hospitality plan should explain how a property fits an itinerary, rather than treat a city hotel, wildlife lodge and tea-country stay as the same purchase.",
     segments: [
       { title: "Destination and itinerary relevance", body: "Show the actual location, accommodation and arrival arrangements. Link helpful destination content to suitable room and stay information, while clearly distinguishing services provided by the property from those arranged by third parties." },
       { title: "Nature-led accommodation", body: "Use original property content and accurate activity information. Avoid promises about wildlife sightings, access or operating dates that your team cannot control; link to current authoritative information when it affects a booking decision." },
@@ -177,7 +177,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel & Resort Marketing Agency in Sikkim | Fielmente",
     description: "Marketing for Sikkim hotels, resorts and homestays. Connect useful destination content, search visibility and qualified direct enquiries with Fielmente.",
     intro: "Turn destination research into a clear decision about your Sikkim property. We help hotels, resorts and homestays explain the stay, answer practical questions and follow up on direct enquiries.",
-    context: "Sikkim Tourism describes Gangtok as an administrative and business centre alongside the state's varied destination experiences[[LOCAL]]. Marketing should make the actual property location and itinerary fit clear, rather than suggest that every Sikkim stay offers the same access or experience.",
+    context: "Sikkim Tourism describes Gangtok as an administrative and business centre alongside the state's varied destination experiences[[IN1]]. Marketing should make the actual property location and itinerary fit clear, rather than suggest that every Sikkim stay offers the same access or experience.",
     segments: [
       { title: "City and destination stays", body: "Explain whether the property suits a city base, a quiet retreat or a longer itinerary. Show real room categories, views, meal arrangements and arrival details so guests can compare the stay accurately." },
       { title: "Practical travel questions", body: "Keep travel and access information current. Where a guest needs official guidance, link to the relevant authority instead of turning a changing permit or road condition into a permanent marketing promise." },
@@ -194,7 +194,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel Marketing Agency in Guwahati | Fielmente",
     description: "Hotel and restaurant marketing in Guwahati. Improve local discovery, useful room and event enquiries, and direct booking follow-up with Fielmente.",
     intro: "Help a business traveller, an event planner or a guest starting an Assam trip find the right reason to choose your Guwahati property. We connect local search, relevant content and enquiry follow-up.",
-    context: "Guwahati features in Assam Tourism's city and wider travel circuits, including journeys onward to other destinations[[LOCAL]]. A city-focused campaign needs clear location and stay information, while a separate Assam page covers the broader destination and resort strategy.",
+    context: "Guwahati features in Assam Tourism's city and wider travel circuits, including journeys onward to other destinations[[IN1]]. A city-focused campaign needs clear location and stay information, while a separate Assam page covers the broader destination and resort strategy.",
     segments: [
       { title: "City stays and onward journeys", body: "Show the hotel's actual location, check-in arrangements, room facilities and any transfers it genuinely provides. Answer practical questions without promising a fixed journey time through city traffic." },
       { title: "Meetings and event enquiries", body: "Provide venue capacities, layouts, accommodation options and a date-led enquiry form. Route an event request to the sales team separately from an individual room enquiry so follow-up starts with useful information." },
@@ -211,7 +211,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel & Resort Marketing Agency in Rishikesh | Fielmente",
     description: "Hospitality marketing for Rishikesh hotels, resorts and retreats. Build useful search content, relevant campaigns and qualified direct enquiries with Fielmente.",
     intro: "A retreat organiser and a family booking a weekend room need different answers. We help Rishikesh properties communicate the stay clearly and connect each enquiry with the right team.",
-    context: "Uttarakhand Tourism describes Rishikesh as a tourism and pilgrimage hub beside the Ganga[[LOCAL]]. We use that destination context to distinguish a city stay, a retreat programme and an experience-led holiday, while keeping claims specific to what the property actually offers.",
+    context: "Uttarakhand Tourism describes Rishikesh as a tourism and pilgrimage hub beside the Ganga[[IN1]]. We use that destination context to distinguish a city stay, a retreat programme and an experience-led holiday, while keeping claims specific to what the property actually offers.",
     segments: [
       { title: "Retreat and yoga-group enquiries", body: "Explain the venue, room inventory, meal arrangements, programme spaces and responsibilities of the organiser. Collect dates, group size and requirements before sending a proposal, and avoid unsupported health or treatment claims." },
       { title: "Riverside and leisure stays", body: "Show the actual location, room outlook, access and facilities. A river view, access to the river and a riverside setting are different claims; the copy and photography should make the offer clear." },
@@ -228,7 +228,7 @@ export const LOCAL_MARKETS: LocalMarket[] = [
     title: "Hotel Marketing Agency in Mumbai | Boost Bookings",
     description: "Fielmente is a hotel marketing agency in Mumbai helping luxury hotels and boutique stays build visibility, reputation and premium positioning online.",
     intro: "Help travellers and local guests see why your Mumbai property fits their plans. We connect search visibility, property content, paid campaigns and useful follow-up for hotels and hospitality venues.",
-    context: "Mumbai brings business, culture, entertainment and coastal city experiences together[[LOCAL]]. A hotel serving BKC, an Andheri property and a South Mumbai stay should not make the same location promise. We start with the property's actual setting, facilities and guest mix.",
+    context: "Mumbai brings business, culture, entertainment and coastal city experiences together[[IN1]]. A hotel serving BKC, an Andheri property and a South Mumbai stay should not make the same location promise. We start with the property's actual setting, facilities and guest mix.",
     segments: [
       { title: "Business and longer-stay demand", body: "Explain the business areas your property genuinely serves, its workspace and meeting facilities, and longer-stay arrangements. Qualify dates and stay needs before sending a corporate proposal." },
       { title: "Premium and independent positioning", body: "Use original content to explain the rooms, service and neighbourhood experience. Clear positioning helps a guest compare the property on more than an OTA price, without relying on unsupported claims to be the city's best." },
@@ -287,7 +287,7 @@ function toAgencyPage(m: LocalMarket): AgencyPageData {
     related: m.related,
     extraLinks: [{ title: "Explore all India locations", body: "Find the service area and hospitality context relevant to your property.", href: "/hospitality-marketing-locations/" }, { title: "Hotel booking engine", body: "Understand the direct-reservation experience your campaigns lead to.", href: "/products/hotel-booking-engine/" }],
     cta: { title: `Plan the next step for your ${m.name} property`, body: "Share your current website and goals. We will discuss the most useful improvements for your hotel, resort or restaurant." },
-    sources: [{ id: "LOCAL", label: m.source.label, url: m.source.url }],
+    sources: [{ id: "IN1", label: m.source.label, url: m.source.url }],
   };
 }
 
