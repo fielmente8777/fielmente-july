@@ -44,7 +44,7 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
                 <p className="max-md:text-[10px] text-[10px]">{title}</p>
               </div>
               <h1 className="text-white text-center lg:text-[2.5rem]/tight md:text-2xl text-[1.4rem] max-sm:h-[99px]  font-semibold pointer-events-auto">
-                Fielmente - India’s Leading <br />
+                Fielmente - Global <br />
                 <Link className="inter-link" href="/">
                   <span>
                     <AnimatedWord /> Marketing{" "}

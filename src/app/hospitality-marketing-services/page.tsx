@@ -14,7 +14,7 @@ import { homePageData } from "../(home)/homePageData";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "India's Leading Hospitality Marketing Services - Fielmente",
+  title: "Global Hospitality Marketing Services - Fielmente",
   description:
     "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://fielmente.com/hospitality-marketing-services/",
     type: "website",
-    title: "India's Leading Hospitality Marketing Services - Fielmente",
+    title: "Global Hospitality Marketing Services - Fielmente",
     description:
       "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
   images: [

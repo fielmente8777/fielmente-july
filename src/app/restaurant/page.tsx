@@ -12,9 +12,9 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "India’s #1 Restaurant Marketing Agency | Fielmente",
+  title: "Specialist Restaurant Marketing Agency | Fielmente",
   description:
-    "Fielmente is India’s top-rated restaurant marketing agency helping restaurants, cafes, bars & cloud kitchens grow faster. Get more customers, increase sales & boost online presence with SEO, performance marketing & social media.",
+    "Fielmente is a specialist restaurant marketing agency helping restaurants, cafes, bars & cloud kitchens grow faster. Get more customers, increase sales & boost online presence with SEO, performance marketing & social media.",
 
   keywords: [
     "restaurant marketing agency",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   publisher: "Fielmente",
 
   openGraph: {
-    title: "India’s #1 Rated Restaurant Marketing Agency | Fielmente",
+    title: "Specialist Restaurant Marketing Agency | Fielmente",
     description:
       "Outsmart the competition with best-in-class restaurant marketing services. Acquire more customers & increase your sales with Fielmente.",
     url: "https://fielmente.com/restaurant/",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "India’s #1 Restaurant Marketing Agency | Fielmente",
+    title: "Specialist Restaurant Marketing Agency | Fielmente",
     description:
-      "Grow your restaurant with SEO, performance marketing & social media. Trusted by leading restaurants across India.",
+      "Grow your restaurant with SEO, performance marketing & social media. Trusted by leading restaurants internationally.",
   },
 
   

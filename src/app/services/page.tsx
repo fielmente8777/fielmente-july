@@ -13,14 +13,14 @@ import { landingPageData } from "../landing-page/components/pageData";
 import ContactSection from "../landing-page/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "India's Leading Hospitality Marketing Services - Fielmente",
+  title: "Global Hospitality Marketing Services - Fielmente",
   description:
     "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
   alternates: {
     canonical: "https://fielmente.com/services/",
   },
   openGraph: {
-    title: "India's Leading Hospitality Marketing Services - Fielmente",
+    title: "Global Hospitality Marketing Services - Fielmente",
     description:
       "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
     images: [

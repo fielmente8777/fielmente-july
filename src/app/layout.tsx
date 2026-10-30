@@ -20,9 +20,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Fielmente - India's Leading Hospitality Marketing Agency",
+  title: "Global Hospitality Marketing Agency | Fielmente",
   description:
-    "We're the best hospitality marketing agency in India serving 500+ hotels and 50+ restaurants across 10+ countries, with 15+ years of hospitality experience.",
+    "Hospitality marketing for hotels, resorts and restaurants worldwide. Grow direct bookings with SEO, Google Ads, social media and revenue management.",
   icons: [
     {
       rel: "icon",
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
 
   authors: [{ name: "Fielmente", url: "https://fielmente.com/" }],
   openGraph: {
-    title: "Fielmente - India's Leading Hospitality Marketing Agency",
+    title: "Global Hospitality Marketing Agency | Fielmente",
     description:
-      "We're the best hospitality marketing agency in India serving 500+ hotels and 50+ restaurants across 10+ countries, with 15+ years of hospitality experience.",
+      "Hospitality marketing for hotels, resorts and restaurants worldwide. Grow direct bookings with SEO, Google Ads, social media and revenue management.",
     url: "https://fielmente.com/",
     siteName: "Fielmente",
     locale: "en_IN",

@@ -14,18 +14,18 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
 
 export const metadata: Metadata = {
-  title: "Restaurant Marketing Company in India | Fielmente",
+  title: "Restaurant Marketing Company worldwide | Fielmente",
   description:
-    "Fielmente is a restaurant marketing company in India that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
+    "Fielmente is a restaurant marketing company worldwide that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
   alternates: {
     canonical: "https://fielmente.com/food-and-beverage-marketing-solutions/",
   },
   openGraph: {
     url: "https://fielmente.com/food-and-beverage-marketing-solutions/",
     type: "website",
-    title: "Restaurant Marketing Company in India | Fielmente",
+    title: "Restaurant Marketing Company worldwide | Fielmente",
     description:
-      "Fielmente is a restaurant marketing company in India that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
+      "Fielmente is a restaurant marketing company worldwide that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
     images: [
       {
         url: "/fielmente_logo.png",

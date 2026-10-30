@@ -10,14 +10,14 @@ import ContactOldSection from "@/components/commonSections/ContactOldSection";
 import ContactBtn3 from "../hospitality-marketing/contactbtn/ContactBtn3";
 
 export const metadata: Metadata = {
-  title: "India's Leading Hospitality SEO Agency - Fielmente",
+  title: "Global Hospitality SEO Agency - Fielmente",
   description:
     "This privacy policy explains how Fielmente collects, uses and protects personal data submitted on fielmente.com. Read it before sharing your details.",
   alternates: {
     canonical: "https://fielmente.com/search-engine-marketing/",
   },
   openGraph: {
-    title: "India's Leading Hospitality SEO Agency - Fielmente",
+    title: "Global Hospitality SEO Agency - Fielmente",
     description:
       "This privacy policy explains how Fielmente collects, uses and protects personal data submitted on fielmente.com. Read it before sharing your details.",
     images: [

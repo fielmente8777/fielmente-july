@@ -9,16 +9,16 @@ import WhyYouNeedGrid from "../industries-we-serves/[...industry]/components/Why
 import { commonPageData } from "./component/commonpageData";
 
 export const metadata: Metadata = {
-  title: "Best Cloud Kitchen Marketing Agency in India- Fielmente",
+  title: "Best Cloud Kitchen Marketing Agency worldwide- Fielmente",
   description:
-    "Fielmente is a premier cloud kitchen marketing agency in India and skyrocket your cloud kitchen success digitally with our amazing marketing services.",
+    "Fielmente is a premier cloud kitchen marketing agency worldwide and skyrocket your cloud kitchen success digitally with our amazing marketing services.",
   alternates: {
     canonical: "https://fielmente.com/cloud-kitchen-digital-marketing/",
   },
   openGraph: {
-    title: "Best Cloud Kitchen Marketing Agency in India- Fielmente",
+    title: "Best Cloud Kitchen Marketing Agency worldwide- Fielmente",
     description:
-      "Fielmente is a premier cloud kitchen marketing agency in India and skyrocket your cloud kitchen success digitally with our amazing marketing services.",
+      "Fielmente is a premier cloud kitchen marketing agency worldwide and skyrocket your cloud kitchen success digitally with our amazing marketing services.",
     images: [
       {
         url: "/fielmente_logo.png",

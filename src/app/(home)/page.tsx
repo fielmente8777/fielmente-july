@@ -28,10 +28,10 @@ import { COUNTRY_HREFLANG } from "@/lib/hreflang";
 import { contacts } from "../../../contact";
 
 const SITE = "https://fielmente.com";
-const TITLE = "Hospitality Marketing Agency in India | Fielmente";
+const TITLE = "Global Hospitality Marketing Agency | Fielmente";
 // Kept under ~150 characters so Google (and SEO checkers, max ~1000px) show it in full.
 const DESCRIPTION =
-  "Grow direct bookings with a hospitality marketing agency for hotels, resorts and restaurants. Explore SEO, Google Ads, AI and measurable client results.";
+  "Hospitality marketing for hotels, resorts and restaurants worldwide. Grow direct bookings with SEO, Google Ads, social media and revenue management.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `${SITE}/`,
     siteName: "Fielmente",
-    locale: "en_IN",
+    locale: "en_US",
     type: "website",
     images: [{ url: "/fielmente_logo.png", width: 1200, height: 630, alt: "Fielmente" }],
   },
@@ -94,7 +94,7 @@ const homeLd = [
     name: "Fielmente",
     url: `${SITE}/`,
     publisher: { "@id": `${SITE}/#organization` },
-    inLanguage: "en-IN",
+    inLanguage: "en",
   },
   {
     "@context": "https://schema.org",

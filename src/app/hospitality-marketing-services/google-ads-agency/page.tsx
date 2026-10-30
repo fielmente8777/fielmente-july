@@ -13,7 +13,7 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import PlatformLogos from "@/components/brand/PlatformLogos";
 
 export const metadata: Metadata = {
-  title: "India's Leading Hospitality Google Ads Agency - Fielmente",
+  title: "Global Hospitality Google Ads Agency - Fielmente",
   description:
     "Boost your hotel, restaurant, or resort with Fielmente, the leading hospitality Google Ads agency. Campaigns for social media and business.",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://fielmente.com/hospitality-marketing-services/google-ads-agency/",
     type: "website",
-    title: "India's Leading Hospitality Google Ads Agency - Fielmente",
+    title: "Global Hospitality Google Ads Agency - Fielmente",
     description:
       "Boost your hotel, restaurant, or resort with Fielmente, the leading hospitality Google Ads agency. Campaigns for social media and business.",
  images: [

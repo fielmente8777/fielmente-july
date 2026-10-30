@@ -4,10 +4,10 @@ import PageComponents from "./components/PageComponents";
 
 export const metadata: Metadata = {
   title:
-    "Hospitality Marketing Agency in India | Hotel, Resort & Restaurant Marketing",
+    "Hospitality Marketing Agency worldwide | Hotel, Resort & Restaurant Marketing",
 
   description:
-    "Fielmente is a leading hospitality marketing agency in India offering SEO, social media, OTA optimization, and performance marketing for hotels, resorts, and restaurants.",
+    "Fielmente is a leading hospitality marketing agency worldwide offering SEO, social media, OTA optimization, and performance marketing for hotels, resorts, and restaurants.",
 
   keywords:
     "Fielmente, Hotel Marketing Agency, Cloud Kitchen Marketing Agency, Resort Marketing Agency",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   robots: NOINDEX_ROBOTS,
   authors: [{ name: "Fielmente", url: "https://fielmente.com/hospitality/" }],
   openGraph: {
-     title: "Hospitality Marketing Agency in India | Hotel, Resort & Restaurant Marketing",
+     title: "Hospitality Marketing Agency worldwide | Hotel, Resort & Restaurant Marketing",
 
   description:
-    "Fielmente is a leading hospitality marketing agency in India offering SEO, social media, OTA optimization, and performance marketing for hotels, resorts, and restaurants.",
+    "Fielmente is a leading hospitality marketing agency worldwide offering SEO, social media, OTA optimization, and performance marketing for hotels, resorts, and restaurants.",
 
     url: "https://fielmente.com/hospitality/",
     siteName: "Fielmente",
