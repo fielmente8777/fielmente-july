@@ -12,16 +12,16 @@ import Clients from "../industries-we-serves/[...industry]/components/Clients";
 import Testimonials from "../industries-we-serves/[...industry]/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Best Hotel Marketing Company worldwide - Fielmente",
+  title: "Best Hotel Marketing Company in India - Fielmente",
   description:
-    "Fielmente is the best Hotel marketing company worldwide. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
+    "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
   alternates: {
     canonical: "https://fielmente.com/hotel-marketing-solutions/",
   },
   openGraph: {
-    title: "Best Hotel Marketing Company worldwide - Fielmente",
+    title: "Best Hotel Marketing Company in India - Fielmente",
     description:
-      "Fielmente is the best Hotel marketing company worldwide. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
+      "Fielmente is the best Hotel marketing company in India. We are offering 360-degree hotel marketing consultancy from website designing to online marketing.",
     images: [
       {
         url: "/fielmente_logo.png",

@@ -12,7 +12,7 @@ import { landingPageData } from "@/app/landing-page/components/pageData";
 import ContactSection from "@/app/landing-page/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Global Hospitality SEO Agency - Fielmente",
+  title: "India's Leading Hospitality SEO Agency - Fielmente",
   description:
     "This privacy policy explains how Fielmente collects, uses and protects personal data submitted on fielmente.com. Read it before sharing your details.",
   alternates: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "https://fielmente.com/services/seo-agency/",
   },
   openGraph: {
-    title: "Global Hospitality SEO Agency - Fielmente",
+    title: "India's Leading Hospitality SEO Agency - Fielmente",
     description:
       "This privacy policy explains how Fielmente collects, uses and protects personal data submitted on fielmente.com. Read it before sharing your details.",
     images: [

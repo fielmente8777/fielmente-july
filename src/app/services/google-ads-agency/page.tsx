@@ -11,14 +11,14 @@ import { landingPageData } from "@/app/landing-page/components/pageData";
 import ContactSection from "@/app/landing-page/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Global Hospitality Google Ads Agency - Fielmente",
+  title: "India's Leading Hospitality Google Ads Agency - Fielmente",
   description:
     "Boost your hotel, restaurant, or resort with Fielmente, the leading hospitality Google Ads agency. Campaigns for social media and business.",
   alternates: {
     canonical: "https://fielmente.com/services/google-ads-agency/",
   },
   openGraph: {
-    title: "Global Hospitality Google Ads Agency - Fielmente",
+    title: "India's Leading Hospitality Google Ads Agency - Fielmente",
     description:
       "Boost your hotel, restaurant, or resort with Fielmente, the leading hospitality Google Ads agency. Campaigns for social media and business.",
     images: [

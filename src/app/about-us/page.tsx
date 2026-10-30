@@ -11,7 +11,7 @@ import { homePageData } from "../(home)/homePageData";
 import Banner from "../about-fielmente-best-hospitality-marketing-agency/components/Banner";
 
 export const metadata: Metadata = {
-  title: "About Fielmente | Hospitality Marketing Consultants",
+  title: "About Fielmente | Hospitality Marketing Consultants India",
   description:
     "About Fielmente, the expert F&amp;B and hospitality marketing consultant. Unveil our transformative expertise &amp; experience in your businesses",
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "https://fielmente.com/about-fielmente-best-hospitality-marketing-agency/",
   },
   openGraph: {
-    title: "About Fielmente | Hospitality Marketing Consultants",
+    title: "About Fielmente | Hospitality Marketing Consultants India",
     description:
       "About Fielmente, the expert F&amp;B and hospitality marketing consultant. Unveil our transformative expertise &amp; experience in your businesses",
       images: [

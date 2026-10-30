@@ -128,7 +128,7 @@ export const industries: IndustryProfile[] = [
       { q: "How do you report results?", a: "Monthly, in plain language: enquiries, direct bookings, cost per enquiry and what we'll do next month." },
     ],
     meta: {
-      title: "Hotel Marketing Agency worldwide | Fielmente", // same as the current live title
+      title: "Hotel Marketing Agency in India | Fielmente", // same as the current live title
       description:
         "Fielmente helps Indian hotels grow direct bookings with SEO, Google Ads, OTA strategy, social media and measurable hospitality campaigns.",
     },
@@ -252,7 +252,7 @@ export const industries: IndustryProfile[] = [
       { q: "How soon will we see results?", a: "Google profile and ads changes often show within weeks; social media and SEO build over two to three months." },
     ],
     meta: {
-      title: "Restaurant Marketing Agency worldwide | Fielmente", // live title, typo fixed
+      title: "Restaurant Marketing Agency in India | Fielmente", // live title, typo fixed
       description:
         "Grow restaurant discovery and direct reservations with TripAdvisor advertising, Google, Meta, social media and measurable campaigns.",
     },
@@ -309,7 +309,7 @@ export const industries: IndustryProfile[] = [
       { q: "Do you work with resorts outside Uttarakhand?", a: "Yes. We work with resorts across India, and campaigns can target travellers from any city." }, // REVIEW: name regions you want to highlight
     ],
     meta: {
-      title: "Resort Marketing Agency worldwide | Fielmente",
+      title: "Resort Marketing Agency in India | Fielmente",
       description:
         "Resort marketing agency: Google Ads, SEO, social media, packages, OTA management and booking engine to keep your resort full beyond the peak season.",
     },
@@ -379,7 +379,7 @@ export const industries: IndustryProfile[] = [
       { q: "Can guests pay online?", a: "Yes. The booking engine takes secure online payments, including deposits." },
     ],
     meta: {
-      title: "Homestay & Villa Marketing Agency worldwide | Fielmente",
+      title: "Homestay & Villa Marketing Agency in India | Fielmente",
       description:
         "Marketing for homestays, villas and cottages: website and booking engine, local SEO, Instagram, ads and guest automation to win bookings without platform fees.",
     },
@@ -550,7 +550,7 @@ export const industries: IndustryProfile[] = [
       { q: "Which ad platforms do you use?", a: "Mainly Google Search and Meta (Facebook and Instagram), chosen by where your travellers plan their trips." },
     ],
     meta: {
-      title: "Travel & Tourism Marketing Agency worldwide | Fielmente",
+      title: "Travel & Tourism Marketing Agency in India | Fielmente",
       description:
         "Marketing for tour operators and travel companies: Google Ads, SEO, social media, websites and lead automation to turn searches into booked trips.",
     },
