@@ -2,6 +2,7 @@
 // Add a page: create its data file here, import it below, then add a route folder with a page.tsx.
 
 import { AgencyPageData } from "@/@types/@agencyPageType";
+import { LOCAL_AGENCY_PAGES } from "./india-locations";
 import boutiqueHotelMarketingAgency from "./boutique-hotel-marketing-agency";
 import hospitalityMarketingAgencyDubai from "./hospitality-marketing-agency-dubai";
 import hospitalitySeoAgency from "./hospitality-seo-agency";
@@ -28,6 +29,7 @@ import otaAdsManagement from "./ota-ads-management";
 import hospitalityMetaAdsAgency from "./hospitality-meta-ads-agency";
 
 export const AGENCY_PAGES: AgencyPageData[] = [
+  ...LOCAL_AGENCY_PAGES,
   hotelMarketingAgencyDubai,
   hospitalityMarketingAgencyDubai,
   hotelMarketingAgencyUae,

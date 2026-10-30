@@ -208,7 +208,9 @@
 import { Section, SectionWithContainer } from "@/components";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import LandingPgForm from "@/components/forms/LandingPgForm";
-import { blogData } from "@/utils/blogdata";
+import { blogData } from "@/utils/publishedBlogs";
+import { LOCAL_PAGE_SLUGS } from "../(agency)/data/india-locations";
+import { createEditorialLinker } from "@/lib/editorialLinks";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -268,7 +270,7 @@ function getAllBlogsExceptCurrent(currentSlug: string) {
 export async function generateStaticParams() {
   const blogPosts = await blogData;
 
-  return blogPosts.map((post) => ({
+  return blogPosts.filter((post) => !LOCAL_PAGE_SLUGS.has(post.slug)).map((post) => ({
     slug: post.slug,
   }));
 }
@@ -573,7 +575,7 @@ export default async function LandingPage({ params }: Params) {
             <div
               className="blog-content break-words"
               dangerouslySetInnerHTML={{
-                __html: data.data,
+                __html: createEditorialLinker(data.slug)(data.data),
               }}
             />
 

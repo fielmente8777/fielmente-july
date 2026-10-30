@@ -1,4 +1,4 @@
-import { blogData } from "@/utils/blogdata";
+import { blogData } from "@/utils/publishedBlogs";
 
 export const BLOGS_PER_PAGE = 9;
 

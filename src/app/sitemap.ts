@@ -9,7 +9,7 @@ import { newServicePages } from "./industries-we-serve/data/pages";
 import { subPageData } from "./industries-we-serve/[...industry]/components/subPageData";
 import { industriesData } from "./industries-we-serve/[...industry]/pageData";
 import { PRODUCTS, productPath } from "@/lib/products";
-import { blogData } from "@/utils/blogdata";
+import { blogData } from "@/utils/publishedBlogs";
 import { BLOGS_PER_PAGE } from "./blogs/components/pageData";
 
 const SITE = "https://fielmente.com";
@@ -26,6 +26,7 @@ const STATIC_PAGES = [
   "/testimonials/",
   "/products/",
   "/industries-we-serve/",
+  "/hospitality-marketing-locations/",
   "/hospitality-marketing-services/",
   "/hospitality-marketing-services/google-ads-agency/",
   "/hospitality-marketing-services/seo-agency/",

@@ -8,6 +8,7 @@ import CtaSection from "@/components/commonSections/CtaSection";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { createEditorialLinker } from "@/lib/editorialLinks";
 import CaseStudyChart from "./components/CaseStudyChart";
 import CaseStudyKpis, { kpisFromResults } from "./components/CaseStudyKpis";
 
@@ -58,6 +59,7 @@ export default async function Page(props: Params) {
 
   const url = `${SITE}/case-study/${data.slug}/`;
   const results = data.data?.find((d) => /^results/i.test(d.title));
+  const linkCaseCopy = createEditorialLinker(`case-study/${data.slug}`);
   const kpis = kpisFromResults(results?.lists);
   const hasKpis = kpis.length > 0 || (data.metrics?.length ?? 0) > 0;
   const others = casStudiesData.filter((c) => c.slug !== data.slug && c.data?.length).slice(0, 3);
@@ -178,7 +180,7 @@ export default async function Page(props: Params) {
               </h2>
               {item?.description?.map((subItem, subIndex) => (
                 <p className="text-[1.25rem]/[1.75rem]" key={subIndex}>
-                  <span dangerouslySetInnerHTML={{ __html: subItem }} />
+                  <span dangerouslySetInnerHTML={{ __html: linkCaseCopy(subItem) }} />
                 </p>
               ))}
               {item?.lists && (
@@ -187,7 +189,7 @@ export default async function Page(props: Params) {
                     <li
                       className="text-[1.125rem]/[1.6rem]"
                       key={subIndex}
-                      dangerouslySetInnerHTML={{ __html: subItem }}
+                      dangerouslySetInnerHTML={{ __html: linkCaseCopy(subItem) }}
                     />
                   ))}
                 </ul>

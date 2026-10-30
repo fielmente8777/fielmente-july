@@ -77,6 +77,10 @@ export const footerData: FooterLinksPropstype = {
           href: "/hospitality-marketing-services/",
         },
         {
+          label: "India Service Locations",
+          href: "/hospitality-marketing-locations/",
+        },
+        {
           label: "Our Work",
           href: "/our-work/",
         },

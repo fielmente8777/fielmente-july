@@ -26,7 +26,7 @@ import {
 } from "@/utils/icons";
 import { data } from "@/utils/testimonialsData";
 import { contacts } from "../../../contact";
-import { blogData } from "@/utils/blogdata";
+import { blogData } from "@/utils/publishedBlogs";
 import { AiFillInstagram } from "react-icons/ai";
 import {
   AiChatBotIcon,

@@ -3,6 +3,7 @@
 // Only labels and links are passed to the client components.
 import type { IndustryProfile, ServiceKey } from "@/@types/@industryTemplateType";
 import { AGENCY_PAGES } from "@/app/(agency)/data";
+import { LOCAL_AGENCY_PAGES, LOCAL_PAGE_SLUGS } from "@/app/(agency)/data/india-locations";
 import { industries, serviceOnlyIndustries } from "@/app/industries-we-serve/data/industries";
 import { serviceHref, serviceTypes } from "@/app/industries-we-serve/data/services";
 import { PRODUCTS, productPath } from "@/lib/products";
@@ -127,12 +128,18 @@ export function buildSiteMenu(): SiteMenu {
   all.filter((I) => !INDUSTRY_ORDER.includes(I.slug)).forEach((I) => industrySections.push(industrySection(I)));
 
   const agency = (group: "location" | "specialty" | "ads") =>
-    AGENCY_PAGES.filter((p) => p.group === group && !p.slug.startsWith("industries-we-serve/")).map((p) => ({
+    AGENCY_PAGES.filter((p) => p.group === group && !LOCAL_PAGE_SLUGS.has(p.slug) && !p.slug.startsWith("industries-we-serve/")).map((p) => ({
       label: p.navLabel,
       href: `/${p.slug}/`,
       ...(group === "ads" && p.platforms?.[0] ? { icon: PLATFORMS[p.platforms[0]].logo } : {}),
     }));
 
+  industrySections.push({
+    label: "India Service Locations",
+    href: "/hospitality-marketing-locations/",
+    cardLine: "Local hospitality marketing for city and destination properties",
+    groups: [{ title: "Cities and states we serve", links: LOCAL_AGENCY_PAGES.map((p) => ({ label: p.navLabel, href: `/${p.slug}/` })) }],
+  });
   industrySections.push({
     label: "International Hotel Marketing",
     href: "/international-hotel-marketing-agency/",
