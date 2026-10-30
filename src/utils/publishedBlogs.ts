@@ -29,8 +29,15 @@ const messagingUpdate: Partial<blogtype> = {
 };
 
 /** Keep the established URL while correcting instructions for a retired platform feature. */
-export const blogData: blogtype[] = sourceBlogs.map((post) =>
-  post.slug === "guide-to-setup-automation-of-your-hotel-google-my-business-messages"
-    ? { ...post, ...messagingUpdate }
-    : post
-);
+export const blogData: blogtype[] = sourceBlogs.map((post) => {
+  if (post.slug === "guide-to-setup-automation-of-your-hotel-google-my-business-messages") return { ...post, ...messagingUpdate };
+  if (post.slug === "how-to-make-a-hotel-website-ai-search-friendly") return {
+    ...post,
+    meta: {
+      ...post.meta,
+      title: "AI Search-Friendly Hotel Website Guide | Fielmente",
+      description: "Make your hotel website clear and useful for AI search. Review crawlability, property facts, structured content and the journey to a direct booking.",
+    },
+  };
+  return post;
+});
