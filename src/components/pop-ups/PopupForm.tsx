@@ -1,107 +1,31 @@
 "use client";
+
 import Image from "next/image";
-import { useEffect, useState, useCallback, useRef, useContext } from "react";
-import React from "react";
-import { OutlineClose } from "@/utils/icons";
-import PopUpForm from "../forms/PopUpForm";
-import { AppContext } from "@/contextApi/AppContext";
+import dynamic from "next/dynamic";
+import { useCallback, useContext } from "react";
 import { usePathname } from "next/navigation";
+import { AppContext } from "@/contextApi/AppContext";
+import LeadDialog from "@/components/LeadDialog";
+import useLeadPrompt from "@/hooks/useLeadPrompt";
+import { isLeadThankYouPage } from "@/lib/leadPrompt";
 
-const PopupForm = () => {
+const PopUpForm = dynamic(() => import("../forms/PopUpForm"));
+
+export default function PopupForm() {
   const { isOpenPopupForm, setIsOpenPopupForm } = useContext(AppContext);
-  const pathName = usePathname();
-  const [hasShown, setHasShown] = useState(false);
-  // The form is only put in the page once the popup is first opened. Before, every page carried the
-  // whole hidden form (an extra "CONTACT US" heading and duplicate text for search engines) and
-  // preloaded the popup photo.
-  const [hasOpened, setHasOpened] = useState(false);
-  useEffect(() => {
-    if (isOpenPopupForm) setHasOpened(true);
-  }, [isOpenPopupForm]);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-
-  useEffect(() => {
-    if (isOpenPopupForm) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isOpenPopupForm]);
-  const AUTO_OPEN_PATHS = ["/landing-page/","/restaurant/","/dubai-restaurant/","/UK/","/USA/","/resort/","/hospitality/"]; // add your routes here
-  useEffect(() => {
-    const shouldAutoOpen = AUTO_OPEN_PATHS.includes(pathName);
-
-    // Only trigger on allowed paths
-    if (!shouldAutoOpen) return;
-
-    // Only show if not already shown and modal isn't open
-    if (!hasShown && !isOpenPopupForm) {
-      timerRef.current = setTimeout(() => {
-        setIsOpenPopupForm(true);
-        setHasShown(true);
-        document.body.style.overflow = "hidden";
-      }, 40000); // Show after 40 seconds
-    }
-
-    return () => {
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-      }
-    };
-  }, [isOpenPopupForm, hasShown, setIsOpenPopupForm, pathName]);
-
-  const closeModal = useCallback(() => {
-    setIsOpenPopupForm(false);
-    document.body.style.overflow = "auto";
-
-    // Clear any pending timer when modal is closed
-    if (timerRef.current) {
-      clearTimeout(timerRef.current);
-    }
-  }, [setIsOpenPopupForm]);
-
-  if (pathName === "/thank-you/") {
-    return null;
-  }
+  const pathname = usePathname();
+  const open = useCallback(() => setIsOpenPopupForm(true), [setIsOpenPopupForm]);
+  const close = useCallback(() => setIsOpenPopupForm(false), [setIsOpenPopupForm]);
+  useLeadPrompt(open);
 
   return (
-    <>
-      <section
-        className={`fixed inset-0 z-99999 bg-black/50 duration-700 ease-in-out transition-all ${isOpenPopupForm ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-95"}`}
-        onClick={closeModal}
-      >
-        {(hasOpened || isOpenPopupForm) && (
-        <article
-          className={`flex justify-center items-center h-full max-md:px-4`}
-          onClick={(e) => e.stopPropagation()}
-        >
-          <div className="flex max-w-3xl w-full shadow-2xl relative rounded-lg overflow-hidden bg-white">
-            <button
-              onClick={closeModal}
-              className="absolute top-1 right-1 w-8 h-8 flex justify-center items-center text-lg rounded-full text-secondary bg-white z-10 transition-all duration-300"
-              aria-label="Close popup"
-            >
-              <OutlineClose />
-            </button>
-            <div className="relative w-full md:aspect-4/4 max-md:hidden">
-              <Image
-                src={"/popup2.jpg"}
-                alt="Hospitality Marketing"
-                fill
-                className="object-cover"
-                sizes="(max-width: 767px) 0px, 384px"
-              />
-            </div>
-            <PopUpForm />
-          </div>
-        </article>
-        )}
-      </section>
-    </>
+    <LeadDialog open={isOpenPopupForm && !isLeadThankYouPage(pathname)} onClose={close}>
+      <div className="grid md:grid-cols-2">
+        <div className="relative hidden md:block">
+          <Image src="/popup2.jpg" alt="Hospitality Marketing" fill className="object-cover" sizes="384px" />
+        </div>
+        <PopUpForm />
+      </div>
+    </LeadDialog>
   );
-};
-
-export default PopupForm;
+}

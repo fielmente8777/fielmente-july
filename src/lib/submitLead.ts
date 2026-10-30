@@ -1,5 +1,6 @@
 // Sends a website form to /api/lead (which filters bots and forwards real leads to the Eazotel CRM).
 import { HONEYPOT_FIELD, LeadPayload } from "./leadGuard";
+import { markLeadSubmitted } from "./leadPrompt";
 
 export interface SubmitLeadInput {
   form: HTMLFormElement | null;
@@ -37,6 +38,7 @@ export async function submitLead(input: SubmitLeadInput): Promise<{ ok: boolean;
     });
     const data = (await res.json().catch(() => ({}))) as { Status?: boolean; message?: string };
     if (data.Status) {
+      markLeadSubmitted();
       window.turnstile?.reset();
       return { ok: true };
     }
