@@ -53,6 +53,7 @@ export const emailError = (email: string): string | null =>
 export interface LeadPayload {
   name: string;
   email: string;
+  formPurpose?: "audit";
   countryCode: string;
   phone: string;
   description?: string;

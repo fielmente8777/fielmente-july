@@ -81,7 +81,7 @@ export async function POST(request: Request) {
   if (body.hp) return dropped("honeypot", fullPhone);
   if (typeof body.elapsedMs !== "number" || body.elapsedMs < MIN_FILL_MS) return dropped("too fast", fullPhone);
 
-  const problem = nameError(name) || phoneError(countryCode, phone) || emailError(email);
+  const problem = nameError(name) || phoneError(countryCode, phone) || (body.formPurpose === "audit" && !email ? null : emailError(email));
   if (problem) {
     console.warn(`[lead] refused (${problem}) ${mask(fullPhone)}`);
     return refuse(problem);

@@ -11,6 +11,7 @@ export interface SubmitLeadInput {
   countryCode: string;
   phone: string;
   description?: string;
+  formPurpose?: "audit";
 }
 
 export async function submitLead(input: SubmitLeadInput): Promise<{ ok: boolean; message?: string }> {
@@ -23,6 +24,7 @@ export async function submitLead(input: SubmitLeadInput): Promise<{ ok: boolean;
     countryCode: input.countryCode,
     phone: input.phone,
     description: input.description,
+    formPurpose: input.formPurpose,
     sourceUrl: window.location.href,
     hp: field(HONEYPOT_FIELD),
     elapsedMs: Date.now() - input.startedAt,
