@@ -2,7 +2,7 @@ import { Container } from "@/components/sectionComponants";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FaCheck, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaCheck, FaPhoneAlt } from "react-icons/fa";
 import { contacts } from "../../../contact";
 import AuditForm from "./components/AuditForm";
 import {
@@ -307,23 +307,6 @@ export default function GoogleAdsForHotelsPage() {
         </Container>
       </section>
 
-      {/* Sticky call / WhatsApp bar — mobile only */}
-      <div className="md:hidden fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2.5 border-t border-[#E4E3EC] bg-white px-4 pt-3 pb-[calc(12px+env(safe-area-inset-bottom))]">
-        <a
-          href={PHONE_TEL}
-          className="inline-flex items-center justify-center gap-2 min-h-12.5 rounded-[10px] border border-primary2 text-primary2 text-[15px] font-semibold"
-        >
-          <FaPhoneAlt aria-hidden="true" /> Call now
-        </a>
-        <a
-          href={contacts.WhatsAppCta}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 min-h-12.5 rounded-[10px] bg-orange-primary text-white text-[15px] font-semibold"
-        >
-          <FaWhatsapp aria-hidden="true" size={18} /> WhatsApp us
-        </a>
-      </div>
     </main>
   );
 }
