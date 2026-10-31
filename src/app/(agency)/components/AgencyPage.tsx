@@ -27,6 +27,7 @@ import ProofSection from "./ProofSection";
 import RelatedLinksSection from "./RelatedLinksSection";
 import SourcesSection from "./SourcesSection";
 import { AgencyPageData } from "@/@types/@agencyPageType";
+import { hotelGuidesForService } from "@/data/india-hotel-guides";
 
 /** Social preview: a 1200x630 crop for Unsplash photos, the /public file as it is otherwise. */
 const ogImage = (src: string) =>
@@ -75,6 +76,11 @@ const AgencyPage: React.FC<AgencyPageProps> = ({ data: d, afterServices }) => {
     .map((slug) => AGENCY_PAGES.find((p) => p.slug === slug))
     .filter((p): p is AgencyPageData => Boolean(p))
     .map((p) => ({ title: p.navLabel, body: p.cardLine, href: `/${p.slug}/` }));
+  const guides = hotelGuidesForService(d.slug).map((guide) => ({
+    title: guide.title,
+    body: guide.description ?? "Read the practical hotel marketing guide.",
+    href: `/${guide.slug}/`,
+  }));
 
   const serviceLd = {
     "@context": "https://schema.org",
@@ -149,7 +155,7 @@ const AgencyPage: React.FC<AgencyPageProps> = ({ data: d, afterServices }) => {
 
       <FaqListSection title={`${d.keyword}: FAQs`} faqs={d.faqs} />
 
-      <RelatedLinksSection links={[...related, ...d.extraLinks]} />
+      <RelatedLinksSection links={[...related, ...d.extraLinks, ...guides]} />
 
       <CtaBandSection
         title={d.cta.title}

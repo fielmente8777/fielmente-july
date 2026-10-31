@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/sectionComponants/Container";
 import { LOCAL_AGENCY_PAGES } from "../(agency)/data/india-locations";
+import { INDIA_HOTEL_GUIDES } from "@/data/india-hotel-guides";
 
 const url = "https://fielmente.com/hospitality-marketing-locations/";
 const title = "Hospitality Marketing Locations in India | Fielmente";
@@ -34,6 +35,22 @@ export default function Page() {
           <p className="mt-4 max-w-3xl leading-relaxed text-[#55536E]">A city hotel and a destination resort need different content, offers and enquiry processes. Explore the relevant page, then share your property details so we can discuss a suitable scope.</p>
           <ul className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {LOCAL_AGENCY_PAGES.map((p) => <li key={p.slug} className="rounded-2xl border border-[#E4E3EC] p-6"><h3 className="text-xl font-semibold"><Link href={`/${p.slug}/`} className="underline decoration-orange-primary/50 underline-offset-4 hover:text-orange-primary">{p.navLabel}</Link></h3><p className="mt-3 text-sm leading-relaxed text-[#55536E]">{p.hero.lede}</p><Link href={`/${p.slug}/`} className="mt-5 inline-block font-semibold text-sapphireBlue">Explore {p.navLabel} services</Link></li>)}
+          </ul>
+        </Container>
+      </section>
+      <section className="bg-[#F5F5F9] py-14 md:py-20">
+        <Container>
+          <h2 className="text-3xl font-semibold">Hotel marketing guides by market</h2>
+          <p className="mt-4 max-w-3xl leading-relaxed text-[#55536E]">Practical reading for hotel owners and teams planning corporate stays, leisure packages, retreat groups or event enquiries.</p>
+          <ul className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {INDIA_HOTEL_GUIDES.map((guide) => (
+              <li key={guide.slug} className="rounded-2xl border border-[#E4E3EC] bg-white p-6">
+                <p className="mb-3 text-sm font-semibold text-sapphireBlue">{guide.market}</p>
+                <h3 className="text-xl font-semibold"><Link href={`/${guide.slug}/`} className="underline decoration-orange-primary/50 underline-offset-4 hover:text-orange-primary">{guide.title}</Link></h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#55536E]">{guide.description}</p>
+                <Link href={`/${guide.slug}/`} className="mt-5 inline-block font-semibold text-sapphireBlue">Read the {guide.market} guide</Link>
+              </li>
+            ))}
           </ul>
         </Container>
       </section>

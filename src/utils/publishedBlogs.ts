@@ -1,4 +1,5 @@
 import { blogData as sourceBlogs, type blogtype } from "./blogdata";
+import { INDIA_HOTEL_GUIDES } from "../data/india-hotel-guides";
 export type { blogtype } from "./blogdata";
 
 const messagingUpdate: Partial<blogtype> = {
@@ -29,7 +30,7 @@ const messagingUpdate: Partial<blogtype> = {
 };
 
 /** Keep the established URL while correcting instructions for a retired platform feature. */
-export const blogData: blogtype[] = sourceBlogs.map((post) => {
+const establishedBlogs: blogtype[] = sourceBlogs.map((post) => {
   if (post.slug === "guide-to-setup-automation-of-your-hotel-google-my-business-messages") return { ...post, ...messagingUpdate };
   if (post.slug === "how-to-make-a-hotel-website-ai-search-friendly") return {
     ...post,
@@ -39,5 +40,14 @@ export const blogData: blogtype[] = sourceBlogs.map((post) => {
       description: "Make your hotel website clear and useful for AI search. Review crawlability, property facts, structured content and the journey to a direct booking.",
     },
   };
+  if (post.slug === "hotel-marketing-agency-delhi") return {
+    ...post,
+    data: `${post.data}
+      <h2>A practical local search guide for Delhi hotels</h2>
+      <p>Explore our <a href="/delhi-hotel-local-seo-booking-guide/">Delhi hotel local SEO and booking guide</a> for property information checks, useful location content and a clearer route from search to reservations.</p>`,
+  };
   return post;
 });
+
+// New guides appear in the blog archive, related-post selection and XML sitemap.
+export const blogData: blogtype[] = [...INDIA_HOTEL_GUIDES, ...establishedBlogs];
