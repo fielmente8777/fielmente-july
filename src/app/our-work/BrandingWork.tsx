@@ -44,7 +44,7 @@ export function BrandProjects() {
         <article key={b.key} className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,2.4fr)] lg:gap-10">
           <div className="space-y-2">
             <h3 className="text-xl font-semibold text-primary md:text-2xl">{b.name}</h3>
-            <p className="text-sm font-medium text-orange-primary">{b.place}</p>
+            <p className="text-sm font-medium text-orange-ink">{b.place}</p>
             <p className="text-secondary">{b.work}</p>
           </div>
           <Strip images={b.images} />

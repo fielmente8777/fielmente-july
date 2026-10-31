@@ -105,6 +105,8 @@ const MobileNav = ({ menu }: { menu?: SiteMenu }) => {
   return (
     <div
       aria-hidden={!isMobileNavOpen}
+      // inert: while closed, the off-screen panel's buttons and links can't be reached with Tab either.
+      inert={!isMobileNavOpen}
       className={`fixed top-0 h-dvh overflow-y-auto overscroll-contain bg-white/95 backdrop-blur-md w-80 max-w-[90vw] z-50 ${
         isMobileNavOpen ? "right-0" : "-right-full"
       } transition-all duration-300`}

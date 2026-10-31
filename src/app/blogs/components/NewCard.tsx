@@ -48,7 +48,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
           {title}
         </p>
 
-        <p className="mt-2 text-[13px] leading-4 text-[#7C8492]">{read}</p>
+        <p className="mt-2 text-[13px] leading-4 text-[#5F6776]">{read}</p>
       </div>
     </Link>
   );

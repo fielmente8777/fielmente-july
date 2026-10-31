@@ -6,7 +6,7 @@ import { landingFooterData } from "./footerData";
 const LandingFooter = () => {
   return (
     <footer className="max_screen_width bg-[#0A0A0C] md:py-30 py-10">
-      <Container className="relative after:absolute md:after:inset-0 max-md:after:top-6 max-md:after:left-4 max-md:after:w-[90%] after:bg-[url('/map.png')] after:bg-contain after:bg-no-repeat after:opacity-8 md:after:bg-center after:w-full after:h-full after:z-[-1]">
+      <Container className="relative after:absolute md:after:inset-0 max-md:after:top-6 max-md:after:left-4 max-md:after:w-[90%] after:bg-[url('/map-footer.png')] after:bg-contain after:bg-no-repeat after:opacity-8 md:after:bg-center after:w-full after:h-full after:z-[-1]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14">
           <div className="flex flex-col gap-6">
             <div className="relative w-full max-w-45.75  aspect-[4/1.46]">

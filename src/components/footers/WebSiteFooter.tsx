@@ -14,12 +14,13 @@ const WebSiteFooter = () => {
   const renderGroup = (item: (typeof groups)[number], compact = false) => (
     <div className="flex flex-col max-lg:gap-3 lg:gap-6" key={item.title}>
       <p className="text-white text-lg font-medium">{item.title}</p>
-      <ul className={`flex flex-col max-lg:gap-1.5 ${compact ? "lg:gap-2" : "lg:gap-5"}`}>
+      <ul className={`flex flex-col max-lg:gap-1 ${compact ? "lg:gap-2" : "lg:gap-5"}`}>
         {item.listOfLinks.map((link) => (
           <li key={link.href + link.label}>
             <Link
               href={link.href}
-              className="text-[#FFFFFFB2] max-lg:text-xs hover:text-secondary flex gap-2 transition-all duration-300 ease-in-out"
+              // Phones: at least 24 px tall so each link is easy to tap (Lighthouse "touch targets").
+              className="text-[#FFFFFFB2] max-lg:text-sm max-lg:min-h-7 max-lg:items-center hover:text-secondary flex gap-2 transition-all duration-300 ease-in-out"
             >
               {link.icon && <span className="mt-1 max-lg:hidden">{link.icon}</span>}
               {link.label}
@@ -32,7 +33,7 @@ const WebSiteFooter = () => {
 
   return (
     <footer className="max_screen_width bg-[#0A0A0C] md:py-18 max-md:pt-10 max-md:pb-30">
-      <Container className="relative after:absolute md:after:inset-0 max-md:after:top-6 max-md:after:left-4 max-md:after:w-[90%] after:bg-[url('/map.png')] after:bg-contain after:bg-no-repeat after:opacity-8 md:after:bg-center after:w-full after:h-full after:z-[-1]">
+      <Container className="relative after:absolute md:after:inset-0 max-md:after:top-6 max-md:after:left-4 max-md:after:w-[90%] after:bg-[url('/map-footer.png')] after:bg-contain after:bg-no-repeat after:opacity-8 md:after:bg-center after:w-full after:h-full after:z-[-1]">
         {/* Phones: logo, links, social icons (one column). From md: logo + social on the left, links on the right. */}
         <div className="grid lg:grid-cols-[1.2fr_2fr] md:grid-cols-[1.1fr_2fr] md:grid-rows-[auto_1fr] gap-8 md:gap-x-14 md:gap-y-10">
           <div className="flex flex-col gap-6">
@@ -86,7 +87,7 @@ const WebSiteFooter = () => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-[#FFFFFFB2] text-xs md:text-sm hover:text-secondary transition-all duration-300 ease-in-out"
+                className="inline-flex min-h-7 items-center text-[#FFFFFFB2] text-xs md:text-sm hover:text-secondary transition-all duration-300 ease-in-out"
               >
                 {link.label}
               </Link>

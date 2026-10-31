@@ -25,7 +25,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
             <Image src={src} alt={title} fill className="object-contain" sizes="100vw" />
           </div>
           <div className="flex flex-col gap-4">
-            <p className="text-sm text-orange-primary helv">{title}</p>
+            <p className="text-sm text-orange-ink helv">{title}</p>
             <h2 className="text-2xl lg:text-4xl/tight font-semibold text-primary2 helv">
               {mainTitle}
             </h2>

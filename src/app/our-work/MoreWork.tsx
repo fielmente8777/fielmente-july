@@ -28,7 +28,7 @@ export function SeoResults() {
                       aria-hidden="true"
                       className={`absolute -left-[31px] top-1 h-3.5 w-3.5 rounded-full border-2 border-white ${last ? "bg-orange-primary" : "bg-[#C9D1E0]"}`}
                     />
-                    <p className={`text-sm font-semibold ${last ? "text-orange-primary" : "text-primary"}`}>{t.date}</p>
+                    <p className={`text-sm font-semibold ${last ? "text-orange-ink" : "text-primary"}`}>{t.date}</p>
                     <p className="text-sm text-secondary">{t.text}</p>
                   </li>
                 );
@@ -80,7 +80,7 @@ export function MetaAdsFeature() {
   return (
     <div className="grid items-center gap-8 rounded-3xl bg-[#F5F7FB] p-6 md:p-10 lg:grid-cols-[1.1fr_1fr]">
       <div className="space-y-4">
-        <span className="inline-block rounded-full bg-[#FFF0EA] px-3 py-1 text-xs font-semibold text-orange-primary">Meta ads · Weddings</span>
+        <span className="inline-block rounded-full bg-[#FFF0EA] px-3 py-1 text-xs font-semibold text-orange-ink">Meta ads · Weddings</span>
         <h3 className="text-2xl font-semibold text-primary md:text-3xl">Wabi Sabi Resort, Igatpuri</h3>
         <p className="text-secondary">
           A destination resort known for weddings and leisure stays. The goal was more qualified wedding enquiries and a stronger brand presence on Instagram.

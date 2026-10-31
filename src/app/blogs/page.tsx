@@ -97,8 +97,37 @@ export default async function Blogs({
 
   const paginationRange = getPaginationRange(page, totalPages);
 
+  const blogLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: page > 1 ? `Hospitality Marketing Blog, Page ${page}` : "Hospitality Marketing Blog",
+    url: pageUrl(page),
+    description: BLOG_DESCRIPTION,
+    isPartOf: { "@type": "Blog", name: "Fielmente Blog", url: pageUrl(1), publisher: { "@type": "Organization", name: "Fielmente", url: "https://fielmente.com/" } },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: visibleBlogs.map((card, i) => ({
+        "@type": "ListItem",
+        position: startIndex + i + 1,
+        url: `https://fielmente.com/${card.slug}/`,
+        name: card.title,
+      })),
+    },
+  };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://fielmente.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: pageUrl(1) },
+      ...(page > 1 ? [{ "@type": "ListItem", position: 3, name: `Page ${page}`, item: pageUrl(page) }] : []),
+    ],
+  };
+
   return (
     <main className="md:mt-22 mt-23">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <Section
         defaultPadding={false}
         className="w-full relative xl:aspect-[4/.935] lg:aspect-[4/.89] md:aspect-4/1.5 aspect-4/1.75 border"
@@ -114,7 +143,8 @@ export default async function Blogs({
         <div className="absolute inset-0 bg-linear-to-b from-30% from-black/40 to-transparent z-10" />
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <SectionHeading
-            title={blogPageData.bannerData.title}
+            // The H1 names the page (and its page number), instead of "EXPLORE OUR BLOGS" on all 21 pages.
+            title={page > 1 ? `Hospitality Marketing Blog: Page ${page}` : "Hospitality Marketing Blog"}
             subTitle={blogPageData.bannerData.subTitle}
             titleColor="white"
             subTitleColor="white"

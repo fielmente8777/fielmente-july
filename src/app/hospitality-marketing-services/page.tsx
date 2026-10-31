@@ -145,10 +145,11 @@ function page() {
               <div className="relative w-full mx-auto aspect-[4/2.5]">
                 <Image
                   src={"/images/briefing-staff-hotel-restaurant-1.png"}
-                  alt="mobile"
+                  alt="Hotel and restaurant staff in a team briefing"
                   fill
+                  priority
                   className="object-contain "
-                  sizes="100vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>

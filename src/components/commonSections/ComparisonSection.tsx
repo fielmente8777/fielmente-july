@@ -35,7 +35,7 @@ const ComparisonSection: React.FC<ComparisonSectionProps> = ({
             </ul>
           </div>
           <div className="rounded-2xl bg-primary2 p-6 md:p-8 text-white">
-            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-orange-primary mb-5">{withLabel}</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-orange-ink mb-5">{withLabel}</p>
             <ul className="flex flex-col gap-4">
               {withList.map((a) => (
                 <li key={a} className="flex gap-3 text-[15px]/relaxed md:text-base/relaxed">

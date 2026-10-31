@@ -35,6 +35,15 @@ export function IndustriesPanel({ sections, pathName }: { sections: MenuSection[
     (s) => (s.href && s.href !== "/industries-we-serve/" && pathName.startsWith(s.href)) || s.groups.some((g) => g.links.some((l) => l.href === pathName))
   );
   const [active, setActive] = useState(current >= 0 ? current : 0);
+  // Only the panel for the current page's industry (or the first one) is in the page's HTML; the others
+  // are added when a visitor points at them. Before, every page carried all ~130 service links twice over
+  // in hidden panels: a large share of each page's links and DOM, repeated sitewide. Every service page
+  // is still linked from its industry page and the industries hub.
+  const [shown, setShown] = useState<Set<number>>(() => new Set([current >= 0 ? current : 0]));
+  const show = (i: number) => {
+    setActive(i);
+    setShown((prev) => (prev.has(i) ? prev : new Set(prev).add(i)));
+  };
 
   return (
     <div className="grid grid-cols-[280px_1fr]">
@@ -43,8 +52,8 @@ export function IndustriesPanel({ sections, pathName }: { sections: MenuSection[
           <li key={sec.label}>
             <Link
               href={sec.href ?? "#"}
-              onMouseEnter={() => setActive(i)}
-              onFocus={() => setActive(i)}
+              onMouseEnter={() => show(i)}
+              onFocus={() => show(i)}
               aria-current={pathName === sec.href ? "page" : undefined}
               className={`flex items-center justify-between gap-2 rounded-lg px-3 py-2 text-[15px] font-semibold transition-colors ${
                 i === active ? "bg-white text-primary shadow-[0_1px_3px_rgba(17,13,60,0.12)]" : "text-[#4B4A63] hover:text-primary"
@@ -61,8 +70,7 @@ export function IndustriesPanel({ sections, pathName }: { sections: MenuSection[
           </li>
         ))}
       </ul>
-      {/* Every industry's links are in the HTML (so search engines can follow them); only the active one is shown. */}
-      {sections.map((s, i) => (
+      {sections.map((s, i) => !shown.has(i) ? null : (
         <div key={s.label} hidden={i !== active} className="p-6 pl-8">
           <div className="mb-5 flex items-end justify-between gap-6 border-b border-[#ECEBF2] pb-4">
             <div>

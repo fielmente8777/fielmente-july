@@ -154,7 +154,7 @@ export function AdsTotals() {
           </table>
         </div>
         <div className="space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange-primary">What changed</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange-ink">What changed</p>
           <p className="text-lg leading-relaxed">
             In 2024, 2 of every 100 clicks became an enquiry. In 2026 it is more than 9, because we rebuilt the landing pages and tracking, not just the ads.
           </p>

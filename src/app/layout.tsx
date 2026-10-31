@@ -9,6 +9,7 @@ import MobileNav from "@/components/navbars/MobileNav";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import Script from "next/script";
 import Salesiq from "@/components/zohochatbot/Salesiq";
+import OffscreenMotionPause from "@/components/OffscreenMotionPause";
 import { buildSiteMenu } from "@/components/navbars/menuData";
 
 // Header and mobile menu content, built once at build time from the industry, service and product data.
@@ -294,6 +295,7 @@ export default function RootLayout({
           <Footer />
           <PopupForm />
           <Whatsapp />
+          <OffscreenMotionPause />
         </AppProvider>
       </body>
     </html>

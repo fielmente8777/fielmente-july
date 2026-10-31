@@ -16,6 +16,7 @@ const ClientsSlider: React.FC<Props> = ({ cards, wrapperClassName, lgSlidePerVie
       itemClassName="hover:shadow-lg shadow-slate-300 transition"
       imageClassName="p-2 border border-[#E3E5E8]"
       items={(cards || []).map((c) => ({ src: c.src, alt: c.alt, background: c.className }))}
+      eagerCount={0}
     />
   );
 };

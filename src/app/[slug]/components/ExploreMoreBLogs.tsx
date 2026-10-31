@@ -75,7 +75,7 @@ interface ExploreMoreBLogsProps {
  * repeated each related post's title and link, which SEO checkers flag as duplicate text and links.
  */
 const ExploreMoreBLogs: React.FC<ExploreMoreBLogsProps> = ({ title, cta, cards }) => {
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(6);
   const visibleCards = cards.slice(0, visibleCount);
   const hasMore = visibleCount < cards.length;
 

@@ -15,7 +15,7 @@ const EngagementSection: React.FC = () => {
               <h3 className="text-lg font-bold">{e.title}</h3>
               <p className={`text-sm/relaxed md:text-[15px]/relaxed ${i === 0 ? "text-[#C9C7DD]" : "text-[#55536E]"}`}>{e.body}</p>
               {i === 0 && (
-                <a href="#plan" className="mt-auto inline-flex items-center gap-2 pt-2 text-sm font-semibold text-orange-primary">
+                <a href="#plan" className="mt-auto inline-flex items-center gap-2 pt-2 text-sm font-semibold text-orange-ink">
                   Request your plan <LuArrowRight aria-hidden="true" />
                 </a>
               )}

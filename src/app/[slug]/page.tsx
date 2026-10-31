@@ -247,6 +247,11 @@ function isoDate(date?: string) {
   return Number.isNaN(d.getTime()) ? undefined : d.toISOString().slice(0, 10);
 }
 
+/** Images inside a post load only when scrolled near, and decode off the main thread. */
+function lazyImages(html: string) {
+  return html.replace(/<img\b(?![^>]*\bloading=)/gi, '<img loading="lazy" decoding="async"');
+}
+
 /** Up to `count` posts most related to the current one, scored by shared title words. */
 function relatedPosts(current: { slug: string; title: string }, count = 12) {
   const stop = new Set(["the", "a", "an", "for", "and", "of", "to", "in", "on", "how", "your", "with", "what", "why", "is", "are", "can", "hotel", "hotels", "guide", "complete"]);
@@ -360,6 +365,11 @@ export default async function LandingPage({ params }: Params) {
       : data.meta?.keywords || [];
 
   const allBlogs = relatedPosts(data);
+  // Neighbouring posts in the blog's own order: every post links to the one before and after it, so no
+  // post depends on the related-posts box alone for a link (60 posts had only one link in).
+  const at = blogData.findIndex((p) => p.slug === data.slug);
+  const prevPost = at > 0 ? blogData[at - 1] : undefined;
+  const nextPost = at >= 0 && at < blogData.length - 1 ? blogData[at + 1] : undefined;
   const postUrl = `${SITE}/${data.slug}/`;
   const published = isoDate(data.date);
   const heroImage = absolute(imageSrc(data.url));
@@ -573,9 +583,26 @@ export default async function LandingPage({ params }: Params) {
             <div
               className="blog-content break-words"
               dangerouslySetInnerHTML={{
-                __html: data.data,
+                __html: lazyImages(data.data),
               }}
             />
+
+            {(prevPost || nextPost) && (
+              <nav aria-label="More articles" className="mt-10 grid gap-3 border-t border-[#E1E4E8] pt-6 sm:grid-cols-2">
+                {prevPost && (
+                  <Link href={`/${prevPost.slug}/`} className="rounded-2xl border border-[#E1E4E8] p-4 hover:border-color4">
+                    <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-[#5F6776]">Previous article</span>
+                    <span className="mt-1 block font-medium text-[#202838]">{prevPost.title}</span>
+                  </Link>
+                )}
+                {nextPost && (
+                  <Link href={`/${nextPost.slug}/`} className="rounded-2xl border border-[#E1E4E8] p-4 hover:border-color4 sm:text-right sm:col-start-2">
+                    <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-[#5F6776]">Next article</span>
+                    <span className="mt-1 block font-medium text-[#202838]">{nextPost.title}</span>
+                  </Link>
+                )}
+              </nav>
+            )}
 
             <div
               className="

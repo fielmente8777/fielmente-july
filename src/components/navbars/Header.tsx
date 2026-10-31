@@ -7,7 +7,6 @@ import { useParams, usePathname } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
 import { Container } from "../sectionComponants";
 import { navLinks } from "./navLinks";
-import { casStudiesData } from "@/app/case-study/[story]/components/caseData";
 import { contacts } from "../../../contact";
 import { IndustriesPanel, ProductsPanel } from "./MegaMenu";
 import type { SiteMenu } from "./menuData";
@@ -16,18 +15,16 @@ const Header = ({ menu }: { menu?: SiteMenu }) => {
 
   const pathName = usePathname();
 
-  const CaseStudySlug = casStudiesData.map(
-    (item) => "/case-study/" + item.slug + "/"
-  );
-
+  // Pages whose dark hero sits under a transparent header. Case studies are matched by prefix: importing
+  // the case study data here to list their URLs put every case study's full text in the JavaScript of
+  // every page (~40 kB compressed).
   const paths = [
     "/about-fielmente-best-hospitality-marketing-agency/",
     "/services/",
     "/contact-us/",
     "/testimonials/",
-    "/case-study/",
     "/our-work/",
-    ...CaseStudySlug,
+    ...(pathName.startsWith("/case-study/") ? [pathName] : []),
     "/our-clients/",
     "/our-partners/",
     "/testimonial/",
@@ -77,7 +74,7 @@ const Header = ({ menu }: { menu?: SiteMenu }) => {
             <div className="">
               <Link
                 href={"/"}
-                className="flex relative md:w-36 w-25 aspect-[4/1.69]"
+                className="flex relative md:w-36 w-25 aspect-[220/97]"
               >
                 <Image
                   src={

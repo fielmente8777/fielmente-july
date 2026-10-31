@@ -40,6 +40,10 @@ img {
     opacity 650ms cubic-bezier(0.22, 1, 0.36, 1),
     transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform;
+  // Sections well below the fold skip layout and paint until they come near the screen. The home page
+  // has ~3,500 elements; without this every animation frame re-checked all of them on phones.
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 
   &.is-visible {
     opacity: 1;
@@ -140,7 +144,9 @@ img {
 .span-color-2 {
   a,
   span {
-    color: #ff9062;
+    // Brand orange, bold: at 20 px+ bold it counts as large text, so 3:1 contrast is enough (#ff9062 was 2.2:1).
+    color: #f26633;
+    font-weight: 700;
   }
 }
 

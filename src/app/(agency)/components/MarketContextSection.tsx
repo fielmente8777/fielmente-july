@@ -65,7 +65,7 @@ const MarketContextSection: React.FC<MarketContextSectionProps> = ({ data: d }) 
               const [first, rest] = splitLead(pt.body);
               return (
                 <div key={pt.title} className="flex gap-4">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FDE8DF] text-sm font-bold text-orange-primary" aria-hidden="true">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FDE8DF] text-sm font-bold text-orange-ink" aria-hidden="true">
                     {i + 1}
                   </span>
                   <div className="flex flex-col gap-1.5">

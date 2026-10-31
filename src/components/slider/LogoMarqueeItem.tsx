@@ -31,9 +31,9 @@ const LogoMarqueeItem: React.FC<Props> = ({ item, itemClassName = "", imageClass
           large with 100+ logos per page). Logos without a copy fall back to the optimiser. */}
       {thumbs[item.src] ? (
         // eslint-disable-next-line @next/next/no-img-element -- pre-sized static file, no optimiser needed
-        <img src={thumbs[item.src]} width={240} height={160} loading={eager ? "eager" : "lazy"} decoding="async" className={`logo-tile-img ${imageClassName}`} alt={decorative ? "" : item.alt} />
+        <img src={thumbs[item.src]} width={240} height={160} loading={eager ? "eager" : "lazy"} fetchPriority="low" decoding="async" className={`logo-tile-img ${imageClassName}`} alt={decorative ? "" : item.alt} />
       ) : (
-        <Image src={item.src} width={240} height={160} loading={eager ? "eager" : "lazy"} className={`logo-tile-img ${imageClassName}`} alt={decorative ? "" : item.alt} />
+        <Image src={item.src} width={240} height={160} loading={eager ? "eager" : "lazy"} fetchPriority="low" className={`logo-tile-img ${imageClassName}`} alt={decorative ? "" : item.alt} />
       )}
     </div>
   </li>

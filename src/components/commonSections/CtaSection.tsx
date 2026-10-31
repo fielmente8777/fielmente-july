@@ -20,7 +20,7 @@ const CtaSection: React.FC<Props> = ({ eyebrow, title, description, cta }) => {
         <div className="absolute inset-0 flex items-center justify-center z-20 max-lg:px-4">
           <div className="space-y-8">
             {eyebrow && (
-              <p className="mb-0 text-center text-sm font-semibold uppercase tracking-[0.14em] text-orange-primary">
+              <p className="mb-0 text-center text-sm font-semibold uppercase tracking-[0.14em] text-orange-ink">
                 {eyebrow}
               </p>
             )}

@@ -17,6 +17,9 @@ interface LogoMarqueeProps {
   itemClassName?: string;
   imageClassName?: string;
   wrapperClassName?: string;
+  /** How many of the first logos load straight away (visible when the strip first appears). Default 6;
+   * use 0 for strips further down the page so they don't compete with the page's main image. */
+  eagerCount?: number;
 }
 
 const LogoMarquee: React.FC<LogoMarqueeProps> = ({
@@ -25,6 +28,7 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({
   itemClassName = "",
   imageClassName = "",
   wrapperClassName = "",
+  eagerCount = 6,
 }) => {
   // The loop's second half (translateX(-50%) needs it) is added in the browser, so the page's HTML
   // lists every logo once: no duplicate images or images without alt text for SEO checks.
@@ -44,7 +48,7 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({
     <div className={`logo-marquee w-full overflow-hidden ${wrapperClassName}`} style={vars}>
       <ul className="logo-marquee-track flex w-max">
         {items.map((item, i) => (
-          <LogoMarqueeItem key={`${item.src}-${i}`} item={item} itemClassName={itemClassName} imageClassName={imageClassName} eager={i < 12} />
+          <LogoMarqueeItem key={`${item.src}-${i}`} item={item} itemClassName={itemClassName} imageClassName={imageClassName} eager={i < eagerCount} />
         ))}
         {looped &&
           items.map((item, i) => (

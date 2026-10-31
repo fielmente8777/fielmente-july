@@ -34,6 +34,8 @@
     --color-main-border: #E3E5E8;
     --color-background-black1: #101010;
     --color-orange-primary: #F26633;
+    /* Darker brand orange for small text (labels, eyebrows): #F26633 is too light to read at 12–14 px (WCAG AA needs 4.5:1). */
+    --color-orange-ink: #B5461A;
   }
 
   /* typography */
@@ -70,6 +72,8 @@
 .logo-marquee:hover .logo-marquee-track { animation-play-state: paused; }
 .logo-marquee-reverse .logo-marquee-track { animation-direction: reverse; }
 @keyframes logo-marquee { to { transform: translateX(-50%); } }
+/* Paused while off screen (src/components/OffscreenMotionPause.tsx). */
+.logo-marquee.motion-offscreen .logo-marquee-track, .marquee-wrapper.motion-offscreen { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .logo-marquee-track { animation: none; } }
 
 /* Card rows that are a grid on tablets/desktops and a swipeable row on phones.

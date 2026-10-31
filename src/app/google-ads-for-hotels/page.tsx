@@ -43,13 +43,49 @@ export const metadata: Metadata = {
 
 const PHONE_TEL = `tel:${contacts.phone_1.replace(/\s/g, "")}`;
 
-const eyebrow = "text-[13px] font-semibold uppercase tracking-[0.16em] text-orange-primary";
+const eyebrow = "text-[13px] font-semibold uppercase tracking-[0.16em] text-orange-ink";
 const h2 = "text-[30px]/[1.1] md:text-[44px]/[1.1] font-bold tracking-tight";
 const dot = <span className="text-orange-primary">.</span>;
+
+const stripTags = (t: string) => t.replace(/<[^>]+>/g, "");
+
+/** Service, FAQ and breadcrumb details for search engines (the page had none). */
+const pageLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Google Ads management for hotels and resorts",
+    serviceType: "Google Ads management",
+    description: DESCRIPTION,
+    url: PAGE_URL,
+    areaServed: "IN",
+    provider: { "@type": "Organization", name: "Fielmente", url: "https://fielmente.com/" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: stripTags(String(f.q)),
+      acceptedAnswer: { "@type": "Answer", text: stripTags(String(f.a)) },
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://fielmente.com/" },
+      { "@type": "ListItem", position: 2, name: "Google Ads for Hotels", item: PAGE_URL },
+    ],
+  },
+];
 
 export default function GoogleAdsForHotelsPage() {
   return (
     <main className="overflow-x-clip bg-white text-primary2 max-md:pb-20">
+      {pageLd.map((ld, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
+      ))}
       {/* Top bar — no site navigation on purpose: one goal per ads landing page */}
       <header className="bg-primary2">
         <Container className="flex items-center justify-between gap-4 py-4">

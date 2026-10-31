@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Container, Section } from "../sectionComponants";
 import SectionHeading from "../typography/SectionHeadingDesc";
 import { CtaBtn } from "../buttons/CtaBtn";
-import { title } from 'process';
 
 interface TextBannerProps {
   title?: string;
@@ -28,6 +27,7 @@ const TextBanner: React.FC<TextBannerProps> = ({
         src="/Hero.png"
         alt="Dark blue abstract background"
         fill
+        priority
         className="object-cover bg-background-black1"
         sizes="100vw"
       />

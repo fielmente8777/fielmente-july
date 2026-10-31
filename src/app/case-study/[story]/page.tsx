@@ -60,7 +60,11 @@ export default async function Page(props: Params) {
   const results = data.data?.find((d) => /^results/i.test(d.title));
   const kpis = kpisFromResults(results?.lists);
   const hasKpis = kpis.length > 0 || (data.metrics?.length ?? 0) > 0;
-  const others = casStudiesData.filter((c) => c.slug !== data.slug && c.data?.length).slice(0, 3);
+  // The three case studies after this one (wrapping round), so every case study is linked from three
+  // others. Before, every page linked the same first three and newer case studies were linked from none.
+  const withStory = casStudiesData.filter((c) => c.data?.length);
+  const at = withStory.findIndex((c) => c.slug === data.slug);
+  const others = [1, 2, 3].map((n) => withStory[(Math.max(at, 0) + n) % withStory.length]).filter((c) => c && c.slug !== data.slug);
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -90,9 +94,9 @@ export default async function Page(props: Params) {
       {data.slug === "syah-udaipur-tripadvisor-ads" ? (
         <section className="bg-white">
           <Container className="py-14 md:py-20">
-            <Link href="/case-study/" className="text-sm font-medium text-orange-primary hover:underline">← Case studies</Link>
+            <Link href="/case-study/" className="text-sm font-medium text-orange-ink hover:underline">← Case studies</Link>
             <div className="mt-8 max-w-5xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-orange-primary">Restaurant marketing case study · Fielmente × Eazotel</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-orange-ink">Restaurant marketing case study · Fielmente × Eazotel</p>
               <h1 className="mt-5 text-4xl font-semibold leading-tight text-primary2 md:text-6xl">Syah Udaipur: Turning Tripadvisor discovery into direct guest enquiries</h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-[#55536E]">How Fielmente combined Tripadvisor sponsored advertising, a dedicated reservation website and Eazotel guest engagement for an intimate six-seat restaurant in Udaipur.</p>
               <div className="mt-8 flex flex-wrap gap-3">{["Tripadvisor Advertising","Landing Page","Eazotel"].map(t=><span key={t} className="rounded-full border border-[#E4E3EC] bg-[#f8f8fb] px-4 py-2 text-sm font-medium text-primary2">{t}</span>)}</div>
@@ -130,26 +134,26 @@ export default async function Page(props: Params) {
         <SectionWithContainer sectionClassName="">
           <article className="mx-auto max-w-6xl space-y-16">
             <header className="mx-auto max-w-4xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-primary">The complete guest journey</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-ink">The complete guest journey</p>
               <h2 className="mt-4 text-3xl font-semibold leading-tight text-primary2 md:text-5xl">How a traveller discovers Syah Udaipur — and takes the next step toward a table</h2>
               <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#55536E]">From Tripadvisor sponsored visibility to the restaurant's own digital experience, Fielmente and Eazotel connect discovery, consideration and direct guest enquiries.</p>
             </header>
             <div className="grid gap-7 rounded-2xl border border-[#E4E3EC] bg-white p-7 md:grid-cols-2 md:p-10">
               <div className="flex flex-col justify-center">
-                <span className="text-sm font-bold text-orange-primary">01 / DISCOVER</span>
+                <span className="text-sm font-bold text-orange-ink">01 / DISCOVER</span>
                 <h3 className="mt-4 text-3xl font-semibold text-primary2">Visibility while diners choose where to eat</h3>
                 <p className="mt-5 text-lg leading-8 text-[#55536E]">Tripadvisor sponsored placements help Syah reach travellers researching Udaipur restaurants. The campaign drives discovery; it does not imply an organic number-one ranking.</p>
               </div>
               <div className="flex items-center">
                 <div className="w-full rounded-2xl border border-[#E4E3EC] bg-[#f8f8fb] p-7">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-orange-primary">Campaign journey infographic</p>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-orange-ink">Campaign journey infographic</p>
                   <div className="mt-6 space-y-3">{[{n:"01",t:"Tripadvisor sponsored placement"},{n:"02",t:"Visitor clicks to Syah website"},{n:"03",t:"Guest explores dining experience"},{n:"04",t:"Direct reservation enquiry"}].map(x=><div key={x.n} className="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm"><span className="text-lg font-bold text-orange-primary">{x.n}</span><span className="font-semibold text-primary2">{x.t}</span></div>)}</div>
                   <p className="mt-5 text-xs text-[#55536E]">Illustrative guest journey; not confirmed booking attribution.</p>
                 </div>
               </div>
             </div>
             <div className="space-y-7">
-              <div className="max-w-3xl"><span className="text-sm font-bold tracking-[0.2em] text-orange-primary">02 / EXPERIENCE</span><h3 className="mt-3 text-3xl font-semibold text-primary2 md:text-4xl">A branded landing page, not another crowded listing</h3><p className="mt-4 text-lg leading-8 text-[#55536E]">Once guests arrive at the reservation website, Syah can tell its own story with culinary imagery, tasting-menu details and clear reservation calls to action.</p></div>
+              <div className="max-w-3xl"><span className="text-sm font-bold tracking-[0.2em] text-orange-ink">02 / EXPERIENCE</span><h3 className="mt-3 text-3xl font-semibold text-primary2 md:text-4xl">A branded landing page, not another crowded listing</h3><p className="mt-4 text-lg leading-8 text-[#55536E]">Once guests arrive at the reservation website, Syah can tell its own story with culinary imagery, tasting-menu details and clear reservation calls to action.</p></div>
               <div className="overflow-hidden rounded-3xl border border-[#E4E3EC] bg-[#f6f2eb] p-4 md:p-8"><div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-[#dcd6cb] bg-white shadow-xl"><div className="flex items-center gap-2 border-b bg-[#fafafa] px-4 py-3"><span className="h-3 w-3 rounded-full bg-[#edb6ac]"/><span className="h-3 w-3 rounded-full bg-[#f3dc9c]"/><span className="h-3 w-3 rounded-full bg-[#b8d8b9]"/><span className="ml-3 truncate text-xs text-[#777]">reserve.syahudaipur.com</span></div><div className="relative"><Image src="/our-work/sites/reserve-syahudaipur-com.webp" alt="Full Syah Udaipur reservation website screenshot" width={1440} height={2400} sizes="(max-width: 1024px) 100vw, 850px" className="block h-auto w-full object-contain"/></div></div></div>
             </div>
             <div className="rounded-2xl bg-primary2 p-8 text-white md:p-12">
@@ -161,7 +165,7 @@ export default async function Page(props: Params) {
               <p className="mt-6 text-sm text-white/70">A reservation request is not a confirmed booking; confirmation remains with the restaurant.</p>
             </div>
             <div className="space-y-7">
-              <div className="max-w-3xl"><span className="text-sm font-bold tracking-[0.2em] text-orange-primary">04 / MEASURE</span><h3 className="mt-3 text-3xl font-semibold text-primary2 md:text-4xl">What the Tripadvisor dashboard actually shows</h3><p className="mt-4 text-lg leading-8 text-[#55536E]">These figures come from the campaign screenshot supplied by the team. They demonstrate visibility and clicks, not verified bookings or revenue.</p></div>
+              <div className="max-w-3xl"><span className="text-sm font-bold tracking-[0.2em] text-orange-ink">04 / MEASURE</span><h3 className="mt-3 text-3xl font-semibold text-primary2 md:text-4xl">What the Tripadvisor dashboard actually shows</h3><p className="mt-4 text-lg leading-8 text-[#55536E]">These figures come from the campaign screenshot supplied by the team. They demonstrate visibility and clicks, not verified bookings or revenue.</p></div>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{[{label:"Booked impressions",value:"42,252"},{label:"Delivered impressions",value:"4,567"},{label:"Ad clicks",value:"31"},{label:"Click-through rate",value:"0.68%"}].map(m=><div key={m.label} className="rounded-2xl border border-[#E4E3EC] bg-[#f8f8fb] p-7"><p className="text-4xl font-bold text-primary2">{m.value}</p><p className="mt-3 text-sm text-[#55536E]">{m.label}</p></div>)}</div>
               <div className="rounded-2xl border border-[#E4E3EC] p-6"><div className="mb-3 flex justify-between gap-3 text-sm font-medium text-primary2"><span>Impression delivery</span><span>4,567 of 42,252</span></div><div className="h-4 overflow-hidden rounded-full bg-[#e8e2d6]"><div className="h-full rounded-full bg-[#257a59]" style={{width:"10.81%"}}/></div><p className="mt-3 text-sm text-[#55536E]">10.8% of booked impressions delivered at the time of the screenshot. Delivery status: Awaiting Data.</p></div>
             </div>

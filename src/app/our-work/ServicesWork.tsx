@@ -41,7 +41,7 @@ export function ServicesWork() {
                     </details>
                   )}
                   {s.anchor && (
-                    <a href={`#${s.anchor}`} className="mt-auto pt-4 text-sm font-semibold text-orange-primary hover:underline">
+                    <a href={`#${s.anchor}`} className="mt-auto pt-4 text-sm font-semibold text-orange-ink hover:underline">
                       See the work →
                     </a>
                   )}

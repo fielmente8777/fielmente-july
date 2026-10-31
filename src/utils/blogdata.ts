@@ -606,7 +606,7 @@ This landmark move opens new doors for property owners, offering not just legali
       </p>
       <p>Your response should emphasise thanking them.</p>
       <br />
-      <h4>It can go like this – </h4>
+      <h3>It can go like this – </h3>
       <p>
         Thank you so much (customer’s name) for sharing your
         review. We are glad you liked (product name or service
@@ -621,7 +621,7 @@ This landmark move opens new doors for property owners, offering not just legali
         professional. It also prompts the customer to visit
         again.
       </p>
-      <h4>Another way to reply to this positive review </h4>
+      <h3>Another way to reply to this positive review </h3>
       <p>
         Dear (customer’s name), thank you for saying (repeat the
         appreciation here). It truly made our day. We are
@@ -640,7 +640,7 @@ This landmark move opens new doors for property owners, offering not just legali
         gave you a five-star rating. How do you respond?
       </p>
       <br />
-      <h4>It can go like this – </h4>
+      <h3>It can go like this – </h3>
       <p>
         Greet them (Hi/Hello), thank you. (Saleperson’s name) is
         highly passionate about his/her job. He/She is
@@ -654,7 +654,7 @@ This landmark move opens new doors for property owners, offering not just legali
         value your employees.
       </p>
       <br />
-      <h4>Other ways you can respond are:</h4>
+      <h3>Other ways you can respond are:</h3>
       <ul>
         <li>
           Be humble about the great review you have received.
@@ -1304,7 +1304,7 @@ This landmark move opens new doors for property owners, offering not just legali
         Why do you need Fielmente Hospitality Marketing Agency?
       </h2>
       <div className="py-3">
-        <Image src="/images/blog/Fielmente-Hospitality-Marketing.png"  alt="hero" />
+        <img src="/images/blog/Fielmente-Hospitality-Marketing.webp" alt="Fielmente hospitality marketing" />
       </div>
       <p>
         At Fielmente we take your business seriously and invest
@@ -1368,7 +1368,7 @@ This landmark move opens new doors for property owners, offering not just legali
     <div>
       <h2>Why it’s Important to have Advisors</h2>
       <div className="py-3">
-        <img src="/images/blog/Fielmente-Hospitality-Marketing-Agency.png" class=".img" alt="hero" />
+        <img src="/images/blog/Fielmente-Hospitality-Marketing-Agency.webp" class=".img" alt="hero" />
       </div>
       <p>
         As hospitality consultants in India with 10 years under
@@ -2892,7 +2892,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       successful in helping out more than 50 brands by offering our 6 exclusive services and guidance.`,
     data: `
   <div>
-  <img src="/images/blog/Another-milestone-in-Fielmente-journey-page.png" alt="caqm-relaxes" />
+  <img src="/images/blog/Another-milestone-in-Fielmente-journey-page.webp" alt="caqm-relaxes" />
     <h2>Success comes to those who dare to act.</h2>
     <p>It’s been a year since we dared to act. Fielmente launched in 2020 to create a difference in the hospitality
       industry. We are a hospitality marketing that has always believed in the strength of creative ideas along with
@@ -2950,7 +2950,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   <br />
   <div>
     <h2><a href="https://getawaydesserts.com/">1. Get A Whey</a></h2>
-    <img src="/images/blog/Shark-Tank-1.png" alt="hero">
+    <img src="/images/blog/Shark-Tank-1.webp" alt="hero">
     <a href="https://www.instagram.com/getawhey/?hl=en" target="_blank" rel="noopener noreferrer">
     @getawhey
     </a>
@@ -2974,7 +2974,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   <br />
   <div>
     <h2><a href="https://skippi.in/">2. Skippi Pops</a></h2>
-    <img src="/images/blog/Shark-Tank-2.png" alt="hero">
+    <img src="/images/blog/Shark-Tank-2.webp" alt="hero">
     <a href="https://www.instagram.com/skippiicepops/?hl=en" target="_blank" rel="noopener noreferrer">
       @skippiice_pops
     </a>
@@ -3922,7 +3922,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   `,
   },
   {
-    url: "/images/blog/last-2nd-bg.png",
+    url: "/images/blog/last-2nd-bg.webp",
     isShow: true,
     meta: {
       title: "Strategies to Improve Hotel Business in the New Normal",
@@ -3998,7 +3998,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   <br />
   <div>
     <h2>Strategies for Hotel Business to Overcome Emergencies and Achieve Success in New Normal</h2>
-    <img src="/images/blog/last-2nd-bg.png" alt="hero" />
+    <img src="/images/blog/last-2nd-bg.webp" alt="hero" />
     <br />
     <h2>Management- Improve your hotel business in the new normal</h2>
     <p>The hotel business has been hit hard by the COVID-19 pandemic, but there are things that <b>hotel managers can</b>
@@ -4036,7 +4036,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     <p>– <b>Host events</b> such as conferences, expos, weddings, holiday parties, flea markets or music festivals.
   
     <p>– You can also <b>target specific markets</b> such as business travelers, families or couples.</p>
-      <img src="/images/blog/last-2nd-bg2.png" alt="hero">
+      <img src="/images/blog/last-2nd-bg2.webp" alt="hero">
   
   </div>
   <br />
@@ -4144,7 +4144,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     <p>In addition to this,</p>
     <p>promote your food and beverage offerings using advertisements on various social media channels.</p>
     <br />
-    <img src="/images/blog/last-2nd-bg3.png" alt="hero">
+    <img src="/images/blog/last-2nd-bg3.webp" alt="hero">
   
   </div>
   <br />
@@ -4156,7 +4156,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   </div>
   <br>
   <div>
-    <img src="/images/blog/last-2nd-bg4.png" alt="hero">
+    <img src="/images/blog/last-2nd-bg4.webp" alt="hero">
     <br />
     <h2>Other Flexible Measures for Improved Business</h2>
     <ul>
@@ -4247,7 +4247,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   },
 
   {
-    url: "/images/blog/caqm-relaxes.jpeg",
+    url: "/images/blog/caqm-relaxes.webp",
     // date: "13 March 2023",
     bnr: false,
     isShow: true,
@@ -4266,7 +4266,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   <div>
   
   <p>The Commission for Air Quality Management (CAQM) issued an order on 13 March 2026 temporarily relaxing the approved fuel norms for industries, hotels, restaurants, and other establishments operating in the National Capital Region (NCR). This decision comes in response to disruptions in global energy supply and the regulated distribution of natural gas in India.</p>
-  <img src="/images/blog/caqm-relaxes.jpeg" alt="caqm-relaxes" />
+  <img src="/images/blog/caqm-relaxes.webp" alt="caqm-relaxes" />
   
     <h2>Why This Order Was Issued</h2>
 
@@ -5926,7 +5926,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       Let’s understand this with an example of famous Cloud Kitchen Behrouz Biryani –
     </p>
     
-    <img src="/images/blog/seo-exm.png" alt="seo example" />
+    <img src="/images/blog/seo-exm.webp" alt="seo example" />
 
     <h2>2. Have an SEO Friendly Website</h2>
 
@@ -5950,7 +5950,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       Social Media Marketing is emerging day by day, especially after the Covid19 pandemic, people have learned that technologies can connect people sitting far away from each other, now we are becoming more tech-friendly. hence the businesses are leveraging the power of Social Media by using the latest trends of social media marketing.
     </p>
 
-    <img src="/images/blog/seo-exm2.png" alt="seo example 2" />
+    <img src="/images/blog/seo-exm2.webp" alt="seo example 2" />
 
     <p>
       Go creative on social media, know about your audience. according to a study, over one million mentions on social media sites about the restaurant, food and beverage industry, 57 <a href="https://www.statista.com/statistics/462518/restaurant-food-and-beverage-industry-sector-social-media-mentions-worldwide/" target="_blank">percent of these</a> were about quick-service restaurants.
@@ -5966,7 +5966,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
       <li>Promote business through social media can help to generate more leads and create a buzz around the brand.</li>
     </ol>
      
-    <img src="/images/blog/seo-exm3.png" alt="seo example 3" />
+    <img src="/images/blog/seo-exm3.webp" alt="seo example 3" />
 
     <h2>4. Video is the future of content marketing</h2>
 

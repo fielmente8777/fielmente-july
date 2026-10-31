@@ -19,7 +19,7 @@ const StepsSection: React.FC<StepsSectionProps> = ({ eyebrow, title, lede, steps
           {steps.map((s, i) => (
             <li key={s.title} className="flex flex-col gap-3 pt-5 border-t-2 border-orange-primary">
               {s.when ? (
-                <span className="text-sm font-semibold uppercase tracking-[0.12em] text-orange-primary">{s.when}</span>
+                <span className="text-sm font-semibold uppercase tracking-[0.12em] text-orange-ink">{s.when}</span>
               ) : (
                 <span className="text-lg font-bold text-orange-primary">{String(i + 1).padStart(2, "0")}</span>
               )}

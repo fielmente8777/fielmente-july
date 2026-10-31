@@ -15,7 +15,7 @@ const RevenueManagementServices: React.FC<RevenueManagementServicesType> = ({
     <SectionWithContainer sectionClassName="bg-primary2">
       <div className="flex flex-col w-full items-center md:gap-14 gap-6">
         <div className="max-w-2xl mx-auto text-center space-y-8 poppins">
-          <h2 className="bg-[#FFE7DE] uppercase text-orange-primary text-sm rounded-full px-4 w-fit mx-auto py-2">
+          <h2 className="bg-[#FFE7DE] uppercase text-orange-ink text-sm rounded-full px-4 w-fit mx-auto py-2">
             {title}
           </h2>
 

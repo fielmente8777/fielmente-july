@@ -71,7 +71,7 @@ const SECTIONS = [
 function Intro({ label, title, text }: { label: string; title: string; text: string }) {
   return (
     <div className="mb-10 max-w-3xl space-y-3">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-primary">{label}</p>
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-ink">{label}</p>
       <h2 className="text-3xl font-semibold leading-tight text-primary md:text-4xl">{title}</h2>
       <p className="text-secondary md:text-lg">{text}</p>
     </div>

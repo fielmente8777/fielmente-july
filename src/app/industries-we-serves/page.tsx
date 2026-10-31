@@ -207,7 +207,7 @@ export default function IndustriesWeServe() {
                     <p className="text-[15px]/relaxed text-[#55536E]">
                       {I.cardLine}
                     </p>
-                    <span className="mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold text-orange-primary">
+                    <span className="mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold text-orange-ink">
                       Explore {I.label.toLowerCase()}{" "}
                       <LuArrowRight
                         className="transition-transform group-hover:translate-x-1"
@@ -244,7 +244,7 @@ export default function IndustriesWeServe() {
                     <p className="text-[15px]/relaxed text-[#55536E]">
                       {L.cardLine}
                     </p>
-                    <span className="mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold text-orange-primary">
+                    <span className="mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold text-orange-ink">
                       Explore cloud kitchen marketing{" "}
                       <LuArrowRight
                         className="transition-transform group-hover:translate-x-1"
