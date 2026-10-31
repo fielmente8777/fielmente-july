@@ -1,0 +1,597 @@
+[
+  {
+    "name": "Paris",
+    "country": "France",
+    "region": "Europe",
+    "code": "+33",
+    "kind": "city",
+    "path": "france/paris",
+    "description": "Hotel and restaurant marketing in Paris, France. Build arrondissement-focused SEO, clear direct booking journeys and qualified dining or group enquiries.",
+    "intro": "Paris properties need a clear arrondissement, guest experience and reason to book. We help hotels and restaurants connect those details to useful search content, focused campaigns and direct enquiries from the guests they can serve.",
+    "context": "A business visit, a cultural break and a private dining occasion need different information. Show the property’s exact Paris address, room or dining experience and practical transport context. Plan French and English content around the audiences the property actually serves, with language review agreed before publication.",
+    "actions": [
+      {
+        "title": "Arrondissement relevance",
+        "body": "Create practical neighborhood content and accurate arrival guidance. Connect a guest’s visit purpose to suitable rooms or tables without describing every landmark as nearby."
+      },
+      {
+        "title": "French and international audiences",
+        "body": "Separate campaign language, offers and reporting where the guest journey differs. Match the advertisement to a page and booking route the guest can understand."
+      },
+      {
+        "title": "Room and dining value",
+        "body": "Make inclusions, charges and reservation terms clear. Measure confirmed stays, tables and qualified group requests separately so each team can act on the results."
+      }
+    ],
+    "faq": {
+      "question": "Can a Paris page also support visibility across France?",
+      "answer": "It can support the wider France section through relevant links and useful experience content. The Paris page focuses on the city, while our existing France page covers the broader market; each has a clear purpose and location."
+    },
+    "parentHref": "https://france.fielmente.com/",
+    "sector": "hospitality",
+    "source": {
+      "label": "Paris official visitor resource",
+      "url": "https://parisjetaime.com/eng/"
+    }
+  },
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "region": "Europe",
+    "code": "+31",
+    "kind": "city",
+    "path": "netherlands/amsterdam",
+    "description": "Amsterdam hotel and restaurant marketing for city breaks, meetings and private groups. Connect neighborhood content and clear offers to direct enquiries.",
+    "intro": "An Amsterdam visitor is choosing a neighborhood and a practical base as well as a room. We help hotels and restaurants make that choice clearer, with relevant content and campaigns connected to bookings and qualified group enquiries.",
+    "context": "Leisure visitors and meeting delegates can need different arrival, room and venue information. State the actual property address and realistic transport options. Keep central-city, airport-area and wider Amsterdam-region stays distinct so the guest understands the booking before committing.",
+    "actions": [
+      {
+        "title": "Neighborhood confidence",
+        "body": "Build useful local content for the property’s actual setting. Show accurate access and room details rather than relying on a generic canal-city description."
+      },
+      {
+        "title": "Meeting journeys",
+        "body": "Give delegates and planners practical accommodation and group information. Use confirmed calendars and avoid implying a venue or convention partnership."
+      },
+      {
+        "title": "Dining conversion",
+        "body": "Connect the cuisine, menu and reservation policy to a short booking route. Capture private-group dates and requirements separately from ordinary tables."
+      }
+    ],
+    "faq": {
+      "question": "Should an Amsterdam-area hotel target central Amsterdam searches?",
+      "answer": "Only with clear location and journey information. We would explain the actual municipality or area and transport arrangements, then compare the fit of those enquiries with demand for the property’s own location."
+    },
+    "parentHref": "https://netherlands.fielmente.com/",
+    "sector": "hospitality",
+    "source": {
+      "label": "Amsterdam official visitor resource",
+      "url": "https://www.iamsterdam.com/en"
+    }
+  },
+  {
+    "name": "Ontario",
+    "country": "Canada",
+    "region": "The Americas",
+    "code": "+1",
+    "kind": "province",
+    "path": "canada/ontario",
+    "description": "Ontario hotel and restaurant marketing for city stays, regional breaks and groups. Build useful local content, focused campaigns and direct booking enquiries.",
+    "intro": "Ontario includes different city, lake and regional hospitality markets. We help hotels, resorts and restaurants explain their particular role in the trip, with content and campaigns connected to relevant bookings and qualified enquiries.",
+    "context": "Toronto, Mississauga, Ottawa, Niagara and other Ontario destinations should not share a generic location story. A work traveler, family visitor and resort guest need different practical information. Build the plan around the actual property, available dates and the business it wants to grow.",
+    "actions": [
+      {
+        "title": "Property-level targeting",
+        "body": "Keep city and regional offers distinct, with accurate arrival and transport details. Compare campaign results by actual guest purpose rather than one province-wide enquiry total."
+      },
+      {
+        "title": "Direct booking detail",
+        "body": "Make rooms, inclusions and cancellation terms understandable. Connect the offer to a working availability route and qualified sales follow-up."
+      },
+      {
+        "title": "Dining and groups",
+        "body": "Give local diners clear menus and reservations. Publish capacities and arrangements for group dining or events where the property offers them."
+      }
+    ],
+    "faq": {
+      "question": "How should an Ontario hotel group organize several destinations?",
+      "answer": "Each property needs its own accurate location content, offers and enquiry tracking. Shared reporting can compare business outcomes across the group while retaining the local guest context that determines whether a campaign is useful."
+    },
+    "parentHref": "https://canada.fielmente.com/",
+    "sector": "hospitality",
+    "source": {
+      "label": "Ontario official visitor resource",
+      "url": "https://www.destinationontario.com/en-ca"
+    }
+  },
+  {
+    "name": "Mississauga",
+    "country": "Canada",
+    "region": "The Americas",
+    "code": "+1",
+    "kind": "city",
+    "path": "canada/ontario/mississauga",
+    "description": "Mississauga hotel and restaurant marketing for business visits, groups and local dining. Build precise location content and qualified direct booking enquiries.",
+    "intro": "Mississauga guests and diners need a clear reason to choose the property in its actual neighborhood. We help hotels and restaurants connect useful location information, relevant offers and prompt sales follow-up to the business they want.",
+    "context": "A business stay, an airport-related journey and a local occasion require different information. Explain the Mississauga address, arrival arrangements and real transport options. Do not present the property as being in downtown Toronto or imply an included airport transfer without confirmation.",
+    "actions": [
+      {
+        "title": "Business stays",
+        "body": "Show room facilities, parking and relevant work-trip information. Capture corporate and longer-stay enquiries with dates and requirements the team can assess."
+      },
+      {
+        "title": "Accurate metro positioning",
+        "body": "Build useful content around the actual address and realistic journeys. Qualify Greater Toronto Area demand without blurring the property’s city."
+      },
+      {
+        "title": "Local dining",
+        "body": "Connect the menu and occasion to reservations or private-group enquiries. Measure confirmed tables separately from hotel stays and general engagement."
+      }
+    ],
+    "faq": {
+      "question": "Can a Mississauga property target Toronto-area demand?",
+      "answer": "Yes, when the location and journey are clearly explained. We would keep Mississauga prominent and show accurate transport information, then use enquiry and booking quality to decide which metro-area audiences are worth pursuing."
+    },
+    "parentHref": "/international-hotel-marketing-agency/locations/canada/ontario/",
+    "sector": "hospitality",
+    "source": {
+      "label": "Mississauga official visitor resource",
+      "url": "https://www.visitmississauga.ca/"
+    }
+  },
+  {
+    "name": "London",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "code": "+44",
+    "kind": "city",
+    "path": "united-kingdom/london",
+    "description": "London hotel and restaurant marketing for neighborhood stays, business visits and groups. Connect practical local content and focused offers to direct enquiries.",
+    "intro": "A London guest chooses a neighborhood and arrival journey as well as a room. We help hotels and restaurants communicate those details clearly, then build relevant routes to direct bookings, table reservations and qualified group enquiries.",
+    "context": "Central London, airport-area and other properties answer different guest needs. Use the exact address and realistic transport context. A business traveler, a cultural visitor and a private dining organizer should each find useful information without the same broad offer trying to cover every trip.",
+    "actions": [
+      {
+        "title": "Neighborhood relevance",
+        "body": "Create accurate local and venue content linked to the actual property. Help guests compare transport and accommodation choices before the booking step."
+      },
+      {
+        "title": "Direct conversion",
+        "body": "Keep room inclusions, charges and cancellation conditions clear. Connect paid search and useful content to a dependable booking-engine journey."
+      },
+      {
+        "title": "Private groups",
+        "body": "Give planners capacity, accommodation and dining information where offered. Track qualified proposals and confirmed value separately from individual reservations."
+      }
+    ],
+    "faq": {
+      "question": "Should a London hotel target every part of the city?",
+      "answer": "We would prioritize visits for which the property is a realistic choice. Clear neighborhood positioning and useful transport information help attract suitable guests, with campaign expansion guided by booking value and enquiry quality."
+    },
+    "parentHref": "/hotel-marketing-agency-uk/",
+    "sector": "hospitality",
+    "source": {
+      "label": "London official visitor resource",
+      "url": "https://www.visitlondon.com/"
+    }
+  },
+  {
+    "name": "Scotland",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "code": "+44",
+    "kind": "region",
+    "path": "united-kingdom/scotland",
+    "description": "Scotland hotel, lodge and restaurant marketing for city stays, touring routes and retreats. Build useful experience content and qualified direct booking enquiries.",
+    "intro": "Scotland hospitality spans city visits, touring stays and destination retreats. We help hotels, lodges and restaurants make their actual setting and experience clear, with campaigns linked to the stay or occasion the team can deliver.",
+    "context": "Edinburgh, Glasgow, the Highlands and island properties need different planning information. Explain arrival routes, operating dates and activity arrangements accurately. A touring guest needs a realistic base and stay length; a city visitor needs useful neighborhood and room detail.",
+    "actions": [
+      {
+        "title": "Touring confidence",
+        "body": "Publish practical route and accommodation information around the property’s address. Keep ferries, activities and other third-party arrangements distinct from included services."
+      },
+      {
+        "title": "City and dining demand",
+        "body": "Connect accurate neighborhood content to rooms, menus and reservations. Separate local tables from visitor and private-group enquiries where the process differs."
+      },
+      {
+        "title": "Seasonal retreats",
+        "body": "Show confirmed facilities and dates for group stays. Capture requirements and measure proposals and completed stays rather than general destination traffic."
+      }
+    ],
+    "faq": {
+      "question": "Does Scotland need a separate plan from London?",
+      "answer": "Yes, the locations, journeys and stay experiences differ. Our Scotland guide connects to the existing UK service page while focusing on Scottish city, touring and retreat needs rather than duplicating a London campaign."
+    },
+    "parentHref": "/hotel-marketing-agency-uk/",
+    "sector": "hospitality",
+    "source": {
+      "label": "Scotland official visitor resource",
+      "url": "https://www.visitscotland.com/"
+    }
+  },
+  {
+    "name": "Bangkok",
+    "country": "Thailand",
+    "region": "Asia",
+    "code": "+66",
+    "kind": "city",
+    "path": "thailand/bangkok",
+    "description": "Bangkok hotel and restaurant marketing for city stays, business trips and private groups. Connect precise local content and paid campaigns to direct enquiries.",
+    "intro": "Bangkok guests need to understand the neighborhood and journey before choosing a stay. We help hotels and restaurants explain their actual setting, rooms or dining experience and connect relevant interest to direct bookings and useful enquiries.",
+    "context": "City neighborhoods and airport-related stays need different information. State the actual address and practical transport context. Separate work trips, leisure visits and group occasions where their room choices, offers and enquiry requirements differ, with language support agreed for the audiences served.",
+    "actions": [
+      {
+        "title": "Location decisions",
+        "body": "Build useful neighborhood and arrival content for the property’s exact setting. Avoid treating every city attraction or business district as equally convenient."
+      },
+      {
+        "title": "Source-market fit",
+        "body": "Separate campaign language and guest purpose when useful. Match the advertisement, landing page and reservation journey so guests can understand the offer."
+      },
+      {
+        "title": "Dining and groups",
+        "body": "Show current menus, booking options and private-event capacities. Measure qualified enquiries and confirmed reservations as distinct business outcomes."
+      }
+    ],
+    "faq": {
+      "question": "How do you choose languages for a Bangkok hotel campaign?",
+      "answer": "We review the property’s real guest mix and markets it can serve. Language-specific campaigns need matching content and enquiry handling, with localization and review responsibilities agreed before launch."
+    },
+    "parentHref": "https://thailand.fielmente.com/",
+    "sector": "hospitality",
+    "source": {
+      "label": "Bangkok official visitor resource",
+      "url": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219"
+    }
+  },
+  {
+    "name": "Phuket",
+    "country": "Thailand",
+    "region": "Asia",
+    "code": "+66",
+    "kind": "destination",
+    "path": "thailand/phuket",
+    "description": "Phuket hotel, resort and restaurant marketing for beach stays and destination groups. Build accurate experience content and qualified direct booking enquiries.",
+    "intro": "A Phuket guest compares the beach area, accommodation and practical shape of the stay. We help hotels, resorts and restaurants make those choices clear, with campaigns connected to suitable rooms, tables and group enquiries.",
+    "context": "Different Phuket locations should have precise property stories. Explain real beach access, transfers, accommodation choices and operating facilities. Activities and island trips need clear arrangements, with third-party services distinguished from experiences included in the room or package.",
+    "actions": [
+      {
+        "title": "Beach-area positioning",
+        "body": "Show the actual setting and useful arrival details. Use original property photography rather than implying every Phuket stay has the same beach experience."
+      },
+      {
+        "title": "Stay value",
+        "body": "Explain room layouts, inclusions and booking terms. Coordinate paid campaigns with available inventory and approved offers for relevant audiences."
+      },
+      {
+        "title": "Group enquiries",
+        "body": "Publish accommodation, dining and gathering options the property can deliver. Capture date and party size to support useful proposals and follow-up."
+      }
+    ],
+    "faq": {
+      "question": "Can Phuket resort packages include island excursions?",
+      "answer": "Yes, when delivery arrangements and conditions are confirmed. We would state the provider, inclusions and any separate reservations clearly, without implying transport or activity availability is guaranteed by a general room booking."
+    },
+    "parentHref": "https://thailand.fielmente.com/",
+    "sector": "hospitality",
+    "source": {
+      "label": "Phuket official visitor resource",
+      "url": "https://www.tourismthailand.org/Destinations/Provinces/Phuket/350"
+    }
+  },
+  {
+    "name": "Koh Samui",
+    "country": "Thailand",
+    "region": "Asia",
+    "code": "+66",
+    "kind": "destination",
+    "path": "thailand/koh-samui",
+    "description": "Koh Samui resort, villa and restaurant marketing for island stays, retreats and celebrations. Build clear experience content and qualified direct enquiries.",
+    "intro": "Koh Samui guests often compare the complete island stay rather than just a room rate. We help resorts, villas and restaurants present their setting and arrangements clearly, then connect relevant research to a direct booking or qualified group enquiry.",
+    "context": "Beach locations, villa layouts and arrival arrangements change what a guest needs to know. Explain the property’s exact setting, access, meals and facilities. Retreats and celebrations also need capacity, accommodation and service details before the sales team can prepare a realistic proposal.",
+    "actions": [
+      {
+        "title": "Island arrival",
+        "body": "Give clear information about the final journey and confirmed transfer services. Distinguish included arrangements from transport the guest books independently."
+      },
+      {
+        "title": "Villa and resort detail",
+        "body": "Show accommodation layouts, privacy, dining and facilities with original material. Make occupancy and inclusions easy to understand."
+      },
+      {
+        "title": "Celebration leads",
+        "body": "Publish capacity and event arrangements the team can fulfil. Capture dates and requirements, then measure proposals and confirmed business separately from ordinary stays."
+      }
+    ],
+    "faq": {
+      "question": "How do you attract suitable Koh Samui retreat enquiries?",
+      "answer": "We would make accommodation, gathering spaces, dining and practical restrictions clear early. The form can capture dates, party size and activity needs so the team qualifies the fit and confirms a delivery scope before quoting."
+    },
+    "parentHref": "https://thailand.fielmente.com/",
+    "sector": "hospitality",
+    "source": {
+      "label": "Koh Samui official visitor resource",
+      "url": "https://www.tourismthailand.org/Destinations/Provinces/Ko-Samui/360"
+    }
+  },
+  {
+    "name": "Finland",
+    "country": "Finland",
+    "region": "Europe",
+    "code": "+358",
+    "kind": "country",
+    "path": "finland",
+    "description": "Finland hotel, lodge and restaurant marketing for Helsinki, lake stays and Lapland experiences. Build seasonal content and qualified direct booking enquiries.",
+    "intro": "Finland properties can serve a city visit, a lakeside stay or a northern experience with different guest expectations. We help hotels, lodges and restaurants explain their actual offer and connect relevant planning interest to direct enquiries.",
+    "context": "Helsinki, Lakeland and Lapland need different campaign stories and operating information. Guests should understand arrival arrangements, room types, seasonal facilities and what experiences are included. Confirm third-party activities before selling a package, with language and source-market plans matched to the property’s real guests.",
+    "actions": [
+      {
+        "title": "Seasonal detail",
+        "body": "Show the stay experience and confirmed operating dates. Avoid making weather or natural-phenomenon promises that the property cannot control."
+      },
+      {
+        "title": "Location confidence",
+        "body": "Explain realistic arrival and onward travel arrangements. Use useful destination content to support a specific property decision."
+      },
+      {
+        "title": "Dining and groups",
+        "body": "Connect menus, reservations and gathering information to appropriate enquiries. Track rooms, tables and group proposals separately."
+      }
+    ],
+    "faq": {
+      "question": "Can a Finland lodge market northern-lights experiences?",
+      "answer": "It can describe the location and confirmed activities, while being clear that a natural sighting is not guaranteed. We would focus on the accommodation and services the property reliably provides and explain third-party arrangements accurately."
+    },
+    "parentHref": null,
+    "sector": "hospitality",
+    "source": {
+      "label": "Finland official visitor resource",
+      "url": "https://www.visitfinland.com/en/"
+    }
+  },
+  {
+    "name": "Hungary",
+    "country": "Hungary",
+    "region": "Europe",
+    "code": "+36",
+    "kind": "country",
+    "path": "hungary",
+    "description": "Hungary hotel and restaurant marketing for Budapest, lake breaks and regional stays. Build relevant local content, paid campaigns and direct booking enquiries.",
+    "intro": "Hungary hospitality can serve a Budapest visit, a lake break or a regional touring stay. We help hotels and restaurants explain their particular experience and connect suitable guest journeys to practical direct booking and enquiry routes.",
+    "context": "Budapest and Lake Balaton should not share one generic location story. Guests need accurate accommodation, arrival and facility information. A work visit, cultural break and private occasion can require different offers, languages and sales follow-up, guided by the property’s actual booking patterns.",
+    "actions": [
+      {
+        "title": "City positioning",
+        "body": "Create useful neighborhood and transport content for the real address. Connect relevant work and leisure visits to suitable room choices."
+      },
+      {
+        "title": "Regional stays",
+        "body": "Explain the setting and seasonal facilities clearly. Distinguish suggested activities from confirmed package inclusions."
+      },
+      {
+        "title": "Reservation outcomes",
+        "body": "Make menus, rooms and enquiry options easy to find. Compare confirmed bookings and qualified group requests rather than one combined lead count."
+      }
+    ],
+    "faq": {
+      "question": "Should a Budapest hotel and a Lake Balaton resort share a campaign?",
+      "answer": "They can share brand systems and reporting, but the location, audience and offer should remain distinct. We would build relevant guest journeys for each property and compare business value without blending different stay decisions."
+    },
+    "parentHref": null,
+    "sector": "hospitality",
+    "source": {
+      "label": "Hungary official visitor resource",
+      "url": "https://visithungary.com/"
+    }
+  },
+  {
+    "name": "Poland",
+    "country": "Poland",
+    "region": "Europe",
+    "code": "+48",
+    "kind": "country",
+    "path": "poland",
+    "description": "Poland hotel and restaurant marketing for Warsaw, Krakow and regional destinations. Build useful local content, paid campaigns and qualified direct enquiries.",
+    "intro": "Poland hospitality includes work visits, city breaks and regional leisure with different booking needs. We help properties show their actual setting and experience, then connect relevant search and campaign traffic to useful reservations and enquiries.",
+    "context": "Warsaw, Krakow, coastal destinations and mountain stays require distinct positioning. Start with the property’s real address, guest mix and available rooms. Choose campaign language and offers by the audiences the team can serve, with practical arrival and booking information supporting the decision.",
+    "actions": [
+      {
+        "title": "City visits",
+        "body": "Build accurate neighborhood and venue content for suitable work and leisure trips. Link it to relevant room types and approved offers."
+      },
+      {
+        "title": "Destination stays",
+        "body": "Explain the accommodation and seasonal facilities with original material. Keep third-party activities and transport separate from included services."
+      },
+      {
+        "title": "Dining and events",
+        "body": "Give local diners current menus and booking options. Capture private-group requirements and measure proposals separately from everyday reservations."
+      }
+    ],
+    "faq": {
+      "question": "Does a Poland hospitality campaign need Polish and English content?",
+      "answer": "That depends on the property’s real audience and service capability. We would agree the relevant languages and review process, then match campaigns to understandable landing pages and enquiry handling instead of assuming one version serves every guest."
+    },
+    "parentHref": null,
+    "sector": "hospitality",
+    "source": {
+      "label": "Poland official visitor resource",
+      "url": "https://www.poland.travel/en/"
+    }
+  },
+  {
+    "name": "Azerbaijan",
+    "country": "Azerbaijan",
+    "region": "Asia",
+    "code": "+994",
+    "kind": "country",
+    "path": "azerbaijan",
+    "description": "Azerbaijan hotel and restaurant marketing for Baku and regional stays. Connect accurate local content, source-market campaigns and direct booking enquiries.",
+    "intro": "Azerbaijan properties can serve a Baku city visit or a wider cultural and outdoor trip. We help hotels and restaurants explain their actual role in the journey and connect suitable audiences to useful bookings and qualified enquiries.",
+    "context": "Baku and regional destinations such as Guba and Sheki need different location stories. Explain arrival arrangements, room experience and available facilities. Source-market and language choices should follow the property’s actual guests and enquiry-handling capability, with activities and transport confirmed before they become inclusions.",
+    "actions": [
+      {
+        "title": "City clarity",
+        "body": "Build practical neighborhood and visit information for the real property. Connect work, leisure and event content to suitable accommodation choices."
+      },
+      {
+        "title": "Regional confidence",
+        "body": "Show the setting and realistic journey beyond the city. Distinguish a suggested excursion from services the property delivers."
+      },
+      {
+        "title": "Qualified enquiries",
+        "body": "Give room, dining and group audiences clear next steps. Capture dates and needs, then measure confirmed business rather than broad reach."
+      }
+    ],
+    "faq": {
+      "question": "How do you choose source markets for an Azerbaijan hotel?",
+      "answer": "We start with its booking history, available rooms and the audiences it can support through language and sales follow-up. Campaign tests then compare qualified enquiries and booking value before expanding spend."
+    },
+    "parentHref": null,
+    "sector": "hospitality",
+    "source": {
+      "label": "Azerbaijan official visitor resource",
+      "url": "https://azerbaijan.travel/"
+    }
+  },
+  {
+    "name": "Cambodia",
+    "country": "Cambodia",
+    "region": "Asia",
+    "code": "+855",
+    "kind": "country",
+    "path": "cambodia",
+    "description": "Cambodia hotel and restaurant marketing for Siem Reap, Phnom Penh and destination stays. Build practical local content and qualified direct booking enquiries.",
+    "intro": "Cambodia guests may be planning a cultural itinerary, a city visit or a destination stay. We help hotels and restaurants make their actual location and experience clear, with useful content connected to a direct booking or qualified enquiry.",
+    "context": "Siem Reap, Phnom Penh and coastal properties need distinct plans. Explain accommodation choices, arrival and activity arrangements accurately. Temple visits, guides and transfers should be distinguished from hotel services unless the property has confirmed the inclusion and delivery process.",
+    "actions": [
+      {
+        "title": "Itinerary fit",
+        "body": "Build useful local guidance around the property’s real base. Link current official visitor information where access or arrangements affect the trip."
+      },
+      {
+        "title": "Room decisions",
+        "body": "Show original accommodation and facility material. Keep inclusions, charges and cancellation terms clear across the offer and booking route."
+      },
+      {
+        "title": "Dining and groups",
+        "body": "Make menus and reservations easy to find. Capture event or retreat requirements separately so the team can prepare suitable proposals."
+      }
+    ],
+    "faq": {
+      "question": "Can Cambodia hotel campaigns promote cultural excursions?",
+      "answer": "Yes, when the page clearly explains how they are arranged and what is included. We would keep third-party guides, admission and transfers distinct from the room offer unless the property has confirmed a complete package."
+    },
+    "parentHref": null,
+    "sector": "hospitality",
+    "source": {
+      "label": "Cambodia official visitor resource",
+      "url": "https://tourism.gov.kh/"
+    }
+  },
+  {
+    "name": "Kazakhstan",
+    "country": "Kazakhstan",
+    "region": "Asia",
+    "code": "+7",
+    "kind": "country",
+    "path": "kazakhstan",
+    "description": "Kazakhstan hotel and restaurant marketing for Almaty, Astana and regional stays. Connect accurate local content and focused campaigns to direct booking enquiries.",
+    "intro": "Kazakhstan hospitality can serve city business, cultural visits and outdoor itineraries. We help hotels and restaurants explain their particular setting and practical stay details, then connect relevant demand to useful reservations and sales enquiries.",
+    "context": "Almaty, Astana and regional travel bases should have distinct positioning. Explain the property’s actual address, arrival arrangements and available facilities. A work guest and a touring traveler need different information, with source-market language and follow-up planned around the team’s service capability.",
+    "actions": [
+      {
+        "title": "City relevance",
+        "body": "Create practical neighborhood and visit content linked to suitable rooms. State transport and proximity accurately rather than treating the whole city as nearby."
+      },
+      {
+        "title": "Outdoor context",
+        "body": "Explain the hotel’s role in a wider itinerary and realistic activity access. Keep third-party transport and guided services separate from room inclusions."
+      },
+      {
+        "title": "Business outcomes",
+        "body": "Give room, dining and group audiences clear enquiry routes. Measure confirmed reservations and qualified proposals separately before scaling campaigns."
+      }
+    ],
+    "faq": {
+      "question": "How should a Kazakhstan hotel balance business and leisure campaigns?",
+      "answer": "We would review its real guest mix, room availability and booking value, then give each relevant audience suitable content and offers. Separate reporting helps decide where additional work or spend can support the property’s business."
+    },
+    "parentHref": null,
+    "sector": "hospitality",
+    "source": {
+      "label": "Kazakhstan official visitor resource",
+      "url": "https://kazakhstan.travel/"
+    }
+  },
+  {
+    "name": "Australia",
+    "country": "Australia",
+    "region": "Australia & New Zealand",
+    "code": "+61",
+    "kind": "sector",
+    "path": "australia/hotel-marketing",
+    "description": "Hotel marketing agency for Australia: SEO, Google Ads, direct booking websites and qualified enquiries for hotels, motels, resorts and accommodation groups.",
+    "intro": "Australian accommodation needs a marketing plan built around room nights and booking value. We help hotels, motels and resorts connect practical property content, paid campaigns and a reliable direct booking journey to the stays they want to grow.",
+    "context": "Sydney and Melbourne city hotels, regional motels and destination resorts should not be treated as one audience. Start with each property’s real guest mix and soft dates. Show accommodation choices, arrival arrangements, inclusions and approved booking terms, with reporting connected to qualified stay enquiries and reservations.",
+    "actions": [
+      {
+        "title": "Direct room demand",
+        "body": "Connect useful local SEO and paid search to relevant room offers. Check that availability and the booking-engine journey match the campaign promise."
+      },
+      {
+        "title": "Domestic and international guests",
+        "body": "Separate useful audience and language choices where needed. Compare booking value, stay length and acquisition cost rather than combining all traffic."
+      },
+      {
+        "title": "Portfolio readiness",
+        "body": "Keep each hotel’s address, facilities, inventory and conversion tracking distinct. Give the group a comparable view of results without losing local context."
+      }
+    ],
+    "faq": {
+      "question": "How is Australia hotel marketing different from restaurant marketing?",
+      "answer": "Hotel work focuses on room discovery, stay dates, accommodation choice, direct booking and group room demand. Our separate Australia restaurant page focuses on local dining discovery, table reservations, private occasions and repeat visits."
+    },
+    "parentHref": "https://australia.fielmente.com/",
+    "sector": "hotel",
+    "source": {
+      "label": "Australia official visitor resource",
+      "url": "https://www.australia.com/en"
+    }
+  },
+  {
+    "name": "Australia",
+    "country": "Australia",
+    "region": "Australia & New Zealand",
+    "code": "+61",
+    "kind": "sector",
+    "path": "australia/restaurant-marketing",
+    "description": "Restaurant marketing agency for Australia: local SEO, Google Maps, social content, paid campaigns and reservation journeys for restaurants, cafés and groups.",
+    "intro": "Australian restaurants and cafés need marketing connected to the dining occasions they can serve. We help venues turn local discovery, original food content and focused campaigns into reservations, qualified private-event enquiries and reasons for guests to return.",
+    "context": "A Sydney café, a Melbourne neighborhood restaurant and a destination dining venue need different offers and timing. Start with cuisine, location, service periods and the occasions the venue wants. Make current menus, opening hours, reservations and private-group arrangements easy to find on a phone.",
+    "actions": [
+      {
+        "title": "Local discovery",
+        "body": "Keep venue information, cuisine, menus and reservation links accurate. Build useful neighborhood content around the actual dining experience."
+      },
+      {
+        "title": "Content to reservations",
+        "body": "Use original food and space material with a clear next step. Plan paid campaigns for service periods and occasions the venue wants to grow."
+      },
+      {
+        "title": "Private and repeat business",
+        "body": "Give groups useful capacity and arrangement information. Track qualified proposals and confirmed reservations, with permission-based communication for return visits."
+      }
+    ],
+    "faq": {
+      "question": "What would you measure for an Australian restaurant campaign?",
+      "answer": "We would agree outcomes the venue can verify, such as reservations, qualified private-dining enquiries and confirmed event value. We keep them distinct from room bookings and broad social engagement, with the reservation system and sales team providing the business record."
+    },
+    "parentHref": "https://australia.fielmente.com/",
+    "sector": "restaurant",
+    "source": {
+      "label": "Australia official visitor resource",
+      "url": "https://www.australia.com/en"
+    }
+  }
+]

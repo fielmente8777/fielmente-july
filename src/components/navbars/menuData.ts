@@ -146,6 +146,11 @@ export function buildSiteMenu(): SiteMenu {
     cardLine: "Hotel and restaurant marketing for properties outside India",
     groups: [
       { title: "Agency pages by market", links: agency("location") },
+      { title: "USA service locations", links: [{ label: "US states and cities", href: "/hotel-marketing-agency-usa/locations/" }] },
+      { title: "International experience and destinations", links: [
+        { label: "Countries and city services", href: "/international-hotel-marketing-agency/locations/" },
+        { label: "International client references", href: "/international-hospitality-marketing-experience/" },
+      ] },
       { title: "Country and region sites", links: [...REGION_SITES, { label: "United States", href: "https://usa.fielmente.com/" }] },
     ],
   });

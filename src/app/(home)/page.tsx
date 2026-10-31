@@ -26,6 +26,7 @@ import HomeScrollReveal from "./components/HomeScrollReveal";
 import type { Metadata } from "next";
 import { COUNTRY_HREFLANG } from "@/lib/hreflang";
 import { contacts } from "../../../contact";
+import InternationalExperiencePreview from "@/components/international/InternationalExperiencePreview";
 
 const SITE = "https://fielmente.com";
 const TITLE = "Hospitality Marketing Agency in India | Fielmente";
@@ -63,6 +64,8 @@ const homeLd = [
     email: contacts.email_1,
     telephone: contacts.phone_1,
     description: DESCRIPTION,
+    areaServed: ["India", "Australia", "Spain", "Canada", "France", "Nepal", "Sri Lanka", "United Kingdom", "United Arab Emirates", "United States", "Oman"],
+    subjectOf: { "@type": "AboutPage", url: `${SITE}/international-hospitality-marketing-experience/` },
     sameAs: Object.values(contacts.socialContacts),
     contactPoint: [{ "@type": "ContactPoint", telephone: contacts.phone_1, email: contacts.email_1, contactType: "sales", areaServed: ["IN", "AE", "GB", "US"], availableLanguage: ["en", "hi"] }],
   },
@@ -117,6 +120,7 @@ export default function Home() {
       <HomeScrollReveal><BusinessPartners {...homePageData?.businessPartnersData} /></HomeScrollReveal>
       <HomeScrollReveal><PlatformStripSection /></HomeScrollReveal>
       <HomeScrollReveal><HomeAbout {...homePageData?.aboutCompanyData} /></HomeScrollReveal>
+      <InternationalExperiencePreview compact />
       <HomeScrollReveal><IndustryWeServe {...homePageData?.servingHospitalityData} /></HomeScrollReveal>
       <HomeScrollReveal><ChooseFielmente {...homePageData?.chooseFielmenteData}/></HomeScrollReveal>
       <HomeScrollReveal><OurServices {...homePageData?.servicesData} /></HomeScrollReveal>

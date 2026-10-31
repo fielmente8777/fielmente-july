@@ -34,6 +34,7 @@ export default function LeadForm({
   title,
   body,
   defaultCountryCode,
+  defaultCountry,
   needs,
   idPrefix = "lead",
 }: {
@@ -43,6 +44,8 @@ export default function LeadForm({
   body: string;
   /** Phone code selected by default, e.g. "+971". Must exist in src/utils/countryCode.tsx. */
   defaultCountryCode: string;
+  /** Optional country when several markets share the same phone dial code. */
+  defaultCountry?: string;
   /** Options for "What do you need help with?" */
   needs: string[];
   /** Keeps input ids unique when two forms are on one page. */
@@ -64,7 +67,7 @@ export default function LeadForm({
   // Several countries share a dial code (+1 is Canada and the USA), so the select tracks the
   // country as well as the code. Default to the main market for each code.
   const PREFERRED: Record<string, string> = { "+1": "USA", "+44": "GBR", "+971": "ARE", "+91": "IND" };
-  const [country, setCountry] = useState(`${PREFERRED[defaultCountryCode] ?? ""}|${defaultCountryCode}`);
+  const [country, setCountry] = useState(`${defaultCountry ?? PREFERRED[defaultCountryCode] ?? ""}|${defaultCountryCode}`);
 
   // Default the phone country code for this market, and read ad-click parameters once.
   useEffect(() => {

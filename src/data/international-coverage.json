@@ -1,0 +1,1227 @@
+[
+  {
+    "name": "Spain",
+    "slug": "spain",
+    "region": "europe",
+    "href": "https://spain.fielmente.com/",
+    "countryHref": "https://spain.fielmente.com/",
+    "description": "Spanish hotels compete for international guests searching in English, German, French and Dutch as well as Spanish. We build multilingual search, ads and social campaigns that bring those guests to your own website instead of an OTA, and help you fill the shoulder months either side of summer.",
+    "focus": [
+      {
+        "title": "Reach guests in their own language",
+        "body": "Search and ad campaigns run separately for each source market, with landing pages in the language the guest searched in."
+      },
+      {
+        "title": "Fill the shoulder season",
+        "body": "Spring and autumn campaigns built around wellness, food and culture rather than beach weeks."
+      },
+      {
+        "title": "Win back commission",
+        "body": "Google Hotel Ads and brand-search campaigns that capture guests who already know your name before an OTA does."
+      }
+    ],
+    "dialCode": "+34",
+    "language": "es-ES",
+    "source": "https://www.spain.info/en/"
+  },
+  {
+    "name": "Germany",
+    "slug": "germany",
+    "region": "europe",
+    "href": "https://germany.fielmente.com/",
+    "countryHref": "https://germany.fielmente.com/",
+    "description": "German travellers research carefully, read reviews closely and expect clear, accurate information. We help hotels and restaurants in Germany rank in German-language search, manage their reputation on review platforms, and run privacy-conscious campaigns that turn that research into direct bookings.",
+    "focus": [
+      {
+        "title": "German-first search",
+        "body": "Keyword research and content written for how German guests actually search, not translated from English."
+      },
+      {
+        "title": "Reviews that convert",
+        "body": "Structured review responses across Google, HolidayCheck, Tripadvisor and Booking.com."
+      },
+      {
+        "title": "Consent-aware tracking",
+        "body": "Campaign measurement set up with cookie consent in mind, so reporting stays reliable under GDPR."
+      }
+    ],
+    "dialCode": "+49",
+    "language": "de-DE",
+    "source": "https://www.germany.travel/en/home.html"
+  },
+  {
+    "name": "Italy",
+    "slug": "italy",
+    "region": "europe",
+    "href": "https://italy.fielmente.com/",
+    "countryHref": "https://italy.fielmente.com/",
+    "description": "From boutique palazzos to agriturismi and lakeside villas, Italian properties sell an experience long-haul guests plan months ahead. We tell that story through websites, content and paid search aimed at the UK, US and European travellers who book Italy early.",
+    "focus": [
+      {
+        "title": "Sell the experience",
+        "body": "Photography direction and content that show food, landscape and hospitality, not just rooms."
+      },
+      {
+        "title": "Destination weddings and events",
+        "body": "Dedicated landing pages and ad campaigns for weddings, retreats and group bookings."
+      },
+      {
+        "title": "Book long-haul guests early",
+        "body": "Campaigns timed to when UK and US travellers plan Italian trips, months before arrival."
+      }
+    ],
+    "dialCode": "+39",
+    "language": "it-IT",
+    "source": "https://www.italia.it/en"
+  },
+  {
+    "name": "France",
+    "slug": "france",
+    "region": "europe",
+    "href": "https://france.fielmente.com/",
+    "countryHref": "https://france.fielmente.com/",
+    "description": "France draws guests for city breaks, vineyards, the coast and the mountains, often all in one trip. We help French hotels, châteaux and restaurants stand out in French and international search, and turn interest from Paris to Provence into bookings on your own site.",
+    "focus": [
+      {
+        "title": "Bilingual from the start",
+        "body": "Websites, ads and social content in French and English, written separately rather than machine-translated."
+      },
+      {
+        "title": "Two seasons, one plan",
+        "body": "Ski and summer campaigns for mountain properties; city and wine-country campaigns for the rest of the year."
+      },
+      {
+        "title": "Restaurants as destinations",
+        "body": "Google Maps, Tripadvisor and reservation-focused campaigns for hotel restaurants and independents."
+      }
+    ],
+    "dialCode": "+33",
+    "language": "fr-FR",
+    "source": "https://www.france.fr/en/"
+  },
+  {
+    "name": "Sweden",
+    "slug": "sweden",
+    "region": "europe",
+    "href": "https://sweden.fielmente.com/",
+    "countryHref": "https://sweden.fielmente.com/",
+    "description": "Sweden sells nature, design and two very different seasons: long summer days and northern-lights winters. We help Swedish hotels, lodges and restaurants reach domestic and international guests with content and campaigns built around both.",
+    "focus": [
+      {
+        "title": "Summer and winter, planned separately",
+        "body": "Distinct campaigns for midsummer, archipelago and lake stays, and for snow, ski and aurora trips."
+      },
+      {
+        "title": "Sustainability told clearly",
+        "body": "Content that explains your eco credentials concretely, which many Nordic and German guests look for."
+      },
+      {
+        "title": "Swedish and English",
+        "body": "Search and social in both languages, so you reach domestic guests and international visitors alike."
+      }
+    ],
+    "dialCode": "+46",
+    "language": "sv-SE",
+    "source": "https://visitsweden.com/"
+  },
+  {
+    "name": "Greece",
+    "slug": "greece",
+    "region": "europe",
+    "href": "https://greece.fielmente.com/",
+    "countryHref": "https://greece.fielmente.com/",
+    "description": "Greek island and mainland properties often earn most of their year in a few months. We help hotels, villas and restaurants in Greece lock in early bookings, reduce OTA dependence and stretch the season with campaigns aimed at the travellers most likely to come in spring and autumn.",
+    "focus": [
+      {
+        "title": "Early-booking campaigns",
+        "body": "Winter and spring campaigns that secure direct summer bookings before guests default to an OTA."
+      },
+      {
+        "title": "Longer season",
+        "body": "Shoulder-season offers for walkers, food lovers and couples who prefer quieter islands."
+      },
+      {
+        "title": "Villa and suite storytelling",
+        "body": "Websites and content that sell views, pools and privacy, with booking built in."
+      }
+    ],
+    "dialCode": "+30",
+    "language": "el-GR",
+    "source": "https://www.visitgreece.gr/en"
+  },
+  {
+    "name": "Switzerland",
+    "slug": "switzerland",
+    "region": "europe",
+    "href": "https://switzerland.fielmente.com/",
+    "countryHref": "https://switzerland.fielmente.com/",
+    "description": "Swiss hotels serve guests who expect precision and pay for quality, and who search in German, French, Italian and English. We build multilingual websites and campaigns for premium mountain, lake and city properties, covering both ski and summer seasons.",
+    "focus": [
+      {
+        "title": "Four languages, one brand",
+        "body": "Websites and search campaigns structured for German, French, Italian and English speakers."
+      },
+      {
+        "title": "Premium positioning",
+        "body": "Content, photography direction and ad creative that match the price point your guests expect."
+      },
+      {
+        "title": "Ski and summer",
+        "body": "Separate winter and summer campaigns so mountain properties are not empty between seasons."
+      }
+    ],
+    "dialCode": "+41",
+    "language": "de-CH",
+    "source": "https://www.myswitzerland.com/en-in/"
+  },
+  {
+    "name": "Portugal",
+    "slug": "portugal",
+    "region": "europe",
+    "href": "https://portugal.fielmente.com/",
+    "countryHref": "https://portugal.fielmente.com/",
+    "description": "Portugal pairs city breaks in Lisbon and Porto with coast, wine country and islands that stay mild much of the year. We help Portuguese hotels, quintas and restaurants reach guests across Europe and North America and keep bookings steady outside peak summer.",
+    "focus": [
+      {
+        "title": "Year-round demand",
+        "body": "Winter-sun, golf, surf and wine campaigns that keep rooms filled outside July and August."
+      },
+      {
+        "title": "Quintas and boutique stays",
+        "body": "Websites and content that make small, characterful properties easy to find and book."
+      },
+      {
+        "title": "Direct over OTA",
+        "body": "Brand-search and metasearch campaigns that capture guests who already know your property."
+      }
+    ],
+    "dialCode": "+351",
+    "language": "pt-PT",
+    "source": "https://www.visitportugal.com/en"
+  },
+  {
+    "name": "Netherlands",
+    "slug": "netherlands",
+    "region": "europe",
+    "href": "https://netherlands.fielmente.com/",
+    "countryHref": "https://netherlands.fielmente.com/",
+    "description": "Dutch hotels serve short-break, business and event travellers in a market where OTAs are deeply established. We help hotels and restaurants in the Netherlands grow the share of guests who book direct, through search, metasearch and a website that converts.",
+    "focus": [
+      {
+        "title": "Short breaks, booked direct",
+        "body": "Weekend and city-break campaigns with clear offers that beat the OTA price on your own site."
+      },
+      {
+        "title": "Business and events",
+        "body": "Landing pages and search campaigns for meetings, conferences and group stays."
+      },
+      {
+        "title": "Dutch and English",
+        "body": "Content and ads in both languages for domestic and international guests."
+      }
+    ],
+    "dialCode": "+31",
+    "language": "nl-NL",
+    "source": "https://www.holland.com/global/tourism"
+  },
+  {
+    "name": "Austria",
+    "slug": "austria",
+    "region": "europe",
+    "href": "https://austria.fielmente.com/",
+    "countryHref": "https://austria.fielmente.com/",
+    "description": "Austrian hotels balance ski winters, alpine summers and year-round city and spa demand. We help family-run hotels, chalets and restaurants in Austria reach German-speaking and international guests and turn repeat visitors into direct bookers.",
+    "focus": [
+      {
+        "title": "Winter and summer seasons",
+        "body": "Separate ski, hiking and spa campaigns so the off-season does not undo the peak."
+      },
+      {
+        "title": "Repeat guests, booked direct",
+        "body": "Email and remarketing that bring loyal guests back through your own booking engine."
+      },
+      {
+        "title": "Reviews in German",
+        "body": "Reputation management across HolidayCheck, Google and Booking.com."
+      }
+    ],
+    "dialCode": "+43",
+    "language": "de-AT",
+    "source": "https://www.austria.info/en-us/"
+  },
+  {
+    "name": "Croatia",
+    "slug": "croatia",
+    "region": "europe",
+    "href": "https://croatia.fielmente.com/",
+    "countryHref": "https://croatia.fielmente.com/",
+    "description": "Croatia's coast and islands are booked heavily through OTAs during a concentrated summer. We help hotels, villas and restaurants in Croatia build direct demand early, reach guests from across Europe, and extend the season into spring and autumn.",
+    "focus": [
+      {
+        "title": "Book summer early",
+        "body": "Winter and spring campaigns that convert planning-stage guests before they reach an OTA."
+      },
+      {
+        "title": "Villas and apartments",
+        "body": "Websites and listings that make smaller properties look and book like boutique hotels."
+      },
+      {
+        "title": "Multilingual reach",
+        "body": "Campaigns for German, Austrian, UK and Central European guests in their own language."
+      }
+    ],
+    "dialCode": "+385",
+    "language": "hr-HR",
+    "source": ""
+  },
+  {
+    "name": "United Kingdom",
+    "slug": "uk",
+    "region": "europe",
+    "href": "/hotel-marketing-agency-uk/",
+    "countryHref": "https://uk.fielmente.com/",
+    "description": "From London boutiques to country-house hotels, B&Bs and pubs with rooms, UK hospitality runs on short breaks, weddings and repeat guests. We help independent properties compete with chains in search and win bookings without paying OTA commission on every stay.",
+    "focus": [
+      {
+        "title": "Independents vs chains",
+        "body": "Local SEO and Google Business Profile work so independent hotels show up for nearby searches."
+      },
+      {
+        "title": "Weddings and private events",
+        "body": "Dedicated pages and campaigns for weddings, celebrations and corporate events."
+      },
+      {
+        "title": "Restaurants and pubs",
+        "body": "Table-booking and Google Maps campaigns for food-led hospitality."
+      }
+    ],
+    "dialCode": "+44",
+    "language": "en-GB",
+    "source": "https://www.visitbritain.com/en"
+  },
+  {
+    "name": "Ireland",
+    "slug": "ireland",
+    "region": "europe",
+    "href": "https://ireland.fielmente.com/",
+    "countryHref": "https://ireland.fielmente.com/",
+    "description": "Irish hotels welcome domestic weekenders, UK visitors and North Americans touring the Wild Atlantic Way. We help hotels, castles, guesthouses and restaurants in Ireland reach each of those audiences and convert them on their own website.",
+    "focus": [
+      {
+        "title": "North American visitors",
+        "body": "Search and social campaigns timed to when US and Canadian travellers plan their Ireland trips."
+      },
+      {
+        "title": "Weddings and celebrations",
+        "body": "Venue pages and campaigns for castle, country-house and hotel weddings."
+      },
+      {
+        "title": "Touring routes",
+        "body": "Content that puts your property on the itineraries guests are building."
+      }
+    ],
+    "dialCode": "+353",
+    "language": "en-IE",
+    "source": ""
+  },
+  {
+    "name": "Belgium",
+    "slug": "belgium",
+    "region": "europe",
+    "href": "https://belgium.fielmente.com/",
+    "countryHref": "https://belgium.fielmente.com/",
+    "description": "Belgian hotels serve city-break, business and Ardennes weekend guests across Dutch, French and English. We help hotels and restaurants in Belgium reach each language community and grow direct bookings from all three.",
+    "focus": [
+      {
+        "title": "Dutch, French and English",
+        "body": "Separate campaigns and pages for Flemish, Francophone and international guests."
+      },
+      {
+        "title": "Business and EU travel",
+        "body": "Search campaigns for meetings, conferences and midweek corporate stays."
+      },
+      {
+        "title": "Weekend getaways",
+        "body": "Ardennes, coast and city-break offers aimed at guests from Belgium and neighbouring countries."
+      }
+    ],
+    "dialCode": "+32",
+    "language": "nl-BE",
+    "source": "https://www.visitbelgium.com/"
+  },
+  {
+    "name": "Norway",
+    "slug": "norway",
+    "region": "europe",
+    "href": "https://norway.fielmente.com/",
+    "countryHref": "https://norway.fielmente.com/",
+    "description": "Norway's fjords, mountains and Arctic north draw guests for summer road trips and winter northern-lights stays. We help Norwegian hotels, lodges and restaurants reach international travellers and convert them directly rather than through an OTA.",
+    "focus": [
+      {
+        "title": "Northern lights and midnight sun",
+        "body": "Winter and summer campaigns built around the experiences guests travel for."
+      },
+      {
+        "title": "Road-trip itineraries",
+        "body": "Content that places your property on the fjord and coastal routes guests are planning."
+      },
+      {
+        "title": "Norwegian and English",
+        "body": "Search and social in both languages for domestic and international guests."
+      }
+    ],
+    "dialCode": "+47",
+    "language": "nb-NO",
+    "source": "https://www.visitnorway.com/"
+  },
+  {
+    "name": "Denmark",
+    "slug": "denmark",
+    "region": "europe",
+    "href": "https://denmark.fielmente.com/",
+    "countryHref": "https://denmark.fielmente.com/",
+    "description": "Danish hospitality is known for design, food and coastal summers. We help hotels, inns and restaurants in Denmark reach guests from Germany, Sweden, Norway and beyond, and turn interest in Copenhagen and the coast into direct bookings.",
+    "focus": [
+      {
+        "title": "Food and design stories",
+        "body": "Content and photography direction that put your restaurant and interiors front and centre."
+      },
+      {
+        "title": "Neighbouring markets",
+        "body": "Campaigns for German, Swedish and Norwegian guests in their own language."
+      },
+      {
+        "title": "Coastal summers",
+        "body": "Early-booking campaigns for summer-house, inn and seaside hotel stays."
+      }
+    ],
+    "dialCode": "+45",
+    "language": "da-DK",
+    "source": "https://www.visitdenmark.com/"
+  },
+  {
+    "name": "United Arab Emirates",
+    "slug": "uae",
+    "region": "middle-east",
+    "href": "/hotel-marketing-agency-uae/",
+    "countryHref": "https://uae.fielmente.com/",
+    "description": "Hotels in the UAE compete hard for guests from Europe, India, the GCC and beyond, and rates move with every event and season. From our office in Dubai we help hotels, hotel apartments and restaurants across the Emirates win more direct bookings and stay visible next to the big international chains.",
+    "focus": [
+      {
+        "title": "A team in Dubai",
+        "body": "Our office at Dubai Silicon Oasis means you can meet us, and we know the local market first-hand."
+      },
+      {
+        "title": "Every key source market",
+        "body": "Separate search and social campaigns for guests from Europe, India, Russia and the GCC."
+      },
+      {
+        "title": "Restaurants and brunches",
+        "body": "Google Maps, Instagram and reservation campaigns for hotel restaurants, lounges and brunch venues."
+      }
+    ],
+    "dialCode": "+971",
+    "language": "en-AE",
+    "source": ""
+  },
+  {
+    "name": "Saudi Arabia",
+    "slug": "saudi-arabia",
+    "region": "middle-east",
+    "href": "https://saudi-arabia.fielmente.com/",
+    "countryHref": "https://saudi-arabia.fielmente.com/",
+    "description": "Saudi Arabia is opening new hotels and destinations at a fast pace, with leisure travel growing alongside business and pilgrimage stays. We help hotels and restaurants in the Kingdom launch with demand, rank for the searches their guests make, and build direct bookings from day one.",
+    "focus": [
+      {
+        "title": "Pre-opening marketing",
+        "body": "Launch campaigns, websites and OTA listings ready before your first guest arrives."
+      },
+      {
+        "title": "Pilgrimage, business and leisure",
+        "body": "Separate campaigns for Umrah, business and leisure guests, each with its own timing."
+      },
+      {
+        "title": "Corporate and events",
+        "body": "Landing pages and search campaigns for meetings, conferences and group stays."
+      }
+    ],
+    "dialCode": "+966",
+    "language": "en-SA",
+    "source": ""
+  },
+  {
+    "name": "Qatar",
+    "slug": "qatar",
+    "region": "middle-east",
+    "href": "https://qatar.fielmente.com/",
+    "countryHref": "https://qatar.fielmente.com/",
+    "description": "Qatar's hotels fill up around major events, stopovers and business travel, then compete hard for leisure guests in between. We help hotels and restaurants in Qatar build steady direct demand, from stopover packages to weekend staycations.",
+    "focus": [
+      {
+        "title": "Stopover guests",
+        "body": "Campaigns aimed at travellers connecting through Doha who can stay a night or two."
+      },
+      {
+        "title": "Staycations and weekends",
+        "body": "Offers and social campaigns for residents and GCC weekend visitors."
+      },
+      {
+        "title": "Events and business",
+        "body": "Search campaigns for conferences, exhibitions and corporate stays."
+      }
+    ],
+    "dialCode": "+974",
+    "language": "en-QA",
+    "source": "https://visitqatar.com/"
+  },
+  {
+    "name": "Oman",
+    "slug": "oman",
+    "region": "middle-east",
+    "href": "https://oman.fielmente.com/",
+    "countryHref": "https://oman.fielmente.com/",
+    "description": "Oman draws guests looking for mountains, desert camps and quiet beaches rather than city lights. We help Omani hotels, resorts and desert camps reach European and GCC travellers and turn that interest into direct bookings.",
+    "focus": [
+      {
+        "title": "Nature and adventure stories",
+        "body": "Content and photography direction that sell mountains, wadis and desert stays."
+      },
+      {
+        "title": "Khareef season",
+        "body": "Campaigns for Salalah's monsoon season, aimed at GCC families who plan ahead."
+      },
+      {
+        "title": "European winter sun",
+        "body": "Search campaigns for European travellers looking for warm, quiet winter breaks."
+      }
+    ],
+    "dialCode": "+968",
+    "language": "en-OM",
+    "source": "https://experienceoman.om/"
+  },
+  {
+    "name": "Egypt",
+    "slug": "egypt",
+    "region": "middle-east",
+    "href": "https://egypt.fielmente.com/",
+    "countryHref": "https://egypt.fielmente.com/",
+    "description": "Visitor numbers to Egypt are rising fast, and Red Sea resorts compete with Cairo and Luxor hotels for the same international guests. We help Egyptian hotels, resorts and Nile cruise operators reach European and Gulf travellers and depend less on tour operators and OTAs.",
+    "focus": [
+      {
+        "title": "Red Sea resorts",
+        "body": "Campaigns for diving, beach and all-inclusive stays aimed at European winter-sun travellers."
+      },
+      {
+        "title": "Culture and heritage",
+        "body": "Content for Cairo, Luxor and Aswan stays built around the sites guests travel for."
+      },
+      {
+        "title": "Less reliance on tour operators",
+        "body": "Direct-booking websites and brand-search campaigns so more guests book with you."
+      }
+    ],
+    "dialCode": "+20",
+    "language": "en-EG",
+    "source": ""
+  },
+  {
+    "name": "Morocco",
+    "slug": "morocco",
+    "region": "middle-east",
+    "href": "https://morocco.fielmente.com/",
+    "countryHref": "https://morocco.fielmente.com/",
+    "description": "Riads, desert camps and coastal resorts in Morocco sell an experience guests research carefully before they book. We help Moroccan hotels and riads reach French, Spanish, British and other European travellers and win more bookings on their own websites.",
+    "focus": [
+      {
+        "title": "Riads and boutique stays",
+        "body": "Websites and content that make small, characterful properties easy to find and book."
+      },
+      {
+        "title": "European source markets",
+        "body": "Search and social campaigns for French, Spanish and UK travellers, written for each audience."
+      },
+      {
+        "title": "Desert and mountain experiences",
+        "body": "Packages and content for Sahara camps, Atlas treks and multi-stop tours."
+      }
+    ],
+    "dialCode": "+212",
+    "language": "fr-MA",
+    "source": "https://www.visitmorocco.com/en"
+  },
+  {
+    "name": "Maldives",
+    "slug": "maldives",
+    "region": "asia",
+    "href": "https://maldives.fielmente.com/",
+    "countryHref": "https://maldives.fielmente.com/",
+    "description": "Maldivian resorts sell a once-in-a-lifetime stay to guests who compare dozens of islands before they book, often through OTAs and tour operators. From India, a short flight away, we help resorts and guesthouses build direct demand, sell villas and experiences, and rely less on commission.",
+    "focus": [
+      {
+        "title": "Honeymoons and special occasions",
+        "body": "Campaigns and landing pages for honeymoons, anniversaries and proposals, the stays guests plan furthest ahead."
+      },
+      {
+        "title": "Villas and experiences",
+        "body": "Content and photography direction that sell water villas, diving and dining, not just rooms."
+      },
+      {
+        "title": "Guesthouses on local islands",
+        "body": "Websites and listings that help smaller guesthouses compete with resorts on value."
+      }
+    ],
+    "dialCode": "+960",
+    "language": "en-MV",
+    "source": ""
+  },
+  {
+    "name": "Sri Lanka",
+    "slug": "sri-lanka",
+    "region": "asia",
+    "href": "https://sri-lanka.fielmente.com/",
+    "countryHref": "https://sri-lanka.fielmente.com/",
+    "description": "Sri Lanka packs beaches, hill country, wildlife and culture into one island, and many guests book a different hotel for each stop. We help Sri Lankan hotels, villas and boutique resorts appear on those itineraries, working in the same time zone as our team in India.",
+    "focus": [
+      {
+        "title": "Round-trip itineraries",
+        "body": "Content and campaigns that put your property on the routes guests plan across the island."
+      },
+      {
+        "title": "Wildlife and wellness",
+        "body": "Packages for safaris, Ayurveda and yoga retreats aimed at European and Indian travellers."
+      },
+      {
+        "title": "Same time zone",
+        "body": "Our team works on India time, the same as yours, so calls and changes happen the same day."
+      }
+    ],
+    "dialCode": "+94",
+    "language": "en-LK",
+    "source": "https://www.srilanka.travel/"
+  },
+  {
+    "name": "Nepal",
+    "slug": "nepal",
+    "region": "asia",
+    "href": "https://nepal.fielmente.com/",
+    "countryHref": "https://nepal.fielmente.com/",
+    "description": "Nepal's hotels and lodges host trekkers, pilgrims, adventure travellers and a growing number of Indian visitors. We help Nepali properties reach each of those audiences and convert them directly, with a team just across the border in India.",
+    "focus": [
+      {
+        "title": "Trekking and adventure",
+        "body": "Campaigns timed to the spring and autumn trekking seasons, aimed at international travellers."
+      },
+      {
+        "title": "Indian travellers",
+        "body": "Search and social campaigns for the large Indian market, which our team knows well."
+      },
+      {
+        "title": "Pilgrimage and heritage",
+        "body": "Content for Lumbini, Pashupatinath and Kathmandu Valley stays."
+      }
+    ],
+    "dialCode": "+977",
+    "language": "en-NP",
+    "source": "https://ntb.gov.np/"
+  },
+  {
+    "name": "Bhutan",
+    "slug": "bhutan",
+    "region": "asia",
+    "href": "https://bhutan.fielmente.com/",
+    "countryHref": "https://bhutan.fielmente.com/",
+    "description": "Arrivals to Bhutan grew strongly in 2025, and the country welcomes guests who value culture, nature and quiet. We help Bhutanese hotels, lodges and farmstays present that experience well and win bookings directly and through the tour operators guests rely on.",
+    "focus": [
+      {
+        "title": "High-value, low-volume travel",
+        "body": "Positioning and content that match the premium, unhurried trips Bhutan is known for."
+      },
+      {
+        "title": "Tour operator partners",
+        "body": "Listings and sales material that make it easy for operators to include your property."
+      },
+      {
+        "title": "Indian and international guests",
+        "body": "Separate campaigns for Indian travellers and long-haul visitors."
+      }
+    ],
+    "dialCode": "+975",
+    "language": "en-BT",
+    "source": ""
+  },
+  {
+    "name": "Thailand",
+    "slug": "thailand",
+    "region": "asia",
+    "href": "https://thailand.fielmente.com/",
+    "countryHref": "https://thailand.fielmente.com/",
+    "description": "Thailand is one of the most visited countries in the world, and resorts in Phuket, Samui and Krabi compete with thousands of others for the same guests. We help Thai hotels, resorts and villas stand out in search, sell direct and reach guests from Europe, India, Australia and the rest of Asia.",
+    "focus": [
+      {
+        "title": "Island resorts and villas",
+        "body": "Websites and content that sell pools, views and experiences, with booking built in."
+      },
+      {
+        "title": "Indian and Asian source markets",
+        "body": "Campaigns for the fast-growing Indian, Chinese and Southeast Asian markets."
+      },
+      {
+        "title": "Wellness and retreats",
+        "body": "Packages and landing pages for spa, Muay Thai and wellness stays."
+      }
+    ],
+    "dialCode": "+66",
+    "language": "th-TH",
+    "source": ""
+  },
+  {
+    "name": "Bali",
+    "slug": "bali",
+    "region": "asia",
+    "href": "https://bali.fielmente.com/",
+    "countryHref": "https://bali.fielmente.com/",
+    "description": "Bali has thousands of villas, resorts and boutique hotels competing for the same travellers, many of them on the same OTAs. We help Bali properties build a brand guests search for by name, sell direct and fill rooms outside peak season.",
+    "focus": [
+      {
+        "title": "Private villas",
+        "body": "Websites and listings that sell pools, privacy and design, with booking built in."
+      },
+      {
+        "title": "Wellness and retreats",
+        "body": "Campaigns for yoga, wellness and retreat stays in Ubud and beyond."
+      },
+      {
+        "title": "Australian and Indian guests",
+        "body": "Search and social campaigns for two of Bali's biggest source markets."
+      }
+    ],
+    "dialCode": "+62",
+    "language": "id-ID",
+    "source": "https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/bali"
+  },
+  {
+    "name": "Vietnam",
+    "slug": "vietnam",
+    "region": "asia",
+    "href": "https://vietnam.fielmente.com/",
+    "countryHref": "https://vietnam.fielmente.com/",
+    "description": "Vietnam's coast, cities and mountains draw more international travellers every year, and new resorts are opening fast. We help Vietnamese hotels and resorts reach guests from Korea, Australia, Europe and India and win more bookings on their own websites.",
+    "focus": [
+      {
+        "title": "New resort openings",
+        "body": "Pre-opening campaigns, websites and OTA listings ready before your first guest."
+      },
+      {
+        "title": "Beach and island stays",
+        "body": "Campaigns for Da Nang, Nha Trang and Phu Quoc aimed at short-haul and long-haul guests."
+      },
+      {
+        "title": "Food and culture",
+        "body": "Content for Hanoi, Hoi An and Saigon stays built around food and heritage."
+      }
+    ],
+    "dialCode": "+84",
+    "language": "vi-VN",
+    "source": "https://vietnam.travel/"
+  },
+  {
+    "name": "Malaysia",
+    "slug": "malaysia",
+    "region": "asia",
+    "href": "https://malaysia.fielmente.com/",
+    "countryHref": "https://malaysia.fielmente.com/",
+    "description": "Malaysia's hotels serve city breaks, island holidays and a large domestic market, with guests from Singapore, China, India and the Middle East. We help Malaysian hotels and resorts reach each of them and sell more rooms directly.",
+    "focus": [
+      {
+        "title": "Muslim-friendly travel",
+        "body": "Content and campaigns for Middle Eastern and Muslim travellers looking for halal-friendly stays."
+      },
+      {
+        "title": "Island resorts",
+        "body": "Campaigns for Langkawi, Tioman and Borneo stays."
+      },
+      {
+        "title": "Domestic weekends",
+        "body": "Offers and social campaigns for Malaysian and Singaporean weekend travellers."
+      }
+    ],
+    "dialCode": "+60",
+    "language": "en-MY",
+    "source": ""
+  },
+  {
+    "name": "Singapore",
+    "slug": "singapore",
+    "region": "asia",
+    "href": "https://singapore.fielmente.com/",
+    "countryHref": "https://singapore.fielmente.com/",
+    "description": "Singapore's hotels serve business travellers, stopovers, events and short leisure breaks in one of the most competitive markets in Asia. We help independent hotels, serviced apartments and restaurants compete with global brands and win more direct bookings.",
+    "focus": [
+      {
+        "title": "Business and events",
+        "body": "Search campaigns for corporate stays, conferences and exhibitions."
+      },
+      {
+        "title": "Stopover stays",
+        "body": "Packages and campaigns for travellers connecting through Changi."
+      },
+      {
+        "title": "Restaurants and bars",
+        "body": "Google Maps, Instagram and reservation campaigns for food and drink venues."
+      }
+    ],
+    "dialCode": "+65",
+    "language": "en-SG",
+    "source": "https://www.visitsingapore.com/"
+  },
+  {
+    "name": "Philippines",
+    "slug": "philippines",
+    "region": "asia",
+    "href": "https://philippines.fielmente.com/",
+    "countryHref": "https://philippines.fielmente.com/",
+    "description": "The Philippines' islands, from Palawan to Siargao, draw divers, surfers and beach lovers, while Manila and Cebu serve business and transit guests. We help Filipino hotels and resorts reach Korean, Australian, American and European travellers and convert them directly.",
+    "focus": [
+      {
+        "title": "Island and dive resorts",
+        "body": "Content and campaigns that sell diving, island hopping and beach stays."
+      },
+      {
+        "title": "Regional and long-haul guests",
+        "body": "Campaigns for Korean, Japanese, Australian and US travellers, each with its own timing."
+      },
+      {
+        "title": "Weddings and events",
+        "body": "Landing pages for beach weddings, retreats and group stays."
+      }
+    ],
+    "dialCode": "+63",
+    "language": "en-PH",
+    "source": ""
+  },
+  {
+    "name": "Japan",
+    "slug": "japan",
+    "region": "asia",
+    "href": "https://japan.fielmente.com/",
+    "countryHref": "https://japan.fielmente.com/",
+    "description": "Japan is welcoming more international visitors than ever, and ryokan, boutique hotels and resorts are competing for guests who search in English, Korean, Chinese and more. We help Japanese properties reach those travellers, explain their experience well and win bookings directly as well as through Japanese and global OTAs.",
+    "focus": [
+      {
+        "title": "Ryokan and onsen stays",
+        "body": "Content and photography direction that explain the experience to first-time international guests."
+      },
+      {
+        "title": "International source markets",
+        "body": "Separate campaigns for guests from the US, Australia, Korea, Taiwan and Southeast Asia."
+      },
+      {
+        "title": "Ski season",
+        "body": "Winter campaigns for Hokkaido and Nagano properties."
+      }
+    ],
+    "dialCode": "+81",
+    "language": "ja-JP",
+    "source": ""
+  },
+  {
+    "name": "Mauritius",
+    "slug": "mauritius",
+    "region": "africa",
+    "href": "https://mauritius.fielmente.com/",
+    "countryHref": "https://mauritius.fielmente.com/",
+    "description": "Mauritian resorts sell long, high-value stays to guests from Europe, India and South Africa, often through tour operators. We help hotels, resorts and villas in Mauritius build direct demand and keep more of every booking.",
+    "focus": [
+      {
+        "title": "Honeymoons and weddings",
+        "body": "Landing pages and campaigns for the stays couples plan furthest ahead."
+      },
+      {
+        "title": "European and Indian guests",
+        "body": "Separate campaigns for France, the UK, Germany and India."
+      },
+      {
+        "title": "Packages and villas",
+        "body": "Content that sells all-inclusive packages, villas and experiences, with booking built in."
+      }
+    ],
+    "dialCode": "+230",
+    "language": "en-MU",
+    "source": "https://mauritiusnow.com/"
+  },
+  {
+    "name": "Seychelles",
+    "slug": "seychelles",
+    "region": "africa",
+    "href": "https://seychelles.fielmente.com/",
+    "countryHref": "https://seychelles.fielmente.com/",
+    "description": "Seychelles welcomes a small number of high-value guests to resorts, guesthouses and island lodges spread across its islands, and arrivals grew again in 2025. We help Seychellois properties reach honeymooners, divers and nature lovers and sell more stays directly.",
+    "focus": [
+      {
+        "title": "Honeymoons and special trips",
+        "body": "Campaigns and landing pages for the stays guests plan furthest ahead."
+      },
+      {
+        "title": "Nature and diving",
+        "body": "Content that sells beaches, reefs and nature reserves, not just rooms."
+      },
+      {
+        "title": "Guesthouses and self-catering",
+        "body": "Websites and listings that help smaller properties compete on value."
+      }
+    ],
+    "dialCode": "+248",
+    "language": "en-SC",
+    "source": "https://seychelles.com/"
+  },
+  {
+    "name": "South Africa",
+    "slug": "south-africa",
+    "region": "africa",
+    "href": "https://south-africa.fielmente.com/",
+    "countryHref": "https://south-africa.fielmente.com/",
+    "description": "Visitor numbers to South Africa grew strongly in 2025, and hotels, game lodges, wine-farm stays and guesthouses all compete for the same international and domestic guests. We help South African properties win more direct bookings and rely less on OTAs.",
+    "focus": [
+      {
+        "title": "Safari lodges",
+        "body": "Content and campaigns that sell game drives and lodge experiences to long-haul guests."
+      },
+      {
+        "title": "Winelands and Cape Town",
+        "body": "Campaigns for wine, food and city stays."
+      },
+      {
+        "title": "Domestic travellers",
+        "body": "Offers and social campaigns for South African weekenders and holidaymakers."
+      }
+    ],
+    "dialCode": "+27",
+    "language": "en-ZA",
+    "source": "https://www.southafrica.net/gl/en"
+  },
+  {
+    "name": "Kenya",
+    "slug": "kenya",
+    "region": "africa",
+    "href": "https://kenya.fielmente.com/",
+    "countryHref": "https://kenya.fielmente.com/",
+    "description": "Kenya's safari camps and beach resorts depend on long-haul guests who plan carefully and often book through operators. We help Kenyan lodges, camps and hotels reach those travellers directly and keep their calendars full outside migration season.",
+    "focus": [
+      {
+        "title": "Migration season and beyond",
+        "body": "Campaigns that fill the months either side of the Great Migration."
+      },
+      {
+        "title": "Operator and direct sales",
+        "body": "Sales material for operators plus direct-booking campaigns for independent travellers."
+      },
+      {
+        "title": "Beach extensions",
+        "body": "Campaigns for Diani and Lamu stays added to the end of a safari."
+      }
+    ],
+    "dialCode": "+254",
+    "language": "en-KE",
+    "source": ""
+  },
+  {
+    "name": "Tanzania",
+    "slug": "tanzania",
+    "region": "africa",
+    "href": "https://tanzania.fielmente.com/",
+    "countryHref": "https://tanzania.fielmente.com/",
+    "description": "Tanzania combines the Serengeti, Kilimanjaro and Zanzibar, and guests often book each part of their trip separately. We help Tanzanian lodges, camps and Zanzibar resorts reach those guests early and win more of their bookings directly.",
+    "focus": [
+      {
+        "title": "Safari and beach combinations",
+        "body": "Campaigns and packages that pair a safari with a Zanzibar stay."
+      },
+      {
+        "title": "Kilimanjaro climbers",
+        "body": "Campaigns for pre- and post-climb stays in Moshi and Arusha."
+      },
+      {
+        "title": "Operator partners",
+        "body": "Listings and sales material that make it easy for operators to include your property."
+      }
+    ],
+    "dialCode": "+255",
+    "language": "en-TZ",
+    "source": ""
+  },
+  {
+    "name": "Canada",
+    "slug": "canada",
+    "region": "americas",
+    "href": "https://canada.fielmente.com/",
+    "countryHref": "https://canada.fielmente.com/",
+    "description": "Canadian hotels and lodges serve road-trippers, skiers, city breakers and US visitors across very different seasons. We help independent hotels, inns and lodges in Canada compete with chains in search and win more bookings directly.",
+    "focus": [
+      {
+        "title": "Ski and summer seasons",
+        "body": "Separate winter and summer campaigns so mountain properties stay busy all year."
+      },
+      {
+        "title": "US and domestic travellers",
+        "body": "Campaigns for American visitors and Canadians travelling at home."
+      },
+      {
+        "title": "Independent inns and lodges",
+        "body": "Local SEO and Google Business Profile work so you appear in nearby searches."
+      }
+    ],
+    "dialCode": "+1",
+    "language": "en-CA",
+    "source": ""
+  },
+  {
+    "name": "Mexico",
+    "slug": "mexico",
+    "region": "americas",
+    "href": "https://mexico.fielmente.com/",
+    "countryHref": "https://mexico.fielmente.com/",
+    "description": "Mexico's beach resorts and boutique hotels compete for American, Canadian and European guests, while cities and colonial towns draw culture lovers. We help Mexican hotels and resorts sell more rooms directly and rely less on OTAs.",
+    "focus": [
+      {
+        "title": "US and Canadian guests",
+        "body": "Campaigns timed to the North American winter, when most guests plan their trip."
+      },
+      {
+        "title": "Weddings and events",
+        "body": "Landing pages for destination weddings, retreats and group stays."
+      },
+      {
+        "title": "Boutique and cultural stays",
+        "body": "Content for colonial towns and city hotels built around food and culture."
+      }
+    ],
+    "dialCode": "+52",
+    "language": "es-MX",
+    "source": ""
+  },
+  {
+    "name": "Jamaica",
+    "slug": "jamaica",
+    "region": "americas",
+    "href": "https://jamaica.fielmente.com/",
+    "countryHref": "https://jamaica.fielmente.com/",
+    "description": "Jamaica's resorts, villas and boutique hotels compete for guests from the US, Canada and the UK. We help Jamaican properties build direct demand, sell weddings and experiences, and rely less on tour operators.",
+    "focus": [
+      {
+        "title": "Destination weddings",
+        "body": "Landing pages and campaigns for weddings, honeymoons and group celebrations."
+      },
+      {
+        "title": "North American winter",
+        "body": "Campaigns timed to when US and Canadian travellers plan their winter escape."
+      },
+      {
+        "title": "Villas and boutique stays",
+        "body": "Websites that make smaller properties look and book like the big resorts."
+      }
+    ],
+    "dialCode": "+1",
+    "language": "en-JM",
+    "source": ""
+  },
+  {
+    "name": "Bahamas",
+    "slug": "bahamas",
+    "region": "americas",
+    "href": "https://bahamas.fielmente.com/",
+    "countryHref": "https://bahamas.fielmente.com/",
+    "description": "The Bahamas draws US visitors within a short flight, plus boating, diving and fishing travellers. We help Bahamian resorts, boutique hotels and island lodges reach those guests and win more bookings on their own websites.",
+    "focus": [
+      {
+        "title": "Short-haul US visitors",
+        "body": "Campaigns for long weekends and short breaks from Florida and the East Coast."
+      },
+      {
+        "title": "Boating, diving and fishing",
+        "body": "Content and campaigns for the activities that bring guests to the out islands."
+      },
+      {
+        "title": "Out-island lodges",
+        "body": "Websites and content that make small island properties easy to find and book."
+      }
+    ],
+    "dialCode": "+1",
+    "language": "en-BS",
+    "source": ""
+  },
+  {
+    "name": "Barbados",
+    "slug": "barbados",
+    "region": "americas",
+    "href": "https://barbados.fielmente.com/",
+    "countryHref": "https://barbados.fielmente.com/",
+    "description": "Barbados welcomes many repeat guests from the UK, US and Canada, who often return to the same hotel or villa year after year. We help Barbadian properties keep those guests booking direct and reach new ones.",
+    "focus": [
+      {
+        "title": "UK winter sun",
+        "body": "Campaigns timed to when British travellers plan their winter escape."
+      },
+      {
+        "title": "Repeat guests",
+        "body": "Email and remarketing that bring loyal guests back through your own booking engine."
+      },
+      {
+        "title": "Restaurants and beach clubs",
+        "body": "Google Maps, Instagram and reservation campaigns for food-led venues."
+      }
+    ],
+    "dialCode": "+1",
+    "language": "en-BB",
+    "source": ""
+  },
+  {
+    "name": "Dominican Republic",
+    "slug": "dominican-republic",
+    "region": "americas",
+    "href": "https://dominican-republic.fielmente.com/",
+    "countryHref": "https://dominican-republic.fielmente.com/",
+    "description": "The Dominican Republic is one of the Caribbean's busiest destinations, led by large all-inclusive resorts in Punta Cana. We help independent hotels, boutique resorts and villas stand out against the big chains and win bookings directly.",
+    "focus": [
+      {
+        "title": "Independents vs all-inclusives",
+        "body": "Positioning and content that give guests a reason to choose a smaller property."
+      },
+      {
+        "title": "North American and European guests",
+        "body": "Separate campaigns for US, Canadian and European travellers."
+      },
+      {
+        "title": "Weddings and groups",
+        "body": "Landing pages for destination weddings, retreats and group stays."
+      }
+    ],
+    "dialCode": "+1",
+    "language": "es-DO",
+    "source": ""
+  },
+  {
+    "name": "Brazil",
+    "slug": "brazil",
+    "region": "americas",
+    "href": "https://brazil.fielmente.com/",
+    "countryHref": "https://brazil.fielmente.com/",
+    "description": "International arrivals to Brazil grew strongly in 2025, and pousadas, resorts and city hotels are competing for those guests as well as Brazil's large domestic market. We help Brazilian properties win more direct bookings from both.",
+    "focus": [
+      {
+        "title": "Pousadas and boutique stays",
+        "body": "Websites and content that make small, characterful properties easy to find and book."
+      },
+      {
+        "title": "International growth",
+        "body": "Campaigns for travellers from Argentina, the US and Europe."
+      },
+      {
+        "title": "Domestic travellers",
+        "body": "Offers and social campaigns for Brazil's large domestic market."
+      }
+    ],
+    "dialCode": "+55",
+    "language": "pt-BR",
+    "source": ""
+  },
+  {
+    "name": "Australia",
+    "slug": "australia",
+    "region": "oceania",
+    "href": "https://australia.fielmente.com/",
+    "countryHref": "https://australia.fielmente.com/",
+    "description": "Australian hotels, motels and resorts rely on domestic road trips and short breaks as much as international visitors, and OTA commission eats into thin margins. We help Australian properties, cafés and restaurants win more direct bookings, and already work with hospitality clients in Sydney.",
+    "focus": [
+      {
+        "title": "Domestic short breaks",
+        "body": "Weekend and school-holiday campaigns for Australians travelling at home."
+      },
+      {
+        "title": "Cafés and restaurants",
+        "body": "Local SEO, Google Maps and Instagram campaigns, as we run for a café client in Sydney."
+      },
+      {
+        "title": "Motels and regional stays",
+        "body": "Google Business Profile and local search work so regional properties show up nearby."
+      }
+    ],
+    "dialCode": "+61",
+    "language": "en-AU",
+    "source": "https://www.australia.com/en"
+  },
+  {
+    "name": "New Zealand",
+    "slug": "new-zealand",
+    "region": "oceania",
+    "href": "https://new-zealand.fielmente.com/",
+    "countryHref": "https://new-zealand.fielmente.com/",
+    "description": "New Zealand's lodges, motels and boutique hotels serve road-trippers, adventure travellers and Australians on short breaks. We help Kiwi properties reach those guests and win more bookings on their own websites.",
+    "focus": [
+      {
+        "title": "Road-trip itineraries",
+        "body": "Content that puts your property on the routes guests plan across both islands."
+      },
+      {
+        "title": "Adventure and ski seasons",
+        "body": "Separate campaigns for summer adventure and winter ski stays."
+      },
+      {
+        "title": "Australian visitors",
+        "body": "Campaigns for Australians on long weekends and short breaks."
+      }
+    ],
+    "dialCode": "+64",
+    "language": "en-NZ",
+    "source": ""
+  },
+  {
+    "name": "Iceland",
+    "slug": "iceland",
+    "region": "europe",
+    "href": "https://iceland.fielmente.com/",
+    "countryHref": "https://iceland.fielmente.com/",
+    "description": "Visitor numbers to Iceland grew sharply in 2025, and hotels, guesthouses and cabins around the Ring Road compete for travellers who plan every night in advance. We help Icelandic properties appear on those itineraries and win more bookings directly.",
+    "focus": [
+      {
+        "title": "Ring Road itineraries",
+        "body": "Content and campaigns that put your property on the routes guests plan around the island."
+      },
+      {
+        "title": "Northern lights winters",
+        "body": "Winter campaigns built around aurora, ice caves and hot springs."
+      },
+      {
+        "title": "Guesthouses and cabins",
+        "body": "Websites and listings that help smaller properties compete with hotels."
+      }
+    ],
+    "dialCode": "+354",
+    "language": "is-IS",
+    "source": "https://www.visiticeland.com/"
+  },
+  {
+    "name": "Türkiye",
+    "slug": "turkiye",
+    "region": "europe",
+    "href": "https://turkiye.fielmente.com/",
+    "countryHref": "https://turkiye.fielmente.com/",
+    "description": "Türkiye's coastal resorts, Istanbul hotels and Cappadocia cave hotels compete for guests from Europe, the Gulf and beyond. We help Turkish hotels win more direct bookings and rely less on tour operators and OTAs.",
+    "focus": [
+      {
+        "title": "Cave hotels and boutique stays",
+        "body": "Content and photography direction that sell Cappadocia, Istanbul and coastal boutique stays."
+      },
+      {
+        "title": "Resort season",
+        "body": "Early-booking campaigns for the summer season on the Aegean and Mediterranean coasts."
+      },
+      {
+        "title": "European and Gulf guests",
+        "body": "Separate campaigns for German, British, Gulf and other key source markets."
+      }
+    ],
+    "dialCode": "+90",
+    "language": "tr-TR",
+    "source": ""
+  }
+]

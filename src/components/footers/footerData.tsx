@@ -81,6 +81,12 @@ export const footerData: FooterLinksPropstype = {
           href: "/hospitality-marketing-locations/",
         },
         {
+          label: "USA Service Locations",
+          href: "/hotel-marketing-agency-usa/locations/",
+        },
+        { label: "International Service Locations", href: "/international-hotel-marketing-agency/locations/" },
+        { label: "International Experience", href: "/international-hospitality-marketing-experience/" },
+        {
           label: "Our Work",
           href: "/our-work/",
         },

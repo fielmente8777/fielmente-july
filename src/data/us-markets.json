@@ -1,0 +1,2708 @@
+[
+  {
+    "name": "Alabama",
+    "slug": "alabama",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Hotel and restaurant marketing across Alabama, from Birmingham business stays to Gulf Coast breaks. Explore local SEO, paid campaigns and direct booking plans.",
+    "intro": "An urban hotel in Birmingham and a beach property in Gulf Shores need different reasons for guests to choose them. We help Alabama hospitality teams connect search, property content and enquiry follow-up to the stay they actually sell.",
+    "context": "Birmingham and Huntsville provide a different planning context from Mobile, Montgomery and the Gulf Coast. Start with the property’s location, nearby institutions and real booking patterns. A statewide ad campaign should not send all those guests to one generic room offer.",
+    "restaurant": "For restaurants, make the menu, parking, opening hours and reservation route easy to find. Measure local dining enquiries separately from a hotel’s room bookings.",
+    "actions": [
+      {
+        "title": "City stays",
+        "body": "Build useful pages around actual business, university or event visits. Show transport and parking details, then measure room enquiries by purpose of stay."
+      },
+      {
+        "title": "Coastal breaks",
+        "body": "Use Gulf Coast imagery and verified beach access information for coastal properties. Coordinate paid campaigns with available dates rather than advertising every weekend."
+      },
+      {
+        "title": "Group enquiries",
+        "body": "Give wedding and reunion planners capacities, room options and a clear response process. Track qualified group requests separately from single-room leads."
+      }
+    ],
+    "faq": {
+      "question": "Should one campaign cover both Birmingham and the Alabama coast?",
+      "answer": "Usually those guests need different offers and landing pages. We would separate the audiences when the property portfolio serves both areas, then compare booking value and acquisition cost instead of combining all enquiries."
+    },
+    "source": {
+      "label": "Alabama official visitor guide",
+      "url": "https://alabama.travel/"
+    }
+  },
+  {
+    "name": "Alaska",
+    "slug": "alaska",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Alaska hotel and lodge marketing for Anchorage, Juneau and outdoor travel. Build clearer seasonal offers, useful search content and direct enquiries.",
+    "intro": "An Alaska stay often needs more explanation than a room photograph. We help hotels and lodges turn interest in the journey into clear information about access, stay length, inclusions and the next step toward a booking.",
+    "context": "Anchorage, Juneau, Fairbanks and remote lodges serve different itineraries. Flight connections, road travel, cruise extensions and outdoor activities can change what a guest needs to know. Publish property-specific arrival guidance and confirm seasonal operations before promoting a package.",
+    "restaurant": "Hotel restaurants can serve overnight guests and local diners. Give each audience practical information about service times, reservations and the dining experience, without implying every venue operates year-round.",
+    "actions": [
+      {
+        "title": "Seasonal planning",
+        "body": "Map the lodge’s actual operating dates and booking lead times. Publish availability-led offers early enough for guests arranging flights and a wider Alaska itinerary."
+      },
+      {
+        "title": "Arrival clarity",
+        "body": "Explain the final transfer, luggage arrangements and check-in process. Reduce avoidable enquiries by placing those answers close to the booking button."
+      },
+      {
+        "title": "Longer journeys",
+        "body": "Create useful pre- or post-cruise and multi-night content where the property can deliver it. Record the itinerary context with each enquiry."
+      }
+    ],
+    "faq": {
+      "question": "How do you market an Alaska lodge with a short operating season?",
+      "answer": "We build the campaign calendar around its confirmed opening dates, inventory and guest planning window. Advance enquiries, deposits and confirmed stays matter more than keeping advertising spend constant through months when the property is closed."
+    },
+    "source": {
+      "label": "Alaska official visitor guide",
+      "url": "https://www.travelalaska.com/"
+    }
+  },
+  {
+    "name": "Arizona",
+    "slug": "arizona",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Arizona hotel and resort marketing for Phoenix, Scottsdale and destination stays. Connect seasonal offers, local search and paid campaigns to direct enquiries.",
+    "intro": "Arizona hospitality includes city hotels, desert resorts and road-trip stays. We help each property communicate its setting, guest experience and booking options while keeping campaign spend tied to the dates and audiences it needs.",
+    "context": "Phoenix and Scottsdale require different messaging from Sedona, Flagstaff and a northern Arizona road trip. A resort may need retreat or golf enquiries; a touring guest needs an accurate base for the next journey. Treat that distinction as a campaign choice, not a list of keywords.",
+    "restaurant": "For dining venues, combine menu and reservation information with the actual neighborhood. Outdoor dining images and seasonal service details should match what a guest can book.",
+    "actions": [
+      {
+        "title": "Resort demand",
+        "body": "Describe room categories, pools, spa or golf access only where provided. Use separate enquiry paths for leisure stays, retreats and private events."
+      },
+      {
+        "title": "Seasonal value",
+        "body": "Use the property’s pace and pricing to plan warm-weather offers. Explain inclusions and conditions clearly instead of training every audience to wait for a discount."
+      },
+      {
+        "title": "Touring guests",
+        "body": "For properties serving northern Arizona routes, show realistic journey information and stay-length options. Link useful destination content to bookable room choices."
+      }
+    ],
+    "faq": {
+      "question": "Should an Arizona resort use the same offer throughout the year?",
+      "answer": "The offer should follow the property’s real demand, facilities and available inventory. We would test distinct seasonal messages and judge them by qualified enquiries and net booking value, with the revenue team approving prices and restrictions."
+    },
+    "source": {
+      "label": "Arizona official visitor guide",
+      "url": "https://www.visitarizona.com/"
+    }
+  },
+  {
+    "name": "Arkansas",
+    "slug": "arkansas",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Arkansas hotel, resort and restaurant marketing for Hot Springs, Little Rock and Ozark stays. Develop local content, paid campaigns and direct booking journeys.",
+    "intro": "A city visit, a lake break and an Ozark escape lead to different booking questions. We help Arkansas hospitality businesses explain their location and experience, then connect that information to a practical enquiry or reservation process.",
+    "context": "Little Rock, Bentonville, Hot Springs and the Ozarks offer distinct bases for travel. Your plan should reflect the property’s actual relationship to cultural attractions, trails or business districts. Useful arrival and activity information helps guests decide whether the stay fits their trip.",
+    "restaurant": "Independent restaurants can build demand around the food, setting and occasions they serve. Keep current menus and booking links visible, with separate enquiries for private dining.",
+    "actions": [
+      {
+        "title": "Outdoor stays",
+        "body": "Show the property’s real access to trails, lakes or equipment storage. Build itineraries that answer guest questions without promising guided activities you do not provide."
+      },
+      {
+        "title": "City visits",
+        "body": "Use location pages for the business or cultural districts the hotel genuinely serves. Give accurate parking and travel information alongside room choices."
+      },
+      {
+        "title": "Short breaks",
+        "body": "Package two- or three-night ideas around the property’s facilities and available dates. Track whether enquiries become confirmed stays rather than counting all form fills."
+      }
+    ],
+    "faq": {
+      "question": "How can a small Arkansas property compete with larger hotel brands?",
+      "answer": "Start with specific reasons to stay: its location, room experience, food and useful local knowledge. A focused website, accurate search listings and campaigns for relevant travel purposes can make that difference clearer without claiming to outspend national brands."
+    },
+    "source": {
+      "label": "Arkansas official visitor guide",
+      "url": "https://www.arkansas.com/"
+    }
+  },
+  {
+    "name": "California",
+    "slug": "california",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Hotel and restaurant marketing across California. Plan distinct campaigns for Los Angeles, San Francisco, San Diego, Palm Springs and destination properties.",
+    "intro": "California is several hospitality markets in one state. We help hotels, resorts and restaurants focus on the guest journeys they can serve, with campaigns and content tailored to the property rather than a single statewide promise.",
+    "context": "Los Angeles, San Francisco, San Diego and Palm Springs attract different travel purposes, while wine country and coastal properties bring another set of decisions. Start with the hotel’s exact setting, stay patterns and profitable room types before deciding where to advertise.",
+    "restaurant": "A California restaurant needs clear cuisine, neighborhood, menu and reservation information. Paid social can introduce the experience; local search and a short booking path help turn that interest into covers.",
+    "actions": [
+      {
+        "title": "Separate markets",
+        "body": "Give each property its own location story and conversion tracking. Keep a portfolio view of performance while avoiding identical offers across very different destinations."
+      },
+      {
+        "title": "Direct booking detail",
+        "body": "Make parking, mandatory charges, cancellation terms and inclusions easy to understand. Connect campaigns to a booking engine that reflects the approved offer."
+      },
+      {
+        "title": "Experience content",
+        "body": "Use original property photography and useful neighborhood guidance. Build content around a guest decision, then link it to relevant rooms, dining or event enquiries."
+      }
+    ],
+    "faq": {
+      "question": "Does a California hotel group need separate city campaigns?",
+      "answer": "Often it does, because the travel purpose, competitive set and room economics differ. We would organize campaigns by property and useful audience segments, then consolidate reporting so the group can compare performance without losing local context."
+    },
+    "source": {
+      "label": "California official visitor guide",
+      "url": "https://www.visitcalifornia.com/"
+    }
+  },
+  {
+    "name": "Colorado",
+    "slug": "colorado",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Colorado hotel and resort marketing for Denver, Colorado Springs and mountain stays. Build seasonal campaigns, useful arrival content and direct booking demand.",
+    "intro": "A Denver business stay and a mountain retreat need different campaigns. We help Colorado hotels and resorts show the practical details behind the experience and connect seasonal demand to the room dates and enquiries they want.",
+    "context": "Denver and Colorado Springs provide city bases, while mountain towns bring different access, activity and seasonality questions. The right plan depends on the property’s location and operating model. Do not imply ski access or easy transfers when the guest must arrange a longer journey.",
+    "restaurant": "For restaurants and resort dining, keep seasonal menus, reservations and private-event options current. Separate local diners from guests researching a wider Colorado trip.",
+    "actions": [
+      {
+        "title": "Mountain seasons",
+        "body": "Prepare content for the activities the property genuinely supports. Use real opening dates and available inventory to plan winter and warmer-season campaigns."
+      },
+      {
+        "title": "City demand",
+        "body": "Connect meeting, campus or neighborhood content to accurate location information. Measure corporate and group enquiries separately from short leisure breaks."
+      },
+      {
+        "title": "Arrival confidence",
+        "body": "Explain parking, transfers and check-in arrangements. Link to current official travel guidance when conditions affect the route rather than making fixed weather promises."
+      }
+    ],
+    "faq": {
+      "question": "How do you market both winter and summer stays in Colorado?",
+      "answer": "We would use separate content and offers based on the property’s actual facilities and demand calendar. The same room can answer different guest needs in each season, so campaign messages and booking measurements should reflect that difference."
+    },
+    "source": {
+      "label": "Colorado official visitor guide",
+      "url": "https://www.colorado.com/"
+    }
+  },
+  {
+    "name": "Connecticut",
+    "slug": "connecticut",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "Connecticut hospitality marketing for city hotels, coastal stays and independent restaurants. Improve local discovery, event enquiries and direct booking journeys.",
+    "intro": "Connecticut properties can serve business visits, coastal breaks and special occasions within a compact travel region. We help hotels and restaurants explain the reason to choose them and turn relevant search traffic into useful enquiries.",
+    "context": "Hartford, New Haven, Mystic and the shoreline need distinct property stories. A campus visitor may value walkability, while a coastal guest compares the setting and a couple planning a celebration needs event details. Let the guest purpose determine the page and call to action.",
+    "restaurant": "Restaurant discovery should show cuisine, menus and booking options before asking for contact details. Private dining and celebrations deserve their own capacity and enquiry information.",
+    "actions": [
+      {
+        "title": "Campus and business",
+        "body": "Create helpful content for institutions and business areas the hotel actually serves. Use verified distances and practical arrival details rather than a broad claim of being near everything."
+      },
+      {
+        "title": "Coastal weekends",
+        "body": "Explain the stay experience and nearby itinerary with current images. Match promotions to the dates and minimum-stay rules approved by the property."
+      },
+      {
+        "title": "Celebration leads",
+        "body": "Publish room, dining and venue information for small events. Capture date, party size and requirements so the team can respond with a useful proposal."
+      }
+    ],
+    "faq": {
+      "question": "Can one Connecticut website serve business stays and coastal leisure?",
+      "answer": "Yes, if it gives those guests clear routes to relevant information. We would separate room and offer content by genuine guest need, keep the property’s location precise and track each enquiry type instead of judging the whole site on one conversion total."
+    },
+    "source": {
+      "label": "Connecticut official visitor guide",
+      "url": "https://ctvisit.com/"
+    }
+  },
+  {
+    "name": "Delaware",
+    "slug": "delaware",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Delaware hotel and restaurant marketing for Wilmington, Dover and beach destinations. Connect local search, seasonal offers and qualified direct enquiries.",
+    "intro": "A Wilmington business visit and a Delaware beach break begin with different questions. We help hospitality teams present the relevant location, room and dining information, then build campaigns around the demand their property can serve.",
+    "context": "Wilmington, Dover, Rehoboth Beach and Bethany Beach are not interchangeable campaign targets. Guests compare access, parking, proximity and the purpose of the stay. A focused landing page should explain those details rather than repeating the state name around generic hotel copy.",
+    "restaurant": "For beach and city restaurants, make current menus, service hours and reservation rules clear. Track group dining separately when it needs a different response or deposit process.",
+    "actions": [
+      {
+        "title": "Beach inventory",
+        "body": "Align offers with real room availability and booking restrictions. Show parking, beach access and family room information accurately before sending paid traffic."
+      },
+      {
+        "title": "Weekday stays",
+        "body": "For business-oriented properties, describe the work-trip essentials and actual nearby districts. Give corporate enquiries a clear route to the sales team."
+      },
+      {
+        "title": "Event dates",
+        "body": "Use verified event calendars to plan content and campaigns. Check whether demand needs extra promotion before increasing spend around a busy date."
+      }
+    ],
+    "faq": {
+      "question": "Should a Delaware beach hotel advertise throughout its peak dates?",
+      "answer": "Advertising should follow the hotel’s remaining inventory and booking economics. If peak dates already fill well, the more useful task may be protecting direct bookings and building demand for adjacent dates rather than buying additional low-value traffic."
+    },
+    "source": {
+      "label": "Delaware official visitor guide",
+      "url": "https://www.visitdelaware.com/"
+    }
+  },
+  {
+    "name": "Florida",
+    "slug": "florida",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Florida hotel and resort marketing for Miami, Orlando, Fort Lauderdale and Tampa. Build destination-specific SEO, paid campaigns and direct booking journeys.",
+    "intro": "Florida combines theme-park trips, beach stays, city visits and group travel. We help hotels, resorts and restaurants turn that variety into focused offers and enquiry paths, with a clear reason for each audience to choose the property.",
+    "context": "Orlando family travel, Miami city and beach stays, Fort Lauderdale trips and Tampa visits require different content. A guest may compare transport, room capacity, parking or trip extensions. The plan starts with what the property can actually provide and which dates need demand.",
+    "restaurant": "For restaurants, separate neighborhood diners, hotel guests and private groups. Menus, table reservations and event enquiries should be easy to find on a phone.",
+    "actions": [
+      {
+        "title": "Audience journeys",
+        "body": "Give family, couple, business and group audiences relevant room and offer information. Avoid sending each campaign to the same broad destination page."
+      },
+      {
+        "title": "Booking clarity",
+        "body": "Explain total price, inclusions, parking and cancellation terms alongside the offer. Track booking-engine completion where the platform permits reliable measurement."
+      },
+      {
+        "title": "Market timing",
+        "body": "Use the property’s pace and official local calendars to choose campaign dates. Promote soft periods and suitable stay extensions without claiming an event partnership."
+      }
+    ],
+    "faq": {
+      "question": "Should Miami and Orlando share one Florida marketing campaign?",
+      "answer": "They can share reporting and brand standards, but the guest journey should remain specific. We would normally separate location offers, audience intent and landing pages, then compare qualified enquiries and confirmed booking value across the portfolio."
+    },
+    "source": {
+      "label": "Florida official visitor guide",
+      "url": "https://www.visitflorida.com/"
+    }
+  },
+  {
+    "name": "Georgia",
+    "slug": "georgia",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Georgia hotel and restaurant marketing for Atlanta, Savannah and destination stays. Connect business trips, cultural breaks and events to qualified enquiries.",
+    "intro": "Georgia hospitality can serve a business trip in Atlanta, a Savannah escape or a mountain weekend. We help each property explain its setting and build a direct enquiry journey around the guests and occasions it wants.",
+    "context": "Atlanta and Savannah need distinct positioning, while North Georgia resorts may focus on retreats, weddings or outdoor breaks. Choose the market by property fit and booking evidence. A broad campaign reaching the entire state can hide which audience is producing worthwhile business.",
+    "restaurant": "Restaurants can highlight their food and neighborhood with current menus, original photography and a short reservation path. Event dining should capture date and group requirements separately.",
+    "actions": [
+      {
+        "title": "City hotel demand",
+        "body": "Develop content around relevant districts, venues and stay purposes. Use approved offers for business or leisure guests and connect them to trackable room enquiries."
+      },
+      {
+        "title": "Destination storytelling",
+        "body": "For Savannah and retreat properties, show the experience and practical arrival details. Link useful local content to room, dining and event options."
+      },
+      {
+        "title": "Group follow-up",
+        "body": "Give wedding and retreat prospects clear capacity and accommodation information. Assign enquiries promptly and measure proposals and confirmed groups, not only lead volume."
+      }
+    ],
+    "faq": {
+      "question": "How do you choose between business and leisure campaigns in Georgia?",
+      "answer": "We start with the property’s existing booking mix, profitable segments and soft dates. Atlanta business demand and a Savannah leisure itinerary may need different approaches, so the choice follows the property’s evidence rather than a statewide assumption."
+    },
+    "source": {
+      "label": "Georgia official visitor guide",
+      "url": "https://exploregeorgia.org/"
+    }
+  },
+  {
+    "name": "Hawaii",
+    "slug": "hawaii",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Hawaii hotel and resort marketing with island-specific content, clear stay information and direct booking campaigns for Honolulu and other island destinations.",
+    "intro": "A Hawaii booking depends on the island, the setting and the experience a guest expects. We help hotels and resorts explain those differences, present a clear offer and connect relevant trip research to direct enquiries.",
+    "context": "Oahu, Maui, Kauai and the Island of Hawaii should not be treated as one interchangeable destination. Arrival arrangements, island travel and property facilities matter to the decision. Describe the exact location and approved guest experience, with current guidance from official destination resources.",
+    "restaurant": "For dining venues, show the cuisine, setting, reservation policy and availability. Keep local dining campaigns distinct from offers aimed at guests planning an island stay.",
+    "actions": [
+      {
+        "title": "Island positioning",
+        "body": "Make the property’s island and neighborhood obvious. Explain arrival and local transport arrangements without suggesting that attractions on another island are nearby."
+      },
+      {
+        "title": "Stay value",
+        "body": "Describe room options, inclusions and mandatory charges clearly. Build packages only around experiences and services the property has confirmed it can deliver."
+      },
+      {
+        "title": "Respectful content",
+        "body": "Use accurate local names and property-approved photography. Help guests prepare for the visit through official guidance rather than promoting unsupported access or activities."
+      }
+    ],
+    "faq": {
+      "question": "Should a Hawaii hotel campaign target the whole island group?",
+      "answer": "The landing experience should be specific to the property’s island and location. A hotel group can coordinate media and reporting across islands, while keeping availability, travel information and guest expectations accurate for each individual stay."
+    },
+    "source": {
+      "label": "Hawaii official visitor guide",
+      "url": "https://www.gohawaii.com/"
+    }
+  },
+  {
+    "name": "Idaho",
+    "slug": "idaho",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Idaho hotel and lodge marketing for Boise, Coeur d’Alene and mountain destinations. Build useful seasonal content, direct booking offers and qualified enquiries.",
+    "intro": "An Idaho city stay, lakeside break and mountain trip each need a clear reason to book. We help hotels and lodges connect their actual setting and facilities to useful search content and focused campaigns.",
+    "context": "Boise, Coeur d’Alene, Sun Valley and eastern Idaho provide different travel bases. Confirm the property’s relationship to the activity or district before building an offer. Guests need accurate access, parking and seasonal information more than a long list of nearby place names.",
+    "restaurant": "Restaurants can connect local search and original food content to menus, table bookings and private dining. Keep event requests separate from everyday dining conversions.",
+    "actions": [
+      {
+        "title": "Outdoor itineraries",
+        "body": "Publish realistic stay ideas around the property’s location and facilities. Explain equipment storage, arrival and activity arrangements when those services are available."
+      },
+      {
+        "title": "Boise visits",
+        "body": "For city hotels, make business, campus and neighborhood information useful. Measure corporate enquiries and leisure bookings as separate outcomes."
+      },
+      {
+        "title": "Seasonal offers",
+        "body": "Plan paid campaigns with the property’s actual operating calendar and inventory. Use shoulder-period value propositions that preserve the reason to choose the stay."
+      }
+    ],
+    "faq": {
+      "question": "How can an Idaho lodge improve direct enquiries outside its busiest season?",
+      "answer": "We would identify experiences it can reliably provide in those dates, then build specific room and itinerary content around them. Campaigns should follow available inventory and track enquiry quality, deposits and stays instead of relying on broad destination traffic."
+    },
+    "source": {
+      "label": "Idaho official visitor guide",
+      "url": "https://visitidaho.org/"
+    }
+  },
+  {
+    "name": "Illinois",
+    "slug": "illinois",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Illinois hotel and restaurant marketing for Chicago, Springfield and regional destinations. Develop local search, group enquiries and direct booking campaigns.",
+    "intro": "Illinois hotel demand can come from a Chicago city visit, a meeting or a regional road trip. We help hospitality teams distinguish those journeys and build content and campaigns that support an actual booking decision.",
+    "context": "Chicago, Springfield, university communities and smaller touring destinations each bring different guest needs. A downtown hotel should explain its neighborhood and access; a regional property may need group, campus or road-trip information. Keep the offer specific to the accommodation and audience.",
+    "restaurant": "For restaurants, make the concept, menu, neighborhood and booking route clear. Private dining needs capacity and occasion information so the sales team receives useful enquiries.",
+    "actions": [
+      {
+        "title": "Urban stays",
+        "body": "Create practical neighborhood and transport content for the hotel’s exact address. Connect the information to suitable rooms and approved direct booking offers."
+      },
+      {
+        "title": "Groups and meetings",
+        "body": "Provide capacities, layouts and room-block information where available. Track qualified requests, proposals and contracted business separately from ordinary reservations."
+      },
+      {
+        "title": "Regional demand",
+        "body": "Build relevant content for campus, heritage or outdoor visits that the property genuinely serves. Use actual stay patterns to decide which campaigns deserve budget."
+      }
+    ],
+    "faq": {
+      "question": "Does an Illinois property outside Chicago need to target Chicago hotel searches?",
+      "answer": "Only when the stay genuinely fits that guest’s trip. Usually a regional hotel benefits more from clear local positioning and relevant travel purposes than from buying clicks for a city it cannot realistically serve."
+    },
+    "source": {
+      "label": "Illinois official visitor guide",
+      "url": "https://www.enjoyillinois.com/"
+    }
+  },
+  {
+    "name": "Indiana",
+    "slug": "indiana",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Indiana hospitality marketing for Indianapolis, college-town stays and regional hotels. Improve local visibility, event enquiries and direct booking journeys.",
+    "intro": "Indiana properties can serve event visitors, university trips and business stays as well as leisure breaks. We help hotels and restaurants organize those needs into useful content, relevant campaigns and enquiries the team can act on.",
+    "context": "Indianapolis, Bloomington, South Bend and other regional markets have distinct reasons for travel. Use the property’s real location and booking calendar to plan venue or campus content. Mention proximity accurately and avoid implying an affiliation with an institution or event.",
+    "restaurant": "Restaurants should give diners a current menu, opening hours, parking information and reservation route. Use a separate form for large parties when they require approval.",
+    "actions": [
+      {
+        "title": "Event visits",
+        "body": "Prepare landing content around confirmed dates and actual room inventory. Make travel and parking information useful without using an event’s identity as an endorsement."
+      },
+      {
+        "title": "Campus demand",
+        "body": "Explain the stay for visiting families, alumni or prospective students where relevant. Measure those enquiries separately from business travel."
+      },
+      {
+        "title": "Return guests",
+        "body": "Build opt-in guest communication around useful reasons to return. Connect the next offer to available dates and maintain clear unsubscribe choices."
+      }
+    ],
+    "faq": {
+      "question": "How should an Indiana hotel market around a major event?",
+      "answer": "First confirm remaining rooms, restrictions and the event calendar. We would publish accurate access and offer information, then decide whether extra advertising is needed based on booking pace rather than assuming every event requires more spend."
+    },
+    "source": {
+      "label": "Indiana official visitor guide",
+      "url": "https://www.visitindiana.com/"
+    }
+  },
+  {
+    "name": "Iowa",
+    "slug": "iowa",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Iowa hotel and restaurant marketing for Des Moines, Cedar Rapids and regional travel. Build local search visibility, group enquiries and direct booking offers.",
+    "intro": "Iowa hospitality often needs to explain the purpose and convenience of the stay clearly. We help city hotels, regional properties and restaurants connect local discovery to useful information and an easy reservation or enquiry route.",
+    "context": "Des Moines, Cedar Rapids, Iowa City and river communities offer different travel contexts. A meeting guest may need work-trip essentials; a campus visitor needs practical access; a touring guest wants to understand the stop. Build content around those decisions and the property’s real strengths.",
+    "restaurant": "For restaurants, publish current menus and dining hours, then distinguish everyday reservations from celebrations and private groups. Measure the outcomes the venue can actually accommodate.",
+    "actions": [
+      {
+        "title": "Business visits",
+        "body": "Explain parking, workspace, breakfast and corporate enquiry options where provided. Use the hotel’s real competitive set to plan paid search."
+      },
+      {
+        "title": "Regional events",
+        "body": "Confirm calendars and available rooms before launching date-led promotions. Create clear information for attendees without presenting the hotel as an official partner."
+      },
+      {
+        "title": "Guest retention",
+        "body": "Use permission-based communication to reach previous guests with relevant offers. Review repeat bookings and net revenue rather than only email opens."
+      }
+    ],
+    "faq": {
+      "question": "Can a regional Iowa hotel benefit from SEO without a large advertising budget?",
+      "answer": "A clear website and accurate search information can help guests understand a relevant stay. We would prioritize useful local pages, room detail and a working booking path, then test paid campaigns only where the property can measure their value."
+    },
+    "source": {
+      "label": "Iowa official visitor guide",
+      "url": "https://www.traveliowa.com/"
+    }
+  },
+  {
+    "name": "Kansas",
+    "slug": "kansas",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Kansas hotel and restaurant marketing for Wichita, Topeka and regional stays. Connect local search, business travel and event demand to direct enquiries.",
+    "intro": "Kansas hotel guests may be planning a work visit, a university trip or a touring stop. We help properties make their location and stay essentials clear, then connect suitable audiences to a direct reservation or sales enquiry.",
+    "context": "Wichita, Topeka, Lawrence and Kansas communities in the Kansas City area need precise location language. Guests should know which side of a metro area they are booking. Clear access and property information matters more than targeting every nearby city name.",
+    "restaurant": "Restaurants can build useful local visibility through accurate hours, menus and booking links. Private dining campaigns should explain party size, occasions and the team’s response process.",
+    "actions": [
+      {
+        "title": "Business stays",
+        "body": "Give corporate guests the practical details of the stay, including arrival and work-trip facilities. Track relevant enquiries separately from leisure reservations."
+      },
+      {
+        "title": "College visits",
+        "body": "Build helpful content for nearby campuses the hotel genuinely serves. Use verified travel details and avoid suggesting an institutional partnership."
+      },
+      {
+        "title": "Metro clarity",
+        "body": "Make the Kansas address and realistic access obvious. Compare campaign results by guest purpose so a broad metro target does not hide poor-fit traffic."
+      }
+    ],
+    "faq": {
+      "question": "How do you avoid confusing Kansas and Missouri hotel searches?",
+      "answer": "We state the hotel’s actual city and state clearly in the page, listings and campaigns. Metro-area targeting can still be useful, but the landing page must explain the location and realistic travel arrangements before the guest books."
+    },
+    "source": {
+      "label": "Kansas official visitor guide",
+      "url": "https://www.travelks.com/"
+    }
+  },
+  {
+    "name": "Kentucky",
+    "slug": "kentucky",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Kentucky hotel and restaurant marketing for Louisville, Lexington and destination stays. Develop local content, event enquiries and direct booking campaigns.",
+    "intro": "Kentucky properties can serve city breaks, equestrian visits and touring itineraries. We help hotels and restaurants show which experience they support and give guests a clear path from research to a qualified enquiry or reservation.",
+    "context": "Louisville, Lexington and regional touring bases require different messages. A guest planning several stops needs arrival and itinerary information, while an event planner needs capacity and accommodation options. Use the property’s real location and approved partnerships when describing experiences.",
+    "restaurant": "Dining content should explain the menu, atmosphere and reservation policy. Group dining and tasting-related packages need confirmed inclusions and a separate enquiry process where appropriate.",
+    "actions": [
+      {
+        "title": "Touring stays",
+        "body": "Create helpful multi-night ideas that fit the property’s location. Confirm activity and transport arrangements before selling them as part of a package."
+      },
+      {
+        "title": "Event dates",
+        "body": "Coordinate campaigns with known room availability and the local calendar. Separate event interest from confirmed booking demand in reporting."
+      },
+      {
+        "title": "Private occasions",
+        "body": "Publish useful venue, dining and room information for celebrations. Capture party size and date so the team can qualify the enquiry quickly."
+      }
+    ],
+    "faq": {
+      "question": "Can a Kentucky hotel promote a touring itinerary without selling the activities?",
+      "answer": "Yes, if the content clearly distinguishes suggestions from included services. We would link useful local research to suitable rooms while making reservations, transport and any third-party arrangements explicit before the guest commits."
+    },
+    "source": {
+      "label": "Kentucky official visitor guide",
+      "url": "https://www.kentuckytourism.com/"
+    }
+  },
+  {
+    "name": "Louisiana",
+    "slug": "louisiana",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Louisiana hotel and restaurant marketing for New Orleans, Baton Rouge and regional stays. Connect food, culture and events to qualified direct enquiries.",
+    "intro": "Louisiana hospitality is often chosen for the experience as well as the room. We help hotels and restaurants present their food, setting and local context clearly, with campaigns that lead to practical booking or event enquiries.",
+    "context": "New Orleans, Baton Rouge, Lafayette and other regional destinations need distinct guest journeys. Festival interest, work travel and cultural touring do not automatically turn into the same room booking. Plan offers around real inventory and explain what the property provides itself.",
+    "restaurant": "Restaurants should make cuisine, menus, hours and reservations central to the page. Give private groups a separate route with date, party size and dietary requirements.",
+    "actions": [
+      {
+        "title": "Cultural stays",
+        "body": "Use original property stories and useful neighborhood information. Link destination research to relevant room types without treating every cultural event as a package inclusion."
+      },
+      {
+        "title": "Demand dates",
+        "body": "Review booking pace before increasing event-period advertising. Build offers for suitable adjacent dates when the property needs longer stays."
+      },
+      {
+        "title": "Dining conversions",
+        "body": "Connect local search and food content to current reservation options. Distinguish a confirmed table or private-event proposal from a general website visit."
+      }
+    ],
+    "faq": {
+      "question": "Should Louisiana event campaigns focus only on the busiest dates?",
+      "answer": "The property may gain more from stay extensions and surrounding soft dates. We would review remaining rooms, guest lead time and booking value before choosing the campaign window, with event details checked against official organizers."
+    },
+    "source": {
+      "label": "Louisiana official visitor guide",
+      "url": "https://www.louisianatravel.com/"
+    }
+  },
+  {
+    "name": "Maine",
+    "slug": "maine",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "Maine hotel, inn and restaurant marketing for Portland, coastal breaks and inland stays. Build seasonal offers, useful search content and direct enquiries.",
+    "intro": "Maine guests often compare the character of the stay, the coast or countryside, and how a short break will work. We help inns, hotels and restaurants explain those choices and connect relevant research to direct enquiries.",
+    "context": "Portland, the Midcoast, Bar Harbor and inland destinations offer different bases. The right plan depends on the property’s access, operating dates and room experience. Give guests accurate arrival, parking and seasonal service information instead of describing every attraction as nearby.",
+    "restaurant": "For dining venues, keep seasonal opening days and menus current. Distinguish resident diners, overnight guests and private groups in campaign targeting and conversion reports.",
+    "actions": [
+      {
+        "title": "Coastal planning",
+        "body": "Show the exact setting and practical access to the itinerary. Use original imagery and room details that help guests compare the property confidently."
+      },
+      {
+        "title": "Operating calendar",
+        "body": "Align campaigns with confirmed opening dates and available inventory. Give advance bookers clear cancellation terms and inclusion details."
+      },
+      {
+        "title": "Quieter periods",
+        "body": "Build offers around experiences the property can deliver outside its busiest weeks. Measure completed stays and margin rather than selling every period with a discount."
+      }
+    ],
+    "faq": {
+      "question": "How do you market a seasonal Maine inn without attracting unavailable-date enquiries?",
+      "answer": "We put operating dates, minimum stays and a reliable availability route close to each offer. Campaigns can then focus on bookable periods and collect useful future-season enquiries without implying rooms are available when the inn is closed."
+    },
+    "source": {
+      "label": "Maine official visitor guide",
+      "url": "https://www.visitmaine.com/"
+    }
+  },
+  {
+    "name": "Maryland",
+    "slug": "maryland",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Maryland hotel and restaurant marketing for Baltimore, Annapolis and coastal destinations. Build local search, group enquiries and direct booking campaigns.",
+    "intro": "Maryland combines city visits, Chesapeake experiences and beach stays within different guest journeys. We help hotels and restaurants make their location and offer clear, then connect relevant demand to an enquiry or booking the team can measure.",
+    "context": "Baltimore, Annapolis, Ocean City and western Maryland need different content and timing. Work trips, waterfront weekends and outdoor breaks do not require the same offer. Start with the actual property and use accurate access details when mentioning Washington, DC or nearby regional destinations.",
+    "restaurant": "Restaurants can turn interest in a location or cuisine into reservations through clear menus, hours and booking links. Use separate enquiries for waterfront events or private dining where offered.",
+    "actions": [
+      {
+        "title": "City and waterfront",
+        "body": "Show the hotel’s neighborhood, arrival arrangements and facilities. Give each relevant guest segment its own practical reason to choose the stay."
+      },
+      {
+        "title": "Beach dates",
+        "body": "Coordinate coastal promotions with room availability and approved stay rules. Explain parking and beach access accurately before asking guests to book."
+      },
+      {
+        "title": "Group demand",
+        "body": "Publish meeting or celebration details the property can fulfil. Measure qualified requests and confirmed business rather than treating every contact as a sales-ready lead."
+      }
+    ],
+    "faq": {
+      "question": "Should a Maryland hotel target Washington, DC searches?",
+      "answer": "Only when the property is a realistic base for that trip. We would state its actual Maryland location, transport options and journey context clearly, then compare the quality of those enquiries with demand for the hotel’s own city."
+    },
+    "source": {
+      "label": "Maryland official visitor guide",
+      "url": "https://www.visitmaryland.org/"
+    }
+  },
+  {
+    "name": "Massachusetts",
+    "slug": "massachusetts",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "Massachusetts hotel and restaurant marketing for Boston, Cape Cod and regional destinations. Connect city visits, seasonal stays and group demand to direct enquiries.",
+    "intro": "Massachusetts properties can serve a Boston work trip, a university visit or a coastal escape. We help hotels, inns and restaurants build useful guest journeys around their actual location, facilities and available dates.",
+    "context": "Boston and Cambridge differ from Cape Cod, the Berkshires and other regional stays. A campus guest needs precise access and arrival information; a leisure guest needs the setting and stay experience. Keep destination content connected to an appropriate room or enquiry route.",
+    "restaurant": "For restaurants, show the neighborhood, menu and reservation options clearly. Private dining and group occasions need useful capacity information and a response process the team can maintain.",
+    "actions": [
+      {
+        "title": "City visits",
+        "body": "Build practical content around institutions and districts the hotel genuinely serves. Explain transport, parking and room choices rather than relying on a vague central-location claim."
+      },
+      {
+        "title": "Coastal and cultural stays",
+        "body": "Use original property information to connect seasonal experiences with bookable dates. Confirm operating schedules before promoting inclusions."
+      },
+      {
+        "title": "Group planning",
+        "body": "Make meeting, celebration and room-block options easy to assess. Record date and group needs so sales follow-up can begin with the right context."
+      }
+    ],
+    "faq": {
+      "question": "How should a Massachusetts hotel balance campus visits and leisure bookings?",
+      "answer": "We would give each relevant audience clear information and measure its value separately. The balance follows the property’s booking mix and soft dates, with campus proximity and any affiliation stated accurately."
+    },
+    "source": {
+      "label": "Massachusetts official visitor guide",
+      "url": "https://www.visitma.com/"
+    }
+  },
+  {
+    "name": "Michigan",
+    "slug": "michigan",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Michigan hotel and resort marketing for Detroit, Grand Rapids and lakeside stays. Develop local search, seasonal offers and qualified direct booking enquiries.",
+    "intro": "Michigan hospitality spans city visits and very different lakeside or northern escapes. We help hotels and resorts explain their particular setting, then build campaigns around the stay experience and available inventory they can sell.",
+    "context": "Detroit, Grand Rapids, Traverse City and Upper Peninsula travel create distinct planning needs. A city guest may need transport and event information; a touring guest needs a realistic route and stay length. Keep the hotel’s location and actual facilities central to the content.",
+    "restaurant": "Restaurants can use local search and original food photography to support table bookings. Seasonal hours and private dining arrangements should stay current across the website and listings.",
+    "actions": [
+      {
+        "title": "City demand",
+        "body": "Describe the neighborhood and genuine nearby venues or districts. Connect relevant visits to suitable rooms with clear arrival and parking information."
+      },
+      {
+        "title": "Lakeside experiences",
+        "body": "Show waterfront or beach access accurately and explain available facilities. Build offers around the property’s actual setting rather than implying every Michigan hotel is on a lake."
+      },
+      {
+        "title": "Seasonal pacing",
+        "body": "Use booking data to distinguish busy periods from dates needing demand. Create suitable short-break offers and track net booking value."
+      }
+    ],
+    "faq": {
+      "question": "Does Michigan destination content need separate winter and summer pages?",
+      "answer": "Separate content is useful when the guest experience and available facilities genuinely change. We would build around those differences and current operating information, avoiding duplicate pages that simply repeat the same room offer with a seasonal label."
+    },
+    "source": {
+      "label": "Michigan official visitor guide",
+      "url": "https://www.michigan.org/"
+    }
+  },
+  {
+    "name": "Minnesota",
+    "slug": "minnesota",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Minnesota hotel, resort and restaurant marketing for Minneapolis, Saint Paul and lake destinations. Connect local discovery, seasonal stays and direct enquiries.",
+    "intro": "Minnesota properties can sell a city visit, a lake break or a northern outdoor stay. We help each team communicate the experience and practical details that make the property a good fit, then measure the enquiries and bookings it produces.",
+    "context": "Minneapolis–Saint Paul, Duluth and lake-country properties have different guest questions. A work trip needs convenience; a resort stay needs accommodation and activity detail. State the exact location, seasonal facilities and arrival arrangements so a guest can make a confident comparison.",
+    "restaurant": "Restaurants should present menus, opening times and a dependable reservation route. Keep private dining, hotel guest dining and local table bookings distinct where their sales processes differ.",
+    "actions": [
+      {
+        "title": "Twin Cities visits",
+        "body": "Build accurate neighborhood and transport information for city hotels. Link business, event and leisure content to suitable room and enquiry options."
+      },
+      {
+        "title": "Lake and lodge stays",
+        "body": "Show accommodation types and the facilities guests can actually use. Make equipment, activity and meal arrangements explicit before booking."
+      },
+      {
+        "title": "Return travel",
+        "body": "Plan opt-in communication for guests with a reason to return in another season. Measure repeat stays alongside paid campaign costs."
+      }
+    ],
+    "faq": {
+      "question": "How can a Minnesota resort market a change of season?",
+      "answer": "We would show how the accommodation, activities and dining actually work in that period. Offers follow confirmed facilities and available dates, with separate measurement for room bookings, packages and group enquiries."
+    },
+    "source": {
+      "label": "Minnesota official visitor guide",
+      "url": "https://www.exploreminnesota.com/"
+    }
+  },
+  {
+    "name": "Mississippi",
+    "slug": "mississippi",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Mississippi hotel and restaurant marketing for coastal stays, Jackson and cultural touring. Improve local search, trip content and qualified direct enquiries.",
+    "intro": "A Mississippi stay may be part of a coast break, a work trip or a cultural route. We help hotels and restaurants show where they fit into that journey and give guests a clear next step toward a reservation.",
+    "context": "Jackson, the Gulf Coast, Oxford and Delta destinations call for different property stories. Use the exact setting and practical travel information to explain the stay. Touring content should be useful on its own and link to relevant accommodation rather than promising every experience as an inclusion.",
+    "restaurant": "For restaurants, make the cuisine, current menu and reservation options easy to find. Group dining and celebrations need separate date and party-size information when the venue offers them.",
+    "actions": [
+      {
+        "title": "Coastal stays",
+        "body": "Describe the property’s actual waterfront or beach relationship and facilities. Align campaigns with available rooms and approved offer terms."
+      },
+      {
+        "title": "Cultural itineraries",
+        "body": "Build helpful route and neighborhood content around the property’s location. Distinguish third-party attractions from activities the hotel supplies."
+      },
+      {
+        "title": "Campus and work trips",
+        "body": "Explain practical arrival and stay essentials for genuine nearby institutions or districts. Track relevant enquiries separately from broad destination traffic."
+      }
+    ],
+    "faq": {
+      "question": "Can cultural-trip content bring useful enquiries to a Mississippi hotel?",
+      "answer": "It can help when it answers a real planning question and shows why the hotel is a suitable base. We would connect that content to relevant rooms and measure the resulting stay enquiries, without assuming every reader is ready to book."
+    },
+    "source": {
+      "label": "Mississippi official visitor guide",
+      "url": "https://www.visittheusa.com/destinations/mississippi/"
+    }
+  },
+  {
+    "name": "Missouri",
+    "slug": "missouri",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Missouri hotel and restaurant marketing for St. Louis, Kansas City and Ozark stays. Build local search, event enquiries and direct booking campaigns.",
+    "intro": "Missouri hospitality can serve a city event, a business visit or an Ozark escape. We help hotels and restaurants explain the stay and connect their most relevant guest journeys to clear offers and useful enquiries.",
+    "context": "St. Louis, Kansas City, Branson and lake destinations need different campaign plans. Be precise about the hotel’s city and state, especially around the Kansas City metro. Guests should understand access, room choices and the experience before following a booking link.",
+    "restaurant": "For restaurants, show the food, neighborhood and reservation route clearly. Separate local diners from visitors looking for event dining or a private group arrangement.",
+    "actions": [
+      {
+        "title": "City hotels",
+        "body": "Build useful venue, business-district and neighborhood information. Use verified travel details and link the content to appropriate room offers."
+      },
+      {
+        "title": "Leisure breaks",
+        "body": "Show the property’s real relationship to lakes, entertainment or outdoor activities. Keep third-party tickets and package inclusions explicit."
+      },
+      {
+        "title": "Group business",
+        "body": "Publish meeting and celebration information the property can fulfil. Capture dates and requirements so the sales team can qualify enquiries promptly."
+      }
+    ],
+    "faq": {
+      "question": "How do you market a Missouri hotel in the Kansas City area accurately?",
+      "answer": "The page and listings should state the real city and Missouri address. We can test metro-area demand while explaining practical transport and arrival details so guests do not mistake the hotel for a different location or state."
+    },
+    "source": {
+      "label": "Missouri official visitor guide",
+      "url": "https://www.visitmo.com/"
+    }
+  },
+  {
+    "name": "Montana",
+    "slug": "montana",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Montana hotel and lodge marketing for Bozeman, Missoula and destination stays. Build seasonal content, useful arrival guidance and qualified direct enquiries.",
+    "intro": "Montana guests often need to understand the route and experience before they choose a lodge or hotel. We help properties turn that research into accurate stay information and a direct enquiry journey suited to their operating season.",
+    "context": "Bozeman, Missoula, Whitefish and rural properties provide different bases for travel. Explain actual driving and transfer arrangements instead of calling a distant attraction nearby. Seasonal facilities and third-party activities should be checked before they become a package promise.",
+    "restaurant": "Dining venues should keep seasonal service times, menus and reservations current. Distinguish resident diners and overnight guests from private groups needing a tailored proposal.",
+    "actions": [
+      {
+        "title": "Journey planning",
+        "body": "Publish arrival and stay-length guidance specific to the property. Connect useful touring research to available rooms without implying access or permits are included."
+      },
+      {
+        "title": "Lodge experience",
+        "body": "Show room types, dining and activities the property provides. Use original imagery so guests can judge the experience against their expectations."
+      },
+      {
+        "title": "Seasonal demand",
+        "body": "Plan campaigns around operating dates and remaining inventory. Use appropriate advance-booking messages and measure deposits and confirmed stays."
+      }
+    ],
+    "faq": {
+      "question": "Should a Montana hotel promote itself as a national-park base?",
+      "answer": "Only if the property is a practical base and the page explains the real route and access arrangements. We would keep park information current through official resources and avoid suggesting admission, permits or transport are included unless confirmed."
+    },
+    "source": {
+      "label": "Montana official visitor guide",
+      "url": "https://visitmt.com/"
+    }
+  },
+  {
+    "name": "Nebraska",
+    "slug": "nebraska",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Nebraska hotel and restaurant marketing for Omaha, Lincoln and regional travel. Connect local search, business visits and event demand to direct enquiries.",
+    "intro": "Nebraska hotels can serve work trips, university visits and touring stays with different booking needs. We help properties make their location and practical advantages clear, then build campaigns that lead to useful enquiries and reservations.",
+    "context": "Omaha, Lincoln and regional road-trip bases need distinct content. A city guest may compare event access and parking, while a touring guest wants a convenient stop and dependable stay information. Build the page around the property’s actual role in the trip.",
+    "restaurant": "For restaurants, show the concept, menu and reservation route clearly. Private dining pages should explain capacity and occasions so the team receives enquiries it can assess.",
+    "actions": [
+      {
+        "title": "City visits",
+        "body": "Create accurate neighborhood and venue guidance for the hotel’s address. Link it to room types and approved direct booking offers."
+      },
+      {
+        "title": "Regional stays",
+        "body": "Explain arrival, parking and the practical benefits of the property as a touring base. Avoid targeting distant destinations that create poor-fit enquiries."
+      },
+      {
+        "title": "Event planning",
+        "body": "Use confirmed calendars and room availability to choose promotions. Track group requests and proposals separately from individual bookings."
+      }
+    ],
+    "faq": {
+      "question": "How should a Nebraska hotel choose between local and statewide advertising?",
+      "answer": "We would start with where its existing guests travel from and why they stay. A focused audience and useful landing page often give clearer results than broad statewide reach, with spending expanded only when booking evidence supports it."
+    },
+    "source": {
+      "label": "Nebraska official visitor guide",
+      "url": "https://visitnebraska.com/"
+    }
+  },
+  {
+    "name": "Nevada",
+    "slug": "nevada",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Nevada hotel and restaurant marketing for Las Vegas, Reno and destination properties. Plan local search, event campaigns and direct booking journeys.",
+    "intro": "Nevada hospitality includes major city stays and very different road-trip or outdoor bases. We help hotels and restaurants define the audience they serve and build a clear booking journey around the property’s real offer.",
+    "context": "Las Vegas, Reno and Nevada’s regional destinations need distinct messages. A convention guest may compare venue access, while a leisure traveler needs clear room and experience information. Treat the property’s location and approved offer terms as the starting point for every campaign.",
+    "restaurant": "Restaurants can connect menus, occasion content and table reservations. Private dining and group events should have their own enquiry route, capacity information and sales follow-up.",
+    "actions": [
+      {
+        "title": "Event demand",
+        "body": "Build accurate venue and arrival content with confirmed calendars. Check room pace before deciding whether a busy event needs additional paid promotion."
+      },
+      {
+        "title": "Offer clarity",
+        "body": "Explain mandatory charges, parking, inclusions and booking restrictions clearly. Keep the advertisement, landing page and booking engine consistent."
+      },
+      {
+        "title": "Beyond the city",
+        "body": "For regional properties, show the actual route and supported activities. Connect touring content to suitable accommodation without implying attractions are on site."
+      }
+    ],
+    "faq": {
+      "question": "How can a Nevada independent hotel differentiate from large resorts?",
+      "answer": "We would identify the guest needs it can serve especially clearly, such as its location, room experience or simpler stay arrangements. Campaigns then focus on those reasons to choose it, with net booking value guiding spend instead of broad visibility alone."
+    },
+    "source": {
+      "label": "Nevada official visitor guide",
+      "url": "https://travelnevada.com/"
+    }
+  },
+  {
+    "name": "New Hampshire",
+    "slug": "new-hampshire",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "New Hampshire hotel and inn marketing for mountain, lake and coastal stays. Build seasonal offers, practical trip content and direct booking enquiries.",
+    "intro": "New Hampshire guests may be choosing a mountain base, a lake break or a short coastal stay. We help hotels and inns explain that experience accurately and connect useful research to a room offer or qualified enquiry.",
+    "context": "The White Mountains, Lakes Region, Portsmouth and other communities have distinct travel patterns. Show the property’s setting, access and seasonal facilities rather than presenting the whole state as one nearby itinerary. Keep the booking path clear for guests comparing a short break.",
+    "restaurant": "For restaurants, publish current opening days, menus and reservation arrangements. Separate overnight-guest dining and local table demand from event enquiries when the venue’s process differs.",
+    "actions": [
+      {
+        "title": "Seasonal experiences",
+        "body": "Show how the stay changes through the year and what remains available. Prepare content around the property’s facilities instead of relying on generic seasonal photographs."
+      },
+      {
+        "title": "Trip confidence",
+        "body": "Explain arrival, parking and realistic activity access. Link to official current guidance where conditions or operating schedules affect plans."
+      },
+      {
+        "title": "Small groups",
+        "body": "Provide room, dining and gathering details for retreats or celebrations. Collect dates and group requirements to support a useful response."
+      }
+    ],
+    "faq": {
+      "question": "How do you market New Hampshire stays across several seasons?",
+      "answer": "We would build offers around the experiences and facilities the property actually provides in each period. Separate messages, availability and booking results help the team compare seasons without creating repetitive pages for every month."
+    },
+    "source": {
+      "label": "New Hampshire official visitor guide",
+      "url": "https://www.visitnh.gov/"
+    }
+  },
+  {
+    "name": "New Jersey",
+    "slug": "new-jersey",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "New Jersey hotel and restaurant marketing for shore stays, city visits and business travel. Connect precise local content and paid campaigns to direct enquiries.",
+    "intro": "New Jersey hospitality can serve a shore holiday, a work trip or a visit within a larger metro area. We help properties make their exact location and advantages clear so the guest knows what the stay will involve.",
+    "context": "Jersey City, Newark, Atlantic City and shore communities need different landing experiences. Do not blur New Jersey and New York locations in an effort to attract more searches. Explain practical transport, parking and arrival arrangements alongside the room offer.",
+    "restaurant": "Restaurants need accurate neighborhood information, menus and booking links. Private dining and celebration enquiries should show capacity and a straightforward route to the team.",
+    "actions": [
+      {
+        "title": "Metro positioning",
+        "body": "State the hotel’s actual city and transport context. Create useful content for the trips it genuinely serves rather than implying a Manhattan address."
+      },
+      {
+        "title": "Shore stays",
+        "body": "Show the property’s real beach access, facilities and seasonal operation. Align promotions with available dates and approved stay restrictions."
+      },
+      {
+        "title": "Work and events",
+        "body": "Give corporate and group prospects practical accommodation and meeting information. Measure qualified sales requests separately from ordinary room enquiries."
+      }
+    ],
+    "faq": {
+      "question": "Can a New Jersey hotel market to guests visiting New York City?",
+      "answer": "Yes, where it is a practical choice and the page is precise about the location and journey. We would show realistic transport arrangements and compare enquiry quality, without presenting a New Jersey hotel as being in New York."
+    },
+    "source": {
+      "label": "New Jersey official visitor guide",
+      "url": "https://visitnj.org/"
+    }
+  },
+  {
+    "name": "New Mexico",
+    "slug": "new-mexico",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "New Mexico hotel and restaurant marketing for Santa Fe, Albuquerque and destination stays. Build clear experience content, seasonal campaigns and direct enquiries.",
+    "intro": "New Mexico stays are often chosen for their setting and cultural itinerary as much as the room. We help hotels and restaurants explain the experience clearly, with content and campaigns linked to a practical direct booking journey.",
+    "context": "Santa Fe, Albuquerque, Taos and southern destinations call for different messages. An arts-focused break, a city event and an outdoor stay need different information. Use accurate local descriptions and confirm activities, access and any package partners before promoting them.",
+    "restaurant": "Dining content should show the cuisine and venue in its own voice. Keep menus, service times and reservations current, with a separate route for private occasions where offered.",
+    "actions": [
+      {
+        "title": "Experience detail",
+        "body": "Connect original property stories to relevant room and dining options. Give guests enough information to judge the stay without turning the page into a generic destination guide."
+      },
+      {
+        "title": "Event planning",
+        "body": "Check official calendars and room pace before date-specific campaigns. Explain offer restrictions and avoid suggesting an organizer endorsement."
+      },
+      {
+        "title": "Multi-night stays",
+        "body": "Develop useful itinerary ideas around the property’s actual location. Separate suggestions from included experiences and measure confirmed stay length."
+      }
+    ],
+    "faq": {
+      "question": "How should a New Mexico property use cultural content in marketing?",
+      "answer": "The content should be accurate, respectful and relevant to the stay. We would use official destination resources for practical context, original property material for the experience and clear language distinguishing suggested visits from services included in the booking."
+    },
+    "source": {
+      "label": "New Mexico official visitor guide",
+      "url": "https://www.newmexico.org/"
+    }
+  },
+  {
+    "name": "New York",
+    "slug": "new-york",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "New York hotel and restaurant marketing for New York City, the Hudson Valley and regional stays. Build distinct local campaigns and direct booking journeys.",
+    "intro": "New York State is much more than a single city market. We help urban hotels, destination properties and restaurants make their particular experience clear, with content and campaigns tied to a relevant guest and booking purpose.",
+    "context": "New York City, the Hudson Valley, the Catskills, the Finger Lakes and western New York require different positioning. Guests need to know the exact location and the kind of stay it supports. Keep city and regional search intent distinct instead of implying all properties are near Manhattan.",
+    "restaurant": "For restaurants, connect the neighborhood, cuisine, menu and reservation route. Group dining and special occasions need useful capacity information and their own sales follow-up.",
+    "actions": [
+      {
+        "title": "City precision",
+        "body": "Explain the hotel’s borough or neighborhood and practical transport context. Connect relevant venue and business content to appropriate room offers."
+      },
+      {
+        "title": "Regional escapes",
+        "body": "Show the setting, accommodation and experiences the property actually provides. Build suitable short-break content around available dates."
+      },
+      {
+        "title": "Portfolio structure",
+        "body": "Keep each property’s offers, location and conversion tracking distinct. Use shared reporting to compare results without flattening different New York markets into one campaign."
+      }
+    ],
+    "faq": {
+      "question": "Should a hotel outside New York City target New York City hotel searches?",
+      "answer": "Only if it realistically serves that guest journey and the location is fully clear. A regional property will usually need its own destination positioning, so we would prioritize the travel purposes that fit the stay rather than pursue misleading city traffic."
+    },
+    "source": {
+      "label": "New York official visitor guide",
+      "url": "https://www.iloveny.com/"
+    }
+  },
+  {
+    "name": "North Carolina",
+    "slug": "north-carolina",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "North Carolina hotel and resort marketing for Charlotte, Asheville and coastal stays. Connect local search, destination content and direct booking campaigns.",
+    "intro": "North Carolina hospitality ranges from business hotels to mountain and coastal escapes. We help properties explain the guest experience they provide and connect relevant search and campaign traffic to qualified enquiries and reservations.",
+    "context": "Charlotte, Raleigh–Durham, Asheville and coastal communities bring different booking decisions. A mountain retreat needs different content from a city hotel or beach property. Use current operating information and property-specific access details when building destination offers.",
+    "restaurant": "Restaurants should keep menus, opening times and reservations dependable. Separate local diners, visiting guests and private groups in the sales process where their needs differ.",
+    "actions": [
+      {
+        "title": "Business visits",
+        "body": "Give city guests useful neighborhood, parking and work-trip information. Connect corporate and group enquiries to the team responsible for converting them."
+      },
+      {
+        "title": "Destination confidence",
+        "body": "Show current property facilities and accurate arrival guidance. Link to official local information when access or operating conditions affect the trip."
+      },
+      {
+        "title": "Seasonal offers",
+        "body": "Plan coastal and mountain promotions around actual available rooms. Measure booking quality and stay value across periods instead of relying on enquiry volume alone."
+      }
+    ],
+    "faq": {
+      "question": "How do you build useful content for a North Carolina mountain property?",
+      "answer": "We start with its current operating status, exact location and facilities. The page should help guests plan a realistic stay and direct them to current official travel information where needed, with offers based on services the property can reliably deliver."
+    },
+    "source": {
+      "label": "North Carolina official visitor guide",
+      "url": "https://www.visitnc.com/"
+    }
+  },
+  {
+    "name": "North Dakota",
+    "slug": "north-dakota",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "North Dakota hotel and restaurant marketing for Fargo, Bismarck and regional travel. Improve local discovery, practical stay content and qualified direct enquiries.",
+    "intro": "North Dakota hotels may serve work trips, regional events and guests following an outdoor itinerary. We help properties explain their practical role in the journey and connect relevant local searches to a clear reservation or enquiry.",
+    "context": "Fargo, Bismarck, Grand Forks and western travel bases need specific property information. A campus or work visitor compares different essentials from a touring guest. Build the offer around the actual location, room types and services rather than a broad statewide appeal.",
+    "restaurant": "For restaurants, make current menus, hours, parking and reservations easy to find. Private groups need capacity and date information so the venue can respond usefully.",
+    "actions": [
+      {
+        "title": "Work trips",
+        "body": "Show arrival, parking, workspace and longer-stay options where provided. Track corporate enquiries separately so the team can evaluate their booking value."
+      },
+      {
+        "title": "Touring stays",
+        "body": "Explain the property’s real route position and supported activities. Avoid implying a distant park or attraction is on the doorstep."
+      },
+      {
+        "title": "Regional occasions",
+        "body": "Plan event and campus content around verified calendars and available rooms. Distinguish qualified room-block requests from individual booking enquiries."
+      }
+    ],
+    "faq": {
+      "question": "Does North Dakota hotel marketing need to focus only on tourists?",
+      "answer": "No. We would review the property’s real demand, including work, campus and regional event stays. The campaign mix should reflect profitable booking opportunities and available rooms rather than assuming leisure travelers are always the main audience."
+    },
+    "source": {
+      "label": "North Dakota official visitor guide",
+      "url": "https://www.ndtourism.com/"
+    }
+  },
+  {
+    "name": "Ohio",
+    "slug": "ohio",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Ohio hotel and restaurant marketing for Columbus, Cleveland, Cincinnati and regional stays. Connect local search, event demand and direct booking campaigns.",
+    "intro": "Ohio hospitality can serve business visits, campus trips, city weekends and regional leisure. We help hotels and restaurants organize those journeys around useful property information and a reservation or enquiry route the team can measure.",
+    "context": "Columbus, Cleveland, Cincinnati and destinations such as Hocking Hills need different messages. A city hotel may need venue and neighborhood content; a cabin or lodge needs accommodation and activity detail. Keep the search target close to what the property genuinely offers.",
+    "restaurant": "Restaurants can support local discovery with current menus, food photography and table booking links. Private occasions should have clear capacity information and a separate sales route when needed.",
+    "actions": [
+      {
+        "title": "City and campus",
+        "body": "Create practical information for the districts and institutions the hotel serves. Use accurate travel details and avoid implying an affiliation."
+      },
+      {
+        "title": "Outdoor stays",
+        "body": "Describe the accommodation, setting and facilities clearly. Build suitable short-break offers with activity arrangements and restrictions made explicit."
+      },
+      {
+        "title": "Event periods",
+        "body": "Check booking pace and confirmed calendars before increasing spend. Measure net booking value and group proposals rather than simply reporting more clicks."
+      }
+    ],
+    "faq": {
+      "question": "How should an Ohio hotel group market several cities?",
+      "answer": "Each property needs accurate city and neighborhood content, suitable offers and separate conversion tracking. Shared reporting can compare the results, while campaign decisions still follow the local competitive set, room availability and guest mix."
+    },
+    "source": {
+      "label": "Ohio official visitor guide",
+      "url": "https://www.visittheusa.com/destinations/ohio/"
+    }
+  },
+  {
+    "name": "Oklahoma",
+    "slug": "oklahoma",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Oklahoma hotel and restaurant marketing for Oklahoma City, Tulsa and regional stays. Build local search, group enquiries and direct booking campaigns.",
+    "intro": "Oklahoma properties may serve a city event, a business visit or a touring stop. We help hotels and restaurants explain the setting and practical value of the stay, then connect relevant audiences to useful enquiries and reservations.",
+    "context": "Oklahoma City, Tulsa, university communities and regional routes have distinct needs. A city guest compares venue access and room options, while a touring guest wants a dependable base. Keep arrival, parking and the actual location central to the offer.",
+    "restaurant": "For dining venues, show the concept, current menu and reservation process clearly. Private dining and celebrations should collect enough detail for a useful proposal.",
+    "actions": [
+      {
+        "title": "City stays",
+        "body": "Publish accurate neighborhood and venue content for the property’s address. Link relevant visit information to suitable room choices."
+      },
+      {
+        "title": "Touring traffic",
+        "body": "Explain the stay as part of a realistic route and distinguish nearby stops from longer excursions. Measure completed bookings from the content."
+      },
+      {
+        "title": "Group demand",
+        "body": "Give meeting and celebration prospects capacities, accommodation options and a response process. Track qualified requests and proposals separately from everyday room enquiries."
+      }
+    ],
+    "faq": {
+      "question": "Can Oklahoma touring content support a hotel’s business-travel strategy too?",
+      "answer": "The website can serve both, but it should give each audience a clear path. We would separate practical work-trip information from itinerary content, then compare bookings and enquiries by purpose before deciding where additional budget belongs."
+    },
+    "source": {
+      "label": "Oklahoma official visitor guide",
+      "url": "https://www.travelok.com/"
+    }
+  },
+  {
+    "name": "Oregon",
+    "slug": "oregon",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Oregon hotel and restaurant marketing for Portland, the coast and destination stays. Connect original property content, local search and direct booking campaigns.",
+    "intro": "Oregon guests may be planning a Portland visit, a coastal break or an inland outdoor stay. We help hotels and restaurants make the location and experience clear, with focused campaigns connected to a practical booking decision.",
+    "context": "Portland, the coast, Bend and wine-country bases require different content. Explain the actual setting and travel arrangements rather than presenting the state as a compact itinerary. Seasonal facilities and third-party experiences need confirmation before they become offer inclusions.",
+    "restaurant": "Restaurants should show the cuisine, neighborhood and current reservation options. Separate local dining, hotel guests and private occasions where the venue’s sales process differs.",
+    "actions": [
+      {
+        "title": "Urban discovery",
+        "body": "Create helpful neighborhood and transport information for city properties. Connect it to relevant rooms, dining and approved offers."
+      },
+      {
+        "title": "Destination stays",
+        "body": "Use original images and practical access details for coastal or inland accommodation. Distinguish suggested activities from services the property provides."
+      },
+      {
+        "title": "Stay extensions",
+        "body": "Build relevant multi-night ideas around available rooms and real guest interests. Evaluate booking value and stay length rather than rewarding content only for traffic."
+      }
+    ],
+    "faq": {
+      "question": "How do you market an Oregon hotel without relying on generic scenery?",
+      "answer": "We would show what the guest actually receives: its setting, rooms, food, arrival arrangements and useful local knowledge. Those details help distinguish the property and connect destination interest to a specific reason to book."
+    },
+    "source": {
+      "label": "Oregon official visitor guide",
+      "url": "https://traveloregon.com/"
+    }
+  },
+  {
+    "name": "Pennsylvania",
+    "slug": "pennsylvania",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "Pennsylvania hotel and restaurant marketing for Philadelphia, Pittsburgh and regional destinations. Build local search, group enquiries and direct booking journeys.",
+    "intro": "Pennsylvania hospitality can serve a city visit, a heritage trip or a mountain escape. We help hotels and restaurants make the guest journey specific, with clear property content and campaigns directed toward useful bookings and enquiries.",
+    "context": "Philadelphia, Pittsburgh, Lancaster, the Poconos and other regional bases need distinct positioning. A business guest, family traveler and group organizer need different answers. Keep the property’s actual location and facilities central instead of sending every audience to a broad statewide offer.",
+    "restaurant": "Restaurants can connect local discovery with a current menu and straightforward table booking. Private dining pages should explain the occasions and group sizes the venue can accommodate.",
+    "actions": [
+      {
+        "title": "City demand",
+        "body": "Build accurate neighborhood, campus or venue content for relevant trips. Connect the information to suitable room types and enquiry options."
+      },
+      {
+        "title": "Regional breaks",
+        "body": "Explain the accommodation experience and realistic local itinerary. Confirm activities and package partners before advertising inclusions."
+      },
+      {
+        "title": "Groups and events",
+        "body": "Publish useful room-block, meeting and celebration details. Track proposals and confirmed business separately from general contact forms."
+      }
+    ],
+    "faq": {
+      "question": "Should a Pennsylvania resort and city hotel share the same marketing plan?",
+      "answer": "They can share systems and reporting standards, but the audience, content and offer need to fit each property. We would compare results using booking value and acquisition cost while keeping city and destination demand distinct."
+    },
+    "source": {
+      "label": "Pennsylvania official visitor guide",
+      "url": "https://www.visitpa.com/"
+    }
+  },
+  {
+    "name": "Rhode Island",
+    "slug": "rhode-island",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "Rhode Island hotel, inn and restaurant marketing for Providence, Newport and coastal stays. Connect local search, occasion enquiries and direct booking campaigns.",
+    "intro": "Rhode Island properties can serve a city visit, a coastal break or a celebration. We help hotels, inns and restaurants show the practical details behind that experience and connect relevant interest to a clear reservation or enquiry.",
+    "context": "Providence, Newport and other coastal communities offer different stays. A guest may compare campus access, waterfront setting or a private-event experience. Describe the actual property and transport arrangements, with seasonal services and offer conditions easy to understand.",
+    "restaurant": "For restaurants, use current menus, original photography and dependable reservation links. Private dining needs a distinct enquiry route with date and party-size requirements.",
+    "actions": [
+      {
+        "title": "City convenience",
+        "body": "Create accurate neighborhood and institution content for properties serving Providence visits. Give arrival and parking answers close to the booking route."
+      },
+      {
+        "title": "Coastal character",
+        "body": "Show the accommodation and real relationship to the water or attractions. Use original property material to distinguish the stay from a generic coastal offer."
+      },
+      {
+        "title": "Celebration enquiries",
+        "body": "Publish room, venue and dining options the team can deliver. Measure qualified proposals and confirmed events separately from table reservations."
+      }
+    ],
+    "faq": {
+      "question": "How can a Rhode Island inn attract more suitable celebration enquiries?",
+      "answer": "The page should make room options, gathering space, dining and practical restrictions clear. We would capture date, guest count and the occasion so the team can qualify fit before investing time in a proposal."
+    },
+    "source": {
+      "label": "Rhode Island official visitor guide",
+      "url": "https://www.visitrhodeisland.com/"
+    }
+  },
+  {
+    "name": "South Carolina",
+    "slug": "south-carolina",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "South Carolina hotel and resort marketing for Charleston, Myrtle Beach and island stays. Build destination content, local campaigns and direct booking enquiries.",
+    "intro": "South Carolina hospitality combines city experiences, beach stays and destination celebrations. We help hotels, resorts and restaurants communicate the reason to choose their property and connect that interest to useful direct enquiries.",
+    "context": "Charleston, Myrtle Beach, Hilton Head Island and Greenville serve different journeys. A coastal resort needs accommodation and access details; a city hotel needs neighborhood context; a celebration venue needs practical group information. Build the offer around the actual property rather than statewide scenery.",
+    "restaurant": "Restaurants can highlight cuisine and location with current menus and a short reservation path. Keep private dining, wedding-related groups and everyday tables distinct in reporting.",
+    "actions": [
+      {
+        "title": "Coastal bookings",
+        "body": "Show real beach access, room choices and family facilities. Coordinate campaigns with inventory and approved minimum-stay conditions."
+      },
+      {
+        "title": "City breaks",
+        "body": "Create useful neighborhood content linked to the hotel’s precise location. Connect the itinerary to suitable rooms and dining experiences."
+      },
+      {
+        "title": "Destination events",
+        "body": "Give planners accommodation, capacity and event information early. Measure qualified requests, site visits where applicable and contracted business."
+      }
+    ],
+    "faq": {
+      "question": "Should a South Carolina resort promote rooms and weddings through one form?",
+      "answer": "The guest needs are different. We would keep room availability easy to access and collect date, party size and event requirements for wedding enquiries, so each reaches the right team with enough information for a useful response."
+    },
+    "source": {
+      "label": "South Carolina official visitor guide",
+      "url": "https://discoversouthcarolina.com/"
+    }
+  },
+  {
+    "name": "South Dakota",
+    "slug": "south-dakota",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "South Dakota hotel and lodge marketing for Sioux Falls, Rapid City and touring stays. Build useful route content, seasonal offers and direct booking enquiries.",
+    "intro": "South Dakota properties can be a city stay or part of a wider touring route. We help hotels and lodges show where they fit in the journey, with accurate arrival information and offers connected to actual bookable rooms.",
+    "context": "Sioux Falls, Rapid City, the Black Hills and other regional bases need different positioning. Explain realistic access to the itinerary and distinguish a nearby attraction from a day trip. Useful route and stay-length detail can help guests decide whether the property suits their plans.",
+    "restaurant": "Restaurants should show current hours, menus and group dining arrangements. Seasonal or touring demand needs a reservation process that reflects the venue’s real capacity.",
+    "actions": [
+      {
+        "title": "Touring itineraries",
+        "body": "Build helpful route content around the property’s address. Link it to appropriate room and stay-length options without suggesting access or admission is included."
+      },
+      {
+        "title": "Seasonal readiness",
+        "body": "Prepare current facility and operating information before promoting a travel period. Coordinate offers with availability and guest booking lead time."
+      },
+      {
+        "title": "City visits",
+        "body": "Give work and event guests practical arrival, parking and accommodation details. Track their enquiries separately from leisure touring demand."
+      }
+    ],
+    "faq": {
+      "question": "How can South Dakota route content lead to direct bookings?",
+      "answer": "It should explain why the property is a useful overnight base, then give clear room, arrival and availability information. We would measure enquiries and stays from that journey rather than treating a large audience for destination articles as a booking result."
+    },
+    "source": {
+      "label": "South Dakota official visitor guide",
+      "url": "https://www.travelsouthdakota.com/"
+    }
+  },
+  {
+    "name": "Tennessee",
+    "slug": "tennessee",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Tennessee hotel and restaurant marketing for Nashville, Memphis and mountain destinations. Connect city experiences, seasonal stays and groups to direct enquiries.",
+    "intro": "Tennessee hospitality spans music-led city visits and mountain escapes with very different planning needs. We help hotels and restaurants explain their actual experience and connect relevant audiences to useful room, dining and event enquiries.",
+    "context": "Nashville, Memphis, Knoxville and the Smoky Mountain area need distinct campaigns. A city guest may compare neighborhood and venue access; a resort guest needs accommodation and activity detail. Check the property’s location and confirmed operating information before building an offer.",
+    "restaurant": "Restaurants can connect food and occasion content to current menus and reservations. Private dining and celebration groups need capacity information and a separate sales response where appropriate.",
+    "actions": [
+      {
+        "title": "City experiences",
+        "body": "Create accurate neighborhood and venue guidance without implying a partnership. Connect relevant visits to room options and approved direct booking offers."
+      },
+      {
+        "title": "Mountain stays",
+        "body": "Show the property’s real setting, accommodation and facilities. Make arrival and activity arrangements clear so guests know what is included."
+      },
+      {
+        "title": "Group business",
+        "body": "Publish room-block and dining or gathering information. Capture dates and party size, then measure proposals and confirmed stays rather than lead volume alone."
+      }
+    ],
+    "faq": {
+      "question": "Can a Tennessee hotel market music and outdoor experiences on the same site?",
+      "answer": "Yes, when those experiences realistically fit its location or portfolio. We would keep the guest journeys and property information distinct, then compare their booking results instead of making one broad offer cover unrelated trips."
+    },
+    "source": {
+      "label": "Tennessee official visitor guide",
+      "url": "https://www.tnvacation.com/"
+    }
+  },
+  {
+    "name": "Texas",
+    "slug": "texas",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Texas hotel and restaurant marketing for Dallas, Austin, Houston and San Antonio. Build city-specific SEO, paid campaigns and qualified direct enquiries.",
+    "intro": "Texas is a portfolio of different hospitality markets, not one campaign audience. We help hotels and restaurants define the guest and occasion they serve, with local content and offers connected to an enquiry or booking the team can use.",
+    "context": "Dallas, Austin, Houston and San Antonio require distinct messages, while Hill Country and coastal properties bring different planning questions. Start with the hotel’s exact location, real guest mix and available inventory. Statewide reach should not replace a clear reason to choose the property.",
+    "restaurant": "Restaurants need a precise neighborhood, current menu and dependable reservation path. Private dining and corporate groups should have enough capacity and occasion information to support useful enquiries.",
+    "actions": [
+      {
+        "title": "City-level plans",
+        "body": "Give each property its own practical location story and conversion tracking. Use shared reporting to compare performance without merging very different guest journeys."
+      },
+      {
+        "title": "Work and groups",
+        "body": "Explain corporate stay, meeting and room-block options where provided. Capture the dates and requirements that help sales qualify the opportunity."
+      },
+      {
+        "title": "Destination breaks",
+        "body": "Build useful leisure content around the property’s actual setting. Align campaigns with approved offers and room pace rather than running the same promotion statewide."
+      }
+    ],
+    "faq": {
+      "question": "How should a Texas hotel group choose its first city campaigns?",
+      "answer": "We would compare property readiness, available rooms, guest value and the quality of existing enquiries. Dallas, Austin, Houston and San Antonio need their own audience assumptions, so the first investment should follow business evidence and a reliable booking path."
+    },
+    "source": {
+      "label": "Texas official visitor guide",
+      "url": "https://www.traveltexas.com/"
+    }
+  },
+  {
+    "name": "Utah",
+    "slug": "utah",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Utah hotel and resort marketing for Salt Lake City, Park City and touring destinations. Build useful seasonal content, paid campaigns and direct booking enquiries.",
+    "intro": "Utah properties can serve a city meeting, a mountain stay or a wider outdoor itinerary. We help hotels and resorts explain the practical details of the experience and connect relevant research to direct enquiries and bookings.",
+    "context": "Salt Lake City, Park City, Moab and southern Utah bases require different offers and travel information. A guest needs to know the property’s actual location, transfers and activity arrangements. Keep park access, permits and third-party experiences distinct from services the hotel provides.",
+    "restaurant": "Restaurants should show current service times, menus and reservations. Private groups and resort dining need a clear process that reflects real capacity and seasonal operation.",
+    "actions": [
+      {
+        "title": "Mountain demand",
+        "body": "Publish accurate seasonal facilities and arrival information. Use confirmed operating dates and room availability to plan winter and warmer-season offers."
+      },
+      {
+        "title": "Touring clarity",
+        "body": "Explain realistic routes and appropriate stay lengths. Link official access information where needed without promising entry or activity availability."
+      },
+      {
+        "title": "City enquiries",
+        "body": "Give meeting and business prospects useful accommodation and location details. Measure qualified group requests separately from leisure reservations."
+      }
+    ],
+    "faq": {
+      "question": "How should Utah hotel content discuss national parks or ski activities?",
+      "answer": "It should state the real relationship between the property and the activity. We would provide useful planning context, link current official resources and make transport, permits, equipment and any third-party reservations explicit before advertising an inclusion."
+    },
+    "source": {
+      "label": "Utah official visitor guide",
+      "url": "https://www.visitutah.com/"
+    }
+  },
+  {
+    "name": "Vermont",
+    "slug": "vermont",
+    "kind": "state",
+    "state": null,
+    "region": "Northeast",
+    "description": "Vermont inn, hotel and resort marketing for mountain stays and village breaks. Build seasonal offers, clear experience content and qualified direct enquiries.",
+    "intro": "A Vermont stay is often chosen for its setting, character and seasonal experience. We help inns, hotels and resorts show those details clearly and connect trip research to a suitable room offer, celebration enquiry or direct booking.",
+    "context": "Burlington, Stowe, the Green Mountains and other village bases offer different stays. Explain the property’s real setting, access and seasonal facilities. Guests comparing an inn, resort or small hotel need practical room and arrival details alongside the destination story.",
+    "restaurant": "Restaurants can show local food and the dining experience with current menus and reservations. Keep seasonal hours and private-event arrangements consistent across the website and search listings.",
+    "actions": [
+      {
+        "title": "Seasonal reasons",
+        "body": "Create useful content for experiences the property actually provides. Distinguish autumn trips, winter stays and warmer-season breaks through real facilities and offers."
+      },
+      {
+        "title": "Inn character",
+        "body": "Use original room, food and setting photography to make the stay tangible. Explain room differences and inclusions before asking for a booking."
+      },
+      {
+        "title": "Small celebrations",
+        "body": "Publish accommodation, dining and gathering details. Capture group size and date so the team can assess fit and respond with a suitable scope."
+      }
+    ],
+    "faq": {
+      "question": "How can a Vermont inn attract guests beyond a single busy season?",
+      "answer": "We would identify reasons to stay that remain available in other periods, then build specific content and approved offers around them. The goal is suitable guests and profitable stays, with booking evidence guiding which seasonal messages receive more budget."
+    },
+    "source": {
+      "label": "Vermont official visitor guide",
+      "url": "https://vermontvacation.com/"
+    }
+  },
+  {
+    "name": "Virginia",
+    "slug": "virginia",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "Virginia hotel and restaurant marketing for Richmond, Northern Virginia and destination stays. Connect local search, trip content and group demand to direct enquiries.",
+    "intro": "Virginia hospitality includes work trips, heritage travel, coastal breaks and retreats. We help hotels and restaurants organize those journeys around their actual property, with relevant content and offers that lead to useful reservations and enquiries.",
+    "context": "Richmond, Northern Virginia, Williamsburg, Virginia Beach and the Shenandoah area need different positioning. Be precise about the hotel’s location and travel context, particularly when serving Washington, DC visits. Give guests practical arrival and stay information rather than broad proximity claims.",
+    "restaurant": "Restaurants can connect current menus and occasion content to table reservations. Private dining and event enquiries need clear capacities and a route to the responsible team.",
+    "actions": [
+      {
+        "title": "City and work stays",
+        "body": "Show accurate neighborhood, transport and corporate stay information. Separate room bookings from meetings or longer-stay sales enquiries."
+      },
+      {
+        "title": "Heritage itineraries",
+        "body": "Build useful trip content around the property’s real base. Distinguish suggested attractions from included tickets, tours or transport."
+      },
+      {
+        "title": "Coastal and retreat offers",
+        "body": "Describe available facilities and the actual setting. Coordinate promotions with inventory and measure booking value across guest segments."
+      }
+    ],
+    "faq": {
+      "question": "Can a Northern Virginia hotel target Washington, DC visitors?",
+      "answer": "Yes, where it is a practical base, with the Virginia address and transport arrangements clearly explained. We would compare enquiry quality against the hotel’s other audiences and avoid presenting the property as being in the District of Columbia."
+    },
+    "source": {
+      "label": "Virginia official visitor guide",
+      "url": "https://www.virginia.org/"
+    }
+  },
+  {
+    "name": "Washington",
+    "slug": "washington",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Washington State hotel and restaurant marketing for Seattle, Spokane and destination stays. Build precise local content, seasonal offers and direct booking demand.",
+    "intro": "Washington State hospitality spans city visits, island trips and outdoor stays. We help hotels and restaurants communicate their exact location and experience, with campaigns connected to useful room, dining and group enquiries.",
+    "context": "Seattle, Spokane, the San Juan Islands and mountain or wine-country destinations need different guest journeys. Make Washington State distinct from Washington, DC in content and targeting. Arrival routes, ferry arrangements where relevant and seasonal facilities should be accurate for the actual property.",
+    "restaurant": "Restaurants should show neighborhood, cuisine, menu and booking details clearly. Keep local diners, overnight guests and private groups separate when their reservation needs differ.",
+    "actions": [
+      {
+        "title": "City visits",
+        "body": "Create practical neighborhood and transport content for relevant trips. Connect it to room choices and approved offers rather than targeting every metro search."
+      },
+      {
+        "title": "Island and outdoor stays",
+        "body": "Explain the final arrival route and confirmed facilities. Make third-party transport and activities explicit so the guest can plan realistically."
+      },
+      {
+        "title": "Regional growth",
+        "body": "Build suitable multi-night and return-stay ideas from actual guest patterns. Track confirmed bookings and net value alongside enquiry volume."
+      }
+    ],
+    "faq": {
+      "question": "How do you distinguish Washington State from Washington, DC in SEO?",
+      "answer": "We use the state and city names accurately in the page, listings and campaign targeting. Washington State properties should have content about their own travel context, with no attempt to collect unrelated District of Columbia searches."
+    },
+    "source": {
+      "label": "Washington official visitor guide",
+      "url": "https://stateofwatourism.com/"
+    }
+  },
+  {
+    "name": "West Virginia",
+    "slug": "west-virginia",
+    "kind": "state",
+    "state": null,
+    "region": "South",
+    "description": "West Virginia hotel, lodge and resort marketing for mountain breaks and regional travel. Build useful outdoor content, seasonal offers and direct booking enquiries.",
+    "intro": "West Virginia guests often compare the outdoor experience and practical details of the stay together. We help lodges, hotels and resorts make those choices clear and connect relevant destination research to direct enquiries and reservations.",
+    "context": "Charleston, Morgantown, the New River Gorge area and mountain destinations provide different bases. Explain the property’s real access and facilities. Suggested outdoor activities should be distinguished from guided services or equipment the accommodation actually supplies.",
+    "restaurant": "Restaurants should keep seasonal hours, menus and booking information current. Give groups a separate route when dining needs to be coordinated with a retreat or event.",
+    "actions": [
+      {
+        "title": "Outdoor confidence",
+        "body": "Show realistic access and arrival details for the property. Link current official resources for activity or route guidance when needed."
+      },
+      {
+        "title": "Retreat enquiries",
+        "body": "Publish room, meal and gathering options the team can deliver. Capture dates and group requirements before proposing an itinerary or price."
+      },
+      {
+        "title": "Seasonal stays",
+        "body": "Build offers around confirmed facilities and available rooms. Compare qualified enquiries and completed stays across seasons instead of relying on destination traffic alone."
+      }
+    ],
+    "faq": {
+      "question": "Can a West Virginia lodge advertise adventure packages?",
+      "answer": "Yes, when the inclusions and delivery arrangements are confirmed. We would clearly identify any third-party activity provider, explain booking conditions and avoid implying equipment, access or guided services are included when the guest must arrange them separately."
+    },
+    "source": {
+      "label": "West Virginia official visitor guide",
+      "url": "https://wvtourism.com/"
+    }
+  },
+  {
+    "name": "Wisconsin",
+    "slug": "wisconsin",
+    "kind": "state",
+    "state": null,
+    "region": "Midwest",
+    "description": "Wisconsin hotel and resort marketing for Milwaukee, Madison and lake destinations. Connect city visits, seasonal breaks and group enquiries to direct bookings.",
+    "intro": "Wisconsin hospitality can serve a city weekend, a work visit or a lakeside break. We help properties make the accommodation and experience clear, with relevant search content and campaigns tied to actual booking opportunities.",
+    "context": "Milwaukee, Madison, Door County and Wisconsin Dells bring different guest needs. A family traveler wants useful room and facility detail; a business guest needs convenience; a destination guest compares the setting. Build the page around the real property and its available services.",
+    "restaurant": "For restaurants, show current menus, hours and reservation options. Private dining and group occasions should have capacity information and a separate sales response where needed.",
+    "actions": [
+      {
+        "title": "City bookings",
+        "body": "Create accurate neighborhood, venue and campus content where relevant. Link practical visit information to suitable rooms and approved offers."
+      },
+      {
+        "title": "Family and lake stays",
+        "body": "Explain accommodation layouts, inclusions and actual activity access. Keep third-party tickets and services separate from the hotel’s own facilities."
+      },
+      {
+        "title": "Repeat visits",
+        "body": "Use permission-based communication for guests with a reason to return. Coordinate seasonal offers with room pace and measure confirmed booking value."
+      }
+    ],
+    "faq": {
+      "question": "How can a Wisconsin resort communicate family-stay value?",
+      "answer": "We would make room capacity, inclusions, facilities and booking conditions clear before the guest enquires. Offers should explain what the family receives and what costs extra, with campaign results judged by suitable confirmed stays rather than cheap leads."
+    },
+    "source": {
+      "label": "Wisconsin official visitor guide",
+      "url": "https://www.travelwisconsin.com/"
+    }
+  },
+  {
+    "name": "Wyoming",
+    "slug": "wyoming",
+    "kind": "state",
+    "state": null,
+    "region": "West",
+    "description": "Wyoming hotel and lodge marketing for Jackson, Cheyenne and touring destinations. Build accurate route content, seasonal offers and qualified direct enquiries.",
+    "intro": "Wyoming stays often sit within a wider outdoor or road-trip itinerary. We help hotels and lodges explain the property’s actual setting, access and experience, then connect relevant planning interest to a clear direct enquiry or booking.",
+    "context": "Jackson, Cody, Cheyenne and other touring bases need different guest information. Be precise about driving routes, park access and seasonal operations. A useful stay page explains why the accommodation fits the journey without implying every major attraction is close by.",
+    "restaurant": "Restaurants can serve residents, touring guests and private groups through distinct booking routes. Seasonal opening information and menu availability should remain current.",
+    "actions": [
+      {
+        "title": "Itinerary fit",
+        "body": "Create helpful route and stay-length information around the property’s address. Link to official access guidance and distinguish admission or permits from hotel services."
+      },
+      {
+        "title": "Lodge detail",
+        "body": "Show accommodation choices, dining and activities with original material. Explain what is included and which arrangements guests make separately."
+      },
+      {
+        "title": "Booking calendar",
+        "body": "Plan campaigns around actual operating dates and inventory. Give advance travelers clear offer conditions and measure deposits and completed stays."
+      }
+    ],
+    "faq": {
+      "question": "How can a Wyoming lodge set realistic expectations for a touring guest?",
+      "answer": "The website should show the precise location, arrival arrangements, room choices and seasonal facilities. We would explain the property’s role in the itinerary and link current official park or route information, with no unsupported promise of access or included activities."
+    },
+    "source": {
+      "label": "Wyoming official visitor guide",
+      "url": "https://travelwyoming.com/"
+    }
+  },
+  {
+    "name": "New York City",
+    "slug": "new-york-city",
+    "kind": "city",
+    "state": "New York",
+    "region": "Northeast",
+    "description": "New York City hotel and restaurant marketing with neighborhood-focused SEO, paid search and direct booking plans for independent properties and hospitality groups.",
+    "intro": "A guest choosing New York City is also choosing a borough, a neighborhood and a way to move around. We help hotels and restaurants make that choice easier through precise content, focused campaigns and a clear booking path.",
+    "context": "Manhattan, Brooklyn, Queens, the Bronx and Staten Island offer different bases for a visit. Show the property’s exact address and useful transport context. A leisure visitor, a business traveler and an event planner should each find relevant information without being sent through unrelated offers.",
+    "restaurant": "Dining campaigns should make the cuisine, neighborhood, menu and reservation route obvious. Give private dining its own enquiry process with party size and occasion details.",
+    "actions": [
+      {
+        "title": "Neighborhood relevance",
+        "body": "Build useful content around the hotel’s actual neighborhood and nearby travel purposes. Verify distances and transport before publishing proximity claims."
+      },
+      {
+        "title": "Direct room value",
+        "body": "Explain room layouts, inclusions, charges and cancellation terms clearly. Keep the campaign offer consistent with the booking engine and approved inventory."
+      },
+      {
+        "title": "Group and business leads",
+        "body": "Publish useful room-block or meeting information where offered. Capture dates and requirements, then report qualified enquiries and contracted value separately from individual stays."
+      }
+    ],
+    "faq": {
+      "question": "Should a New York City hotel target searches for every borough?",
+      "answer": "Only where the stay realistically fits the trip. We would prioritize the property’s own neighborhood and relevant guest journeys, using accurate transport information instead of presenting all five boroughs as equally convenient."
+    },
+    "source": {
+      "label": "New York City official visitor guide",
+      "url": "https://www.nyctourism.com/"
+    }
+  },
+  {
+    "name": "Los Angeles",
+    "slug": "los-angeles",
+    "kind": "city",
+    "state": "California",
+    "region": "West",
+    "description": "Los Angeles hotel and restaurant marketing built around the right neighborhood, guest purpose and booking journey. Explore SEO, paid search and direct enquiries.",
+    "intro": "In Los Angeles, location can decide whether a stay fits the trip. We help hotels and restaurants explain their neighborhood, arrival arrangements and experience clearly, then connect relevant audiences to room, dining and group enquiries.",
+    "context": "A downtown stay, a Hollywood itinerary and a Westside visit need different location information. Guests should understand the property’s actual address and transport choices. Build campaigns around relevant travel purposes instead of promising easy access to every part of a large metro area.",
+    "restaurant": "For restaurants, show cuisine, atmosphere, parking and reservation options. Local dining and private occasions need different calls to action and sales follow-up.",
+    "actions": [
+      {
+        "title": "Location fit",
+        "body": "Create accurate neighborhood content and practical arrival guidance. Test relevant audience areas while keeping the hotel’s actual setting clear throughout the journey."
+      },
+      {
+        "title": "Work and leisure",
+        "body": "Separate business, entertainment-related and leisure enquiries when the property serves them. Use suitable room offers and measure confirmed booking value by audience."
+      },
+      {
+        "title": "Original experience",
+        "body": "Use real room, dining and common-area photography. Give guests enough detail to compare the stay before asking them to complete a form."
+      }
+    ],
+    "faq": {
+      "question": "How do you stop Los Angeles campaigns attracting guests to the wrong area?",
+      "answer": "We make the neighborhood and address explicit in the advertisement and landing page. Campaign targeting and enquiry reporting then help assess which travel purposes fit the property, with transport and proximity information checked rather than generalized."
+    },
+    "source": {
+      "label": "Los Angeles official visitor guide",
+      "url": "https://www.discoverlosangeles.com/"
+    }
+  },
+  {
+    "name": "San Francisco",
+    "slug": "san-francisco",
+    "kind": "city",
+    "state": "California",
+    "region": "West",
+    "description": "San Francisco hotel and restaurant marketing for neighborhood stays, business visits and events. Build useful local content, paid campaigns and direct bookings.",
+    "intro": "San Francisco guests need a clear picture of the neighborhood, room and arrival experience. We help hotels and restaurants communicate those details and connect relevant city research to a reservation or qualified enquiry.",
+    "context": "Downtown, waterfront and other neighborhood properties answer different guest needs. Convention, business and leisure travelers may compare different routes and amenities. The page should explain the real address, transport, parking and property facilities before asking a guest to choose an offer.",
+    "restaurant": "For dining venues, connect the menu and setting to current reservations. Private groups should find capacity and occasion information without entering the ordinary table-booking journey.",
+    "actions": [
+      {
+        "title": "Visit purpose",
+        "body": "Build useful content for business, convention or leisure trips the property genuinely serves. Link practical location information to appropriate room choices."
+      },
+      {
+        "title": "Booking confidence",
+        "body": "Make room differences, inclusions and approved offer terms clear. Check the mobile journey from paid click to availability before adding more traffic."
+      },
+      {
+        "title": "Restaurant discovery",
+        "body": "Use original food and space photography with precise neighborhood information. Measure reservations and qualified private-dining enquiries separately."
+      }
+    ],
+    "faq": {
+      "question": "Should a San Francisco hotel advertise every convention date?",
+      "answer": "First we would review the official event calendar, remaining rooms and booking pace. Some dates may need acquisition campaigns; others may benefit more from direct booking protection or stay extensions, with offers approved by the property team."
+    },
+    "source": {
+      "label": "San Francisco official visitor guide",
+      "url": "https://www.sftravel.com/"
+    }
+  },
+  {
+    "name": "San Diego",
+    "slug": "san-diego",
+    "kind": "city",
+    "state": "California",
+    "region": "West",
+    "description": "San Diego hotel and restaurant marketing for coastal stays, downtown visits and group events. Connect local search and focused offers to direct enquiries.",
+    "intro": "A San Diego beach stay and a downtown meeting visit need different information. We help hospitality properties show where they fit and build campaigns around the room, dining or event experience a guest can actually book.",
+    "context": "Coastal neighborhoods and downtown properties should have distinct location stories. Show the real access to the beach, convention venues or other relevant districts, with parking and transport details that help guests compare their options. Do not describe a city hotel as beachfront unless it is.",
+    "restaurant": "Restaurant pages should make cuisine, menus and reservations easy to find. Group dining needs capacity, dates and a separate response process when the venue offers it.",
+    "actions": [
+      {
+        "title": "Coastal fit",
+        "body": "Show the actual setting and accommodation experience. Explain beach access and family facilities accurately, then connect the content to available rooms."
+      },
+      {
+        "title": "Meeting visits",
+        "body": "Create useful venue and arrival content for suitable city hotels. Distinguish room reservations from meeting and room-block sales enquiries."
+      },
+      {
+        "title": "Stay extensions",
+        "body": "Develop relevant leisure ideas for guests adding time to a work trip. Measure additional nights and net booking value rather than only campaign reach."
+      }
+    ],
+    "faq": {
+      "question": "Can one San Diego campaign serve beach guests and convention visitors?",
+      "answer": "It can share systems and reporting, but the messages and landing paths should reflect the different needs. We would show the property’s true location, use suitable offers and compare conversion quality before deciding how to divide spend."
+    },
+    "source": {
+      "label": "San Diego official visitor guide",
+      "url": "https://www.sandiego.org/coastal-neighborhoods"
+    }
+  },
+  {
+    "name": "Palm Springs",
+    "slug": "palm-springs",
+    "kind": "city",
+    "state": "California",
+    "region": "West",
+    "description": "Palm Springs hotel and resort marketing for desert breaks, retreats and private events. Build original property content, seasonal offers and direct enquiries.",
+    "intro": "Palm Springs hospitality is often chosen for the setting, design and way guests spend time together. We help hotels and resorts make that experience tangible and connect relevant trip interest to room and group enquiries.",
+    "context": "Palm Springs and the wider Greater Palm Springs area include distinct cities and properties. State the actual address and explain the accommodation, pools, dining and gathering facilities provided. Event interest should lead to practical capacity and stay information, with dates and inclusions confirmed.",
+    "restaurant": "Restaurants can show the atmosphere and cuisine alongside menus and reservations. Keep local tables, resort guest dining and private events distinct where the team handles them differently.",
+    "actions": [
+      {
+        "title": "Property character",
+        "body": "Use original images and clear room descriptions to explain the stay. Show the real spaces and amenities instead of relying on generic desert scenery."
+      },
+      {
+        "title": "Retreat enquiries",
+        "body": "Publish accommodation and gathering options the property can deliver. Capture dates, group size and event needs so proposals begin with useful information."
+      },
+      {
+        "title": "Seasonal offers",
+        "body": "Coordinate promotions with room pace and the revenue team’s approved terms. Compare booking value across periods without making every offer a blanket discount."
+      }
+    ],
+    "faq": {
+      "question": "How do you market a Palm Springs retreat property?",
+      "answer": "We would make the room inventory, gathering spaces, dining arrangements and practical restrictions clear. The campaign should attract suitable groups and record the details needed to qualify them, with confirmed events and stays guiding performance reporting."
+    },
+    "source": {
+      "label": "Palm Springs official visitor guide",
+      "url": "https://www.visitgreaterpalmsprings.com/"
+    }
+  },
+  {
+    "name": "Miami",
+    "slug": "miami",
+    "kind": "city",
+    "state": "Florida",
+    "region": "South",
+    "description": "Miami hotel and restaurant marketing for city stays, beach trips and private groups. Build precise local SEO, paid campaigns and direct booking enquiries.",
+    "intro": "Miami guests compare neighborhood, atmosphere and the practical shape of the trip. We help hotels and restaurants explain their actual setting and build clear journeys from destination research to a room, table or group enquiry.",
+    "context": "Miami and Miami Beach are distinct locations within the wider visitor area. Make the hotel’s actual address and transport context obvious. A business guest, beach visitor and dining group need relevant information, with no implication of direct beach access when the property does not have it.",
+    "restaurant": "For restaurants, show the cuisine, setting, reservation policy and current menu. Separate private occasions from ordinary table bookings so the right team can respond.",
+    "actions": [
+      {
+        "title": "Location clarity",
+        "body": "Explain the neighborhood and realistic access to relevant districts. Use precise language for waterfront and beach features so the stay matches expectations."
+      },
+      {
+        "title": "Room offers",
+        "body": "Keep inclusions, mandatory charges, parking and cancellation terms visible. Connect paid campaigns to the same offer guests find in the booking engine."
+      },
+      {
+        "title": "Private groups",
+        "body": "Give planners useful capacity, dining and accommodation information. Track qualified requests, proposals and confirmed business separately from room and table reservations."
+      }
+    ],
+    "faq": {
+      "question": "Should a Miami hotel use Miami Beach keywords?",
+      "answer": "Only where the wording accurately explains its relationship to that trip. We would state the hotel’s actual city and neighborhood and avoid presenting a Miami property as being in Miami Beach or directly on the beach when it is not."
+    },
+    "source": {
+      "label": "Miami official visitor guide",
+      "url": "https://www.miamiandbeaches.com/"
+    }
+  },
+  {
+    "name": "Orlando",
+    "slug": "orlando",
+    "kind": "city",
+    "state": "Florida",
+    "region": "South",
+    "description": "Orlando hotel and resort marketing for family stays, meetings and group trips. Connect useful room content, paid campaigns and direct booking enquiries.",
+    "intro": "Orlando guests often compare the full logistics of a stay, not just the room rate. We help hotels and resorts explain accommodation capacity, access and inclusions, then build a booking journey suited to families, meetings or groups.",
+    "context": "A theme-park itinerary and a convention visit need different information. The page should state the property’s real location and any confirmed transport arrangements. Show which tickets, meals or transfers are included and which guests arrange separately, with offer conditions easy to understand.",
+    "restaurant": "Restaurants can attract local diners as well as visiting families and event groups. Current menus, reservation rules and capacity information should support each relevant route.",
+    "actions": [
+      {
+        "title": "Family decisions",
+        "body": "Explain room layouts, occupancy, meals and facilities accurately. Use original accommodation images and a booking path that makes the total offer understandable."
+      },
+      {
+        "title": "Convention stays",
+        "body": "Build practical venue and arrival content where the hotel is a suitable base. Separate meeting and room-block requests from individual room bookings."
+      },
+      {
+        "title": "Package accuracy",
+        "body": "Confirm tickets, transfers and third-party arrangements before advertising a package. Keep the paid message, landing content and booking terms consistent."
+      }
+    ],
+    "faq": {
+      "question": "Can an Orlando hotel advertise theme-park packages?",
+      "answer": "Yes, when the inclusions and any commercial arrangements are confirmed. We would state exactly what the property supplies and what costs extra, with no suggestion of official park affiliation or included transport unless it is accurate."
+    },
+    "source": {
+      "label": "Orlando official visitor guide",
+      "url": "https://www.visitorlando.com/"
+    }
+  },
+  {
+    "name": "Fort Lauderdale",
+    "slug": "fort-lauderdale",
+    "kind": "city",
+    "state": "Florida",
+    "region": "South",
+    "description": "Fort Lauderdale hotel and restaurant marketing for beach stays, trip extensions and groups. Build practical local content and direct booking campaigns.",
+    "intro": "Fort Lauderdale hospitality can serve a beach break, a city visit or an extension to a wider journey. We help properties explain the stay and connect relevant guest plans to a direct room, dining or group enquiry.",
+    "context": "The property’s relationship to the beach, airport or cruise journey must be stated accurately. Guests planning a short stay need practical arrival, luggage and transport information. Distinguish any service the hotel provides from arrangements made independently through a third party.",
+    "restaurant": "For restaurants, show current menus and reservations with clear location information. Separate private groups and celebrations from everyday table bookings when they require a proposal.",
+    "actions": [
+      {
+        "title": "Trip extensions",
+        "body": "Create useful pre- or post-journey stay content where the property fits. Explain check-in, luggage and transport arrangements without implying an included transfer."
+      },
+      {
+        "title": "Beach experience",
+        "body": "Show actual beach access, room choices and available facilities. Use approved offers linked to room availability and clear booking terms."
+      },
+      {
+        "title": "Group enquiries",
+        "body": "Publish dining, accommodation and gathering options the property can fulfil. Capture date and party size to make follow-up useful."
+      }
+    ],
+    "faq": {
+      "question": "How should a Fort Lauderdale hotel market pre-cruise stays?",
+      "answer": "It should explain the real location, arrival timing, luggage arrangements and any confirmed transfer service. We would separate hotel inclusions from third-party transport and measure completed stays rather than assuming every cruise-related visitor will book."
+    },
+    "source": {
+      "label": "Fort Lauderdale official visitor guide",
+      "url": "https://www.visitlauderdale.com/"
+    }
+  },
+  {
+    "name": "Tampa",
+    "slug": "tampa",
+    "kind": "city",
+    "state": "Florida",
+    "region": "South",
+    "description": "Tampa hotel and restaurant marketing for city visits, meetings and leisure stays. Connect local discovery, focused campaigns and qualified direct enquiries.",
+    "intro": "Tampa properties can serve work visits, meetings and leisure trips within different booking journeys. We help hotels and restaurants show their precise location and experience, with useful content connected to a direct reservation or sales enquiry.",
+    "context": "Downtown, waterfront and other Tampa-area properties should explain their actual setting. Guests need to understand transport and access to relevant venues or districts. Keep the city stay distinct from a beach-holiday promise and show the facilities the property really provides.",
+    "restaurant": "Restaurants can connect cuisine and occasion content to a clear reservation route. Private dining pages should explain capacity and requirements so the team receives useful enquiries.",
+    "actions": [
+      {
+        "title": "City relevance",
+        "body": "Develop practical neighborhood and arrival content around the property. Link relevant meeting, event and leisure information to appropriate rooms."
+      },
+      {
+        "title": "Business enquiries",
+        "body": "Give corporate and group prospects accommodation and meeting detail. Track proposals and confirmed business separately from general room questions."
+      },
+      {
+        "title": "Leisure value",
+        "body": "Show dining, common spaces and useful nearby itinerary ideas. Coordinate approved offers with soft dates and measure booking value, not simply site visits."
+      }
+    ],
+    "faq": {
+      "question": "Should a Tampa hotel sell itself as a beach resort?",
+      "answer": "Only when the property’s location and facilities make that description accurate. We would explain the actual city or waterfront experience and any realistic beach-trip context, so campaigns attract guests whose expectations match the stay."
+    },
+    "source": {
+      "label": "Tampa official visitor guide",
+      "url": "https://www.visittampabay.com/"
+    }
+  },
+  {
+    "name": "Las Vegas",
+    "slug": "las-vegas",
+    "kind": "city",
+    "state": "Nevada",
+    "region": "West",
+    "description": "Las Vegas hotel and restaurant marketing for leisure, conventions and private groups. Build clear offers, precise location content and direct booking journeys.",
+    "intro": "Las Vegas guests compare location, total stay cost and the experience beyond the room. We help hotels and restaurants make those choices clear, with campaigns that connect leisure, business and group audiences to relevant booking options.",
+    "context": "Strip, downtown and other Las Vegas properties require accurate location descriptions. Convention and entertainment visitors may have different priorities. Explain actual access, parking, facilities and charges, with no suggestion that a hotel is attached to a venue or event unless that is correct.",
+    "restaurant": "For restaurants, show menus, occasion fit and reservation options. Private dining and larger groups need a separate sales route with capacity and date information.",
+    "actions": [
+      {
+        "title": "Offer transparency",
+        "body": "Make mandatory charges, inclusions and booking restrictions visible. Check that the advertisement and booking engine describe the same approved offer."
+      },
+      {
+        "title": "Convention journeys",
+        "body": "Use verified event dates and practical venue guidance. Review room pace before increasing spend, and measure qualified corporate or room-block requests separately."
+      },
+      {
+        "title": "Experience differentiation",
+        "body": "Show original rooms, dining and spaces that explain why the property suits a guest. Compare net booking value across audiences before scaling media."
+      }
+    ],
+    "faq": {
+      "question": "How can a Las Vegas hotel reduce poor-fit enquiries?",
+      "answer": "We would state its location, room experience, facilities and total offer clearly before the form or booking link. Separate routes for individual stays and groups help the team respond effectively and evaluate the business value of each audience."
+    },
+    "source": {
+      "label": "Las Vegas official visitor guide",
+      "url": "https://www.visitlasvegas.com/"
+    }
+  },
+  {
+    "name": "Dallas",
+    "slug": "dallas",
+    "kind": "city",
+    "state": "Texas",
+    "region": "South",
+    "description": "Dallas hotel and restaurant marketing for business stays, city weekends and events. Build precise local content, paid campaigns and direct booking enquiries.",
+    "intro": "Dallas guests need to know how the property fits the work trip, event or weekend they are planning. We help hotels and restaurants communicate the neighborhood and experience clearly, then connect relevant interest to a practical booking route.",
+    "context": "Dallas and the wider Dallas–Fort Worth area should not be presented as one interchangeable location. State the hotel’s exact city and useful transport context. Business, meeting and leisure audiences can share a brand, while still needing distinct information and offers.",
+    "restaurant": "For restaurants, show the menu, neighborhood and reservation path. Corporate dining and private occasions should have enough detail to qualify date, party size and requirements.",
+    "actions": [
+      {
+        "title": "Metro precision",
+        "body": "Build useful location and arrival content for the actual property. Avoid suggesting that every DFW district or airport is equally convenient."
+      },
+      {
+        "title": "Corporate journeys",
+        "body": "Explain the room, work-trip facilities and meeting options provided. Capture qualified business requests and track their progress to confirmed stays."
+      },
+      {
+        "title": "Weekend demand",
+        "body": "Create approved leisure offers for the dates the property needs. Connect original room and dining content to a short, measurable booking path."
+      }
+    ],
+    "faq": {
+      "question": "Should a Dallas hotel campaign include Fort Worth searches?",
+      "answer": "Only when the hotel is a realistic option for those guests and the location is clear. We would compare enquiry and booking quality by travel purpose instead of assuming broad Dallas–Fort Worth reach produces equally useful business."
+    },
+    "source": {
+      "label": "Dallas official visitor guide",
+      "url": "https://www.visitdallas.com/"
+    }
+  },
+  {
+    "name": "Austin",
+    "slug": "austin",
+    "kind": "city",
+    "state": "Texas",
+    "region": "South",
+    "description": "Austin hotel and restaurant marketing for music-led visits, business stays and groups. Connect neighborhood content and focused offers to direct enquiries.",
+    "intro": "Austin hospitality can serve a work trip, a music visit or a group weekend with different expectations. We help properties explain their actual neighborhood and experience, then build useful routes to room, dining and event enquiries.",
+    "context": "Downtown and other Austin neighborhoods require precise location stories. A guest planning a venue visit needs practical access, while a group organizer needs accommodation and gathering details. Use confirmed calendars and property inventory before creating date-led promotions.",
+    "restaurant": "Restaurants can show food, atmosphere, menus and reservations in one clear journey. Private dining needs capacity, occasion and date information so follow-up starts with context.",
+    "actions": [
+      {
+        "title": "Neighborhood fit",
+        "body": "Publish accurate arrival and venue information around the hotel’s actual location. Connect the content to appropriate rooms without implying an event partnership."
+      },
+      {
+        "title": "Date-led planning",
+        "body": "Review room pace and official calendars before advertising a busy period. Test stay extensions and nearby soft dates when they fit the property’s goals."
+      },
+      {
+        "title": "Group conversion",
+        "body": "Give organizers useful room-block, gathering and dining information. Track qualified requests and confirmed value rather than rewarding campaigns only for cheap enquiries."
+      }
+    ],
+    "faq": {
+      "question": "How should an Austin hotel market around major event periods?",
+      "answer": "The plan starts with confirmed dates, remaining rooms and approved restrictions. We would decide whether the property needs new demand, longer stays or better direct conversion, then build the campaign around that specific objective."
+    },
+    "source": {
+      "label": "Austin official visitor guide",
+      "url": "https://www.austintexas.org/"
+    }
+  },
+  {
+    "name": "Houston",
+    "slug": "houston",
+    "kind": "city",
+    "state": "Texas",
+    "region": "South",
+    "description": "Houston hotel and restaurant marketing for business, extended stays and city visits. Build practical local content, qualified enquiries and direct booking campaigns.",
+    "intro": "Houston guests may be comparing a short work visit, a longer stay or a city itinerary. We help hotels and restaurants explain the practical location and experience, with relevant content connected to a clear booking or sales enquiry.",
+    "context": "Houston’s different districts should not be treated as equally convenient to every guest. State the exact hotel address and realistic transport context. For properties serving institutional or longer-stay travel, practical room, parking and stay information matters more than generic city promotion.",
+    "restaurant": "Restaurants can communicate cuisine and occasion fit through current menus and reservations. Private groups should have a separate route with capacity and timing requirements.",
+    "actions": [
+      {
+        "title": "Purposeful stays",
+        "body": "Develop useful content for the work, institutional or leisure visits the property genuinely serves. Use accurate access information without implying affiliation."
+      },
+      {
+        "title": "Longer-stay enquiries",
+        "body": "Explain room facilities, stay conditions and approved rate enquiries where available. Capture dates and needs so sales can assess the opportunity."
+      },
+      {
+        "title": "City dining",
+        "body": "Connect food and neighborhood content to the actual reservation system. Report confirmed tables and qualified private-dining requests separately from broad engagement."
+      }
+    ],
+    "faq": {
+      "question": "Can a Houston hotel market stays near a medical or business district?",
+      "answer": "Yes, when its location and information are accurate. We would explain practical access and accommodation features without implying a hospital or business endorsement, and qualify longer-stay requests through the property’s own sales process."
+    },
+    "source": {
+      "label": "Houston official visitor guide",
+      "url": "https://www.visithoustontexas.com/"
+    }
+  },
+  {
+    "name": "San Antonio",
+    "slug": "san-antonio",
+    "kind": "city",
+    "state": "Texas",
+    "region": "South",
+    "description": "San Antonio hotel and restaurant marketing for cultural breaks, meetings and families. Connect practical local content and focused offers to direct enquiries.",
+    "intro": "San Antonio guests need a clear picture of the location, stay and itinerary they are choosing. We help hospitality properties connect that research to accurate room information, useful offers and a direct reservation or group enquiry.",
+    "context": "A downtown cultural visit and a wider family itinerary may need different accommodation choices. Show the property’s exact setting and realistic access to the places guests plan to visit. Distinguish suggested attractions from tickets, tours and transport included by the hotel.",
+    "restaurant": "Restaurants can explain the food, atmosphere and reservation policy clearly. Give private groups an enquiry route with date, capacity and occasion information.",
+    "actions": [
+      {
+        "title": "Cultural visits",
+        "body": "Build helpful neighborhood and itinerary content around the actual address. Link it to suitable rooms while making third-party activities explicit."
+      },
+      {
+        "title": "Meeting demand",
+        "body": "Give planners useful accommodation and gathering details where offered. Capture requirements and measure proposals and contracted stays separately from individual bookings."
+      },
+      {
+        "title": "Family decisions",
+        "body": "Show room layouts, occupancy and available facilities clearly. Keep inclusions and offer restrictions consistent from campaign through booking engine."
+      }
+    ],
+    "faq": {
+      "question": "Should San Antonio hotel packages include attraction tickets?",
+      "answer": "Only when the property has confirmed how those tickets are supplied and what the terms cover. We would make inclusions and extra arrangements explicit so the offer remains accurate and the guest can compare it confidently."
+    },
+    "source": {
+      "label": "San Antonio official visitor guide",
+      "url": "https://www.visitsanantonio.com/"
+    }
+  },
+  {
+    "name": "Chicago",
+    "slug": "chicago",
+    "kind": "city",
+    "state": "Illinois",
+    "region": "Midwest",
+    "description": "Chicago hotel and restaurant marketing for city stays, conventions and private groups. Build neighborhood-focused SEO, paid campaigns and direct booking demand.",
+    "intro": "Chicago guests choose both a hotel experience and a base for the city. We help properties explain their neighborhood, access and facilities, with campaigns connected to relevant room bookings, dining reservations and group enquiries.",
+    "context": "Downtown and other Chicago neighborhoods should have accurate, distinct content. A convention guest may compare transport to a venue; a weekend visitor may focus on the itinerary and room experience. Use the property’s actual location instead of treating every city attraction as nearby.",
+    "restaurant": "For restaurants, show the menu, atmosphere and booking options clearly. Private dining and corporate groups need useful capacity and occasion information with a dedicated response process.",
+    "actions": [
+      {
+        "title": "Convention fit",
+        "body": "Create accurate venue and arrival guidance for suitable properties. Review room pace before increasing date-specific spend, with no implied event affiliation."
+      },
+      {
+        "title": "Neighborhood stays",
+        "body": "Connect useful local content to room choices and approved offers. Explain transport and parking alongside the stay experience."
+      },
+      {
+        "title": "Dining and groups",
+        "body": "Use original food and venue material to support table bookings and private enquiries. Report those outcomes separately from room reservations and website engagement."
+      }
+    ],
+    "faq": {
+      "question": "How can a Chicago independent hotel compete for convention guests?",
+      "answer": "We would explain its real location, arrival options, room experience and booking terms clearly. Campaigns should focus on relevant events and available inventory, with qualified stays and booking value guiding investment instead of a promise to outrank every large brand."
+    },
+    "source": {
+      "label": "Chicago official visitor guide",
+      "url": "https://www.choosechicago.com/"
+    }
+  },
+  {
+    "name": "Atlanta",
+    "slug": "atlanta",
+    "kind": "city",
+    "state": "Georgia",
+    "region": "South",
+    "description": "Atlanta hotel and restaurant marketing for business visits, meetings and city stays. Connect precise neighborhood content and paid campaigns to direct enquiries.",
+    "intro": "Atlanta properties can serve work visits, meetings and leisure trips with different booking priorities. We help hotels and restaurants make their neighborhood and experience clear, then build campaigns connected to suitable room, dining and group enquiries.",
+    "context": "Downtown, Midtown, Buckhead and airport-area stays answer different guest needs. State the actual location and realistic transport arrangements. A broad Atlanta campaign should still explain why the particular property fits the traveler’s planned visit.",
+    "restaurant": "Restaurants can connect food and occasion content to current reservations. Corporate dining and private celebrations need capacity, date and requirement information before a tailored proposal.",
+    "actions": [
+      {
+        "title": "Business relevance",
+        "body": "Build useful content for the districts and venues the hotel realistically serves. Explain arrival, parking and work-trip facilities with accurate details."
+      },
+      {
+        "title": "Meeting enquiries",
+        "body": "Show accommodation and gathering options where provided. Route qualified group requests to sales and measure proposals and confirmed business."
+      },
+      {
+        "title": "Leisure stays",
+        "body": "Use original room and neighborhood content for relevant city breaks. Align approved offers with the property’s soft dates and track booking value by audience."
+      }
+    ],
+    "faq": {
+      "question": "Should an Atlanta airport-area hotel target downtown stay searches?",
+      "answer": "Only if its location is a practical fit and the page explains the journey clearly. We would make the actual area and transport arrangements explicit and compare enquiry quality before expanding targeting across the metro."
+    },
+    "source": {
+      "label": "Atlanta official visitor guide",
+      "url": "https://discoveratlanta.com/"
+    }
+  },
+  {
+    "name": "Boston",
+    "slug": "boston",
+    "kind": "city",
+    "state": "Massachusetts",
+    "region": "Northeast",
+    "description": "Boston hotel and restaurant marketing for business, campus visits and city breaks. Build practical neighborhood content, focused offers and direct booking enquiries.",
+    "intro": "Boston guests often compare the neighborhood and arrival arrangements before choosing a room. We help hospitality properties make that information useful and connect relevant work, campus and leisure journeys to clear booking or enquiry options.",
+    "context": "Boston and neighboring Cambridge should be described accurately for each property. Campus, meeting and cultural trips require different practical details. Use verified location and transport information, with no suggestion of university or event affiliation unless the hotel can substantiate it.",
+    "restaurant": "Restaurants should make menus, reservations and the setting easy to assess. Private dining needs separate party-size and occasion information so the venue can qualify requests.",
+    "actions": [
+      {
+        "title": "Campus journeys",
+        "body": "Create useful information for the institutions the hotel genuinely serves. Explain arrival and accommodation choices without using proximity as an unverified sales claim."
+      },
+      {
+        "title": "Work and meetings",
+        "body": "Give corporate prospects clear room, facility and group enquiry options. Track contracted business separately from general contact requests."
+      },
+      {
+        "title": "City breaks",
+        "body": "Link original room and neighborhood content to suitable offers. Show inclusions and booking conditions clearly across the campaign and booking engine."
+      }
+    ],
+    "faq": {
+      "question": "Can a Boston hotel use university names in useful stay content?",
+      "answer": "It can explain a relevant visit when the location and information are accurate. We would avoid implying an institutional partnership and focus on practical travel and accommodation details that help the guest choose a suitable stay."
+    },
+    "source": {
+      "label": "Boston official visitor guide",
+      "url": "https://www.meetboston.com/"
+    }
+  },
+  {
+    "name": "Seattle",
+    "slug": "seattle",
+    "kind": "city",
+    "state": "Washington",
+    "region": "West",
+    "description": "Seattle hotel and restaurant marketing for business stays, city breaks and trip extensions. Connect useful local content and direct booking campaigns.",
+    "intro": "Seattle hospitality can serve a city visit, a business trip or part of a wider itinerary. We help properties explain their actual neighborhood and stay experience, then connect relevant interest to direct room, dining and group enquiries.",
+    "context": "Downtown, waterfront and other Seattle properties should state their setting and realistic transport choices. Guests planning an onward journey need useful arrival and luggage information. Distinguish any transfer or package service the hotel supplies from arrangements a guest makes independently.",
+    "restaurant": "For restaurants, show the cuisine, menu and reservation route clearly. Local diners, visiting guests and private groups may need different information and calls to action.",
+    "actions": [
+      {
+        "title": "Neighborhood confidence",
+        "body": "Build accurate location and transport content for the hotel’s address. Link relevant city research to room choices and approved offers."
+      },
+      {
+        "title": "Trip extensions",
+        "body": "Explain practical pre- or post-journey stays where the property fits. Confirm luggage and transport arrangements before promoting them as inclusions."
+      },
+      {
+        "title": "Work demand",
+        "body": "Give corporate and meeting prospects useful accommodation information. Measure qualified enquiries and confirmed business separately from leisure bookings."
+      }
+    ],
+    "faq": {
+      "question": "How should a Seattle hotel market cruise-related stays?",
+      "answer": "We would explain the hotel’s real location, arrival process and any confirmed transport or luggage services. The page should distinguish the hotel offer from third-party travel arrangements and track completed stays instead of assuming all related enquiries are valuable."
+    },
+    "source": {
+      "label": "Seattle official visitor guide",
+      "url": "https://visitseattle.org/"
+    }
+  },
+  {
+    "name": "Denver",
+    "slug": "denver",
+    "kind": "city",
+    "state": "Colorado",
+    "region": "West",
+    "description": "Denver hotel and restaurant marketing for business visits, meetings and city breaks. Build accurate local content, paid campaigns and direct booking enquiries.",
+    "intro": "Denver guests may be planning a city stay or a stop within a wider Colorado trip. We help hotels and restaurants explain their actual location and experience, with useful content connected to room bookings and qualified group enquiries.",
+    "context": "A downtown visit, an airport-area stay and a mountain itinerary need different expectations. State the property’s precise setting and transport context. A Denver hotel should not imply ski access or a mountain-resort experience simply because the wider trip includes Colorado outdoor travel.",
+    "restaurant": "For restaurants, show menus, reservations and occasion fit clearly. Private dining and corporate groups need useful capacity information with a separate response route.",
+    "actions": [
+      {
+        "title": "City demand",
+        "body": "Create practical neighborhood and venue content for relevant visits. Give guests clear arrival, parking and room information before the booking step."
+      },
+      {
+        "title": "Meeting enquiries",
+        "body": "Publish accommodation and gathering options the property can deliver. Capture group dates and requirements and report qualified proposals separately."
+      },
+      {
+        "title": "Wider itineraries",
+        "body": "Explain the hotel’s role in a multi-stop Colorado journey. Offer realistic stay extensions without implying distant activities are on site or included."
+      }
+    ],
+    "faq": {
+      "question": "Should a Denver hotel advertise itself as a ski resort base?",
+      "answer": "Only with accurate language about the actual journey and services. We would keep the city accommodation offer clear and explain any wider itinerary realistically, so the campaign attracts guests whose expectations match the property."
+    },
+    "source": {
+      "label": "Denver official visitor guide",
+      "url": "https://www.denver.org/"
+    }
+  },
+  {
+    "name": "Colorado Springs",
+    "slug": "colorado-springs",
+    "kind": "city",
+    "state": "Colorado",
+    "region": "West",
+    "description": "Colorado Springs hotel and resort marketing for outdoor stays, city visits and retreats. Build practical experience content and direct booking enquiries.",
+    "intro": "Colorado Springs guests may be choosing an outdoor base, a city visit or a group retreat. We help hotels and resorts explain their actual setting and facilities, then connect relevant travel research to useful room and event enquiries.",
+    "context": "The property’s address and relationship to regional activities should be precise. A guest needs arrival guidance, realistic activity access and clear accommodation choices. Distinguish suggested excursions from transport, guided activities and services included in the stay.",
+    "restaurant": "Restaurants can connect cuisine and the setting to current reservations. Retreat dining and private groups need separate capacity and arrangement information where offered.",
+    "actions": [
+      {
+        "title": "Outdoor planning",
+        "body": "Build useful itinerary information around the actual property. Link current official activity resources and keep guest expectations realistic."
+      },
+      {
+        "title": "Retreat leads",
+        "body": "Show rooms, dining and gathering spaces with original material. Capture dates, group size and requirements to support a relevant proposal."
+      },
+      {
+        "title": "Stay clarity",
+        "body": "Explain facilities, inclusions and seasonal operation before booking. Align campaigns with available rooms and approved offer terms."
+      }
+    ],
+    "faq": {
+      "question": "How do you market a Colorado Springs retreat without promising a complete activity package?",
+      "answer": "We would show the accommodation and services the property provides, then clearly identify suggested or third-party activities. The enquiry process can collect group needs so the team confirms a realistic scope before quoting."
+    },
+    "source": {
+      "label": "Colorado Springs official visitor guide",
+      "url": "https://www.visitcos.com/"
+    }
+  },
+  {
+    "name": "Phoenix",
+    "slug": "phoenix",
+    "kind": "city",
+    "state": "Arizona",
+    "region": "West",
+    "description": "Phoenix hotel and restaurant marketing for business, leisure and group stays. Connect practical location content, seasonal offers and direct booking campaigns.",
+    "intro": "Phoenix guests compare the purpose, location and practical value of the stay. We help hotels and restaurants make those decisions clear, with focused campaigns connected to suitable room bookings, dining reservations and group enquiries.",
+    "context": "Phoenix and neighboring communities in the wider metro need precise location language. A work traveler, a leisure guest and an event planner may want different facilities and arrival information. Build the offer around what the property actually supplies rather than a generic desert-resort promise.",
+    "restaurant": "Restaurants should show menus, the setting and reservations clearly. Use a separate enquiry route for private dining and corporate occasions that require a proposal.",
+    "actions": [
+      {
+        "title": "Metro fit",
+        "body": "State the property’s actual city and practical transport context. Create relevant neighborhood content instead of suggesting every metro destination is nearby."
+      },
+      {
+        "title": "Seasonal value",
+        "body": "Plan offers with approved pricing and available rooms. Explain inclusions and conditions so the guest can assess the value beyond a headline discount."
+      },
+      {
+        "title": "Business groups",
+        "body": "Publish accommodation and meeting detail where offered. Capture dates and requirements and compare qualified proposals with individual booking results."
+      }
+    ],
+    "faq": {
+      "question": "Should a Phoenix hotel target Scottsdale resort searches?",
+      "answer": "Only when the wording accurately explains the stay and its location. We would keep the Phoenix address and real facilities clear, then test relevant audiences without presenting a city hotel as a different municipality or resort experience."
+    },
+    "source": {
+      "label": "Phoenix official visitor guide",
+      "url": "https://www.visitphoenix.com/"
+    }
+  },
+  {
+    "name": "Scottsdale",
+    "slug": "scottsdale",
+    "kind": "city",
+    "state": "Arizona",
+    "region": "West",
+    "description": "Scottsdale resort, hotel and restaurant marketing for leisure stays, retreats and events. Build clear experience content, seasonal campaigns and direct enquiries.",
+    "intro": "Scottsdale guests often compare the complete resort or boutique-stay experience. We help hospitality properties show rooms, dining and facilities clearly, then connect relevant research to a room booking or a qualified retreat and event enquiry.",
+    "context": "The plan should distinguish the property’s actual Scottsdale setting and services from the wider Phoenix area. Golf, wellness, dining and gathering facilities need precise descriptions. Confirm access, inclusions and delivery arrangements before they are used to sell a package.",
+    "restaurant": "For restaurants, use current menus and original space photography to support reservations. Private occasions need capacity, date and arrangement information before a useful proposal can be prepared.",
+    "actions": [
+      {
+        "title": "Experience proof",
+        "body": "Show original room and facility material that helps guests compare the stay. Avoid implying every activity is on site or part of the rate."
+      },
+      {
+        "title": "Retreat sales",
+        "body": "Publish useful accommodation, dining and gathering options. Capture group requirements and track qualified proposals and confirmed business."
+      },
+      {
+        "title": "Seasonal demand",
+        "body": "Use room pace and the revenue team’s approved offers to choose campaign periods. Judge results by booking quality and net value rather than reach alone."
+      }
+    ],
+    "faq": {
+      "question": "Can a Scottsdale resort promote golf or wellness experiences?",
+      "answer": "Yes, when it clearly explains what is provided and how access is arranged. We would confirm facilities and third-party partners, state inclusions and restrictions, and connect the offer to real inventory and a practical booking process."
+    },
+    "source": {
+      "label": "Scottsdale official visitor guide",
+      "url": "https://www.experiencescottsdale.com/"
+    }
+  },
+  {
+    "name": "Nashville",
+    "slug": "nashville",
+    "kind": "city",
+    "state": "Tennessee",
+    "region": "South",
+    "description": "Nashville hotel and restaurant marketing for music visits, business stays and celebrations. Build precise local content and qualified direct booking enquiries.",
+    "intro": "Nashville visitors may be planning a music weekend, a meeting or a group celebration. We help hotels and restaurants explain their real neighborhood and experience, with distinct routes to room, table and private-event enquiries.",
+    "context": "Downtown and other Nashville neighborhoods need accurate location information. Guests should understand transport, room choices and relevant venue access. Event interest does not automatically mean a property needs more demand, so campaigns should follow available inventory and booking pace.",
+    "restaurant": "Restaurants can show the menu, atmosphere and reservation policy clearly. Private groups need capacities, dates and occasion information with a separate sales response where appropriate.",
+    "actions": [
+      {
+        "title": "Venue context",
+        "body": "Build practical location content around the property’s actual address. Use official dates for event planning without implying a venue or organizer partnership."
+      },
+      {
+        "title": "Group fit",
+        "body": "Explain accommodation, dining and gathering options the property can fulfil. Capture party size and requirements early to reduce poor-fit enquiries."
+      },
+      {
+        "title": "Demand pacing",
+        "body": "Choose offers based on rooms that need demand and approved stay rules. Test stay extensions where useful and measure net booking value."
+      }
+    ],
+    "faq": {
+      "question": "How do you attract suitable Nashville group enquiries?",
+      "answer": "We would make the property’s room inventory, gathering options, policies and location clear before asking for details. Date, party size and occasion information then help the team qualify the request and prepare an appropriate proposal."
+    },
+    "source": {
+      "label": "Nashville official visitor guide",
+      "url": "https://www.visitmusiccity.com/"
+    }
+  },
+  {
+    "name": "New Orleans",
+    "slug": "new-orleans",
+    "kind": "city",
+    "state": "Louisiana",
+    "region": "South",
+    "description": "New Orleans hotel and restaurant marketing for cultural visits, meetings and groups. Connect neighborhood content and clear offers to direct booking demand.",
+    "intro": "A New Orleans stay is often chosen for the neighborhood and experience around the room. We help hotels and restaurants communicate those details clearly, with campaigns connected to relevant accommodation, dining and private-group enquiries.",
+    "context": "The French Quarter, downtown and other neighborhoods should be described accurately for the property’s address. Cultural visits, convention stays and celebrations have different planning needs. Give practical access and offer information, with events and third-party experiences kept distinct from hotel inclusions.",
+    "restaurant": "For restaurants, make the cuisine, current menu and reservation route central. Private dining needs capacity and occasion information so the venue can assess the request.",
+    "actions": [
+      {
+        "title": "Neighborhood story",
+        "body": "Use original property material and useful local guidance. Link the content to suitable rooms and dining rather than a generic city offer."
+      },
+      {
+        "title": "Calendar choices",
+        "body": "Check official events and booking pace before date-led promotions. Consider adjacent dates and stay extensions when busy periods already sell well."
+      },
+      {
+        "title": "Group conversion",
+        "body": "Publish accommodation, dining and meeting information where available. Track qualified proposals and confirmed value separately from general contact requests."
+      }
+    ],
+    "faq": {
+      "question": "Should New Orleans campaigns advertise only major festival dates?",
+      "answer": "We would review whether those dates actually need more demand. The more valuable opportunity may be direct booking conversion, longer stays or surrounding soft dates, with offers and access information checked against the property’s real inventory and official calendars."
+    },
+    "source": {
+      "label": "New Orleans official visitor guide",
+      "url": "https://www.neworleans.com/"
+    }
+  },
+  {
+    "name": "Honolulu",
+    "slug": "honolulu",
+    "kind": "city",
+    "state": "Hawaii",
+    "region": "West",
+    "description": "Honolulu hotel and restaurant marketing for Waikiki and other Oahu stays. Build precise location content, clear offers and qualified direct booking enquiries.",
+    "intro": "Honolulu guests need to understand the neighborhood, room and island experience before booking. We help hotels and restaurants present those choices clearly and connect relevant trip research to a practical room, dining or group enquiry.",
+    "context": "Waikiki and other Honolulu locations should be described precisely within Oahu. Show actual beach access, arrival arrangements and transport options. Do not blur separate islands into a nearby itinerary, and distinguish suggested activities from services the property includes.",
+    "restaurant": "Restaurants can connect cuisine and setting to current menus and reservations. Separate resident diners, visiting guests and private groups where the venue’s booking process differs.",
+    "actions": [
+      {
+        "title": "Location confidence",
+        "body": "Explain the property’s exact setting and real relationship to the beach. Use original room and facility material so the guest can compare the stay."
+      },
+      {
+        "title": "Offer accuracy",
+        "body": "Make inclusions, mandatory charges and booking conditions clear. Confirm activities and third-party arrangements before advertising a package."
+      },
+      {
+        "title": "Island planning",
+        "body": "Give useful arrival and local travel information through current official resources. Connect relevant itinerary content to suitable room choices without promising unsupported access."
+      }
+    ],
+    "faq": {
+      "question": "Can a Honolulu hotel promote experiences on other Hawaiian islands?",
+      "answer": "It can provide useful planning information, but the page must explain that separate island travel and arrangements are involved. We would keep the hotel’s Oahu location clear and avoid implying those experiences are nearby or included in the room booking."
+    },
+    "source": {
+      "label": "Honolulu official visitor guide",
+      "url": "https://www.gohawaii.com/islands/oahu"
+    }
+  },
+  {
+    "name": "Charleston",
+    "slug": "charleston",
+    "kind": "city",
+    "state": "South Carolina",
+    "region": "South",
+    "description": "Charleston hotel and restaurant marketing for city breaks, dining and destination events. Build precise local content, paid campaigns and direct enquiries.",
+    "intro": "Charleston guests often compare the setting, character and dining experience alongside the room. We help hotels and restaurants make those choices tangible and connect relevant city or celebration interest to useful direct enquiries.",
+    "context": "A historic-district stay, a wider Charleston-area hotel and a coastal trip require different location descriptions. State the actual property address and realistic access. Event planners also need accommodation and capacity information before a general destination story becomes a suitable enquiry.",
+    "restaurant": "For restaurants, show cuisine, menus and reservation arrangements clearly. Private dining and celebration groups should have their own capacity and requirement information.",
+    "actions": [
+      {
+        "title": "Character and location",
+        "body": "Use original property photography and practical neighborhood content. Explain the real setting without presenting every Charleston-area property as downtown or beachfront."
+      },
+      {
+        "title": "Celebration enquiries",
+        "body": "Publish accommodation, dining and gathering details the property can deliver. Collect date, party size and event needs before proposing a scope."
+      },
+      {
+        "title": "Short-break conversion",
+        "body": "Connect useful city content to suitable rooms and approved offers. Measure confirmed stays and booking value rather than treating destination traffic as revenue."
+      }
+    ],
+    "faq": {
+      "question": "How do you market a Charleston-area hotel outside the historic district?",
+      "answer": "We would explain its actual location and reasons to choose the stay, with realistic transport and itinerary context. Clear positioning can attract suitable guests without implying the hotel has a historic-district address or walkable access it does not provide."
+    },
+    "source": {
+      "label": "Charleston official visitor guide",
+      "url": "https://www.charlestoncvb.com/"
+    }
+  },
+  {
+    "name": "Savannah",
+    "slug": "savannah",
+    "kind": "city",
+    "state": "Georgia",
+    "region": "South",
+    "description": "Savannah hotel and restaurant marketing for cultural breaks, boutique stays and celebrations. Connect original local content and clear offers to direct enquiries.",
+    "intro": "Savannah guests may be choosing a characterful stay, a dining experience or a destination celebration. We help hospitality properties explain the real setting and connect that research to a room, table or qualified group enquiry.",
+    "context": "The Historic District, other Savannah neighborhoods and a separate Tybee Island trip need precise descriptions. Show the hotel’s address, practical arrival and parking arrangements, and the experience the property itself provides. Distinguish a suggested beach visit from a beachfront accommodation claim.",
+    "restaurant": "Restaurants can connect menus and atmosphere to a dependable reservation route. Private occasions need capacity and timing information so the team receives requests it can assess.",
+    "actions": [
+      {
+        "title": "Boutique detail",
+        "body": "Use original room, common-space and dining material to show the stay. Explain differences between accommodation choices before the booking step."
+      },
+      {
+        "title": "Arrival answers",
+        "body": "Provide accurate parking and access information for the actual address. Build helpful local content that supports a realistic itinerary."
+      },
+      {
+        "title": "Celebration demand",
+        "body": "Publish accommodation and dining arrangements the property can fulfil. Capture group size and date, then track proposals and confirmed business separately."
+      }
+    ],
+    "faq": {
+      "question": "Should a Savannah hotel use Tybee Island stay keywords?",
+      "answer": "Only when the wording accurately explains the relationship and travel involved. We would keep the Savannah address clear and distinguish a suggested Tybee visit from staying on the island or having direct beach access."
+    },
+    "source": {
+      "label": "Savannah official visitor guide",
+      "url": "https://visitsavannah.com/neighborhoods-communities"
+    }
+  },
+  {
+    "name": "Charlotte",
+    "slug": "charlotte",
+    "kind": "city",
+    "state": "North Carolina",
+    "region": "South",
+    "description": "Charlotte hotel and restaurant marketing for business trips, events and city weekends. Build neighborhood-focused content and qualified direct booking enquiries.",
+    "intro": "Charlotte hospitality can serve a work visit, an event or a leisure weekend. We help hotels and restaurants explain the actual neighborhood and experience, then connect relevant demand to a clear reservation or qualified group enquiry.",
+    "context": "Uptown and other Charlotte areas should have accurate, property-specific content. Guests need practical transport and venue information as well as room detail. A corporate group, individual traveler and private dining prospect should each find a route suited to their needs.",
+    "restaurant": "For restaurants, show cuisine, menus and reservations clearly. Private dining needs capacity, date and occasion information so sales follow-up starts with useful context.",
+    "actions": [
+      {
+        "title": "Business fit",
+        "body": "Explain relevant work-trip facilities and the actual location. Connect corporate enquiries to the team responsible and measure confirmed stays separately from general leads."
+      },
+      {
+        "title": "Venue visits",
+        "body": "Build practical content for the venues the hotel realistically serves. Check official calendars and room pace before launching date-led campaigns."
+      },
+      {
+        "title": "Weekend stays",
+        "body": "Use original room and neighborhood content to support suitable leisure offers. Track booking value and available inventory rather than promoting every date equally."
+      }
+    ],
+    "faq": {
+      "question": "How should a Charlotte hotel balance corporate and weekend demand?",
+      "answer": "We would review its booking mix, soft dates and segment value, then create relevant offers and landing paths. Separate measurement helps the team judge which audience needs investment without blending room enquiries and corporate proposals into one total."
+    },
+    "source": {
+      "label": "Charlotte official visitor guide",
+      "url": "https://www.charlottesgotalot.com/"
+    }
+  },
+  {
+    "name": "Asheville",
+    "slug": "asheville",
+    "kind": "city",
+    "state": "North Carolina",
+    "region": "South",
+    "description": "Asheville hotel, inn and restaurant marketing for mountain breaks and retreats. Build current property content, useful local guidance and direct booking enquiries.",
+    "intro": "Asheville guests need confidence in the current stay as well as inspiration for the trip. We help hotels, inns and restaurants explain their setting, operating facilities and experience clearly, with useful content connected to direct enquiries.",
+    "context": "The property’s actual Asheville-area location and arrival arrangements should guide the page. Use current official visitor information where access or operations affect plans. Guests comparing a city base and a mountain retreat need different room, dining and practical travel detail.",
+    "restaurant": "For restaurants, keep menus, opening days and reservations current. Private groups and retreat dining need confirmed capacity and service arrangements before an offer is promoted.",
+    "actions": [
+      {
+        "title": "Current confidence",
+        "body": "Verify property facilities and arrival information before publishing an offer. Link official local guidance where needed and avoid fixed promises about route conditions."
+      },
+      {
+        "title": "Stay experience",
+        "body": "Show original room, setting and dining material. Explain what is available on site and what guests arrange separately in the wider area."
+      },
+      {
+        "title": "Retreat enquiries",
+        "body": "Publish accommodation and gathering options the team can reliably deliver. Capture dates and requirements so proposals reflect a realistic scope."
+      }
+    ],
+    "faq": {
+      "question": "How do you keep Asheville marketing useful when travel conditions change?",
+      "answer": "We would maintain current property and arrival information and direct guests to official local resources for changing conditions. Campaigns should reflect confirmed operations and available rooms, with practical updates taking priority over outdated destination claims."
+    },
+    "source": {
+      "label": "Asheville official visitor guide",
+      "url": "https://www.exploreasheville.com/"
+    }
+  },
+  {
+    "name": "Salt Lake City",
+    "slug": "salt-lake-city",
+    "kind": "city",
+    "state": "Utah",
+    "region": "West",
+    "description": "Salt Lake City hotel and restaurant marketing for business visits and mountain-trip stays. Connect accurate local content and paid campaigns to direct enquiries.",
+    "intro": "Salt Lake City can be the destination or a base within a wider Utah trip. We help hotels and restaurants explain that role clearly, with practical location content and offers connected to useful room, dining and group enquiries.",
+    "context": "A downtown meeting visit and a mountain itinerary need different information. State the property’s exact location, arrival arrangements and any confirmed transport services. A city hotel should not imply resort or slope access simply because a guest plans to travel beyond the city.",
+    "restaurant": "Restaurants can connect local food discovery to current menus and reservations. Private dining and corporate groups need capacity and date information with a separate response process where appropriate.",
+    "actions": [
+      {
+        "title": "City practicality",
+        "body": "Build useful neighborhood, venue and transport content for the actual address. Link relevant visit information to suitable rooms and offers."
+      },
+      {
+        "title": "Mountain context",
+        "body": "Explain the property’s role in a wider itinerary accurately. Distinguish third-party transfers, activity access and equipment from services the hotel provides."
+      },
+      {
+        "title": "Group demand",
+        "body": "Give planners accommodation and gathering detail where available. Track qualified proposals and confirmed value separately from individual room enquiries."
+      }
+    ],
+    "faq": {
+      "question": "Can a Salt Lake City hotel target ski-trip guests?",
+      "answer": "Yes, when the location and arrangements make it a practical option. We would describe the real journey, transport and room experience clearly, without presenting a city hotel as a ski resort or implying lift access and transfers are included."
+    },
+    "source": {
+      "label": "Salt Lake City official visitor guide",
+      "url": "https://www.visitsaltlake.com/"
+    }
+  },
+  {
+    "name": "Portland",
+    "slug": "portland",
+    "kind": "city",
+    "state": "Oregon",
+    "region": "West",
+    "description": "Portland, Oregon hotel and restaurant marketing for neighborhood stays, food-led trips and groups. Build useful local content and direct booking campaigns.",
+    "intro": "Portland guests may choose a property for its neighborhood, food or role in a wider Oregon trip. We help hotels and restaurants make those reasons clear and connect relevant research to direct room, table and group enquiries.",
+    "context": "State Portland, Oregon clearly so the location is not confused with other cities of the same name. Neighborhoods and arrival arrangements should be accurate for the property. A guest planning a city break needs different information from someone using the hotel as one stop in a longer itinerary.",
+    "restaurant": "For restaurants, show the cuisine, current menu and reservation route. Private dining and visiting groups need separate capacity and arrangement details when the venue offers them.",
+    "actions": [
+      {
+        "title": "Neighborhood relevance",
+        "body": "Create practical local content linked to the actual hotel address. Use original property material rather than a generic regional scenery page."
+      },
+      {
+        "title": "Food and occasions",
+        "body": "Connect menus and venue photography to table bookings or private enquiries. Measure those outcomes separately from broad content engagement."
+      },
+      {
+        "title": "Oregon journeys",
+        "body": "Explain realistic onward itineraries and stay-extension ideas. Distinguish suggestions from included activities or transport and connect the content to available rooms."
+      }
+    ],
+    "faq": {
+      "question": "How do you keep Portland hotel searches focused on Oregon?",
+      "answer": "We state Portland, Oregon in the relevant page and campaign context and keep listings geographically precise. Useful neighborhood content and accurate targeting help qualify the visit, rather than trying to attract every search containing the city name."
+    },
+    "source": {
+      "label": "Portland official visitor guide",
+      "url": "https://www.travelportland.com/"
+    }
+  },
+  {
+    "name": "Washington, DC",
+    "slug": "washington-dc",
+    "kind": "city",
+    "state": "",
+    "region": "South",
+    "description": "Washington, DC hotel and restaurant marketing for meetings, cultural visits and groups. Build precise neighborhood content and qualified direct booking enquiries.",
+    "intro": "Washington, DC guests need a clear base for a meeting, cultural visit or group trip. We help hotels and restaurants explain their actual neighborhood and experience, then connect relevant interest to practical reservation and sales enquiries.",
+    "context": "The District of Columbia, nearby Virginia and nearby Maryland are distinct property locations. State the actual address and realistic transport context. Guests should understand the accommodation and journey before choosing an offer, without an implication of government or institution affiliation.",
+    "restaurant": "For restaurants, show menus, the setting and reservation options clearly. Corporate dining and private groups need capacity, date and occasion information with a useful sales response.",
+    "actions": [
+      {
+        "title": "Location precision",
+        "body": "Build accurate neighborhood and venue content for the actual property. Distinguish a DC address from a hotel elsewhere in the metro area."
+      },
+      {
+        "title": "Meeting and group sales",
+        "body": "Publish room-block, dining and gathering options where provided. Capture dates and requirements and measure qualified proposals and contracted value."
+      },
+      {
+        "title": "Cultural stays",
+        "body": "Connect useful city research to suitable rooms and approved offers. Check current official visitor information for the itinerary without implying admission or access is included."
+      }
+    ],
+    "faq": {
+      "question": "Can a hotel outside Washington, DC use this city as a target?",
+      "answer": "It can explain a relevant visit when the journey is realistic, but the actual Maryland or Virginia location must remain clear. We would describe transport and accommodation accurately and avoid presenting an outside property as having a DC address."
+    },
+    "source": {
+      "label": "Washington, DC official visitor guide",
+      "url": "https://washington.org/"
+    }
+  }
+]

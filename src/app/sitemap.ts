@@ -11,6 +11,8 @@ import { industriesData } from "./industries-we-serve/[...industry]/pageData";
 import { PRODUCTS, productPath } from "@/lib/products";
 import { blogData } from "@/utils/publishedBlogs";
 import { BLOGS_PER_PAGE } from "./blogs/components/pageData";
+import { US_DIRECTORY, US_MARKETS, usPath } from "@/lib/usMarkets";
+import { INTERNATIONAL_DIRECTORY, INTERNATIONAL_EXPERIENCE, INTERNATIONAL_PAGES, internationalPath } from "@/lib/internationalMarkets";
 
 const SITE = "https://fielmente.com";
 
@@ -49,6 +51,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const add = (p: string, lastModified?: Date) => paths.set(p.endsWith("/") ? p : `${p}/`, lastModified);
 
   STATIC_PAGES.forEach((p) => add(p));
+  add(US_DIRECTORY);
+  US_MARKETS.forEach((m) => add(usPath(m)));
+  add(INTERNATIONAL_DIRECTORY);
+  add(INTERNATIONAL_EXPERIENCE);
+  INTERNATIONAL_PAGES.forEach((m) => add(internationalPath(m)));
   AGENCY_PAGES.forEach((a) => add(`/${a.slug}/`));
   industries.forEach((i) => add(`/industries-we-serve/${i.slug}/`));
   newServicePages.forEach((s) => add(`/industries-we-serve/${s.path}/`));

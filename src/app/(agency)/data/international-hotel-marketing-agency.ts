@@ -5,7 +5,7 @@ const page: AgencyPageData = {
   crumbs: [],
   keyword: "International Hotel Marketing Agency",
   secondaryKeywords: [
-    "global hotel marketing agency",
+    "international hospitality marketing agency",
     "hotel marketing for international markets",
     "multi-market hotel marketing",
     "overseas hotel digital marketing",
@@ -22,7 +22,7 @@ const page: AgencyPageData = {
   },
   hero: {
     eyebrow: "International hotel marketing agency",
-    h1: "International hotel marketing agency for hotels with a global guest list",
+    h1: "International hotel marketing agency for hotels with an international guest list",
     lede: "International tourist arrivals reached 1.544 billion in 2025[[GL1]], and travellers from different countries rarely book the same way. We plan your search, metasearch, OTA, social and AI-search marketing one source market at a time, and run it from India on a schedule built around your time zone.",
     chips: [
       "Hospitality clients in nine countries, from Canada to Australia",
@@ -46,7 +46,7 @@ const page: AgencyPageData = {
   },
   logos: "international",
   context: {
-    eyebrow: "The global picture",
+    eyebrow: "The international picture",
     title: "Slower growth, more competition and a new way to search",
     intro: [
       "Travel and tourism is forecast to be worth $12 trillion in 2026, 9.9% of the world economy[[GL2]]. International arrivals rose 4.7% to 1.544 billion in 2025, but the first half of 2026 was almost flat at 690 million, and UN Tourism now expects growth of only 1–2% this year[[GL1]]. When the market stops expanding quickly, a hotel grows by taking share: from competitors, from the OTAs and from countries it has never targeted properly.",
