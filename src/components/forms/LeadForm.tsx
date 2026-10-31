@@ -35,6 +35,7 @@ export default function LeadForm({
   body,
   defaultCountryCode,
   defaultCountry,
+  defaultPropertyType,
   needs,
   idPrefix = "lead",
 }: {
@@ -46,6 +47,7 @@ export default function LeadForm({
   defaultCountryCode: string;
   /** Optional country when several markets share the same phone dial code. */
   defaultCountry?: string;
+  defaultPropertyType?: string;
   /** Options for "What do you need help with?" */
   needs: string[];
   /** Keeps input ids unique when two forms are on one page. */
@@ -56,13 +58,13 @@ export default function LeadForm({
     onSubmitSuccess: () => {
       // The hook resets the phone code to +91; put back the code shown in the dropdown.
       setFieldValue("countryCode", country.split("|")[1] || defaultCountryCode);
-      setExtra({ property: "", type: PROPERTY_TYPES[0], location: "", need: needs[0] ?? "", website: "" });
+      setExtra({ property: "", type: defaultPropertyType ?? PROPERTY_TYPES[0], location: "", need: needs[0] ?? "", website: "" });
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: "lead_form_submit", form: "growth_plan", page: pageKeyword });
     },
   });
 
-  const [extra, setExtra] = useState({ property: "", type: PROPERTY_TYPES[0], location: "", need: needs[0] ?? "", website: "" });
+  const [extra, setExtra] = useState({ property: "", type: defaultPropertyType ?? PROPERTY_TYPES[0], location: "", need: needs[0] ?? "", website: "" });
   const [tracking, setTracking] = useState<string[]>([]);
   // Several countries share a dial code (+1 is Canada and the USA), so the select tracks the
   // country as well as the code. Default to the main market for each code.
