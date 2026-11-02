@@ -1,5 +1,6 @@
 "use client";
 import { countries } from "@/utils/countryCode";
+import CountryCodeOptions from "@/components/forms/CountryCodeOptions";
 import { FillMail, FillMessage, FillPhone, FillUser } from "@/utils/OldFormIcons";
 import axios from "axios";
 import React, { ChangeEvent, FormEvent, useCallback, useMemo, useState } from "react";
@@ -194,16 +195,7 @@ const FormNew = () => {
             style={{ inlineSize: `${formState.countryCode.length + 2}ch` }}
             aria-label="Country Code"
           >
-            {countries.map((country, index) => (
-              <option
-                key={index}
-                value={country.code}
-                className="text-black bg-gray-100"
-                aria-label="Country Code"
-              >
-                {country.code}
-              </option>
-            ))}
+            <CountryCodeOptions value={formState.countryCode} optionClassName="text-black bg-gray-100" />
           </select>
           <input
             type="tel"

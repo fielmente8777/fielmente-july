@@ -8,6 +8,7 @@ import {
 import { usePathname } from "next/navigation";
 
 import { countries } from "@/utils/countryCode";
+import CountryCodeOptions from "@/components/forms/CountryCodeOptions";
 import axios from "axios";
 import React, { useState } from "react";
 import { contacts } from "../../../contact";
@@ -138,16 +139,7 @@ const LandingPageForm = ({ title, bold }: { title: string; bold: string }) => {
             style={{ inlineSize: `${countryCode.length + 2.5}ch` }}
             aria-label="Country Code"
           >
-            {countries.map((country, index) => (
-              <option
-                key={index}
-                value={country.code}
-                className="text-black bg-gray-100"
-                aria-label="Country Code"
-              >
-                {`${country.code}`}
-              </option>
-            ))}
+            <CountryCodeOptions value={countryCode} optionClassName="text-black bg-gray-100" />
           </select>
           <input
             type="tel"

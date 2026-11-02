@@ -2,6 +2,7 @@
 // page content tailored to it (guests, booking channels, searches, peak seasons, review sites).
 
 import type { IndustryProfile, ServiceKey, ServiceType } from "@/@types/@industryTemplateType";
+import { serviceAngle } from "./angles";
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const q = (s: string) => `“${s}”`;
@@ -1325,8 +1326,19 @@ export const serviceSlug = (I: IndustryProfile, key: ServiceKey) => I.paths?.[ke
 /** A service page's content: the template text for the industry, with any page-specific overrides on top. */
 export const serviceContent = (I: IndustryProfile, key: ServiceKey) => {
   const { metaTitle: _t, metaDescription: _d, intro: _i, ...content } = I.overrides?.[key] ?? {};
-  return { ...serviceTypes[key].build(I), ...content };
+  const base = serviceTypes[key].build(I);
+  // Industry-specific FAQs first (data/angles), then the template's own: two of them when the page has
+  // its own set, all of them when it only adds one or two.
+  const angle = serviceAngle(I.prefix, key);
+  const faqs = angle
+    ? [...angle.faqs, ...base.faqs.filter((f) => !angle.faqs.some((a) => a.q === f.q)).slice(0, angle.faqs.length >= 3 ? 2 : undefined)]
+    : base.faqs;
+  return { ...base, faqs, ...content };
 };
+
+/** Opening paragraphs for a service page: a page override, else the industry's own copy plus the template's. */
+export const serviceIntro = (I: IndustryProfile, key: ServiceKey): string[] =>
+  I.overrides?.[key]?.intro ?? [...(serviceAngle(I.prefix, key)?.intro ?? []), ...(serviceTypes[key].intro?.(I) ?? [])];
 
 /** Full href for an industry's service: its own page, or the existing/agency page that covers it. */
 export const serviceHref = (I: IndustryProfile, key: ServiceKey) => {

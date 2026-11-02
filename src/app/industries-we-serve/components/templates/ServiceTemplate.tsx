@@ -26,7 +26,7 @@ import ReadMore, { splitLead } from "@/components/typography/ReadMore";
 import AdJourneySection from "@/components/commonSections/AdJourneySection";
 import { LuArrowRight } from "react-icons/lu";
 import { lodgingIndustries } from "../../data/industries";
-import { serviceContent, serviceHref, serviceTypes } from "../../data/services";
+import { serviceContent, serviceHref, serviceIntro, serviceTypes } from "../../data/services";
 import { logoSet, needsFor } from "./IndustryTemplate";
 
 export default function ServiceTemplate({
@@ -38,7 +38,7 @@ export default function ServiceTemplate({
 }) {
   const st = serviceTypes[serviceKey];
   const c = serviceContent(I, serviceKey);
-  const intro = I.overrides?.[serviceKey]?.intro ?? st.intro?.(I);
+  const intro = serviceIntro(I, serviceKey);
   const guides = st.guides?.(I) ?? [];
   const industryHref = `/industries-we-serve/${I.slug}/`;
   const pageUrl = `https://fielmente.com${serviceHref(I, serviceKey)}`;

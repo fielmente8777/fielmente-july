@@ -2,6 +2,7 @@
 
 import useConsultationForm from "@/hooks/useConsultationForm";
 import { countries } from "@/utils/countryCode";
+import CountryCodeOptions from "@/components/forms/CountryCodeOptions";
 import { useEffect, useState } from "react";
 import { contacts } from "../../../../contact";
 import { budgetOptions } from "./pageData";
@@ -136,11 +137,7 @@ export default function AuditForm() {
             onChange={(e) => setFieldValue("countryCode", e.target.value)}
             className={`${inputClass} w-28! shrink-0`}
           >
-            {countries.map((c, i) => (
-              <option key={i} value={c.code}>
-                {c.name} {c.code}
-              </option>
-            ))}
+            <CountryCodeOptions value={formData.countryCode} label="name code" />
           </select>
           <input
             id="audit-phone"

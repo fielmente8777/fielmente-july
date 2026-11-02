@@ -1,5 +1,6 @@
 "use client";
 import { countries } from "@/utils/countryCode";
+import CountryCodeOptions from "@/components/forms/CountryCodeOptions";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -138,16 +139,7 @@ const OtaForm = () => {
             style={{ inlineSize: `${countryCode.length + 6.5}ch` }}
             aria-label="Country Code"
           >
-            {countries.map((country, index) => (
-              <option
-                key={index}
-                value={country.code}
-                className="text-black bg-gray-100 p-0"
-                aria-label="Country Code"
-              >
-                {`${country.code}${country.name}`}
-              </option>
-            ))}
+            <CountryCodeOptions value={countryCode} optionClassName="text-black bg-gray-100 p-0" />
           </select>
           <input
             type="tel"

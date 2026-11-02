@@ -5,6 +5,7 @@
 // and ad-click parameters (gclid, UTM tags) are sent inside the lead's message.
 import useConsultationForm from "@/hooks/useConsultationForm";
 import { countries } from "@/utils/countryCode";
+import CountryCodeOptions from "@/components/forms/CountryCodeOptions";
 import { useEffect, useState } from "react";
 import { LuArrowRight } from "react-icons/lu";
 import FormShield from "@/components/forms/FormShield";
@@ -101,6 +102,10 @@ export default function LeadForm({
 
   const id = (s: string) => `${idPrefix}-${s}`;
 
+  const selectedCountry = countries.some((c) => `${c.name}|${c.code}` === country)
+    ? country
+    : `${countries.find((c) => c.code === formData.countryCode)?.name}|${formData.countryCode}`;
+
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
       <FormShield />
@@ -131,18 +136,14 @@ export default function LeadForm({
           <select
             aria-label="Country code"
             name="countryCode"
-            value={countries.some((c) => `${c.name}|${c.code}` === country) ? country : `${countries.find((c) => c.code === formData.countryCode)?.name}|${formData.countryCode}`}
+            value={selectedCountry}
             onChange={(e) => {
               setCountry(e.target.value);
               setFieldValue("countryCode", e.target.value.split("|")[1]);
             }}
             className={`${input} w-28! shrink-0`}
           >
-            {countries.map((c, i) => (
-              <option key={i} value={`${c.name}|${c.code}`}>
-                {c.name} {c.code}
-              </option>
-            ))}
+            <CountryCodeOptions value={selectedCountry} format="name|code" />
           </select>
           <input
             id={id("phone")}
