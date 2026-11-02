@@ -1,473 +1,242 @@
-// import Form from "@/app/about-fielmente-best-hospitality-marketing-agency/components/Form";
-import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
-import Image from "next/image";
-
-import AccordinContent from "./components/AccordinContent";
-import BrandWeWork from "./components/BrandWeWork";
-import PeopleSay from "./components/PeopleSay";
-
 import type { Metadata } from "next";
-import Contactbtn1 from "./contactbtn/Contactbtn1";
-import Contactbtn2 from "./contactbtn/Contactbtn2";
-import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
-import { homePageData } from "../(home)/homePageData";
+import Link from "next/link";
+import TextBanner from "@/components/banners/TextBanner";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import { SectionWithContainer } from "@/components";
+import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
+import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
+import { buildSiteMenu, type MenuSection } from "@/components/navbars/menuData";
+import { homePageData } from "../(home)/homePageData";
+import { SITES } from "../our-work/sites";
+import { ADS_TOTALS } from "../our-work/ads";
+import { CLIENT_LOGOS } from "../our-work/LogoWall";
+
+// The "All services" hub, linked from the header, footer and every agency page breadcrumb.
+// The directory below is built from the same data as the header menu, so new industry, service and
+// agency pages appear here automatically.
+
+const SITE = "https://fielmente.com";
+const URL = `${SITE}/hospitality-marketing-services/`;
+const TITLE = "Hospitality Marketing Services | Fielmente";
+const DESCRIPTION =
+  "SEO, Google and Meta ads, OTA management, social media, websites and branding for hotels, resorts, restaurants and cloud kitchens, run by one team.";
 
 export const metadata: Metadata = {
-  title: "India's Leading Hospitality Marketing Services - Fielmente",
-  description:
-    "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
-  alternates: {
-    canonical: "https://fielmente.com/hospitality-marketing-services/",
-  },
-  openGraph: {
-    url: "https://fielmente.com/hospitality-marketing-services/",
-    type: "website",
-    title: "India's Leading Hospitality Marketing Services - Fielmente",
-    description:
-      "Fielmente: Thriving hospitality marketing services, elevating your brand with expert digital strategies. Get your success today!",
-  images: [
-      {
-        url: "/fielmente_logo.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    },
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: URL },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: URL, type: "website", siteName: "Fielmente" },
 };
 
-export interface AccordingDataPropsTypes {
-  question: string;
-  answer: string;
+const OUTCOMES = [
+  {
+    title: "Get found",
+    text: "Website SEO, local SEO and Google Maps, and AI search optimisation, so guests find you when they search for a stay or a table.",
+  },
+  {
+    title: "Get bookings",
+    text: "Google, Meta, ChatGPT and Tripadvisor ads, OTA listing and management, Zomato and Swiggy, revenue management, weddings and events.",
+  },
+  {
+    title: "Build the brand",
+    text: "Branding, photography and content, social media, influencer marketing, PR and pre-opening campaigns.",
+  },
+  {
+    title: "Convert and keep guests",
+    text: "Websites that take direct bookings, Instagram and WhatsApp reservation automation, reputation management and marketing consultation.",
+  },
+];
+
+const PROOF = [
+  { title: "Our Work", text: "Every website we have built, with the ads, social, branding, SEO and photography behind them.", href: "/our-work/" },
+  { title: "Case studies", text: "Before and after results from our clients' own ad and analytics accounts.", href: "/case-study/" },
+  { title: "Testimonials", text: "What hotel owners and restaurant teams say about working with us.", href: "/testimonials/" },
+];
+
+/** Section intro: a small label, the heading and one line of context (same pattern as /our-work/). */
+function Intro({ label, title, text }: { label: string; title: string; text: string }) {
+  return (
+    <div className="mb-10 max-w-3xl space-y-3">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-ink">{label}</p>
+      <h2 className="text-3xl font-semibold leading-tight text-primary md:text-4xl">{title}</h2>
+      <p className="text-secondary md:text-lg">{text}</p>
+    </div>
+  );
 }
 
-const faq = [
-  {
-    question: "Expanding Reach",
-    answer:
-      "Reach global travelers and widen your audience through our hospitality digital marketing services.",
-  },
-  {
-    question: "Boosting Bookings",
-    answer:
-      "Online presence drives more bookings, converting visitors into loyal guests.",
-  },
-  {
-    question: "Competing Effectively",
-    answer:
-      "Stay ahead in the hospitality industry with cutting-edge digital marketing strategies.",
-  },
-  {
-    question: "Targeted Advertising",
-    answer:
-      "Reach your ideal guests with precise targeting and personalized ads.",
-  },
-  {
-    question: "Enhanced Guest Experience",
-    answer:
-      "Create seamless interactions and offer convenience through online channels.",
-  },
-  {
-    question: "Data-Driven Insights",
-    answer:
-      "Leverage data to optimize marketing efforts and make informed business decisions..",
-  },
-];
+/** In-page anchor for an industry card, from its URL slug. */
+const anchor = (s: MenuSection) => (s.href ?? s.label).split("/").filter(Boolean).pop() ?? "";
 
-const chooseUsData = [
-  {
-    title: "Expertise",
-    subtitle:
-      "Benefit from our extensive experience and expertise in digital marketing for hotels, ensuring effective strategies tailored to your specific needs.",
-    image: "/images/i3ruf.webp",
-  },
-  {
-    title: "Results-Driven Approach",
-    subtitle:
-      "We are dedicated to delivering tangible results, maximizing your online presence, and driving increased bookings and revenue for your hotel.",
-    image: "/images/i3urhf.webp",
-  },
-  {
-    title: "Industry Focus",
-    subtitle:
-      "Specializing on the hotel sector, we understand the unique challenges and opportunities, enabling us to provide solutions for a competitive edge.",
-    image: "/images/o3irjf.webp",
-  },
-  {
-    title: "Customized Solutions",
-    subtitle:
-      "We take the time to understand your hotel's goals and objectives, crafting customized strategies and solutions that align with your brand and resonate with your target audience.",
-    image: "/images/i3urhf.webp",
-  },
-  {
-    title: "Integrated Services",
-    subtitle:
-      "From SEO and web design to social media and paid advertising, our comprehensive suite of services ensures a cohesive and holistic approach to your digital marketing efforts.",
-    image: "/images/o3irjf.webp",
-  },
-  {
-    title: "Exceptional Client Service",
-    subtitle:
-      "Enjoy a seamless and personalized experience with our attentive and dedicated client service team, ensuring your satisfaction and success throughout our partnership.",
-    image: "/images/2iut4hg.webp",
-  },
-];
-
-function page() {
+/** One industry (or specialist area) with its services grouped by outcome. */
+function DirectoryCard({ section, id }: { section: MenuSection; id?: string }) {
   return (
-    <section className="bg-gradient">
+    <li id={id} className="flex scroll-mt-24 flex-col rounded-2xl border border-main-border bg-white p-6">
+      {section.href ? (
+        <Link href={section.href} className="group inline-flex items-center gap-2 text-xl font-semibold text-primary hover:text-color4">
+          {section.label}
+          <span aria-hidden className="text-color4 transition-transform group-hover:translate-x-0.5">
+            →
+          </span>
+        </Link>
+      ) : (
+        <p className="text-xl font-semibold text-primary">{section.label}</p>
+      )}
+      {section.cardLine && <p className="mt-1 text-sm text-secondary">{section.cardLine}</p>}
+      <div className="mt-5 grid gap-5 sm:grid-cols-2">
+        {section.groups.map((g) => (
+          <div key={g.title}>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-secondary">{g.title}</p>
+            <ul className="space-y-1.5">
+              {g.links.map((l) => {
+                const external = l.href.startsWith("http");
+                return (
+                  <li key={l.href}>
+                    <Link
+                      href={l.href}
+                      className="text-sm text-primary underline-offset-4 hover:text-color4 hover:underline"
+                      {...(external ? { target: "_blank", rel: "noopener" } : {})}
+                    >
+                      {l.label}
+                      {l.context && <span className="sr-only"> ({l.context})</span>}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </li>
+  );
+}
+
+export default function ServicesPage() {
+  const menu = buildSiteMenu();
+  const industryLinks = menu.industries.filter((s) => s.href?.startsWith("/industries-we-serve/") && s.label !== "Specialist Services");
+  // Drop the menu's "All services" link: it points back to this page.
+  const specialist = menu.industries
+    .filter((s) => !industryLinks.includes(s))
+    .map((s) => ({ ...s, groups: s.groups.map((g) => ({ ...g, links: g.links.filter((l) => l.href !== "/hospitality-marketing-services/") })) }));
+  const websites = SITES.filter((s) => s.type === "Website").length;
+
+  const stats = [
+    { value: `${CLIENT_LOGOS.length}+`, label: "Hospitality brands worked with" },
+    { value: `${websites}`, label: "Websites built" },
+    { value: ADS_TOTALS.stats[2].value, label: "Tracked enquiries from Google Ads" },
+    { value: ADS_TOTALS.stats[3].value, label: "Cost per enquiry, 2024 to 2026" },
+  ];
+
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Fielmente hospitality marketing services",
+    url: URL,
+    description: DESCRIPTION,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: [...industryLinks, ...specialist]
+        .filter((s) => s.href && !s.href.startsWith("http"))
+        .map((s, i) => ({ "@type": "ListItem", position: i + 1, name: s.label, url: `${SITE}${s.href}` })),
+    },
+  };
+
+  return (
+    <main>
       <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Services", path: "/hospitality-marketing-services/" }]} />
-      {/* Boost Your Business with Fielmente, India's top Hospitality Marketing Services! */}
-      <div className="lg:py-20 py-9  max_width">
-        <div className="max_width">
-          <div className="grid lg:grid-cols-2 gap-5 mt-12">
-            <div>
-              <h1 className="text-[#2CBCA5] font-bold uppercase text-2xl">
-                OUR HOSPITALITY MARKETING SERVICES
-              </h1>
-              <h2 className="md:text-3xl text-3xl text-black font-bold md:mt-20 mt-5">
-                {
-                  " Boost Your Business with Fielmente, India's top Hospitality Marketing Services!"
-                }
-              </h2>
-              <p className="text-gray-primary text-xl mt-5 text-center lg:text-start">
-                Attention, savvy business owners! Release the true potential of
-                your online presence with Fielmente, your go-to hospitality
-                marketing services in India.
-              </p>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
 
-              <p className="text-gray-primary text-xl mt-5 text-center lg:text-start">
-                Let our experts empower your business with tailored strategies,
-                setting new standards for success in the hospitality industry!
-              </p>
+      <TextBanner
+        title="Services"
+        subTitle="Hospitality Marketing Services"
+        description="SEO, ads, OTAs, social media, websites, branding and photography for hotels, resorts, restaurants and cloud kitchens, planned and run by one team."
+      />
+
+      {/* Headline numbers and jump links */}
+      <SectionWithContainer defaultPadding={false} sectionClassName="border-b border-main-border bg-white" containerClassName="py-8 md:py-10">
+        <dl className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          {stats.map((s) => (
+            <div key={s.label} className="flex flex-col-reverse gap-1">
+              <dt className="text-sm text-secondary">{s.label}</dt>
+              <dd className="text-3xl font-bold text-primary2 md:text-4xl">{s.value}</dd>
             </div>
-            <div className="">
-              <div className="relative w-full mx-auto aspect-[4/2.5]">
-                <Image
-                  src={"/images/briefing-staff-hotel-restaurant-1.png"}
-                  alt="Hotel and restaurant staff in a team briefing"
-                  fill
-                  priority
-                  className="object-contain "
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* What We Offer */}
-      <div className="lg:py-20 py-9 max_width">
-        <div className="max_width">
-          <h2 className="text-black text-center lg:text-4xl text-3xl font-bold">
-            What We Offer
-          </h2>
-          <p className="text-black text-center lg:text-lg text-base mt-10">
-            Want to embrace the Digital Frontier? Boost your hospitality
-            business with our cutting-edge Hospitality Marketing Services and
-            Hospitality Digital Marketing Services. Conquer the online realm,
-            attract a broader audience, and experience a surge in bookings. It’s
-            time to embrace the power of the digital world and release your
-            business’s true potential!
-          </p>
-        </div>
-      </div>
-
-      {/* Industries We Serve:  */}
-      <div className="lg:py-12 py-9 max_width">
-        <div className="max_width grid lg:grid-cols-2 gap-10">
-          <div className="relative w-full aspect-[4/3.1]">
-            <Image
-              src={"/images/confident-manager-restaurant-1.webp"}
-              alt="man-with-documents"
-              fill
-              className="object-contain rounded-3xl"
-              sizes="100vw"
-            />
-          </div>
-          <div className="">
-            <h2 className="lg:text-4xl text-2xl lg:text-start text-center text-black font-bold">
-              Industries We Serve:
-            </h2>
-            {/* <div className="text-black sm:text-3xl text-xl font-bold text-center mt-5 flex gap-6 justify-center">
-              <p> Hotels</p>
-              <p>Restaurants Cloud</p>
-              <p>Kitchens</p>
-            </div> */}
-            <div className="grid lg:grid-cols-4 grid-cols-2 gap-2 mt-10">
-              {cardDt.map((item, index) => (
-                <div
-                  className="flex flex-col lg:gap-4 gap-2 rounded-3xl items-center justify-center lg:p-6 p-5 shadow-lg bg-[#E8FFF9]"
-                  key={index}
-                >
-                  <div className="relative w-24 h-24 aspect-[4/4]">
-                    <Image
-                      src={item.icon}
-                      alt="man-with-documents"
-                      fill
-                      className="object-contain"
-                      sizes="100vw"
-                    />
-                  </div>
-                  <p className="text-black font-bold w-max text-[1rem]">
-                    {item.title}
-                  </p>
-                </div>
-              ))}
-            </div>
-            <p className="lg:text-lg text-base text-center lg:text-start text-black mt-10">
-              Fielmente is a place, where we excel in revolutionizing your
-              business! As the finest hospitality marketing agency in India, we
-              exclusively cater to hotels, cloud kitchens, and restaurants.
-              Elevate your brand’s presence, thrive in competition, and allure
-              countless guests with our exceptional hospitality marketing
-              services. Let us be your key to success in the dynamic world of
-              hospitality!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Why do You need to Go Online?*/}
-      <div className="lg:py-12 py-9">
-        <div className="max_width">
-          <h2 className="text-black text-center lg:text-4xl text-2xl font-bold">
-            Why do You need to Go Online?
-          </h2>
-          <p className="text-black text-center text-base lg:text-lg mt-10">
-            Unwrap your business’s true potential and reach new heights with the
-            irresistible allure of online presence with Fielmente’s cutting-edge
-            hospitality marketing services!
-          </p>
-
-          <div className="max-w-[1080px] mx-auto grid lg:grid-cols-2 gap-6 mt-20 border-b pb-12">
-            <div>
-              <Accordin Data={faq} />
-            </div>
-            <div className="w-full">
-              <div className="relative max-w-[340px] mx-auto aspect-[4/5]">
-                <Image
-                  src={"/images/pizaparty.webp"}
-                  alt="Group of friends taking a selfie while eating pizza"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="100vw"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Are you ready to unlock the full potential  */}
-      <div className="lg:py-20 py-9">
-        <div className="max_width">
-          <h2 className="text-black text-center lg:text-4xl text-2xl font-bold">
-            Are you ready to unlock the full potential of your business’s online
-            presence with our Hospitality Marketing Services?
-          </h2>
-          <p className="text-black text-center text-base lg:text-lg mt-10">
-            Hospitality Marketing Services? Go online and take your hospitality
-            business to new heights! With the leading hospitality consultants in
-            India and the best hospitality marketing agency, today.
-          </p>
-          <div className="flex justify-center mt-12">
-            {/* <Link
-              href={"/contact"}
-              className="bg-black px-10 py-3 border text-white border-black text-xl rounded-xl hover:bg-transparent hover:text-black"
+          ))}
+        </dl>
+        <nav aria-label="Services by industry" className="mt-8 flex flex-wrap gap-2">
+          {industryLinks.map((s) => (
+            <a
+              key={s.label}
+              href={`#${anchor(s)}`}
+              className="rounded-full border border-main-border px-4 py-2 text-sm font-medium text-primary transition-colors hover:border-color4 hover:text-color4"
             >
-              Contact us
-            </Link> */}
-            <Contactbtn1 />
-          </div>
-        </div>
-      </div>
+              {s.label.replace(/ Marketing$/, "")}
+            </a>
+          ))}
+        </nav>
+      </SectionWithContainer>
 
-      {/* Why Choose Us?  */}
-      <div className="lg:py-20 py-10">
-        <div className="max_width">
-          <h2 className="text-black text-center lg:text-4xl text-3xl font-bold">
-            Why Choose Us?
-          </h2>
-          <p className="text-black text-center lg:text-lg text-base mt-10">
-            Your business’s success is with Fielmente, your ultimate hospitality
-            consultant, offering tailored and result-driven hospitality
-            marketing services in India, crafted precisely for your needs!
-          </p>
+      <SectionWithContainer sectionClassName="bg-[#F5F7FB]">
+        <Intro
+          label="What we do"
+          title="Four Jobs, One Team"
+          text="Every service we offer does one of four things for a hotel, resort or restaurant. Most clients start with one and add the rest as results come in."
+        />
+        <ol className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {OUTCOMES.map((o, i) => (
+            <li key={o.title} className="rounded-2xl bg-white p-6 shadow-[0_1px_0_#E3E5E8]">
+              <p className="text-sm font-semibold text-orange-ink">{String(i + 1).padStart(2, "0")}</p>
+              <h3 className="mt-2 text-xl font-semibold text-primary">{o.title}</h3>
+              <p className="mt-2 text-secondary">{o.text}</p>
+            </li>
+          ))}
+        </ol>
+      </SectionWithContainer>
 
-          <div className="grid lg:grid-cols-3 gap-y-32 mt-20">
-            {chooseUsData.map((item, index) => (
-              <ChooseUSCard {...item} key={index} />
-            ))}
-          </div>
+      <SectionWithContainer>
+        <Intro
+          label="By industry"
+          title="Services for Your Type of Property"
+          text="Each industry has its own page and a page for every service, written for how its guests search and book."
+        />
+        <ul className="grid gap-5 lg:grid-cols-2">
+          {industryLinks.map((s) => (
+            <DirectoryCard key={s.label} section={s} id={anchor(s)} />
+          ))}
+        </ul>
+      </SectionWithContainer>
 
-          <div className="grid lg:grid-cols-4 grid-cols-2 gap-8 py-6 mt-20">
-            <div className="flex flex-col gap-2">
-              <h2 className="lg:text-5xl text-2xl font-bold text-black text-center">
-                500+
-              </h2>
-              <p className="lg:text-lg text-base font-medium text-gray-primary text-center">
-                HOTELS SERVED
-              </p>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h2 className="lg:text-5xl text-2xl font-bold text-black text-center">
-                89%
-              </h2>
-              <p className="lg:text-lg text-base font-medium text-gray-primary text-center">
-                SATISFACTION RATE
-              </p>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h2 className="lg:text-5xl text-2xl font-bold text-black text-center">
-                15
-              </h2>
-              <p className="lg:text-lg text-base font-medium text-gray-primary text-center">
-                YEARS OF EXPERIENCE
-              </p>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h2 className="lg:text-5xl text-2xl font-bold text-black text-center">
-                15
-              </h2>
-              <p className="lg:text-lg text-base font-medium text-gray-primary text-center">
-                YEARS OF EXPERIENCE
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="md:py-20 py-10">
-        <div className="grid lg:grid-cols-4 grid-cols-2 ">
-          <div className="relative w-full aspect-[4/4.5]">
-            <Image
-              src={"/images/smileman.webp"}
-              alt="google-ads"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-          <div className="relative w-full aspect-[4/4.5]">
-            <Image
-              src={"/images/pizaparty.webp"}
-              alt="google-ads"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-          <div className="relative w-full aspect-[4/4.5]">
-            <Image
-              src={"/images/manwithipad.webp"}
-              alt="google-ads"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-          <div className="relative w-full aspect-[4/4.5]">
-            <Image
-              src={"/images/oldldy.webp"}
-              alt="google-ads"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Hire us as your hospitality marketing agency  */}
-      <div className="lg:py-20 py-10">
-        <div className="max_width">
-          <h2 className="text-black text-center lg:text-5xl text-3xl font-bold">
-            Hire us as your hospitality marketing agency and unlock the full
-            potential of your business.
-          </h2>
-          <p className="text-black text-center lg:text-xl text-lg mt-10">
-            Experience our expertise, results-driven approach, and personalized
-            hospitality marketing service that set us apart in the industry.
-          </p>
-          <div className="flex justify-center mt-12">
-            {/* <Link
-              href={"/contact"}
-              className="bg-[#2CBCA5] px-10 py-3 border  text-xl rounded-xl hover:bg-transparent hover:text-black"
-            >
-              Contact us
-            </Link> */}
-            <Contactbtn2 />
-          </div>
-        </div>
-      </div>
+      <SectionWithContainer sectionClassName="bg-[#F5F7FB]">
+        <Intro
+          label="Specialist & international"
+          title="Specialist Services and Markets"
+          text="Focused pages for single platforms and questions, and for hotels and restaurants outside India."
+        />
+        <ul className="grid gap-5 lg:grid-cols-2">
+          {specialist.map((s) => (
+            <DirectoryCard key={s.label} section={s} />
+          ))}
+        </ul>
+      </SectionWithContainer>
 
       <PlatformStripSection />
 
-      {/* Brand We Work With  */}
-      <BrandWeWork />
+      <SectionWithContainer sectionClassName="bg-[#F5F7FB]">
+        <Intro label="Proof" title="See the Work Behind the Services" text="Results, websites and client feedback, all from real accounts." />
+        <ul className="grid gap-4 md:grid-cols-3">
+          {PROOF.map((p) => (
+            <li key={p.href}>
+              <Link
+                href={p.href}
+                className="group flex h-full flex-col rounded-2xl border border-main-border bg-white p-6 transition-colors hover:border-color4"
+              >
+                <span className="text-xl font-semibold text-primary group-hover:text-color4">{p.title} →</span>
+                <span className="mt-2 text-secondary">{p.text}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </SectionWithContainer>
 
-      {/* What People Say About Us  */}
-      {/* <PeopleSay /> */}
-
-      {/* Form*** */}
-      {/* <ContactOldSectionProps bgColor="primary2" /> */}
-      <ContactUsSection {...homePageData?.contactUsSection}/>
-      
-    </section>
+      <ContactUsSection {...homePageData?.contactUsSection} />
+    </main>
   );
 }
-
-const Accordin = ({ Data }: { Data: AccordingDataPropsTypes[] }) => {
-  return (
-    <div className=" flex flex-col gap-5">
-      {Data.map((item, index) => (
-        <AccordinContent {...item} key={index} />
-      ))}
-    </div>
-  );
-};
-
-const ChooseUSCard = ({
-  title,
-  subtitle,
-  image,
-}: {
-  title: string;
-  subtitle: string;
-  image: string;
-}) => {
-  return (
-    <div className="max-w-75 mx-auto">
-      <div className="relative w-full aspect-4/4">
-        <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 300px" />
-      </div>
-      <div className="flex flex-col gap-4 mt-4">
-        <h2 className="text-center text-2xl font-medium text-black">{title}</h2>
-        <p className="text-center text-base text-black">{subtitle}</p>
-      </div>
-    </div>
-  );
-};
-
-export default page;
-
-const cardDt = [
-  {
-    icon: "/images/hotel.png",
-    title: "Hotels",
-  },
-  {
-    icon: "/images/stays.png",
-    title: "Resorts",
-  },
-  {
-    icon: "/images/restaurants.png",
-    title: "Restaurants",
-  },
-  {
-    icon: "/images/kitchen.png",
-    title: "Cloud kitchens",
-  },
-];

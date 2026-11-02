@@ -1,6 +1,9 @@
 "use client"
 import { useState } from "react";
-import { AccordingDataPropsTypes } from "../page";
+interface AccordingDataPropsTypes {
+  question: string;
+  answer: string;
+}
 
 const AccordinContent = ({ question, answer }: AccordingDataPropsTypes) => {
     const [openAccordin, setOpenAccordin] = useState(false);
