@@ -1,242 +1,318 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import TextBanner from "@/components/banners/TextBanner";
+import { LuArrowRight, LuMinus } from "react-icons/lu";
+import type { IndustryProfile, ServiceKey } from "@/@types/@industryTemplateType";
+import { AGENCY_PAGES } from "@/app/(agency)/data";
+import HowHotelScaling from "@/app/case-study/components/HowHotelScaling";
+import PageHero from "@/components/banners/PageHero";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
-import { SectionWithContainer } from "@/components";
+import ConsultButton from "@/components/buttons/ConsultButton";
+import WhatsAppChatButton from "@/components/buttons/WhatsAppChatButton";
+import CtaBandSection from "@/components/commonSections/CtaBandSection";
+import FaqListSection from "@/components/commonSections/FaqListSection";
+import PartnerStripSection from "@/components/commonSections/PartnerStripSection";
 import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
-import ContactUsSection from "@/components/sectionComponants/ContactUsSection";
-import { buildSiteMenu, type MenuSection } from "@/components/navbars/menuData";
-import { homePageData } from "../(home)/homePageData";
-import { SITES } from "../our-work/sites";
-import { ADS_TOTALS } from "../our-work/ads";
-import { CLIENT_LOGOS } from "../our-work/LogoWall";
+import StatsSection from "@/components/commonSections/StatsSection";
+import Container from "@/components/sectionComponants/Container";
+import SectionHead from "@/components/typography/SectionHead";
+import { PORTFOLIO_STATS } from "@/utils/agencyData";
+import { caseStudyCards } from "@/utils/caseStudyCards";
+import { Icon } from "@/utils/serviceIcons";
+import { industries } from "../industries-we-serve/data/industries";
+import { serviceHref, serviceTypes } from "../industries-we-serve/data/services";
 
 // The "All services" hub, linked from the header, footer and every agency page breadcrumb.
-// The directory below is built from the same data as the header menu, so new industry, service and
-// agency pages appear here automatically.
+// Same layout and components as /industries-we-serve/ and the agency pages. Services, industries and
+// agency pages all come from the shared data files, so new pages appear here automatically.
 
-const SITE = "https://fielmente.com";
-const URL = `${SITE}/hospitality-marketing-services/`;
-const TITLE = "Hospitality Marketing Services | Fielmente";
-const DESCRIPTION =
+const URL = "https://fielmente.com/hospitality-marketing-services/";
+const title = "Hospitality Marketing Services | Fielmente";
+const description =
   "SEO, Google and Meta ads, OTA management, social media, websites and branding for hotels, resorts, restaurants and cloud kitchens, run by one team.";
 
 export const metadata: Metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
+  title,
+  description,
   alternates: { canonical: URL },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: URL, type: "website", siteName: "Fielmente" },
+  openGraph: {
+    title,
+    description,
+    url: URL,
+    siteName: "Fielmente",
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/fielmente_logo.png", width: 1200, height: 630 }],
+  },
 };
 
-const OUTCOMES = [
+/** Services grouped by what the owner wants from them (same groups as the header menu). */
+const GROUPS: { eyebrow: string; title: string; lede: string; keys: ServiceKey[] }[] = [
   {
-    title: "Get found",
-    text: "Website SEO, local SEO and Google Maps, and AI search optimisation, so guests find you when they search for a stay or a table.",
+    eyebrow: "Get found",
+    title: "Be found when guests search",
+    lede: "On Google, Google Maps and the AI assistants guests now ask before they book.",
+    keys: ["website-seo", "local-seo", "ai-search-optimization"],
   },
   {
-    title: "Get bookings",
-    text: "Google, Meta, ChatGPT and Tripadvisor ads, OTA listing and management, Zomato and Swiggy, revenue management, weddings and events.",
+    eyebrow: "Get bookings",
+    title: "Turn searches into bookings",
+    lede: "Paid channels, OTAs and delivery apps, planned and measured as one budget.",
+    keys: [
+      "google-ads",
+      "chatgpt-ads",
+      "tripadvisor-ads",
+      "performance-marketing",
+      "ota-management",
+      "ota-listing",
+      "zomato-swiggy-management",
+      "revenue-management",
+      "weddings-events-marketing",
+      "social-media-reservation-automation",
+    ],
   },
   {
-    title: "Build the brand",
-    text: "Branding, photography and content, social media, influencer marketing, PR and pre-opening campaigns.",
+    eyebrow: "Build the brand",
+    title: "Give guests a reason to choose you",
+    lede: "Identity, photography, content and the social channels guests check before they commit.",
+    keys: ["branding", "content-creation", "social-media-management", "influencer-marketing", "pr-communication", "preopening-marketing"],
   },
   {
-    title: "Convert and keep guests",
-    text: "Websites that take direct bookings, Instagram and WhatsApp reservation automation, reputation management and marketing consultation.",
+    eyebrow: "Convert and keep guests",
+    title: "Win the booking and the next one",
+    lede: "A website that converts, fast replies on every channel, and reviews that keep working for you.",
+    keys: ["website-development", "sales-marketing-automation", "social-media-ai-automation", "online-reputation-management", "sales-marketing-consultation"],
   },
 ];
 
-const PROOF = [
-  { title: "Our Work", text: "Every website we have built, with the ads, social, branding, SEO and photography behind them.", href: "/our-work/" },
-  { title: "Case studies", text: "Before and after results from our clients' own ad and analytics accounts.", href: "/case-study/" },
-  { title: "Testimonials", text: "What hotel owners and restaurant teams say about working with us.", href: "/testimonials/" },
+// Any service added later but missing from GROUPS still appears, in the last group.
+const allServices = [...new Set(industries.flatMap((i) => i.services))] as ServiceKey[];
+const grouped = new Set(GROUPS.flatMap((g) => g.keys));
+const ungrouped = allServices.filter((k) => !grouped.has(k));
+const groups = GROUPS.map((g, i) => (i === GROUPS.length - 1 ? { ...g, keys: [...g.keys, ...ungrouped] } : g));
+
+/** The first industry (hotels first) that offers a service: the service card links to its page. */
+const homeIndustry = (key: ServiceKey): IndustryProfile | undefined => industries.find((I) => I.services.includes(key));
+
+const faqs = [
+  {
+    q: "Which service should we start with?",
+    a: "Usually the one closest to bookings. For most hotels that is Google Ads with conversion tracking, plus fixing the website and Google Business Profile. We review your setup first and suggest one or two starting points.",
+  },
+  {
+    q: "Can we take just one service?",
+    a: "Yes. Many clients start with one, such as Google Ads or social media, and add others once they see results.",
+  },
+  {
+    q: "Who runs the work?",
+    a: "Our own team in Gurugram plans, runs and reports on every channel. You get one point of contact and one monthly report across all of them.",
+  },
+  {
+    q: "Do you only work with hospitality businesses?",
+    a: "Yes. Hotels, resorts, restaurants, homestays and villas, wellness retreats, wedding venues, travel companies and cloud kitchens are all we do.",
+  },
 ];
 
-/** Section intro: a small label, the heading and one line of context (same pattern as /our-work/). */
-function Intro({ label, title, text }: { label: string; title: string; text: string }) {
-  return (
-    <div className="mb-10 max-w-3xl space-y-3">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-ink">{label}</p>
-      <h2 className="text-3xl font-semibold leading-tight text-primary md:text-4xl">{title}</h2>
-      <p className="text-secondary md:text-lg">{text}</p>
-    </div>
-  );
-}
+export default function ServicesPage() {
+  const featured = caseStudyCards(["naturoville-google-ads", "hotel-green-castle-google-ads", "naad-wellness-google-ads"]);
 
-/** In-page anchor for an industry card, from its URL slug. */
-const anchor = (s: MenuSection) => (s.href ?? s.label).split("/").filter(Boolean).pop() ?? "";
-
-/** One industry (or specialist area) with its services grouped by outcome. */
-function DirectoryCard({ section, id }: { section: MenuSection; id?: string }) {
   return (
-    <li id={id} className="flex scroll-mt-24 flex-col rounded-2xl border border-main-border bg-white p-6">
-      {section.href ? (
-        <Link href={section.href} className="group inline-flex items-center gap-2 text-xl font-semibold text-primary hover:text-color4">
-          {section.label}
-          <span aria-hidden className="text-color4 transition-transform group-hover:translate-x-0.5">
-            →
-          </span>
-        </Link>
-      ) : (
-        <p className="text-xl font-semibold text-primary">{section.label}</p>
-      )}
-      {section.cardLine && <p className="mt-1 text-sm text-secondary">{section.cardLine}</p>}
-      <div className="mt-5 grid gap-5 sm:grid-cols-2">
-        {section.groups.map((g) => (
-          <div key={g.title}>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-secondary">{g.title}</p>
-            <ul className="space-y-1.5">
-              {g.links.map((l) => {
-                const external = l.href.startsWith("http");
+    <main className="overflow-x-clip bg-white text-primary2">
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Services", path: "/hospitality-marketing-services/" }]} />
+      <PageHero
+        crumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
+        eyebrow="Hospitality marketing services"
+        title="Every channel that brings guests, run by one team"
+        lede="SEO, ads, OTAs, social media, websites, branding and photography for hotels, resorts, restaurants and cloud kitchens. Start with one service or hand us all of them."
+        actions={
+          <>
+            <ConsultButton />
+            <WhatsAppChatButton />
+          </>
+        }
+        image="/our-work/photography/stonehedge-1.webp"
+        imageAlt="Private dinner for two on the Nubra sand dunes at sunset, photographed by Fielmente"
+        floating={
+          <div className="flex items-center gap-4">
+            <span className="text-[30px] font-bold leading-none text-orange-primary">{allServices.length}</span>
+            <span className="text-[13px]/snug text-[#55536E]">
+              services
+              <span className="block font-semibold text-primary2">for {industries.length} types of hospitality business</span>
+            </span>
+          </div>
+        }
+      />
+
+      <PartnerStripSection />
+
+      {/* Services, grouped by outcome */}
+      {groups.map((g, gi) => (
+        <section
+          key={g.eyebrow}
+          id={g.eyebrow.toLowerCase().replace(/[^a-z]+/g, "-")}
+          className={`scroll-mt-24 py-14 md:py-22 ${gi % 2 ? "bg-[#F5F5F9]" : ""}`}
+        >
+          <Container>
+            <SectionHead eyebrow={g.eyebrow} title={g.title} lede={g.lede} />
+            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {g.keys.map((key) => {
+                const S = serviceTypes[key];
+                const I = homeIndustry(key);
+                if (!S || !I) return null;
                 return (
-                  <li key={l.href}>
+                  <li key={key}>
                     <Link
-                      href={l.href}
-                      className="text-sm text-primary underline-offset-4 hover:text-color4 hover:underline"
-                      {...(external ? { target: "_blank", rel: "noopener" } : {})}
+                      href={serviceHref(I, key)}
+                      className="group flex h-full items-start gap-4 rounded-2xl border border-[#E4E3EC] bg-white p-5 transition-all hover:border-primary2/40 hover:shadow-[0_24px_60px_-30px_rgba(17,13,60,0.45)]"
                     >
-                      {l.label}
-                      {l.context && <span className="sr-only"> ({l.context})</span>}
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-primary/10 text-orange-primary">
+                        <Icon name={S.icon} size={18} />
+                      </span>
+                      <span className="flex flex-1 flex-col gap-1">
+                        <span className="font-bold text-primary2">{S.label}</span>
+                        <span className="text-sm/snug text-[#55536E]">{S.card(I)}</span>
+                      </span>
+                      <LuArrowRight
+                        className="mt-1 shrink-0 text-sapphireBlue transition-transform group-hover:translate-x-1"
+                        aria-hidden="true"
+                      />
                     </Link>
                   </li>
                 );
               })}
             </ul>
+          </Container>
+        </section>
+      ))}
+
+      <PlatformStripSection tint />
+
+      {/* Service finder */}
+      <section className="py-14 md:py-22">
+        <Container>
+          <SectionHead
+            eyebrow="Service finder"
+            title="Every service, by industry"
+            lede="Each service has a page written for your type of business. Find yours below."
+          />
+          <div className="overflow-x-auto rounded-2xl border border-[#E4E3EC] bg-white">
+            <table className="w-full min-w-190 border-collapse text-left text-sm">
+              <caption className="sr-only">Services available for each industry</caption>
+              <thead>
+                <tr className="bg-primary2 text-white">
+                  <th scope="col" className="sticky left-0 z-10 bg-primary2 px-4 py-3.5 font-semibold">
+                    Service
+                  </th>
+                  {industries.map((I) => (
+                    <th key={I.slug} scope="col" className="px-3 py-3.5 text-center font-semibold">
+                      <Link href={`/industries-we-serve/${I.slug}/`} className="hover:underline">
+                        {I.name}
+                      </Link>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {groups
+                  .flatMap((g) => g.keys)
+                  .filter((key) => allServices.includes(key))
+                  .map((key, r) => (
+                    <tr key={key} className={r % 2 ? "bg-[#FAFAFC]" : "bg-white"}>
+                      <th
+                        scope="row"
+                        className={`sticky left-0 z-10 px-4 py-3 font-semibold text-primary2 ${r % 2 ? "bg-[#FAFAFC]" : "bg-white"}`}
+                      >
+                        <span className="inline-flex items-center gap-2.5">
+                          <span className="text-orange-primary">
+                            <Icon name={serviceTypes[key].icon} size={16} />
+                          </span>
+                          {serviceTypes[key].label}
+                        </span>
+                      </th>
+                      {industries.map((I) => (
+                        <td key={I.slug} className="px-3 py-3 text-center">
+                          {I.services.includes(key) ? (
+                            <Link
+                              href={serviceHref(I, key)}
+                              className="inline-flex items-center gap-1 rounded-full px-2.5 py-1 font-semibold text-sapphireBlue hover:bg-sapphireBlue/10"
+                              aria-label={`${serviceTypes[key].label} for ${I.plural}`}
+                            >
+                              View <LuArrowRight size={14} aria-hidden="true" />
+                            </Link>
+                          ) : (
+                            <LuMinus className="mx-auto text-[#C9C7DD]" aria-label="Not offered" />
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
           </div>
-        ))}
-      </div>
-    </li>
-  );
-}
+        </Container>
+      </section>
 
-export default function ServicesPage() {
-  const menu = buildSiteMenu();
-  const industryLinks = menu.industries.filter((s) => s.href?.startsWith("/industries-we-serve/") && s.label !== "Specialist Services");
-  // Drop the menu's "All services" link: it points back to this page.
-  const specialist = menu.industries
-    .filter((s) => !industryLinks.includes(s))
-    .map((s) => ({ ...s, groups: s.groups.map((g) => ({ ...g, links: g.links.filter((l) => l.href !== "/hospitality-marketing-services/") })) }));
-  const websites = SITES.filter((s) => s.type === "Website").length;
+      {/* Specialist pages (agency landing pages) */}
+      <section className="border-t border-[#E4E3EC] bg-[#F5F5F9] py-14 md:py-22">
+        <Container>
+          <SectionHead
+            eyebrow="Specialist services"
+            title="By platform, speciality and market"
+            lede="Full pages on single advertising platforms, the specialities hotels ask us about most, and the markets we serve outside India."
+          />
+          <div className="grid gap-8 lg:grid-cols-3">
+            {[
+              { title: "By advertising platform", pages: AGENCY_PAGES.filter((p) => p.group === "ads") },
+              { title: "By speciality", pages: AGENCY_PAGES.filter((p) => p.group === "specialty") },
+              { title: "By market", pages: AGENCY_PAGES.filter((p) => p.group === "location") },
+            ].map((col) => (
+              <div key={col.title}>
+                <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.12em] text-[#6B6886]">{col.title}</h3>
+                <ul className="flex flex-col divide-y divide-[#E4E3EC] rounded-2xl border border-[#E4E3EC] bg-white">
+                  {col.pages.map((p) => (
+                    <li key={p.slug}>
+                      <Link
+                        href={`/${p.slug}/`}
+                        className="group flex items-start justify-between gap-4 px-5 py-4 transition-colors hover:bg-[#F5F5F9]"
+                      >
+                        <span className="flex flex-col gap-0.5">
+                          <span className="font-bold text-primary2">{p.navLabel}</span>
+                          <span className="text-sm/snug text-[#55536E]">{p.cardLine}</span>
+                        </span>
+                        <LuArrowRight
+                          className="mt-1 shrink-0 text-sapphireBlue transition-transform group-hover:translate-x-1"
+                          aria-hidden="true"
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
 
-  const stats = [
-    { value: `${CLIENT_LOGOS.length}+`, label: "Hospitality brands worked with" },
-    { value: `${websites}`, label: "Websites built" },
-    { value: ADS_TOTALS.stats[2].value, label: "Tracked enquiries from Google Ads" },
-    { value: ADS_TOTALS.stats[3].value, label: "Cost per enquiry, 2024 to 2026" },
-  ];
-
-  const itemListLd = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "Fielmente hospitality marketing services",
-    url: URL,
-    description: DESCRIPTION,
-    mainEntity: {
-      "@type": "ItemList",
-      itemListElement: [...industryLinks, ...specialist]
-        .filter((s) => s.href && !s.href.startsWith("http"))
-        .map((s, i) => ({ "@type": "ListItem", position: i + 1, name: s.label, url: `${SITE}${s.href}` })),
-    },
-  };
-
-  return (
-    <main>
-      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: "Services", path: "/hospitality-marketing-services/" }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
-
-      <TextBanner
-        title="Services"
-        subTitle="Hospitality Marketing Services"
-        description="SEO, ads, OTAs, social media, websites, branding and photography for hotels, resorts, restaurants and cloud kitchens, planned and run by one team."
+      <StatsSection
+        eyebrow="Results"
+        title="What we manage for hospitality brands"
+        stats={PORTFOLIO_STATS}
+        note="Across 23 client Google Ads accounts, Sep 2023 – Sep 2026."
       />
 
-      {/* Headline numbers and jump links */}
-      <SectionWithContainer defaultPadding={false} sectionClassName="border-b border-main-border bg-white" containerClassName="py-8 md:py-10">
-        <dl className="grid grid-cols-2 gap-6 md:grid-cols-4">
-          {stats.map((s) => (
-            <div key={s.label} className="flex flex-col-reverse gap-1">
-              <dt className="text-sm text-secondary">{s.label}</dt>
-              <dd className="text-3xl font-bold text-primary2 md:text-4xl">{s.value}</dd>
-            </div>
-          ))}
-        </dl>
-        <nav aria-label="Services by industry" className="mt-8 flex flex-wrap gap-2">
-          {industryLinks.map((s) => (
-            <a
-              key={s.label}
-              href={`#${anchor(s)}`}
-              className="rounded-full border border-main-border px-4 py-2 text-sm font-medium text-primary transition-colors hover:border-color4 hover:text-color4"
-            >
-              {s.label.replace(/ Marketing$/, "")}
-            </a>
-          ))}
-        </nav>
-      </SectionWithContainer>
+      <HowHotelScaling title="Recent results" cards={featured} />
 
-      <SectionWithContainer sectionClassName="bg-[#F5F7FB]">
-        <Intro
-          label="What we do"
-          title="Four Jobs, One Team"
-          text="Every service we offer does one of four things for a hotel, resort or restaurant. Most clients start with one and add the rest as results come in."
-        />
-        <ol className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {OUTCOMES.map((o, i) => (
-            <li key={o.title} className="rounded-2xl bg-white p-6 shadow-[0_1px_0_#E3E5E8]">
-              <p className="text-sm font-semibold text-orange-ink">{String(i + 1).padStart(2, "0")}</p>
-              <h3 className="mt-2 text-xl font-semibold text-primary">{o.title}</h3>
-              <p className="mt-2 text-secondary">{o.text}</p>
-            </li>
-          ))}
-        </ol>
-      </SectionWithContainer>
+      <FaqListSection title="Working with Fielmente" faqs={faqs} />
 
-      <SectionWithContainer>
-        <Intro
-          label="By industry"
-          title="Services for Your Type of Property"
-          text="Each industry has its own page and a page for every service, written for how its guests search and book."
-        />
-        <ul className="grid gap-5 lg:grid-cols-2">
-          {industryLinks.map((s) => (
-            <DirectoryCard key={s.label} section={s} id={anchor(s)} />
-          ))}
-        </ul>
-      </SectionWithContainer>
-
-      <SectionWithContainer sectionClassName="bg-[#F5F7FB]">
-        <Intro
-          label="Specialist & international"
-          title="Specialist Services and Markets"
-          text="Focused pages for single platforms and questions, and for hotels and restaurants outside India."
-        />
-        <ul className="grid gap-5 lg:grid-cols-2">
-          {specialist.map((s) => (
-            <DirectoryCard key={s.label} section={s} />
-          ))}
-        </ul>
-      </SectionWithContainer>
-
-      <PlatformStripSection />
-
-      <SectionWithContainer sectionClassName="bg-[#F5F7FB]">
-        <Intro label="Proof" title="See the Work Behind the Services" text="Results, websites and client feedback, all from real accounts." />
-        <ul className="grid gap-4 md:grid-cols-3">
-          {PROOF.map((p) => (
-            <li key={p.href}>
-              <Link
-                href={p.href}
-                className="group flex h-full flex-col rounded-2xl border border-main-border bg-white p-6 transition-colors hover:border-color4"
-              >
-                <span className="text-xl font-semibold text-primary group-hover:text-color4">{p.title} →</span>
-                <span className="mt-2 text-secondary">{p.text}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </SectionWithContainer>
-
-      <ContactUsSection {...homePageData?.contactUsSection} />
+      <CtaBandSection
+        title="Not sure which service you need?"
+        body="Book a free consultation. We'll look at your marketing today and suggest the one or two changes that will make the biggest difference."
+        actions={
+          <>
+            <ConsultButton />
+            <WhatsAppChatButton />
+          </>
+        }
+      />
     </main>
   );
 }
