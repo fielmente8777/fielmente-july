@@ -121,6 +121,13 @@ export const SERVICE_GROUPS: ServiceGroup[] = [
         ],
       },
       {
+        id: "photography",
+        name: "Photography & videography",
+        summary: "Planned hotel and resort shoots: rooms, food, exteriors and guest experiences, shot for websites, ads, OTAs and social media.",
+        anchor: "photography",
+        clients: ["Saraaya Glamps", "Stone Hedge, Ladakh"],
+      },
+      {
         id: "influencer",
         name: "Influencer marketing",
         summary: "Finding travel and food creators who fit the property, then running barter stays for a reel, stories and a Google review.",

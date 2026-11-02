@@ -9,6 +9,8 @@ import SocialGrids from "./SocialGrids";
 import { EarlierBrands, MetaAdsFeature, PrCoverage, SeoResults } from "./MoreWork";
 import { BrandProjects, LogoDesigns, MenuDesigns } from "./BrandingWork";
 import { OtaWork, ServicesWork } from "./ServicesWork";
+import PhotographyWork from "./PhotographyWork";
+import { PHOTO_COUNT } from "./photography";
 import LogoWall, { CLIENT_LOGOS } from "./LogoWall";
 import { SITES } from "./sites";
 import { ADS_RESULTS, ADS_TOTALS } from "./ads";
@@ -60,6 +62,7 @@ const SECTIONS = [
   { id: "google-ads", label: "Google Ads" },
   { id: "social-media", label: "Social media" },
   { id: "meta-ads", label: "Meta ads" },
+  { id: "photography", label: "Photography & video" },
   { id: "branding", label: "Branding & print" },
   { id: "seo", label: "SEO" },
   { id: "ota", label: "OTA listings" },
@@ -87,7 +90,7 @@ export default function OurWorkPage() {
       <TextBanner
         title="Our Work"
         subTitle="Websites, Ads & Content That Bring Bookings"
-        description="Every website and landing page we have built, the Google Ads results behind them, and our branding, social media, SEO, OTA and PR work for hotels, resorts and restaurants."
+        description="Every website and landing page we have built, the Google Ads results behind them, and our branding, photography, social media, SEO, OTA and PR work for hotels, resorts and restaurants."
       />
 
       {/* Headline numbers and jump links */}
@@ -158,6 +161,17 @@ export default function OurWorkPage() {
         <div id="meta-ads" className="mt-14 scroll-mt-24">
           <MetaAdsFeature />
         </div>
+      </SectionWithContainer>
+
+      <SectionWithContainer sectionId="photography" sectionClassName="scroll-mt-24 bg-primary2">
+        <div className="mb-10 max-w-3xl space-y-3">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FFB596]">Photography & videography</p>
+          <h2 className="text-3xl font-semibold leading-tight text-white md:text-4xl">Hotel Shoots That Sell the Stay</h2>
+          <p className="text-[#C9C7DD] md:text-lg">
+            {`We plan and shoot rooms, food and the experiences guests travel for, then use the photos across websites, ads, OTAs and social media. ${PHOTO_COUNT} frames from two recent shoots.`}
+          </p>
+        </div>
+        <PhotographyWork />
       </SectionWithContainer>
 
       <SectionWithContainer sectionId="branding" sectionClassName="scroll-mt-24 bg-[#F5F7FB]">
