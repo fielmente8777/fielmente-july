@@ -35,6 +35,7 @@ const Header = ({ menu }: { menu?: SiteMenu }) => {
     "/hospitality-marketing-services/social-media-marketing-agency/",
     "/social-media-marketing/",
     "/search-engine-marketing/",
+    "/blogs/",
   ];
   const [isScrolled, setIsScrolled] = useState(false);
   // Blog posts are the only pages on the top-level /[slug]/ route. Reading the route's own param

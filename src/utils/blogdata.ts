@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { blogCategory, blogCover } from "./blogMeta";
 
 import Img1 from "../../public/images/blog/Cosy Hostel Bunk Life.png";
 import Img10 from "../../public/images/blog/asset-10.png";
@@ -32805,9 +32806,14 @@ export const mergedBlogSlugs = new Set<string>([
 ]);
 
 // One card per post: skip merged posts and any later entry that repeats a slug (the post page shows the first).
-export const blogData = blog.filter(
-  (post, i, all) => !mergedBlogSlugs.has(post.slug) && all.findIndex((p) => p.slug === post.slug) === i
-);
+// Each post uses its banner from public/images/blog/covers/ and the category printed on it (see blogMeta.ts).
+export const blogData = blog
+  .filter((post, i, all) => !mergedBlogSlugs.has(post.slug) && all.findIndex((p) => p.slug === post.slug) === i)
+  .map((post) => ({
+    ...post,
+    url: blogCover(post.slug) ?? post.url,
+    category: blogCategory(post.slug)?.label ?? post.category,
+  }));
 // export const blogData = blog.filter((item) => item.isShow === true);
 
 // tips-for-engagement-on-social-media-of-cloud-kitchen

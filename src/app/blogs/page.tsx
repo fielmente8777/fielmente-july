@@ -1,40 +1,59 @@
-import { Section, SectionWithContainer } from "@/components";
-import SectionHeading from "@/components/typography/SectionHeadingDesc";
-import Image from "next/image";
-import { blogPageData, BLOGS_PER_PAGE } from "./components/pageData";
-import BlogCard from "./components/BlogCard";
+import { Container } from "@/components";
+import { CtaBtn } from "@/components/buttons/CtaBtn";
+import { BLOG_TOPICS } from "@/utils/blogMeta";
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BlogCard from "./components/BlogCard";
+import { blogCards, blogPageCount, blogPageSlice, blogPageStart } from "./components/pageData";
 
+const SITE = "https://fielmente.com";
 const BLOG_TITLE = "Hotel & Restaurant Marketing Blog | Fielmente";
 const BLOG_DESCRIPTION =
   "Hospitality marketing guides for hotels, resorts and restaurants, covering SEO, Google Ads, social media, WhatsApp and AI search. Read the Fielmente blog.";
 
-type BlogsSearchParams = Promise<{ page?: string }>;
+type BlogsSearchParams = Promise<{ page?: string; topic?: string }>;
 
-/** Page 1 lives at /blogs/; later pages at /blogs/?page=N, each canonical to itself. */
-function pageUrl(page: number) {
-  return page <= 1 ? "https://fielmente.com/blogs/" : `https://fielmente.com/blogs/?page=${page}`;
+/** /blogs/, /blogs/?page=N, /blogs/?topic=x and /blogs/?topic=x&page=N; each page is canonical to itself. */
+function listUrl(page: number, topic?: string, absolute = false) {
+  const q = new URLSearchParams();
+  if (topic) q.set("topic", topic);
+  if (page > 1) q.set("page", String(page));
+  const qs = q.toString();
+  const path = `/blogs/${qs ? `?${qs}` : ""}`;
+  return absolute ? `${SITE}${path}` : path;
 }
 
-export async function generateMetadata({
-  searchParams,
-}: {
-  searchParams: BlogsSearchParams;
-}): Promise<Metadata> {
-  const params = await searchParams;
+function resolve(params: { page?: string; topic?: string }) {
+  const topic = BLOG_TOPICS.find((t) => t.slug === params.topic);
+  const cards = topic ? blogCards.filter((c) => c.topic === topic.slug) : blogCards;
   const page = Math.max(1, Number(params.page) || 1);
-  const title = page > 1 ? `Hospitality Marketing Blog, Page ${page} | Fielmente` : BLOG_TITLE;
-  const description = page > 1 ? `${BLOG_DESCRIPTION.replace(" Read the Fielmente blog.", "")} Page ${page}.` : BLOG_DESCRIPTION;
+  const totalPages = blogPageCount(cards.length);
+  const valid =
+    (params.topic === undefined || !!topic) &&
+    (params.page === undefined || /^\d+$/.test(params.page)) &&
+    page <= totalPages;
+  return { topic, cards, page, totalPages, valid };
+}
+
+export async function generateMetadata({ searchParams }: { searchParams: BlogsSearchParams }): Promise<Metadata> {
+  const { topic, page } = resolve(await searchParams);
+  const base = topic ? `${topic.label} Articles` : "Hospitality Marketing Blog";
+  const title = topic || page > 1 ? `${base}${page > 1 ? `, Page ${page}` : ""} | Fielmente` : BLOG_TITLE;
+  const description = topic
+    ? `Fielmente guides on ${topic.label.toLowerCase()} for hotels, resorts and restaurants.${page > 1 ? ` Page ${page}.` : ""}`
+    : page > 1
+      ? `${BLOG_DESCRIPTION.replace(" Read the Fielmente blog.", "")} Page ${page}.`
+      : BLOG_DESCRIPTION;
+  const url = listUrl(page, topic?.slug, true);
   return {
     title,
     description,
-    alternates: { canonical: pageUrl(page) },
+    alternates: { canonical: url },
     openGraph: {
       title,
       description,
-      url: pageUrl(page),
+      url,
       siteName: "Fielmente",
       locale: "en_IN",
       type: "website",
@@ -43,73 +62,53 @@ export async function generateMetadata({
   };
 }
 
-// Builds a truncated page list like [1, "...", 4, 5, 6, "...", 9]
-function getPaginationRange(
-  current: number,
-  total: number
-): (number | "...")[] {
-  const delta = 1; // pages shown immediately around current
-  const range: (number | "...")[] = [];
-
-  const start = Math.max(2, current - delta);
-  const end = Math.min(total - 1, current + delta);
-
-  range.push(1);
-
+/** A truncated page list like [1, "...", 4, 5, 6, "...", 9]. */
+function getPaginationRange(current: number, total: number): (number | "...")[] {
+  const range: (number | "...")[] = [1];
+  const start = Math.max(2, current - 1);
+  const end = Math.min(total - 1, current + 1);
   if (start > 2) range.push("...");
-
-  for (let i = start; i <= end; i++) {
-    range.push(i);
-  }
-
+  for (let i = start; i <= end; i++) range.push(i);
   if (end < total - 1) range.push("...");
-
   if (total > 1) range.push(total);
-
   return range;
 }
 
-export default async function Blogs({
-  searchParams,
-}: {
-  searchParams: BlogsSearchParams;
-}) {
-  const params = await searchParams;
+const Chevron = ({ dir }: { dir: "left" | "right" }) => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d={dir === "left" ? "M15 18l-6-6 6-6" : "M9 18l6-6-6-6"} />
+  </svg>
+);
 
-  const currentPage = Math.max(1, Number(params.page) || 1);
+export default async function Blogs({ searchParams }: { searchParams: BlogsSearchParams }) {
+  const { topic, cards, page, totalPages, valid } = resolve(await searchParams);
+  // An unknown topic or a page number past the last page is a real 404, not a copy of another page.
+  if (!valid) notFound();
 
-  const totalBlogs = blogPageData.blogs.cards.length;
-
-  const totalPages = Math.ceil(totalBlogs / BLOGS_PER_PAGE);
-
-  // A page number past the last page is a real 404, not a copy of the last page.
-  if (currentPage > totalPages || (params.page !== undefined && !/^\d+$/.test(params.page))) {
-    notFound();
-  }
-  const page = currentPage;
-
-  const startIndex = (page - 1) * BLOGS_PER_PAGE;
-
-  const visibleBlogs = blogPageData.blogs.cards.slice(
-    startIndex,
-    startIndex + BLOGS_PER_PAGE
-  );
-
+  const visible = blogPageSlice(cards, page);
+  const startIndex = blogPageStart(page);
+  const [featured, ...rest] = page === 1 ? visible : [undefined, ...visible];
   const paginationRange = getPaginationRange(page, totalPages);
+  const heading = topic ? topic.label : "Hospitality Marketing Blog";
 
   const blogLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: page > 1 ? `Hospitality Marketing Blog, Page ${page}` : "Hospitality Marketing Blog",
-    url: pageUrl(page),
+    name: page > 1 ? `${heading}, Page ${page}` : heading,
+    url: listUrl(page, topic?.slug, true),
     description: BLOG_DESCRIPTION,
-    isPartOf: { "@type": "Blog", name: "Fielmente Blog", url: pageUrl(1), publisher: { "@type": "Organization", name: "Fielmente", url: "https://fielmente.com/" } },
+    isPartOf: {
+      "@type": "Blog",
+      name: "Fielmente Blog",
+      url: listUrl(1, undefined, true),
+      publisher: { "@type": "Organization", name: "Fielmente", url: `${SITE}/` },
+    },
     mainEntity: {
       "@type": "ItemList",
-      itemListElement: visibleBlogs.map((card, i) => ({
+      itemListElement: visible.map((card, i) => ({
         "@type": "ListItem",
         position: startIndex + i + 1,
-        url: `https://fielmente.com/${card.slug}/`,
+        url: `${SITE}/${card.slug}/`,
         name: card.title,
       })),
     },
@@ -118,138 +117,165 @@ export default async function Blogs({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://fielmente.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: pageUrl(1) },
-      ...(page > 1 ? [{ "@type": "ListItem", position: 3, name: `Page ${page}`, item: pageUrl(page) }] : []),
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: listUrl(1, undefined, true) },
+      ...(topic ? [{ "@type": "ListItem", position: 3, name: topic.label, item: listUrl(1, topic.slug, true) }] : []),
+      ...(page > 1
+        ? [{ "@type": "ListItem", position: topic ? 4 : 3, name: `Page ${page}`, item: listUrl(page, topic?.slug, true) }]
+        : []),
     ],
   };
 
+  const chips = [
+    { slug: undefined, label: "All articles", count: blogCards.length },
+    ...BLOG_TOPICS.map((t) => ({ slug: t.slug, label: t.label, count: blogCards.filter((c) => c.topic === t.slug).length })),
+  ];
+
   return (
-    <main className="md:mt-22 mt-23">
+    <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <Section
-        defaultPadding={false}
-        className="w-full relative xl:aspect-[4/.935] lg:aspect-[4/.89] md:aspect-4/1.5 aspect-4/1.75 border"
-      >
-        <Image
-          src="/images/blog/bnr.png"
-          alt="Laptop showing a hotel website next to a coffee cup"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-linear-to-b from-30% from-black/40 to-transparent z-10" />
-        <div className="absolute inset-0 flex items-center justify-center z-20">
-          <SectionHeading
-            // The H1 names the page (and its page number), instead of "EXPLORE OUR BLOGS" on all 21 pages.
-            title={page > 1 ? `Hospitality Marketing Blog: Page ${page}` : "Hospitality Marketing Blog"}
-            subTitle={blogPageData.bannerData.subTitle}
-            titleColor="white"
-            subTitleColor="white"
-            subTitleClassName="span-color-2"
-            level={1}
-            textCenter
-            wrapperClassName="gap-4 max-w-md"
-            icon={false}
-          />
-        </div>
-      </Section>
-      <SectionWithContainer>
-        <SectionHeading
-          title={blogPageData.blogs.title}
-          subTitle={blogPageData.blogs.subTitle}
-          subTitleClassName="span-color-2"
-        />
 
-        <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-10">
-          {visibleBlogs.map((card, index) => (
-            <BlogCard key={index} {...card} />
-          ))}
+      {/* Hero: dark brand band under the transparent header */}
+      <section className="relative overflow-hidden bg-primary2 text-white">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-[radial-gradient(700px_420px_at_88%_-10%,rgba(242,102,51,0.28),transparent_65%),radial-gradient(800px_520px_at_-5%_110%,rgba(13,84,235,0.35),transparent_62%)]"
+        />
+        <Container className="relative pb-12 pt-32 md:pb-16 md:pt-40">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-white/60">
+            <Link href="/" className="hover:text-white">Home</Link>
+            <span aria-hidden="true">/</span>
+            <Link href="/blogs/" className={topic ? "hover:text-white" : "text-white"}>Blog</Link>
+            {topic && (
+              <>
+                <span aria-hidden="true">/</span>
+                <span className="text-white">{topic.label}</span>
+              </>
+            )}
+          </nav>
+          <h1 className="mt-5 max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight md:text-6xl">
+            {heading}
+            {page > 1 && <span className="text-white/50">: Page {page}</span>}
+          </h1>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/75">
+            Practical guides on SEO, Google and Meta ads, ChatGPT ads, WhatsApp and AI sales for hotels, resorts and
+            restaurants, from the team behind 500+ hospitality brands.
+          </p>
+          <nav aria-label="Blog topics" className="-mx-5 mt-10 overflow-x-auto px-5 md:mx-0 md:px-0">
+            <ul className="flex w-max gap-2 md:w-auto md:flex-wrap">
+              {chips.map((c) => {
+                const active = c.slug === topic?.slug;
+                return (
+                  <li key={c.label}>
+                    <Link
+                      href={listUrl(1, c.slug)}
+                      aria-current={active ? "page" : undefined}
+                      className={`flex items-center gap-2 whitespace-nowrap rounded-full border px-4 py-2 text-sm font-medium transition ${
+                        active
+                          ? "border-white bg-white text-primary2"
+                          : "border-white/20 text-white/85 hover:border-white/50 hover:bg-white/10"
+                      }`}
+                    >
+                      {c.label}
+                      <span className={active ? "text-primary2/60" : "text-white/50"}>{c.count}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+        </Container>
+      </section>
+
+      <Container className="py-12 md:py-16">
+        {featured && (
+          <div className="mb-14">
+            <BlogCard {...featured} featured />
+          </div>
+        )}
+
+        <div className="mb-8 flex items-end justify-between gap-4 border-b border-[#E6E4EF] pb-4">
+          <h2 className="text-2xl font-bold text-primary2 md:text-3xl">
+            {page === 1 ? (topic ? `More on ${topic.label}` : "Latest articles") : `Articles, page ${page}`}
+          </h2>
+          <p className="shrink-0 text-sm text-[#5F6776]">
+            {cards.length} articles · page {page} of {totalPages}
+          </p>
         </div>
 
-        {/* Pagination — bottom right */}
+        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+          {rest.map((card) => card && <BlogCard key={card.slug} {...card} as="h3" />)}
+        </div>
+
         {totalPages > 1 && (
-          <div className="flex justify-end items-center gap-2 mt-12">
-            {/* Previous */}
+          <nav aria-label="Blog pages" className="mt-16 flex flex-wrap items-center justify-center gap-2">
             <Link
-              href={page > 2 ? `/blogs/?page=${page - 1}` : page === 2 ? "/blogs/" : "#"}
+              href={page > 1 ? listUrl(page - 1, topic?.slug) : "#"}
               aria-disabled={page === 1}
-              aria-label="Previous page of blog posts"
               rel="prev"
-              className={`w-10 h-10 rounded-full border border-main-border flex items-center justify-center transition ${
-                page === 1
-                  ? "opacity-40 pointer-events-none"
-                  : "hover:bg-color4 hover:text-white"
+              className={`flex h-11 items-center gap-1 rounded-full border border-main-border px-4 text-sm font-medium transition ${
+                page === 1 ? "pointer-events-none opacity-40" : "hover:border-primary2 hover:bg-primary2 hover:text-white"
               }`}
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M15 18l-6-6 6-6" />
-              </svg>
+              <Chevron dir="left" /> Previous
             </Link>
-
-            {/* Page Numbers with ellipsis */}
             {paginationRange.map((item, idx) =>
               item === "..." ? (
-                <span
-                  key={`dots-${idx}`}
-                  className="w-10 h-10 flex items-center justify-center text-main-border select-none"
-                >
-                  ...
+                <span key={`dots-${idx}`} className="flex h-11 w-8 select-none items-center justify-center text-[#9AA0AC]">
+                  …
                 </span>
               ) : (
                 <Link
                   key={item}
-                  href={item === 1 ? "/blogs/" : `/blogs/?page=${item}`}
-                  className={`w-10 h-10 rounded-full border flex items-center justify-center transition ${
+                  href={listUrl(item, topic?.slug)}
+                  aria-current={page === item ? "page" : undefined}
+                  className={`flex h-11 w-11 items-center justify-center rounded-full border text-sm font-semibold transition ${
                     page === item
-                      ? "bg-secondary text-white border-main-border"
-                      : "border-main-border hover:bg-color4 hover:text-white"
+                      ? "border-primary2 bg-primary2 text-white"
+                      : "border-main-border hover:border-primary2 hover:bg-primary2 hover:text-white"
                   }`}
                 >
                   {item}
                 </Link>
               )
             )}
-
-            {/* Next */}
             <Link
-              href={page < totalPages ? `/blogs/?page=${page + 1}` : "#"}
+              href={page < totalPages ? listUrl(page + 1, topic?.slug) : "#"}
               aria-disabled={page === totalPages}
-              aria-label="Next page of blog posts"
               rel="next"
-              className={`w-10 h-10 rounded-full border border-main-border flex items-center justify-center transition ${
-                page === totalPages
-                  ? "opacity-40 pointer-events-none"
-                  : "hover:bg-color4 hover:text-white"
+              className={`flex h-11 items-center gap-1 rounded-full border border-main-border px-4 text-sm font-medium transition ${
+                page === totalPages ? "pointer-events-none opacity-40" : "hover:border-primary2 hover:bg-primary2 hover:text-white"
               }`}
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 18l6-6-6-6" />
-              </svg>
+              Next <Chevron dir="right" />
             </Link>
-          </div>
+          </nav>
         )}
-      </SectionWithContainer>
+      </Container>
+
+      {/* Closing call to action */}
+      <Container className="pb-16 md:pb-24">
+        <div className="relative overflow-hidden rounded-3xl bg-primary2 px-6 py-10 text-white md:px-12 md:py-14">
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-[radial-gradient(520px_320px_at_100%_0%,rgba(242,102,51,0.35),transparent_65%)]"
+          />
+          <div className="relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl font-bold md:text-3xl">Want these ideas working for your property?</h2>
+              <p className="mt-3 text-white/75 md:text-lg">
+                Get a free marketing audit of your website, Google profile and ads from the Fielmente team.
+              </p>
+            </div>
+            <CtaBtn
+              type="button"
+              label="Get My Free Audit"
+              className="rounded-full border-none bg-orange-primary text-white md:text-lg"
+            />
+          </div>
+        </div>
+      </Container>
     </main>
   );
 }

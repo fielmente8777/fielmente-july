@@ -10,7 +10,7 @@ import { subPageData } from "./industries-we-serve/[...industry]/components/subP
 import { industriesData } from "./industries-we-serve/[...industry]/pageData";
 import { PRODUCTS, productPath } from "@/lib/products";
 import { blogData } from "@/utils/blogdata";
-import { BLOGS_PER_PAGE } from "./blogs/components/pageData";
+import { blogPageCount } from "./blogs/components/pageData";
 
 const SITE = "https://fielmente.com";
 
@@ -57,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   casStudiesData.filter((c) => c.data?.length).forEach((c) => add(`/case-study/${c.slug}/`));
   blogData.forEach((b) => add(`/${b.slug}/`, isoDate(b.date)));
 
-  const blogListPages = Array.from({ length: Math.ceil(blogData.length / BLOGS_PER_PAGE) - 1 }, (_, i) => ({
+  const blogListPages = Array.from({ length: blogPageCount(blogData.length) - 1 }, (_, i) => ({
     url: `${SITE}/blogs/?page=${i + 2}`,
   }));
 

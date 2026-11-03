@@ -663,132 +663,191 @@ img {
 // ============================================
 
 .blog-content {
-    color: #6f6f6f;
+    color: #3a4152;
     font-size: 1.125rem;
-    line-height: 1.9rem;
+    line-height: 1.8;
     font-weight: 400;
 
     @media (max-width: 768px) {
-        font-size: 1rem;
-        line-height: 1.7rem;
+        font-size: 1.0625rem;
+        line-height: 1.75;
     }
 
-    // Title (main blog heading)
     h1 {
         font-size: 2.2rem;
-        line-height: 2.6rem;
+        line-height: 1.2;
         font-weight: 700;
-        color: #000;
-        margin-bottom: 1rem;
+        color: #110d3c;
+        margin: 2.5rem 0 1rem;
+    }
+
+    // Section headings (the "On this page" list links to these)
+    h2 {
+        font-size: 1.875rem;
+        line-height: 1.25;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: #110d3c;
+        margin: 3rem 0 1rem;
+        scroll-margin-top: 110px;
 
         @media (max-width: 768px) {
-            font-size: 1.6rem;
-            line-height: 2.1rem;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
         }
     }
 
-    // Meta (date + read time)
-    .meta {
-        font-size: 0.95rem;
-        color: #9a9a9a;
-        margin-bottom: 1.5rem;
-    }
-
-    // Section headings
-    h2 {
-        font-size: 1.6rem;
-        line-height: 2.2rem;
-        font-weight: 600;
-        color: #000;
-        margin-top: 2rem;
-        margin-bottom: 0.8rem;
+    > h2:first-child,
+    > div:first-child > h2:first-child {
+        margin-top: 0;
     }
 
     h3 {
-        font-size: 1.35rem;
-        line-height: 2rem;
-        font-weight: 600;
-        color: #000;
-        margin-top: 1.5rem;
-        margin-bottom: 0.6rem;
+        font-size: 1.3rem;
+        line-height: 1.35;
+        font-weight: 650;
+        color: #1b2231;
+        margin: 2rem 0 0.6rem;
+        scroll-margin-top: 110px;
     }
 
-    // Paragraphs
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 650;
+        color: #1b2231;
+        margin: 1.5rem 0 0.5rem;
+    }
+
     p {
-        margin-bottom: 1rem;
+        margin: 0 0 1.25rem;
     }
 
-    // Strong / bold text
     strong,
     b {
-        font-weight: 600;
-        color: #000;
+        font-weight: 650;
+        color: #1b2231;
     }
 
-    // Lists
     ul,
     ol {
-        margin: 1rem 0 1.2rem;
-        padding-left: 1.5rem;
+        margin: 0 0 1.5rem;
+        padding-left: 1.4rem;
 
         li {
-            margin-bottom: 0.4rem;
+            margin: 0.5rem 0;
+            padding-left: 0.35rem;
         }
     }
 
     ul {
         list-style: disc;
+
+        li::marker {
+            color: #f26633;
+        }
     }
 
     ol {
         list-style: decimal;
+
+        li::marker {
+            color: #f26633;
+            font-weight: 700;
+        }
     }
 
-    // Blockquotes (optional but useful)
+    li > p {
+        margin-bottom: 0.4rem;
+    }
+
     blockquote {
-        border-left: 4px solid #000;
-        padding-left: 1rem;
-        margin: 1.5rem 0;
-        font-style: italic;
-        color: #444;
+        border-left: 4px solid #f26633;
+        background: #fff7f3;
+        border-radius: 0 1rem 1rem 0;
+        padding: 1rem 1.25rem;
+        margin: 2rem 0;
+        color: #1b2231;
     }
 
-    // Links
     a {
-        color: #3b5bff;
+        color: #0d54eb;
         font-weight: 500;
-        text-decoration: none;
+        text-decoration: underline;
+        text-decoration-color: rgba(13, 84, 235, 0.35);
+        text-underline-offset: 3px;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration-color: currentColor;
         }
     }
 
-    // Images
     img {
         display: block;
-        margin: 1.5rem 0;
-        max-width: 60%;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 2rem 0;
         border-radius: 1rem;
         object-fit: cover;
-        width: 100%;
-        @media (max-width: 768px) {
-            max-width: 100%;
-        }
     }
 
-    // Highlight / note text (for lines like "Note that...")
+    hr {
+        border: 0;
+        border-top: 1px solid #e6e4ef;
+        margin: 2.5rem 0;
+    }
+
+    // Tables keep their own inline borders in the post data; these rules restyle them.
+    .table-wrap {
+        margin: 2rem 0;
+        overflow-x: auto;
+        border: 1px solid #e6e4ef;
+        border-radius: 1rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        width: 100% !important;
+        min-width: 520px;
+        border-collapse: collapse !important;
+        border: 0 !important;
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    th {
+        background: #f5f4fa;
+        color: #110d3c;
+        font-weight: 700;
+        text-align: left !important;
+        vertical-align: bottom;
+        border: 0 !important;
+        border-bottom: 1px solid #e6e4ef !important;
+        padding: 14px 16px !important;
+    }
+
+    td {
+        vertical-align: top;
+        border: 0 !important;
+        border-top: 1px solid #eeedf5 !important;
+        padding: 14px 16px !important;
+    }
+
+    tr:first-child td {
+        border-top: 0 !important;
+    }
+
+    tbody tr:nth-child(even) td {
+        background: #fbfafd;
+    }
+
     .highlight {
         font-weight: 500;
-        color: #000;
+        color: #1b2231;
         margin: 1rem 0;
     }
-
-    // Spacing between sections
-    > *:not(:last-child) {
-        margin-bottom: 0.5rem;
-    }
 }
+
 // ============================================
 // BACKGROUND
 // ============================================
