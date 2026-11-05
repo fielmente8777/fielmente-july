@@ -55,7 +55,8 @@ export type Block =
       eyebrow?: string;
       title: string;
       lede?: string;
-      items: { icon: IconKey; title: string; body: string }[];
+      /** With `href` on every item, the cards become links (e.g. to product or industry pages). */
+      items: { icon: IconKey; title: string; body: string; href?: string }[];
     };
 
 export interface AgencyPageData {

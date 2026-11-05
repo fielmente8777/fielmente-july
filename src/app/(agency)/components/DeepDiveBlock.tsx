@@ -1,6 +1,7 @@
 
 import ReadMore, { splitLead } from "@/components/typography/ReadMore";
 import IconCard from "@/components/cards/IconCard";
+import IconLinkCard from "@/components/cards/IconLinkCard";
 import SplitSection from "@/components/commonSections/SplitSection";
 import Container from "@/components/sectionComponants/Container";
 import SectionHead from "@/components/typography/SectionHead";
@@ -103,9 +104,13 @@ const DeepDiveBlock: React.FC<DeepDiveBlockProps> = ({ block: b, data: d, index 
       <Container>
         <SectionHead eyebrow={b.eyebrow} title={b.title} lede={b.lede ? <RichText text={b.lede} sources={d.sources} /> : undefined} />
         <div className={`grid sm:grid-cols-2 ${b.items.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-2"} gap-4 md:gap-5`}>
-          {b.items.map((it) => (
-            <IconCard key={it.title} icon={it.icon} title={it.title} body={<RichText text={it.body} sources={d.sources} />} />
-          ))}
+          {b.items.map((it) =>
+            it.href ? (
+              <IconLinkCard key={it.title} icon={it.icon} title={it.title} body={it.body} href={it.href} bordered={!tint} />
+            ) : (
+              <IconCard key={it.title} icon={it.icon} title={it.title} body={<RichText text={it.body} sources={d.sources} />} />
+            )
+          )}
         </div>
       </Container>
     </section>
