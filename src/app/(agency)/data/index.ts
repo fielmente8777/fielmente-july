@@ -9,6 +9,7 @@ import hotelAiMarketingAgency from "./hotel-ai-marketing-agency";
 import hotelDirectBookingMarketingAgency from "./hotel-direct-booking-marketing-agency";
 import hotelGoogleAdsAgency from "./hotel-google-ads-agency";
 import hotelMarketingAgencyDubai from "./hotel-marketing-agency-dubai";
+import hotelMarketingAgencyGurgaon from "./hotel-marketing-agency-gurgaon";
 import hotelMarketingAgencyUae from "./hotel-marketing-agency-uae";
 import hotelMarketingAgencyUk from "./hotel-marketing-agency-uk";
 import hotelMarketingAgencyUsa from "./hotel-marketing-agency-usa";
@@ -34,6 +35,7 @@ export const AGENCY_PAGES: AgencyPageData[] = [
   hotelMarketingAgencyUsa,
   hotelMarketingAgencyUk,
   internationalHotelMarketingAgency,
+  hotelMarketingAgencyGurgaon,
   resortMarketingAgency,
   luxuryResortMarketingAgency,
   hotelGoogleAdsAgency,

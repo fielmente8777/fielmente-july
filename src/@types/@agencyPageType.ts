@@ -69,6 +69,9 @@ export interface AgencyPageData {
   secondaryKeywords: string[];
   /** location = a market, specialty = a hotel speciality, ads = an advertising platform we run. */
   group: "location" | "specialty" | "ads";
+  /** True when our Gurugram office serves this market in person: the Service schema then names that office,
+   * with its address, as the provider (same @id as the home page's ProfessionalService). */
+  localOffice?: boolean;
   /** Official logos of the platforms this page is about, shown in the hero. */
   platforms?: PlatformKey[];
   /** Short name used in links between pages, e.g. "Hotel marketing in Dubai". */

@@ -84,14 +84,34 @@ const AgencyPage: React.FC<AgencyPageProps> = ({ data: d, afterServices }) => {
     description: d.meta.description,
     areaServed: d.areaServed,
     url,
-    provider: {
-      "@type": "Organization",
-      name: "Fielmente",
-      url: `${SITE}/`,
-      foundingDate: COMPANY.founded,
-      telephone: contacts.phone_1,
-      email: contacts.email_1,
-    },
+    provider: d.localOffice
+      ? {
+          "@type": "ProfessionalService",
+          "@id": `${SITE}/#gurugram`,
+          name: "Fielmente Hospitality Marketing",
+          url: `${SITE}/`,
+          image: `${SITE}/fielmente_logo.png`,
+          telephone: contacts.phone_1,
+          email: contacts.email_1,
+          parentOrganization: { "@id": `${SITE}/#organization` },
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Suncity Success Tower, Golf Course Ext Rd, Sector 65",
+            addressLocality: "Gurugram",
+            addressRegion: "Haryana",
+            postalCode: "122005",
+            addressCountry: "IN",
+          },
+          hasMap: contacts.addressesInIndia[0]?.mapUrl,
+        }
+      : {
+          "@type": "Organization",
+          name: "Fielmente",
+          url: `${SITE}/`,
+          foundingDate: COMPANY.founded,
+          telephone: contacts.phone_1,
+          email: contacts.email_1,
+        },
   };
   const breadcrumbLd = {
     "@context": "https://schema.org",
