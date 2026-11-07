@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Google Hotel Center and Google Ads: the account connection flow</title>
+<desc id="desc">Room prices flow from the booking engine into Hotel Center. Google Ads connects via Tools, Data Manager, Hotel Center, request and Hotel Center approval. Then campaigns can be configured.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#110D3C"/><stop offset=".65" stop-color="#172458"/><stop offset="1" stop-color="#0D54EB"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#F26633"/><stop offset="1" stop-color="#FF9B5A"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="15" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<circle cx="1040" cy="50" r="260" fill="#F26633" opacity=".10"/><circle cx="170" cy="630" r="300" fill="#0D54EB" opacity=".28"/>
+<text x="55" y="62" fill="white" font-family="Arial,sans-serif" font-size="35" font-weight="700">Fielmente</text>
+<rect x="240" y="30" width="5" height="43" rx="2" fill="#F26633"/>
+<text x="267" y="58" fill="#D6D9F0" font-family="Arial,sans-serif" font-size="17">Hospitality Marketing · Google Ads Guide · 2026</text>
+<text x="55" y="144" font-family="Arial,sans-serif" font-weight="800" font-size="44" fill="#FFFFFF">GOOGLE HOTEL CENTER + GOOGLE ADS</text>
+<text x="55" y="183" font-family="Arial,sans-serif" font-size="24" fill="#FFAF84">How your hotel data connects to paid booking campaigns</text>
+<g filter="url(#shadow)">
+<rect x="55" y="232" width="240" height="181" rx="20" fill="#F3F7FF"/>
+<rect x="338" y="232" width="240" height="181" rx="20" fill="#F3F7FF"/>
+<rect x="621" y="232" width="240" height="181" rx="20" fill="#F3F7FF"/>
+<rect x="904" y="232" width="240" height="181" rx="20" fill="#FFF2E8"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#110D3C">
+<text x="175" y="275" text-anchor="middle" font-size="18" font-weight="700" fill="#0D54EB">01 · CONNECTIVITY</text>
+<text x="175" y="315" text-anchor="middle" font-size="25" font-weight="750">Booking engine</text>
+<text x="175" y="343" text-anchor="middle" font-size="21" font-weight="650">or channel manager</text>
+<text x="175" y="377" text-anchor="middle" font-size="16">Live rates and rooms</text>
+<text x="458" y="275" text-anchor="middle" font-size="18" font-weight="700" fill="#0D54EB">02 · PRICE DATA</text>
+<text x="458" y="315" text-anchor="middle" font-size="25" font-weight="750">Google Hotel</text>
+<text x="458" y="343" text-anchor="middle" font-size="25" font-weight="750">Center</text>
+<text x="458" y="377" text-anchor="middle" font-size="16">Properties and rates</text>
+<text x="741" y="275" text-anchor="middle" font-size="18" font-weight="700" fill="#0D54EB">03 · ACCOUNT LINK</text>
+<text x="741" y="329" text-anchor="middle" font-size="29" font-weight="750">Google Ads</text>
+<text x="741" y="377" text-anchor="middle" font-size="16">Campaign and budget</text>
+<text x="1024" y="275" text-anchor="middle" font-size="18" font-weight="700" fill="#BA4C17">04 · CAMPAIGN</text>
+<text x="1024" y="319" text-anchor="middle" font-size="25" font-weight="750">Hotel Ads</text>
+<text x="1024" y="348" text-anchor="middle" font-size="22" font-weight="650">&amp; travel campaigns</text>
+<text x="1024" y="379" text-anchor="middle" font-size="16">Eligible booking links</text>
+</g>
+<g fill="#FF985E"><path d="M304 310l17 13-17 13v-8h-15v-10h15z"/><path d="M587 310l17 13-17 13v-8h-15v-10h15z"/><path d="M870 310l17 13-17 13v-8h-15v-10h15z"/></g>
+<text x="55" y="463" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">Exact linking path in Google Ads</text>
+<rect x="55" y="485" width="1089" height="88" rx="19" fill="#FFFFFF" opacity=".12" stroke="#FF985E" stroke-width="2"/>
+<g font-family="Arial,sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+<rect x="75" y="504" width="155" height="51" rx="12" fill="white"/><text x="152" y="537" fill="#110D3C">Tools</text>
+<text x="247" y="538" fill="#FF985E">→</text>
+<rect x="270" y="504" width="185" height="51" rx="12" fill="white"/><text x="362" y="537" fill="#110D3C">Data Manager</text>
+<text x="473" y="538" fill="#FF985E">→</text>
+<rect x="495" y="504" width="223" height="51" rx="12" fill="white"/><text x="606" y="537" fill="#110D3C">Hotel Center</text>
+<text x="737" y="538" fill="#FF985E">→</text>
+<rect x="755" y="504" width="162" height="51" rx="12" fill="white"/><text x="836" y="537" fill="#110D3C">Send request</text>
+<text x="935" y="538" fill="#FF985E">→</text>
+<rect x="953" y="504" width="170" height="51" rx="12" fill="#F26633"/><text x="1038" y="537" fill="white">Approve link</text>
+</g>
+<rect x="55" y="594" width="1089" height="49" rx="15" fill="#101433" stroke="#7082B8" stroke-width="1"/>
+<circle cx="88" cy="619" r="14" fill="#F26633"/><text x="88" y="625" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="17" font-weight="700">!</text>
+<text x="115" y="625" font-family="Arial,sans-serif" font-size="18" fill="white">Account linking does not launch ads automatically. Verify feeds, tracking and campaign setup.</text>
+</svg>

@@ -16,7 +16,17 @@ export type BlogListCard = {
 };
 
 /** One card per post, newest first (posts are added to the end of blogData). */
-export const blogCards: BlogListCard[] = [...blogData].reverse().map((item) => {
+const newHotelCenterGuide: BlogListCard = {
+  src: "/images/blog/google-hotel-center-ads-connection.svg",
+  title: "How to Connect Google Hotel Center to Google Ads Using Data Manager (2026)",
+  slug: "google-hotel-center-google-ads-data-manager-guide",
+  description: "Follow the exact Tools → Data Manager setup, Hotel Center ID request and approval flow—with infographics for hotel owners.",
+  read: "8 min read",
+  label: "Google & Meta Ads",
+  topic: "hotel-marketing",
+};
+
+export const blogCards: BlogListCard[] = [newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
   const cat = blogCategory(item.slug);
   return {
     src: typeof item.url === "string" ? item.url : item.url?.src,
@@ -27,7 +37,7 @@ export const blogCards: BlogListCard[] = [...blogData].reverse().map((item) => {
     label: cat?.label ?? item.category,
     topic: cat?.topic,
   };
-});
+})];
 
 /** Number of listing pages for `count` posts. */
 export function blogPageCount(count: number) {

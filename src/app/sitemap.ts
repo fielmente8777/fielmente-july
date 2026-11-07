@@ -19,6 +19,7 @@ const STATIC_PAGES = [
   "/about-fielmente-best-hospitality-marketing-agency/",
   "/contact-us/",
   "/blogs/",
+  "/google-hotel-center-google-ads-data-manager-guide/",
   "/case-study/",
   "/our-work/",
   "/our-clients/",
@@ -57,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   casStudiesData.filter((c) => c.data?.length).forEach((c) => add(`/case-study/${c.slug}/`));
   blogData.forEach((b) => add(`/${b.slug}/`, isoDate(b.date)));
 
-  const blogListPages = Array.from({ length: blogPageCount(blogData.length) - 1 }, (_, i) => ({
+  const blogListPages = Array.from({ length: blogPageCount(blogData.length + 1) - 1 }, (_, i) => ({
     url: `${SITE}/blogs/?page=${i + 2}`,
   }));
 
