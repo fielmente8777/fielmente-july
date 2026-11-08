@@ -10,6 +10,7 @@ import { subPageData } from "./industries-we-serve/[...industry]/components/subP
 import { industriesData } from "./industries-we-serve/[...industry]/pageData";
 import { PRODUCTS, productPath } from "@/lib/products";
 import { blogData } from "@/utils/blogdata";
+import { hotelAdsGuides } from "@/lib/hotelAdsGuides";
 import { blogPageCount } from "./blogs/components/pageData";
 
 const SITE = "https://fielmente.com";
@@ -19,6 +20,7 @@ const STATIC_PAGES = [
   "/about-fielmente-best-hospitality-marketing-agency/",
   "/contact-us/",
   "/blogs/",
+  "/google-hotel-ads-guides/",
   "/google-hotel-center-google-ads-data-manager-guide/",
   "/case-study/",
   "/our-work/",
@@ -57,8 +59,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   PRODUCTS.forEach((p) => add(productPath(p.slug)));
   casStudiesData.filter((c) => c.data?.length).forEach((c) => add(`/case-study/${c.slug}/`));
   blogData.forEach((b) => add(`/${b.slug}/`, isoDate(b.date)));
+  hotelAdsGuides.forEach((g) => add("/google-hotel-ads-guides/" + g.slug + "/", new Date("2026-11-08T00:00:00.000Z")));
 
-  const blogListPages = Array.from({ length: blogPageCount(blogData.length + 1) - 1 }, (_, i) => ({
+  const blogListPages = Array.from({ length: blogPageCount(blogData.length + 26) - 1 }, (_, i) => ({
     url: `${SITE}/blogs/?page=${i + 2}`,
   }));
 

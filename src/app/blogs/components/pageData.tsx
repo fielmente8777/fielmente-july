@@ -1,4 +1,5 @@
 import { blogData } from "@/utils/blogdata";
+import { hotelAdsGuides } from "@/lib/hotelAdsGuides";
 import { blogCategory, excerpt, readMinutes, type BlogTopic } from "@/utils/blogMeta";
 
 export const BLOGS_PER_PAGE = 9;
@@ -26,7 +27,17 @@ const newHotelCenterGuide: BlogListCard = {
   topic: "hotel-marketing",
 };
 
-export const blogCards: BlogListCard[] = [newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
+const hotelAdsSeriesCards: BlogListCard[] = [...hotelAdsGuides].reverse().map((guide) => ({
+  src: "/images/blog/hotel-ads-series/" + guide.slug + ".svg",
+  title: guide.title,
+  slug: "google-hotel-ads-guides/" + guide.slug,
+  description: guide.description,
+  read: "6 min read",
+  label: guide.category === "Connectivity" ? "Hotel Technology" : "Google & Meta Ads",
+  topic: "hotel-marketing",
+}));
+
+export const blogCards: BlogListCard[] = [...hotelAdsSeriesCards, newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
   const cat = blogCategory(item.slug);
   return {
     src: typeof item.url === "string" ? item.url : item.url?.src,
