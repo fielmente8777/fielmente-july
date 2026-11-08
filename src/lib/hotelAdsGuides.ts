@@ -8,7 +8,7 @@ export type HotelAdsGuide = {
   slug: string;
   title: string;
   description: string;
-  category: "Connectivity" | "Campaigns" | "Direct Bookings";
+  category: string;
   primary: string;
   intro: string[];
   flow: string[];
