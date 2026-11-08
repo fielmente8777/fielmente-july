@@ -93,7 +93,7 @@ export default function HotelAdsGuidesHub() {
               <article key={guide.slug} className="group relative flex h-full flex-col">
                 <div className="relative aspect-video overflow-hidden rounded-2xl border border-[#E8E7F0] bg-primary2">
                   <Image src={"/images/blog/hotel-ads-series/" + guide.slug + ".svg"} alt={"Infographic: " + guide.title} width={1200} height={675}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.025]"} />
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.025]" />
                 </div>
                 <p className="mt-4 text-xs font-bold uppercase tracking-widest text-[#B5461A]">{guide.category}</p>
                 <h3 className="mt-2 text-lg font-bold leading-snug text-primary2">
