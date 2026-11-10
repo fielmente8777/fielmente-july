@@ -41,6 +41,8 @@ export interface blogtype {
   url?: StaticImageData | string;
   bnr?: boolean;
   date?: string;
+  /** Date of the last substantial rewrite, e.g. "11 November 2026". Leave unset for small fixes. */
+  updated?: string;
   addimg?: StaticImageData;
   description?: string;
   title: string;
@@ -4389,101 +4391,6 @@ Why does this work? Because you’re cutting costs on front-of-house activities
         <li>Experience with premium hospitality brands</li>
         <li>ROI-driven campaigns</li>
         <li>Strong creative + performance blend</li>
-      </ul>
-
-    </div>
-  `,
-  },
-  {
-    slug: "hotel-marketing-agency-bengaluru",
-    title: "Best Hotel Marketing Agency in Bengaluru",
-    isShow: true,
-    meta: {
-      title: "Hotel Marketing Agency in Bengaluru | Fielmente",
-      description:
-        "Bengaluru’s hospitality market is driven by corporate travel, tech professionals and long-stay guests. How hotels there can win more direct bookings.",
-      keywords: [
-        "Hotel Marketing",
-        "Bengaluru Hotels",
-        "Corporate Travel",
-        "Hotel SEO",
-        "B2B Marketing",
-      ],
-    },
-    url: "/images/blog/4.webp",
-    date: "April 3, 2026",
-    description:
-      "Bengaluru’s hospitality market is driven by corporate travel, tech professionals, and long-stay guests.",
-    data: `
-    <div>
-
-      <p>Bengaluru’s hospitality market is driven by corporate travel, tech professionals, and long-stay guests.</p>
-
-      <p>Fielmente helps hotels in Bengaluru target high-intent audiences through data-driven marketing strategies.</p>
-
-      <h2>Our Focus:</h2>
-
-      <ul>
-        <li>Corporate booking funnels</li>
-        <li>Google Ads for business travelers</li>
-        <li>SEO for “business hotels near me”</li>
-        <li>LinkedIn & B2B marketing</li>
-      </ul>
-
-      <h2>Why Us:</h2>
-
-      <ul>
-        <li>Strong corporate targeting strategies</li>
-        <li>Conversion-focused campaigns</li>
-        <li>Deep understanding of Bangalore market</li>
-      </ul>
-
-    </div>
-  `,
-  },
-  {
-    slug: "resort-marketing-agency-uttarakhand",
-    title: "Top Resort Marketing Agency in Uttarakhand",
-    isShow: true,
-    meta: {
-      title: "Resort Marketing Agency in Uttarakhand | Fielmente",
-      description:
-        "From Mussoorie to Rishikesh to Nainital, Uttarakhand is a hub for destination travel and luxury stays. How resorts there can fill rooms directly.",
-      keywords: [
-        "Resort Marketing",
-        "Uttarakhand Resorts",
-        "Destination Marketing",
-        "Travel SEO",
-        "Direct Bookings",
-      ],
-    },
-    url: "/images/blog/5.webp",
-    date: "April 3, 2026",
-    description:
-      "From Mussoorie to Rishikesh to Nainital, Uttarakhand is a hub for destination travel and luxury stays.",
-
-    data: `
-    <div>
-
-      <p>From Mussoorie to Rishikesh to Nainital, Uttarakhand is a hub for destination travel and luxury stays.</p>
-
-      <p>Fielmente specializes in marketing resorts and boutique properties to attract high-intent travelers.</p>
-
-      <h2>What We Offer:</h2>
-
-      <ul>
-        <li>Experience-based storytelling</li>
-        <li>SEO for travel & destination keywords</li>
-        <li>Influencer & reel marketing</li>
-        <li>Direct booking strategies</li>
-      </ul>
-
-      <h2>Why Resorts Trust Us:</h2>
-
-      <ul>
-        <li>Expertise in destination marketing</li>
-        <li>Proven growth in bookings</li>
-        <li>Strong content + performance mix</li>
       </ul>
 
     </div>
@@ -29674,120 +29581,6 @@ Interest in ChatGPT ads management services for hotels in india will create nois
   `,
   },
   {
-    title: "WhatsApp API Providers for Hotels: What to Compare",
-    slug: "whatsapp-api-providers-for-hotels-what-to-compare",
-    url: "/images/blog/banners/whatsapp-api-providers-for-hotels-what-to-compare.webp",
-    isShow: true,
-    meta: {
-      title: "Choosing a WhatsApp API Provider for Your Hotel | Checklist",
-      description:
-        "A pre-launch checklist for hotels choosing a WhatsApp API provider: data ownership, integration testing, fallback responses and the KPIs to track after go-live.",
-      keywords: [
-        "WhatsApp API Provider Checklist",
-        "Hotel Data Ownership",
-        "Integration Testing",
-        "Go-Live Checklist",
-        "Provider KPIs",
-      ],
-    },
-    description:
-      "Learn how whatsapp api providers for hotels works, what to automate, key integrations, ROI metrics and practical steps hotels can use to drive more dire...",
-    data: `
-    <p>WhatsApp API Providers for Hotels: What to Compare is a practical topic for hotel owners, general managers, revenue managers and sales teams because WhatsApp is already one of the places where guests ask questions, compare options and decide whether to book. The opportunity is not simply to reply faster. It is to build a repeatable sales and service process around hotel technology integration so that high-intent conversations move forward even when the team is busy or offline.</p>
-
-    <p>This guide explains what WhatsApp api providers for hotels should do, where automation is useful, which integrations matter, what should stay human, and which metrics show whether the system is actually improving direct-booking performance. The focus is operational: accurate answers, clear ownership, measurable follow-up and a guest experience that still feels like hospitality.</p>
-
-    <h2>Quick answer</h2>
-
-    <p>For most hotels, WhatsApp api providers for hotels works best as a <strong>hybrid sales system</strong>: automate instant acknowledgement, qualification, routine questions and structured follow-up, while sending high-value, uncertain or sensitive conversations to a human. The strongest results come when WhatsApp is connected to reliable hotel systems instead of operating as an isolated chatbot.</p>
-
-    <h2>How the integration should work</h2>
-
-    <ul>
-      <li>WhatsApp should be the conversation layer, not the source of truth for room inventory, rates or guest profiles.</li>
-      <li>The booking engine or PMS should remain authoritative for availability and confirmed reservations.</li>
-      <li>The CRM should capture lead source, stage, preferences and follow-up history so sales teams see one consistent record.</li>
-      <li>Webhooks or APIs should pass only the data needed for the workflow, with clear authentication and error handling.</li>
-    </ul>
-
-    <h2>Integration checks before launch</h2>
-
-    <ul>
-      <li>Define which system owns rates, inventory, guest data and payment status.</li>
-      <li>Test sold-out dates, minimum-stay rules, taxes, inclusions, promo codes and cancellation policies.</li>
-      <li>Create a fallback response when a system is unavailable instead of letting the AI guess.</li>
-      <li>Log hand-offs and failed transactions so the sales or operations team can recover the conversation.</li>
-    </ul>
-
-    <h2>What the guest journey should look like</h2>
-
-    <p>A useful hotel WhatsApp journey is short and purposeful. The guest should always know what happens next.</p>
-
-    <ol>
-      <li><strong>Entry point:</strong> the guest opens WhatsApp from the hotel website, paid campaign, social profile, QR code, Google Business Profile or a saved contact.</li>
-      <li><strong>Intent detection:</strong> the system identifies whether the guest wants rooms, packages, dining, spa, an event, a booking change or general information.</li>
-      <li><strong>Minimum qualification:</strong> collect only the details needed to give a useful answer. For room sales this usually means dates, guests, rooms and preferences.</li>
-      <li><strong>Accurate recommendation:</strong> use the hotel’s controlled knowledge base and live systems where required. Never invent availability, rates, policies or package inclusions.</li>
-      <li><strong>Conversion step:</strong> send a booking link, payment path, call-back option, site-visit scheduler or human hand-off depending on intent.</li>
-      <li><strong>Follow-up:</strong> if the guest does not convert, schedule context-aware follow-up and stop once the lead books, declines or opts out.</li>
-    </ol>
-
-    <h2>Metrics that should be tracked</h2>
-
-    <p>Do not judge WhatsApp automation by message count alone. Track metrics that connect operations to commercial outcomes:</p>
-
-    <ul>
-      <li>Median first-response time and percentage of enquiries answered within the target SLA.</li>
-      <li>Qualified-lead rate and percentage of conversations that reach a clear next step.</li>
-      <li>Enquiry-to-booking conversion rate for WhatsApp-assisted leads.</li>
-      <li>Direct-booking value and gross revenue influenced by WhatsApp.</li>
-      <li>Follow-up completion rate and recovered-lead revenue.</li>
-      <li>Human hand-off rate, hand-off response time and reasons for escalation.</li>
-      <li>Sales-team time saved on repetitive questions.</li>
-      <li>Upsell or ancillary revenue where relevant.</li>
-    </ul>
-
-    <h2>Common mistakes to avoid</h2>
-
-    <ul>
-      <li><strong>Automating inaccurate information.</strong> Fast wrong answers are worse than slower verified answers.</li>
-      <li><strong>Trying to automate every conversation.</strong> High-value or complex leads often need a person.</li>
-      <li><strong>No ownership after hand-off.</strong> If automation sends a lead to sales, the system should record who owns it and by when.</li>
-      <li><strong>Sending generic follow-ups.</strong> A follow-up should reflect the original enquiry, dates and objection.</li>
-      <li><strong>Ignoring consent and platform rules.</strong> Promotional and template messaging should follow the current WhatsApp Business Platform requirements.</li>
-      <li><strong>No measurement baseline.</strong> Record current response time, lead volume and conversion before rollout so improvement can be proved.</li>
-    </ul>
-
-    <h2>Frequently asked questions</h2>
-
-    <h3>What is WhatsApp api providers for hotels?</h3>
-
-    <p>WhatsApp api providers for hotels is the use of WhatsApp workflows, automation and—where appropriate—AI to handle parts of hotel technology integration. The goal is not to remove hospitality from the conversation, but to make response speed, consistency and follow-up more reliable.</p>
-
-    <h3>Can hotels automate WhatsApp without sounding robotic?</h3>
-
-    <p>Yes. The best setup uses property-specific information, short natural replies, clear hand-off rules and human escalation for complex, emotional or high-value conversations.</p>
-
-    <h3>What should a hotel connect to WhatsApp automation?</h3>
-
-    <p>A practical stack may connect the hotel website, booking engine, CRM, PMS, payment flow and approved WhatsApp Business Platform setup. The exact integrations depend on the use case and the property’s systems.</p>
-
-    <h3>How should hotels measure ROI from WhatsApp automation?</h3>
-
-    <p>Track response time, qualified-lead rate, booking conversion, follow-up completion, direct-booking share, sales-team workload, ancillary revenue and cost per confirmed booking. Compare these with a pre-automation baseline.</p>
-
-    <h2>Final takeaway</h2>
-
-    <p>WhatsApp api providers for hotels should make the hotel easier to buy from, not merely easier to message. Start with one measurable bottleneck, connect the systems needed for accurate answers, define human escalation clearly and track the path from enquiry to revenue.</p>
-
-    <h3>Work with Fielmente</h3>
-
-    <p>Want to design a hotel WhatsApp sales journey that connects marketing, automation and direct booking? <strong>Talk to Fielmente</strong> about a hospitality-specific implementation plan and the integrations your property actually needs.</p>
-
-    <p><a href="https://fielmente.com/contact-us/">Contact Fielmente</a></p>
-  `,
-  },
-  {
     title:
       "How to Choose the Right WhatsApp Automation Platform for Your Hotel",
     slug: "how-to-choose-the-right-whatsapp-automation-platform-for-your-hotel",
@@ -32803,17 +32596,159 @@ export const mergedBlogSlugs = new Set<string>([
   "whatsapp-crm-integration-for-hotels",
   "why-hotel-leads-go-cold-and-how-whatsapp-automation-can-fix-it",
   "why-your-hotel-sales-team-is-spending-too-much-time-answering-whatsapp",
+  // Nov 2026 SEO review: templated, thin or overlapping posts merged into one page per topic (next.config.ts).
+  "how-do-chatgpt-ads-work-for-hotels-and-resorts",
+  "best-chatgpt-ads-strategy-for-independent-hotels",
+  "chatgpt-ads-for-resorts-a-direct-booking-playbook",
+  "how-resorts-can-generate-direct-bookings-through-chatgpt-ads",
+  "chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget",
+  "how-to-advertise-a-destination-wedding-resort-on-chatgpt",
+  "chatgpt-ads-for-luxury-hotels-targeting-high-intent-travellers",
+  "chatgpt-ads-for-goa-hotels-and-beach-resorts",
+  "chatgpt-ads-for-wellness-and-ayurveda-resorts",
+  "chatgpt-ads-for-weekend-getaway-resorts-near-delhi",
+  "how-hotels-can-reduce-ota-dependency-using-chatgpt-ads",
+  "chatgpt-ads-for-hotel-packages-weddings-and-events",
+  "how-many-campaigns-and-ad-groups-should-a-hotel-run-on-chatgpt",
+  "best-chatgpt-ad-copy-and-creative-ideas-for-hotels",
+  "chatgpt-ads-launch-in-india-what-hotels-need-to-know",
+  "how-to-run-chatgpt-ads-in-india-step-by-step-guide",
+  "chatgpt-ads-manager-india-features-eligibility-and-setup",
+  "chatgpt-ads-cost-in-india-minimum-budget-and-pricing",
+  "who-can-see-chatgpt-ads-in-india",
+  "chatgpt-sponsored-ads-explained-for-indian-businesses",
+  "are-chatgpt-ads-available-for-small-hotels-in-india",
+  "is-725-per-day-enough-for-hotel-chatgpt-ads",
+  "recommended-chatgpt-ads-budget-for-hotels-in-india",
+  "chatgpt-ads-setup-and-conversion-tracking-for-hotels",
+  "how-to-calculate-roas-from-chatgpt-hotel-ads",
+  "chatgpt-ads-kpis-hotels-should-track",
+  "chatgpt-ads-conversion-tracking-with-ga4",
+  "utm-parameters-for-chatgpt-ads-complete-guide",
+  "chatgpt-ads-landing-pages-how-to-convert-travel-intent",
+  "chatgpt-ads-landing-page-checklist-for-hotels",
+  "why-chatgpt-ads-get-clicks-but-no-hotel-bookings",
+  "how-to-improve-chatgpt-ads-conversion-rate-for-resorts",
+  "chatgpt-ads-vs-meta-ads-for-hotels",
+  "chatgpt-ads-vs-hotel-metasearch-advertising",
+  "should-hotels-shift-budget-from-google-to-chatgpt-ads",
+  "chatgpt-ads-or-instagram-ads-which-generates-better-hotel-leads",
+  "chatgpt-ads-vs-ota-promotions-which-produces-more-direct-bookings",
+  "best-advertising-platform-for-hotels-in-india-in-2026",
+  "how-to-combine-chatgpt-google-and-meta-ads-for-hotels",
+  "chatgpt-ads-management-services-for-hotels-in-india",
+  "chatgpt-ads-agency-for-hotels-what-to-look-for",
+  "ai-performance-marketing-for-hotels-a-practical-guide",
+  "hotel-ai-marketing-services-from-discovery-to-booking",
+  "chatgpt-ads-with-hotel-crm-integration",
+  "using-ai-voice-agents-to-convert-hotel-advertising-leads",
+  "how-eazotel-helps-hotels-manage-ads-crm-and-guest-automation",
+  "chatgpt-ads-with-ai-whatsapp-automation-for-hotels",
+  "how-hotel-chatbots-convert-chatgpt-advertising-traffic",
+  "how-to-automatically-follow-up-chatgpt-ad-leads-on-whatsapp",
+  "chatgpt-ads-to-whatsapp-to-booking-complete-hotel-funnel",
+  "building-an-ai-powered-direct-booking-funnel-for-hotels",
+  "ai-search-optimization-for-hotels-how-to-build-visibility",
+  "how-to-get-your-hotel-recommended-by-chatgpt",
+  "geo-for-hotels-generative-engine-optimization-guide",
+  "how-hotels-can-rank-in-chatgpt-results",
+  "hotel-seo-vs-aeo-vs-geo-what-is-the-difference",
+  "how-to-make-a-hotel-website-ai-search-friendly",
+  "how-reviews-influence-hotel-visibility-in-ai-search",
+  "how-to-optimize-hotel-faqs-for-chatgpt-and-google",
+  "why-hotel-websites-need-original-destination-content-for-ai-search",
+  "seo-vs-geo-vs-chatgpt-ads-for-hotels",
+  "how-to-track-traffic-and-bookings-coming-from-ai-assistants",
+  "how-hotels-can-automate-guest-communication-on-whatsapp",
+  "whatsapp-booking-automation-how-hotels-can-convert-more-enquiries-into-reservations",
+  "whatsapp-automation-vs-traditional-hotel-sales-whats-the-difference",
+  "how-whatsapp-can-help-hotels-reduce-ota-dependency",
+  "how-hotels-can-generate-more-direct-bookings-through-whatsapp",
+  "whatsapp-vs-otas-why-hotels-should-build-a-direct-booking-strategy",
+  "how-hotels-can-automate-abandoned-booking-follow-ups-on-whatsapp",
+  "using-whatsapp-ai-to-turn-hotel-enquiries-into-revenue",
+  "whatsapp-automation-for-hotel-chains-managing-multiple-properties",
+  "how-hotels-can-automate-whatsapp-without-losing-the-human-touch",
+  "how-to-stop-losing-hotel-enquiries-on-whatsapp",
+  "how-to-handle-100-hotel-enquiries-without-increasing-your-sales-team",
+  "how-to-follow-up-with-every-hotel-lead-automatically",
+  "how-hotels-can-use-whatsapp-for-review-feedback-collection",
+  "whatsapp-upselling-for-hotels-rooms-food-spa-experiences",
+  "how-resorts-can-convert-website-visitors-into-whatsapp-leads",
+  "ai-whatsapp-chatbot-for-hotels-everything-hoteliers-need-to-know",
+  "24-7-ai-sales-agent-for-hotels-how-it-works",
+  "ai-chatbot-vs-ai-sales-agent-what-hotels-actually-need",
+  "how-ai-can-qualify-hotel-leads-before-sending-them-to-the-sales-team",
+  "ai-whatsapp-agent-vs-human-hotel-sales-executive",
+  "ai-hotel-whatsapp-sales-agent-the-future-of-direct-hotel-sales",
+  "how-eazotel-ai-can-answer-hotel-availability-pricing-queries",
+  "eazotel-ai-whatsapp-agent-how-it-works-for-hotels",
+  "ai-whatsapp-for-hotel-wedding-leads-from-enquiry-to-site-visit",
+  "how-eazotel-helps-resorts-manage-wedding-enquiries-on-whatsapp",
+  "whatsapp-broadcast-marketing-for-hotels-best-practices",
+  "whatsapp-message-templates-for-hotels-examples-best-practices",
+  "whatsapp-api-vs-whatsapp-business-app-for-hotels",
+  "whatsapp-api-providers-for-hotels-what-to-compare",
+  "whatsapp-api-pricing-for-hotels-what-you-need-to-know",
+  "whatsapp-service-message-pricing-changes",
+  "whatsapp-pms-integration-what-hotels-should-know",
+  "whatsapp-channel-manager-the-future-of-hotel-sales",
+  "best-whatsapp-crm-for-hotels",
+  "whatsapp-automation-software-vs-hotel-crm",
+  "best-whatsapp-automation-software-for-hotels",
+  "ai-hotel-sales-software-complete-buyers-guide",
+  "hotel-marketing-agency-delhi",
+  "hotel-marketing-agency-mumbai",
+  "hotel-marketing-agency-bengaluru",
+  "resort-marketing-agency-himachal",
+  "hotel-seo-services-complete-guide-to-ranking-your-hotel-website-on-google",
+  "hospitality-marketing-agency-why-hospitality-brands-need-specialized-marketing",
+  "hotel-marketing-agency-how-to-increase-direct-bookings-by-300-percent-in-2026",
+  "why-eazotel-local-seo-software-is-essential-for-hotels-resorts-and-hostels-in-2026",
+  "how-hotels-can-leverage-analytics-advertising-search-data-through-eazotel-to-increase-revenue",
+  "how-google-map-citation-improves-your-hotels-online-presence",
+  "the-importance-of-a-brand-guide-for-hotel",
+  "why-is-your-hotels-online-reputation-so-important",
+  "how-to-market-a-hotel-online",
+  "restaurant-seo-guide",
+  "why-seo-is-important-for-restaurants",
+  "how-can-seo-help-a-local-restaurant-to-build-their-brand",
+  "google-maps-seo-restaurants",
+  "google-ads-for-restaurants",
+  "zomato-swiggy-marketing-restaurants",
+  "social-media-marketing-for-restaurants",
+  "how-to-increase-restaurant-footfall",
+  "how-to-increase-restaurant-sales",
+  "8-marketing-strategies-for-food-beverage-industry-to-plan-in-2022",
+  "restaurant-marketing-in-the-metaverse",
 ]);
 
 // One card per post: skip merged posts and any later entry that repeats a slug (the post page shows the first).
 // Each post uses its banner from public/images/blog/covers/ and the category printed on it (see blogMeta.ts).
-export const blogData = blog
+/**
+ * Stale news, off-topic and old WordPress-era posts (Nov 2026 SEO review). Their pages still load for old links,
+ * with noindex, but they are left out of the blog lists, related posts and the sitemap.
+ */
+export const retiredBlogSlugs = new Set<string>([
+  "top-3-food-beverage-business-pitches-on-shark-tank-india",
+  "woocommerce-vs-shopify",
+  "top-10-wordpress-plugin-to-upload-on-your-hotel-website",
+  "top-10-wordpress-plugin-to-upload-on-your-restaurant-website",
+  "another-milestone-in-fielmente-s-journey",
+  "congratulations-team-punjabi-chic-inn-jodhpur",
+  "mahabir-palace-the-new-place-of-tourist-attraction",
+  "caqm-relaxes-approved-fuel-norms-hotels-restaurants-ncr",
+]);
+
+const livePosts = blog
   .filter((post, i, all) => !mergedBlogSlugs.has(post.slug) && all.findIndex((p) => p.slug === post.slug) === i)
   .map((post) => ({
     ...post,
     url: blogCover(post.slug) ?? post.url,
     category: blogCategory(post.slug)?.label ?? post.category,
   }));
+export const blogData = livePosts.filter((post) => !retiredBlogSlugs.has(post.slug));
+export const retiredBlogData = livePosts.filter((post) => retiredBlogSlugs.has(post.slug));
 // export const blogData = blog.filter((item) => item.isShow === true);
 
 // tips-for-engagement-on-social-media-of-cloud-kitchen

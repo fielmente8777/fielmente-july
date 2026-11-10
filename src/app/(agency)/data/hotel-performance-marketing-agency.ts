@@ -221,9 +221,8 @@ const page: AgencyPageData = {
     "industries-we-serve/resort-marketing-agency",
   ],
   extraLinks: [
-    { title: "Reduce OTA dependency with ChatGPT ads", body: "How hotels can use ChatGPT ads to win more bookings direct.", href: "/how-hotels-can-reduce-ota-dependency-using-chatgpt-ads/" },
-    { title: "AI performance marketing for hotels", body: "A practical guide to using AI across your paid campaigns.", href: "/ai-performance-marketing-for-hotels-a-practical-guide/" },
-    { title: "ChatGPT ads for boutique hotels", body: "Campaign structure and budgeting for smaller properties.", href: "/chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget/" },
+    { title: "ChatGPT Ads for hotels and resorts: the complete guide", body: "How the ads work, how to structure campaigns by booking intent and what to measure.", href: "/chatgpt-ads-for-hotels-resorts/" },
+    { title: "Hotel AI marketing", body: "Our AI search, ChatGPT Ads and automation work for hotels.", href: "/hotel-ai-marketing-agency/" },
     { title: "Resort performance marketing", body: "Paid media built around resort seasons and longer booking windows.", href: "/industries-we-serve/resort-marketing-agency/resort-performance-marketing/" },
   ],
   cta: {

@@ -6,7 +6,9 @@
 // `index: true` (that mismatch is what SEO checkers flag). Add a path here AND use NOINDEX_ROBOTS on the page.
 import type { Metadata } from "next";
 
-export const NOINDEX_PATHS = ["/landing-page/", "/resort/", "/restaurant/", "/hospitality/", "/dubai-restaurant/", "/UK/", "/USA/"];
+// /google-ads-for-hotels/ is the audit landing page for ads and industry-page CTAs; the page that ranks for hotel
+// Google Ads is /industries-we-serve/hotel-marketing-agency/hotel-google-ads/ (Nov 2026 SEO review).
+export const NOINDEX_PATHS = ["/landing-page/", "/resort/", "/restaurant/", "/hospitality/", "/dubai-restaurant/", "/UK/", "/USA/", "/google-ads-for-hotels/"];
 
 export const NOINDEX_ROBOTS: Metadata["robots"] = {
   index: false,

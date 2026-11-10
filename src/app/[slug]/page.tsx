@@ -208,7 +208,7 @@
 import { Container } from "@/components";
 import { CtaBtn } from "@/components/buttons/CtaBtn";
 import LandingPgForm from "@/components/forms/LandingPgForm";
-import { blogData } from "@/utils/blogdata";
+import { blogData, retiredBlogData, retiredBlogSlugs } from "@/utils/blogdata";
 import { BLOG_TOPICS, blogCategory, excerpt, readMinutes } from "@/utils/blogMeta";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -223,6 +223,10 @@ interface Params {
 }
 
 const SITE = "https://fielmente.com";
+const ABOUT = "/about-fielmente-best-hospitality-marketing-agency/";
+
+/** Live posts plus retired ones (stale or off-topic): retired posts still load for old links, with noindex. */
+const findPost = (slug: string) => blogData.find((p) => p.slug === slug) ?? retiredBlogData.find((p) => p.slug === slug);
 
 /** Image src as a string, whether the post image is a URL or an imported StaticImageData. */
 function imageSrc(img: unknown): string | undefined {
@@ -292,7 +296,7 @@ function relatedPosts(current: { slug: string; title: string }, count = 12) {
 }
 
 export async function generateStaticParams() {
-  return blogData.map((post) => ({
+  return [...blogData, ...retiredBlogData].map((post) => ({
     slug: post.slug,
   }));
 }
@@ -300,13 +304,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const path = await params;
 
-  const post = blogData.find((post) => post.slug === path.slug);
+  const post = findPost(path.slug);
 
   if (!post) {
     return {
       title: "page not found",
     };
   }
+  const retired = retiredBlogSlugs.has(post.slug);
 
   const title = post?.meta?.title || `${post.title} | Hotel Marketing Blog by Fielmente`;
 
@@ -333,6 +338,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       type: "article",
 
       ...(isoDate(post.date) ? { publishedTime: isoDate(post.date) } : {}),
+      ...(isoDate(post.updated) ? { modifiedTime: isoDate(post.updated) } : {}),
       images: [
         {
           url: image,
@@ -351,10 +357,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     },
 
     robots: {
-      index: true,
+      index: !retired,
       follow: true,
       googleBot: {
-        index: true,
+        index: !retired,
         follow: true,
         "max-video-preview": -1,
         "max-image-preview": "large",
@@ -367,7 +373,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 export default async function LandingPage({ params }: Params) {
   const path = await params;
 
-  const data = blogData.find((post) => post.slug === path.slug);
+  const data = findPost(path.slug);
 
   if (!data) {
     notFound();
@@ -395,6 +401,8 @@ export default async function LandingPage({ params }: Params) {
   const nextPost = at >= 0 && at < blogData.length - 1 ? blogData[at + 1] : undefined;
   const postUrl = `${SITE}/${data.slug}/`;
   const published = isoDate(data.date);
+  // Set when a post is substantially rewritten (not for small fixes), so the date says something true.
+  const modified = isoDate(data.updated) ?? published;
   const heroImage = absolute(imageSrc(data.url));
   const articleLd = {
     "@context": "https://schema.org",
@@ -404,10 +412,11 @@ export default async function LandingPage({ params }: Params) {
     mainEntityOfPage: postUrl,
     url: postUrl,
     ...(heroImage ? { image: heroImage } : {}),
-    ...(published ? { datePublished: published, dateModified: published } : {}),
+    ...(published ? { datePublished: published } : {}),
+    ...(modified ? { dateModified: modified } : {}),
     ...(cat ? { articleSection: cat.label } : {}),
     inLanguage: "en-IN",
-    author: { "@type": "Organization", name: "Fielmente", url: `${SITE}/` },
+    author: { "@type": "Organization", name: "Fielmente", url: `${SITE}${ABOUT}` },
     publisher: {
       "@type": "Organization",
       name: "Fielmente",
@@ -482,12 +491,20 @@ export default async function LandingPage({ params }: Params) {
                 <span className="relative block h-8 w-8 overflow-hidden rounded-full bg-white">
                   <Image src="/fielmente_logo.png" alt="" fill sizes="32px" className="object-contain p-1" />
                 </span>
-                <span className="font-medium text-white">Fielmente Team</span>
+                <Link href={ABOUT} className="font-medium text-white hover:underline">Fielmente Team</Link>
               </span>
               {data.date && (
                 <>
                   <span aria-hidden="true">·</span>
                   <time dateTime={published}>{data.date}</time>
+                </>
+              )}
+              {data.updated && (
+                <>
+                  <span aria-hidden="true">·</span>
+                  <span>
+                    Updated <time dateTime={modified}>{data.updated}</time>
+                  </span>
                 </>
               )}
               <span aria-hidden="true">·</span>
@@ -517,6 +534,28 @@ export default async function LandingPage({ params }: Params) {
             )}
 
             <div className="blog-content mt-10 break-words" dangerouslySetInnerHTML={{ __html: html }} />
+
+            {/* Who is behind the article (Google's guidance on people-first content asks "who created it?"). */}
+            <aside aria-label="About the author" className="mt-12 flex gap-4 rounded-2xl border border-[#E6E4EF] bg-[#FAFAFD] p-5 md:p-6">
+              <span className="relative mt-1 block h-12 w-12 shrink-0 overflow-hidden rounded-full bg-white ring-1 ring-[#E6E4EF]">
+                <Image src="/fielmente_logo.png" alt="" fill sizes="48px" className="object-contain p-1.5" />
+              </span>
+              <div className="text-[15px] leading-relaxed text-[#3A4152]">
+                <p className="font-semibold text-primary2">Written by the Fielmente team</p>
+                <p className="mt-1">
+                  Fielmente is a hospitality marketing agency in Gurugram, founded in 2020 by Sachin Kapoor, a hotelier with a
+                  master&apos;s in hospitality from WGSHA Manipal and sales and marketing experience at Marriott and Hyatt. The team
+                  runs Google Ads, SEO, social media and hotel software for hotels, resorts and restaurants.{" "}
+                  <Link href={ABOUT} className="font-semibold text-color4 hover:underline">
+                    About us
+                  </Link>{" "}
+                  ·{" "}
+                  <Link href="/case-study/" className="font-semibold text-color4 hover:underline">
+                    Client results
+                  </Link>
+                </p>
+              </div>
+            </aside>
 
             <div className="mt-12 flex flex-col items-start justify-between gap-5 overflow-hidden rounded-3xl bg-primary2 px-6 py-7 text-white md:flex-row md:items-center md:px-8">
               <div>

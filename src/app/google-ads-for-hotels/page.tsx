@@ -1,5 +1,6 @@
 import { Container } from "@/components/sectionComponants";
 import type { Metadata } from "next";
+import { NOINDEX_ROBOTS } from "@/lib/noindex";
 import Image from "next/image";
 import Link from "next/link";
 import { FaCheck, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: PAGE_URL,
   },
-  robots: { index: true, follow: true },
+  robots: NOINDEX_ROBOTS, // audit landing page: see src/lib/noindex.ts
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

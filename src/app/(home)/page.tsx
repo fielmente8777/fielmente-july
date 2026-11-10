@@ -24,7 +24,6 @@ import { homePageData } from "./homePageData";
 import GetFreeDashboardAccess from "./components/GetFreeDashboardAccess";
 import HomeScrollReveal from "./components/HomeScrollReveal";
 import type { Metadata } from "next";
-import { COUNTRY_HREFLANG } from "@/lib/hreflang";
 import { contacts } from "../../../contact";
 
 const SITE = "https://fielmente.com";
@@ -36,8 +35,9 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  // The country sites name fielmente.com as their x-default, so the home page must return the set.
-  alternates: { canonical: `${SITE}/`, languages: COUNTRY_HREFLANG },
+  // No hreflang: the country sites are different pages, not translations of this one, and the set made
+  // Google show those one-page sites instead of this page in 49 countries (SEO review, Nov 2026).
+  alternates: { canonical: `${SITE}/` },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
@@ -63,6 +63,17 @@ const homeLd = [
     email: contacts.email_1,
     telephone: contacts.phone_1,
     description: DESCRIPTION,
+    foundingDate: "2020",
+    founder: [
+      {
+        "@type": "Person",
+        name: "Sachin Kapoor",
+        jobTitle: "Founder",
+        alumniOf: "Welcomgroup Graduate School of Hotel Administration (WGSHA), Manipal",
+        url: `${SITE}/about-fielmente-best-hospitality-marketing-agency/`,
+      },
+      { "@type": "Person", name: "Pawan Agrawal", jobTitle: "Co-founder" },
+    ],
     sameAs: Object.values(contacts.socialContacts),
     contactPoint: [{ "@type": "ContactPoint", telephone: contacts.phone_1, email: contacts.email_1, contactType: "sales", areaServed: ["IN", "AE", "GB", "US"], availableLanguage: ["en", "hi"] }],
   },

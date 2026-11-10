@@ -241,7 +241,7 @@ const page: AgencyPageData = {
     { title: "Hotel marketing agency", body: "All of our hotel services, from OTA management to branding.", href: "/industries-we-serve/hotel-marketing-agency/" },
     { title: "Hotel Green Castle case study", body: "How seasonal budget scaling took a Mussoorie hotel past 1,000 enquiries a month.", href: "/case-study/hotel-green-castle-google-ads/" },
     { title: "What OTA optimisation is worth", body: "Our guide to the OTA fixes that lift visibility and revenue.", href: "/how-can-ota-optimisation-help-your-hotel-get-millions-of-benefit/" },
-    { title: "Reducing OTA dependency", body: "How hotels are using ChatGPT ads to win more bookings directly.", href: "/how-hotels-can-reduce-ota-dependency-using-chatgpt-ads/" },
+    { title: "ChatGPT Ads for hotels and resorts: the complete guide", body: "How the ads work, how to structure campaigns by booking intent and what to measure.", href: "/chatgpt-ads-for-hotels-resorts/" },
   ],
   cta: {
     title: "Know which dates worry you? Let's fill them.",

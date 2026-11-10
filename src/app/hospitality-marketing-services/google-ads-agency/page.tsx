@@ -13,9 +13,9 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import PlatformLogos from "@/components/brand/PlatformLogos";
 
 export const metadata: Metadata = {
-  title: "India's Leading Hospitality Google Ads Agency - Fielmente",
+  title: "Hospitality Google Ads Agency for Hotels & Restaurants | Fielmente",
   description:
-    "Boost your hotel, restaurant, or resort with Fielmente, the leading hospitality Google Ads agency. Campaigns for social media and business.",
+    "Google Ads for hotels, resorts, restaurants and cloud kitchens, run by a hospitality-only team and judged on calls, WhatsApp chats and bookings.",
   alternates: {
     canonical:
       "https://fielmente.com/hospitality-marketing-services/google-ads-agency/",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://fielmente.com/hospitality-marketing-services/google-ads-agency/",
     type: "website",
-    title: "India's Leading Hospitality Google Ads Agency - Fielmente",
+    title: "Hospitality Google Ads Agency for Hotels & Restaurants | Fielmente",
     description:
-      "Boost your hotel, restaurant, or resort with Fielmente, the leading hospitality Google Ads agency. Campaigns for social media and business.",
+      "Google Ads for hotels, resorts, restaurants and cloud kitchens, run by a hospitality-only team and judged on calls, WhatsApp chats and bookings.",
  images: [
       {
         url: "/fielmente_logo.png",
@@ -55,7 +55,7 @@ const CardData1 = [
     subtitle:
       "If you are looking for the best restaurant advertising, look no further.",
     icon: "/images/RESTAURANT-MARKETING.webp",
-    link: "/",
+    link: "/industries-we-serve/restaurant-marketing-agency/restaurant-google-ads/",
   },
 ];
 

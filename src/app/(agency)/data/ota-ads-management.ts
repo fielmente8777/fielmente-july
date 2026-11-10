@@ -175,7 +175,7 @@ const page: AgencyPageData = {
   related: ["hotel-metasearch-marketing-agency", "hotel-revenue-marketing-agency", "hotel-direct-booking-marketing-agency", "google-hotel-ads-agency"],
   extraLinks: [
     { title: "Hotel OTA management", body: "Listings, content, rates and rankings on every OTA.", href: "/hotel-ota-management/" },
-    { title: "ChatGPT Ads vs OTA promotions", body: "Which produces more direct bookings, and at what cost.", href: "/chatgpt-ads-vs-ota-promotions-which-produces-more-direct-bookings/" },
+    { title: "ChatGPT Ads vs Google, Meta and metasearch", body: "Where each channel fits in a hotel's paid media plan, and how to split a test budget.", href: "/chatgpt-ads-vs-google-ads-for-hotels/" },
   ],
   cta: {
     title: "Want OTA ads that only run when they pay?",

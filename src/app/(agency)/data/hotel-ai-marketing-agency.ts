@@ -217,10 +217,9 @@ const page: AgencyPageData = {
     "luxury-resort-marketing-agency",
   ],
   extraLinks: [
-    { title: "How to get your hotel recommended by ChatGPT", body: "What ChatGPT looks for, and which parts a hotel can control.", href: "/how-to-get-your-hotel-recommended-by-chatgpt/" },
-    { title: "Tracking bookings from AI assistants", body: "Set up analytics to see what AI-referred guests do and book.", href: "/how-to-track-traffic-and-bookings-coming-from-ai-assistants/" },
-    { title: "AI voice agents for advertising leads", body: "How a voice agent follows up the enquiries your ads create.", href: "/using-ai-voice-agents-to-convert-hotel-advertising-leads/" },
-    { title: "ChatGPT ads vs Google Ads for hotels", body: "Where each platform fits in a hotel's paid media plan.", href: "/chatgpt-ads-vs-google-ads-for-hotels/" },
+    { title: "GEO for hotels: getting recommended by AI", body: "How ChatGPT, Gemini and Google's AI answers pick hotels, and the parts a hotel can control.", href: "/generative-engine-optimization-for-hotels-the-complete-guide/" },
+    { title: "AI Voice Agent", body: "Answers and follows up guest calls in a natural voice, day and night.", href: "/products/hotel-ai-voice-agent/" },
+    { title: "ChatGPT Ads vs Google, Meta and metasearch", body: "Where each channel fits in a hotel's paid media plan, and how to split a test budget.", href: "/chatgpt-ads-vs-google-ads-for-hotels/" },
   ],
   cta: {
     title: "Find out what AI says about your hotel",

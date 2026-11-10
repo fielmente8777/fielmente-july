@@ -35,7 +35,6 @@ const STATIC_PAGES = [
   "/hospitality-marketing-services/social-media-marketing-agency/",
   "/hotel-ota-management/",
   "/food-and-beverage-marketing-solutions/",
-  "/google-ads-for-hotels/",
   "/privacy-policy/",
   "/terms-and-conditions/",
 ];

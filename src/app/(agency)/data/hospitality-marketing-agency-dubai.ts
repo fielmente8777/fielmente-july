@@ -248,8 +248,8 @@ const page: AgencyPageData = {
   ],
   extraLinks: [
     { title: "Cloud kitchen marketing", body: "For delivery-first brands and virtual kitchens running alongside your dining rooms.", href: "/industries-we-serve/cloud-kitchen-marketing-agency/" },
-    { title: "Google Maps citations", body: "How consistent listings help every venue show up on Google Maps.", href: "/how-google-map-citation-improves-your-hotels-online-presence/" },
-    { title: "Why online reputation matters", body: "How reviews shape where guests choose to eat, stay and book.", href: "/why-is-your-hotels-online-reputation-so-important/" },
+    { title: "Google Maps citations", body: "How consistent listings help every venue show up on Google Maps.", href: "/how-can-google-maps-citation-increase-your-hotel-restaurant-business/" },
+    { title: "Why online reputation matters", body: "How reviews shape where guests choose to eat, stay and book.", href: "/why-reputation-management-services-important-restaurants-hotels/" },
     { title: "Case studies", body: "Month-by-month Google Ads results from the hotels and resorts we market.", href: "/case-study/" },
   ],
   cta: {

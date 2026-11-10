@@ -50,7 +50,7 @@ function page() {
           "google-maps": "/industries-we-serve/restaurant-marketing-agency/restaurant-local-seo/",
           instagram: "/industries-we-serve/restaurant-marketing-agency/restaurant-social-media/",
           "google-ads": "/industries-we-serve/restaurant-marketing-agency/restaurant-google-ads/",
-          chatgpt: "/industries-we-serve/restaurant-marketing-agency/restaurant-chatgpt-ads/",
+          chatgpt: "/chatgpt-ads-agency/",
           tripadvisor: "/industries-we-serve/restaurant-marketing-agency/restaurant-tripadvisor-ads/",
         }}
       />

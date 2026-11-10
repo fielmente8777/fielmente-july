@@ -220,8 +220,8 @@ const page: AgencyPageData = {
     "hospitality-marketing-services/seo-agency",
   ],
   extraLinks: [
-    { title: "How to increase direct bookings in 2026", body: "Our guide to the changes that move bookings from OTAs to your website.", href: "/hotel-marketing-agency-how-to-increase-direct-bookings-by-300-percent-in-2026/" },
-    { title: "An AI-powered direct booking funnel", body: "How AI chat, WhatsApp and automation fit into a direct booking path.", href: "/building-an-ai-powered-direct-booking-funnel-for-hotels/" },
+    { title: "Hotel direct booking marketing", body: "How we move bookings from OTAs to your own website and WhatsApp.", href: "/hotel-direct-booking-marketing-agency/" },
+    { title: "WhatsApp automation for hotels", body: "Instant replies, follow-ups and payment links on WhatsApp, with staff taking over when it matters.", href: "/whatsapp-automation-for-hotels-the-complete-guide/" },
     { title: "Hotel OTA management", body: "Keep your OTA listings sharp while your direct share grows.", href: "/hotel-ota-management/" },
     { title: "Homestay and villa marketing", body: "Direct booking marketing for smaller properties and private villas.", href: "/industries-we-serve/homestay-villa-marketing-agency/" },
   ],

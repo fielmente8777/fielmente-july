@@ -240,8 +240,8 @@ const page: AgencyPageData = {
   extraLinks: [
     { title: "Hotel marketing agency", body: "Every service we offer hotels, from OTA listings to PR.", href: "/industries-we-serve/hotel-marketing-agency/" },
     { title: "The Rudraksh case study", body: "How a family-run Himalayan retreat reached 447 enquiries a month.", href: "/case-study/the-rudraksh-google-ads/" },
-    { title: "ChatGPT ads for boutique hotels", body: "Campaign structure and budgeting for small independent hotels.", href: "/chatgpt-ads-for-boutique-hotels-campaign-structure-and-budget/" },
-    { title: "Reviews and AI search", body: "Why your reviews shape whether AI tools recommend your hotel.", href: "/how-reviews-influence-hotel-visibility-in-ai-search/" },
+    { title: "ChatGPT Ads for hotels and resorts: the complete guide", body: "How the ads work, how to structure campaigns by booking intent and what to measure.", href: "/chatgpt-ads-for-hotels-resorts/" },
+    { title: "GEO for hotels: getting recommended by AI", body: "How ChatGPT, Gemini and Google's AI answers pick hotels, and the parts a hotel can control.", href: "/generative-engine-optimization-for-hotels-the-complete-guide/" },
   ],
   cta: {
     title: "Ready to be the hotel guests ask for by name?",

@@ -328,9 +328,9 @@ const page: AgencyPageData = {
       href: "/why-hotels-in-the-usa-hire-fielmente-hospitality-marketing-agency-in-india/",
     },
     {
-      title: "Track bookings from AI assistants",
-      body: "How to measure the traffic and bookings that ChatGPT and AI search send you.",
-      href: "/how-to-track-traffic-and-bookings-coming-from-ai-assistants/",
+      title: "GEO for hotels: getting recommended by AI",
+      body: "How ChatGPT, Gemini and Google's AI answers pick hotels, and the parts a hotel can control.",
+      href: "/generative-engine-optimization-for-hotels-the-complete-guide/",
     },
     {
       title: "Hotel booking engine",

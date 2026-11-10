@@ -199,7 +199,7 @@ const page: AgencyPageData = {
   extraLinks: [
     { title: "Restaurant marketing", body: "Every service we run for restaurants, from Google to Instagram.", href: "/industries-we-serve/restaurant-marketing-agency/" },
     { title: "Cloud kitchen marketing", body: "More orders on the apps and on channels you own.", href: "/industries-we-serve/cloud-kitchen-marketing-agency/" },
-    { title: "Zomato and Swiggy marketing guide", body: "How restaurants can grow orders without losing their brand.", href: "/zomato-swiggy-marketing-restaurants/" },
+    { title: "Zomato and Swiggy management", body: "Listings, menus, offers and ads that bring restaurants more orders.", href: "/industries-we-serve/restaurant-marketing-agency/restaurant-zomato-swiggy-management/" },
     { title: "Facebook and Instagram ads for food orders", body: "Using social ads to drive delivery and dine-in orders.", href: "/how-facebook-and-instagram-ads-can-increase-your-food-orders/" },
   ],
   cta: {

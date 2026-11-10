@@ -244,7 +244,7 @@ const page: AgencyPageData = {
   extraLinks: [
     { title: "Resort marketing in Uttarakhand", body: "How we approach hill, wellness and riverside resorts in Uttarakhand.", href: "/resort-marketing-agency-uttarakhand/" },
     { title: "Goa hotels and beach resorts", body: "Marketing a Goa beach resort through the season and the monsoon.", href: "/hotel-resort-marketing-agency-goa/" },
-    { title: "ChatGPT ads for wellness resorts", body: "How AI ads could reach guests looking for Ayurveda and wellness stays.", href: "/chatgpt-ads-for-wellness-and-ayurveda-resorts/" },
+    { title: "ChatGPT Ads for hotels and resorts: the complete guide", body: "How the ads work, how to structure campaigns by booking intent and what to measure.", href: "/chatgpt-ads-for-hotels-resorts/" },
     { title: "Homestay and villa marketing", body: "For smaller stays, farmstays and private villas.", href: "/industries-we-serve/homestay-villa-marketing-agency/" },
   ],
   cta: {

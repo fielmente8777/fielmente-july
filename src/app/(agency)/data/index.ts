@@ -18,6 +18,7 @@ import hotelRevenueMarketingAgency from "./hotel-revenue-marketing-agency";
 import internationalHotelMarketingAgency from "./international-hotel-marketing-agency";
 import luxuryResortMarketingAgency from "./luxury-resort-marketing-agency";
 import resortMarketingAgency from "./resort-marketing-agency";
+import resortMarketingAgencyUttarakhand from "./resort-marketing-agency-uttarakhand";
 // Advertising platforms
 import chatgptAdsAgency from "./chatgpt-ads-agency";
 import zomatoSwiggyAdsAgency from "./zomato-swiggy-ads-agency";
@@ -36,6 +37,7 @@ export const AGENCY_PAGES: AgencyPageData[] = [
   hotelMarketingAgencyUk,
   internationalHotelMarketingAgency,
   hotelMarketingAgencyGurgaon,
+  resortMarketingAgencyUttarakhand,
   resortMarketingAgency,
   luxuryResortMarketingAgency,
   hotelGoogleAdsAgency,

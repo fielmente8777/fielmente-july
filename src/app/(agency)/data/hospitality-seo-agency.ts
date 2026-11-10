@@ -217,9 +217,9 @@ const page: AgencyPageData = {
     "international-hotel-marketing-agency",
   ],
   extraLinks: [
-    { title: "Hotel SEO: the complete guide", body: "How hotel websites rank on Google, explained step by step.", href: "/hotel-seo-services-complete-guide-to-ranking-your-hotel-website-on-google/" },
+    { title: "Hotel SEO: the complete guide", body: "How hotel websites rank on Google, explained step by step.", href: "/what-is-hotel-search-engine-optimization-hotel-seo-a-complete-guide-to-increasing-direct-bookings/" },
     { title: "Schema markup for hotels and resorts", body: "Which structured data to add to a hotel website, with examples.", href: "/schema-markup-for-hotel-and-resort-websites/" },
-    { title: "Hotel SEO vs AEO vs GEO", body: "What each term means and where a hotel should focus first.", href: "/hotel-seo-vs-aeo-vs-geo-what-is-the-difference/" },
+    { title: "GEO for hotels: getting recommended by AI", body: "How ChatGPT, Gemini and Google's AI answers pick hotels, and the parts a hotel can control.", href: "/generative-engine-optimization-for-hotels-the-complete-guide/" },
     { title: "Restaurant marketing", body: "Local SEO, social media and reservations for restaurants and cafés.", href: "/industries-we-serve/restaurant-marketing-agency/" },
   ],
   cta: {

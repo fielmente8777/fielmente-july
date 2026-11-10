@@ -40,7 +40,6 @@ const POSTS: Record<string, [label: string, topic: BlogTopic]> = {
   "hotel-marketing-agency-delhi": ["Hotel Marketing", "hotel-marketing"],
   "hotel-marketing-agency-mumbai": ["Hotel Marketing", "hotel-marketing"],
   "hotel-marketing-agency-bengaluru": ["Hotel Marketing", "hotel-marketing"],
-  "resort-marketing-agency-uttarakhand": ["Hotel Marketing", "hotel-marketing"],
   "resort-marketing-agency-himachal": ["Hotel Marketing", "hotel-marketing"],
   "hotel-resort-marketing-agency-goa": ["Hotel Marketing", "hotel-marketing"],
   "5-proven-ghost-kitchen-marketing-strategies-to-attract-customers": ["Cloud Kitchens", "restaurants"],

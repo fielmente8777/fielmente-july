@@ -20,7 +20,7 @@ export const aboutUsPageData = {
     title: "About Us",
     subTitle: "KNOW MORE ABOUT US",
     description: [
-      "Welcome to Fielmente, your trusted hospitality marketing company. I Sachin Kapoor founded Fielmente with a passion for hospitality and marketing after completing my Masters in Hospitality from WGSHA, Manipal, and gaining Sales & Marketing experience from Marriott & Hyatt in September 2020. We are a team of 15+ hospitality marketing experts who make sure about your business growth and take care about your Hospitality venture online reputation.",
+      "I'm Sachin Kapoor. I founded Fielmente in 2020 with Pawan Agrawal, our co-founder, after completing my master's in hospitality at WGSHA Manipal and working in sales and marketing at Marriott and Hyatt. Today a team of 15+ hospitality marketers runs Google Ads, SEO, social media, websites and OTA listings for hotels, resorts and restaurants, and builds the hotel software they run on, from our office in Sector 65, Gurugram.",
       "Our strategic consulting services craft tailored marketing strategies to boost bookings, build your brand, and expand your reach, elevating your hospitality business with results-driven, creative marketing.",
     ],
     images: ["/about/founder.png"],

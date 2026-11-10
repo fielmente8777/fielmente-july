@@ -224,9 +224,8 @@ const page: AgencyPageData = {
   ],
   extraLinks: [
     { title: "Naad Wellness case study", body: "24× more enquiries a month from Google Ads, with every lead matched to stays.", href: "/case-study/naad-wellness-google-ads/" },
-    { title: "Best advertising platform for hotels in India", body: "Our 2026 guide to where Indian hotels should put their ad budget.", href: "/best-advertising-platform-for-hotels-in-india-in-2026/" },
-    { title: "ChatGPT ads vs Google Ads for hotels", body: "How the two platforms compare for reaching guests who are ready to book.", href: "/chatgpt-ads-vs-google-ads-for-hotels/" },
-    { title: "AI voice agents for ad leads", body: "Using AI voice agents to call back and convert hotel advertising leads.", href: "/using-ai-voice-agents-to-convert-hotel-advertising-leads/" },
+    { title: "ChatGPT Ads vs Google, Meta and metasearch", body: "Where each channel fits in a hotel's paid media plan, and how to split a test budget.", href: "/chatgpt-ads-vs-google-ads-for-hotels/" },
+    { title: "AI Voice Agent", body: "Answers and follows up guest calls in a natural voice, day and night.", href: "/products/hotel-ai-voice-agent/" },
   ],
   cta: {
     title: "Ready for Google Ads you can trace to bookings?",

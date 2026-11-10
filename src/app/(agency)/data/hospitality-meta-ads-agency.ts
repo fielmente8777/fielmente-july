@@ -175,7 +175,7 @@ const page: AgencyPageData = {
   related: ["hotel-performance-marketing-agency", "chatgpt-ads-agency", "google-hotel-ads-agency", "zomato-swiggy-ads-agency"],
   extraLinks: [
     { title: "Hospitality social media", body: "Organic Instagram and Facebook for hotels and restaurants.", href: "/hospitality-marketing-services/social-media-marketing-agency/" },
-    { title: "ChatGPT Ads vs Meta ads for hotels", body: "Where each channel fits in a hotel's plan.", href: "/chatgpt-ads-vs-meta-ads-for-hotels/" },
+    { title: "ChatGPT Ads vs Google, Meta and metasearch", body: "Where each channel fits in a hotel's paid media plan, and how to split a test budget.", href: "/chatgpt-ads-vs-google-ads-for-hotels/" },
     { title: "Facebook and Instagram ads for food orders", body: "Using social ads to drive delivery and dine-in orders.", href: "/how-facebook-and-instagram-ads-can-increase-your-food-orders/" },
   ],
   cta: {

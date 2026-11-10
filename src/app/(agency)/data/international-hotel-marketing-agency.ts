@@ -248,7 +248,7 @@ const page: AgencyPageData = {
   ],
   extraLinks: [
     { title: "Why US hotels work with us from India", body: "What an India-based hospitality marketing team looks like day to day.", href: "/why-hotels-in-the-usa-hire-fielmente-hospitality-marketing-agency-in-india/" },
-    { title: "Tracking bookings from AI assistants", body: "How to measure the traffic and bookings that ChatGPT and AI search send you.", href: "/how-to-track-traffic-and-bookings-coming-from-ai-assistants/" },
+    { title: "GEO for hotels: getting recommended by AI", body: "How ChatGPT, Gemini and Google's AI answers pick hotels, and the parts a hotel can control.", href: "/generative-engine-optimization-for-hotels-the-complete-guide/" },
     { title: "Our clients", body: "Hospitality brands we've worked with across nine countries.", href: "/our-clients/" },
     { title: "Case studies", body: "Month-by-month results from the properties we market.", href: "/case-study/" },
   ],

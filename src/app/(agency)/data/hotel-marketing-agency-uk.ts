@@ -333,9 +333,9 @@ const page: AgencyPageData = {
       href: "/how-can-ota-optimisation-help-your-hotel-get-millions-of-benefit/",
     },
     {
-      title: "Reviews and AI search",
-      body: "Why your reviews shape what ChatGPT and AI Overviews say about your hotel.",
-      href: "/how-reviews-influence-hotel-visibility-in-ai-search/",
+      title: "GEO for hotels: getting recommended by AI",
+      body: "How ChatGPT, Gemini and Google's AI answers pick hotels, and the parts a hotel can control.",
+      href: "/generative-engine-optimization-for-hotels-the-complete-guide/",
     },
     { title: "Case studies", body: "Detailed before-and-after figures from the Indian hotels and resorts we market.", href: "/case-study/" },
   ],

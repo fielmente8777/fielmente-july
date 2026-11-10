@@ -175,7 +175,7 @@ const page: AgencyPageData = {
   ],
   related: ["google-hotel-ads-agency", "google-hotel-center", "tripadvisor-ads-agency", "ota-ads-management"],
   extraLinks: [
-    { title: "ChatGPT Ads vs hotel metasearch", body: "Where each fits in a hotel's paid media plan.", href: "/chatgpt-ads-vs-hotel-metasearch-advertising/" },
+    { title: "ChatGPT Ads vs Google, Meta and metasearch", body: "Where each channel fits in a hotel's paid media plan, and how to split a test budget.", href: "/chatgpt-ads-vs-google-ads-for-hotels/" },
     { title: "Hotel booking engine", body: "A commission-free booking engine for your own website.", href: "/products/hotel-booking-engine/" },
   ],
   cta: {

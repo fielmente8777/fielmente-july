@@ -246,8 +246,8 @@ const page: AgencyPageData = {
     "international-hotel-marketing-agency",
   ],
   extraLinks: [
-    { title: "ChatGPT ads for luxury hotels", body: "How to reach high-intent luxury travellers with ChatGPT ads.", href: "/chatgpt-ads-for-luxury-hotels-targeting-high-intent-travellers/" },
-    { title: "Getting recommended by ChatGPT", body: "The steps that help AI assistants describe and suggest your property.", href: "/how-to-get-your-hotel-recommended-by-chatgpt/" },
+    { title: "ChatGPT Ads for hotels and resorts: the complete guide", body: "How the ads work, how to structure campaigns by booking intent and what to measure.", href: "/chatgpt-ads-for-hotels-resorts/" },
+    { title: "GEO for hotels: getting recommended by AI", body: "How ChatGPT, Gemini and Google's AI answers pick hotels, and the parts a hotel can control.", href: "/generative-engine-optimization-for-hotels-the-complete-guide/" },
     { title: "Schema markup for resorts", body: "Structured data that helps search engines and AI read your website.", href: "/schema-markup-for-hotel-and-resort-websites/" },
     { title: "Hotel CRM", body: "Remember every guest's preferences, past stays and conversations.", href: "/products/hotel-crm/" },
   ],

@@ -240,8 +240,8 @@ const page: AgencyPageData = {
   ],
   extraLinks: [
     { title: "Travel and tourism marketing", body: "For tour operators, desert camps and experience providers that work with UAE hotels.", href: "/industries-we-serve/travel-tourism-marketing-agency/" },
-    { title: "Getting recommended by ChatGPT", body: "How hotels earn mentions when travellers plan their trips with AI.", href: "/how-to-get-your-hotel-recommended-by-chatgpt/" },
-    { title: "AI WhatsApp sales agent", body: "How an AI agent answers hotel enquiries on WhatsApp and hands over to staff.", href: "/ai-hotel-whatsapp-sales-agent-the-future-of-direct-hotel-sales/" },
+    { title: "GEO for hotels: getting recommended by AI", body: "How ChatGPT, Gemini and Google's AI answers pick hotels, and the parts a hotel can control.", href: "/generative-engine-optimization-for-hotels-the-complete-guide/" },
+    { title: "AI WhatsApp sales agent for hotels", body: "What an AI agent should answer, what it must hand to staff, and how to judge one.", href: "/what-is-an-ai-whatsapp-sales-agent-for-hotels/" },
     { title: "Eazotel hotel software", body: "Our booking engine, channel manager, CRM and AI tools for hotels.", href: "/products/" },
   ],
   cta: {
