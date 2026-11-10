@@ -120,7 +120,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* <!-- Clarity tracking code for Fielmente new 06 09 2024--> */}
+        {/* <!-- Clarity tracking code for Fielmente (support@eazotel.com project)--> */}
         <Script
           id="clarity-script"
           strategy="lazyOnload"
@@ -129,7 +129,7 @@ export default function RootLayout({
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/" + i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "o0h0ldtiip");`,
+          })(window, document, "clarity", "script", "zbn5udf1bu");`,
           }}
         />
 
