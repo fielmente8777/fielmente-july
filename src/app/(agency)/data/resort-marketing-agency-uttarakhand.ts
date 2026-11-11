@@ -23,7 +23,7 @@ const page: AgencyPageData = {
   meta: {
     title: "Resort Marketing Agency in Uttarakhand | Fielmente",
     description:
-      "Marketing for resorts and hotels in Mussoorie, Rishikesh, Nainital, Mukteshwar and Jim Corbett: Google Ads, SEO, OTAs and WhatsApp, with published client results.",
+      "Marketing for resorts and hotels in Mussoorie, Rishikesh, Nainital, Mukteshwar and Corbett: Google Ads, SEO, OTAs and WhatsApp, with published client results.",
   },
   hero: {
     eyebrow: "Resort and hotel marketing · Uttarakhand",

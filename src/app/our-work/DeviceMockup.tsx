@@ -34,10 +34,12 @@ export default function DeviceMockup({
           <Image
             src={`/our-work/sites/${slug}.webp`}
             alt={`${name} website, desktop view`}
-            fill
+            // Fixed size, not `fill` + `sizes`: cards are never wider than ~600px, and a 1x/2x pair keeps the
+            // srcset short (88 cards with 7-width srcsets added ~130 KB to the page's HTML).
+            width={400}
+            height={250}
             priority={priority}
-            sizes="(max-width: 640px) 92vw, (max-width: 1280px) 46vw, 380px"
-            className="object-cover object-top"
+            className="absolute inset-0 h-full w-full object-cover object-top"
           />
         </div>
       </div>
@@ -47,10 +49,10 @@ export default function DeviceMockup({
             <Image
               src={`/our-work/sites/${slug}-m.webp`}
               alt={`${name} website, phone view`}
-              fill
+              width={120}
+              height={260}
               priority={priority}
-              sizes="(max-width: 640px) 24vw, 110px"
-              className="object-cover object-top"
+              className="absolute inset-0 h-full w-full object-cover object-top"
             />
           </div>
         </div>
