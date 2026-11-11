@@ -245,7 +245,11 @@ function absolute(src?: string) {
 function isoDate(date?: string) {
   if (!date) return undefined;
   const d = new Date(date);
-  return Number.isNaN(d.getTime()) ? undefined : d.toISOString().slice(0, 10);
+  if (Number.isNaN(d.getTime())) return undefined;
+  // Local date parts, not toISOString(): "11 November 2026" parses as local midnight, which is the
+  // previous day in UTC when the build machine runs ahead of UTC.
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 }
 
 const ENTITIES: Record<string, string> = { amp: "&", nbsp: " ", quot: '"', "#39": "'", rsquo: "’", lsquo: "‘", ldquo: "“", rdquo: "”", ndash: "–", mdash: "—" };
