@@ -281,6 +281,9 @@ const nextConfig: NextConfig = {
       to("/how-to-increase-restaurant-sales/", "/digital-marketing-for-restaurants-india/"),
       to("/8-marketing-strategies-for-food-beverage-industry-to-plan-in-2022/", "/restaurant-marketing-strategies-in-india/"),
       to("/restaurant-marketing-in-the-metaverse/", "/restaurant-marketing-strategies-in-india/"),
+      // Obsolete: Google shut down Business Messages in July 2024; the HTML-vs-WordPress post is superseded by the Next.js guide.
+      to("/guide-to-setup-automation-of-your-hotel-google-my-business-messages/", "/whatsapp-automation-for-hotels-the-complete-guide/"),
+      to("/html-or-wordpress-which-one-is-best-for-your-hotel-restaurant-2/", "/why-hotels-should-move-from-wordpress-to-nextjs-a-guide-for-modern-hospitality-businesses/"),
       // ChatGPT Ads industry pages (8 near-identical pages for one niche service) folded into the ChatGPT Ads agency page.
       to("/industries-we-serve/hotel-marketing-agency/hotel-chatgpt-ads/", "/chatgpt-ads-agency/"),
       to("/industries-we-serve/resort-marketing-agency/resort-chatgpt-ads/", "/chatgpt-ads-agency/"),
