@@ -57,7 +57,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   [...industriesData, ...subPageData].forEach((p) => add(`/industries-we-serve/${p.slug}/`));
   PRODUCTS.forEach((p) => add(productPath(p.slug)));
   casStudiesData.filter((c) => c.data?.length).forEach((c) => add(`/case-study/${c.slug}/`));
-  blogData.forEach((b) => add(`/${b.slug}/`, isoDate(b.date)));
+  // lastmod: the rewrite date where a post was substantially updated, else its publish date.
+  blogData.forEach((b) => add(`/${b.slug}/`, isoDate(b.updated) ?? isoDate(b.date)));
   hotelAdsGuides.forEach((g) => add("/google-hotel-ads-guides/" + g.slug + "/", new Date("2026-11-08T00:00:00.000Z")));
 
   const blogListPages = Array.from({ length: blogPageCount(blogData.length + 26) - 1 }, (_, i) => ({
