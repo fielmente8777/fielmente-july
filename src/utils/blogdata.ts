@@ -235,6 +235,8 @@ This landmark move opens new doors for property owners, offering not just legali
     },
     title: "How to Digitally Market your Hostel with Fielmente",
     slug: "how-to-digitally-market-your-hostel-with-fielmente-2",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "September 7, 2022",
     description:
       "Hostel Owners handle quite delicate issues. Being a sensitive job, it becomes relatively difficult to market such services. So, to pitch and attract new people who may need you, your services must be visible to all your prospects online.",
 
@@ -401,6 +403,8 @@ This landmark move opens new doors for property owners, offering not just legali
     },
     title: "How to Reply to Google Business Profile and Facebook Feedback",
     slug: "respond-to-facebook-google-reviews",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "October 12, 2023",
     description: `In recent times, opinions and reviews have become crucial
       for most businesses of all sizes. Consumers read reviews
       to decide if that particular business or store is worth
@@ -1210,6 +1214,8 @@ This landmark move opens new doors for property owners, offering not just legali
     },
     title: "Why do you need Fielmente Hospitality Marketing Agency?",
     slug: "hospitality-consultants-in-india",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "October 11, 2023",
     description: `A hospitality digital marketing agency brings its clients
       revenue with its tailored hospitality marketing solutions.
       This helps the hotel to be more visible to its potential
@@ -1682,6 +1688,8 @@ This landmark move opens new doors for property owners, offering not just legali
     title:
       "How to start Cloud Kitchen in India – Ultimate Guide to open the Cloud Kitchen",
     slug: "how-to-start-cloud-kitchen-in-india-ultimate-guide-to-open-the-cloud-kitchen",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "June 24, 2022",
     description: `Here’s what happens exactly in a cloud kitchen model: Orders come in, meals are cooked, packed, and then whisked immediately to their delivery locations by the assigned fleet.
 Why does this work? Because you’re cutting costs on front-of-house activities and concentrating on your food. With the availability of third-party services and the growing comfort of mobile ordering, this model seems just right to experiment with.`,
     data: `<div>
@@ -2486,6 +2494,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     },
     title: "A Complete Step-by-Step Process to Create a Brand Guide For Hotels",
     slug: "a-complete-process-to-create-a-brand-guide-for-hotels",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "December 6, 2022",
     description: `A one-page document highlighting the creative assets of
         a brand, like a logo, design, colour, typography, and
         brand philosophy to make customers aware and educated
@@ -2696,6 +2706,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     },
     title: "6 Creative Ways to Market Your Hotel on a Shoestring Budget",
     slug: "6-creative-ways-to-market-your-hotel-on-a-shoestring-budget-2",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "July 28, 2022",
     description: `As digital marketing is shifting rapidly, your hotel must use the best marketing concepts to drive new
     business. Online marketing through SEO, content, social media, paid campaigns, chatbots, and reputation management
     could greatly impact your hotel business. Oh, wait! Your website’s user experience is also important. But, don’t
@@ -3130,6 +3142,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     },
     title: "6 Steps To Do Performance Marketing For Restaurants",
     slug: "steps-to-do-performance-marketing-for-restaurants",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "May 6, 2022",
     description:
       "Being a restaurant owner is exciting, challenging, and requires lots of work. Can you see yourself, lunch rush accompanying you as usual, with all the food orders coming in? Or are you looking to take on the challenge of performance marketing? The chances are high that if you have even thought about launching a new concept or selling your restaurant’s services to different venues, performance marketing is one of the ways.",
     data: `
@@ -3321,6 +3335,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     title:
       "7 Restaurant Marketing Strategies in India to Follow for Your Business",
     slug: "restaurant-marketing-strategies-in-india",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "May 6, 2022",
     description:
       "Marketing in the restaurant industry is challenging. There are so many different jobs to do, so many aspects of customer service, and so many ways to do things wrong.",
     data: `<div>
@@ -3402,6 +3418,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     isShow: false,
     title: "Project on The Asian Wok",
     slug: "project-on-the-asian-wok",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "May 6, 2022",
     meta: {
       title: "Project on The Asian Wok: Cloud Kitchen Success Story",
       description:
@@ -3484,6 +3502,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     },
     title: "Tips for Engagement on Social Media of Cloud Kitchen",
     slug: "tips-for-engagement-on-social-media-of-cloud-kitchen",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "May 6, 2022",
     description:
       "This may help you to be more active in the marketing field and up-to-date.",
     data: `
@@ -3660,6 +3680,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     description:
       "The whole world is getting tech-savvy, so why don’t your food? The Cloud kitchen concept is one of the best ideas that this virtual Internet world has given us. You may know it by other names like ghost kitchen, dark kitchen, and virtual kitchen, but they all are the need of the hour. Everything is switching into an online world so why don’t restaurants? Cloud Kitchen allows you to enjoy restaurant-like food at your doorsteps. You must have heard about a popular saying,",
     slug: "cloud-kitchen-consulting-services",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "May 6, 2022",
     data: `
   <div>
     <p>The whole world is getting tech-savvy, so why don’t your food? The Cloud kitchen concept is one of the best ideas
@@ -3875,6 +3897,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     },
     title: "Which POS is best for Cloud Kitchen?",
     slug: "which-pos-is-best-for-cloud-kitchen",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "May 6, 2022",
     description:
       "The concept of a cloud kitchen is booming in India, especially during the ongoing pandemic, when takeaway has become the most preferred choice of customers. However, managing a cloud kitchen has always been baffling, fortunately, there are POS solutions.",
     data: `
@@ -3941,6 +3965,8 @@ Why does this work? Because you’re cutting costs on front-of-house activities
     },
     title: "Improved Hotel Business Solutions for the New Normal",
     slug: "strategies-for-hotel-business",
+    // Original WordPress publish date (article:published_time in the archived page, web.archive.org).
+    date: "August 25, 2023",
     description:
       "The pandemic caught us off guard as it hit our hospitality and tourism industry so hard that international tourist arrivals dropped to -72.2% in 2020 and many talented employees had to lose their jobs. And in 2023 as we are nearing the end of the year we see how in the aftermath of COVID-19, our industry is adjusting to the new normal.",
     data: `
