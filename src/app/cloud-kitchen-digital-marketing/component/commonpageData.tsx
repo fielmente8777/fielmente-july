@@ -113,8 +113,8 @@ export const commonPageData = [
   },
   {
     banner: {
-      title: "Leading Restaurant Marketing Company.",
-      subTitle: `Best Restaurant Marketing Agency in India.`,
+      title: "Food & Beverage Marketing Agency.",
+      subTitle: `Marketing for restaurants, cafés, bars and F&B brands across India.`,
       image: "/industry/restaurant-1.png",
       description: [
         "We at Fielmente create ROI-driven social media campaigns and content for your for your restaurant business.",

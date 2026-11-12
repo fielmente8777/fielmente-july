@@ -13,19 +13,22 @@ import Testimonials from "../industries-we-serves/[...industry]/components/Testi
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import PlatformStripSection from "@/components/commonSections/PlatformStripSection";
 
+// Targets "food and beverage marketing" (F&B brands as a whole). "Restaurant marketing agency/company in India"
+// belongs to /industries-we-serve/restaurant-marketing-agency/: this page used the same title, so the two
+// competed for the same searches (Nov 2026, SEO visibility fix).
 export const metadata: Metadata = {
-  title: "Restaurant Marketing Company in India | Fielmente",
+  title: "Food & Beverage Marketing Agency in India | Fielmente",
   description:
-    "Fielmente is a restaurant marketing company in India that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
+    "Marketing for restaurants, cafés, bars, bakeries and F&B brands in India: social media, Google Ads, Zomato & Swiggy ads and local SEO. Talk to Fielmente.",
   alternates: {
     canonical: "https://fielmente.com/food-and-beverage-marketing-solutions/",
   },
   openGraph: {
     url: "https://fielmente.com/food-and-beverage-marketing-solutions/",
     type: "website",
-    title: "Restaurant Marketing Company in India | Fielmente",
+    title: "Food & Beverage Marketing Agency in India | Fielmente",
     description:
-      "Fielmente is a restaurant marketing company in India that helps restaurants boost their digital presence and grow. Contact us to plan your marketing.",
+      "Marketing for restaurants, cafés, bars, bakeries and F&B brands in India: social media, Google Ads, Zomato & Swiggy ads and local SEO. Talk to Fielmente.",
     images: [
       {
         url: "/fielmente_logo.png",
