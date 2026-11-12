@@ -1,16 +1,12 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { isLandingPage } from "@/utils/landingPages";
 
 declare global {
   interface Window {
     $zoho: {
       salesiq?: {
         ready?: () => void;
-        floatbutton?: { visible: (state: "show" | "hide") => void };
-        floatwindow?: { visible: (state: "show" | "hide") => void };
       };
     };
   }
@@ -25,26 +21,14 @@ const WIDGET_SRC =
 const LOAD_DELAY_MS = 8000;
 
 /**
- * Zoho SalesIQ chat ("Eazotel Bot") on every page of the website except the ad landing pages
- * (src/utils/landingPages.ts), which keep only the call and WhatsApp buttons.
- * It is mounted once in the root layout, so it stays loaded while visitors move between pages;
- * if a visitor moves on to a landing page, the chat button is hidden there and comes back afterwards.
+ * Zoho SalesIQ chat ("Eazotel Bot"), on every page of the site, including the ad landing pages.
+ * It is mounted once in the root layout, so it stays loaded while visitors move between pages.
  */
 const Salesiq = () => {
-  const pathname = usePathname();
-  const landing = isLandingPage(pathname);
-
-  // Load the widget, but only once a website page has been opened.
   useEffect(() => {
-    if (landing) return;
     const timer = window.setTimeout(() => {
       window.$zoho = window.$zoho || {};
-      window.$zoho.salesiq = window.$zoho.salesiq || {
-        // The visitor may have moved on to a landing page while the widget was loading.
-        ready: function () {
-          if (isLandingPage(window.location.pathname)) window.$zoho.salesiq?.floatbutton?.visible("hide");
-        },
-      };
+      window.$zoho.salesiq = window.$zoho.salesiq || { ready: function () {} };
 
       if (document.getElementById("zsiqscript")) return;
       const script = document.createElement("script");
@@ -55,21 +39,9 @@ const Salesiq = () => {
     }, LOAD_DELAY_MS);
 
     return () => window.clearTimeout(timer);
-  }, [landing]);
+  }, []);
 
-  // Already loaded and now on a landing page: hide the chat; show it again on website pages.
-  useEffect(() => {
-    const siq = window.$zoho?.salesiq;
-    if (!siq?.floatbutton) return;
-    if (landing) {
-      siq.floatwindow?.visible("hide");
-      siq.floatbutton.visible("hide");
-    } else {
-      siq.floatbutton.visible("show");
-    }
-  }, [landing]);
-
-  return landing ? null : <link rel="preconnect" href="https://salesiq.zohopublic.in" />;
+  return <link rel="preconnect" href="https://salesiq.zohopublic.in" />;
 };
 
 export default Salesiq;
