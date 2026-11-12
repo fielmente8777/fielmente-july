@@ -5338,7 +5338,7 @@ Why does this work? Because you’re cutting costs on front-of-house activities
   {
     isShow: true,
     meta: {
-      title: "Top 10 WordPress Plugins for Hotel Websites",
+      title: "Top 10 WordPress Plugins for Restaurant Websites",
       description:
         "Discover the best WordPress plugins to improve hotel bookings, SEO, and website performance with easy-to-use tools.",
       keywords: [
