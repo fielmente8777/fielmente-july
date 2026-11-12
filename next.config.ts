@@ -145,6 +145,21 @@ const nextConfig: NextConfig = {
       // Old URLs that still get visits (GA4 / Search Console, Jul-Oct 2026).
       to("/about/", "/about-fielmente-best-hospitality-marketing-agency/"),
       to("/contact/", "/contact-us/"),
+      // Dead URLs Google still requests (Search Console 404 report, Nov 2026). The old US-state, city and country
+      // "location guides" were removed from the site; each now points to the market page that covers it.
+      to("/hotel-marketing-agency-usa/locations/", "/hotel-marketing-agency-usa/"),
+      to("/hotel-marketing-agency-usa/locations/:path*/", "/hotel-marketing-agency-usa/"),
+      to("/international-hotel-marketing-agency/locations/united-kingdom/", "/hotel-marketing-agency-uk/"),
+      to("/international-hotel-marketing-agency/locations/united-kingdom/:path*/", "/hotel-marketing-agency-uk/"),
+      to("/international-hotel-marketing-agency/locations/", "/international-hotel-marketing-agency/"),
+      to("/international-hotel-marketing-agency/locations/:path*/", "/international-hotel-marketing-agency/"),
+      to("/international-hospitality-marketing-experience/", "/international-hotel-marketing-agency/"),
+      to("/home/", "/"),
+      to("/hotel-marketing/", "/industries-we-serve/hotel-marketing-agency/"),
+      to("/hostel-management/", "/marketing-a-hostel-the-basics/"),
+      to("/hospitality-marketing-services/website/", "/industries-we-serve/hotel-marketing-agency/hotel-website-development/"),
+      to("/industries-we-serve/cloud-kitchen-digital-marketing/", "/industries-we-serve/cloud-kitchen-marketing-agency/"),
+      to("/eazotel-seo-dashboard-hotel-restaurant-keyword-rankings/", "/products/hotel-local-seo/"),
       to("/case-studies/", "/case-study/"),
       to("/branding/", "/industries-we-serve/hotel-marketing-agency/hotel-branding/"),
       to("/website-development/", "/industries-we-serve/hotel-marketing-agency/hotel-website-development/"),
