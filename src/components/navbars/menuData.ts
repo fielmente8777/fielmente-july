@@ -139,7 +139,9 @@ export function buildSiteMenu(): SiteMenu {
     cardLine: "Hotel and restaurant marketing for properties outside India",
     groups: [
       { title: "Agency pages by market", links: agency("location") },
-      { title: "Country and region sites", links: [...REGION_SITES, { label: "United States", href: "https://usa.fielmente.com/" }] },
+      // usa.fielmente.com is not linked: it is noindex, and the US page that ranks is /hotel-marketing-agency-usa/
+      // (already listed under "Agency pages by market").
+      { title: "Country and region sites", links: REGION_SITES },
     ],
   });
   industrySections.push({
