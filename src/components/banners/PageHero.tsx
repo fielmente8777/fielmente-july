@@ -48,7 +48,20 @@ const PageHero: React.FC<PageHeroProps> = ({
           <Breadcrumbs items={crumbs} />
           {badges}
           <Eyebrow>{eyebrow}</Eyebrow>
-          <h1 className="text-[34px]/[1.08] md:text-[50px]/[1.05] font-bold tracking-tight text-white">{title}</h1>
+          <h1 className="text-[34px]/[1.08] md:text-[50px]/[1.05] font-bold tracking-tight text-white">
+            {title}
+            <span className="mt-3 block text-[0.42em]/[1.3] font-medium text-[#DCD9ED]">
+              Hospitality Marketing &amp; Direct Booking Growth · Part of Eazotel, a Google Partner
+            </span>
+          </h1>
+          <a
+            href="https://www.google.com/partners/agency?id=7707754365"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit text-sm font-semibold text-orange-primary underline underline-offset-4 hover:text-white"
+          >
+            Verify Eazotel&apos;s Google Partner status
+          </a>
           <p className="text-base/relaxed md:text-lg/relaxed text-[#C9C7DD] max-w-150">{lede}</p>
           <div className="flex flex-wrap gap-3 pt-1">{actions}</div>
         </div>
