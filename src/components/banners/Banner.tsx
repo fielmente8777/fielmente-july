@@ -43,7 +43,15 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
                 />
                 <p className="max-md:text-[10px] text-[10px]">{title}</p>
               </div>
-              <h1 className="text-white text-center lg:text-[2.5rem]/tight md:text-2xl text-[1.4rem] max-sm:h-[99px]  font-semibold pointer-events-auto">
+              <a
+                href="https://www.google.com/partners/agency?id=7707754365"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto inline-flex max-w-full items-center rounded-full border border-white/40 bg-black/25 px-4 py-1.5 text-center text-xs font-semibold text-white hover:bg-white/15"
+              >
+                Fielmente · Part of Eazotel, a Google Partner
+              </a>
+              <h1 className="text-white text-center lg:text-[2.5rem]/tight md:text-2xl text-[1.4rem] max-sm:min-h-[99px] font-semibold pointer-events-auto">
                 Fielmente - India’s Leading <br />
                 <Link className="inter-link" href="/">
                   <span>
@@ -51,6 +59,9 @@ const Banner: React.FC<BannerPropsType> = ({ title, description, imgSrc }) => {
                   </span>
                   <i> Agency</i>
                 </Link>
+                <span className="mt-1 block text-[0.68em] font-medium leading-snug">
+                  Hospitality Digital Marketing &amp; Direct Booking Growth
+                </span>
               </h1>
 
               <p className="text-white text-center lg:text-lg max-sm:text-[10px] max-w-5xl mx-auto">
