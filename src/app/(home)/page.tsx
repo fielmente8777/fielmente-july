@@ -15,6 +15,7 @@ import IndustryWeServe from "./components/IndustryWeServe";
 import MarketingExperts from "./components/MarketingExperts";
 import OtaCostsWithFielmente from "./components/OtaCostsWithFielmente";
 import OurProducts from "./components/OurProducts";
+import EazotelAppDownload from "./components/EazotelAppDownload";
 import OurServices from "./components/OurServices";
 import OurValuedClient from "./components/OurValuedClient";
 import ProvenResults from "./components/ProvenResults";
@@ -132,6 +133,7 @@ export default function Home() {
       <HomeScrollReveal><ChooseFielmente {...homePageData?.chooseFielmenteData}/></HomeScrollReveal>
       <HomeScrollReveal><OurServices {...homePageData?.servicesData} /></HomeScrollReveal>
       <HomeScrollReveal><OurProducts {...homePageData?.productsData} /></HomeScrollReveal>
+      <HomeScrollReveal><EazotelAppDownload /></HomeScrollReveal>
       <HomeScrollReveal><GetFreeDashboardAccess {...homePageData?.getFreeDashboardAccessData} /></HomeScrollReveal>
       <HomeScrollReveal><HowItWork {...homePageData?.howItWorksData} /></HomeScrollReveal>
       <HomeScrollReveal><ProvenResults {...homePageData?.provenResults} /></HomeScrollReveal>
