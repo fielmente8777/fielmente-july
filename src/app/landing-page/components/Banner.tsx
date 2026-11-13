@@ -23,6 +23,17 @@ const Banner: React.FC<Props> = ({ title, subtitle, description, images }) => {
             className="md:text-[2.875rem] text-3xl span-color-2 max-md:text-center text-primary font-bold"
             dangerouslySetInnerHTML={{ __html: title }}
           ></h1>
+          <p className="text-sm font-semibold text-primary max-md:text-center">
+            Hospitality Digital Marketing &amp; Direct Booking Growth · Fielmente, part of Eazotel (Google Partner)
+          </p>
+          <a
+            href="https://www.google.com/partners/agency?id=7707754365"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit text-sm font-semibold text-primary underline underline-offset-4 hover:text-secondary"
+          >
+            Verify Eazotel&apos;s Google Partner status
+          </a>
           <p className="text-sm text-secondary max-md:text-center">
             {description}
           </p>
