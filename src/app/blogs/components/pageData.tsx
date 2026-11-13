@@ -16,6 +16,16 @@ export type BlogListCard = {
   topic?: BlogTopic;
 };
 
+const hotelPromotionalCredits: BlogListCard = {
+  src: "/images/blog/google-ads-hotel-promotional-credits.svg",
+  title: "Google Ads Promotional Credits for Hotels & Resorts: What's Changed?",
+  slug: "google-ads-promotional-credits-hotels-resorts",
+  description: "Learn why hotels already received ad credits before Google Partner status, and what the new Partner offers, eligibility rules and credit tiers mean for your property.",
+  read: "8 min read",
+  label: "Google & Meta Ads",
+  topic: "hotel-marketing",
+};
+
 /** One card per post, newest first (posts are added to the end of blogData). */
 const googlePartnerHotelGrowth: BlogListCard = {
   src: "/images/blog/google-partner-hotel-growth.svg",
@@ -57,7 +67,7 @@ const hotelAdsSeriesCards: BlogListCard[] = [...hotelAdsGuides].reverse().map((g
   topic: "hotel-marketing",
 }));
 
-export const blogCards: BlogListCard[] = [googlePartnerHotelGrowth, eazotelPartnerMilestone, ...hotelAdsSeriesCards, newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
+export const blogCards: BlogListCard[] = [hotelPromotionalCredits, googlePartnerHotelGrowth, eazotelPartnerMilestone, ...hotelAdsSeriesCards, newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
   const cat = blogCategory(item.slug);
   return {
     src: typeof item.url === "string" ? item.url : item.url?.src,
