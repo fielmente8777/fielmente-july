@@ -17,6 +17,16 @@ export type BlogListCard = {
 };
 
 /** One card per post, newest first (posts are added to the end of blogData). */
+const googlePartnerHotelGrowth: BlogListCard = {
+  src: "/images/blog/google-partner-hotel-growth.svg",
+  title: "Why Hotel & Resort Owners Should Choose a Google Partner Agency",
+  slug: "why-hotels-should-hire-a-google-partner-agency",
+  description: "Why hotels choose Fielmente: Google Partner expertise, direct-booking strategy, Hotel Ads, stronger guest journeys and measurable enquiries.",
+  read: "8 min read",
+  label: "Hotel Marketing",
+  topic: "hotel-marketing",
+};
+
 const eazotelPartnerMilestone: BlogListCard = {
   src: "/images/blog/eazotel-google-partner-milestone.svg",
   title: "Six Years Ago, It Was Just a Dream. Today, Eazotel Is a Google Partner!",
@@ -47,7 +57,7 @@ const hotelAdsSeriesCards: BlogListCard[] = [...hotelAdsGuides].reverse().map((g
   topic: "hotel-marketing",
 }));
 
-export const blogCards: BlogListCard[] = [eazotelPartnerMilestone, ...hotelAdsSeriesCards, newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
+export const blogCards: BlogListCard[] = [googlePartnerHotelGrowth, eazotelPartnerMilestone, ...hotelAdsSeriesCards, newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
   const cat = blogCategory(item.slug);
   return {
     src: typeof item.url === "string" ? item.url : item.url?.src,

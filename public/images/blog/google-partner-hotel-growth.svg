@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Hotel guest discovery to booking infographic">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#161247"/><stop offset="1" stop-color="#0b2259"/></linearGradient>
+<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2d69a4"/><stop offset="1" stop-color="#102d58"/></linearGradient>
+<linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffae7a"/><stop offset="1" stop-color="#f26633"/></linearGradient>
+<filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".24"/></filter>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity=".055"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/><rect width="1200" height="675" fill="url(#grid)"/>
+<circle cx="1053" cy="80" r="240" fill="#F26633" opacity=".13"/><circle cx="120" cy="636" r="270" fill="#0D54EB" opacity=".16"/>
+<text x="66" y="72" font-family="Arial,sans-serif" font-size="19" letter-spacing="4" font-weight="700" fill="#FFAD83">FIELMENTE  •  HOSPITALITY GROWTH</text>
+<text x="66" y="146" font-family="Arial,sans-serif" font-size="54" font-weight="800" fill="#ffffff">FROM SEARCH</text>
+<text x="66" y="208" font-family="Arial,sans-serif" font-size="54" font-weight="800" fill="#ffffff">TO DIRECT</text>
+<text x="66" y="270" font-family="Arial,sans-serif" font-size="54" font-weight="800" fill="#FF9864">BOOKING</text>
+<text x="68" y="330" font-family="Arial,sans-serif" font-size="21" fill="#c9d5f5">A smarter journey for hotel &amp; resort owners</text>
+<rect x="63" y="398" width="295" height="71" rx="16" fill="#ffffff" fill-opacity=".12" stroke="#ffffff" stroke-opacity=".22"/>
+<circle cx="99" cy="434" r="18" stroke="#FFAD83" stroke-width="4" fill="none"/><path d="m112 447 11 11" stroke="#FFAD83" stroke-width="4" stroke-linecap="round"/>
+<text x="134" y="441" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#ffffff">Guest intent</text>
+<path d="M368 436h55m-13-11 13 11-13 11" stroke="#FFB98C" stroke-width="5" stroke-linecap="round" fill="none"/>
+<rect x="434" y="398" width="285" height="71" rx="16" fill="#ffffff" fill-opacity=".12" stroke="#ffffff" stroke-opacity=".22"/>
+<rect x="458" y="417" width="31" height="28" rx="5" stroke="#FFAD83" stroke-width="3" fill="none"/><path d="M460 427h27" stroke="#FFAD83" stroke-width="3"/>
+<text x="507" y="441" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#ffffff">Your hotel website</text>
+<path d="M729 436h55m-13-11 13 11-13 11" stroke="#FFB98C" stroke-width="5" stroke-linecap="round" fill="none"/>
+<rect x="795" y="398" width="342" height="71" rx="16" fill="#F26633"/>
+<circle cx="837" cy="434" r="20" fill="#ffffff" fill-opacity=".24"/><path d="m827 434 7 7 14-16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="870" y="441" font-family="Arial,sans-serif" font-size="20" font-weight="800" fill="#ffffff">Booking opportunity</text>
+<g opacity=".98" filter="url(#sh)">
+<rect x="703" y="74" width="418" height="260" rx="22" fill="#f8fbff"/>
+<rect x="726" y="98" width="372" height="149" rx="13" fill="url(#sea)"/>
+<circle cx="1004" cy="132" r="26" fill="#ffc489" opacity=".95"/>
+<path d="M728 206c65-53 115-31 161-60 57-35 118 1 207-23v124H728Z" fill="#1e4f7a"/>
+<rect x="831" y="139" width="145" height="110" rx="6" fill="#f0dbb8"/><rect x="818" y="128" width="170" height="18" rx="3" fill="#efe6db"/>
+<rect x="854" y="159" width="35" height="38" rx="2" fill="#4b7698"/><rect x="909" y="159" width="35" height="38" rx="2" fill="#4b7698"/><rect x="858" y="210" width="89" height="39" fill="#344b64"/><path d="M833 250h143" stroke="#f8f4f1" stroke-width="5"/>
+<text x="735" y="288" font-family="Arial,sans-serif" font-size="19" font-weight="800" fill="#17204e">Your property. Your booking journey.</text>
+<text x="735" y="315" font-family="Arial,sans-serif" font-size="15" fill="#687386">Search  •  Website  •  Enquiry  •  Booking</text>
+</g>
+<path d="M66 557h1068" stroke="#ffffff" stroke-opacity=".18"/>
+<text x="68" y="608" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Google Partner agency  •  Hotel Ads  •  Measurable enquiries</text>
+<text x="68" y="640" font-family="Arial,sans-serif" font-size="16" fill="#b9c7ef">A hospitality-first approach — not a guarantee of bookings</text>
+</svg>
