@@ -32,7 +32,20 @@ const AgencyHero: React.FC<AgencyHeroProps> = ({ data: d, crumbs }) => {
           <Breadcrumbs items={crumbs} />
           {d.platforms && d.platforms.length > 0 && <PlatformLogos keys={d.platforms} />}
           <Eyebrow>{d.hero.eyebrow}</Eyebrow>
-          <h1 className="text-[34px]/[1.08] md:text-[50px]/[1.05] font-bold tracking-tight text-white">{d.hero.h1}</h1>
+          <h1 className="text-[34px]/[1.08] md:text-[50px]/[1.05] font-bold tracking-tight text-white">
+            {d.hero.h1}
+            <span className="mt-3 block text-[0.42em]/[1.3] font-medium text-[#DCD9ED]">
+              Direct Booking Growth · Part of Eazotel, a Google Partner
+            </span>
+          </h1>
+          <a
+            href="https://www.google.com/partners/agency?id=7707754365"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit text-sm font-semibold text-orange-primary underline underline-offset-4 hover:text-white"
+          >
+            Verify Eazotel&apos;s Google Partner status
+          </a>
           <p className="text-base/relaxed md:text-lg/relaxed text-[#C9C7DD] max-w-150">
             <RichText text={d.hero.lede} sources={d.sources} />
           </p>
