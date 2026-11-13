@@ -17,6 +17,16 @@ export type BlogListCard = {
 };
 
 /** One card per post, newest first (posts are added to the end of blogData). */
+const eazotelPartnerMilestone: BlogListCard = {
+  src: "/images/blog/eazotel-google-partner-milestone.svg",
+  title: "Six Years Ago, It Was Just a Dream. Today, Eazotel Is a Google Partner!",
+  slug: "eazotel-official-google-partner",
+  description: "Six years of ambition, teamwork and perseverance culminate in Eazotel earning official Google Partner status on 13 November 2026.",
+  read: "5 min read",
+  label: "Fielmente News",
+  topic: "news",
+};
+
 const newHotelCenterGuide: BlogListCard = {
   src: "/images/blog/google-hotel-center-ads-connection.svg",
   title: "How to Connect Google Hotel Center to Google Ads Using Data Manager (2026)",
@@ -37,7 +47,7 @@ const hotelAdsSeriesCards: BlogListCard[] = [...hotelAdsGuides].reverse().map((g
   topic: "hotel-marketing",
 }));
 
-export const blogCards: BlogListCard[] = [...hotelAdsSeriesCards, newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
+export const blogCards: BlogListCard[] = [eazotelPartnerMilestone, ...hotelAdsSeriesCards, newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
   const cat = blogCategory(item.slug);
   return {
     src: typeof item.url === "string" ? item.url : item.url?.src,
