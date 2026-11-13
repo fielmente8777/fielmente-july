@@ -50,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const add = (p: string, lastModified?: Date) => paths.set(p.endsWith("/") ? p : `${p}/`, lastModified);
 
   STATIC_PAGES.forEach((p) => add(p));
+  add("/eazotel-official-google-partner/", new Date("2026-11-13T00:00:00.000Z"));
   AGENCY_PAGES.forEach((a) => add(`/${a.slug}/`));
   industries.forEach((i) => add(`/industries-we-serve/${i.slug}/`));
   newServicePages.forEach((s) => add(`/industries-we-serve/${s.path}/`));
