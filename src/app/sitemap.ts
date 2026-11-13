@@ -11,7 +11,7 @@ import { industriesData } from "./industries-we-serve/[...industry]/pageData";
 import { PRODUCTS, productPath } from "@/lib/products";
 import { blogData } from "@/utils/blogdata";
 import { hotelAdsGuides } from "@/lib/hotelAdsGuides";
-import { blogPageCount } from "./blogs/components/pageData";
+import { blogCards, blogPageCount } from "./blogs/components/pageData";
 
 const SITE = "https://fielmente.com";
 
@@ -62,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   blogData.forEach((b) => add(`/${b.slug}/`, isoDate(b.updated) ?? isoDate(b.date)));
   hotelAdsGuides.forEach((g) => add("/google-hotel-ads-guides/" + g.slug + "/", new Date("2026-11-08T00:00:00.000Z")));
 
-  const blogListPages = Array.from({ length: blogPageCount(blogData.length + 26) - 1 }, (_, i) => ({
+  const blogListPages = Array.from({ length: blogPageCount(blogCards.length) - 1 }, (_, i) => ({
     url: `${SITE}/blogs/?page=${i + 2}`,
   }));
 
