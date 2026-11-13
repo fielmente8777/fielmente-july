@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Six years ago, it was just a dream. Today, Eazotel is a Google Partner.</title>
+<desc id="desc">Celebratory editorial illustration for Eazotel's 13 November 2026 Google Partner milestone, without depicting an official programme badge.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15113b"/><stop offset="0.58" stop-color="#0c255d"/><stop offset="1" stop-color="#123e7c"/></linearGradient>
+ <radialGradient id="light"><stop stop-color="#fa753d" stop-opacity=".6"/><stop offset="1" stop-color="#fa753d" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<ellipse cx="1370" cy="90" rx="530" ry="500" fill="url(#light)" opacity=".7"/>
+<circle cx="1460" cy="730" r="370" fill="none" stroke="#7193d2" stroke-width="1.5" opacity=".22"/>
+<circle cx="1450" cy="730" r="280" fill="none" stroke="#7193d2" stroke-width="1.5" opacity=".22"/>
+<circle cx="1450" cy="730" r="190" fill="none" stroke="#7193d2" stroke-width="1.5" opacity=".22"/>
+<path d="M1060 40l17 28 31 5-23 24 4 33-29-14-30 14 6-33-23-24 31-5z" fill="#F99A5F" opacity=".9"/>
+<path d="M1280 220l10 18 20 3-14 15 3 20-19-9-18 9 4-20-15-15 20-3z" fill="#D8E2FE" opacity=".78"/>
+<circle cx="1180" cy="155" r="8" fill="#FAC4A1"/><circle cx="1470" cy="370" r="10" fill="#E6EDFF"/>
+<path d="M1300 80l26 25m0-25l-26 25" stroke="#FF9C64" stroke-width="6" stroke-linecap="round"/>
+<path d="M1270 550l26 25m0-25l-26 25" stroke="#779CFF" stroke-width="6" stroke-linecap="round"/>
+<rect x="96" y="94" rx="26" width="340" height="56" fill="#F26633"/>
+<text x="122" y="132" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" letter-spacing="3" fill="white">MILESTONE • 2026</text>
+<text x="95" y="274" font-family="Arial,Helvetica,sans-serif" font-size="56" font-weight="600" fill="#DAE7FF">Six years ago,</text>
+<text x="95" y="360" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="800" fill="white">it was just a dream.</text>
+<rect x="95" y="414" width="175" height="8" rx="4" fill="#F26633"/>
+<text x="95" y="530" font-family="Arial,Helvetica,sans-serif" font-size="45" font-weight="600" fill="#DFEAFF">Today, Eazotel is officially</text>
+<text x="95" y="612" font-family="Arial,Helvetica,sans-serif" font-size="73" font-weight="800" fill="#FFA269">a Google Partner.</text>
+<text x="95" y="715" font-family="Arial,Helvetica,sans-serif" font-size="25" letter-spacing="2" fill="#DBE7FF">13 NOVEMBER 2026  •  A TEAM ACHIEVEMENT</text>
+<line x1="95" y1="760" x2="1510" y2="760" stroke="#9FADD9" opacity=".35"/>
+<text x="95" y="826" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" fill="white">EAZOTEL</text>
+<text x="338" y="826" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#CBD8F3">A milestone shared on Fielmente</text>
+</svg>
