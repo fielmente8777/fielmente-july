@@ -16,19 +16,19 @@ const Footer = () => {
     case "/landing-page/":
       return <><LandingFooter /><GooglePartnerBadge /></>;
     case "/USA/":
-      return <LandingFooter />;
+      return <><LandingFooter /><GooglePartnerBadge /></>;
     case "/resort/":
-      return <LandingFooter />;
+      return <><LandingFooter /><GooglePartnerBadge /></>;
     case "/hospitality/":
-      return <LandingFooter />;
+      return <><LandingFooter /><GooglePartnerBadge /></>;
     case "/dubai-restaurant/":
       return <><LandingPageFooter2 /><GooglePartnerBadge /></>;
 
     case "/restaurant/":
-      return <LandingPageFooter2 />;
+      return <><LandingPageFooter2 /><GooglePartnerBadge /></>;
 
     case "/UK/":
-      return <LandingPageFooter2 />;
+      return <><LandingPageFooter2 /><GooglePartnerBadge /></>;
 
     default:
       return <><RenderFooter /><GooglePartnerBadge /></>;
