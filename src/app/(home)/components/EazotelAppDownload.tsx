@@ -7,7 +7,7 @@ const PLAY_STORE_URL = "https://play.google.com/store/search?q=eazotel&c=apps&hl
 const benefits = [
   { icon: FiMessageSquare, text: "Stay on top of guest enquiries" },
   { icon: FiCheckCircle, text: "Keep track of follow-ups" },
-  { icon: FiTrendingUp, text: "Stay connected to your hotel operations" },
+  { icon: FiTrendingUp, text: "Stay connected to hospitality enquiries" },
 ];
 
 export default function EazotelAppDownload() {
@@ -32,15 +32,15 @@ export default function EazotelAppDownload() {
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#FAD0BB]">
             <FiSmartphone aria-hidden="true" size={16} />
-            Download our app · Eazotel
+            Fielmente · Part of Eazotel
           </div>
 
           <h2 id="eazotel-app-title" className="max-w-2xl text-3xl font-extrabold leading-[1.13] tracking-tight sm:text-4xl md:text-5xl">
-            Your hotel. Your guests. <span className="text-[#FF9B69]">Right in your pocket.</span>
+            Your guests. Your enquiries. <span className="text-[#FF9B69]">Right in your pocket.</span>
           </h2>
 
           <p className="mt-6 max-w-xl text-base leading-8 text-white/75 md:text-lg">
-            Take Eazotel with you. Keep your hotel enquiries, guest conversations and follow-ups within reach—whether you are at the property or on the move.
+            Download the Eazotel app to stay connected with guest and customer enquiries, conversations and follow-ups across your hospitality business—whether you are on-site or on the move.
           </p>
 
           <ul className="mt-7 grid gap-4 text-sm text-white/90 sm:text-base">
@@ -88,7 +88,7 @@ export default function EazotelAppDownload() {
                   <div className="flex items-center gap-2">
                     <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#EAF0FF] text-[#345DE7]"><FiMessageSquare size={18} aria-hidden="true" /></span>
                     <div>
-                      <p className="text-sm font-bold">Guest enquiries</p>
+                      <p className="text-sm font-bold">Guest and customer enquiries</p>
                       <p className="text-xs text-[#6A7690]">Stay in the conversation</p>
                     </div>
                   </div>
