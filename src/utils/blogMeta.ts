@@ -14,6 +14,7 @@ export const BLOG_TOPICS = [
 export type BlogTopic = (typeof BLOG_TOPICS)[number]["slug"];
 
 const POSTS: Record<string, [label: string, topic: BlogTopic]> = {
+  "google-hotel-ads-search-campaigns-for-travel": ["Google & Meta Ads", "hotel-marketing"],
   "bnbs-in-noida-set-to-become-legal-under-new-homestay-policy-2025": ["Hospitality News", "news"],
   "why-hotels-in-the-usa-hire-fielmente-hospitality-marketing-agency-in-india": ["Hotel Marketing", "hotel-marketing"],
   "how-to-digitally-market-your-hostel-with-fielmente-2": ["Hotel Marketing", "hotel-marketing"],

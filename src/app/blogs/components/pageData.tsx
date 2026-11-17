@@ -67,7 +67,7 @@ const hotelAdsSeriesCards: BlogListCard[] = [...hotelAdsGuides].reverse().map((g
   topic: "hotel-marketing",
 }));
 
-export const blogCards: BlogListCard[] = [hotelPromotionalCredits, googlePartnerHotelGrowth, eazotelPartnerMilestone, ...hotelAdsSeriesCards, newHotelCenterGuide, ...[...blogData].reverse().map((item) => {
+const standardBlogCards: BlogListCard[] = [...blogData].reverse().map((item) => {
   const cat = blogCategory(item.slug);
   return {
     src: typeof item.url === "string" ? item.url : item.url?.src,
@@ -78,7 +78,19 @@ export const blogCards: BlogListCard[] = [hotelPromotionalCredits, googlePartner
     label: cat?.label ?? item.category,
     topic: cat?.topic,
   };
-})];
+});
+const campaignMigrationSlug = "google-hotel-ads-search-campaigns-for-travel";
+const campaignMigrationCard = standardBlogCards.find(({ slug }) => slug === campaignMigrationSlug);
+
+export const blogCards: BlogListCard[] = [
+  ...(campaignMigrationCard ? [campaignMigrationCard] : []),
+  hotelPromotionalCredits,
+  googlePartnerHotelGrowth,
+  eazotelPartnerMilestone,
+  ...hotelAdsSeriesCards,
+  newHotelCenterGuide,
+  ...standardBlogCards.filter(({ slug }) => slug !== campaignMigrationSlug),
+];
 
 /** Number of listing pages for `count` posts. */
 export function blogPageCount(count: number) {

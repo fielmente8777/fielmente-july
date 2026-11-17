@@ -32008,6 +32008,63 @@ Interest in ChatGPT ads management services for hotels in india will create nois
 
   `,
   },
+  {
+    isShow: true,
+    title: "Google Hotel Ads Are Moving to Search Campaigns for Travel",
+    slug: "google-hotel-ads-search-campaigns-for-travel",
+    date: "17 November 2026",
+    description: "Google is moving Hotel campaigns to Search campaigns for travel. Learn the March 2027 migration timeline, what changes and what hotels should check.",
+    meta: {
+      title: "Google Hotel Ads Migration to Travel Search | Fielmente",
+      description: "Google is moving Hotel campaigns to Search campaigns for travel. Learn the March 2027 migration timeline, what changes and what hotels should check.",
+      keywords: ["Google Hotel Ads migration", "Search campaigns for travel", "Google Hotel Center"],
+    },
+    data: `
+<p>A traveller searches for “boutique hotels in Varanasi,” discovers a property, then checks the room rate for their dates. Google offers different ad formats for those moments. Its new <strong>Search campaigns for travel</strong> can bring those formats into one campaign, from ads that help travellers discover a property to paid booking links that take them to the hotel’s booking engine. <a href="https://support.google.com/google-ads/answer/18924057">Google Ads Help on Search campaigns for travel</a></p>
+
+<p>In an advertiser notice dated <strong>17 November 2026</strong>, Google said it plans to retire legacy Hotel campaigns in early 2027, with automatic migration planned for <strong>March 2027</strong> for the notified accounts. Google will communicate exact deadlines separately. Check the email or in-account notification for your own Google Ads account. <a href="https://support.google.com/google-ads/answer/9238463">Google Ads Help on the Hotel campaign transition</a></p>
+
+<h2>Which hotel ad formats can you run?</h2>
+
+<table>
+<thead><tr><th scope="col">Ad format</th><th scope="col">How a hotel can use it</th></tr></thead>
+<tbody>
+<tr><td><strong>Text ads</strong></td><td>Highlight the property’s location, amenities or reasons to book direct when travellers search on Google.</td></tr>
+<tr><td><strong>Travel Promotion Ads</strong></td><td>Use property imagery to reach travellers who are still deciding where to stay.</td></tr>
+<tr><td><strong>Paid Booking Links</strong></td><td>Show a rate for the traveller’s selected dates in Google’s hotel booking module and send them to a page where they can reserve the room.</td></tr>
+</tbody>
+</table>
+
+<p>Hotels can select formats at the ad group level. A linked <strong>Google Hotel Center</strong> feed and <strong>AI Max</strong> are required for the travel formats, and paid Booking Links also require an item group that specifies which properties to advertise. Google also offers <strong>free booking links</strong> through Hotel Center, a separate placement with no charge for clicks. <a href="https://support.google.com/google-ads/answer/18920144">Campaign setup</a> · <a href="https://support.google.com/hotelprices/answer/9296693">Hotel booking links</a></p>
+
+<h2>What changes for bidding and reporting?</h2>
+
+<p>Search campaigns for travel offer Smart Bidding options such as <strong>target ROAS</strong> (return on ad spend) and <strong>target CPA</strong> (cost per acquisition). The legacy Enhanced CPC and CPC% strategies are being phased out with Hotel campaigns. Under manual CPC, Google will stop automatically multiplying the bid by the number of nights in the itinerary. Configured length-of-booking bid adjustments will still apply. <a href="https://support.google.com/google-ads/answer/9244120">Google Ads bidding guidance</a></p>
+
+<p>After the migration period, Travel Promotion Ads will count all carousel cards as impressions. That can raise reported impressions and lower click-through rate even when clicks stay steady. Save a pre-migration report so you can compare confirmed bookings, booking value and cost per booking alongside clicks and spend. <a href="https://support.google.com/google-ads/answer/2497703">Google Ads impression-counting guidance</a></p>
+
+<h2>How can hotels switch?</h2>
+
+<table>
+<thead><tr><th scope="col">Migration option</th><th scope="col">What to expect</th></tr></thead>
+<tbody>
+<tr><td><strong>Google-managed early migration</strong></td><td>If your Hotel campaign uses target ROAS, you can ask your Google sales representative about migrating it early.</td></tr>
+<tr><td><strong>Self-migration</strong></td><td>Create a Search campaign for travel that mirrors your current setup as closely as possible. Verify the new campaign, then pause the legacy campaign to prevent automatic migration.</td></tr>
+<tr><td><strong>Automatic migration</strong></td><td>If you take no action, Google says it will end active legacy Hotel campaigns and create active replacement campaigns using the closest supported settings.</td></tr>
+</tbody>
+</table>
+
+<h2>What to check before switching</h2>
+
+<ol>
+<li><strong>Verify the Hotel Center feed.</strong> Confirm the correct properties are linked and test dates when you have rooms available. Check that the rate and room availability shown on Google match what guests see in your booking engine.</li>
+<li><strong>Test a booking from click to confirmation.</strong> On mobile, verify that the booking link carries the selected dates through and that the completed reservation sends the correct value and currency to Google Ads. Review tracking templates and any custom parameters with your booking engine provider. <a href="https://support.google.com/google-ads/answer/18920144">Google Ads tracking setup</a></li>
+<li><strong>Review the replacement campaign.</strong> Compare budgets, target locations, advertised properties, selected formats and conversion goals. After launch, segment performance by ad format to see which formats contribute to bookings. <a href="https://support.google.com/google-ads/answer/16470459">Google Ads reporting guidance</a></li>
+</ol>
+
+<p><strong>Received the migration notice?</strong> <a href="/google-hotel-ads-agency/">Fielmente</a> can review your Google Ads and Hotel Center setup, test the path to a direct booking and help you choose a migration route before your account’s deadline.</p>
+    `,
+  },
 ];
 /**
  * Posts merged into a stronger post on the same topic (SEO audit, Oct 2026). Their URLs 301 to the
