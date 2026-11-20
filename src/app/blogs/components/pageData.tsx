@@ -16,6 +16,16 @@ export type BlogListCard = {
   topic?: BlogTopic;
 };
 
+const pearlCourtyardStrategy: BlogListCard = {
+  src: "/images/blog/pearl-courtyard-gbp-calls.svg",
+  title: "Pearl Courtyard Varanasi: The Google Business Profile & Calls Strategy",
+  slug: "pearl-courtyard-google-business-profile-calls",
+  description: "How Fielmente shifted a hotel from website-first ads to Google Maps credibility and call-led enquiries, with management-reported sold-out nights.",
+  read: "9 min read",
+  label: "Hotel Google Ads Case Study",
+  topic: "hotel-marketing",
+};
+
 const hotelPromotionalCredits: BlogListCard = {
   src: "/images/blog/google-ads-hotel-promotional-credits.svg",
   title: "Google Ads Promotional Credits for Hotels & Resorts: What's Changed?",
@@ -83,6 +93,7 @@ const campaignMigrationSlug = "google-hotel-ads-search-campaigns-for-travel";
 const campaignMigrationCard = standardBlogCards.find(({ slug }) => slug === campaignMigrationSlug);
 
 export const blogCards: BlogListCard[] = [
+  pearlCourtyardStrategy,
   ...(campaignMigrationCard ? [campaignMigrationCard] : []),
   hotelPromotionalCredits,
   googlePartnerHotelGrowth,
