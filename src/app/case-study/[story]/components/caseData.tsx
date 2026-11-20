@@ -34,6 +34,130 @@ const FNB_CTA = {
 
 export const casStudiesData: CaseStudy[] = [
   {
+    slug: "pearl-courtyard-varanasi-google-business-profile-calls",
+    metaData: {
+      title: "Pearl Courtyard Varanasi Google Ads & Calls Case Study | Fielmente",
+      description: "How Fielmente prioritised Google Business Profile trust and phone enquiry goals for Pearl Courtyard Varanasi, with management-reported sold-out nights and ₹4–6L peak daily revenue.",
+    },
+    img: "/images/blog/pearl-courtyard-gbp-calls.svg",
+    hotelImg: "/images/blog/pearl-courtyard-gbp-calls.svg",
+    hotelImgAlt: "Illustrated Fielmente campaign funnel showing Google Search, the Google Business Profile and direct phone calls for Pearl Courtyard",
+    title: "Pearl Courtyard, Varanasi: Google Business Profile & Call-First Google Ads Case Study",
+    description: "What changed when Fielmente stopped treating website visits as the goal and redesigned the hotel's Google Ads approach around its established Maps reputation and direct phone enquiries.",
+    metrics: [
+      { label: "Google rating at team audit", value: "4.4/5", note: "Campaign-team snapshot; may change" },
+      { label: "Google reviews at team audit", value: "~4,600", note: "Approximate management-reported count" },
+      { label: "Consecutive sold-out nights", value: "4–5", note: "Reported by hotel management after strategy change" },
+      { label: "Peak daily hotel revenue", value: "₹4–6 lakh", note: "Hotel management report, not ads-attributed sales" },
+    ],
+    metricsNote: "All review snapshots, daily revenue and occupancy outcomes shown here were reported by Fielmente/the hotel team. They are not independently audited, and daily hotel revenue is not proven to have been generated solely by Google Ads. Google Ads call logs and verified booking-level attribution were not supplied for publication.",
+    data: [
+      {
+        title: "The property: Pearl Courtyard in the heart of Varanasi",
+        description: [
+          "Pearl Courtyard is a 54-room hotel with seven room categories near Kashi Vishwanath Dham, in the Godowlia–Luxa area of Varanasi. Its official website describes Victorian-inspired architecture, air-conditioned accommodation and a central location suited to pilgrims and leisure travellers. <a href=\"https://pearlcourtyard.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary2 underline\">Source: Pearl Courtyard official website</a>.",
+          "For a property already visible on Google Maps, the central marketing question was not simply how to drive clicks. It was where a prospective guest should go immediately after seeing the advertisement."
+        ],
+        lists: [
+          "<b>Property:</b> Pearl Courtyard",
+          "<b>Location:</b> D47/200 B, Girja Ghar Chauraha, Godowliya, Luxa, Varanasi, Uttar Pradesh, India",
+          "<b>Official room inventory:</b> 54 rooms, seven categories",
+          "<b>Service focus:</b> Google Ads conversion-goal strategy, local discovery, Google Business Profile and call-led enquiry generation",
+          "<b>Agency:</b> Fielmente"
+        ]
+      },
+      {
+        title: "Before Fielmente: the wrong emphasis for the hotel's strongest asset",
+        description: [
+          "The hotel's team described a previous agency approach built around Google Tag Manager, a dedicated landing page and website-oriented campaign journeys. At the same time, direct calls had reportedly been declining. That combination led the Fielmente team to re-examine what the guest actually needed to see before making a booking enquiry.",
+          "A landing page and Google Tag Manager are not ineffective by nature. They simply were not the priority we chose for Pearl Courtyard at this point in the hotel's journey."
+        ],
+        lists: [
+          "<b>Reported earlier daily business:</b> Approximately ₹20,000–₹50,000, based on hotel management's recollection rather than audited financial records.",
+          "<b>Reported difficulty:</b> Fewer calls despite a website-centred digital advertising funnel.",
+          "<b>Our hypothesis:</b> A trusted Google Business Profile and accessible phone number could remove an unnecessary step for high-intent local searchers."
+        ]
+      },
+      {
+        title: "The asset we found: about 4,600 Google reviews and a 4.4 rating",
+        description: [
+          "During the team's review of the hotel, Pearl Courtyard's Google Business Profile was described as having approximately 4,600 guest reviews, a 4.4-star rating and a strong selection of real hotel photographs. These figures represent the team's reported audit snapshot, not a live or fixed Google review count.",
+          "A traveller researching a Varanasi hotel can use Maps information, photographs, guest experiences, location context and the Call action to make an informed choice. We therefore placed more strategic weight on the existing reputation asset instead of assuming every user should visit another page."
+        ],
+        lists: [
+          "<b>Existing social proof:</b> Extensive review history and visible Google rating",
+          "<b>Visual trust:</b> Hotel imagery already available on the listing",
+          "<b>Intent match:</b> Travellers comparing local accommodation and looking to speak with a reservation representative"
+        ]
+      },
+      {
+        title: "What Fielmente changed in Google Ads",
+        description: [
+          "We rebuilt the campaign logic around the intended business action: qualified calls that the reservation desk can turn into real bookings. The strategy favoured the Google Business Profile and local ad experiences rather than forcing a website-first journey.",
+          "For this calls-led setup, a separate landing page and Google Tag Manager were not used as essential conversion dependencies. We adjusted the conversion goals and local/call emphasis to match the hotel's actual reservation journey. Google Ads supports <a href=\"https://support.google.com/google-ads/answer/2404182\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary2 underline\">location assets connected to Business Profile</a> and <a href=\"https://support.google.com/google-ads/answer/6100664\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary2 underline\">call conversion measurement</a>; exact available formats and measurement depend on the account and campaign settings."
+        ],
+        lists: [
+          "<b>1. Reassessed the destination:</b> Prioritised the existing Google Business Profile and Google Maps presence as a source of trust, instead of treating an additional landing page as mandatory.",
+          "<b>2. Refocused campaign goals:</b> Put phone enquiries and relevant local actions ahead of superficial website-visit metrics for campaigns serving this objective.",
+          "<b>3. Emphasised call-ready ads:</b> Structured the enquiry journey so a mobile searcher could reach the hotel's reservations team with fewer steps, using eligible call and location experiences.",
+          "<b>4. Removed unnecessary tracking complexity:</b> Did not make GTM-powered on-site events a dependency for this strategy. Direct ad-call measurement requires its own Google Ads configuration; it is not the same as website phone-click tracking.",
+          "<b>5. Evaluated business outcomes:</b> Watched the actual reservation desk response and management-reported occupancy/revenue instead of interpreting every ad click as a booking."
+        ]
+      },
+      {
+        title: "The new guest journey: discovery → trust → conversation",
+        description: [
+          "The intended path was straightforward: a relevant searcher finds Pearl Courtyard through a Google Search or local experience, checks the hotel's location and established reputation, then calls the hotel to ask about rooms and book directly. A Maps or Business Profile interaction is not guaranteed on every ad impression; this is the preferred strategic journey, not an assertion about the mechanics of every placement."
+        ],
+        lists: [
+          "<b>Discover:</b> High-intent accommodation searches in and around Varanasi.",
+          "<b>Validate:</b> Hotel profile, photos, reviews and proximity to the guest's intended destination.",
+          "<b>Act:</b> The traveller taps Call through an eligible ad/local interface or the hotel's profile.",
+          "<b>Convert:</b> The reservation desk confirms rates and availability, handles objections and records the booking.",
+          "<b>Measure:</b> Calls, answer rate, qualified enquiries, confirmed reservations, room nights and revenue. Only matched records can establish ad-attributed revenue."
+        ]
+      },
+      {
+        title: "Results: four to five consecutive sold-out nights reported by hotel management",
+        description: [
+          "After the revised strategy was implemented, the team reported a sharp change in hotel demand and sales performance. According to management, Pearl Courtyard experienced four to five consecutive sold-out nights. For the strongest days in that period, it reported roughly ₹4–6 lakh in daily hotel revenue, compared with the earlier roughly ₹20,000–₹50,000 daily business figures shared with us.",
+          "These are client-reported operational outcomes that occurred after the strategy change. Without dated occupancy reports, billing records, campaign exports and a matched call-to-booking analysis, it would be inaccurate to attribute all of this revenue or the entire occupancy increase to Google Ads alone. Pricing, travel demand, seasonality, organic calls and other channels can all contribute."
+        ],
+        lists: [
+          "<b>Reported before:</b> Approximately ₹20,000–₹50,000 daily business.",
+          "<b>Reported peak after:</b> Approximately ₹4–6 lakh daily hotel revenue.",
+          "<b>Reported occupancy:</b> Four to five consecutive sold-out nights.",
+          "<b>Attribution status:</b> Management-reported, not independently audited and not exclusively Google Ads-attributed."
+        ]
+      },
+      {
+        title: "Why this case study is not an argument against landing pages or Tag Manager",
+        description: [
+          "The strategy was about choosing the strongest existing conversion asset. Google Tag Manager is valuable when a hotel needs to measure website actions. Landing pages can be excellent for special offers, weddings, resorts and complex packages. Booking-engine traffic can be ideal when a hotel has a compelling direct-booking experience. Pearl Courtyard's well-established local reputation and call-led booking workflow led us to choose a different emphasis.",
+          "The general lesson for hotel owners is to audit the website, landing pages, Google Business Profile and reservation operations together, then choose the path that makes it easiest for a qualified guest to take the next step."
+        ]
+      },
+      {
+        title: "How to verify the gains over time",
+        description: [
+          "For a rigorous performance review, compare like-for-like periods and reconcile Google Ads call conversions, eligible local call actions and call duration with answered calls, qualified booking requests, PMS confirmed bookings, room nights, average daily rate and actual revenue. This turns a promising management account into an auditable growth story.",
+          "Read the related <a href=\"/pearl-courtyard-google-business-profile-calls/\" class=\"text-primary2 underline\">Fielmente blog explaining the complete Google Maps and call-first strategy</a>."
+        ],
+        lists: [
+          "<b>Property information:</b> <a href=\"https://pearlcourtyard.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary2 underline\">pearlcourtyard.com</a>",
+          "<b>Ad measurement references:</b> <a href=\"https://support.google.com/google-ads/answer/2404182\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary2 underline\">Google Ads location assets</a> and <a href=\"https://support.google.com/google-ads/answer/2453991/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary2 underline\">Google Ads call assets</a>"
+        ]
+      }
+    ],
+    cta: {
+      eyebrow: "Your strongest booking path may already exist",
+      title: "Is your Google Business Profile outperforming your website?",
+      description: "Fielmente can audit your hotel's Google Ads goals, Maps reputation, reservation calls and landing pages to find the lowest-friction path from search demand to a real guest conversation.",
+      label: "Request a Hotel Growth Audit"
+    }
+  },
+
+  {
     slug: "syah-udaipur-tripadvisor-ads",
     metaData: {
       title: "TripAdvisor Ads Case Study: Syah Udaipur | Fielmente",
