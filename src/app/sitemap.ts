@@ -50,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const add = (p: string, lastModified?: Date) => paths.set(p.endsWith("/") ? p : `${p}/`, lastModified);
 
   STATIC_PAGES.forEach((p) => add(p));
+  add("/pearl-courtyard-google-business-profile-calls/", new Date("2026-11-21T00:00:00.000Z"));
   add("/google-ads-promotional-credits-hotels-resorts/", new Date("2026-11-13T00:00:00.000Z"));
   add("/why-hotels-should-hire-a-google-partner-agency/", new Date("2026-11-13T00:00:00.000Z"));
   add("/eazotel-official-google-partner/", new Date("2026-11-13T00:00:00.000Z"));
