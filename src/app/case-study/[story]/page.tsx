@@ -91,7 +91,61 @@ export default async function Page(props: Params) {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      {data.slug === "syah-udaipur-tripadvisor-ads" ? (
+      {data.slug === "pearl-courtyard-varanasi-google-business-profile-calls" ? (
+        <section className="relative overflow-hidden bg-[#17143f] text-white">
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(242,102,51,0.14),transparent_55%)]" />
+          <Container className="relative pb-10 pt-28 md:pb-16 md:pt-36 lg:pt-40">
+            <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white/70">
+              <Link href="/" className="transition hover:text-white">Home</Link>
+              <span aria-hidden="true">/</span>
+              <Link href="/case-study/" className="transition hover:text-white">Case studies</Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-white">Pearl Courtyard</span>
+            </nav>
+            <div className="mt-8 grid items-center gap-8 md:mt-12 lg:grid-cols-[1fr_1.04fr] lg:gap-14">
+              <div className="max-w-2xl">
+                <p className="flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#ffa685]">
+                  <span aria-hidden="true" className="h-px w-7 bg-[#ffa685]" />
+                  Hotel marketing case study
+                </p>
+                <h1 className="mt-5 text-[clamp(2.35rem,4.4vw,4.3rem)] font-semibold leading-[1.09] tracking-[-0.035em]">
+                  Turning Google searches into <span className="text-[#ffa685]">direct hotel bookings.</span>
+                </h1>
+                <p className="mt-5 text-xl font-medium text-white md:text-2xl">Pearl Courtyard, Varanasi</p>
+                <p className="mt-4 max-w-xl text-[16px] leading-7 text-white/75 md:text-[17px] md:leading-8">
+                  How Fielmente shifted a well-reviewed city hotel from a website-first advertising approach to a Google Business Profile and phone-first reservation strategy.
+                </p>
+                <div className="mt-7 flex flex-wrap gap-x-3 gap-y-2 text-xs font-medium text-white/80 md:text-sm">
+                  {["Google Ads", "Google Business Profile", "Direct phone enquiries"].map((tag) => (
+                    <span key={tag} className="rounded-full border border-white/20 px-3.5 py-2">{tag}</span>
+                  ))}
+                </div>
+                <a href="#pearl-results" className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#f26633] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#d95626]">
+                  Explore the results <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+              <figure className="relative m-0 min-w-0">
+                <div className="overflow-hidden rounded-2xl bg-[#302c4c] ring-1 ring-white/15 shadow-[0_24px_70px_-30px_rgba(0,0,0,0.5)] md:rounded-[28px]">
+                  <Image
+                    src="https://landing.pearlcourtyard.com/assets/pearl-lobby-front.webp"
+                    alt="Pearl Courtyard Varanasi's Victorian-inspired lobby and marble reception desk"
+                    width={1098}
+                    height={683}
+                    unoptimized
+                    priority
+                    className="aspect-[1.45] h-auto w-full object-cover object-center"
+                  />
+                  <div className="flex items-center gap-3 border-t border-white/10 bg-[#242045] px-5 py-4 md:px-6">
+                    <Image src="https://landing.pearlcourtyard.com/assets/pearl-logo.webp" alt="Pearl Courtyard logo" width={49} height={44} unoptimized className="h-10 w-auto rounded-md bg-white p-1 object-contain"/>
+                    <div className="min-w-0"><p className="text-sm font-semibold text-white">Pearl Courtyard</p><p className="mt-0.5 text-xs text-white/65">Godowlia, Varanasi · Client property photography</p></div>
+                  </div>
+                </div>
+                <figcaption className="mt-3 text-xs leading-relaxed text-white/55">Reception at Pearl Courtyard, from the hotel’s own landing page.</figcaption>
+              </figure>
+            </div>
+          </Container>
+        </section>
+      ) : data.slug === "syah-udaipur-tripadvisor-ads" ? (
         <section className="bg-white">
           <Container className="py-14 md:py-20">
             <Link href="/case-study/" className="text-sm font-medium text-orange-ink hover:underline">← Case studies</Link>
@@ -112,7 +166,7 @@ export default async function Page(props: Params) {
 
       {hasKpis && (
         <SectionWithContainer sectionClassName="">
-          <h2 className="mb-5 text-[1.75rem]/[2.5rem] text-primary2 font-semibold">Results at a glance</h2>
+          <h2 id={data.slug === "pearl-courtyard-varanasi-google-business-profile-calls" ? "pearl-results" : undefined} className="mb-5 scroll-mt-28 text-[1.75rem]/[2.5rem] text-primary2 font-semibold">Results at a glance</h2>
           <CaseStudyKpis kpis={kpis} metrics={data.metrics} />
           {data.metricsNote && (
             <p className="mt-4 text-sm/relaxed text-[#55536E]">{data.metricsNote}</p>
