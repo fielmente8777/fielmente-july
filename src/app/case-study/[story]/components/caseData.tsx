@@ -37,20 +37,21 @@ export const casStudiesData: CaseStudy[] = [
     slug: "pearl-courtyard-varanasi-google-business-profile-calls",
     metaData: {
       title: "Pearl Courtyard Varanasi Google Ads & Calls Case Study | Fielmente",
-      description: "How Fielmente prioritised Google Business Profile trust and phone enquiry goals for Pearl Courtyard Varanasi, with management-reported sold-out nights and ₹4–6L peak daily revenue.",
+      description: "Pearl Courtyard Varanasi: 58 room-night queries with 45% reported conversion, dated Google calls and room revenue, plus Fielmente’s call-first Google Business Profile strategy.",
     },
     img: "/images/blog/pearl-courtyard-gbp-calls.svg",
     hotelImg: "/images/blog/pearl-courtyard-gbp-calls.svg",
     hotelImgAlt: "Illustrated Fielmente campaign funnel showing Google Search, the Google Business Profile and direct phone calls for Pearl Courtyard",
     title: "Pearl Courtyard, Varanasi: Google Business Profile & Call-First Google Ads Case Study",
-    description: "What changed when Fielmente stopped treating website visits as the goal and redesigned the hotel's Google Ads approach around its established Maps reputation and direct phone enquiries.",
+    description: "How Fielmente shifted a hotel with 4,600 Google reviews towards call-led reservations, with reservation-team reports of 58 and 51 room-night queries and measurable Google call conversions.",
     metrics: [
-      { label: "Google rating at team audit", value: "4.4/5", note: "Campaign-team snapshot; may change" },
-      { label: "Google reviews at team audit", value: "~4,600", note: "Approximate management-reported count" },
-      { label: "Consecutive sold-out nights", value: "4–5", note: "Reported by hotel management after strategy change" },
-      { label: "Peak daily hotel revenue", value: "₹4–6 lakh", note: "Hotel management report, not ads-attributed sales" },
+      { label: "Room-night queries · report A", value: "58", note: "Undated reservation-team snapshot" },
+      { label: "Converted · report A", value: "26 (45%)", note: "Reported room-night query conversion" },
+      { label: "Room-night queries · report B", value: "51", note: "Second undated reservation-team snapshot" },
+      { label: "Converted · report B", value: "15 (29%)", note: "Reported room-night query conversion" },
     ],
-    metricsNote: "All review snapshots, daily revenue and occupancy outcomes shown here were reported by Fielmente/the hotel team. They are not independently audited, and daily hotel revenue is not proven to have been generated solely by Google Ads. Google Ads call logs and verified booking-level attribution were not supplied for publication.",
+    metricsNote: "Source: screenshots of Pearl Courtyard reservation-team messages supplied by Fielmente. The 58/26 and 51/15 numbers are labelled 'room-night queries' and 'converted room-night queries' in the reports; the periods are not specified. These are NOT verified counts of Google calls or 50 completed call conversions. Separate dated Google phone reports appear below; reported revenue is not independently audited.",
+
     data: [
       {
         title: "The property: Pearl Courtyard in the heart of Varanasi",
@@ -118,6 +119,36 @@ export const casStudiesData: CaseStudy[] = [
         ]
       },
       {
+        title: "The hotel's 50-calls-per-day target — and what the shared reports prove",
+        description: [
+          "Pearl Courtyard asked Fielmente to work towards 50 calls per day. The Fielmente team says the call-demand objective was achieved following the shift to the Google Business Profile and phone-led strategy. The two new team snapshots provide promising evidence of reservation activity, but the exact wording matters: they report 58 and 51 total room-night queries, not 58 and 51 Google phone calls. Neither screenshot gives an explicit reporting date or measurement period.",
+          "The reporting screenshots show that a substantial part of the room-night enquiry demand was converted. The first shows 26 converted from 58 (reported as 45%); the second shows 15 converted from 51 (reported as 29%). These figures should not be added to the dated Google calls below, because the reporting windows may overlap and the metrics have different units.",
+          "To state definitively that Google Ads or the Google Business Profile delivered at least 50 calls on a specific day, the daily Google Ads/Business Profile calls report and reservation log would need to be matched. The supplied dated extracts show 13 Google calls on 20 November and 21 on 22 November; neither individually establishes 50 Google calls on that day."
+        ],
+        lists: [
+          "<b>Hotel's stated target:</b> 50 calls per day; Fielmente reports progress towards or attainment of the goal, pending daily call-level verification.",
+          "<b>Room-night query report A (period not specified):</b> 58 total room-night queries; 26 converted; 45% reported conversion ratio (26/58 ≈ 44.8%).",
+          "<b>Room-night query report B (period not specified):</b> 51 total room-night queries; 15 converted; 29% reported conversion ratio (15/51 ≈ 29.4%).",
+          "<b>Measurement distinction:</b> A 'room-night query' is not automatically a phone call or a confirmed booking. These two undated summaries are not evidence of 50 converted calls per day."
+        ]
+      },
+      {
+        title: "Documented Google calls, conversions, room nights and revenue — 20 and 22 November 2026",
+        description: [
+          "In addition to the room-night enquiry summaries, the Pearl Courtyard reservation-team screenshots include dated channel-specific results. These distinguish Google-sourced phone enquiries from WhatsApp enquiries and connect the converted enquiries with room nights and hotel-reported revenue.",
+          "On 20 November 2026, the hotel reported 13 calls from Google, 3 converted enquiries, 11 room nights and ₹1,39,000 in associated revenue. On 22 November 2026, it reported 21 Google calls, 6 converted enquiries, 11 room nights and ₹1,19,100 in associated revenue. For 22 November, the separate WhatsApp line showed 3 enquiries, all 3 marked converted, with 16 room nights and ₹1,76,000 in associated revenue.",
+          "Across the two specifically dated Google reports, the total is 34 Google calls, 9 converted enquiries, 22 room nights and ₹2,58,100 in hotel-reported revenue. This is a two-day sum for 20 and 22 November, not a daily average and not an audited Google Ads return-on-ad-spend figure. We cannot independently separate organic Google Business Profile calls from paid Google Ads calls using these team messages alone."
+        ],
+        lists: [
+          "<b>20 November 2026 — Google:</b> 13 calls | 3 converted | 11 room nights | ₹1,39,000 reported revenue | 23.1% enquiry-to-conversion ratio (3 of 13).",
+          "<b>22 November 2026 — Google:</b> 21 calls | 6 converted | 11 room nights | ₹1,19,100 reported revenue | 28.6% enquiry-to-conversion ratio (6 of 21).",
+          "<b>22 November 2026 — WhatsApp (separate channel):</b> 3 enquiries | 3 converted | 16 room nights | ₹1,76,000 reported revenue. This must not be presented as Google call revenue.",
+          "<b>Google channel total for the two dated reports:</b> 34 calls | 9 marked converted | 22 room nights | ₹2,58,100 reported revenue.",
+          "<b>Evidence:</b> Reservation-team messages supplied as four WhatsApp screenshots, including reports dated 20 and 22 November 2026.",
+          "<b>Reporting caveat:</b> Management/operations-reported figures; confirmation would require booking ledgers, ad-source call logs and reconciliation of cancellation, payment and stay dates."
+        ]
+      },
+      {
         title: "Results: four to five consecutive sold-out nights reported by hotel management",
         description: [
           "After the revised strategy was implemented, the team reported a sharp change in hotel demand and sales performance. According to management, Pearl Courtyard experienced four to five consecutive sold-out nights. For the strongest days in that period, it reported roughly ₹4–6 lakh in daily hotel revenue, compared with the earlier roughly ₹20,000–₹50,000 daily business figures shared with us.",
@@ -140,7 +171,7 @@ export const casStudiesData: CaseStudy[] = [
       {
         title: "How to verify the gains over time",
         description: [
-          "For a rigorous performance review, compare like-for-like periods and reconcile Google Ads call conversions, eligible local call actions and call duration with answered calls, qualified booking requests, PMS confirmed bookings, room nights, average daily rate and actual revenue. This turns a promising management account into an auditable growth story.",
+          "The reservation-team screenshots provide useful operational reporting but cannot independently establish Google Ads-attributed bookings or prove the 50-call daily threshold. For a rigorous performance review, compare like-for-like periods and reconcile Google Ads call conversions, eligible Business Profile local actions and call duration with answered calls, qualified booking requests, PMS confirmed bookings, room nights, average daily rate and actual revenue. This turns a promising management account into an auditable growth story.",
           "Read the related <a href=\"/pearl-courtyard-google-business-profile-calls/\" class=\"text-primary2 underline\">Fielmente blog explaining the complete Google Maps and call-first strategy</a>."
         ],
         lists: [
