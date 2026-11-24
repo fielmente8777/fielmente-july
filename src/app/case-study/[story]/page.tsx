@@ -130,6 +130,60 @@ export default async function Page(props: Params) {
         </SectionWithContainer>
       )}
 
+      {data.slug === "pearl-courtyard-varanasi-google-business-profile-calls" && (
+        <SectionWithContainer sectionClassName="">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-8 max-w-4xl">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-orange-ink">Reservation-desk evidence · November 2026</p>
+              <h2 className="mt-3 text-3xl font-semibold leading-tight text-primary2 md:text-4xl">More than enquiries: the conversions and room nights behind the reports</h2>
+              <p className="mt-4 text-base leading-8 text-[#55536E]">Pearl Courtyard's own team shared two room-night query snapshots and dated Google and WhatsApp reservation reports. The figures below preserve the units and dates used in those messages instead of combining all contacts into a single inflated result.</p>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-2">
+              {[
+                { label: "Reservation team snapshot A", enquiries: "58", converted: "26", rate: "45%" },
+                { label: "Reservation team snapshot B", enquiries: "51", converted: "15", rate: "29%" },
+              ].map((report) => (
+                <div key={report.label} className="rounded-2xl border border-[#e6e3ed] bg-[#faf9fc] p-6 md:p-8">
+                  <h3 className="text-base font-semibold text-primary2">{report.label}</h3>
+                  <p className="mt-1 text-xs text-[#686278]">Reporting period not supplied · room-night queries, not Google calls</p>
+                  <div className="mt-6 grid grid-cols-3 gap-4">
+                    <div><p className="text-3xl font-bold text-primary2">{report.enquiries}</p><p className="mt-2 text-xs leading-5 text-[#686278]">Room-night queries</p></div>
+                    <div><p className="text-3xl font-bold text-primary2">{report.converted}</p><p className="mt-2 text-xs leading-5 text-[#686278]">Converted room-night queries</p></div>
+                    <div><p className="text-3xl font-bold text-orange-primary">{report.rate}</p><p className="mt-2 text-xs leading-5 text-[#686278]">Reported conversion ratio</p></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 overflow-hidden rounded-2xl border border-[#e6e3ed] bg-white">
+              <div className="border-b border-[#e6e3ed] px-6 py-6 md:px-8">
+                <h3 className="text-2xl font-semibold text-primary2">Dated calls, converted enquiries and revenue</h3>
+                <p className="mt-2 text-sm leading-7 text-[#55536E]">Source: reservation-team WhatsApp updates. “Converted” and revenue are hotel-reported; figures are not matched to Google Ads billing or independently audited booking ledgers.</p>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[690px] text-left text-sm">
+                  <thead className="bg-[#f5f3fa] text-primary2">
+                    <tr>{["Date", "Source", "Calls / enquiries", "Converted", "Room nights", "Reported revenue"].map(h => <th key={h} scope="col" className="px-5 py-4 font-bold">{h}</th>)}</tr>
+                  </thead>
+                  <tbody className="divide-y divide-[#e6e3ed] text-[#45405f]">
+                    <tr><th scope="row" className="px-5 py-5 font-semibold">20 Nov 2026</th><td className="px-5 py-5">Google calls</td><td className="px-5 py-5">13</td><td className="px-5 py-5 font-semibold">3</td><td className="px-5 py-5">11</td><td className="px-5 py-5 font-semibold">₹1,39,000</td></tr>
+                    <tr><th scope="row" className="px-5 py-5 font-semibold">22 Nov 2026</th><td className="px-5 py-5">Google calls</td><td className="px-5 py-5">21</td><td className="px-5 py-5 font-semibold">6</td><td className="px-5 py-5">11</td><td className="px-5 py-5 font-semibold">₹1,19,100</td></tr>
+                    <tr><th scope="row" className="px-5 py-5 font-semibold">22 Nov 2026</th><td className="px-5 py-5">WhatsApp enquiries</td><td className="px-5 py-5">3</td><td className="px-5 py-5 font-semibold">3</td><td className="px-5 py-5">16</td><td className="px-5 py-5 font-semibold">₹1,76,000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="border-t border-[#e6e3ed] bg-[#faf9fc] px-6 py-5 text-sm leading-7 text-[#45405f] md:px-8"><strong className="text-primary2">Google only, across the two specifically dated reports:</strong> 34 calls, 9 marked converted, 22 room nights and ₹2,58,100 hotel-reported revenue. This sum covers 20 and 22 November, not every day in between. WhatsApp results remain a separate channel.</div>
+            </div>
+
+            <div className="mt-6 rounded-2xl border-l-4 border-orange-primary bg-[#f8f7fb] p-6 text-sm leading-7 text-[#45405f]">
+              <p className="text-lg font-bold text-primary2">The hotel's 50-calls-per-day goal</p>
+              <p className="mt-2">The hotel asked Fielmente to achieve 50 calls per day, and the team reports reaching that objective. The supplied images document 51 and 58 <strong>room-night queries</strong>, not 51 and 58 verified calls. The dated Google-only reports show 13 calls on 20 November and 21 on 22 November. A day-specific call log is needed to confirm a 50-Google-call day; no such day is established by these screenshots.</p>
+            </div>
+          </div>
+        </SectionWithContainer>
+      )}
+
       {data.slug === "syah-udaipur-tripadvisor-ads" && (
         <SectionWithContainer sectionClassName="">
           <article className="mx-auto max-w-6xl space-y-16">
