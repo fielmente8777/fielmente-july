@@ -15,7 +15,7 @@ import PlatformStripSection from "@/components/commonSections/PlatformStripSecti
 export const metadata = {
   title: "Hotel OTA & Revenue Management Agency | Fielmente",
   description:
-    "Fielmente is a hospitality marketing and revenue management agency with 15+ years of expertise helping hotels and resorts grow OTA bookings and revenue.",
+    "Fielmente is a hospitality marketing and revenue management agency, founded in 2020 by a hotelier, helping hotels and resorts grow OTA bookings and revenue.",
   
   keywords: [
     "hotel revenue management company",

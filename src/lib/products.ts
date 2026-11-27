@@ -162,14 +162,17 @@ export const PROPERTY_TYPES: {
   }
 ];
 
-export const TESTIMONIALS: { quote: string; name: string }[] = [
+// `context` says which company the review is about, so a marketing review isn't read as a software review.
+export const TESTIMONIALS: { quote: string; name: string; context: string }[] = [
   {
     "quote": "Eazotel was an excellent choice for my organisation and team. The ease of use, intuitive design and feature-rich tools are absolutely top tier.",
-    "name": "Tino Frangline"
+    "name": "Tino Frangline",
+    "context": "Eazotel platform client"
   },
   {
     "quote": "Great team to work with. Adaptive, as Ottawa is a very unique market, and they have learnt very quickly. Great initiative taken to explore and make a big impression in the market.",
-    "name": "Donald Wingell, CFBE"
+    "name": "Donald Wingell, CFBE",
+    "context": "Fielmente marketing client, Ottawa, Canada"
   }
 ];
 

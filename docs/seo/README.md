@@ -71,6 +71,42 @@ The three PRs are independent and can merge in any order.
    service page from the post.
 4. **Location and country pages live on fielmente.com.** A subdomain copy of a fielmente.com page must be noindex.
 5. **Never change a ranking URL without a 301** (add it to `redirects()` in `next.config.ts`).
+6. **Company facts are the same on every page.** Use the facts on the About page: founded in 2020 by
+   hotelier Sachin Kapoor (Marriott and Hyatt background), team of 15+ hospitality marketers, 500+ hotels
+   and 50+ restaurants in 10+ countries. Don't call Fielmente "the best" or "India's best", and don't
+   publish a percentage or multiplier unless we can show where it comes from.
+7. **Reviews say which company they are about.** Eazotel reviews are labelled as Eazotel, not shown as
+   Fielmente marketing reviews (`company` and `context` in `src/utils/testimonialsData.ts`). Show each
+   review once per page.
+
+## 3a. Core update hardening (28 Nov 2026)
+
+Google finished the November 2026 core update on 24 Nov and has preannounced a December 2026 core update
+(no date yet) focused on relevance, longer questions and personalised results. A crawl of all 283 sitemap
+URLs on a local build found the technical basics clean: unique titles and descriptions, self-canonicals,
+one H1 per page, valid JSON-LD. The risks were trust signals, fixed on branch `seo/core-update-hardening-2026-11`:
+
+- Home page: "15+ years" (we were founded in 2020) and "50+ experts" (the About page says 15+) replaced
+  with the About page facts; "2–5X revenue", "95% satisfaction" and "best agency" lines removed.
+- /hotel-ota-management/: "only revenue management company…" and company-level "15+ years" reworded.
+- /hospitality-consultants-in-india/: removed "more than 10 years", "120 projects", "more than 5 countries"
+  and Marriott/Hyatt/Golden Tulip/Radisson presented as clients (now: founder's background), and replaced
+  the "Fielmente is the best…" FAQ with useful questions.
+- /testimonials/: every review printed 3 times (two sliders fed the same list) and Eazotel reviews mixed
+  in as Fielmente reviews. Now each review once, split into Fielmente and Eazotel sections, with a label
+  on every card. The stock photo of a Hyatt Regency next to each review is replaced by a quote panel.
+- Product pages: the two reviews now say whether they are about Eazotel or Fielmente.
+
+**Still open (needs an owner's answer):**
+- /our-clients/ shows chain logos (Marriott, JW Marriott, Hyatt Regency, Hilton, Taj, Radisson, Novotel,
+  Ramada, Park Plaza, Golden Tulip) as clients. Keep only those that were Fielmente or Eazotel clients;
+  past employers of the founders don't count.
+- Home page "95% client retention", "4X avg. campaign ROI", "up to 40% more direct bookings" and
+  "1,000+ campaigns": keep only if we can back them up.
+- Trustpilot and Capterra logos on /hotel-ota-management/: keep only if we have profiles with reviews there.
+- 110 templated `/industries-we-serve/<industry>/<service>/` pages share 35–50% of their copy with the
+  same service for other industries. After 1 Dec, check Search Console: pages with no impressions over
+  3 months are candidates to noindex or merge into the industry page.
 
 ## 4. Semrush setup (Position Tracking)
 

@@ -6,6 +6,7 @@ import { QuotesIcon } from "../../../utils/icons";
 interface TestimonialsDataTypes {
   title: string;
   description: string;
+  context?: string;
 }
 
 const AutoSliderTestimonial: React.FC<{
@@ -55,9 +56,11 @@ export default AutoSliderTestimonial;
 export const FloteCard = ({
   title,
   description,
+  context,
 }: {
   title: string;
   description: string;
+  context?: string;
 }) => {
   return (
     <div className="w-full flex flex-col gap-4 bg-[#0d0f12] p-6 border-[0.1px] shadow-inner backdrop-blur-xs border-main-border/35 rounded-2xl overflow-hidden h-auto text-white">
@@ -71,7 +74,9 @@ export const FloteCard = ({
       </div>
       <p className="text-lg line-clamp-6">{description.slice(0, 210)}</p>
       <div className="w-full h-[0.1px] bg-white/50 my-2"></div>
-      <h2 className="text-xl font-bold">{title}</h2>
+      {/* Reviewer names are not section headings, so no <h2> here. */}
+      <p className="text-xl font-bold">{title}</p>
+      {context && <p className="text-sm text-white/70 -mt-3">{context}</p>}
     </div>
   );
 };

@@ -294,7 +294,9 @@ export default async function ProductPage({ params }: Props) {
             {TESTIMONIALS.map((t) => (
               <figure key={t.name}>
                 <blockquote>{t.quote}</blockquote>
-                <figcaption>{t.name}</figcaption>
+                <figcaption>
+                  {t.name} · {t.context}
+                </figcaption>
               </figure>
             ))}
           </div>
