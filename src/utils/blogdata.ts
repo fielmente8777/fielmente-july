@@ -1135,10 +1135,10 @@ This landmark move opens new doors for property owners, offering not just legali
       </p>
       <br />
       <p>
-        We at Fielmente help you ace your Google review game. We
-        also are India’s leading hospitality digital marketing
-        agency. would love to help you achieve your business
-        goals.
+        We at Fielmente help hotels and restaurants manage and
+        reply to their Google reviews as part of our hospitality
+        marketing work, and would love to help you achieve your
+        business goals.
         <a href="/contact-us/">
         Contact us!
         </a>
@@ -1281,21 +1281,20 @@ This landmark move opens new doors for property owners, offering not just legali
       </p>
       <p>
         Are you ready to reap the benefits of digital marketing
-        for your hospitality services? Fielmente Hospitality’s
-        digital marketing agency is the best agency to help with
-        that.
+        for your hospitality services? Here is how Fielmente
+        can help.
       </p>
     </div>
     <br />
     <div>
       <h2>
-        Fielmente – The best hospitality marketing agency
-        serving hotels, restaurants, and cloud kitchens for more
-        than 10 years
+        Fielmente – a hospitality marketing agency for hotels,
+        restaurants and cloud kitchens
       </h2>
       <p>
-        We have served in more than 5 countries with expertise
-        in hotels, resorts, restaurants, and cloud kitchens.
+        Since 2020 we have worked with hospitality businesses in
+        10+ countries, with expertise in hotels, resorts,
+        restaurants and cloud kitchens.
         Also, helps you realize and reach your full potential
         with our in-house team of experts.
       </p>
@@ -1362,11 +1361,11 @@ This landmark move opens new doors for property owners, offering not just legali
         marketing experts and hospitality consultants in India.
       </p>
       <p>
-        In our journey so far, we have completed 120 projects
-        with a 95% satisfaction rate. Our team has the
-        opportunity to work with notable names like Marriot,
-        Hyatt, Golden Tulip, and Radisson Blu for their
-        hospitality services.
+        Fielmente was founded in 2020. Before that, Sachin
+        Kapoor worked in hotel sales and marketing at Marriott
+        and Hyatt, after a master's in hospitality from WGSHA
+        Manipal. That hotel background shapes how we plan
+        marketing for our clients.
       </p>
       <p>
         In the past, we have relished the media coverage by
@@ -1632,38 +1631,33 @@ This landmark move opens new doors for property owners, offering not just legali
       <h2>Frequently Asked Questions</h2>
       <div>
         <p>
-          Which is the best Hospitality Marketing Agency in
+          How do I choose a hospitality marketing agency in
           India?
         </p>
         <p>
-          Fielmente – Hospitality Marketing Agency is the best
-          Hospitality Marketing Agency in India.
+          Ask for case studies from properties like yours, how
+          they track enquiries and bookings, who will run your
+          account day to day, and what the monthly report shows.
+          An agency that only works with hotels and restaurants
+          will already know OTAs, booking engines and seasonal
+          demand.
         </p>
         <br />
         <p>
-          Which is the best Hotel Marketing Agency in India?
+          What kinds of businesses does Fielmente work with?
         </p>
         <p>
-          Fielmente – Hospitality Marketing Agency is the best
-          Hotel Marketing Agency in India.
-        </p>
-        <br />
-        <p>
-          Which is the best Restaurant marketing agency in
-          India?
-        </p>
-        <p>
-          Fielmente – Hospitality Marketing Agency is the best
-          Restaurant Marketing Agency in India.
+          Hotels, resorts, homestays and villas, restaurants,
+          cafés and cloud kitchens, in India and abroad.
         </p>
         <br />
         <p>
-          Which is the best Cloud Kitchen Marketing Agency in
-          India?
+          Can I see Fielmente's results before I decide?
         </p>
         <p>
-          Fielmente – Hospitality Marketing Agency is the best
-          Cloud Kitchen Marketing Agency in India.
+          Yes. Our <a href="/case-study/">case studies</a> show
+          campaign results for named clients, and we can share a
+          free audit of your current marketing.
         </p>
       </div>
     </div>

@@ -146,6 +146,7 @@ export interface FeaturedTestimonialsPropsType {
     title: string;
     description: string;
     src?: string;
+    context?: string;
   }[];
   links: {
     label: string;

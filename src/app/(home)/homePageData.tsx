@@ -54,7 +54,7 @@ export const homePageData = {
     title: "Trusted by 500+ Hotels & Resorts Worldwide",
     subTitle: `Increase <b>Direct Resort Bookings by up to 40%</b> Without OTAs`,
     description:
-      "Boost Your Online Presence, Drive More Bookings, and Grow Your Hospitality Business with AI-Driven Digital Strategies through India’s best Hospitality Marketing Company.",
+      "Boost Your Online Presence, Drive More Bookings, and Grow Your Hospitality Business with AI-Driven Digital Strategies from a marketing agency that works only with hospitality businesses.",
     cta: {
       label: "Get a FREE Quote",
       href: "",
@@ -128,21 +128,21 @@ export const homePageData = {
     src: "/home/about.png",
     alt: "Resort pool with palm trees at sunset, and a hotel lobby",
     title: "ABOUT COMPANY",
-    subTitle: `Revenue Driven Hotel Marketing Agency, We help you to achieve revenue by <span>2-5X</span>`,
+    subTitle: `Revenue-Driven Hotel Marketing Agency, Focused on <span>Direct Bookings</span>`,
     // subTitle: `Grow Your Hotel’s Direct and OTA Bookings by <span>30 - 50%</span>`,
     description: [
       "We help hotels, resorts, and vacation rentals reduce OTA commissions and boost occupancy with AI-driven hospitality marketing strategies.",
     ],
     listData: [
       "95% client retention rate from satisfied partners",
-      "Average 40% increase in direct bookings within 3 months",
+      "Up to 40% more direct bookings within 3 months",
       "500+ hotels & resorts and 50+ restaurants served across 10+ countries",
     ],
     stats: [
       { number: "500+", label: "Hotels & Resorts Served" },
-      { number: "15+", label: "Years of Hospitality Expertise" },
-      { number: "95%", label: "Client Satisfaction" },
-      { number: "30-40%", label: "Increase in Direct Bookings" },
+      { number: "2020", label: "Founded by a Hotelier" },
+      { number: "95%", label: "Client Retention" },
+      { number: "54,900+", label: "Tracked Guest Enquiries" },
     ],
     cta: {
       label: "Book My Free Consultation Call",
@@ -671,13 +671,13 @@ export const homePageData = {
     "CONTENT CREATION",
   ],
   marketingExpertiseData: {
-    title: "Force of 50+ Hospitality Marketing Experts",
+    title: "A Team of 15+ Hospitality Marketers",
     cards: [
       {
         icon: <ExecuteIcon />,
         title: `Expertise in hotel`,
         subtitle:
-          "With 15+ years of experience in the hotel industry, we are the perfect partner to market your hotel, resort, villa & restaurant.",
+          "Founded by a hotelier with sales and marketing experience at Marriott and Hyatt, so we market your hotel, resort, villa or restaurant the way guests actually choose and book.",
       },
       {
         icon: <StrategicSocialMediaMarketingForHotel />,
@@ -733,7 +733,7 @@ export const homePageData = {
     description: [
       "Choose Fielmente – a leading Hospitality Marketing Agency, <a href='/industries-we-serve/hotel-marketing-agency/'>Hotel Marketing Agency</a>, and <a href='/industries-we-serve/restaurant-marketing-agency/'>Restaurant Marketing Agency</a> as your growth partner. We help hotels, resorts, and restaurants elevate their presence in the digital world with strategies designed specifically for the hospitality industry.",
       "At Fielmente, your stories are worth telling, and we craft campaigns that make your brand stand out from the rest. From hotel social media marketing and search engine optimization for hotels to paid advertising, website optimization, and complete digital strategy, our services cover every aspect of hospitality marketing. Our team brings experience from diverse domains to ensure maximum brand visibility, higher direct bookings, and measurable return on investment.",
-      "Since 2020, we have worked with 500+ hotels and 50+ restaurants across 10+ countries, consistently achieving a 95% satisfaction rate. What began as a focused initiative has grown into one of the best restaurant and hotel marketing agencies in India, known for personalized strategies, strong brand positioning, and performance-driven results.",
+      "Since 2020, we have worked with 500+ hotels and 50+ restaurants across 10+ countries. What began as a focused initiative has grown into a hospitality-only marketing agency known for personalized strategies, strong brand positioning and performance-driven results.",
       "As a specialized hospitality marketing company for hotels and restaurants, we design and execute impactful campaigns that attract guests, increase online visibility, and drive revenue. Our expertise in social media marketing, search engine optimization, performance marketing, and content strategy ensures sustainable growth through cutting-edge digital techniques.",
       "If you’re looking for a trusted <a href='/industries-we-serve/hotel-marketing-agency/'>hotel marketing agency in India</a>, partner with Fielmente to transform your hospitality business with proven strategies and innovative marketing solutions.",
     ],
@@ -778,9 +778,9 @@ export const homePageData = {
     faqs: [
       {
         question:
-          "What makes Fielmente the best hospitality marketing agency in India?",
+          "What makes Fielmente different from other hospitality marketing agencies in India?",
         answer:
-          "At Fielmente, we specialize in delivering tailored marketing solutions for hotels, resorts, and restaurants. Our expertise as a <a class='inter-link' href='/'>hospitality marketing agency</a> in India comes from years of working with top properties and helping them grow through digital marketing, social media, <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/'>SEO</a>, and performance campaigns.",
+          "At Fielmente, we specialize in delivering tailored marketing solutions for hotels, resorts, and restaurants. Fielmente was founded in 2020 by hotelier Sachin Kapoor, and we work only with hospitality businesses as a <a class='inter-link' href='/'>hospitality marketing agency</a> in India, helping them grow through digital marketing, social media, <a class='inter-link' href='/industries-we-serve/hotel-marketing-agency/hotel-seo/'>SEO</a>, and performance campaigns.",
       },
       {
         question:

@@ -26,7 +26,7 @@ export const newPagedata = {
     title: `Fielmente - Online Revenue Growth <span>Partner</span>`,
     list: [
       "We’ve built a Hotel Chain",
-      "Experience of over 15 years in revenue management",
+      "A team with 15+ years of hotel revenue management experience",
       "We know how to maximize your revenue",
     ],
     images: [
@@ -47,7 +47,7 @@ export const newPagedata = {
   revenue: {
     title: "Let’s Supercharge Your Hotel Revenue",
     description:
-      "Fielmente Hospitality brings 15+ years of experience and groundbreaking technology to help hoteliers worldwide Go Beyond. We are the only Revenue Management Company with a team of Industry Experts with more product solutions than any of our competitors, Fielmente ensures you have the tools you need to succeed.",
+      "Our revenue team pairs hotel industry experience with the Eazotel platform, so your rates, OTA listings and direct booking channels are managed in one place, with a clear monthly report on what changed and why.",
     image: "/Supercharge.png",
     icon: <RevenueIcon />,
     links: [
